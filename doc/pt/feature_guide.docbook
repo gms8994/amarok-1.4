@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+          <!ENTITY amarok "amaroK">
+          <!ENTITY kappname "&amarok;">
+          <!ENTITY % addindex "IGNORE">
+          <!ENTITY % Portuguese "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>O Guia de Funcionalidades do Amarok</title>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introdução</title>
+
+<!-- Short intro here.-->
+
+<para
+></para>
+
+</chapter>
+
+<chapter id="features">
+<title
+>Características</title>
+
+<!-- All the features go here. This could end up being huge.-->
+<!-- A one line description of each feature should go here to. -->
+
+<para
+></para>
+
+</chapter>
+
+
+<chapter id="using-features">
+<title
+>Utilizar as Funcionalidades</title>
+
+<!-- Hopefully we can help reduce the number of users errors here. At least we can say RTFM and have some decent docs to read. -->
+
+<para
+></para>
+
+<sect1 id="feature-cover-manager">
+<title
+>O Gestor de Capas</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-visualizations">
+<title
+>As Visualizações</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-equalizer">
+<title
+>O Equalizador</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-scripts">
+<title
+>Os 'Scripts'</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-context-browser">
+<title
+>O Navegador de Contexto</title>
+
+<para
+></para>
+
+<!-- If there are any brave souls, please add CSS theme stuff here -->
+
+<sect2 id="home">
+<title
+>A Página Inicial</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="current-track">
+<title
+>A Página da Faixa Actual</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="lyrics">
+<title
+>A Página de Letras</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-collection-browser">
+<title
+>O Navegador de Colecção</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-playlist-browser">
+<title
+>O Navegador de Lista</title>
+
+<para
+></para>
+
+
+<sect2 id="smart-playlists">
+<title
+>Listas Inteligentes</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-search-browser">
+<title
+>O Navegador de Pesquisa</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-media-device-browser">
+<title
+>O Navegador de Dispositivos Multimédia</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-files-browser">
+<title
+>O Navegador de Ficheiros</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-cd-burning">
+<title
+>Gravar CDs</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-tagging">
+<title
+>Marcas</title>
+
+<para
+></para>
+
+</sect1>
+
+
+</chapter>
+
+</book>

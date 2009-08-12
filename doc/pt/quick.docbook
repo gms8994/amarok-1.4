@@ -1,0 +1,146 @@
+<chapter id="quick-start">
+<title
+>Guia Introdutório Rápido do &amarok;</title>
+
+<para
+>A audição de música deverá ser fácil. Para tal, é fornecido um Assistente de Primeira Execução, que aparece da primeira vez que o &amarok; é executado. Para os que desejam actualizar posteriormente a sua colecção ou não usar o assistente, este Guia de Introdução Rápida é para si. Ele ajudá-lo-á a ter o &amarok; a funcionar em minutos.</para>
+
+
+<sect1 id="collection-building">
+<title
+>Criar uma colecção</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Navegador de Colecção</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A criação da sua colecção é um passo essencial para usar todas as funcionalidades do &amarok;. A partir do Navegador da Colecção, carregue no botão <guibutton
+>Configurar as Pastas</guibutton
+> da barra de ferramentas. A seguir, irá escolher as pastas que gostaria que estivessem na sua colecção na janela para <guilabel
+>Configurar a Colecção</guilabel
+>. A partir daí, terá também a opção para <guilabel
+>Pesquisar as pastas recursivamente</guilabel
+>, <guilabel
+>Vigiar as pastas por alterações</guilabel
+> e <guilabel
+>Importar as listas de músicas</guilabel
+> que forem encontradas nas pastas de colecções. Depois de seleccionar as suas pastas e de assinalar as opções relevantes, carregue no botão <guibutton
+>OK</guibutton
+>. Depois da pesquisa inicial, a sua colecção é criada e poderá criar uma lista de reprodução.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title
+>Criar uma lista de músicas</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A criação de uma lista de músicas é tão simples como arrastar os itens da Árvore do Navegador da Colecção para a Lista de Reprodução. Para tornar a procura dos itens mais simples, aparece um campo de texto para filtrar a sua colecção. Basta começar a escrever no campo de texto para que a árvore mude para mostrar apenas os resultados relevantes. Depois de ficar satisfeito com a sua lista, podê-la-á gravar com o botão <guibutton
+>Gravar a Lista de Reprodução Como</guibutton
+> que aparece na barra da lista de músicas.</para>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Navegador de Lista</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Se tiver as suas próprias listas de músicas, podê-las-á adicionar no Navegador da Lista de Músicas ao carregar no botão <guibutton
+>Adicionar uma Lista de Músicas</guibutton
+> na barra de ferramentas. Se as suas pastas de colecções tiverem as suas listas de músicas e tiver seleccionado a opção Importar as Listas de Músicas na configuração da colecção, as suas listas irão ficar imediatamente na árvore. Se carregar com o botão direito numa lista de músicas na árvore irão aparecer várias opções para carregar a lista de reprodução.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title
+>Ouvir transmissões</title>
+
+<para
+>As transmissões de rádio no &amarok; são reproduzidas se as adicionar ao Navegador da Lista de Músicas. O &amarok; vem com uma selecção de transmissões para os ouvintes desfrutarem, as Transmissões Fixes. Se fizer duplo-click ou arrastar um item, carregá-lo-á na lista de reprodução e, uma vez aí, poderá ser reproduzido. Para adicionar as suas próprias transmissões ao Navegador da Lista de Músicas, carregue em <guibutton
+>Adicionar</guibutton
+> na barra de ferramentas e escolher <guibutton
+>Transmissão de Rádio...</guibutton
+> nas opções da lista. Depois de adicionar a sua transmissão personalizada, esta também poderá ser reproduzida após o carregamento na lista de reprodução.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title
+>Tocar um CD de áudio</title>
+
+<screenshot>
+	<screeninfo
+>Imagem do Menu da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Para ler um CD de áudio, seleccione a opção <menuchoice
+><guimenu
+>Acções</guimenu
+><guimenuitem
+>Tocar um CD de Áudio</guimenuitem
+></menuchoice
+> no menu da Lista de Reprodução. O navegador de ficheiros irá aparecer com várias pastas, assim como as faixas de CD também listadas no formato WAV. Arraste os ficheiros WAV para a lista de reprodução e carregue no botão <guibutton
+>Tocar</guibutton
+>.</para>
+
+<note
+><para
+>A funcionalidade para Tocar um CD de Áudio usa o protocolo audiocd:/ e não é compatível com todos os motores disponíveis.</para
+></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title
+>Gravar um CD de áudio</title>
+
+<para
+>A gravação de um CD de áudio no &amarok; é simples, graças à integração com o <ulink url="http://www.k3b.org"
+>K3B</ulink
+>. Para gravar um álbum, abra primeiro o Navegador da Colecção. Depois, ao expandir um item de um artista na árvore, carregue com o botão direito no álbum que deseja gravar. Irá aparecer um menu de contexto, onde poderá carregar em <guilabel
+>Gravar Este Álbum</guilabel
+>, assim como aparece uma janela que lhe pergunta o modo de gravação. Na janela, seleccione o botão de <guibutton
+>Modo de Áudio</guibutton
+>, para que o K3B comece logo a gravar o álbum.</para>
+
+<note
+><para
+>A funcionalidade de gravação também é oferecida na Lista de Reprodução. Basta carregar com o botão direito num item da lista de músicas e seguir o menu <guilabel
+>Gravar</guilabel
+> para seleccionar várias opções de gravação de CDs.</para
+></note>
+
+</sect1>
+
+
+</chapter>

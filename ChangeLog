@@ -1,0 +1,2876 @@
+Amarok ChangeLog
+================
+(C) 2002-2007 the Amarok authors.
+
+VERSION 1.4.10
+  BUGFIX:
+    * Fix vulnerability in the Magnatune database parsing code.  Secunia
+      Advisory #SA31418.  Thanks to Google Alerts for notifying us about this
+      vulnerability.
+
+VERSION 1.4.9
+  BUGFIXES:
+    * The last.fm dialog did not always properly disable options when the
+      username was not entered.
+    * Fix Amazon Cover fetching by using their new web service api.
+    * Don't insert items into Dynamic Mode that don't exist.
+    * If unavailable tracks are in the Playlist and random mode is on, don't
+      stop those tracks if selected; continue with available tracks.
+
+
+VERSION 1.4.8
+  CHANGES:
+    * Optimise some database queries with the mysql backend. Patch by Alf
+      Eaton <sites@hubmed.org> (BR 152749).
+    * Don't show the device plugin dialog when a new device is plugged in.
+      Apparently it's not obvious that you have to hit OK after selecting "Do
+      not handle" if you don't want it handled, so disabling it prevents it
+      from being shown repeatedly.
+    * Better support for iPhone/iPod Touch mounted via fuse/sshfs (libgpod 0.6.0
+      or newer required).
+    * Only re-render the context view when visible if changing ratings, scores
+      or labels for songs.
+
+  BUGFIXES:
+    * Last.fm metadata would not update with xine 1.1.8. (BR 150429)
+    * Amarok would forget podcast channel and episode settings when using the
+      postgresql backend.
+    * When adding file types with the Generic Media Device sometimes the
+      extensions would be prepended with & and would not save. (BR 151806)
+    * For improved compatibility with newer iPods, convert file extensions to
+      lower case during transfer.
+    * Replace slashes in artist name with spaces when querying Wikipedia
+      e.g. AC/DC, To/Die/For. (BR 150001) 
+    * Always rebuild the dynamic mode cache when in Suggested songs mode,
+      so that we don't land up with stale suggestions. Patch by Jer Johnson
+      <jer@gweep.net>
+    * Sort albums made in the same year alphabetically in 'ascending
+      order'. (BR 149408)
+    * Statistics tool shouldn't show samplers in 'favorite albums'.
+    * Duplicate songs were not allowed in playlist when adding from the
+      collection browser. (BR 149643)
+    * Make sure the localUrl of a PodcastEpisode is valid after a failed
+      download. (BR 147351)
+    * Fix off-by-one error causing Smart Playlists to not load tracks with a
+      rating >= 4.5. (BR 148916)
+    * Don't enable "Configure Podcasts" at the top-level Podcasts folder if
+      there is nothing beneath it. (BR 146504)
+    * Generic Media Device could copy some non-ASCII filenames to turn to
+      gibberish.  Thanks to David Smith <davidsmith@acm.org> for the fix.
+    * Fixed possible GUI freeze when Amarok was showing the dialog for
+      installing mp3 support. Patch by Sascha Sommer <ssommer@suse.de>.
+      (BR 147126)
+    * Amarok could needlessely reinitialize connections to MySQL databases
+      after a configuration change.  Combined with a bug in MySQL libraries,
+      this could lead to a crash.
+    * Pressing Preveious Track in a Dynamic Playlist could cause undefined
+      behavior in certain edge conditions.  Now it always plays the current
+      track. (BR 148317)
+    * Immediately after loading a dynamic playlist, you couldn't drag a
+      track to the top of the playlist. (BR 149263)
+    * Fix transferring files with UTF8 names to MTP devices. Thanks to Kevin
+      Becker <kevman3000@gmail.com> for the fix. (BR 139722)
+    * Display warning that iPod sysinfo could not be written in the case of
+      incorrect file permissions. Patch by Christian Ober-Blöbaum
+      <cob@tzi.de>. (BR 148607)
+    * Fix Czech character conversion to ASCII for Generic Media Device. Patch
+      by Matěj Laitl <strohel@gmail.com>. (BR 149125)
+
+
+VERSION 1.4.7
+  CHANGES:
+    * Updated the Cool Streams.
+    * Improved application icon. Thanks go to Pasi Lallinaho.
+    * Upgraded SQLite to 3.4.1
+    * SQL improvements providing optimisations on intensive queries. Patch by
+      Gosta <gostaj@gmail.com>. (BR 142999)
+
+  BUGFIXES:
+    * Wikipedia artist lookup would freeze Amarok if the artist was not found
+      and the locale was not English. (BR 142764)
+    * Cannot limit smart playlists to more than 1000 tracks. (BR 148084)
+    * Fixed the formatting in the "Extended Info" pane for podcasts.
+    * Don't show "Not Rated" for items rated with half a star. Patch by Tuomas
+      Nurmi <tnurmi@edu.kauhajoki.fi>. (BR 144675)
+    * Copy, don't move items from Cool Streams to folders. (BR 147404)
+    * Sometimes folders in the playlistbrowser could be lost. (BR 147404)
+    * NJB devices could have tags corrupted that contained Unicode characters.
+      Patch by Kun Xi <quinnxi@gmail.com>. (BR 147223)
+    * Show OSD when changing song rating via shortcut. Patch by Tuomas Nurmi
+      <tnurmi@edu.kauhajoki.fi>. (BR 146918)
+    * Show the stars indicating rating with the correct size in the OSD. Patch
+      Patch by Tuomas Nurmi <tnurmi@edu.kauhajoki.fi>. (BR 147059)
+
+
+VERSION 1.4.6
+  CHANGES:
+    * Improved icon theme, kindly provided by Landy DeField
+      <lando@revelinux.com>. Big thanks!
+    * Playlist now sends notifications to scripts if items are added, removed,
+      reordered, or if the playlist is cleared.  Useful for script authors.
+      Thanks to Miguel Angel Alvarez <maacruz@gmail.com> for the patch.
+    * iPod device plugin now handles RockBox devices.  Thanks to Michael
+      Buesch <mb@bu3sch.de> for the patch.
+    * Organising files will only delete empty parent folders if the folder
+      is within the collection hierarchy. (BR 136757)
+    * The default cover image preview size has been increased to 130px.
+    * The "hide menubar" option has been removed. It's too dangerous and led
+      to countless support requests.
+    * Generic media device can now handle any KIO-compatible URL, including
+      obex and smb. Manage your bluetooth phone's music collection through
+      Amarok!
+    * Upgraded SQLite to 3.3.17.
+    * Append an album to the playlist by right-clicking on it from within
+      the Cover Manager.  Patch by Doug Reich <dreich@hmc.edu>.
+    * Faster playlist handling. Patch by Ovy <ovy@alum.mit.edu>. (BR 142255)
+    * The moodbar process has been given a higher priority. (BR 136867)
+    * Allow for lyrics scripts to specifiy site, site_url, and add_url from
+      within the script. This will allow for "meta lyrics" scripts. Patch by
+      Sergio Pistone <sergio_pistone@yahoo.com.ar>. (BR 141885)
+    * First rating star now lets you toggle between no rating, half a star,
+      and one full star.
+
+  BUGFIXES:
+    * Uninstalling scripts would in some cases leave files behind. Patch by
+      Sergio Pistone <sergio_pistone@yahoo.com.ar>. (BR 143716)
+    * Last.fm "Custom Station" stream works again. (BR 146020)
+    * Fix regression where the "Show Script Manager" button displayed on the
+      Lyrics tab of the Context Browser wouldn't actually show the Script
+      Manager.
+    * Don't show ratings from the previous track's rating change in the OSD on
+      playing the next track.
+    * The config dialog is now less tall and fits on widescreen displays.
+    * Making a dynamic playlist with the number of previously played tracks to
+      show set to zero and attempting to play the first track would cause a
+      crash. (BR 145157)
+    * If "Stop after current track" was used, the last track would not be
+      counted or rated in the user's statistics. (BR 140980)
+    * Generic media device wouldn't allow you to drop a folder on the
+      viewport, meaning you couldn't move subfolders to the top level of the
+      mount point.
+    * Made the settings dialog less tall. (BR 141250)
+    * Star ratings now update instantly in the Context Browser, OSD, and
+      Collection Browser.
+    * lyrc script did not work behind proxy due to a stray quote mark. Gentoo
+      Bug 166050.
+    * Fix compilation on kde-3.3 systems.
+    * amarok_live.py now uses popen correctly. Patch by Luke Macken
+      <lmacken@fedoraproject.org>. (BR 127804)
+    * Make amarok_proxy.rb use HTTP/1.0 as we don't support chunked responses.
+      Patch by solsTiCE <solstice.dhiver@laposte.net>. (BR 141819)
+    * Fix Quadratic loading in Playlists. Patch by Ovy
+      <ovy@alum.mit.edu>. (BR 142255)
+    * Correctly set iPod model. Patch by İsmail Dönmez <ismail@kde.org>.
+    * Fix detection of vfat devices on FreeBSD. (BR 141614)
+    * Right-click on volume slider would change the volume. (BR 141672)
+
+
+VERSION 1.4.5
+  FEATURES:
+    * Added support for custom song labels. Labels can be managed
+      through the GUI or using new DCOP functions. (BR 89314)
+    * New DCOP functions to make it easier for scripts to use Amarok's
+      Dynamic Collection feature.
+    * Download songs from Shared Music (DAAP) directly into the collection.
+    * Fadeout for Helix engine when pressing Stop.
+    * Guided editing of the collection/playlist/devices filters. Patch by
+      Giovanni Venturi <giovanni@kde-it.org>. (BR 139292)
+    * Added GUI options for fadeout and fadeout on exit. Both are now enabled
+      by default.
+    * Support for Speex (.spx), WavPack (.wv) and TrueAudio (.tta) files in
+      the collection thanks to taglib plugins by Lukáš Lalinský
+      <lalinsky@gmail.com>.
+    * Search inside of lyrics, by using "/" on Context Browser. Patch by
+      Carles Pina i Estany <carles@pina.cat>. (BR 139210)
+    * "Automatically show context browser" feature makes a return, as per
+      popular request. It is however disabled by default.
+    * Improved keyboard navigation: Space key is now a shortcut for Play/Pause,
+      and cursor left/right seeks forward/backward.
+    * Cover images are shown in collection browser. Patch by Trever Fischer
+      <wm161@wm161.net>. (BR 91044)
+    * Send cover art to MTP media devices if they support it.
+    * Elapsed time can be shown in OSD. Patch by Christian Engels
+      <s9chenge@stud.uni-sb.de>. (BR 120051)
+    * New redownload manager for the Magnatune.com store. Allows re-download
+      of any previous purchase free of charge (in any format).
+    * New items in the playlist are colorized, as a visual cue.
+    * Show rating as stars in flat collection view. Patch by Daniel Faust
+      <hessijames@gmail.com>. (BR 133797)
+    * Synchronize play count, last played time and date of modification to
+      iPods. Patch by Michael <michael003@gmail.com>. (BR 136759)
+    * Propose list of composers in collection when editing the composer tag
+      from the playlist. (BR 137775)
+    * Greatly improved sound quality for the xine equalizer. Patch by Tobias
+      Knieper <tobias.knieper@gmail.com>. (BR 127307)
+    * Fancy graphical volume slider for the OSD. Patch by Alexander Bechikov
+      <goo@t72.ru>.
+    * Shoutcast stream directory. Contributed by Adam Pigg <adam@piggz.co.uk>.
+    * Support for %composer and %genre when guessing tags from filenames.
+    * Cached lyrics are now AFT-enabled, and will follow your files around as
+      you move and rename them.
+
+  CHANGES:
+    * Added configure option to build without DAAP support.
+    * Album covers are now downloaded and added to album directory when
+      purchasing from the Magnatune.com store. (BR 136680)
+    * Update context browser when a change in the collection has been detected.
+      (BR 140588)
+    * Ignore leading 'The ' when sorting playlist by artist. (BR 139829)
+    * Smart Playlists now have 'does not start with' and 'does not end with'
+      options, as well as a dropdown for mount points. (BR 139552)
+    * Support for cue files not matching audio files' name. Patch by Dawid
+      Wróbel <dawid@klej.net>. (BR 128046)
+    * Script Manager now remembers if categories were open or closed.
+    * Restart collection scanner as long as not more than 5 % of the files
+      make it crash. (BR 106474)
+    * Ensure the first selected item in the Collection Browser stays visible
+      when the search field is cleared using the clear button.
+    * Duplicate filenames are now allowed on MTP media devices if the files are
+      in different folders.
+    * Save media device transfer queue when adding items or after transfers.
+      (BR 138885)
+    * Upgraded internal SQLite to 3.3.12.
+    * MTP media devices are not automatically connected on start-up. This
+      should solve slow loading times for those with large collections on an
+      MTP media device. Contributed by Mikko Seppälä. (BR 138409)
+    * Internationalize unknown artist/album/genre strings. Contributed by Mikko
+      Seppälä. (BR 138409)
+    * Don't assume that a device returning 0 tracks is invalid. It could just
+      have no tracks on. Contributed by Mikko Seppälä. (BR 138409)
+    * Magnatune store look now matches rest of Amarok much better.
+    * Album art is displayed on the Magnatune purchase dialog.
+    * Generic media device now has an option to force VFAT-safe filenames even
+      on non-VFAT filesystems.
+    * Double-clicked items in sidebar and urls passed on the command line
+      are treated equally: append them to playlist if not yet there and start
+      playing the first if nothing is playing.
+    * "Scan Changes" button was replaced with "Update Collection" menu entry.
+    * Consistent double-click behavior in sidebar. (BR 138125)
+    * Propose name of currently loaded playlist when saving current one.
+    * Remove support for older libmtp versions. We now require 0.0.15 or
+      newer.
+    * Deleting a playlist item on an MTP media device now results in it being
+      removed from the playlist.
+    * Magnatune store is lazy loaded to improve startup times.
+    * Dynamic mode logic has been rethought to provide a faster and better
+      user experience.
+    * When checking for duplicate files on a Rio Karma media device, use
+      track number in addition to artist, album & title. (BR 137152)
+    * The XMMS visualization interface has been removed. LibVisual supersedes
+      this feature.
+    * It is now possible to select the time unit for length-based smart
+      playlists. (BR 136841)
+    * Show shadowed cover images in the system tray tooltip. (BR 136589)
+    * Amarok won't crossfade if it was paused, and user started another
+      track. Patch by Tuomas Nurmi <tnurmi@edu.kauhajoki.fi>.
+      (BR 136428)
+    * Amarok now saves playlists with relative paths by default.
+
+  BUGFIXES:
+    * Disable seeking in streams. (BR 140364)
+    * With the default theme, the playlist browser info pane would not show
+      the horizontal scrollbar if necessary. (BR 134221)
+    * Some .rm files would make Amarok crash. (BR 137695)
+    * Remember 'User Cover Art for Folder Icons' when organizing files.
+      (BR 138562)
+    * "Listening since..." has been changed to the more clear "First
+      Played..."  Patch by Andrew Ash <ash211@gmail.com>. (BR 131727)
+    * Fixed regression: the DEL key no longer worked in the
+      playlist after opening the File Browser context menu. (BR 140197)
+    * Smart playlists now work correctly with "is not" filters containing
+      numbers. Patch by Felix Rotthowe <felix.rotthowe@cs.uni-dortmund.de>.
+    * Context browser would not display updated covers correctly. (BR 130518)
+    * The select custom cover dialog no longer starts in the wrong directory
+      for compilations. (BR 131776)
+    * Amarok's xine engine would cut off approximately the last second of an
+      audio file. (BR 135190)
+    * Cue sheet would remain enabled when switching to a stream. Patch
+      by Ted Percival <ted@midg3t.net>. (BR 127683)
+    * Length of tracks wouldn't be shown correctly for some cue files.
+      Patch by Dawid Wróbel <dawid@klej.net> (BR 139707)
+    * Assume that all dots but the last in script executable files belong to
+      the script name. (BR 139460)
+    * Don't crash when quitting while initially loading the playlist.
+      (BR 136353)
+    * The same track could be queued multiple times for transferring to a
+      media device. (BR 129136)
+    * Migrate statistics for files moved from outside to the collection.
+      (BR 127776)
+    * Select All/Copy action would not copy from context browser. (BR 138635)
+    * Xine-engine: When a track was fading out (after pressing Stop), and you
+      started another track, Amarok could become unresponsive.
+    * Improved seeking with xine-engine. No longer jumps to 0 when you seek
+      too quickly. Patch by Alexander Bechikov <goo@t72.ru>. (BR 99808)
+    * Improved cover images handling for Various Artists. Patch by Tobias
+      Knieper <tobias.knieper@gmail.com>. (BR 136833)
+    * Don't enable a mount point for devices that can't support them (mtp,
+      njb).
+    * With SQLite, the search in the collection browser was case-sensitive
+      with UTF-8. Patch by Stanislav Nikolov <stanley_87@mail.ru>. (BR 138482)
+    * (Don't) Show Under Various Artists would not work when multiple albums
+      are selected. Patch by Tobias Knieper <tobias.knieper@gmail.com>.
+      (BR 112422)
+    * Changed temp download location for Magnatune purchases. (BR 137912)
+    * Fixed potential double payment issues in the Magnatune store.
+    * Only synchronize already set values to media devices. (BR 138150)
+    * Correctly update total playlist play time when removing last.fm
+      streams. Patch by Modestas Vainius <geromanas@mailas.com>. (BR 134333)
+    * File organization jobs could not be canceled. Patch by Wenli Liu
+      <wenlil@xandros.com>. (BR 136527)
+    * Sending filenames to MTP media devices as UTF-8 caused problems, use
+      Latin-1 instead.
+    * It's now possible to delete a file from an MTP media device and
+      re-upload it without having to reconnect the device.
+    * Wikipedia links to edit sections are no longer shown.
+    * Metadata is read from Rio Karma media devices as UTF-8.
+    * Last.fm streams could be paused with DCOP or global shortcuts.
+      (BR 133013)
+    * Dynamic mode can still be used after a collection rescan. (BR 133269)
+    * Dynamic mode will repopulate from all available sources. (BR 137212)
+    * Dynamic mode no longer repeats songs often. (BR 107693)
+    * When transferring files to a Generic media device, having certain
+      characters (such as '#') in a tag field could cause a directory based on
+      that field to not be created.
+    * Editing lyrics from within the context browser no longer removes all
+      linebreaks.
+    * Read metadata from MTP media devices as UTF-8.
+    * Some shoutcast streams would show an empty title. (BR 127741)
+    * Pause would act as Play/Pause. (BR 116101)
+    * The same track would sometimes be shown twice in suggested songs.
+      (BR 129395)
+    * Detect VFAT partitioned devices on FreeBSD. Patch by Daniel
+      O'Connor <doconnor@gsoft.com.au>.
+    * Favorite Tracks wouldn't be shown on Context Browser, and
+      Statistics Panel would be empty for SQLite users. (BR 136791)
+    * Volume slider in the player window would not react correctly to
+      the mouse wheel. (BR 136714)
+    * When using a proxy set by script, context browser wouldn't work
+      properly, and the application would crash when closing. (BR 112437)
+    * Proxy settings wouldn't be respected when downloading podcast
+      episodes. (BR 134028)
+    * Xine engine could hang when skipping through tracks quickly with
+      crossfade on.
+    * Fix crash when an MTP media device returned a playlist with an
+      invalid track ID. (BR 136552)
+    * The Install MP3 support script would be run regardless of what the
+      user answered to the shown dialog. (BR 136294)
+    * OSD wouldn't always show up-to-date ratings. Patch by Tuomas Nurmi
+      <tnurmi@edu.kauhajoki.fi>. (BR 125612)
+
+
+VERSION 1.4.4
+  FEATURES:
+    * Transfer .wav-files to iPods. (BR 131130)
+    * Xine and Helix engines now support three different crossfading modes:
+      always, on manual track changes only, or on automatic track changes
+      only.
+    * Manually specify local file for podcast episodes via right-click menu.
+    * Action menu entry for adding podcasts to Amarok. Based on .desktop files
+      by Harald Sitter and Fabio Bacigalupo <kde-apps.org@open-haus.de>.
+    * Open podcast items with external application from right-click menu.
+    * Synchronize listened flag for podcast between Amarok and iPods.
+    * Added integrated Magnatune.com music store. Includes artist and album
+      info and full previews of all tracks.
+    * Fade-out for xine-engine when pressing Stop. Patch by Tuomas Nurmi
+      <tnurmi@edu.kauhajoki.fi>. (BR 127316)
+    * Support downloading of files from an MTP device.
+    * Purged podcast episodes can be readded by increasing the purge number.
+    * Added rudimentary support for the Rio Karma. (BR 132713)
+    * Support creation and editing of playlists on MTP media devices.
+    * Undo/Redo functionality is now available over sessions. (BR 131072)
+    * Allow the creation of empty playlists in the playlist browser. Available
+      either from the Add button in the toolbar or the context menu of a
+      playlist folder. (BR 133543)
+
+  CHANGES:
+    * Ignore leading "The " when sorting artists on media devices. (BR 136233)
+    * Improved handling of VFAT/ASCII files and paths when organizing the
+      collection and using the Generic media device.
+    * Enable playing audio CDs on CD insert. Patch by Will Stephenson
+      <wstephenson@kde.org>. (BR 136106)
+    * Bring Amarok main window to front when starting amarok again without
+      arguments. Patch by Lubos Lunak <l.lunak@kde.org>. (BR 135396)
+    * Don't switch to playlist browser after saving a playlist from files tab.
+      (BR 130189)
+    * Add .ape and .mpc to possible file types supported by a generic media
+      device. (BR 133491)
+    * Move button for saving current playlist from playlist browser toolbar to
+      playlist toolbar. (BR 129300)
+    * Run 'kdeeject -q devicenode' when no post-disconnect command has been
+      configured for media devices.
+    * Reduced memory usage for MTP media devices. (BR 134663)
+    * Faster searching on playlist and startup, due to some optimizing in
+      string usage. Patch by Ovidiu Gheorghioiu <ovidiug@gmail.com>.
+    * Correctly translate media:, home:, ... style urls on KDE 3.5 and newer.
+    * When tracks are added to the collection and Playlist entries already
+      exist (as determined by the file tracking code), the corresponding
+      Playlist entries are updated to the new location and enabled if they
+      were previously disabled.
+    * When file tracking is updating Playlist entries, multiple entries of the
+      same song will now all be updated, instead of just one.
+    * When tracks are removed from the collection (deleted on disk or moved
+      outside of a collection folder) any corresponding entry in the Playlist
+      will be disabled.
+    * Dragging podcasts to to playlist will insert them in a chronological
+      order, so you can listen to the oldest first automatically!
+    * Improve application startup times dramaticaly by lazy loading podcast
+      episodes.
+    * Transferring tracks to an MTP device now shows a progress bar and
+      doesn't hang the rest of the UI. (only available for libmtp >= 0.0.15)
+    * Show a proper tag dialog when viewing information for DAAP music shares.
+
+  BUGFIXES:
+    * Ipod Mode on Collection Browser would have duplicated headers.
+    * Multiple problems related to Amarok using wrong playlists on Dynamic Mode
+      fixed.
+    * Deleting files from generic media devices would not update the progress
+      bar, resulting in the progress staying at 0%. (BR 130009)
+    * If nothing at all existed on a generic device, the first item
+      transferred would incorrectly show that an error had occured during
+      transfer. (BR 133528)
+    * Synchronising a smart playlist to a device when it didn't exist before
+      would crash Amarok. (BR 135956)
+    * Proxies would not take into account certain settings in KDE's Proxy
+      control center modules for PAC files and more. (BR 123021)
+    * Generic media devices would not accept files with an extension that only
+      differs in case from a supported extension. (BR 135261)
+    * Xine-engine: Pausing during crossfade would not work properly. Patches by
+      Markus Kaufhold <M.Kaufhold@gmx.de>. (BR 122514 & 135285)
+    * Stop a running cross-fading operation before starting another one. Patch
+      by Markus Kaufhold <M.Kaufhold@gmx.de>. (BR 128629)
+    * Queuing again would dequeue. (BR 121206)
+    * In some cases, the Removal and Enqueue buttons in the queue manager would
+      have no icons. (BR 115895)
+    * Don't change length of position slider when navigating within a track.
+      (BR 122569)
+    * Direct copying of non-local items would result in wrong properties on
+      iPods. (BR 135681)
+    * Honor setting to show Amarok's menu in main toolbar.
+    * "Burn this album" would burn all albums of the same name. (BR 121963)
+    * Ignore double-clicks on tree item openers. (BR 125121)
+    * Visibility of sidebar tabs would depend on the current locale. (BR 135316)
+    * Ctrl-C for copying urls from the tag editor would not work when selected
+      with the mouse. (BR 123327)
+    * Check for some integral data types for improved DAAP portability.
+      (BR 132939)
+    * Take disc number into account when checking if a song is already on an
+      iPod. (BR 135643)
+    * Editing metadata in the playlist itself now matches possible alternatives
+      case-insensitively. (BR 135683)
+    * Fix loading directory in external browser in the tag editor when the path
+      contains parentheses. (BR 132961)
+    * Stop scripts using a proxy when it's disabled in KDE. Patch by Felix Geyer
+      <sniperbeamer_disc1@fobos.de>.
+    * While playing Last.fm Streams, sometimes metadata wouldn't be updated
+      on track changes. Patch by Tom Kaitchuck <tkaitchuck@comcast.net>.
+    * Speed patch to load playlist columns from statistic tables on population
+      of the playlist, makes adding to the playlist and starting up faster.
+      Thanks Ovy <ovy@alum.mit.edu>! (BR 135324)
+    * Save MTP playlists when they are renamed so we don't lose changes.
+    * Prevent new podcastepisodes from showing up in the playlistbrowser twice
+      by opening it's parent before adding. (BR 134108)
+    * New iPods would not get initialized.
+    * Files that were detected as being added back to the collection would not
+      always be re-enabled in the Playlist. (BR 130359)
+    * Fix some spelling and layout issues. Part of a patch by Malcolm Parsons
+      <malcolm.parsons@gmail.com>.
+    * Correctly handle horizontal wheel events in position slider. (BR 119254)
+    * Don't rescan collection while transcoding. (BR 133423)
+    * Don't try to copy to collection from urls without kio slaves.
+    * Don't quit immediately if amarokrc was removed. (BR 134439)
+    * The DAAP client would crash Amarok under certain conditions when
+      kdelibs was compiled with asserts on. (BR 132851)
+    * Configuring the toolbar would disable the stop button. Patch by
+      Markus Kaufhold <M.Kaufhold@gmx.de>. (BR 132477)
+    * Changed tags of songs on iPods would not propagate to its database.
+      (BR 133842)
+    * Fixed playlist encoding problems. (BR 133613)
+    * Cover images for compilation albums can now be displayed full size in
+      the context browser.
+    * Dragging compilation albums from the collection browser or the playlist
+      would show multiple cover images in the tooltip. (BR 133916)
+    * Don't crash when calling repopulate dynamic mode from dcop. (BR 133716)
+    * Last.fm streams work with proxies. (BR 131137)
+    * Don't try to read m4a tags from apparently invalid files. (BR 133288)
+    * Some podcasts would insert line breaks in author/title information and
+      cause graphical errors. (BR 133591)
+    * File tracking could fail on files that were copies of each other but
+      with different ID3v1 or APE tags.
+
+
+VERSION 1.4.3:
+  FEATURES:
+    * New DCOP: player trackCurrentTimeMs, returns the current track position
+      in milliseconds.
+    * Amarok File Tracking (formerly ATF) goes public! See
+      http://amarok.kde.org/wiki/Amarok_File_Tracking for more information.
+    * DAAP client now supports Zeroconf. With mDNSResponder properly setup
+      Amarok automatically shows local DAAP servers.
+    * DAAP client saves manually added computers between sessions.
+
+  CHANGES:
+    * Performance with big playlists has been improved by a magnitude. This
+      also makes application shutdown faster.
+    * Remove the option to enable/disable history in dynamic mode. (BR 133076)
+    * Reduce the minimum available tracks to show to 0. (BR 131223)
+    * Change in file tracking behavior: IDs are no longer embedded into tags
+      but are calculated from a portion of the file data instead, letting
+      users with read-only music stores take advantage of it.
+    * Don't report "/dev/hd" style devices as new media devices. (BR 127831)
+    * Smart Playlists only load media from currently mounted devices.
+
+  BUGFIXES:
+    * Dequeuing tracks whilst in dynamic mode might not work. (BR 133449)
+    * When marking podcast episodes as listened, update the channel icon if
+      necessary. (BR 133497)
+    * Don't always mark podcast channel icon as "listened" on rescan if.
+      (BR 133495)
+    * User added streams were not editable once saved. (BR 133483)
+    * Cover images were not displayed in some cases. (BR 133174)
+    * Fixed bug which prevented Amarok from creating the collection database
+      in rare circumstances using SQLite. (BR 133072)
+    * Collection scanner would only restart a maximum of 2 times instead of
+      20. (fixed in SVN revision 578922)
+    * MTP media device support would not compile against libmtp versions >=
+      0.0.12. (fixed in SVN revision 576121)
+    * AudioCD playback would stutter and sometimes freeze Amarok. (BR 133015)
+    * Dynamic Collection broke flat collection view when the Filename column
+      was added (BR 132874)
+    * DAAP client shows connection errors to the user and no longer says
+      "Loading" perpetually. After a failed connection, the user can now
+      try again.
+    * Don't empty media device transfer queue when canceling a transfer.
+    * Ctrl-C for copying urls from the tag editor would not work. (BR 123327)
+    * Delete covers from the filesystem when requested.
+    * Show context menu on right-click in empty area of media device
+      browser. (BR 127154)
+    * Sort numeric columns in flat collection view numerically. (BR 130667)
+
+
+VERSION 1.4.2:
+  FEATURES:
+    * Handle itpc:// and pcast:// url protocols for adding podcast feeds.
+      (BR 128918)
+    * New DCOP call "collection: totalComposers" returns the number of
+      different composers in your collection.
+    * Synchronize playlists to media devices.
+    * Support for MTP/PlaysForSure media devices. (BR 128532)
+    * iPod plugin usable with iTunes phones. (BR 131487)
+    * Browse collection by composer. (BR 122452)
+    * New DCOP call "playlist: filenames" returns the filenames of the songs
+      currently in the playlist. Patch by Arash Abedinzadeh
+      <arash@netcologne.de>
+    * Lyrics can be edited directly on Context Browser's Lyrics tab.
+    * Collection browse mode similar to that used by some portable players.
+      Patch by Joe Rabinoff <bobqwatson@yahoo.com>. (BR 130586)
+    * BPM field. Patch by Alf B Lervåg <alfborge@gmail.com> and Aaron
+      VonderHaar <gruen0aermel@gmail.com>. (BR 123142)
+    * Improved crossfading for xine-engine: Honours the 'Crossfade Length'
+      setting precisely, and uses a better mixing style profile. Patch by
+      Enrico Ros <koral@email.it>.
+    * Media and collection browser tabs now support dropping.
+    * Allow for deleting all the tracks on a playlist from iPods. (BR 127855)
+    * Ability to create custom last.fm station from the GUI.
+    * Ability to mark podcasts as listened.
+    * Show error messages when connecting to last.fm streams fails.
+    * A new media device implements a DAAP client. So Amarok can connect
+      to iTunes, Firefly Media Server etc. (BR 100513)
+    * Dynamic Collection: improved support for songs on removable external
+      harddisks, SMB and NFS shares
+
+  CHANGES:
+    * Skip tracks that failed to transfer to media devices instead of stopping
+      transfer process. (BR 130008)
+    * libtunepimp 0.5.0 actually compiles successfully now.
+    * Lift size limit on pathnames and comments in collection databases not
+      managed by MySQL. (BR 130585)
+    * Generic media device plugin is improved. Users can configure supported
+      filetypes and get more control over the location of songs and podcasts
+      on disk (Patch by eute).
+    * Move composer tag to its own database table.
+    * Re-enable adding videos to iPods with recent libgpod-cvs. (BR 130117)
+    * Include Skip, Love and Ban in playlist right-click menu for last.fm
+      streams.
+    * Advanced Tag Features (ATF) deferred to 1.4.3: Public release delayed
+      pending some bug fixes in both Amarok and a dependency. It will be
+      automatically disabled the first time you run 1.4.2 if you had it enabled
+      from 1.4.2-beta1. (It will still be available in subversion snapshots.)
+    * Optionally finish transferring all queued tracks to media device after
+      pressing disconnect button. (BR 129716)
+    * It's now possible to edit scores and ratings for multiple tracks in
+      TagDialog.
+    * TagDialog won't make Amarok unresponsive while committing tags changes
+      to files anymore.
+    * Exact playtime as tooltip in statusbar. Patch by Markus Kaufhold
+      <M.Kaufhold@gmx.de>. (BR 130463)
+    * Suspend collection rescanning while organizing files. (BR 129885)
+    * Always use metadata from original file for transcoded files transfered
+      to media devices. (BR 131171)
+    * Enhancements to ATF/statistics to allow for better tracking of stats as
+      files are moved.
+    * Tag Editing Dialog is now ATF-enabled.
+    * In-line tag editing is now ATF-enabled.
+    * Previously, using ATF with MP3 files would wipe out existing UFID frames
+      from other applications. Now Amarok plays nicely and only touches its
+      own UFID frame.
+    * ATF no longer requires a restart to enable or disable it.
+    * ATF read-only functions are always enabled if a UID is found in the
+      file. Option in the configuration dialog now only controls whether new
+      UIDs are written to new files.
+    * ATF will now automatically run the rescan and clear the Playlist only on
+      the first time it is enabled.  After that it will simply display an info
+      reminding users that they may need a rescan if their library has changed
+      since the last time it was enabled.
+
+  BUGFIXES:
+    * DCOP calls to add and remove ATF tags are no longer allowed to run while
+      the collection is being scanned.
+    * Last.fm streams no longer freeze Amarok's GUI with xine-engine.
+    * Sometimes metadata wasn't updated with Last.fm streams.
+    * Update context browser on score and rating changes. (BR 132496)
+    * Double colons in the collection filter would lead to invalid queries.
+      (BR 132551)
+    * Handle changed semantics of MySQL 5.0.23+ (BR 132114)
+    * Do not try to detach() KURLs, as this would not work for non-ascii urls.
+      (BR 132355)
+    * Adding songs while at end of playlist could crash in dynamic mode.
+      Patch by Joe Rabinoff <rabinoff@post.harvard.edu>. (BR 128340)
+    * Don't update accessdate when setting songs rating or score. (BR 132274)
+    * Increasing or decreasing volume while muted would not correctly unmute.
+      (BR 132228)
+    * Better resize behavior in iPod collection view mode. Patch by Joe Rabinoff
+      <bobqwatson@yahoo.com> (BR 132016)
+    * Make sure a track's compilation status is returned properly when running
+      with Postgresql.
+    * Check directory structure on iPods of unknown type in order to detect
+      iTunes phones. (BR 131910)
+    * Make 'Clear' individually translatable for playlists. (BR 131521)
+    * Retain column visibility for flat collection view. (BR 126685)
+    * Honour proxy exceptions for MusicBrainz lookups. Patch by N. Cat
+      <trisk-bug@quasarnet.org>. (BR 131377)
+    * Correctly pass links containing parentheses to external browsers. Patch
+      by Thomas Lindroth <tholi945@student.liu.se>. (BR 131307)
+    * iPods would not show podcast descriptions. (BR 129824)
+    * Carry over rounding increments to next larger unit for fuzzy time
+      display. (BR 131383)
+    * If disabled, don't show splash screen - even on Kubuntu. (BR 125210)
+    * Correctly request last.fm similar artist information for artists
+      containing non-ASCII characters. Patch by Thomas Lindroth
+      <tholi945@student.liu.se>. (BR 131254)
+    * Support non-chronologically ordered podcast feeds. (BR 119911)
+    * Support for libvisual 0.4.0 was fixed. Patch by Dennis Smit.
+    * Adding songs already on a media device to playlists would not work.
+    * Fix adding smart playlists to media devices. (BR 130540)
+    * Reverse check for mount point and device node when connecting to iPods
+      for better handling of device nodes pointed to by symlinks. (BR 129965)
+    * Make handling of filenames on iPods case-insensitive and thus fix
+      fix problems with too many orphaned and stale items. (BR 126431)
+    * Correct action of queueing current item in dynamic mode. (BR 130313)
+    * Double clicking in the filebrowser will append to playlist. (BR 117465)
+    * Fixed problems with last.fm streams containing spaces, e.g. "Hip Hop".
+    * When generic media devices were specified manually, transferred files
+      would not always get converted to VFAT-friendly names if they were on a
+      VFAT filesystem.
+    * When using ATF, tags in MP3 files would be written as ID3v2 only and
+      existing ID3v1 tags would be stripped, which could lead to media devices
+      and tagging libraries that were not ID3v2.4-aware to report that no tag
+      existed.  Now both tags are written with identical data.
+    * Correct handling of filenames with special characters. (BR 132243)
+
+
+VERSION 1.4.1:
+  FEATURES:
+    * Support for last.fm streams. (BR 111983)
+    * New playlist toolbar menu entry for adding streams to the playlist.
+      (BR 129349)
+
+  CHANGES:
+    * Upgraded internal SQLite to 3.3.6.
+    * Inotify support disabled for now, due to stability issues.
+    * Tag editor is no longer modal.
+    * Provide warning dialog when deleting items from the playlistbrowser.
+      (BR 129313)
+    * GUI layout reverted to the classic Amarok layout.
+    * The Extended Info panel in the playlistbrowser is now resizeable.
+
+  BUGFIXES:
+    * Pressing return in the search bar of the Collection Browser immediately
+      after typing a query no longer appends the wrong items to the playlist.
+    * Fix crash when pressing Back or Forward buttons multiple times quickly
+      in Artist tab. Patch by Thomas Lindroth <tholi945@student.liu.se>.
+    * Fix problems where blanks would be added to data if SQLite was busy.
+      Patch by Thomas Lindroth <tholi945@student.liu.se>. (BR 127608)
+    * Automatically refresh stream lyrics on new metadata.
+    * Set half star ratings on multiple selected tracks when clicking on an
+      item. (BR 129449)
+    * Only enable Show Extended Info in the Playlist Browser when information
+      is available. (BR 126590)
+    * Disable global shortcut for ratings when ratings are disabled.
+      (BR 129414)
+    * Autodetect button in Media Devices configuration dialog would not
+      properly signal changes, so that new devices were not always saved.
+
+
+VERSION 1.4.1-beta1:
+  FEATURES:
+    * Much improved and completed custom icon theme by Vadim Petrunin
+      <vnizzz@gmail.com>.
+    * LibVisual 0.4 supported and required.
+    * Support for custom scoring algorithms, via scripts.
+    * Creative Nomad Jukebox support (untested!). Submitted by Andres Oton
+      <andres.oton@gmail.com>. (BR 103185)
+    * Inotify support. On kernels 2.6.13 and above with Inotify support
+      compiled in, the collection will automatically be rescanned and
+      updated as soon as a watched folder has changed.
+
+  CHANGES:
+    * First-run wizard can no longer be restarted from the application menu.
+      However, it can still be invoked with "amarok --wizard".
+    * Astraweb lyrics script was removed for being crappy and unmaintained. If
+      you want to maintain it, grab it from SVN and release on kde-apps.org.
+    * "Append Count" option of dynamic playlists has been removed. It is
+      now always one. (BR 120044)
+    * Context browser can now play/queue specific discs of an album or
+      compilation.
+    * Automatically imported playlists go into a separate category.
+    * Block quitting amaroK until all on-going media device operations have
+      finished with a consistent state.
+    * Interface choice in wizard removed.
+    * MoodBar has been removed. The maintainer has not been updating it, and
+      it was causing crashes for many people.
+    * Usability improvements for the Script Manager, including a tree view.
+    * Use KMimeType for resolving file type for metadata acquisition before
+      falling back to extension based guessing.
+    * Removed the "detailed mode" in the playlist-browser.
+    * Also copy non-local URLs to collection when dropped onto collection
+      browser.
+    * Speed up connecting media devices with a lot of tracks to be submitted
+      to last.fm.
+    * For media without metadata, try to read metadata after transfer to
+      the iPod (e.g. when copying an audio CD via KIOslaves).
+    * Hint at starting a transcode script for transcoding while transferring
+      to media devices. (BR 127155)
+    * If a disc number is present, append it to the album's name when
+      organizing files. (BR 126867)
+    * Configure, which of fresh podcasts, newest & favorite albums are shown
+      in context browser home view. Patch by Patrick Muench <s7mon@web.de>.
+      (BR 127043)
+    * Dynamic mode no longer skips to the next song if you press play (via
+      dcop, for instance) while already playing a track. Instead it restarts
+      the current one.
+    * The Actions menu has been renamed the Engage menu. It's way cooler,
+      right? I mean, Star Trek is really cool, right?
+    * Multiple podcasts can be configured at once by selecting multiple channels
+      or by configuring the children of a folder.
+
+  BUGFIXES:
+    * Allow dropping of tracks after non-existant items in the playlist.
+    * Make changes to the default dynamic playlists persistent.
+    * Send UTF-8 encoded requests to Wikipedia. Thanks to Thomas Lindroth
+      <tholi945@student.liu.se> for the patch. (BR 127654)
+    * Correctly restore podcast channel title when fetching fails.
+    * Show error message when xine mp3 decoder isn't installed, don't just
+      play next track.
+    * Properly render and optimise playlist loading icons.
+    * Properly import and export XSPF playlist formats.
+    * Optimise addition of playlists to the playlistbrowser.
+    * In context browser, show localized date for podcasts. (BR 127853)
+    * Regression in dynamic mode caused it to skip the first track in the
+      playlist whenever it was started. (BR 127451)
+    * Stop Playing after Track: remember current track (BR 127312)
+    * Radio streams were broken for protocols other than HTTP. (BR 127848)
+    * Collection Browser would not set/unset/burn albums with ', The' in
+      their name.
+    * Prevent breakage when xine couldn't initialize the audio device. Patch
+      from Ilya Konstantinov <kde-bugzilla@future.shiny.co.il>. (BR 115960)
+    * Allow for recognition of the webdav protocol. Patch by Ilya
+      Konstantinov <kde-bugzilla@future.shiny.co.il>. (BR 126847)
+    * Setting a rating on an unplayed track would affect score generated.
+      Patch by Patrick Muench <s7mon@web.de>. (BR 127475)
+    * Stop tags with different capitalisation being treated as the same
+      when building the collection.
+    * Make database connections actually get closed when no longer used.
+      (BR 123113)
+    * xine engine would truncate the last seconds of a track, if no other
+      track followed in the playlist.
+    * Fixed AudioCD playback with xine-engine. Patch by Markus Kaufhold
+      <M.Kaufhold@gmx.de>. (BR 127388)
+    * If dynamic mode was turned on and then off, the previous random and
+      repeat modes would be forgotten. (BR 123743)
+    * Removing the current track through DCOP while editing a field of the
+      track in the playlist would cause a crash. (BR 119152)
+    * Make characters encoded with % (such as a forward slash, %2f) display
+      correctly. (BR 105266)
+
+
+VERSION 1.4.0:
+  FEATURES:
+    * New DCOP call "player: version()". Returns the amaroK version.
+    * iFP has persistent settings when transferring tracks to the device.
+    * GStreamer-0.10 engine now supports Audio CDs.
+    * Context menus for entries in the statistics tool. (BR 124945)
+
+  CHANGES:
+    * Composer, Disc Number and File Size columns in flat collection view.
+    * 'k' or 'm' suffixes for matching filesize in kibi or respectively mebi
+      bytes.
+    * Groupings when transferring files to media devices are now persistent.
+      (BR 127158)
+    * Transfer contents of smart playlists to media device without adding
+      them to a playlist. (BR 126997)
+    * Set %albumartist to Various Artists, but keep %artist as the track's
+      artist when organizing compilations. (BR 126936)
+    * Discard empty tokens surrounded by {} in custom organize file format.
+      (BR 124337)
+    * GStreamer-0.10 engine was disabled for this release (not yet stable).
+    * Only pick genres for Smart playlists that exist in your collection.
+    * VFAT plugin completely rewritten since 1.4beta3. Name is now changed to
+      "Generic Audio Player" to make it less needlessly technical.
+    * Don't limit the number of episodes shown with a new podcast, since the
+      user can limit the number shown afterwards by configuring the channel.
+    * Automatically populate the playlist with items if it is empty when a
+      dynamic playlist is loaded. (BR 126594)
+    * Unplayed/unrated tracks are no longer shown in the statistics dialog.
+    * Removed the option "Import Playlists". It's now always enabled.
+    * Show total track time in context browser (BR 126548)
+    * Derive filename for downloaded podcast episodes from their url in the
+      rss feed. (BR 125966)
+    * Only show albums/artists/genres with more than 3 tracks when listing
+      favourite albums/artists/genres. (BR 126435)
+    * libtunepimp 0.5 compiles successfully.
+    * Podcasts are automatically configured to be checked for updates.
+    * Show only 2 decimal places for scores in the statistics module.
+    * Replace 'Move to Collection' in file browser context menu by 'Organize
+      Files' for collection directories. (BR 125702)
+    * Removed the option "Show Status Bar". It's now always enabled.
+    * Tracks from a media device scan be submitted to last.fm immediately,
+      without waiting for tracks to be played in amaroK. Patch by Iain
+      Benson <iain@arctos.me.uk>. (BR 125690)
+    * Any failed attempts to submit to last.fm are now automatically retried
+      in the background, without waiting for new tracks to be played.
+    * Smart playlists can be constructed using mixed ALL and ANY matches
+      (BR 124483)
+    * Configure media devices in global settings, disable media browser when
+      no media device is configured.
+    * Dynamic Playlist bar made more conspicuous.
+    * The Konqueror setting to show a 'delete' entry in the menu is now
+      respected, if the setting exists and KDE is version 3.4 or higher.
+    * Cover art from m4a files. Updated m4a taglib patch by Jochen Issing
+      <jochen@isign-softart.de> and patch by Shane King
+      <kde@dontletsstart.com>. (BR 125414)
+
+  BUGFIXES:
+    * The playlist would incorrectly sort after using the queue manager in
+      dynamic mode.
+    * Sort disc numbers numerically (BR 127114)
+    * Smart Playlists using 'last played time' now filter correctly.
+      (BR 127145)
+    * If "Transcode Whenever Possible" was selected for transferring to media
+      devices, if the file was in the device's preferred format, transcoding
+      would not take place.  Thanks to Ants Aasma for the patch. (BR 127109)
+    * Fix possible loss of database after changing settings. (BR 126880)
+    * Only include audio files when expanding directories. (BR 126765)
+    * Correctly handle 'Cancel' in confirmation dialog for deleting items
+      from media devices. (BR 126989)
+    * Smart-Playlist random mode was not 'sticking'. (BR 126877)
+    * Statusbar log files would only ever write to the first log after all
+      four logs had been filled.
+    * iFP: Don't pretend to add newly transferred files to wrong folders.
+    * Set a podcast as listened only when it really has been listened to.
+    * All tracks from a cuesheet will now submit correctly to last.fm.
+      (BR 114969)
+    * xine-engine will now correctly detect a change when only one of the
+      artist or album metadata changes. Patch by Kim Rasmussen
+      <kml@elreki.net>. (BR 126648)
+    * Less than and between criteria in a smart playlist for playcount, rating
+      or score of 0 now work. (BR 97046)
+    * Empty genres are no longer displayed in the collection browser.
+      (BR 126495)
+    * Fix regression causing drag and drop of playlist track items in the
+      playlistbrowser to be functionless. (BR 126387)
+    * Fix regression causing podcast purge property to be ignored. (BR 126194)
+    * Automatically convert MySql/PostgreSql passwords from 1.3 to 1.4 state.
+    * Popup Messages would flicker when being shown.
+    * Some 1.3 podcasts wouldn't get transferred to 1.4 settings.
+    * New podcasts didn't get a default save location. (BR 126196)
+    * Fixed encoding problems with lyrics scripts.
+    * Mark/unmark as compilation is now stored in the file tag so it is
+      remembered when the colection is rescanned. (BR 120428)
+    * Submissions from media devices are timestamped so as to be less likely
+      to conflict with submissions from another last.fm client. (BR 125367)
+    * The MySQL connection will no longer time out when idle. (BR 120198)
+    * Load manually configured media devices even after failed DCOP queries.
+      Patch by Iain Benson <iain@arctos.me.uk>. (BR 125692)
+    * Copy/move to collection recurses into directories. (BR 125334)
+    * Amazon no longer tries to refetch invalid entries. (BR 125168)
+    * Skip hidden directories while scanning the collection. (BR 115478)
+    * Instead of cancelling collection organiziation operations when starting
+      new one append to running one.
+    * Correctly show &amp; in playlist 'Burn' right-click submenu. Patch by
+      Laszlo Pandy <laszlok2@gmail.com>. (BR 125117)
+    * Disable option to delete remote items in playlist right-click menu.
+      (BR 124745)
+    * Reload playlist browser podcasts when switching database engines.
+    * Podcast tables recreated on startup if they don't exist.
+
+
+VERSION 1.4-beta3:
+  FEATURES:
+    * amaroK now supports multiple media devices of varying types (currently
+      iPods, UMS/VFAT, and iFP devices).
+    * Autodetection of iPods and UMS/VFAT devices (if KDE has HAL/DBUS support
+      compiled in).
+    * New DCOP call "devices: showDeviceList()" to show the Device Manager's
+      current device knowledge.
+    * amaroK now has a custom icon theme, and an option to switch back to the
+      system icons, if preferred (in the General settings section).
+    * Collection browser view is separated alphabetically. Patch by
+      Christian Hoenig <list@hoenig.cc>.
+    * Ease navigation with track slider below playlist window by showing mood.
+      (BR 121715)
+    * Show context information for podcasts.
+    * Filebrowser: toolbar button to change to the directory of the currently
+      playing song. (BR 115479)
+    * Added "Play Audio CD" entry to the amaroK menu. (BR 103409)
+    * GStreamer-0.10 engine now supports visualizations.
+    * xine-engine: Show metadata for ogg vorbis streams. (BR 122505)
+    * Drag and drop podcast urls directly onto podcast folders for addition.
+    * Add media directly into directories for iRiver ifp devices.
+    * Button to directly edit lyrics from the context browser. (BR 123515)
+    * Support for SMIL playlists. (BR 121983)
+    * Support for WAX playlists. (BR 120980)
+    * Handle the Year tag when playing AudioCDs. Patch by Markus Kaufhold
+      <M.Kaufhold@gmx.de>. (BR 123428)
+    * Ignore 'The ' in artist names when sorting in the cover manager, as per
+      the collection browser. (BR 122858)
+    * Add autocompletion to the composer field in the tag dialog. (BR 123026)
+
+  CHANGES:
+    * In context browser, show information about recently updated podcasts,
+      recently added and favourite albums when nothing is playing.
+    * Ratings can now have half stars: click again on the last star in the
+      rating to toggle it between a half and a full star.
+    * Improved handling of embedded cover art, utilizing the database. Patch
+      by Shane King <kde@dontletsstart.com>. (BR 124563)
+    * Statistics tool has had numerous improvements.
+    * Optimise: Only rerender the CollectionBrowser when relevant.
+    * Disable detection of iPod model and thus solve g_object_get related
+      problems. (BR 121990)
+    * Don't block GUI when trying to transfer large numbers of items already
+      on media device. (BR 123570)
+    * Update playlist items when their location is changed during organizing
+      files. (BR 123752)
+    * Recursively add tracks when directories are dropped to the media browser
+      and the collection browser. (BR 123982)
+    * Visualizations now receive stereo data from amaroK. (BR 118765)
+    * Upgraded internal SQLite library to version 3.3.4.
+    * Podcast information is stored in the database.
+    * Improved password handling in the PostgreSQL config dialog. Patch by
+      Peter C. Ndikuwera <pndiku@gmail.com>. (BR 118304)
+
+  BUGFIXES:
+    * Expand-By smart playlists were returning the wrong number of values.
+    * Fix display of media device transfer queues larger than 4 GB. (BR 125247)
+    * Fix duplicate detection when transferring to media device for tracks having
+      empty album tags. (BR 125203)
+    * Fix spuriously garbled collection scans. Patch by Shane King
+      <kde@dontletsstart.com>. (BR 125114)
+    * Fix error with 'Back' link when browsing related artists. (BR 123227)
+    * Files with names containing '#' or '?' from smart playlists would not
+      get transferred to media device. (BR 122488)
+    * Stop Playing After Track option wouldn't be shown for the right tracks,
+      when there were queued tracks. Patch by Marcelo Penna Guerra
+      <eu@marcelopenna.org>. (BR 124297)
+    * Don't submit podcast episodes to last.fm. (BR 118987)
+    * Accept system:/media/ urls into the playlist. (BR 120249)
+    * Fix leak of file descriptors with embedded cover art. Patch by Shane
+      King <kde@dontletsstart.com>. (BR 123472)
+    * Stop collection folders being automatically removed. Instead, allow
+      user to remove non-existent folders by deselecting parent. (BR 123745)
+    * Stop delete key in playlist deleting last deselected item. (BR 123265)
+    * xine-engine: Show bitrate and samplerate for CD-Audio and WAV. Patch by
+      Markus Kaufhold <M.Kaufhold@gmx.de>. (BR 123625)
+    * Some podcasts would cause amaroK to hang.
+    * Check if directories still exist when showing Collection directories.
+      (BR 123834)
+    * Playlist popup menu had a visual glitch with Lipstik and (probably)
+      earlier versions of Plastik.
+    * Fixed a huge memory leak when using xine-engine with crossfading.
+      (BR 119230)
+    * Sometimes iRiver devices would crash upon disconnecting. (BR 123416)
+    * Adjust the Astraweb lyrics script for a layout change on the site. Patch
+      by Andrew Turner <andrewturner512+kdebugs googlemail com>. (BR 123636)
+    * Directory selection would incorrectly highlight a directory in a
+      corner case. (BR 123635)
+    * Don't pretend to be able to uninstall default ContextBrowser themes.
+      (BR 123585)
+    * Fix preamp and frequency band scaling in the xine equalizer. Patch by
+      Tobias Knieper <tobias.knieper@gmail.com>. (BR 116633)
+    * OSD text would not be stripped of empty lines.
+    * Playlist couldn't be shuffled if queued items existed. (BR 120221)
+    * Fixed renaming of Smart Playlists. (BR 122509)
+    * Fixed some bugs with PostgreSQL and Smart Playlists. Patch by Peter C.
+      Ndikuwera <pndiku@gmail.com>. (BR 123317)
+    * Escape invalid characters when transferring files to IFP devices.
+      (BR 123199)
+    * Escape newline characters when showing detailed information for podcast
+      items in the playlistbrowser. (BR 123109)
+
+
+VERSION 1.4-beta2:
+  FEATURES:
+    * Equalizer for the GStreamer-0.10 engine.
+    * Crossfade in the helix engine!
+    * The build date is shown in the "About amaroK" dialog.
+    * Show album covers when dragging playlist items. Patch from Jonas
+      Hurrelmann <j@outpo.st>.
+
+  CHANGES:
+    * Summarize transfer failures to media devices instead of a message for each.
+      (BR 122491)
+    * Don't list the <no engine> entry in the engine selection widget, when
+      it's not the active engine. Makes no sense to select this dummy engine.
+    * The aRts and GStreamer-0.8 engines have been removed for being obsolete.
+    * Automatically skip to the next track in the playlist when a track is
+      unplayable. (BR 116555)
+    * Don't check for collection changes on startup if Watch Folders is
+      disabled. (BR 116173)
+
+  BUGFIXES:
+    * Handle .m4a files as audio when transferring to iPod video. (BR 122492)
+    * Smart playlists would not transfer to media devices. (BR 122838)
+    * Assume that .mp4 files are audio only when transferring to iPod. (BR 122591)
+    * Dereference symbolic links when transferring to iPod. (BR 123206)
+    * Correct domain for japanese wikipedia locale. (BR 122319)
+    * When deleting a downloaded podcast, the icon wouldn't be updated.
+      (BR 122440)
+    * Manage Files would create duplicates on collection. (BR 122519)
+    * On Statistics Dialog, Compilations would be shown with a random artist,
+      and dragging to playlist would add only the tracks by that artist.
+      (BR 122363)
+    * When editing current dynamic playlist, the adjusting of upcoming tracks
+      could be faulty. (BR 122401)
+    * Changing database on First-Run Wizard wouldn't work.
+    * When loading M3U playlists containing "." or "..", amaroK failed to
+      detect that the files are in the collection. Patch by Ted Percival
+      <ted@midg3t.net>. (BR 121046)
+    * Konqueror sidebar would show garbage for people not using UTF-8 locales.
+      (BR 122395)
+    * "Open in External Browser" in the lyrics tab works now.
+    * Lyrc lyrics script handles tick characters correctly.
+    * Crash on startup when upgrading from 1.3, using MySQL. (BR 122042)
+    * No more crash on exit or deleting podcast.
+    * Handle metadata for .aac files as mpeg instead of mp4. (BR 121852)
+
+
+VERSION 1.4-beta1:
+  FEATURES:
+    * AudioCD (CDDA) support for xine-engine, including CDDB lookup. Patch by
+      Alberto Griggio <alberto.griggio@gmail.com>. (BR 121647)
+    * The Helix engine now supports direct alsa playback using Realplayer 10.
+    * New DCOP call "player: setVolumeRelative(int ticks)".
+    * Options for Random Mode to favor tracks with a higher rating, score, or
+      ones less recently played.
+    * Support for playing entire albums. This works just like normal, except
+      when choosing the next track, it'll go to the next track from the album
+      it finds in the playlist, or the first track of another album otherwise.
+    * Support for plain VFAT devices in the Media Device browser.
+    * You can now mousewheel over a track's queue label to change its position
+      in the queue.
+    * Added a time-filter to the CollectionBrowser. Now you can make it show
+      only those tracks, which have been added to your collection within the
+      last day, week, month or year.
+    * Fit to Width for the playlist columns is now optional (accessible in the
+      context menu for the column headers).
+    * On-the-fly transcoding when transferring to media devices, provided
+      that an appropriate transcoding script is running.
+    * Handle compilations as such on iPods.
+    * New DCOP calls "mediabrowser: ..." for interfacing with media devices.
+    * Multiple simultaneously connected media devices.
+    * Lyrics support is now scriptable. This allows to add support for any
+      lyrics site, and makes it possible to provide upgrades. (BR 94437)
+    * New DCOP call "contextbrowser: showLyrics(string)".
+    * New 'File Size' column in the playlist.
+    * Amarok now supports ASX playlist files. (BR 114051)
+    * New DCOP call "collection: isDirInCollection(const QString& path )".
+    * New DCOP call "playlist: removeByIndex(int)". (BR 119143)
+    * For mp3, aac/mp4, and ogg vorbis, it's possible to use Disc Number and
+      Composer tags. (BR 110675) (BR 90503)
+    * For xine-lib 1.1.1 and greater, xine engine has gapless playback. amaroK
+      is now "The Wall" compatible. (BR 77766)
+    * Option for selecting external web browser in amaroK. No longer requires
+      KDE-Base. (BR 106015)
+    * Press Enter in the Collection Browser filter to send all the visible
+      tracks to the playlist.
+    * Hold Ctrl while pressing Enter in the playlist's filter to apply to all
+      visible items instead of just the first, and Shift to only queue and not
+      play them.
+    * Tags can be edited inline in the playlist by clicking on a single selected
+      item.
+    * Switchable Wikipedia locale. (BR 104383)
+    * Initial port of GStreamer engine to GStreamer 0.10.
+    * Drag albums and compilations from context browser to media device and
+      playlist browser.
+    * Browse your collection and other related artists with context browser.
+    * Copy artwork to iPods capable of displaying it.
+    * Show extended podcast info on iPod.
+    * Optionally update playcount for items played on iPod and submit them
+      to last.fm and synchronize ratings between amaroK and iPod.
+    * Tracks can now be rated from 1-5 stars manually, in addition to the score
+      which amaroK calculates automatically based on your listening habits. You
+      can use the 'Rating' column and Win+1..5 to change the rating.
+    * Ability to copy items from iPod and from filebrowser to collection.
+    * New 'Last Played' column in the playlist, showing when the track was last
+      played. (Like in the Context Browser.)
+    * Browsers can be now accessed with keyboard shortcuts, Ctrl+1..5.
+      Also Ctrl+0 to close the current one, and Ctrl+Tab to switch the focus
+      between the playlist and the active browser.
+    * Downloaded podcast episodes can be deleted from the context menu.
+    * New DCOP call "player: osdEnabled".
+    * Add contents of smart amaroK playlists as playlist to media device.
+    * Mediabrowser support for the iRiver iFP series!
+    * New dcop call playlistbrowser loadPlaylist. (BR 110082)
+    * New Edit Track Information dialog. Lyrics can be edited there, comments
+      can have more than one line, some statistics and tag guessing from
+      filename. (BR 93982)
+    * Show/hide browsers via context menu. (BR 110823)
+    * Display disk space on media device.
+    * Copy standard and amaroK playlists to media device.
+    * Create playlist from items transferred to iPod.
+    * Edit dumb iPod playlists with media browser.
+    * Ability to read audible.com .aa file metadata and to transfer audiobooks
+      to iPod via file browser.
+    * Optionally add new podcasts to media device transfer queue on download
+      and remove podcasts already listened to on media device connect.
+    * Add podcast shows to the Podcast folder on iPods.
+    * Persistent media device transfer queue.
+    * Incremental update of media device view.
+    * Automatic scanning for stale and orphaned iPod items.
+    * Moodbar!
+    * configure: report not included extra features (BR 115057)
+    * Ability to uninstall context-browser themes. (BR 111449)
+    * More columns available in the Flat View of the Collection Browser.
+    * New Collection Scanner, running in an external process. No longer can
+      amaroK crash while scanning the Collection :)
+    * Statistics tool!
+    * Dragging external playlists into the playlist browser will add them.
+    * NMM engine now has a configure dialog.
+    * Collection scanner now supports WMA, MP4/AAC, and RealMedia (RA,RV,RM).
+    * You can now Organize Music from the Collection Browser, to move and
+      rename files to a logical place in your collection folders based on their
+      tags.
+    * Option to crossfade only on manual track changes. Useful for listening
+      to consecutive tracks on a single album.
+
+  CHANGES:
+    * Dynamic Mode is now stateless, meaning there's no Dynamic Mode any more,
+      only loading and unloading of Dynamic Playlists. There's also now a nice
+      info bar above the playlist when a Dynamic Playlist is loaded.
+    * The major huge context menu used for hiding/showing columns in the
+      playlist has been replaced with a shorter one and a nice dialog.
+    * Elapsed time / length in the systray tooltip now updates in real time as
+      the song progresses.
+    * Tooltips in the playlist for truncated text are now shown directly above
+      the text, giving the effect of it being expanded to its full length.
+    * The option for restarting scripts automatically at startup is removed, as
+      it is now the default behaviour.
+    * Reduced memory usage for large playlists to under 30% of pre-1.4 versions.
+      (Measured as the difference in memory usage between an empty playlist and
+      loading the 'All Collection' smart playlist.)
+    * Import iTunes album art from directories.
+    * Media Devices (Apple iPod, iRiver iFP, ...) are now handled with plugins.
+    * New default image for albums with no cover art.
+    * When tabbing between cells while editing tags in the playlist, autosave
+      the contents of the previous tag you edited, so you don't have to
+      constantly go in and out of editing mode to edit lots of tags.
+    * When saving playlists, if there's already one with the same name, instead
+      of complaining about it, smartly append (2), (3), etc. to the end.
+    * 'Stop Playing After Track' now has a shortcut (Ctrl+Alt+V), and a global
+      shortcut for the currently playing track (Ctrl+Win+V).
+    * Various keyboard usability and focus tweaks so using amaroK with the
+      keyboard is nicer.
+    * Upgraded internal SQLite database library to version 3.2.7.
+    * Recoding mp3 tags has been removed due to many unjustified
+      complications.
+    * Viewing track information of remote media will show the url.
+    * "Update"-button is now hidden in the collection browser if "Watch
+      folders for changes" is enabled in the options.
+    * Playlist Browser now remembers which entries were open across startups.
+    * The tooltip and the menu from the queue icon in the statusbar now shows
+      the total length of the queued tracks.
+    * The Home tab has been merged into the Current tab, now called Music.
+    * New look for the current track marker in the playlist. Pimp my roK!
+    * When turning either random or dynamic mode on, turn the other off,
+      instead of completely disabling random mode when dynamic is on.
+    * libgpod from gtkpod replaces kio based iPod support for improved
+      compatibility with various iPod models.
+    * Podcast settings are hierarchical now, meaning you can set settings
+      for the category's, newly added podcasts take the settings from there parent category.
+
+  BUGFIXES:
+    * Dragging text to a filter line edit would still show the "Filter
+      Here..." text in the background. (BR 108876)
+    * Don't show an empty playlist length holder in the statusbar.
+    * Allow for % and _ in tags, and filter them correctly.
+    * Do not copy files of types an iPod is not capable of playing to the
+      iPod. (BR 117486)
+    * Also take track number into account when comparing tags for checking
+      if a track is already present on iPod. (BR 117380)
+    * iPod nanos would not switch off during playing songs added with amaroK
+      because of their file size not being set.
+    * "Show Fullsize" now works for ID3 embedded cover images. (BR 114517)
+    * Fix possible bug when saving unencoded podcasts to strange file systems.
+    * OSD Preview did not update colours when toggling 'Use custom colours'
+      option. (BR 115965)
+    * Cached lyrics are not erased when rescanning. (BR 110489)
+    * No more "can't create amazon table" warnings. (BR 113930)
+    * Creating a new playlist via drag-and-drop no longer shows duplicates
+      of each song until amaroK is restarted.
+
+
+VERSION 1.3.9:
+  FEATURES:
+    * Support for libtunepimp 0.4. (BR 94988)
+
+  BUGFIXES:
+    * Fix leak of file descriptors with embedded cover art. Patch by Shane
+      King <kde@dontletsstart.com>. (BR 123472)
+    * Playlist popup menu had a visual glitch with Lipstik and (probably)
+      earlier versions of Plastik.
+    * Fix preamp and frequency band scaling in the xine equalizer. Patch by
+      Tobias Knieper <tobias.knieper@gmail.com>. (BR 116633)
+    * Fixed a huge memory leak when using xine-engine with crossfading.
+      (BR 119230)
+    * Fix memory leak in the helix engine when the player and playlist are
+      not visible.
+    * Stream with URLs containing "&" wouldn't be correctly saved.
+      (BR 121846)
+    * Playlist Browser would save invalid PLS Playlists. (BR 122875)
+    * Refresh All Podcasts wouldn't consider subfolders. (BR 122783)
+    * When using a folder as playlist, deleting the playlist would delete
+      the folder and all files inside it. (BR 122480)
+    * OSD was showing "No track playing" for tracks without metadata.
+    * Smart Playlists with playcount or score related conditions wouldn't
+      match all songs properly. (BR 97046)
+    * With enormous queues, stop menu would take a lot of time to show up.
+      (BR 120677)
+
+
+VERSION 1.3.8:
+  BUGFIXES:
+    * NMM engine would crash when seeking after the playlist finished,
+      state Empty wasn't emitted.
+    * Fixed URL of the Nectarine radio stream.
+    * Fix crash after changing the alsa device in the helix configuration
+      dialog.
+    * When amaroK exits, send SIGTERM to running scripts. (BR 119159)
+    * Old error messages could be shown instead of current track lyrics.
+    * The equalizer in the helix engine now works properly at low sample
+      frequencies.
+    * Fixed some threading issues in loading XML playlists.
+    * Lyrics that are available on lyrc would be shown as "not found".
+    * The helix engine now includes protection so that misbehaving streams
+      do not cause the visualizations to leak memory.
+
+
+VERSION 1.3.7:
+  CHANGES:
+    * In the tree view, sort tracks alphabetically first, unless one of the
+      categories is by album, then sort by track number first. (BR 112830)
+    * No longer delete Amazon covers every 90 days, instead relying on
+      RefreshImages to re-download covers every 80 days to comply with
+      the TOS of the Amazon web service.
+
+  BUGFIXES:
+    * Fix weirdness when overwriting a playlist by dragging a file to the
+      browser.
+    * When using Year - Album on Collection Browser, if two albums had the
+      same year, the order would be pseudo-random. Patch by Xepo
+      <xepo@trifault.net>. (BR 115584)
+    * Fix build issue on PCLinuxOS with "cpu_set undeclared".
+    * Fix crash in helix engine caused by improper reference counting
+      of the audiostreamresponse object.
+    * Helix engine no longer declares it is "empty" on a track change
+      (caused problems with context browser).
+    * Tag dialog doesn't delete year tags any more when editing multiple
+      tracks.
+    * amaroK would crash or hang when fetching similar artists information
+      from last.fm (BR 116399)
+    * Fix memory leak in the helix engine. (BR 116223)
+    * When changing the database type, the apply button wouldn't be enabled,
+      and it would be necessary to restart amaroK for it to work properly.
+    * Fix for regression in Qt 3.3.5, causing amaroK to crash when clearing
+      the playlist. (BR 116004)
+    * Zombie directories are removed automatically from the collection
+      scanner. (BR 115779)
+    * Dates wouldn't be properly loaded when editing Smart Playlists.
+    * Number of songs to add when using dynamic mode wouldn't be respected,
+      if the smartplaylist didn't have a ORDER BY statement. (BR 115860)
+    * Fix visibility related build problem on some distros.
+
+
+VERSION 1.3.6:
+  BUGFIXES:
+    * Fix autoscan with PostgreSQL. (BR 111209)
+    * Fix problem with sequences in PostgreSQL support. (BR 115075)
+    * Fix potential crash at startup while accessing amazon.com. (BR 115838)
+    * Potential crash when loading media from the Collection. (BR 115234)
+    * Podcast apply to all button was faulty.
+    * last.fm queue wouldn't be saved to disk. Patch by John Patterson
+      <kde-bugs@ninecats.org>. (BR 115212)
+    * Podcast download directory would only be effective next time the
+      application started.
+    * Don't crash when attempting to save an empty playlist from the Playlist
+      menu.
+    * Loading dynamic playlists with sources did not work properly.
+    * Fix build issue on some Linux kernel 2.4 distros. (BR 115068)
+
+
+VERSION 1.3.5:
+  BUGFIXES:
+    * Fixed a build issue.
+    * Fixed potential crash at startup. (BR 114983)
+
+
+VERSION 1.3.4:
+  FEATURES:
+    * Helix-engine supports ALSA (using RealPlayer 11). (BR 113909)
+    * Atom feed compatibility for podcasts.
+    * Statusbar messages are logged to a file, statusbar.log. (BR 99899)
+    * Podcast configuration now provides the ability to set the values for
+      all podcasts. (BR 114371)
+    * Downloading multiple podcasts will throw them into a queue, and
+      each will be downloaded sequentially. (BR 114370)
+    * Playlistbrowser items can be dragged into folders.
+
+  CHANGES:
+    * Categories in the playlist browser are now always in the order of:
+      Playlists, Smart Playlists, Dynamic Playlists, Radio Streams, then
+      Podcasts, regardless of sorting options. (Items in the categories
+      are still sorted normally.)
+    * Reworked systray icon handling -- mostly under the hood, but it'll
+      now update properly - eg. when you change the cover. (BR 111014)
+    * Tooltip for the queue icon in the statusbar will now show the album
+      cover of the upcoming track.
+    * Totals in the collection browser will now reflect the visible items
+      if you set a filter.
+    * Podcast settings "download on request" and "stream on request" have
+      been merged.
+    * About button in script manager now uses a KAboutDialog and supports
+      rich text format in the README file. (BR 110961)
+    * After filtering the collection browser, if only a single item is left
+      visible, it will automatically be expanded.
+    * Added items for the Equalizer, Visualizations, and Queue Manager to
+      the context menus of the volume slider, analyzer, and statusbar queue
+      icon, respectively.
+
+  BUGFIXES:
+    * If you queue an album from the context browser and then undo, the
+      queue icon in the statusbar is now updated properly (and hence
+      doesn't crash if you click on it).
+    * helix-engine no longer emits new metaData if only the bitrate of a
+      stream changes. (BR 114348)
+    * Fix amaroK attempting to destroy your computer, reach through the
+      monitor and violently strangle you if you attempt to exit while the
+      collection is being scanned. (BR 114597) (BR 114859)
+    * Postgresql code cleanup and fixed regression for manual collection
+      scanning. Autoscan still does not work. (BR 111209)
+    * File browser now sets to home if it was on a remote directory to prevent
+      annoying error messages. (BR 114498)
+    * Podcast settings would not add a trailing slash to podcast save
+      locations. (BR 114712)
+    * Workaround for stability issues with HyperThreading on Linux.
+      Added a configure check to deal with buggy GLIBC's. (BR 99199)
+    * xine-engine: Equalizer became inactive on trackchange when crossfading
+      was enabled. (BR 114492)
+    * Pausing a track would abort lyrics and wiki fetch jobs. (BR 114576)
+    * Dynamic mode did not respect repeat track mode. (BR 114585)
+    * The Script Manager no longer captures the script's stdout.
+    * Enqueuing files with amarok -e would not work for relative paths if the
+      working directories of the new and the running instance of amarok differ.
+    * Visualizations would only work when amarok was run as amarokapp.
+      (BR 99627)
+    * The number of podcasts items would be limited even when the user didn't
+      set it. (BR 114353)
+    * Switching system language wouldn't affect the root folder names on
+      Playlist Browser.
+    * On Context Browser, when showing a cached lyric, "add", "search", and
+      "open in external browser" buttons wouldn't work. "Open in External
+      Browser" is now disabled for cached lyrics. (BR 110812)
+    * Refreshing all podcasts when folder existed caused a crash.
+    * Multiple job statusbar widget was broken. (BR 114278)
+    * HTML in tags was getting interpreted in the context browser.
+    * Changing the podcast purge count could sometimes cause amaroK to hang.
+    * NMM-engine: Fixed crash after playing a song to the end, the trackEnd
+      signal was not emitted from the GUI thread.
+    * With Random Mode enabled and Repeat Playlist disabled, when it got to
+      the last track, it would play it a second time and then keep on playing
+      other tracks, instead of just stopping.
+    * Smart-Playlists were broken with PostgreSQL. Patch by Michael Landin
+      Hostbaek <mich@freebsd.org>. (BR 114269)
+    * Collection scanner ignored files with non-ascii characters. (BR 114195)
+    * Don't show "Change Collection Setup"-box for non-local files.
+    * Fixed issue with loading playlists containing remote URL's.
+    * Dynamic mode history tracks would be forgotten if there was no current
+      track on startup. (BR 110160)
+    * Fixed problems with "Retrieve Similar Artists" feature in combination
+      with SQLite, which could lead to 100% CPU usage. (BR 104447)
+    * Tabbing between items and cells in the playlist while editing them now
+      works much nicer (goes in order and doesn't tab to invisible columns),
+      and you can also now use Alt+Up, Down, Left, Right to navigate between
+      cells as well.
+    * Podcast settings failed to remember the save location. (BR 114128)
+    * Tray icon would stop filling up and showing play/pause icon if show
+      player window was toggled. (BR 93711)
+    * If player window is toggled during playback, playlist window's caption
+      now correctly shows the current track's name.
+    * Crossfade length would be enabled in Playback options when "No
+      crossfading" was selected.
+    * If an engine does not support crossfading, "No crossfading" is now
+      selected in Playback options.
+
+
+VERSION 1.3.3:
+  FEATURES:
+    * New DCOP call "contextbrowser: showHome".
+    * New DCOP call "contextbrowser: showCurrentTrack".
+    * New DCOP call "contextbrowser: showLyrics".
+    * New DCOP call "contextbrowser: showWiki".
+    * Saving a playlist will cleverly pick a default name if possible.
+    * Dragging an album cover into the playlist from the context browser
+      will append the album.
+    * Middle mouse button on the current track will toggle play/pause.
+    * Ctrl-Right click on a selection of tracks will queue all of them, not
+      just the track below the cursor. (BR 112841)
+    * CoverManager allows for downloads from Amazon Canada. (BR 113238)
+    * New DCOP call "playlistbrowser: addPlaylist".
+    * New DCOP call "playlistbrowser: scanPodcasts". Will check all podcasts
+      for new episodes.
+    * New DCOP call "playlistbrowser: addPodcast".
+    * New DCOP call "player: type". Returns the current track's file type.
+    * New DCOP call "collection: migrateFile". Updates the collection db for
+      changes made to filenames, keeping stats intact.
+    * Smartplaylist has Length property. (BR 113039)
+    * Added a mouse-over effect for the volume slider.
+
+  CHANGES:
+    * Adding a playlistbrowser folder will automatically focus the lineedit
+      for renaming the item.
+    * Removing podcasts will delete all downloaded media.
+    * Playlists in the playlistbrowser can no longer be removed, only deleted.
+    * Removing tracks when in dynamic mode will only replace up to the minimum
+      upcoming tracks requirement.
+    * Playlist columns are automatically resized when adding or removing
+      columns.
+    * Added a warning dialog when HyperThreading is enabled. (BR 99199)
+    * Blacklisted GStreamer's autoaudiosink, which is really a crapsink.
+    * Added a context menu to the volume slider.
+    * When viewing covers in fullsize, the window has a maximum size, and
+      scrollbars are shown if necessary. The user can also scroll the cover
+      by dragging it. Patch by Eyal Lotem <eyal.lotem@gmail.com>. (BR 103990)
+
+  BUGFIXES:
+    * Patch fixing an almost-infinite directory-scanning problem while
+      building the Collection. Patch by Dirk Mueller <mueller@kde.org>.
+    * Cover Manager: Album view setting became out of sync. Patch by Michael
+      Pujos <pujos.michael@laposte.net>. (BR 113370)
+    * Starting the first track in the playlist when in dynamic mode would skip
+      it. (BR 110160)
+    * Position slider in player-window disappeared after 2 hours. (BR 97128)
+    * PlaylistBrowser duplicated items when overwriting playlists. (BR 108693)
+    * Podcast settings would forget about the purge items checkbox.
+    * The Stop button in the toolbar was always enabled at startup.
+    * GStreamer-Engine: Could not seek to position 00:00:00. (BR 106483)
+    * Don't crossfade the last track in the playlist. (BR 96478)
+    * If files were in the transfer queue before connecting the iPod they
+      would be uploaded without checking if they already exist on the device.
+    * Using dynamic mode's playlist shuffle would result in repeated tracks
+      tracks during a populate operation.
+    * Fixed Xine config options were disappearing on ESC key. (BR 113225)
+    * Fixed problems with visibility enabled compilers. Patch by Unai Garro
+      <ugarro@telefonica.net>. (BR 113056)
+    * Fix regression causing dynamic mode playlist shuffle to break for
+      smart playlists which relied on ordering and limits. (BR 113121)
+    * Automatic podcast downloads did not do anything. (BR 113129)
+    * Playlist browser items were not properly saved on quit (with Qt 3.3.5).
+      Patch by Matthieu Bedouet <mbedouet@no-log.org>. (BR 113020)
+    * amaroK could crash on startup, if on last exit sorting was enabled in
+      the playlist. (BR 113042)
+    * Adding entries to a playlist and saving it could duplicate some tracks,
+      if the playlist hadn't been expanded before. (BR 111579)
+
+
+VERSION 1.3.2:
+  FEATURES:
+    * Tabs will open automatically when dragging files between tabs.
+      Patch by Christian Baumgart <christianbaumgart@web.de>.
+    * Two new dcop calls which allow scripts to read many of amaroK's
+      configuration options. script readConfig(key) for strings, integers and
+      bools. script readListConfig(key) for lists. Note that these functions
+      aren't guaranteed to always return the latest settings (though many do).
+    * Added a right click menu for blank areas of the playlist, with options
+      to save, clear or shuffle the playlist and to "enable the dynamic
+      mode & repopulate".
+    * Playcount is shown in the tag dialog.
+    * New volume slider, both better looking and better working than
+      the old one.
+    * Podcasts can be saved to any location. (BR 111059)
+    * Added "Save as Playlist" option to the collection and file browser
+      context menus as well.
+    * Allow removing of items in the Media Device browser transfer
+      queue.
+
+  CHANGES:
+    * Scroll wheel to switch tabs in context browser.
+    * Repopulate button is enabled or disabled together with dynamic mode.
+    * No warning dialog when starting if the directory File Browser is on
+      doesn't exist anymore. It just reverts to home. (BR 99208)
+    * Sorting on Collection Browser now shows "Unknown" items first, and
+      "Various Artists" last. Years are sorted descending now.
+    * When selecting 'Play' from the context menu on multiple items,
+      it'll now play the first and queue the rest.
+
+  BUGFIXES:
+    * The Equalizer and QueueManager widgets were broken on window managers
+      other than KWin.
+    * "Year - Album" category in the Collection Browser didn't allow for
+      dragging tracks or fetching cover images.
+    * Xine engine no longer adds images to the playlist.
+    * The delete key for removing playlist items works even if the file
+      browser is open. (BR 100145)
+    * Filenames with XML entity codes were not playable in dynamic mode
+      and caused it to stop. (BR 108783)
+    * If the album or artist contained "&", cover fetching wouldn't work
+      properly.
+    * When restarting, Playlist Browser items used for playlist shuffle
+      wouldn't be properly marked, though they would be taken into account.
+    * Don't crash after changing Podcast options, or after manually deleting
+      its first item.
+    * When renaming a playlist, the "." would be removed from the filename.
+      Paych by Elliot Pahl <elliot.pahl@gmail.com>. (BR 112204)
+    * When using next and previous on Tagdialog, after passing by a stream,
+      the fields would be always disabled. (BR 112060)
+    * Restarting track when in dynamic mode didn't work.
+    * Fix issues with the GStreamer engine and alsasink, and reenable it.
+      Patch by Vincent Tondellier <tonton-lists@team1664.org>. (BR 112103)
+    * Dynamic playlist shuffle had some incorrect smart playlist handling.
+    * Robustified the code for handling the '# of tracks in the playlist'
+      part of the statusbar, it should not ever get out of sync with
+      reality now. Nice side effect is you can see the track count
+      increase while a playlist is loading.
+    * "Last played - not in the last" smart playlists would only work for
+      sqlite. (BR 112248)
+    * Podcast and Dynamic subfolders are correctly restored on application
+      start. (BR 112162)
+    * Dropping tracks onto playlist browser folders will work correctly.
+    * Invalid podcasts are no longer discarded on quit. (BR 112116)
+    * Fixed playing of files that have special characters like '#' in
+      helix engine.
+    * Fixed issue where selecting multiple items after filtering the
+      playlist would cause all the other items 'between' them (but
+      invisible due to the filter) to also get selected.
+
+
+VERSION 1.3.1:
+  FEATURES:
+    * Added 'Set as Playlist (Crop)' and 'Save as Playlist' options in the
+      playlist context menu. (BR 99932)
+    * Support for iPod shuffle devices. Patch by Guenter Schwann
+      <harry.w@gmx.at>.
+    * Media Device browser now has a connect button for connecting
+      your iPod after amaroK has already been started. Also includes
+      configurable mounting/unmounting options.
+    * Holding down the stop button (as opposed to just clicking it) pops
+      up a menu letting you stop either now, after the current track, or
+      after the end of the queue.
+    * Collection browser filter now fully supports the same Google-esque
+      syntax as the playlist filter, plus one extra: lyrics:"stuff to search
+      for" to search in cached lyrics.
+    * Pressing Shift+Enter after filtering the playlist will now queue
+      the first track. (BR 111054)
+    * Display short statistics in the collection browser depending on the
+      categorisation method.
+    * New DCOP call "collection: totalTracks". Returns the total number of
+      tracks in the collection.
+    * New DCOP call "collection: totalGenres". Returns the total number of
+      genres in the collection.
+    * New DCOP call "collection: totalCompilations". Returns the total number
+      of compilations in the collection.
+    * New DCOP call "collection: totalArtists". Returns the total number of
+      artists in the collection.
+    * New DCOP call "collection: totalAlbums". Returns the total number of
+      tracks in the collection.
+    * New DCOP call "collection: similarArtists(int artists)". Returns the
+      similar artists of the current track, results are limited by 'artists'.
+    * New DCOP call "playlist: repopulate". Repopulates the playlist with
+      tracks from dynamic mode.
+    * New DCOP call "player: showBrowser". Allows for showing of playlist
+      window browser, see the handbook for useage.
+    * New DCOP call "player: setLyricsByPath". Allows adding custom lyrics
+      for tracks.
+    * Add an icon in the statusbar displaying the number of queued tracks;
+      click on it to pop up a menu letting you jump to their locations in
+      the playlist.
+
+  CHANGES:
+    * New "Blue Danna" splash screen. Created by Nenad Grujicic, modified by
+      Nathan Adolph.
+    * 'Stop after track' is now saved (and so remembered across amaroK
+      restarts).
+    * Ported playlist + filter-lineedit behaviour to collection browser as
+      well: you can move between the view and the filter with the up/down
+      buttons, and just typing into the view will set the filter. (BR 108656)
+    * Wiki Tab links use the color set for links, instead of "Selected
+      Background". Style Authors can use "AMAROK_LINKCOLOR" if they want that
+      color. (BR 111228)
+    * The Equalizer widget has been pimped.
+    * Pressing 'up' in the playlist filter will now take you to the end of
+      the playlist, in addition to down going to the beginning, as before.
+    * When jumping to the current track, it now gets centered instead of only
+      barely showing.
+    * GStreamer-engine was rewritten. The crossfading feature was removed for
+      now (it didn't work right with recent GStreamer versions). Improvements:
+      1) Reduced CPU usage 2) Reduced latency 3) Increased stability
+    * No need to restart amaroK to use your iPod!
+    * Improved Konqueror Sidebar.
+    * The bundled "Shouter" AmarokScript (for radio stream serving) has been
+      updated and improved.
+
+  BUGFIXES:
+    * amaroK wouldn't remember current track when restarting. (BR 110282)
+    * Some memory leaks found and fixed.
+    * Fix buzz and subsequent clicking when equalizer enabled in Helix and
+      GStreamer engines compiled with GCC 4.0.1.
+    * Burn option wouldn't show up for "Year - Album" items on Collection
+      Browser.
+    * Tray's tooltip would show things like 69:40 of 1:12:01.
+    * Wiki Tab wouldn't work for names that contained "/". (BR 111634)
+    * With KDE 3.4, the proper context menu wouldn't be shown for File
+      Browser. Patch by Christian Baumgart <christianbaumgart@web.de>.
+      (BR 103305)
+    * Playcounter and Access Date wouldn't be updated properly for PostgreSQL.
+      Patch by Tonton <tonton-lists@team1664.org>. (BR 111519)
+    * Clicking twice on the uninstall button for the same script, would make
+      amaroK crash.
+    * Fixed an obscure crash when you emptied the playlist, had the focus on
+      it, and pressed up.
+    * No longer show dynamic info popup on application startup.  Patch by
+      Christian Baumgart <christianbaumgart@web.de>.
+    * Sometimes the system tray tooltip did not update on song change.
+    * Polishing for the collection browser and expanded item states. Patch
+      by Christian Baumgart <christianbaumgart@web.de>.
+    * With xine-engine amaroK always treated remote media like radio streams.
+    * Selecting Classical equalizer preset prompted for name.
+    * Fixed konqueror sidebar compilation with kde <= 3.3 and gcc patched for
+      visibility.
+    * Konqueror sidebar can switch again between tabs.
+    * Fixed playing of oggs in helix engine.
+    * Fixed crash in helix engine when switching engines if helix/realplayer
+      not installed.
+    * Undo/Redo for the playlist was broken in some cases.
+    * On Collection Browser, when grouping by Genre/Artist/Year-Album it
+      wouldn't show the tracks. (BR 110890)
+    * SmartPlaylist Editor would reset "Match Any" to "Match All" when
+      editing. Patch by Kevin Henderson <pyspud@hotmail.com> (BR 110918).
+    * Podcasts and playlist tracks would be sorted lexicographically
+      (BR 97297).
+    * Saved dynamic playlists were not removable.
+    * xine-engine: amaroK would get stuck on exit if the Equalizer was enabled
+      and the engine playing. (BR 110791)
+    * Dequeued items sometimes weren't being repainted properly.
+
+
+VERSION 1.3:
+  FEATURES:
+    * The tyranny of deleting covers every 90 days is over. Instead, amaroK now
+      automatically downloads the covers every 80 days to comply with
+      Amazon.com requirements.
+
+  CHANGES:
+    * Removed 'Apply' button from dynamic config, all config options are now
+      hot! (Automatically applied on alteration)
+    * Minimum score changed from 1 to 0. (BR 107944)
+    * Playlist item lengths now shown with hours when necessary.
+
+  BUGFIXES:
+    * M3U playlists would be broken after editing. (BR 109774)
+    * When there's no artist tag, don't show tons of unrelated songs and
+      albums in Context Browser. (BR 110319)
+    * Advertisements were showing up in Lyrics Tab for some songs.
+    * When editing tags in Playlist Window, only try to write the new tag if
+      it's different from the old one. (BR 110299)
+    * Changes to the score in the Edit Track Information dialog should only be
+      applied after clicking on the "Save and Close" button.
+    * When only the score is changed, amaroK shouldn't complain if the file is
+      read-only. (BR 109054)
+    * Mark/Unmark as compilation wouldn't work with SQLite. (BR 109275)
+    * Album Covers whose name or artist contained "'" wouldn't show up when
+      fetched from Amazon. (BR 109700)
+    * Edit Track Information dialog wouldn't update collection database if
+      filename contained non latin1 characters. Patch by Andrey Yasniy
+      <yasniy@gmail.com> (BR 110030)
+    * SmartPlaylist category created in the PlaylistBrowser once the
+      collection has been built for the first time.
+    * Refresh the context browser as appropriate when editing tags. (BR 108884)
+    * Cover image shown if track has no title.
+    * Statusbar cancel button will terminate a podcast download.
+    * Don't show multiple popup messages when retrieving podcast information.
+    * Don't crash when adding podcasts. (BR 109982)
+    * Tracks with urls containg apostrophes would not cache lyrics.
+    * PostgreSQL compile problem (BR 110033)
+
+
+VERSION 1.3-beta3:
+  FEATURES:
+    * New "not in the last" option for the date fields in Smart Playlists.
+      (BR 107725)
+    * New OSD tokens: %directory and %type (shows whether it's a stream, or
+      otherwise the extension).
+    * New DCOP call "player: lyrics" (BR 100306) and Lyrics Caching. (BR 97961)
+    * New DCOP call "player: transferDeviceFiles". Transfers queued files to
+      the Media Device.
+    * New DCOP call "player: queueForTransfer". Queues files for transfer to
+      the Media Device.
+    * Download your favourite podcasts and let amaroK manage them for you!
+    * 17 Equalizer presets. (BR 96302)
+    * xine-engine supports crossfading. Note: Your audio device must support
+      mixing. SBLive, dmix or ALSA 1.0.9 will do the trick.
+    * Shuffle the queue list in the queue manager. (BR 108861)
+    * The audio plugin (autodetect, ALSA, esd etc.) for xine-engine is now
+      configurable.
+    * Playlist-Browser now remembers the state and layout of its tree view.
+    * Show a stop icon next to the track to stop playing after.
+    * Miniature player window for the minimalists out there! (BR 85876)
+    * "Stop Playing After Track" now also works for queued tracks.
+    * "Open in External Browser" button for Lyrics Tab, patch from Nick
+      Tryon (Dhraakellian). <dhraak@gmail.com>
+    * Funky shadow effect for the album cover @ Context-Browser and OSD.
+      (BR 108334)
+    * Create playlists by dragging tracks onto the Playlist Category in the
+      PlaylistBrowser. (BR 75029)
+    * Show OSD when pausing and unpausing. (BR 104508)
+    * Make 'The' prefix of artists be transparent in the collection
+      browser and sort accordingly. (BR 85959)
+
+  CHANGES:
+    * TagLib version 1.4 is required.
+    * Renamed "Track Name" column to "Filename", "Extension" to "Type".
+    * "Use hardware volume mixer" option has been removed.
+    * "Play AudioCD" gets disabled for engines that don't support KIO.
+    * The OSD (by default) and systray tooltip now show the same infos in
+      the same order as the columns in the playlist.
+    * xine-engine's configuration dialog has been reworked and simplified.
+    * xine-engine has been given the highest engine plugin rank.
+    * Systray tooltip now shows "elapsed time / total time" for the length.
+
+  BUGFIXES:
+    * When playing, the text in the current track's columns wouldn't get
+      ellipsii added if the column was too short.
+    * Dragging 'All Collection' smart playlist made amaroK hang.
+    * Compilations reported incorrect number of tracks in the Context
+      Browser. (BR 109651)
+    * Track play icon remains even when stopped playing. (BR 107284)
+    * Sometimes valid tracks were not submitted to AudioScrobbler. (BR 100278)
+    * Current playlist is now being remembered when amaroK crashes. (BR 98689)
+    * Playlist-Browser saves its state after each change, so that no data
+      is lost when amaroK crashes. (BR 108814)
+    * Crash when trying to save Smart Playlists after creating a Collection
+      for the first time.
+    * Context menu of compilations was empty in context browser.
+    * Don't append albums and compilations when clicking on text in the
+      context browser. (BR 98797)
+    * xine-engine: pre-amp for the equalizer works now. (BR 104882)
+    * Crash when changing the number of minimum upcoming tracks right after
+      starting amaroK. (BR 108251)
+
+
+VERSION 1.3-beta2:
+  FEATURES:
+    * New DCOP call "collection: scanCollectionChanges" Scans for changes made
+      to the collection.
+    * Support for "media:" URLs. Patch by Sergio Cambra <sergio@ensanjose.net>
+      (BR 102668)
+    * Support for visualizations in the Helix engine.
+    * Queue manager to help organise your queued tracks. (BR 90594)
+    * Ability to create Smart Playlists based on file path. (BR 92467)
+    * Per track scripting via custom playlist context menu items.
+    * Added advanced, Google-esque syntax to the playlist filter. Lets you do
+      things like artist:sirenia, "pink floyd", artist:"pink floyd", or even
+      score:>50. When just typing words, it works as before. (BR 99312)
+
+  CHANGES:
+    * Upgraded included SQLite library to version 3.2.2.
+    * Bumped GStreamer and GStreamer-plugins dependency to version 0.8.6.
+    * aKode-engine has been disabled (too buggy/incomplete).
+    * Repopulate upcoming tracks on demand when using dynamic mode.
+    * Remodel the playlist browser to incorporate dynamic mode more fully.
+
+  BUGFIXES:
+    * Don't show textual URLs in Wikipedia Tab. (BR 108031)
+    * Don't refresh the collection view on update scans, if nothing changed.
+    * xine-engine: Don't pop up hundreds of error messages when something
+      goes wrong. Patch from John Lash <jlash@speakeasy.net> (BR 101646)
+    * Automatic theme download with KNewStuff works now. (BR 107313)
+    * Clicking on "Lookup track at musicbrainz" use %2520 for spaces in URL.
+      (BR 107946)
+    * Crash when loading dynamic playlists without a collection.
+    * Crash when saving smart playlist without a collection.
+    * Do not call TagLib::MPEG::File for non-mpeg files - some FLAC files
+      would cause the CPU to start running in circles. (BR 107029)
+    * Many Helix engine improvements.
+    * Crash when dragging playlist items into Playlist Browser. (BR 107709)
+    * Improved context display when playing radio streams with xine-engine.
+    * Number of album tracks was incorrect when showing statistics by album.
+      (BR 107762)
+    * Massive performance speedup for the default analyzer (BlockAnalyzer).
+    * Dynamic mode will grab tracks from closed playlists.
+    * Covermanager tooltips were persistent even when window closed. Tooltips
+      have now been replaced with statusbar text. (BR 106976)
+    * Turning off dynamic mode when items were filtered only 're-enabled' the
+      visible items.
+    * Disable random mode on startup if dynamic mode is on. (BR 107311)
+    * The user is warned if saving tags failed. (BR 91568)
+    * Sub-Folders in Playlist Browser are correctly saved and restored.
+    * Crash after clicking on remove playlists in dynamic mode.
+    * Crash on Context Menu in dynamic mode.
+
+
+VERSION 1.3-beta1:
+  FEATURES:
+    * Add Media dialog allows for multiple file selection. (BR 105903)
+    * The browser-sidebar has been redesigned for improved usability.
+    * Cue file sheet support. Patch from Martin Ehmke <ehmke@gmx.de>.
+      (BR 92271).
+    * New OSD text token, %playcount, will write the playcount.
+    * SmartPlaylists are editable. (BR 91036)
+    * PlaylistBrowser gets a makeover!
+    * New playlist column "Playcount" for track play counts.
+    * New playlist column "Extension" allows easy sorting of playlist for
+       compatible file types for portable media players.
+    * Ability to save streams to the PlaylistBrowser (BR 91075, BR 104139)
+    * New DCOP call "playlist: popupMessage" Displays a popup message box
+       in the playlist window..
+    * New "year - album" - group by mode for collection browser. (BR 94845)
+    * New DCOP call "player: setScoreByPath(url, int)". Sets score of a track
+       specified by it's path.
+    * New DCOP call "player: setScore(int)". Sets score of the current track.
+    * New DCOP call "player: path()". Returns the path of the current track.
+    * New DCOP call "playlist: saveM3u(path, relativePaths)".
+    * New ScriptManager notification: "volumeChange: int".
+    * Tooltips for album covers in the CoverManager. (BR 103996)
+    * Automatic download of themes and scripts via KNewStuff.
+    * Different analyzers available for the playlist window.
+    * New DCOP call "player: enableRepeatTrack" sets repeat track on or
+      off.
+    * HelixPlayer-engine.
+    * 'Load' and 'Append' entries for smart playlist context menus. (BR 99213)
+    * Support for reading embedded images from ID3 tags. (BR 88492)
+    * Wikipedia tab in ContextBrowser allows for artist biography retrieval
+      and more, supporting 9 different languages! (BR 98050) (BR 104383)
+    * Show "title by artist" on playlists titlebar and taskbar. (BR 97670)
+    * Option to show stats in the Home tab by album. Patch from Cédric
+      Brégardis <cedric.bregardis@free.fr>.
+    * New DCOP call "script: listRunningScripts()". Returns a list of all
+      currently running scripts. (BR 102649)
+    * New DCOP call "script: stopScript(name)". Stops a script. (BR 102649)
+    * New DCOP call "script: runScript(name)". Runs a script. (BR 102649)
+    * New form of playlist manipulation - Dynamic Mode.
+    * New DCOP call "player: enableRepeatPlaylist" sets repeat playlist on or
+      off. (BR 102754)
+    * Add Score widget into the tag editor. (BR 100084)
+    * Support for PostgreSQL as database backend. (BR 99863)
+
+  CHANGES:
+    * "amarokscript" filename extension is now mandatory for script packages.
+    * Append Suggestions has been superceded by Dynamic Mode.
+    * Add a label (with shortcut) to the Playlist filter.
+
+  BUGFIXES:
+    * Message box when saving of playlist failed (BR 105520)
+    * Avoid weird results when fetching lyrics with slow connections.
+      (BR 103561) (BR 101327)
+    * Compensate for reversed slider widget in reverse layout locales, such as
+      Hebrew and Arabic. Patch from Assaf Gillat <gillata@gmail.com>.
+      (BR 102978)
+    * Playlist playMedia now works with streams.
+    * Context Browser is updated when current track's tags are changed.
+      (BR 102839)
+    * Clearing the playlist while playing a track does not lead to a confusing
+      interface anymore. (BR 103510)
+
+
+==BEGIN KDE 3.3 DEPENDENCY==
+
+VERSION 1.2.4:
+  FEATURES:
+    * Queue selected tracks shortcut, Ctrl+D. (BR 83675)
+
+  BUGFIXES:
+    * The first engine entry in the config dialog was always blank.
+    * If you filtered by more than one word in Collection Browser, adding
+      expandable items (eg: artists or albums) wouldn't work. (BR 100150)
+    * Updating the collection without any changes being made to it kept
+      the Update button disabled forever.
+    * Application freezes when switching shoutcast streams. (BR 103890)
+    * MusicBrainz lookup was not escaping quote characters. (BR 103740)
+    * Fixed crash when clicking the "clear" button in CoverManager's filter
+      widget.
+    * Update lyrics page on new radio stream metadata. (BR 99725)
+    * xine-engine was reporting bogus tracklengths for ogg vorbis. (BR 102547)
+
+
+VERSION 1.2.3:
+  FEATURES:
+    * Graphequalizer script can now enable and disable the equalizer.
+    * New DCOP call "player: equalizerEnabled" returns whether or not
+      the equalizer is enabled.
+    * OSD notification for mute.
+    * Mute global shortcut, Win+M.
+    * Add %comment token for comment display in OSD. (BR 100944)
+    * View/Edit track entry into context menus of ContextBrowser and
+      CollectionBrowser.
+    * You can mark/unmark albums as compilations via CollectionBrowser's
+      right-click contextmenu.
+    * New DCOP call "collection: query(const QString& sql)".
+      Allows to make arbitrary queries on the Collection database.
+    * New DCOP call "playlist: removeCurrentTrack()". (BR 92973)
+
+  CHANGES:
+    * Show "Artist - Title" for compilation discs in CollectionBrowser
+      and ContextBrowser.
+    * Upgraded internal SQLite database to 3.2.0.
+    * DCOP call saveCurrentPlaylist() now returns the path to current.xml.
+
+  BUGFIXES:
+    * Appropriate context menu entry for changing queue status for multiple
+      playlist items.
+    * Fix regression preventing dequeuing multiple selected tracks.
+    * 'Show Toolbar' remembers its settings between sessions. (BR 98662)
+    * When doing Musicbrainz lookup from the Context browser, search for the
+      real track, not the whole album.
+    * Memleak when a radio stream stalled. (BR 102047)
+    * The Collection Scan finally checks for the right file modification time.
+    * Adding a compilation disc from ContextBrowser was broken.
+    * GStreamer-engine: Reduced the gap when switching to next track without
+      crossfading.
+    * GStreamer-engine: amaroK was swallowing the beginning of a track when
+      Fade-in was set to zero. (BR 94472)
+    * Use a better highlight color in the "Configure Collection" dialog.
+      (BR 102059)
+    * "Remove Duplicates / Missing" fixed. Removes dead entries correctly.
+    * Fix units for samplerate. (BR 101528)
+    * amaroK using 100% CPU on some systems. (BR 101524)
+      (a KHTML bug which got exposed by code in amaroK 1.2.2)
+
+
+VERSION 1.2.2:
+  FEATURES:
+    * Context Browser CSS styles can now be installed and selected from the
+      appearance settings.
+    * Append Suggestions now has an icon in the statusbar.
+    * When selecting multiple files, the "View/Edit Meta Information" dialog
+      will show the tags that are common to all of them. (BR 100423)
+    * A line graph equalizer added as a script "graphequalizer."
+
+  CHANGES:
+    * Add 25-track and 50-track smart-playlists.
+    * Update current-track icons to include greater padding.
+    * The contextbrowser now uses data:-URLs instead of temp image files, so
+      they cannot be left on disk when amaroK terminates unexpectedly, and the
+      Konqueror/Universal sidebar can show them when amaroK is not running.
+
+  BUGFIXES:
+    * escape '&' char in contextmenu entry (BR 101276)
+    * Track is set as a number in the database, so shouldn't be added rounded
+      by quotes. (BR 101208)
+    * Rewrote the broken .pls playlist parser.
+    * Handle delay gap between songs properly with aRts engine. (BR 90404)
+    * Switched order of "Make playlist" and "Queue after current track" menus
+      to avoid playlist destruction. (BR 96164 part 1)
+    * Visualizations with LibVisual didn't work in some cases. (BR 99627)
+    * amaroK could fail to build if the whole kdeextragear-1 module was
+      compiled, due to conflicts with K3B on the MusicBrainz check. (BR 100906)
+    * Images shown on OSD where incorrect for action notifications.
+    * The handbook translations were not built when amaroK was installed from
+      the tarball. I've written a new release script in Ruby, which can
+      handle the new structure of kde-i18n. (BR 100498)
+    * GStreamer-engine can now play vorbis radio streams properly, with
+      full metadata support. (BR 89821)
+    * GStreamer-engine now uses the "decodebin" autoplugger, which fixes
+      the lag issues that some users had during crossfading. (BR 99570)
+
+
+VERSION 1.2.1:
+  FIX: Made the Tag-Editor only operate on visible items. (BR 100268)
+  ADD: Database settings added to the first-run wizard.
+  FIX: playlist2html generates UTF-8 output now. (BR 100140)
+  FIX: Bitrate/length showed random values for untagged mp3 files. (BR 100200)
+  FIX: Crash when recoding stream MetaData without CODEC selected. (BR 100077)
+  CHG: Show an additional "Compilations with Artist" box in ContextBrowser.
+  ADD: Remember collapse-state of boxes in ContextBrowser. (BR 98664)
+  ADD: Display an error when unable to connect to MySQL.
+  ADD: Konqueror Sidebar now has full drag and drop support.
+  CHG: Replaced "Blue Wolf" icon with Nenad Grujicic's amaroK 1.1
+       icon, due to legal issues.
+  ADD: Parameter "%score" shows the current song's score in OSD.
+  CHG: When you delete a song within amaroK, it gets removed from
+       the Collection automatically.
+  FIX: Directory column in the playlist was eating the first letter.
+  ADD: New DCOP call "playlist: setStopAfterCurrent(bool)". (BR 99944)
+  FIX: Coverfetcher: Do not crash when no cover was found. (BR 99942)
+  ADD: Support for amazon.co.jp cover fetching
+  CHG: Toolbar items reordered for optimal usability, as suggested by
+       Aaron "Tom Green" Seigo.
+  FIX: Show covers for albums containing chars '#' or '?'. (BR 96971 99780)
+  ADD: Help file for the playlist2html script.
+  ADD: New DCOP call "playlist: int getActiveIndex()".
+  ADD: New DCOP call "playlist: playByIndex(int)".
+  CHG: Upgraded internal SQLite database to 3.1.3.
+  FIX: Update the database after editing tags in playlist. (BR 99593)
+  ADD: New DCOP function "player: trackPlayCounter". (BR 99575)
+  ADD: .ram playlist support with code from Kaffeine. (BR 96101)
+  FIX: amaroK can now determine the correct track-length even for formats
+       unknown to TagLib. Makes it possible to seek e.g. in m4a tracks.
+  ADD: Can now pick from multiple Musicbrainz results. Patch from
+       Jonathan Halcrow <gte899j@prism.gatech.edu>. (BR 89701)
+  ADD: May now set a custom cover on multiple albums in the Cover-Manager.
+  ADD: Support relative path of tracks in writing playlists. (BR 91053)
+  FIX: Don't inline-edit tags for the whole playlist's selection.
+  FIX: Fix "Recode Tags" crash issues. (BR 95041)
+  ADD: "Set Custom Cover" can fetch remote images. (BR 90499)
+
+VERSION 1.2:
+  ADD: "Repeat Track" status is reflected by an icon in the playlist.
+  ADD: New icons from tightcode for statusbar and repeatTrack.
+  ADD: New Smart-Playlist "Ever Played".
+  CHG: Bumped GStreamer version requirement to 0.8.4.
+  CHG: Made it possible to use artsdsink with GStreamer again.
+  CHG: Don't read m3u files recursively when dropping a folder on the
+       playlist. No more doubled entries.
+  FIX: Shoutcast radio with GStreamer is improved, no more dropouts when
+       starting a stream.
+  ADD: The "Similar Artists" feature (using Audioscrobbler) can now be
+       switched off. (BR 95280)
+  FIX: Error in Shoutcast http-request, which made it impossible to play
+       many radio streams with GStreamer and aRts. (BR 97211, 98569)
+  CHG: Better default directory for selecting a custom cover.
+  FIX: ContextBrowser reloads after setting a custom cover. (BR 96548)
+  FIX: Cover-Manager's full-screen view works with Bughira (brushed metal).
+  ADD: Script-Manager can auto-run scripts on application startup.
+  ADD: aKode engine, depends on KDE 3.4. No configure check yet.
+  FIX: Don't add non-audio files to the Collection.
+  CHG: We now use the SqlLoader, which greatly improves the performance of
+       adding stuff to the playlist from SmartPlaylists and the Collection.
+
+VERSION 1.2-beta4:
+  ADD: It is now possible to select the right image if there are multiple
+       results from Amazon. Patch from Gregory Isabelli <g_isabelli@yahoo.fr>.
+       (BR 93287)
+  CHG: Reorganized the DCOP interface. We used to have all DCOP functions in the
+       "player" group. Now it's splitted up into several categories. Attention
+       script writers: Adjust your DCOP calls!
+  FIX: The loader is now more robust and should always find amarokapp.
+  CHG: The search-browser has been integrated into the file-browser.
+  CHG: OSD can have fake transparency and new fancy shadow.
+  ADD: DCOP function "shortStatusMessage", shows a temporary message on the
+       application's statusbar.
+  FIX: Frequent crashes when writing tags. (BR 95344)
+  FIX: CoverManager updates its status display correctly.
+  FIX: "isPlaying" DCOP function now works correctly. (BR 90894)
+  ADD: Automatic crash report generator, sends backtraces to amaroK HQ.
+  ADD: DCOP function "saveCurrentPlaylist". Writes the playlist to current.xml,
+       for scripts that need to access the playlist contents.
+  ADD: Playlist2html, a script for playlist exporting. (BR 96199)
+  ADD: Improved statusbar, with animated error notification widget.
+  ADD: New progress display system, can show multiple expandable progress
+       widgets in the statusbar.
+  ADD: Alarm script, starts playing music at specified alarm time.
+  ADD: Script-Manager for DCOP script extensions is now functional. Refer to the
+       amaroK Wiki for information on script writing.
+  ADD: Collection-Browser shows a help message in flat-mode when filter is
+       empty. (BR 97000)
+  CHG: It is possible to select the Database Engine (SQLite, MySQL) runtime,
+       without amaroK restart. New Database Engines can be added, they need to
+       inherit DbConnection and implement its' virtual methods (see
+       SqliteConnection and MySqlConnection).
+  CHG: New amaroK icon "Blue Wolf", made by Da-Flow.
+  FIX: Possible crash when enabling Player-Window. (BR 94668)
+
+VERSION 1.2-beta3:
+  ADD: Smart Playlists can have a random order or a score weighted random order
+       (BR 90861)
+  ADD: Show total length of selected songs in statusbar. (BR 90284)
+  ADD: Context-Browser now caches the tab widgets. Patch from Matias Costa
+       <mcc3@alu.um.es>. (BR 95999)
+  FIX: RAND and REP buttons were always enabled at startup. (BR 95861)
+  ADD: Implemented "Append Suggestions" functionality. It means that when
+       enabled, amaroK will append a couple of suggested songs to playlist when
+       you play a track. This produces a continuous playlist, something similar
+       to listening to radio.
+  ADD: Implemented "Play Media..." functionality.
+  FIX: Playlist-Browser was appending to playlist when clicking "Load". Now it
+       replaces the current playlist again, as intended.
+  ADD: Profile for KDELIRC (Remote Controls). Patch by Dirk Ziegelmeier
+       <dziegel@gmx.de>.
+  ADD: Remove Duplicates now also removes dead entries from playlist.
+  FIX: Accept album-dragging from the ContextBrowser. (BR 86020)
+  FIX: Configure check was missing for the Konqueror Sidebar (depends on
+       KDE-Base).
+  FIX: Browser splitter was drawn incorrectly with some styles. (BR 95333)
+  ADD: DCOP call for relative seek. Patch by Andreas Pfaller. (BR 84989)
+  CHG: Bumped TagLib dependency to 1.3.1. (1.3 is too damn buggy)
+  FIX: CTRL-M can show the menubar again after hiding. (BR 94139)
+  ADD: Support for last.fm streams.
+  FIX: amaroK icon shows correctly in window decoration under GNOME.
+  ADD: Support for ID3v2 cover images. (Thanks to M. Thiesen!) (BR 88492)
+  ADD: DCOP calls for the status of Random Mode, Repeat Playlist and Repeat
+       Track.
+  ADD: DCOP call to return the sample rate.
+  ADD: DCOP call to return the track number. (BR 94825)
+  FIX: GStreamer-engine provides better scope synchronisation.
+  ADD: Save current track position and play queue on exit. (BR 90379)
+  FIX: Fix Directory column on playlist, show absolute directory path instead of
+       empty string. (BR 90361)
+  ADD: DCOP call to scan your collection. (BR 84621)
+  FIX: When an engine fails to load, respect the rank while choosing the next
+       engine.
+
+VERSION 1.2-beta2:
+  FIX: Classic amaroK theme looks better.
+  ADD: Context Browser has CSS styling.
+  FIX: Cover fetching improvements/fixes.
+  ADD: Last played: yesterday, etc. in ContextBrowser.
+  FIX: Big speedup for PlaylistLoader, when adding many items.
+  ADD: Show songs you once played, but didn't play for the longest time on
+       ContextBrowser's Home-page. (least played) (BR 89479)
+  FIX: Don't crash on song switch, when there's only one visible playlist item
+       and repeat-list is activated. (BR 94030)
+  CHG: Add and queue tracks after the current track. (BR 94121)
+  ADD: DCOP call to raise the equalizer configuration dialog.
+  ADD: Konqueror sidebar to view playing info and control amaroK.
+  ADD: DCOP call to clear the playlist. (BR 90149)
+  ADD: DCOP call to enable/disable the equalizer.
+  ADD: DCOP call to return the score of the currently playing track.
+  ADD: Audioscrobbler submit queue stored on disk. Tracks that are listened when
+       offline will be available for submitting later.
+  CHG: "Start Scan" button was renamed to "Update". Now it starts an incremental
+       scan instead of a full rescan.
+  FIX: Lyrics parsing failed for certain songs. (BR 94269)
+  ADD: xine-engine saves config, and implements crossfade, bug fixed too.
+  ADD: Player-Window can also show the BlockAnalyzer.
+  CHG: Run incremental scanning once a minute instead of every 30 seconds.
+  FIX: When collection scanning was interrupted with Cancel, incremental
+       scanning didn't work any longer.
+  CHG: Handle incremental file scanning in a thread. Now the GUI doesn't get
+       blocked every 30 seconds, anymore. (BR 93564)
+  ADD: CollectionBrowser now offers two operation modes:
+       The classical TreeView and a new FlatView (like the WinAmp Library).
+  FIX: Caching of local cover images was broken for non-unique filenames.
+       (BR 94068)
+  FIX: "Visualizations" menu entry was always disabled.
+  FIX: Play button was sometimes stuck in disabled state.
+  FIX: OSD was showing "%artist - %track" instead of "%artist - %title".
+  FIX: Forward command line option --engine to amarokapp.
+  FIX: CoverFetcher was always looking for "album - album".
+
+VERSION 1.2-beta1:
+  ADD: Full support for Audioscrobbler, including submission of tracks.
+  FIX: Arts engine resumes from position when session is restored.
+  ADD: Vorbis stream metadata support (GStreamer-engine). (BR 82378)
+  ADD: Cover image and lyric fetchers include filters for common extensions,
+       such as (Disc 1). (BR 90630)
+  ADD: Ability to choose from four different Amazon locales. (BR 90664)
+  ADD: OSD now draws gradient instead of solid colour.
+  ADD: 'Stop after current song' functionality. (BR 88652)
+  FIX: Queue function from context/collection browsers actually properly queues
+       tracks. (BR 90319)
+  ADD: MySQL database support. Patch by Andreas Mair <am_ml@linogate.com>.
+       Please refer to mailing list for detailed instructions.
+  ADD: Metadata history for streams in Context-Browser. (BR 89839)
+  ADD: Command line option --engine.
+  ADD: OSD text is now configurable, and it displays the album cover.
+  FIX: Remote folders are read recursively when dropped on the playlist.
+  FIX: Audiocd protocol in filebrowser had empty folders.
+  ADD: Cache system for current-track animation in playlist. Reduces CPU load
+       when the playlist is visible.
+  ADD: 10-band IIR equalizer for GStreamer and xine engines.
+  FIX: The background gradient effect in Context-Browser is now much faster. The
+       gradient also looks nicer. (BR 91276)
+  FIX: Password-protected streams did not work correctly. (BR 91184). Patch by
+       <javapojken@yahoo.se>.
+  ADD: NMM-engine was rewritten and updated for the latest NMM release. Supports
+       audio and video playback.
+  ADD: Cover-Manager supports drag-and-drop.
+  ADD: Tags are now read from the Collection database if they are already
+       stored. This speeds up adding items to the playlist. (BR 90137)
+  ADD: Context-browser shows "Suggested Tracks", utilizing audioscrobbler.
+  FIX: Configure does no longer print "Good - Configure has finished" when a
+       dependency is missing.
+  ADD: Intelligent automatic resize for playlist columns
+  ADD: Shaded current-track marker in playlist.
+  ADD: Automatic song lyrics display.
+  CHG: Internal SQLite upgraded to 3.0.8.
+
+VERSION 1.1.1:
+  FIX: Crash when using GStreamer-engine on 64bit. (BR 90869)
+  CHG: New splash screen by Nenad Grujicic <mchitman@neobee.net>.
+  FIX: Crash when fetching 1 missing cover using the fetch button. (BR 90673)
+  REM: Unsupported option "Show Metadata in Playlist".
+  ADD: Menubar (optional).
+  FIX: GStreamer-engine now resumes playback at correct position.
+  ADD: iCandy for Context-Browser: Background gradient and toolbar.
+  CHG: Collection-Browser now has a toolbar instead of menubar.
+  FIX: With "Title Streaming" disabled GStreamer could not play streams.
+  FIX: Osssink is now the default sink for GStreamer. If sink initialization
+       fails, a dialog will ask to select another sink.
+  FIX: Pausing failed on some systems with GStreamer-engine. (BR 90417)
+  FIX: Never scan the same directory twice.
+  FIX: Disable CD-burning menu for streams. (BR 90336)
+  ADD: Open Cover-Manager from Context-Browser popup-menu and main menu.
+  FIX: Made amaroK build with --disable-amazon flag.
+  FIX: Docs translations were not installed correctly. (BR 90307)
+  FIX: GStreamer-engine refused to play some mp3 files. (BR 90317)
+
+VERSION 1.1:
+  FIX: Huge speedup for Context-Browser, makes changing tracks faster.
+  ADD: Progress display for Cover-Manager.
+  CHG: Systray animation is now optional.
+  CHG: Updated included sqlite to 3.0.7 (stable).
+  ADD: Tag editor can operate on multiple files (mass tagging).
+  FIX: Collection encoding broken for non-latin1 characters. (BR 89747)
+  ADD: Popup-menu for cover images in Context-Browser.
+  FIX: The first track to play is now random for random-mode. (BR 77055)
+  FIX: Show systray on startup. (BR 89661)
+  FIX: Let xine recognise tracks that have non lower-case extensions.
+
+VERSION 1.1-beta2:
+  ADD: K3B integration for burning CDs. (BR 88052)
+  ADD: Third category for Collection-Browser. (BR 83609)
+  ADD: Playlist search now supports categories. (BR 86296)
+  ADD: Support for MAS (Media Application Server). MAS-engine
+       is in experimental state.
+  ADD: Context-Browser shows information about radio streams.
+  ADD: Custom Smart Playlists with built-in editor.
+  ADD: Systray icon shows track progress and play status.
+  CHG: Imported SQLite3 and ported CollectionDB.
+  ADD: "Cool-Streams", a list of amaroK Squad recommended streams for
+       playlist-browser.
+  ADD: Detecting Sampler/VA discs in CollectionBrowser (shown as
+       "Various Artists"). (BR 81683)
+  ADD: Configuration GUI for xine-engine.
+  ADD: Next and previous track buttons for Tag-Editor.
+  ADD: Player-window adapts to current color scheme.
+  ADD: Crossfading and fade-in/out function for GStreamer-Engine.
+  ADD: Genre and Favorite Tracks by Artist smart playlist in the
+       Playlist-Browser.
+  ADD: IMMS-like rating system for songs.
+  FIX: aRts-engine has been ported to the new engine interface and is
+       available again (but not recommended).
+  FIX: Try to autodetect Sampler-Discs and show them properly in the
+       Contextbrowser. (BR 87182)
+  FIX: Multiple items can now be selected in the CoverManager.
+       Thanks John Hughes (BR 87584)
+  FIX: Various fixes for certain Artist/Album names, which had problems
+       with cover support.
+  FIX: Sorting the collection is now case-insensitive. (BR 84141)
+  CHG: Symlink infinite recursion check for collection scan.
+  FIX: Show all accessible cover images in the tooltip. (BR 87283)
+  FIX: Clicking an album in the ContextBrowser adds items in the correct
+       order, now. (BR 87733)
+
+VERSION 1.1-beta1:
+  ADD: Wizard for configuring amaroK on first startup.
+  CHG: Made it possible to use the next/previous buttons when amaroK is
+       not playing.
+  ADD: DCOP call to switch Random Mode on or off. (BR 84460)
+  ADD: DCOP call to retrieve current track's cover image. (BR 85364)
+  FIX: Problem with cover-saving for certain artist/album names. (BR 84171)
+  FIX: Show contextual information for songs, even if they are not in the
+       current collection instead of an ugly empty box.
+  ADD: GstEngine: Support for custom output plugin parameters. (BR 83949)
+  ADD: CoverManager - for downloading and managing album cover images.
+  CHG: Refactored engine plugin interface. Each engine can now provide specific
+       configuration GUIs.
+  ADD: As-you-type search for FileBrowser.
+  ADD: Seeking with mousewheel in playerwindow.
+  REM: Stream-Browser.
+  ADD: New meta-info dialog, with editable tags and MusicBrainz support.
+  ADD: Inline-tag editing auto-completion based on the Collection Database.
+  ADD: Deleting files physically from playlist context menu. (BR 75208)
+  ADD: Fadeouts for GStreamer-Engine.
+  ADD: New Playlist Browser, organizes multiple playlists, and offers smart
+       playlist functionality.
+  ADD: Support for redirected streams and streams with no specified port.
+  ADD: KIO support for GStreamer engine. Allows playing media via all
+       protocols supported by KIO (ftp, audiocd, fish, etc).
+  ADD: SearchBrowser operation can now be aborted.
+  ADD: Progressbar in CollectionBrowser informs about scan progress, and a
+       button was added for aborting the scan. (BR 83019)
+  ADD: Playlist sliders (volume and position) now move directly when clicked
+       outside of the handle. (BR 83611)
+  ADD: Untagged tracks now go into Collection too, listed as "unknown".
+  ADD: Automatic album cover fetching is back and improved.
+  ADD: Option for automatically switching to Context when playback is started.
+  CHG: Stream timeout value is now determined from KDE user settings.
+  ADD: Support for password-protected streams, by wef <javapojken@yahoo.se>.
+  FIX: GStreamer engine must not allow non-audio filetypes in playlist.
+  ADD: Icon for "Menu" button in toolbar. Improves Usability.
+
+VERSION 1.0.2:
+  ADD: xine-engine plugin, audio only.
+  FIX: aRts-engine: Compatibility with newer aRts versions improved.
+  FIX: aRts-engine: Streams sometimes stopping shortly after playback was
+       started. (BR 84417)
+  CHG: Increased stream connect timeout to 12 seconds.
+
+VERSION 1.0.1:
+  FIX: Short dropouts after starting a stream with GStreamer.
+  FIX: amaroK starting invisible when systray icon is disabled.
+  FIX: Playlist analyzer looks freaky on some systems. (BR 83671)
+  FIX: Display filename in title column for wav files. (BR 83650)
+  FIX: Don't show crash dialog when no engine plugins are found.
+  FIX: Compile issue for KDE < 3.2.1 users. Sorry :(
+
+VERSION 1.0:
+  FIX: Plugin versions are validated. Prevents crashes with ancient plugins.
+  FIX: Configure now checks for gtk/gdk headers for the XMMSwrapper.
+  REM: Removed cover download feature for this release.
+  FIX: Do not crash if an unreadable dir is added to the collection.
+  FIX: Check database-sanity on startup and recreate broken tables (BR 83205).
+  FIX: CollectionBrowser was broken, when amaroK was running "localized".
+  FIX: TitleProxy hogging 100% CPU when unable to connect to server.
+  CHG: Bumped GStreamer requirement to 0.8.1.
+  ADD: Glowing player window icons.
+  ADD: amaroK finally remembers if it was hidden on exit.
+  ADD: OSDPreview now has snap to regions.
+  FIX: Newly shown columns in playlist can now be resized.
+  FIX: BR 82020: next/prev buttons disabled when they shouldn't be.
+  ADD: ToolbarAnalyzer remembers it's framerate, allowed fps: {50, 40, 30, 20}.
+  ADD: Full streaming audio support for GStreamer engine.
+  FIX: Don't allow user to get into a situation where there is no Menu.
+  ADD: Using Welcome-page power-links you can switch between XMMS and amaroK mode.
+  CHG: New icons and splash screen, by Roman Becker <roman@formmorf.de>.
+  ADD: Allow the current GL analyzer to be detached/attached from the
+       main window with the 'd' key.
+  FIX: Filtering the collection now searches the second category, too (BR 81681).
+  FIX: Filter in playlist was only working for the first argument.
+  CHG: Collection-Monitor now processes removed dirs in a thread.
+  ADD: Added a switch to toggle OSD's text-shadow. (BR 82011).
+  ADD: More detailed track information dialog for Collection Browser.
+  FIX: Track length was always 0 for certain filetypes (e.g. mod, wav) (BR 82673).
+  FIX: Gst engine refusing to add certain filetypes to the playlist, when
+       the engine was idle (BR 82713).
+  FIX: Rare playlist redraw bug, which resulted in messed up items.
+
+VERSION 1.0-beta4:
+  ADD: CollectionDB now caches and rescales images. This binds cover art usage
+       in amaroK to the collection, but offers greatly improved speed for cover
+       retrieval and uses less memory.
+  FIX: Cover not shown in ContextBrowser, when song gets played for the first
+       time ever (BR 81241).
+  ADD: Cover art fetcher, downloads album cover images from amazon.com.
+  ADD: Configure->Playback->Device && default device option for audiosinks.
+  ADD: ContextBrowser now also shows your overall-favorites and the newest tracks
+       in your collection. Therefor I had to reset the statistics, sorry.
+  FIX: Decode %-encoded characters in filenames, like %2f for a slash. (BR 74576).
+  CHG: Songs you click in ContextBrowser will now directly start to play and won't
+       be added to the playlist, if they already are there.
+  FIX: "Start Scan" menu-entry gets disabled while scanning. (BR 81619).
+  FIX: Directories with non-ascii chars don't get scanned (CB) in multibyte locales.
+  CHG: Enhanced "Fill-Down" feature for track column (auto-increment) (BR 81194).
+  FIX: Closing xmms-visualizations freezes amaroK (BR 81326).
+  FIX: CollectionBrowser does not sort by tracknumber (BR 79600).
+  FIX: ContextBrowser's URLRequests need to be escaped.
+  FIX: Always show OSD (if enabled) on volume changes.
+  FIX: Filtering the collection using tokens with number(s) at the beginning
+       or end failed. (BR 81621).
+  FIX: FileBrowser didn't remember its current folder (BR 81816).
+  ADD: Expand/collapse items by doubleclicking in Collection (BR 81710).
+  FIX: Allow OSD still to be shown via shortcut when disabled (BR 80388).
+  FIX: Collection: live-monitoring dirs for changes works again.
+  FIX: Changing volume by mousewheel on systray icon works again.
+  ADD: Collection automatically rescans itself on startup.
+  ADD: "Add to Playlist" feature in CollectionBrowser, appends tracks to playlist.
+  ADD: Clear button for CollectionBrowser search.
+  FIX: Problem with invisible "Play next" marker in playlist.
+  FIX: Don't try to create sql-tables on every startup, but only on
+       sql-scheme (DATABASE_VERSION) changes.
+  FIX: Display splash screen on correct desktop with Xinerama.
+  CHG: CollectionBrowser filter now works in "search-as-you-type" mode.
+  FIX: Prevent TitleProxy from showing the same metadata over and over.
+  FIX: Compatibility bugfixes to TitleProxy, thanks to Daniel Molkentin
+       <danimo@kde.org>. I think we've now got 100% Shoutcast compatibility.
+  ADD: Allow changing volume by using the mousewheel anywhere on the toolbar.
+  FIX: Wheel-scrolling toolbar's volume slider doesn't change volume (BR 81155).
+  FIX: ContextBrowser is now shown in proper colors for every scheme.
+  CHG: Added track's physical location to the Meta Information dialog.
+  FIX: Show last playtime in localtime instead of UTC.
+  FIX: ContextBrowser not showing all items for current album.
+  FIX: Not all SQL queries were "string-escaped".
+  ADD: Added statistics database, which keeps track of how often and when you play
+       a specific song.
+
+VERSION 1.0-beta3:
+  ADD: Additional volume slider for playlist window.
+  ADD: ContextBrowser shows you images and information to the current song/artist.
+       It depends on the collection and is presented as an HTML widget.
+  CHG: Improved color handling and visual feedback in the GUI.
+  ADD: Global shortcut for play/pause action, as requested by multimedia-keyboard
+       users (BR 79541).
+  CHG: Small player-window can be switched off now.
+  FIX: CollectionBrowser out of order after scanning.
+  FIX: TitleProxy partly rewritten. Should be more compatible with many streams
+       and not be able to freeze the app any longer.
+  FIX: When playing a stream with title streaming activated, the track is not
+       marked as playing (BR 79999).
+  FIX: Invoking "Track Information" in Collection Browser sometimes crashed
+       the application (BR 80266).
+  FIX: In CollectionBrowser's folder setup dialog pressing cancel did not abort
+       (BR 80451). Thanks to Michael Pyne <pynm0001@comcast.net> for patch.
+  ADD: Option for selecting sound output system (OSS/Alsa). Currently only
+       used with GStreamer engine.
+  CHG: Extended and updated handbook, thanks to Mike Diehl <madpenguin8@yahoo.com>.
+  ADD: Context menu item "Make Playlist" in Collection Browser generates new
+       playlists on the fly, without the need for drag-and-drop.
+  CHG: Renamed several files and folders in the source code tree, resulting in
+       improved code accessibility.
+
+VERSION 1.0-beta2:
+  FIX: Crash on AMD64 due to assumption about pointer size.
+  CHG: SQLite library sourcecode now included with amaroK.
+  CHG: The collection-thread now inserts its data in a temporary database while
+       scanning, which allows us to safely use the collection in the meantime.
+       This is done by two concurrent sqlite-connections (thread-safe). Wrote a
+       new class named CollectionDB, which handles the database communication
+       for the collection.
+  ADD: URLDrag from Playlist, so you can drag and drop to xmms. Doesn't work with
+       the FileBrowser yet, but it will!
+  CHG: CollectionBrowser now fills the database inside of a thread, resulting in
+       improved performance.
+  ADD: Mini track-position slider in statusbar.
+  FIX: Don't try to crossfade with engines that do not support this feature.
+  ADD: XMMS visualization plugins can be configured with their GUI.
+  FIX: Collection filtering had some regressions
+  FIX: Loader on some systems not able to start amaroK.
+  FIX: Switching engines at runtime breaking volume control.
+  FIX: GstEngine skipping tracks directly after starting, when crossfading enabled.
+  CHG: Database system now works with linked tables. Saves hdd-space and cpu-time.
+  CHG: If you remove the current song from the playlist, we don't define the next
+       song anymore, but let it be randomly selected (only when random mode is on!)
+  CHG: Random Mode now respects the playlist filter and only picks items, which are
+       currently visible in the playlist. Also removed a crash situation.
+  CHG: Removed the search-token index. Searching now iterates through the playlist,
+       offering direct and specific access to the metadata.
+  FIX: Bug where fill-down would cause lots of extra tags to be written when a search is
+       in progress (BR 79482).
+  FIX: Defect in plugin framework code, leading to a crash on some systems
+       during engine plugin initialization.
+  FIX: Restoring current playlist on startup (BR 79436, BR 79439).
+  ADD: Searching the Collection with a filter.
+  FIX: BrowserWin's QLabels are painted white in amaroK's own color scheme.
+
+VERSION 1.0-beta1:
+  ADD: Search Browser - search stuff on your hdd
+  ADD: song count on playlist statusbar
+  ADD: support for XMMS visualization plugins
+  ADD: Collection Browser - a database powered music collection manager
+  ADD: Playlist toolbar is now configurable
+  ADD: toolbar analyzer in playlist window
+  ADD: use XML playlists internally within amaroK so tags don't have to be
+       loaded/reloaded all the time. Makes undo/redo much quicker.
+  FIX: non latin1 locale issues with loading directories and tags (thanks Leo Zhu)
+  ADD: clicking shuffle will sort the playlist by the nextQueue first, and
+       randomise the rest
+  ADD: Play Next can now handle several songs through a queue. The queue can be
+       manipulated by using the context menu or by CTRL+right clicking.
+  ADD: much improved gstreamer engine, now working with visualizations
+  CHG: GstEngine requires gstreamer-0.8
+  FIX: Show move pointer instead of hand when moving preview OSD.
+  ADD: sorting by artist subsorts by album and track, sorting by album subsorts
+       by track, enjoy!
+  ADD: browserTabs float over the playlist when in set to not overlap
+  FIX: communication loader<-->amarok failing on FreeBSD
+  FIX: loader forgetting to close socket descriptors
+  FIX: FileBrowser remembers that state of its view between sessions
+  CHG: converted engines to plugins. they are now dynamically loaded at runtime
+  ADD: plugin framework
+  CHG: made amaroK aRts-independent. with the --without-arts configure switch
+       it's possible to build the app without aRts support, using only NMM or GST
+  ADD: Shift drag appends items to the end of the playlist.
+  FIX: startup notification icon staying on screen when amaroK started by loader
+  FIX: amaroK showing the "X" icon instead of the correct one
+
+VERSION 0.9:
+  CHG: playlistBrowser removed until next release
+  FIX: playerWidget font is now configurable, you need to start new track for the
+       scrolling marquee to get updated. Default font is used by default.
+  FIX: fixed several stability issues concerning stream-playback
+  ADD: whatsthis for all configurable options.
+  FIX: amaroK registering with dcop as "amarok-PID". it's back to just "amarok" now.
+  FIX: OSD not updating correctly when changing volume
+
+VERSION 0.9-beta3:
+  ADD: "Show Current Track" button in playlist.
+  ADD: Volume OSD when changing with mousewheel over trayicon.
+  CHG: software volume mixer uses a logarithmic function to make the scale more natural
+  ADD: Global shortcuts to display OSD and increase/decrease volume.
+       (Win+o and Win+KP_Add/KP_Subtract by default, respectively)
+  ADD: DCOP calls to control OSD and playback volume
+  ADD: ported config-GUI for audio decoders to new engine (works currently with
+       modplug_artsplugin)
+  FIX: show correct track-length when playing .mod or .sid with aRts-engine
+  ADD: loader application, starts and controls amaroK. it reduces the lag when handing
+       command line arguments to amaroK and makes the splash load faster
+  ADD: playlist items, which couldn't be opened / read (for some reason) will be marked
+       with a grey background color
+  ADD: pasting clipboard selection into playlist with MidButton, X11-style
+  CHG: refined on-screen-display with more polished look
+  FIX: skipping broken/non-existant tracks
+  CHG: If the current song is paused, the Play Button will resume, not restart it.
+  FIX: respect "hide playlist with main window" and playlist minimize/hide behaviour.
+  ADD: new OSD configuration options: bgcolor, screen position
+
+VERSION 0.9-beta2:
+  CHG: some look-and-feel polishing in the main player window
+  ADD: option to turn off analyzers
+  ADD: splash-screen shown during program startup (optional)
+  FIX: made stream playback with TitleProxy more stable (by using an unbuffered socket)
+  ADD: show stream metadata in on-screen-display
+  CHG: transformed "EQ" button into a togglebutton, which can also hide the effect browser
+  ADD: new OpenGL analyzer, contributed by Enrico Ros <eros.kde@email.it>
+  FIX: FreeBSD compile fixes, contributed by Markus Brueffer <brueffer@phoenix-systems.de>
+  FIX: rewritten configure: checks properly for kdemultimedia presence,
+       and adds --without-opengl and --without-gstreamer arguments
+
+VERSION 0.9-beta1:
+  ADD: display warning when artsd is not running with realtime priority
+  ADD: Audioproperties are loaded as you scroll the playlist and get saved to playlist files
+  ADD: If trackname column is hidden, the title column will show the trackname until a title
+       tag can replace it. If no title tag is found the trackname stays.
+  CHG: Pressing "back" in Random Mode now works as expected and walks backwards
+       through the list of recently played songs.
+  ADD: TitleProxy searches for a free local port (contributed by Stefan Gehn)
+  CHG: Random Mode now stores the recently played songs in a buffer, which prevents
+       playing the same songs too often.
+  ADD: "Play Next" context menu option
+  ADD: selected aRts-effects will be remembered on next program start, including settings
+  FIX: sort numerical playlist columns in correct order
+  ADD: logarithmic fading algorithm makes crossfading smoother
+  ADD: Select a series of tracks, start inline tag-editing a tag and amaroK will prompt you to
+       edit that tag for all tracks one-by-one. Also available: fill-down.
+  ADD: improved crossfading: will fade out smoothly when the stop button is pressed
+  FIX: O(n) behavior for playlist scrolling fixed
+  ADD: setting to make playlist colours the KDE defaults
+  ADD: support for tag-editing directly in playlist
+  CHG: replaced old FileBrowser with the comfortable fileselector from KDevelop
+  CHG: analyzers now powered by a new, more flexible FFT routine
+  ADD: hide/show selected playlist columns
+  CHG: upgrade streambrowser to kderadiostation 0.5
+  FIX: many streams not loading from browser and AddItem dialog
+  CHG: amaroK moved out of kdenonbeta. we are now member of KDE Extra Gear 1
+  ADD: on-screen-display (OSD), shows an overlay with information on the currently playing track
+  CHG: use KMultiTabBar for browser selection
+  CHG: migrated settings system to KConfig XT
+  ADD: playlist columns for length and bitrate
+  ADD: merged new audio engine in. this provides a generic interface class, with multiple
+       backends. right now there is a backend for aRts and one for GStreamer (still rudimentary)
+
+==BEGIN KDE 3.2 DEPENDENCY==
+
+VERSION 0.8.3:
+  FIX: build issue
+
+VERSION 0.8.2:
+  ADD: added Hide/Show Playlist global shortcut (thanks gogo)
+  CHG: mousewheel over trayicon behaviour changed
+  CHG: search tokens can now be entered in random order
+       ("Presley Elvis" will find "Elvis Presley")
+  FIX: qt 3.1 compile issues
+
+VERSION 0.8.1:
+  FIX: compilation problem with KDE < 3.1.3
+
+VERSION 0.8.0:
+  FIX: KDE 3.1 compatibility re-gained
+  ADD: hitting return in the search field of the playlist starts playback of the
+       first visible playlist entry (Qt >=3.2 only)
+  FIX: fixed crash bug in playlist searching
+  FIX: fixed crash bug when removing playlist-items
+  CHG: new layout has been adopted
+  ADD: added accepting files dropped onto systray icon
+  FIX: significant reduction in memory consumption for PlaylistItems
+  FIX: hardware mixer works again
+  CHG: replaced sliders with custom slider class, which fits better in our design
+  FIX: exchanged c32-app-amarok.png with the correct (active) version
+  FIX: amarok.desktop file. now we show up in the k-menu again.
+  FIX: crossfading aRts module. the fading is now much smoother than before
+  FIX: crossfading bug. before the fix amaroK sometimes mixed up the two xfade sources,
+       so it sort of faded in reverse (==crap)
+  ADD: tag reading in separate thread
+  ADD: re-added m_optCrossFade, so we don't lose the crossfade length on switching it on/off.
+       set default crossfade length to 2500.
+  CHG: "Title Streaming" on by default
+  CHG: integrated streambrowser into playlist window
+  ADD: added dcop implementation for url adding. Relevant diffs for mediacontrol are
+       available.
+  FIX: libamarokarts detection code
+  ADD: added long-awaited DCOP methods for manipulating the playback. This also adds
+       integration with kdeaddons/kicker-applets/mediacontrol.
+  CHG: moved DCOP handler to a separate class/file
+  ADD: threaded playlist insertion
+  FIX: removed bugs and waste code keyhandling in browser*, it mostly works as expected
+       now with various keypresses going to the correct places
+  FIX: cleaned the playlist class's public interface, also fixed some unreported bugs in
+       process (inconsistent recursive behavior), please keep the encapsulation, it's a
+       good thing (tm)
+  FIX: tweaked undo/redo behavior
+  CHG: exchanged old player icons with new ones made by
+       Alper Ayazoglu a.k.a. cubon <cubon@cubon.de>
+  ADD: clicking on EQ button activates effect selection widget
+  ADD: KJanusWidget as a sidebar for filebrowser mode selection
+  FIX: pushing enter in lineedit goes up a level
+  ADD: a stream browser, can only DnD, separate window, not great yet
+  FIX: finally fixed the ancient "annoying-noise-when-pressing-pause" bug
+  FIX: should keep track of currently played item no matter what you do to the playlist,
+       has a nice side effect of remembering the last played song, too. <berkus>
+  FIX: write undo for Shuffle <berkus>
+  FIX: the expandbutton doesn't fire events when it has had its stack expanded
+       (behaviour a-la Winamp Classic) <berkus>
+  FIX: crash when pressing right mouse button while stream is connecting
+  ADD: show bitrate for streams with icecast support
+  FIX: save stream names as #EXTINF in m3u files
+  ADD: bug report dialog
+  ADD: proxy for decoding shoutcast/icecast metadata (experimental!)
+  ADD: amaroK now in bugs.kde.org
+  ADD: configurable delay after each track.  currently 0-10 seconds in 1 sec increments
+       but could easily be made to use finder increments if ppl want - piggz (www.piggz.co.uk)
+  ADD: viswidgetv2.  it seems a lot smoother on my machine.
+       its quite easy to tweak the dynamics is needed.  is accessible the same as the other
+       widgets, just click until it appears (though it looks the same as the original widget
+       it just acts differently) - piggz (www.piggz.co.uk)
+  ADD: combo with history and completion for dir/file chooser
+  ADD: in configure.in.in for checking the version of TagLib, if compiled from CVS, if not,
+       then show, that it uses bundled version of TagLib - Stormy
+  FIX: font dialog sizing issues
+  ADD: resume playback option. Using this means your track starts up again where you left it
+       last time you quit amaroK. Excellent feature for us developers :-)
+
+VERSION 0.7.0:
+  FIX: collection of fixes related to showing/raising/hiding the playlist
+  when showing/raising/hiding the mainWidget
+  FIX: by muesli: make playlist searches a bit faster at the expense of memory
+  FIX: (partial fix) bitrate/samplerate font overlap at large font sizes
+  change: less staccato loading of widgets
+  change: pause makes the analyser bars fall to zero rather than just vanish
+  ADD: xfade when starting tracks by doubleclick
+  FIX: global shortcuts can now be changed
+  FIX: tracks skipping randomly
+  change: "BrowserWin Enabled" on by default
+  change: "Save Playlist" on by default
+  change: "Show Metainfo" on by default
+  FIX: make loading playlist not block UI
+  FIX: on startup load playlist after UI is shown
+  change: "Software Mixer Only" on by default
+  FIX: make timedisplay also work for streams
+  FIX: volume slider adjusting
+  FIX: when dropping tracks to PL, order will stay the same as in FileBrowser
+  ADD: FileBrowser sortable by clicking on header
+  ADD: analyzer that distorts a bitmap
+  ADD: multiple analyzers now possible
+  ADD: "Software Mixer Only" option
+  Removed stale sigplay()
+  Cleaned a couple "deprecated" warnings
+  ADD: undo and redo playlist actions
+  FIX: rewritten config dialog and moved into separate file
+  ADD: started configurable colors
+  change: spectrum analyser bars now have dynamics, ie. they move smoothly between values
+  ADD: mouse wheel over systray icon changes the track, hold shift to change the volume
+  change: rearranged menu order for systray (quit = last)
+  change: moved volume slider to the right, lets see if this is better
+  ADD: started a font selection page in settings
+  FIX: Stream urls are now properly demangled/unescaped (%20 => space etc)
+
+VERSION 0.6.91:
+  FIX: ExpandButton submenu now slightly delayed
+  FIX: dropping items into playlist
+  ADD: drop-target indicator line in PlaylistWidget, providing visual feedback
+  ADD: tray menu
+  ADD: random mode
+  ADD: crossfading between tracks
+  ADD: vertical lines between columns in Playlist
+  ADD: alternating item colors in Playlist
+  ADD: column "directory" in PlaylistWidget (for Grue:)
+  ADD: sorting by clicking on column headers in PlaylistWidget
+  FIX: rewrote directory reading code in BrowserWidget.cpp.
+       code is now much more readable, and it also fixes a bug.
+  ADD: additional columns in playlist for tags
+  FIX: made metainfo reading algorithm faster
+  change: switched to TagLib for metainfo reading
+  ADD: button "play" in PlayerWidget.cpp is now a toggleButton
+  ADD: tray icon
+  FIX: playlist window is optionally hideable with main widget when iconified to tray
+
+VERSION 0.6.0:
+  Release :)
+
+VERSION 0.6.0-PRE5:
+  fixed: animated buttons don't get stuck anymore
+  fixed: invoking help
+  changed: MetaInfo reading now off by default. the slowdown was potentially
+           confusing to new users
+  added: documentation
+  fixed: cleaned up Makefile.am a bit
+  fixed: defined new APP_VERSION macro, since the old approach did not work
+         with CVS
+  changed: put amarok into KDE CVS (KDENONBETA)
+  added: applied Stormchaser's button patch. the AmarokButtons now work
+         in a more standard conform way. Thanks Stormchaser, blessed be :)
+
+VERSION 0.6.0-PRE4:
+  added: buttons in playlist window for play, pause, stop, next, prev.
+    a.k.a. stakker mode :)
+  removed: "load" button. this functionality is now provided by "Add item"
+  added: more sanity checks on pointers
+  fixed: when track in playlist does not exist, we now skip to the next track
+  fixed: all aRts references are freed correctly at program exit
+  fixed: effects will not be forgotten any more when EffectWidget is closed
+
+VERSION 0.6.0-PRE3:
+  fixed: crash when URLs were dropped onto filebrowser from other apps
+  fixed: URL dialog now accepts remote files
+  added: correct caption for ArtsConfigWidget
+  added: "amaroK Handbook" menu entry, calling KHelpCenter
+  changed: amarok gets installed into multimedia now
+  fixed: PlayObject configuration
+
+VERSION 0.6.0-PRE2:
+  changed: safety question at program exit now off by default
+  removed: button "sub" - it was useless
+  changed: clearing playlist does not stop playing anymore - for Grue ;)
+  fixed: potential crash at startup
+  added: menu option to configure PlayObject
+  fixed: crash when removing currently playing track
+
+VERSION 0.6.0-PRE1:
+  fixed: flicker in glowing item
+  fixed: another memory leak in analyzer (hopefully the last one!)
+  added: playlist widget can display metainfo instead of filenames
+  added: repeat track / repeat playlist
+
+VERSION 0.5.2 - 0.5.2-DEV6:
+  fixed: memory leak in analyzer code.
+  added: shortcut for copying current title to the clipboard
+  added: slider position can be changed by just clicking somewhere on the slider
+  added: icon
+  added: url can be entered directly above the filebrowser widget
+  changed: removed the "jump" widget. you can now enter a filter string
+    directly above the playlist widget
+  added: playlists (.m3u and .pls) can now directly be dragged into the playlist
+  added: support for .pls (audio/x-scpls)
+  added: amarok is now completely network-transparent. any kind of folder,
+    local as well as remote, can be browsed and played.
+  added: check for libamarokarts. amarok won't crash anymore if it's not found
+  added: the time display now has a mode for showing the remaining time, too
+  fixed: crash when clearing playlist, after playlist has played till the end.
+    clearing the playlist stops the playing now.
+  added: new gfx in playerwidget
+  fixed: progressbar sometimes not working, zero tracklength
+  fixed: font of bitrate/frequency display too big on some systems
+  added: command line options
+  added: timedisplay is now updated during seeks
+  added: saving window positions and size on exit
+  added: due to popular request, I finally changed the behaviour of the "play"
+    button. it's now possible to start a track on a fresh playlist without
+    double-clicking an item.
+  fixed: compile error on GCC 3.3.1 in visQueue.cpp. bugfix by thiago
+  added: completely rewrote drag-and-drop code. works recursively now (optionally).
+    plus dragging stuff from other applications into amaroK also works now.
+
+VERSION 0.5.1:
+  added a Tip of the Day at startup to explain the user interface a bit
+  added restarting of artsd on first program start to make sure it registers
+    the new mcopclasses
+  fixed possible compile error in viswidget.cpp
+  amaroK uses much less CPU now than it used to. This was mainly achieved by
+    using a new FFT-analyzer module, which I took from Noatuns "Winskin"-plugin,
+    and modified slightly to my needs. Also some other optimizations were made,
+    which improved the standby performance, when no song is playing. I'm still
+    not satisfied with overall performance, tho, but it seems that most of the
+    load is produced by the aRts code itself, so this will rather be difficult
+    to improve.
+  fixed crash when "next" or "previous" was pressed without a track
+    loaded
+  thanks to valgrind I was able to find and squish some serious bugs,
+    most of which were related to pointers. to sum it up: pointers are evil.
+    valgrind is great.
+  lots of UI-changes in the main widget. uses a background pixmap now, a
+    custom font and widget for the time-display, and generally looks better
+  fixed issues with the liquid skin. unfortunately, there seems to be no way
+    to display pushbuttons correctly with a black background under liquid. so,
+    until I find a solution for that, the expandbutton widget doesn't look quite
+    as cool as it used to. maybe I should ask mosfet about this..
+
+VERSION 0.50:
+  renamed 0.15 to 0.50
+
+VERSION 0.15:
+  playing streams now works! *yipeeee*
+  fixed tons of bugs in aRts playing code. i think i got it right now.
+  fixed loading and saving of playlists. can cope with all protocols now.
+  fixed a bug in EffectWidget.cpp, that gave a compile error on some systems.
+  Converting QString into std::string was not done correctly. Thanks to
+    Whitehawk Stormchaser for that one :)
+  changed project name to "amaroK" and built new project-file
+
+VERSION 0.14 (internal):
+  implemented use of arts-software-mixing, in case hardware-mixing
+  (/dev/mixer) doesn't work
+  fixed crash when play was pressed without selecting a file
+  changed the direction of the volume-slider. maximum is now at the top
+  added automatic saving of current playlist on exit
+  added previous/next track
+  added two radiobuttons in the playerwidget for toggling the
+    playlist/equalizer on and off. admitted, the equalizer doesn't yet exist, so
+    it's just a dummy button :P
+  added popup-menu for the playerwidget. opens on
+    right mouse button. this menu finally replaces the ugly menubar.
+  added some icons (from noatun) for the player-buttons instead of text
+  added pause function
+  changed most names in the source to comply with the
+    (unofficial?) KDE c++ coding standard (using the prefix "m_" for member
+    attributes and so on). This was real slave-work :/
+  cleaned up code in several classes
+  fixed problem where subwidgets got keyboard focus and were drawn dark with
+    the liquid style. switched off focus completely, since it's not needed for
+    this type of application
+
+VERSION 0.13 (internal):
+  added cute animated pushbuttons with sub-menus
+  added saving playlists
+  added dragging items inside of playlist widget
+  added forward declarations in header files to reduce compile time
+  added saving of browserwin/splitter size
+  rewrote track information widget. used a html table for the text. looks much
+  nicer now :)
+  fixed sorting function
+  fixed jump widget. removed huge memory leaks in the widget
+  fixed flicker in analyzer widget
+  tons of bugfixes in playing code. partly rewritten. seems to be much more
+  stable now
+
+VERSION 0.12 (internal):
+  added ChangeLog and TODO
+  added grid under scope display
+  added saving of options, like current directory and playlist
+  added detection of mimetypes
+  added adjusting volume by mousewheel
+  added skipping to next track after playing
+  added loads of sanity/safety checks
+  bugfixes (tons of) in playlist code, partly rewritten
+  bugfixes in scope code
+
+
+VERSION 0.1 - 0.11:
+  internal versions, no changelog
+  tried no less then 4 different sound interfaces:
+    mpg123, smpeg, alsaplayer, and finally aRts

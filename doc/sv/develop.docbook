@@ -1,0 +1,213 @@
+<chapter id="developers">
+<title
+>Utvecklingsguide för &amarok;</title>
+
+<para
+>Om du är intresserad av att hjälpa till med utveckling av &amarok;, genom att bidra med kod, grafik, dokumentation eller något annat, tveka inte att skriva till <email
+>amarok-devel@lists.sourceforge.net</email
+>, eller besöka oss på IRC, kanal: #amarok, nätverk: irc.freenode.net.</para>
+
+<para
+>Du kan också prenumerera på vår <ulink url="http://lists.sourceforge.net/lists/listinfo/amarok-devel"
+>e-postlista</ulink
+> och se framstegen, medan du infogar några väl värda kommentarer.</para>
+
+<para
+>Ditt bidrag eller din återmatning är mer än välkomna. Ser fram emot att prata med dig...</para>
+
+<sect1 id="source_file_list">
+<title
+>Källkodsfiler i &amarok;</title>
+
+<para
+>Filerna listas i alfabetisk ordning, vilket inte är användbart som prioritetsordning. De viktiga filerna är app.cpp, playlist.cpp och playerwindow.cpp.</para>
+
+<informaltable>
+<tgroup cols="2">
+
+<thead>
+<row>
+<entry
+>Fil</entry>
+<entry
+>Användning</entry>
+</row>
+</thead>
+
+<tbody>
+
+<row>
+<entry
+>actionclasses.cpp</entry>
+<entry
+>Tillhandahåller en QPopupMenu som listar &amarok;:s inställningsalternativ, avslutar och tillhandahåller en KHelpMenu för &amarok; för att undvika att instansiera många hjälpmenyer.</entry>
+</row>
+
+<row>
+<entry
+>amarokconfig.cpp</entry>
+<entry
+>KConfig-XT</entry>
+</row>
+
+<row>
+<entry
+>amarokfilelist.cpp</entry>
+<entry
+>Används inte för närvarande. Kommer att sortera KFileList.</entry>
+</row>
+
+<row>
+<entry
+>app.cpp</entry>
+<entry
+>Det här är klassen som är härledd från kapplication. Den är överliggande klass för många objekt som är grundläggande för att köra &amarok;, t.ex. engine, dcop, systray, grafiska toppnivåkomponenter, etc.</entry>
+</row>
+
+<row>
+<entry
+>browserbar.cpp</entry>
+<entry
+>Denna hanterar bläddrarna, den grafiska komponenten KMultiTabBar och den egna avdelningskomponenten.</entry>
+</row>
+
+<row>
+<entry
+>browserwin.cpp</entry>
+<entry
+>Det här är bara en grafisk behållarkomponent för spellistan, verktygsraden och bläddringsraden. Slutligen kan den bli ännu mindre.</entry>
+</row>
+
+<row>
+<entry
+>collectionbrowser.cpp</entry>
+<entry
+>Under konstruktion. Ett sorts mediabibliotek.</entry>
+</row>
+
+<row>
+<entry
+>effectwidget.cpp</entry>
+<entry
+>Grafisk komponent för att anpassa ljudgränssnittseffekter.</entry>
+</row>
+
+<row>
+<entry
+>enginecontroller.cpp</entry>
+<entry
+>Gränssnitt mellan &amarok; och ljudgränssnittet.</entry>
+</row>
+
+<row>
+<entry
+>fht.cpp</entry>
+<entry
+>&amarok;s sofistikerade och flexibla FHT-rutin (i grunden FFT) för spektralanalys.</entry>
+</row>
+
+<row>
+<entry
+>filebrowser.cpp</entry>
+<entry
+>Filbläddraren.</entry>
+</row>
+
+<row>
+<entry
+>kbookmarkhandler.cpp</entry>
+<entry
+>Används av filbläddraren.</entry>
+</row>
+
+<row>
+<entry
+>osd.cpp</entry>
+<entry
+>En mycket bra klass för skärmvisning, inte &amarok;-specifik. Mycket flexibel.</entry>
+</row>
+
+<row>
+<entry
+>playerwindow.cpp</entry>
+<entry
+>Det här är den lilla grafiska komponenten med rullande text, analysator och knapparna spela, paus etc.</entry>
+</row>
+
+<row>
+<entry
+>playlist.cpp</entry>
+<entry
+>Stor klass som är spellistans grafiska komponent.</entry>
+</row>
+
+<row>
+<entry
+>playlistbrowser.cpp</entry>
+<entry
+>Spellistebläddraren.</entry>
+</row>
+
+<row>
+<entry
+>playlistitem.cpp</entry>
+<entry
+>Härledd från KListViewItem, spellistans objekt.</entry>
+</row>
+
+<row>
+<entry
+>playlistloader.cpp</entry>
+<entry
+>Laddar rekursivt kataloger, webbadresser och spellistefiler i den grafiska spellistekomponenten. Använder trådar för att fungera i bakgrunden. Ber gränssnittet bekräfta om det kan spela okända filtyper.</entry>
+</row>
+
+<row>
+<entry
+>pluginmanager.cpp</entry>
+<entry
+>Hanterar &amarok;s insticksprogramsystem.</entry>
+</row>
+
+<row>
+<entry
+>sliderwidget.cpp</entry>
+<entry
+>Den egna grafiska skjutreglagekomponenten som används av PlayerWidget. Kandidat för att skrivas om så att den härleds från QSlider.</entry>
+</row>
+
+<row>
+<entry
+>streambrowser.cpp</entry>
+<entry
+>Grafisk komponent som visar strömlistor som laddats ner från metaservrar.</entry>
+</row>
+
+<row>
+<entry
+>systray.cpp</entry>
+<entry
+>&amarok;s systembricka. Liten, kompakt.</entry>
+</row>
+
+<row>
+<entry
+>threadweaver.cpp</entry>
+<entry
+>Flexibel klass som köar, behandlar och skickar vidare resultat för <quote
+>jobb</quote
+> i en egen tråd. Används av diverse komponenter i &amarok;.</entry>
+</row>
+
+<row>
+<entry
+>tracktooltip.cpp</entry>
+<entry
+>Har egentligen inget att göra med PlaylistWidget. Används av PlayerWidget för att visa viss information om spåret som för närvarande spelas.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</sect1>
+</chapter>

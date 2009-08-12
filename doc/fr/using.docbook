@@ -1,0 +1,1675 @@
+<chapter id="using-kapp">
+<title
+>Utiliser &amarok;</title>
+
+<para
+>&amarok; est un lecteur audio aux talents variés qui offre différentes façons de contrôler votre collection musicale. Comme un lecteur audio ordinaire, &amarok; a une fenêtre de lecture vous permettant de contrôler les fonctions les plus basiques. &amarok; a aussi une liste de lecture. La fenêtre de la liste de lecture a de multiples navigateurs vous permettant de créer et de naviguer dans votre collection musicale.</para>
+
+<para
+>Dans ce chapitre nous vous montrerons comment utiliser toutes les fonctionnalités d'&amarok; cela inclura la création d'une collection et d'une liste de lecture.</para>
+
+<sect1 id="player-window">
+<title
+>La fenêtre du lecteur</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la fenêtre du lecteur</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>La fenêtre de lecture est le centre de contrôle d'&amarok;, tout peut y être fait en un clic. En haut du lecteur il y a un affichage défilant vous affichant la piste ou le flux actuellement joué. Juste dessous cet affichage défilant il y a une aire vous affichant le temps de lecture sur la piste, le débit d'octets et le débit de samples. Cliquer sur cette aire basculera du temps joué sur la piste vers le temps total joué et au temps restant.</para>
+
+<para
+>La fenêtre de lecture propose aussi une sélection d'analyseurs audio aussi situés sous l'affichage défilant. Vous pouvez naviguer parmi les analyseurs disponibles en cliquant sur l'aire de l'analyseur.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Astuce sur les analyseurs</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Les analyseurs d'&amarok; peuvent être détachés de la fenêtre de lecture. En appuyant sur la touche <keycap
+>d</keycap
+> de votre clavier l'analyseur actif s'ouvrira dans une fenêtre indépendante et redimensionnable.</para>
+</tip>
+
+<para
+>Aussi situés sous l'affichage défilant vous trouverez les boutons <guibutton
+>PL</guibutton
+> et <guibutton
+>FX</guibutton
+>. Le bouton <guibutton
+>PL</guibutton
+> est utilisé pour activer ou désactiver rapidement la fenêtre de la liste de lecture, tandis que le bouton <guibutton
+>FX</guibutton
+> est utilisé pour configurer les effets du système son disponibles.</para>
+
+<para
+>Le reste du lecteur inclut les boutons de lecture et les barres de volume et de position sur la piste. Utilisez ces barres pour choisir une position sur la piste ou pour régler le volume à une position qui vous convient. Utilisez les boutons de lecture pour contrôler la lecture de la piste actuelle, ou passer à la piste précédente ou suivante.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>La fenêtre de l'égaliseur</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de l'égaliseur</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>L'égaliseur est similaire aux égaliseurs trouvés dans d'autres lecteurs multimédias. Cocher la case <guilabel
+>Activer l'égaliseur</guilabel
+> active l'égaliseur et active les barres vous permettant d'ajuster les sons au niveau qui vous convient.</para>
+
+<para
+>L'égaliseur peut être trouvé dans le <link linkend="rmb-menu"
+>menu du bouton droit de la souris</link
+>. Vous pouvez aussile trouver dans la <link linkend="menubar"
+>Barre de menus</link
+> en sélectionnant <menuchoice
+><guimenu
+>Outils</guimenu
+><guimenuitem
+>Egaliseur</guimenuitem
+></menuchoice
+>.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>La fenêtre de la liste de lecture</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la fenêtre de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La liste de lecture d'&amarok; est la liste de lecture la plus avancée disponible pour un lecteur audio &kde;. La liste de lecture propose beaucoup de fonctionnalités qui ne sont trouvées dans aucun autre lecteur. Vous ne devriez néanmoins pas être intimidés par la puissance de la liste de lecture, étant donné qu'elle reste la plus facile à utiliser.</para>
+
+<para
+>La fenêtre de la liste de lecture peut être divisée en deux sections principales, à gauche se trouve la barre latérale. Sur cette barre se trouvent quelques unes des fonctionnalités excellentes de la liste de lecture comme le <link linkend="context-browser"
+>navigateur contextuel</link
+>. Sur le côté droit se trouve la liste de lecture elle-même. La liste de lecture est simple à utiliser même si elle reste assez puissante pour les utilisateurs les plus avancés.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Les navigateurs latéraux</title>
+
+<para
+>Les navigateurs latéraux transforment la liste de lecture d'&amarok; en un outil de gestion multimédia complet. D'ajouter des morceaux à votre collection à suggérer d'autres pistes à écouter, les navigateurs latéraux font tout. Vous trouverez aussi un support iPod complet ainsi que des navigateurs permettant de manipuler les listes de lecture et de naviguer dans votre système de fichiers.</para>
+
+<para
+>Dans cette section il y a toute les informations dont vous avez besoin pour obtenir le meilleur des barres latérales, et comme vous le verrez, les navigateurs vous permettront d'écouter votre musique d'une bien meilleure façon.</para>
+
+<sect2 id="context-browser">
+<title
+>Le navigateur contextuel</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du navigateur contextuel</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="context.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Le navigateur contextuel est un navigateur avec onglets qui fournit une multitude d'informations concernant la piste actuellement jouée, et votre collection musicale en général.</para>
+
+<sect3 id="home-tab">
+<title
+>L'onglet Page de démarrage</title>
+
+<para
+>L'onglet <guilabel
+>Page de démarrage</guilabel
+> vous offre des informations sur toute votre collection musicale. Dans cet onglet vous trouverez les panneaux <guilabel
+>Vos pistes favorites</guilabel
+>, <guilabel
+>Vos nouvelles pistes</guilabel
+> et les <guilabel
+>Pistes les moins jouées</guilabel
+>.</para>
+
+<para
+>Le panneau <guilabel
+>Vos pistes favorites</guilabel
+> liste les 10 pistes les mieux notées de votre collection.</para>
+
+<para
+>Le panneau <guilabel
+>Vos nouvelles pistes</guilabel
+> liste les 5 pistes les plus récemment ajoutées à votre collection.</para>
+
+<para
+>Le panneau <guilabel
+>Pistes les moins jouées</guilabel
+> liste les 5 pistes les moins jouées de votre collection. Ce sont les pistes qui ont été jouées une fois, mais pas depuis un bout de temps.</para>
+
+<note
+><para
+>Cliquer un élément sur n'importe quel panneau démarrera la lecture de la piste.</para
+></note>
+
+</sect3>
+
+
+<sect3 id="current-track-tab">
+<title
+>L'onglet Piste actuelle</title>
+
+<para
+>L'onglet <guilabel
+>Piste Actuelle</guilabel
+> propose des informations concernant la piste actuellement jouée, son artiste et son album.</para>
+
+<para
+>Le premier panneau de cet onglet est les informations concernant la piste. Le titre du panneau liste le nom de la piste, le nom de l'artiste et le nom de l'album. Dans le panneau s'affichera la pochette pour la piste. A côté de l'image vous trouverez une icône <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+><inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+>. Cliquez sur cette icône pour effectuer une recherche MusicBrainz pour la piste.</para>
+
+<para
+>Sous l'icône MusicBrainz se trouve plus d'informations concernant la piste actuelle. Vous y trouverez le nombre total de fois où la piste a été jouée, le score actuel de la piste, et quand la piste a été jouée pour la Première et pour la Dernière fois.</para>
+
+<tip
+><para
+>Pour afficher les pochettes dans votre navigateur contextuel vous devez mettre les pochettes dans le même dossier que la piste que vous écoutez. Les formats supportés sont .jpg, .jpeg, .gif et .png. Les images peuvent être nommées comme vous le voulez, mais les images avec le mot <quote
+>front</quote
+> dans le nom de fichier seront privilégiées. Le navigateur contextuel utilisera aussi les pochettes enregistrées depuis le téléchargeur de pochettes, ou les images intégrées dans les tags ID3v2.</para
+></tip>
+
+<para
+>Le panneau suivant, <guilabel
+>Chansons suggérées</guilabel
+>, liste plusieurs pistes suggérées pour être écoutées. Cliquez sur une de ces pistes et la lecture de cele-ci commencera.</para>
+
+<para
+>Sous <guilabel
+>Chansons suggérées</guilabel
+> se trouve <guilabel
+>Chansons favories par artiste</guilabel
+>. Ce panneau liste les 5 chansons les mieux notées par l'artiste de la piste actuelle.</para>
+
+<para
+>Le dernier panneau, <guilabel
+>Albums par Artistes</guilabel
+>, liste tous les albums de l'artiste de la piste actuelle contenus dans votre collection. Cliquer sur un des albums étendra l'album pour afficher son contenu.</para>
+
+<tip
+><para
+>Vous pouvez cliquer sur les pistes dans n'importe quel panneau pour commecner la lecture de la piste. Vous pouvez aussi effectuer un clic droit sur des albums ou des pistes pour afficher un menu vous permettant de choisir différentes façons de jouer ou de mettre en file d'attente les pistes ou les albums.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>L'onglet paroles</title>
+
+<para
+>L'onglet <guilabel
+>Paroles</guilabel
+> a un seul panneau utilisé pour afficher les paroles de la piste actuellement jouée si elles sont disponibles.</para>
+
+</sect3>
+
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Navigateur de collection</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du navigateur de collection</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Le navigateur de collections est utilisé pour voir votre collection audio dans une arborescence. Pour utiliser ce navigateur, vous devez configurer les dossiers à utiliser pour votre collection. En cliquant <guibutton
+>Configurer les dossiers... vous démarerrez une fenêtr</guibutton
+>e vous permettant d'ajouter des dossiers à votre collection.</para>
+
+<note
+><para
+>Si vous utilisez l'option <guilabel
+>Surveiller les changements des dossiers</guilabel
+> dans la boîte de dialogue <guilabel
+>Configurer la collection</guilabel
+>, vous pouvez noter que les changements ne sont pas affichés immédiatement. Cela est du au fait que la collection se met à jour automatiquement toutes les 30 secondes.</para
+></note>
+
+<para
+>Une fois que vos dossiers ont été scannés, vous verrez votre collection dans une arborescence. L'arborescence est organisé avec une <guimenuitem
+>Première</guimenuitem
+>, une <guimenuitem
+>Seconde</guimenuitem
+> et une <guimenuitem
+>Troisième</guimenuitem
+> branche. Les branches peuvent représenter l'Album, l'Artiste, le Genre ou l'Année. Sélectionner le <guimenuitem
+>Première</guimenuitem
+>, le <guimenuitem
+>Second</guimenuitem
+>, ou le <guimenuitem
+>Troisième</guimenuitem
+> niveau d'entrée dans le menu <guimenuitem
+>Filtre à Tag</guimenuitem
+> vous permet de définir ce que représentent les branches.</para>
+
+<note
+><para
+>Le navigateur de collection propose aussi une vue à plat. Vous pouvez choisir la vue à plat en cliquant sur le bouton <guibutton
+>Vue à plat</guibutton
+> dans la barre d'outils du navigateur de collection. Dans la vue à plat votre collection semblera vide. Vous pouvez alors commencer à saisir du texte dans le champ de recherche. Dès que trois caractères seront saisis alors vous commencerez à voir les résultats. Vous pouvez commencer une nouvelle recherche en cliquant sur le bouton <guibutton
+>Effacer le filtre</guibutton
+>, à côté du champ, et en rentrant de nouveau du texte dans le champ.</para
+></note>
+
+<para
+>En haut du Navigateur de Collection se trouve une barre de recherche vous permettant de chercher un titre dans votre collection. Le navigateur n'affichera que les éléments contenant la chaîne que vous avez saisie dans la barre de recherche. Une fois que vous aurez effectué votre recherche, vous pouvez cliquer sur le bouton d'effacement pour effacer le champ de recherche.</para>
+
+<para
+>Le Navigateur de Collection supporte aussi le téléchargement de pochettes. Pour télécharger une pochette vous pouvez simplement effectuer un clic droit sur un élément de la Collection et sélectionner <guimenuitem
+>Chercher la Pochette</guimenuitem
+>. Le téléchargeur de pochettes ouvrira alors une fenêtre vous affichant la pochette télécharger vous permettant d'enregistrer l'image ou d'effectuer une nouvelle recherche avec un chaîne plus spécifique.</para>
+
+<para
+>Inclut avec le téléchargeur de pochettes, il y a un <link linkend="cover-manager"
+>Gestionnaire de Pochettes</link
+>. Vous pouvez le lancer en sélectionnant <menuchoice
+><guimenu
+>Actions</guimenu
+><guimenuitem
+>Gestionnaire de Pochettes</guimenuitem
+></menuchoice
+>.</para>
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Navigateur de listes de lecture</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du Navigateur de listes de lecture</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="pl_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Le Navigateur de listes de lecture est utilisé pour manipuler facilement vos listes de lecture. Il propose aussi des listes de lecture automatiques pratiques qui en font le meilleur Navigateur de listes de lecture disponible.</para>
+
+<para
+>Le Navigateur de listes de lecture est divisé en deux sections, Listes de lecture et Listes de lectures Pratiques. La section Listes de lecture est faite pour vos propres listes de lecture. Vous pouvez afficher le contenu de vos listes de lecture en une liste en cliquant sur le symbole <quote
+>+</quote
+> situé à la gauche de chaque liste de lecture. Quand vous affichez une liste de lecture, de nouveaux éléments peuvent être ajoutés à celle-ci en les tirant puis en les lâchant. Quand vous avez trouvé une liste de lecture que vous voulez la charger, vous pouvez faire un double clic sur la liste de lecture, ou appuyer sur la <keycap
+>Barre d'Espace</keycap
+> pour qu'&amarok; la charge. Les autres raccourcis peuvent être trouvés dans la <link linkend="keybd-shortcuts"
+>Section sur les Raccourcis Clavier</link
+>.</para>
+
+<tip
+><para
+>Quand vous enregistrez une nouvelle liste de lecture depuis la Fenêtre de la liste de lecture elle est automatiquement ajoutée à la section des listes de lecture.</para
+></tip>
+
+<para
+>La section du bas du Navigateur de listes de lecture est les Listes de lecture Pratiques, qui utilisent des fonctionnalités automatiques d'&amarok; pour fabriquer quelques listes de lecture pratiques automatiquement. Les listes de lecture pratiques incluent les listes suivantes.</para>
+
+<para
+>Toute la collection : une liste de lecture contenant toutes les pistes contenues dans votre collection.</para>
+
+<para
+>Pistes favorites : listes de lecture multiples des 15 pistes les plus appréciées classées par artiste.</para>
+
+<para
+>Les plus jouées : listes de lecture multiples des quinze pistes les plus jouées classées par artiste.</para>
+
+<para
+>Les pistes les plus récentes : listes de lecture multiples des quinze pistes les plus récemment ajoutées classées par artiste.</para>
+
+<para
+>Dernières jouées : une liste de lecture des quinze pistes les plus récemment jouées de votre collection.</para>
+
+<para
+>Jamais jouées : une liste de lecture des pistes de votre collection n'ayant jamais été jouées auparavant.</para>
+
+<para
+>Genres : listes de lectures multiples classées par genre</para>
+
+<para
+>Des listes de lecture pratiques définies par l'utilisateur peuvent également être créées. En cliquant sur le bouton Nouvelle Lis<guibutton
+>te de lecture Pratique</guibutton
+>, une fenêtre s'ouvrira vous proposant de configurer une liste de lecture simple qui correspondra à vos critères.</para>
+
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Navigateur de périphériques multimédias</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du Navigateur de périphériques Multimédia</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Le panneau périphérique multimédia est utilisé pour connecter un périphérique audio, comme un iPod, à &amarok;.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Navigateur de fichiers</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du Navigateur de fichiers</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Le panneau du Navigateur de fichiers est comme un mini-konqueror intégré à la liste de lecture. Vous pouvez l'utiliser pour naviguer dans tout votre système de fichiers des pistes audio à ajouter à votre liste de lecture. En haut se trouve un barre d'outils avec les boutons de navigation vous permettant de Remonter dans l'arborescence, avec aussi les boutons Suivant et Précédent. La barre d'outil propose aussi les boutons Page d'accueil, Recharger, Vue simple et Vue détaillée, il propose aussi un bouton signets pour créer des signets dans les aires préférées de votre disque dur.</para>
+
+<para
+>Sous la barre d'outil se trouve une barre de recherche par nom de fichier. Vous trouverez la barre de recherche utile pour les dossiers contenant beaucoup de fichiers étant donné qu'il cherche ce que vous avez saisi seulement dans les noms de fichiers présents dans la vue.</para>
+
+<para
+>En bas du Navigateur de fichiers se trouve une barre d'adresse vous permettant d'accéder à la musique située dans n'importe quelle URL que vous saisissez. Par exemple, saisir <filename class="directory"
+>tar:/home/mike/musique.tar.gz</filename
+> dans la barre d'adresse et appuyer sur la touche <keycap
+>Entrée</keycap
+> de votre clavier vous permettra d'accéder aux fichiers situées dans l'archive. Maintenant vous pouvez tirer la musique depuis l'archive et la lâcher dans la liste de lecture.</para>
+
+<tip
+><para
+>Quand la liste de lecture devient plus longue qu'un écran, il devient difficile d'ajouter des fichiers simplement en les tirant. Garder la touche <keycap
+>Maj</keycap
+> enfoncée tout en tirant peut aider dans ce cas : les fichiers seront alors ajoutés à la fin de la liste de lecture au lieu de l'être à la position actuelle.</para
+></tip>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>La liste de lecture</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La liste de lecture contient toutes les pistes que vous avez mis en file d'attente pour la lecture. Vous pouvez changer l'ordre des pistes en tirant des éléments avec la souris, et les lâcher à la position désirée. Sous la liste de lecture vous verrez un champ, où vous pourrez saisir un filtre. Dès qu'une lettre est saisie ici, la liste de lecture sera ré-affichée, en ne montrant que les entrées contenant les caractères saisis. Pour arrêter le filtrage, appuyez simplement sur la touche <keycap
+>Effacement</keycap
+>, jusqu'à que le filtre soit vide. Vous pouvez aussi chercher par champs. A côté du champ précédent se trouve un bouton, cliquer dessus vous permettra de chercher par : Tout, Titre, Artiste, Album ou Genre musical.</para>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Astuce pour la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Vous pouvez sélectionner les éléments devant être affichés dans un ordre spécifique en maintenant la touche <keycap
+>Ctrl</keycap
+> enfoncée et en cliquant avec le &BDS; sur les éléments dans l'ordre que vous voulez qu'ils soient joués. Sur les éléments sera ajouté un nombre : l'ordre dans lequel ils seront joués.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>La barre d'outils de la liste de lecture</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la barre d'outils de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>Le menu Actions</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Actions</guimenu
+> <guimenuitem
+>Jouer...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre une fenêtre vous permettant de saisir une URL.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Actions</guimenu
+> <guimenuitem
+>Jouer le CD audio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Vous permet de voir et de jouer un CD audio en utilisant le protocole audiocd:/</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Actions</guimenu
+> <guimenuitem
+>Piste précédente</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Aller à la piste précédente de la liste de lecture.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Actions</guimenu
+> <guimenuitem
+>Pause</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Met en pause la piste actuelle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Actions</guimenu
+> <guimenuitem
+>Stop</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Arrête la lecture.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Actions</guimenu
+> <guimenuitem
+>Piste suivante</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Aller à la piste suivante de la liste de lecture.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Actions</guimenu
+> <guimenuitem
+>Quitter</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Quitter &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>Le menu de la liste de lecture</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Ajouter un morceau...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre une fenêtre vous permettant d'ajouter un morceau à votre liste de lecture actuelle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Enregistrer la liste de lecture...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre une fenêtre vous permettant d'enregistrer la liste de lecture actuelle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Annuler</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Annule le dernier changement à la liste de lecture.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Maj</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Refaire</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inverse les changements effectués par Annuler.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Effacer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Efface la liste de lecture actuelle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Hasard</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Change l'ordre des pistes de la liste de lecture au hasard.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Aller à la piste actuelle</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Déplace la liste de lecture à la piste actuelle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Supprimer les doublons/pistes manquantes</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Supprime tous les doublons ou les pistes manquantsde la liste de lecture.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liste de lecture</guimenu
+> <guimenuitem
+>Sélectionner tout</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Sélectionne toutes les pistes de la liste de lecture actuelle.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>Le menu Outils</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Outils</guimenu
+> <guimenuitem
+>Gestionnaire de Pochettes</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre le <link linkend="cover-manager"
+>Gestionnaire de pochettes</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Outils</guimenu
+> <guimenuitem
+>Assistant au premier lancement</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre l'assistant au premier lancement.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Outils</guimenu
+> <guimenuitem
+>Visualisations</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre des <link linkend="visualizations"
+>Visualisations</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Outils</guimenu
+> <guimenuitem
+>Égaliseur</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la <link linkend="equalizer"
+>Fenêtre de l'égaliseur</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Outils</guimenu
+> <guimenuitem
+>Scripts</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre des scripts.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Outils</guimenu
+> <guimenuitem
+>Rescanner la collection</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Démarre un scan manuel de tous les dossiers de votre collection.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Le Menu Configuration</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Cacher la barre de Menus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Cache la <link linkend="menubar"
+>barre de menus</link
+> de la fenêtre de lecture</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Cacher la barre d'outils</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Cache la <link linkend="toolbar"
+>barre d'outils</link
+> de la fenêtre de lecture.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+>  <guimenuitem
+>Cacher la fenêtre de lecture</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Cache la <link linkend="player-window"
+>Fenêtre de lecture</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Répéter la piste</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Répète la lecture de la piste actuelle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Répéter la liste de lecture</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Répète la liste de lecture actuelle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Mode Aléatoire</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Change aléatoirement l'ordre de lecture des pistes dans la liste de lecture.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Configurer les Effets</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Vous permet de configurer les effets sonores de votre système de Sons.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Ajouter des suggestions</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ajoute les chansons suggérées dans le navigateur contextuel à la liste de lecture actuelle.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Configurer les Raccourcis Généraux...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre de configuration des raccourcis généraux</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Configurer les raccourcis...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre de configuration des raccourcis d'&amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Configurer les barres d'outils...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre de configuration des barres d'outils d'&amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuration</guimenu
+> <guimenuitem
+>Configurer amaroK...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre de configuration d'&amarok;</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>Le Menu Aide</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aide</guimenu
+> <guimenuitem
+>Guide d'amaroK</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre cette documentation.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Maj</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aide</guimenu
+> <guimenuitem
+>Qu'est-ce que c'est</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Active le curseur Qu'est-ce que c'est.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aide</guimenu
+> <guimenuitem
+>Reporter un Bogue...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Démarre l'outil de rapport de bogue.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aide</guimenu
+> <guimenuitem
+>A propos d'amaroK</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre A propos d'amaroK.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aide</guimenu
+> <guimenuitem
+>A propos de KDE</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ouvre la fenêtre A propos de KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>La barre d'outils de la liste de lecture</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la barre d'outils de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La barre d'outils de la liste de lecture peut être trouvée près du bas de la fenêtre de la liste de lecture. La barre d'outils contient des boutons associés à plusieurs actions concernant la liste de lecture. Du côté droit de la barre d'outils vous pouvez trouver le bouton <guibutton
+>Ajouter un Morceau</guibutton
+>, qui ouvre une fenêtre de sélection de fichiers vous permettant d'ajouter vos fichiers à la liste de lecture. Après le bouton <guibutton
+>Ajouter un Morceau</guibutton
+>, il y a le bouton <guibutton
+>Enregistrer la liste de lecture</guibutton
+>, <guibutton
+>Effacer la liste de lecture</guibutton
+>, et <guibutton
+>Rafraîchir la liste de lecture</guibutton
+>. Vous pouvez utiliser ces boutons pour manipuler la liste de lecture actuelle.</para>
+
+<para
+>Dans le groupe de boutons suivant se trouvent les boutons <guibutton
+>Annuler</guibutton
+>, et <guibutton
+>Refaire</guibutton
+>. Vous pouvez utiliser ces boutons pour annuler ou refaire n'importe quel changement fait à la liste de lecture.</para>
+
+<para
+>Au centre de la barre d'outils vous trouverez un unique et redimensionnable analyseur. Vous pouvez ajuster l'intervalle de rafraîchissement de l'analyseur en utilisant le menu du &BDS;, et sélectionner le débit désiré.</para>
+
+<para
+>Le dernier bouton de la barre d'outils est le bouton <guibutton
+>Menu</guibutton
+>. Le bouton <guibutton
+>Menu</guibutton
+> ouvre le même menu que le menu du &BDS; de la fenêtre de lecture. Vous pouvez utiliser ce menu pour accéder aux options de configuration d'&amarok;.</para>
+
+<tip
+><para
+>Il y a beaucoup d'autre boutons disponibles pour la barre d'outils dont les boutons de contrôle de la lecture et une barre de lecture. Vous pouvez configurer quels boutons apparaissent dans la barre d'outils en cliquant sur le bouton <guibutton
+>Menu</guibutton
+> et en sélectionnant <guimenuitem
+>Configurer les Barres d'outils...</guimenuitem
+></para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>La barre d'état de la liste de lecture</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la barre d'état de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La barre d'état de la liste de lecture propose un accès rapide à quelques informations utiles concernant la liste de lecture. La barre d'état de la liste de lecture affiche le titre de la piste, le nombre de pistes dans la liste de lecture et la durée totale de la liste de lecture, l'état des Modes Aléatoires ou de répétition, une mini-barre de positionnement dans la piste, et la durée jouée sur la piste. Vous pouvez changer les états des modes Aléatoire et de Répétition en double-cliquant sur les aires respectives de la barre d'état.</para>
+
+<para
+>Vous pouvez aussi choisir de ne pas avoir de Barre d'état affichée en utilisant l'option <guilabel
+>Afficher la barre d'état</guilabel
+> dans la <link linkend="general-options"
+>Fenêtre de Configuration des Options Générales</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>Le menu du bouton droit de la souris</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du Menu du BDS</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Le menu du &BDS; peut être trouvé en effectuant un clic droit sur la fenêtre du lecteur, il peut aussi être trouvé en cliquant sur le bouton <guibutton
+>Menu</guibutton
+> dans la fenêtre de la liste de lecture. Le menu du &BDS; est utilisé pour accéder à toutes les options d'&amarok;.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Répéter la Piste</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cette option quand elle est activée répète la lecture de la piste actuelle.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Répéter la liste de lecture</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cette option quand elle est activée répète la lecture de la liste de lecture complète.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Mode Aléatoire</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cette option quand elle est activée rend aléatoire l'ordre de lecture des pistes de votre liste de lecture.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajouter des suggestions</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ajoute les chansons suggérées dans le navigateur contextuel à la liste de lecture actuelle.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Gestionnaire de pochettes</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ouvre le <link linkend="cover-manager"
+>Gestionnaire de pochettes</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Assistant à la première utilisation</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cliquer sur cette option lance l'assistant à la première utilisation pour la configuration initiale d'&amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualisations...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cliquer sur cette option ouvre la <link linkend="visualizations"
+>Fenêtre des Visualisations</link
+> vous permettant de choisir quelles visualisations utiliser avec &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Egaliseur</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ouvre la <link linkend="equalizer"
+>Fenêtre de l'égaliseur</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Scripts...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ouvre la fenêtre des scripts.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurer les effets...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cliquer sur cet option ouvre une fenêtre vous permettant de configurer les effets de votre moteur de sons. Certains moteurs ne proposent pas d'effets et cette option sera alors désactivée.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurer les barres d'outils...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cliquer sur cette option ouvre une fenêtre vous permettant de configurer la <link linkend="toolbar"
+>Barre d'outils de la Liste de lecture</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurer les Raccourcis Clavier...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cliquer sur cette entrée ouvre une fenêtre vous permettant de configurer les <link linkend="keybd-shortcuts"
+>Raccourcis d'&amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurer les Raccourcis Globaux...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cliquer sur cette entrée ouvre une fenêtre vous permettant de configurer les <link linkend="keybd-shortcuts"
+>Raccourcis d'&amarok;</link
+> globaux.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurer amaroK...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cliquer sur cette option ouvre la <link linkend="configuring-kapp"
+>Fenêtre de Configuration d'&amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aide</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cette entrée propose un sous-menu fournissant les liens vers ce document et d'autres informations sur &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Quitter</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Quand vous cliquez sur cette entrée, &amarok; sera quitté.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Gestionnaire de Pochettes</title>
+
+<screenshot>
+	<screeninfo
+>Gestionnaire de Pochettes</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La Gestionnaire de Pochettes est un outil utile vous permettant de gérer votre pochettes. Vos pouvez le lancer en sélectionnant <menuchoice
+><guimenu
+>Actions</guimenu
+><guimenuitem
+>Gestionnaire de Pochettes</guimenuitem
+></menuchoice
+> dans le gestionnaire de Collections.</para>
+
+<para
+>Le gestionnaire de pochettes vous fournit une liste de tous les albums de votre collection. Vous pouvez voir toutes les pochettes d'un artiste en cliquant sur l'artiste dans la liste.</para>
+
+<para
+>Le gestionnaire de pochettes propose une barre de rechercher vous permettant de cherche une pochette. Il cherchera dans vos albums les pochettes correspondant aux mots clés saisis dans la barre de recherche.</para>
+
+<para
+>Le menu <guimenuitem
+>Affichage</guimenuitem
+> vous permet de choisir ce qui doit être affiché dans le gestionnaire de pochettes. Vous pouvez choisir entre :</para>
+
+<para
+><guimenuitem
+>Tous les albums</guimenuitem
+> qui affiche tous les albums de votre collection.</para>
+
+<para
+><guimenuitem
+>Albums avec pochette</guimenuitem
+> qui n'affiche que les albums ayant une pochette.</para>
+
+<para
+><guimenuitem
+>Albums sans pochette</guimenuitem
+> qui n'affiche que les albums n'ayant pas de pochette.</para>
+
+<para
+>Le bouton <guimenuitem
+>Obtenir les pochettes manquantes</guimenuitem
+> est utilisé pour télécharger les pochettes d'images pour les albums n'ayant pas encore de pochette disponible.</para>
+</sect1>
+
+
+<sect1 id="visualizations">
+<title
+>Les Visualisations</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran des Visualisations</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La fenêtre de visualisation est utilisée pour activer les visualisations disponibles pour &amarok;. Une liste des visualisations disponibles sera fournie dans la fenêtre. Pour activer une visualisation, cochez la case de la visualisation.</para>
+
+</sect1>
+
+
+</chapter>

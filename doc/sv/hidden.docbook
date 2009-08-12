@@ -1,0 +1,61 @@
+<chapter id="hidden_features">
+<title
+>&amarok;s dolda funktioner</title>
+
+<para
+>Det här kapitlet hjälper dig hitta några av funktionerna i &amarok; som inte är så uppenbara. Kapitlet är uppdelat i tre avsnitt: Spelarfönstret, Spellistans fönster och Ikonen i systembrickan.</para>
+
+<sect1 id="player_hidden">
+<title
+>Spelarfönstret</title>
+
+<para
+>Analysatorerna i &amarok;s spelare kan kopplas loss från spelarfönstret. Genom att trycka på <keycap
+>d</keycap
+> på tangentbordet öppnas den aktiva analysatorn i ett oberoende fönster, vars storlek kan ändras.</para>
+
+</sect1>
+
+
+<sect1 id="playlist_hidden">
+<title
+>Spellistans fönster</title>
+<para
+>Från spellistans utseende verkar det som om den har alla funktioner som du någonsin skulle vilja ha. Spellistan har också några funktioner som är dolda i den, som:</para>
+
+<para
+>Att hålla nere <keycap
+>Ctrl</keycap
+> och klicka med höger musknapp köar filer i den ordningen du klickar på dem.</para>
+
+<para
+>Att trycka på returtangenten efter en sökning i en spellista spelar upp det första sökobjektet och rensar sökningen.</para>
+
+</sect1>
+
+
+<sect1 id="tray_hidden">
+<title
+>Ikonen i systembrickan</title>
+
+<para
+>Även om &amarok;s ikon i systembrickan är liten, kan den erbjuda nästan samma funktion som spelarfönstret. Du kanske redan visste att om du använder mushjulet över ikonen i systembrickan justeras volymnivån, men visste du:</para>
+
+<para
+>Att klicka med musens mittenknapp på ikonen gör paus i det nuvarande spåret.</para>
+
+<para
+>Att hålla nere <keycap
+>Skift</keycap
+> medan du rullar med mushjulet söker genom det nuvarande spåret.</para>
+
+<para
+>Att hålla nere <keycap
+>Ctrl</keycap
+> medan du rullar med mushjulet  går igenom spåren i spellistan.</para>
+
+<para
+>Att dra och släppa objekt på ikonen i systembrickan visar en meny som låter dig välja bland tre alternativ: Lägg till sist i spellista, Lägg till och spela, och Köa efter nuvarande spår.</para>
+</sect1>
+
+</chapter>

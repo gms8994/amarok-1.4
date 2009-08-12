@@ -1,0 +1,252 @@
+<chapter id="configuring-kapp">
+<title>Configuring &amarok;</title>
+<para>&amarok; is easily configured from the configuration dialog. The configuration dialog has multiple tabs for setting up different functions of &amarok;.</para>
+<para>The configuration dialog can be found by selecting <guimenuitem>Configure &amarok;</guimenuitem> in the player <link linkend="rmb-menu">&RMB; menu</link>,
+or by selecting <menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure &amarok;...</guimenuitem></menuchoice>.</para>
+<sect1 id="general-options">
+<title>General Options</title>
+<screenshot>
+	<screeninfo>General Options Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="config_general.png" format="PNG"/></imageobject>
+</mediaobject>
+</screenshot>
+<para>The General Options tab is divided into two sections, <guimenuitem>General Options</guimenuitem> and <guimenuitem>Playlist Options</guimenuitem>.</para>
+<variablelist>
+<varlistentry>
+<term><menuchoice><guimenu>General Options</guimenu></menuchoice></term>
+<listitem>
+<para>In the General Options section you can configure some basic &amarok; options.</para>
+<para><guilabel>Show splash-screen on startup</guilabel>: displays the splash screen when &amarok; starts.</para>
+<para><guilabel>Show tray icon</guilabel>: enables the display of the system tray icon.</para>
+ 
+<para><guilabel>Flash tray icon</guilabel>: enables animation of the system tray icon.</para>
+<para><guilabel>Show player window (like XMMS)</guilabel>: Turns on the XMMS-like <link linkend="player-window">Player Window</link>. When un-checked, only the <link linkend="playlist-window">Playlist Window</link>, which resembles a display mode similar to the Juk interface, is shown.</para>
+<para><guilabel>Use Moodbar</guilabel>: only visible when &amarok; is compiled with moodbar support. This turns on the experimental moodbar support.</para>
+<para><guilabel>Make Moodier</guilabel>: only visible when &amarok; is compiled with moodbar support. It changes the color scheme used for the moodbar.</para>
+<para><guilabel>Store Mood data files with music</guilabel>: only visible when &amarok; is compiled with moodbar support. When enabled, this option allows saving of <literal role="extension">.mood</literal> files in the same location as the corresponding audio file. When disabled, the <literal role="extension">.mood</literal> files are saved within the &amarok; settings directory; usually <filename class="directory">~/.kde/share/apps/amarok/moodbar/</filename>.</para>
+<para><guilabel>Default size of cover previews</guilabel>: allows adjusting the size of the album cover image in the Context Browser.</para>
+<para><guilabel>External web browser:</guilabel> allows choosing what &amarok; uses to open external links via a drop-down menu listing the installed browsers.</para>
+<para><guilabel>Use another browser:</guilabel> allows you to specify the location to a browser not listed in the above menu.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice><guimenu>Playlist-Window Options</guimenu></menuchoice></term>
+<listitem>
+<para>In the Playlist-Window Options section you can configure playlist behavior.</para>
+<para><guilabel>Remember current playlist on exit</guilabel>: check this if you want to save your current playlist when you exit &amarok; and reload it the next time.</para>
+<para><guilabel>Manually saved playlists use relative path</guilabel>: check this box to have &amarok; save playlists with the location of audio file with respect to the location of the playlist. When unchecked &amarok; will save the exact location to the audio files in the playlist.</para>
+<para><guilabel>Keep active song visible on track change</guilabel>: this option automatically scrolls the <link linkend="playlist">Playlist</link>, when a track changes, to ensure that the currently playing track is always visible.</para>
+<para><guilabel>Switch to Context Browser on track change</guilabel>: used to change to the Context Browser tab if it isn't active when &amarok; starts playback of a new track.</para>
+<para><guilabel>Show statusbar</guilabel>: enables the &amarok; <link linkend="statusbar">statusbar</link> in the <link linkend="playlist-window">Playlist Window</link>.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-appearance">
+<title>Configure Appearance</title>
+<screenshot>
+	<screeninfo>Configure Appearance Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="config_appearance.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para>The Appearance tab allows you to configure how &amarok; looks. The tab is divided into three sections.</para>
+<variablelist>
+<varlistentry>
+<term><menuchoice><guimenu>Fonts</guimenu></menuchoice></term>
+<listitem>
+<para>The fonts section is used for selecting the fonts to be used with &amarok;. Selecting the <guilabel>Use custom fonts</guilabel> checkbox enables font selection buttons. The available choices are for the <link linkend="player-window">Player Window</link>, the <link linkend="playlist-window">Playlist Window</link>, and the <link linkend="context-browser">Context Browser</link>. By clicking the <guibutton>Choose...</guibutton> button you can select a font from the dialog.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice><guimenu>Color Scheme</guimenu></menuchoice></term>
+<listitem>
+<para>The color scheme section is used to choose the color scheme for &amarok;.</para>
+<para><guilabel>The current KDE color-scheme</guilabel> choice forces &amarok; use the current KDE color scheme.</para>
+<para><guilabel>The classic Amarok, "funky-monkey", theme</guilabel> choice uses &amarok;'s original color scheme.</para>
+<para><guilabel>Custom color scheme</guilabel> enables color selectors to choose custom foreground and background colors for &amarok;.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice><guimenu>Context Browser Style</guimenu></menuchoice></term>
+<listitem>
+<para>This section allows you to change, install and remove Context Browser styles (themes). The <guilabel>Select a style</guilabel> drop-down menu selection of installed styles for use. The <guibutton>Install New Styles...</guibutton> button opens a file selection dialog where you can browse to styles saved on your system and install them. The <guibutton>Download Styles...</guibutton> button opens a dialog that fetches new styles from kde-look.org. Finally, the <guibutton>Uninstall Style</guibutton> button shows a dialog which allows you to remove any manually installed styles.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-playback">
+<title>Configure Playback</title>
+<screenshot>
+	<screeninfo>Configure Playback Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="config_playback.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para>The Configure Playback tab provides an interface for configuring your audio playback characteristics.</para>
+<variablelist>
+<varlistentry>
+<term><menuchoice><guimenu>Transition Behavior</guimenu></menuchoice></term>
+<listitem>
+<para>You can configure how &amarok; transitions from one song to the next.</para>
+<para><guilabel>No Crossfading</guilabel>: provides a silent gap between tracks, specified in milliseconds.</para>
+<para><guilabel>Crossfading</guilabel>: provides a nice fading effect. The crossfade period is also specified in milliseconds.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice><guimenu>Remaining Options</guimenu></menuchoice></term>
+<listitem>
+<para>The remaining checkbox configures the the following option:</para>
+<para><guilabel>Resume playback on start</guilabel> allows resuming playback of the last track that was playing when &amarok; was closed, from the last known position in the track.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-osd">
+<title>Configure On-Screen-Display</title>
+<screenshot>
+	<screeninfo>Configure OSD Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="config_osd.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<variablelist>
+<varlistentry>
+<term><menuchoice><guimenu>Configure On-Screen-Display</guimenu></menuchoice></term>
+<listitem>
+<para>The <guilabel>Configure On-Screen-Display</guilabel> tab allows you to activate the On-Screen-Display. If the On-Screen-Display check box is selected an area is activated for configuring the look of the display. When the On-Screen-Display is activated a preview widget will also be displayed allowing you to see the effects of your changes to the look of the On-Screen-Display</para>
+<para>The first option for the OSD is the Font. Clicking the <guibutton>Choose</guibutton> button will open a Font Selection dialog allowing you to choose the font used in the OSD. There is also a <guilabel>Draw shadow</guilabel> checkbox to enable or disable the use of Shadowed text in the OSD</para>
+<para>The next option is for the OSD colors. Checking the <guilabel>Use custom colors</guilabel> checkbox enables the <guibutton>Text color:</guibutton> and <guibutton>Background color:</guibutton> buttons. Clicking the buttons opens a dialog to choose the color OSD Text or OSD Background. If the <guilabel>Use custom colors</guilabel> checkbox is disabled the OSD will follow your current &kde; color scheme.</para>
+<para>The <guilabel>Display Text</guilabel> text input box is used for configuring the text shown in the OSD. By assigning variables you can customize the OSD to suit your needs. Below is a list of the variables and the text they represent.</para>
+<informaltable>
+<tgroup cols="2">
+<thead>
+<row>
+<entry>Text</entry>
+<entry>Variable</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Title</entry>
+<entry>%title</entry>
+</row>
+<row>
+<entry>Album</entry>
+<entry>%album</entry>
+</row>
+<row>
+<entry>Artist</entry>
+<entry>%artist</entry>
+</row>
+<row>
+<entry>Genre</entry>
+<entry>%genre</entry>
+</row>
+<row>
+<entry>Bitrate</entry>
+<entry>%bitrate</entry>
+</row>
+<row>
+<entry>Year</entry>
+<entry>%year</entry>
+</row>
+<row>
+<entry>Track Length</entry>
+<entry>%length</entry>
+</row>
+<row>
+<entry>Track Number</entry>
+<entry>%track</entry>
+</row>
+<row>
+<entry>Filename</entry>
+<entry>%file</entry>
+</row>
+<row>
+<entry>Comment</entry>
+<entry>%comment</entry>
+</row>
+<row>
+<entry>Score</entry>
+<entry>%score</entry>
+</row>
+<row>
+<entry>Playcount</entry>
+<entry>%playcount</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>The <guilabel>Duration</guilabel> spin box is used to adjust the time, in milliseconds, that the OSD is displayed on your desktop.</para>
+<para>The <guilabel>Screen</guilabel> option is for xinerama users only. This option is used to determine what screen the OSD will be shown on in a multiple monitor setup.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-engine">
+<title>Configure Engine</title>
+<screenshot>
+	<screeninfo>Configure Engine Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="config_engine.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para>The Configure Engine tab allows you to select a sound engine from the list in the drop-down menu. Available options vary among the engines selected. See the "Requirements" section for different engines available. </para>
+</sect1>
+<sect1 id="configure-collection">
+<title>Configure Collection</title>
+<screenshot>
+	<screeninfo>Configure Collection Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="config_collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para>The Collection settings tab is used for configuring all the collection options. These include the folders where you music is stored, and the database used for the collection.</para>
+<variablelist>
+<varlistentry>
+<term><menuchoice><guimenu>Collection Folders</guimenu></menuchoice></term>
+<listitem>
+<para>This is where you choose the folders you want &amarok; to scan for music. Simply check the boxes next to the desired folders in the tree view of your filesystem. The <guilabel>Collection Folders</guilabel> section also has several check boxes to specify how the collection uses the selected folders.</para>
+<para><guilabel>Scan folders recursively</guilabel>: tells &amarok; to scan the selected folders and all of their sub-folders.</para>
+<para><guilabel>Watch folders for changes</guilabel>: allows &amarok; to watch the selected folders for filesystem changes (for example, added or deleted music files). An incremental scan is also performed to make the necessary changes to your collection.</para>
+<para><guilabel>Import Playlists</guilabel>: allows &amarok; to import any playlists (.pls and .m3u files) it finds while scanning for tracks to add to your collection. You will find these on the "Playlists" sidebar.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice><guimenu>Collection Database</guimenu></menuchoice></term>
+<listitem>
+<para>The <guilabel>Collection Database</guilabel> section is used to select a database to use for the collection. Use the <guilabel>Engine:</guilabel> combo box to select from either Sqlite or MySql. If MySql is selected, additional configuration is required in the <guilabel>MySql Configuration</guilabel> section.</para>
+<para>The <guilabel>MySql Configuration</guilabel> section is for configuring what database &amarok; uses, and where it is located. First is the <guilabel>Hostname:</guilabel>, which is where the MySql database is located. Next is the <guilabel>Port:</guilabel>, which is the network port used when connecting to the database. The <guilabel>Name:</guilabel> option, is the actual database to connect to.</para>
+<para>Use the <guilabel>Username:</guilabel> and <guilabel>Password:</guilabel> text input boxes to specify the username and password used for connecting to the MySql database.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-scrobbler">
+<title>Configure Last.fm</title>
+<screenshot>
+	<screeninfo>Configure last.fm Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="config_scrobbler.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para>The last.fm settings tab configures the <ulink url="http://www.last.fm">last.fm</ulink> support in &amarok;. Tracks played are submitted to the last.fm server, and if asked to, &amarok; will request recommendations based on your currently playing track.</para>
+<variablelist>
+<varlistentry>
+<term><menuchoice><guimenu>last.fm Profile</guimenu></menuchoice></term>
+<listitem>
+<para>This is where you fill in the Username and Password for your last.fm profile. If you do not have a profile you can <ulink url="http://www.last.fm:80/signup.php">register at the last.fm website</ulink>.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice><guimenu>last.fm Services</guimenu></menuchoice></term>
+<listitem>
+<para><guilabel>Improve my profile by submitting the tracks I play</guilabel>: allows &amarok; to submit your played tracks to your last.fm profile.</para>
+<para><guilabel>Retrieve similar artists</guilabel>: this will cause &amarok; to request, from last.fm, a list of artists similar to the one you're listening to. These are also displayed in the Context Browser. Note: you do not need a last.fm profile to recieve similar artists - simply check this box.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</chapter>

@@ -1,0 +1,555 @@
+<chapter id="configuring-kapp">
+<title
+>Konfiguracja programu &amarok-mianownik;</title>
+<para
+>Możesz łatwo zmieniać ustawienia programu &amarok-mianownik; w oknie konfiguracji. Podzielone jest ono na karty odpowiedzialne za różne funkcje programu.</para>
+<para
+>Okno konfiguracyjne zostanie wyświetlone po wybraniu <guimenuitem
+>Konfiguracja &amarok-dopelniacz;</guimenuitem
+> w menu <link linkend="rmb-menu"
+>kontekstowym odtwarzacza</link
+> lub po wybraniu <menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguracja &amarok-dopelniacz;...</guimenuitem
+></menuchoice
+>.</para>
+<sect1 id="general-options">
+<title
+>Ogólne</title>
+<screenshot>
+	<screeninfo
+>Zrzut ekranu karty Ogólne</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_general.png" format="PNG"/></imageobject>
+</mediaobject>
+</screenshot>
+<para
+>Karta Ogólne jest podzielona na dwie części: <guimenuitem
+>Ustawienia ogólne</guimenuitem
+> oraz <guimenuitem
+>Ustawienia okna listy odtwarzania</guimenuitem
+>.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia ogólne</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>W sekcji Ustawienia ogólne można konfigurować podstawowe opcje programu &amarok-mianownik;.</para>
+<para
+><guilabel
+>Pokazuj ekran powitalny przy uruchamianiu</guilabel
+>: wyświetla ekran powitalny przy uruchamianiu &amarok-mianownik;.</para>
+<para
+><guilabel
+>Pokazuj ikonę w tacce systemowej</guilabel
+> służy do włączania lub wyłączania ikony znajdującej się w tacce systemowej.</para>
+ 
+<para
+><guilabel
+>Pokazuj ikonę w tacce systemowej</guilabel
+>: włącza lub wyłącza ikonę znajdującą się w tacce systemowej.</para>
+<para
+><guilabel
+>Pokaż okno odtwarzacza (tak jak w XMMS)</guilabel
+>: włącza <link linkend="player-window"
+>okno odtwarzacza</link
+>, podobnego do odtwarzacza XMMS. Wyłączenie tej opcji spowoduje wyświetlanie tylko <link linkend="playlist-window"
+>listy odtwarzania</link
+>, podobnie jak w odtwarzaczu Juk.</para>
+<para
+><guilabel
+>Użyj paska nastroju</guilabel
+>: widoczne tylko, jeżeli &amarok-mianownik; został skompilowany z obsługą paska nastroju. Włącza eksperymentalny pasek nastroju.</para>
+<para
+><guilabel
+>Uczyń bardziej nastrojowym</guilabel
+>: widoczne tylko, jeżeli &amarok-mianownik; został skompilowany z obsługą paska nastroju. Zmienia zestaw kolorów używanych przez pasek nastroju.</para>
+<para
+><guilabel
+>Przechowuj pliki z danymi o nastroju razem z muzyką</guilabel
+>: widoczne tylko, jeżeli &amarok-mianownik; został skompilowany z obsługą paska nastroju. Włączone, pozwala na zapisywanie plików <literal role="extension"
+>.mood</literal
+> w lokalizacji odpowiadającego plikowi dźwiękowemu. Jeżeli jest wyłączone, pliki <literal role="extension"
+>.mood</literal
+> są zapisywane w katalogu ustawień &amarok-dopelniacz;; zazwyczaj <filename class="directory"
+>~/.kde/share/apps/amarok/moodbar/</filename
+>.</para>
+<para
+><guilabel
+>Domyślny rozmiar podglądu okładki</guilabel
+>: określa rozmiar obrazu okładki wyświetlanego w przeglądarce kontekstowej.</para>
+<para
+><guilabel
+>Zewnętrzna przeglądarka WWW:</guilabel
+> pozwala wybrać, jakiej przeglądarki &amarok-mianownik; ma używać do otwierania odnośników zewnętrznych. Ta opcja zawiera rozwijaną listę, zawierającą zainstalowane przeglądarki.</para>
+<para
+><guilabel
+>Używaj innej przeglądarki</guilabel
+>: pozwala Ci podać ścieżkę do przeglądarki nie znajdującej się na powyższej liście.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opcje okna listy odtwarzania</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>W sekcji Opcje okna listy odtwarzania możesz konfigurować zachowanie listy odtwarzania.</para>
+<para
+><guilabel
+>Zapamiętaj bieżącą listę odtwarzania przy zakończeniu</guilabel
+>: zaznacz, jeżeli chcesz, żeby lista odtwarzania była zachowywana przy zamykaniu &amarok-dopelniacz; i wczytywana ponownie przy następnym uruchomieniu.</para>
+<para
+><guilabel
+>Ręcznie zapisane listy odtwarzania używają ścieżki względnej</guilabel
+>: zaznacz tą opcję, żeby &amarok-mianownik; zapisywał w listach odtwarzania lokalizację plików dźwiękowych względem lokalizacji listy odtwarzania. Jeżeli ta opcja jest wyłączona, &amarok-mianownik; będzie zapisywał w listach odtwarzania dokładną, bezwzględną lokalizację plików dźwiękowych.</para>
+<para
+><guilabel
+>Pokazuj aktywny utwór przy zmianie utworu</guilabel
+>: ta opcja włącza automatyczne przewijanie <link linkend="playlist"
+>listy odtwarzania</link
+> przy zmianie utworu, sprawiając, że aktualnie odtwarzany utwór jest zawsze widoczny.</para>
+<para
+><guilabel
+>Przełącz do przeglądarki kontekstowej przy zmianie ścieżki</guilabel
+>: uaktywnia przełączanie do karty przeglądarki kontekstowej, jeżeli nie jest ona aktywna w momencie, gdy &amarok-mianownik; rozpoczyna odtwarzanie nowego utworu.</para>
+<para
+><guilabel
+>Wyświetlaj pasek stanu</guilabel
+>: uaktywnia <link linkend="statusbar"
+>pasek stanu</link
+> &amarok-dopelniacz; w <link linkend="playlist-window"
+>oknie listy odtwarzania</link
+>.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-appearance">
+<title
+>Konfiguracja wyglądu</title>
+<screenshot>
+	<screeninfo
+>Zrzut ekranu karty Wygląd</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_appearance.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Karta Wygląd pozwala na konfigurację wyglądu programu &amarok-mianownik;. Podzielona jest na trzy sekcje.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Czcionki</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sekcja czcionek służy do wyboru czcionek, z których będzie korzystał program &amarok-mianownik;. Zaznaczenie pola <guilabel
+>Użyj własnych czcionek</guilabel
+> włącza możliwość wyboru czcionek używanych w programie. Możesz wybrać czcionki dla <link linkend="player-window"
+>okna odtwarzacza</link
+>, <link linkend="playlist-window"
+>okna listy odtwarzania</link
+> oraz <link linkend="context-browser"
+>przeglądarki kontekstowej</link
+>. Kliknięcie na przycisku <guibutton
+>Wybierz...</guibutton
+> powoduje otworzenie okna wyboru czcionki dla danego elementu.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Zestaw kolorów</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sekcja Zestaw kolorów służy do wyboru zestawu kolorów używanego przez &amarok-biernik;.</para>
+<para
+><guilabel
+>Bieżący zestaw kolorów KDE</guilabel
+>: ta opcja powoduje, że &amarok-mianownik; będzie używał bieżącego zestawu kolorów KDE.</para>
+<para
+><guilabel
+>Klasyczny motyw Amaroka, "funky-monkey"</guilabel
+>: oryginalny zestaw kolorów &amarok-dopelniacz;.</para>
+<para
+><guilabel
+>Własny zestaw kolorów</guilabel
+> - włącza przyciski umożliwiające wybranie własnego koloru tła i pierwszego planu dla &amarok-dopelniacz;.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Motywy przeglądarki kontekstowej</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ta sekcja pozwala Ci zmieniać, instalować i usuwać motywy przeglądarki kontekstowej. Lista rozwijana <guilabel
+>Wybierz motyw</guilabel
+> zawiera listę zainstalowanych, gotowych do użycia, motywów. Przycisk <guibutton
+>Zainstaluj nowy motyw...</guibutton
+> powoduje otworzenie okna dialogowego, w którym możesz wskazać i zainstalować motywy zapisane w Twoim systemie. Przycisk <guibutton
+>Pobierz motywy...</guibutton
+> otwiera okno dialogowe, które pobiera nowe motywy ze strony kde-look.org. Wreszcie, przycisk <guibutton
+>Odinstaluj motyw</guibutton
+> otwiera okno dialogowe, pozwalające usunąć wszystkie ręcznie zainstalowane motywy.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-playback">
+<title
+>Konfiguracja odtwarzania</title>
+<screenshot>
+	<screeninfo
+>Zrzut ekranu karty Odtwarzanie</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_playback.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Karta Odtwarzanie udostępnia interfejs do konfiguracji właściwości odtwarzania.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Zachowanie przejść</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Możesz ustawić, w jaki sposób &amarok-mianownik; ma się zachowywać przy przejściu od jednego utworu do drugiego.</para>
+<para
+> <guilabel
+>Bez przenikania</guilabel
+>: powoduje wstawienie przerwę bez dźwięku między utworami. Długość przerwy określona jest w milisekundach.</para>
+<para
+><guilabel
+>Przenikanie</guilabel
+>: zapewnia miły dla ucha efekt stopniowego przenikania dźwięków kolejnych utworów. Czas trwania przenikania również określony jest w milisekundach.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pozostałe ustawienia</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ostanie pole zaznaczeń pozwala ustawić następującą opcję:</para>
+<para
+><guilabel
+>Wznów odtwarzanie przy rozpoczęciu programu</guilabel
+>: pozwala na rozpoczęcie odtwarzania ostatnio odtwarzanego utworu, od pozycji zapamiętanej przy wyłączaniu programu &amarok-mianownik;.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-osd">
+<title
+>Konfiguracja wyświetlania na ekranie</title>
+<screenshot>
+	<screeninfo
+>Zrzut ekranu karty Wyświetlanie na ekranie (OSD)</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_osd.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Konfiguracja wyświetlania na ekranie</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Karta <guilabel
+>Wyświetlanie na ekranie</guilabel
+> pozwala na włączenie wyświetlania na ekranie (OSD). Jeżeli pole Użyj wyświetlania na ekranie jest zaznaczone, to poniższe pola, służące do konfiguracji, stają się aktywne. Wyświetlany jest również podgląd wyglądu i pozycji okna wyświetlającego informacje na ekranie.</para>
+<para
+>Pierwszą opcją na karcie jest Czcionka. Kliknij przycisk <guibutton
+>Wybierz</guibutton
+>, aby wybrać czcionkę wykorzystywaną przez tę funkcję. Poniżej czcionki znajduje się pole <guilabel
+>Rysuj cień</guilabel
+>, za pomocą którego można włączyć lub wyłączyć cieniowanie wyświetlanego tekstu.</para>
+<para
+>Kolejna opcja służy do wyboru kolorów. Zaznaczenie pola <guilabel
+>Użyj własnych kolorów</guilabel
+> uaktywnia przyciski <guibutton
+>Kolor tekstu:</guibutton
+> oraz <guibutton
+>Kolor tła:</guibutton
+>. Kliknięcie na tych przyciskach pozwala wybrać kolory tła oraz tekstu. Jeżeli pole <guilabel
+>Użyj własnych kolorów</guilabel
+> nie jest zaznaczone, to ta funkcja będzie wykorzystywać bieżący zestaw kolorów &kde;.</para>
+<para
+>Pole tekstowe <guilabel
+>Wyświetlany tekst</guilabel
+> służy do konfiguracji treści wyświetlanej przez funkcję wyświetlanie na ekranie. Poprzez przypisywanie odpowiednich zmiennych możesz dopasować go do własnych upodobań. Poniżej znajduje się lista zmiennych oraz opis ich działania.</para>
+<informaltable>
+<tgroup cols="2">
+<thead>
+<row>
+<entry
+>Tekst</entry>
+<entry
+>Zmienna</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry
+>Tytuł</entry>
+<entry
+>%title</entry>
+</row>
+<row>
+<entry
+>Album</entry>
+<entry
+>%album</entry>
+</row>
+<row>
+<entry
+>Wykonawca</entry>
+<entry
+>%artist</entry>
+</row>
+<row>
+<entry
+>Gatunek</entry>
+<entry
+>%genre</entry>
+</row>
+<row>
+<entry
+>Szybkość transmisji</entry>
+<entry
+>%bitrate</entry>
+</row>
+<row>
+<entry
+>Rok</entry>
+<entry
+>%year</entry>
+</row>
+<row>
+<entry
+>Długość</entry>
+<entry
+>%length</entry>
+</row>
+<row>
+<entry
+>Numer utworu</entry>
+<entry
+>%track</entry>
+</row>
+<row>
+<entry
+>Nazwa pliku</entry>
+<entry
+>%file</entry>
+</row>
+<row>
+<entry
+>Komentarz</entry>
+<entry
+>%comment</entry>
+</row>
+<row>
+<entry
+>Punktacja</entry>
+<entry
+>%score</entry>
+</row>
+<row>
+<entry
+>Liczba odtworzeń</entry>
+<entry
+>%playcount</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para
+>Pole <guilabel
+>Czas wyświetlania</guilabel
+> pozwala na określenie czasu (wyrażonego w milisekundach), przez jaki okno wyświetlania na ekranie będzie widoczne na ekranie komputera.</para>
+<para
+>Opcja <guilabel
+>Ekran</guilabel
+> jest przeznaczona tylko dla użytkowników funkcji Xinerama (wyświetlanie na wielu monitorach). Służy ona do określenia, na którym ekranie będzie pokazane okno, jeśli korzystamy z wielu monitorów.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-engine">
+<title
+>Konfiguracja modułu</title>
+<screenshot>
+	<screeninfo
+>Zrzut ekranu karty Moduł</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_engine.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Karta Konfiguracja silnika pozwala wybrać moduł dźwiękowy z listy rozwijanej. Dostępne opcje zależą od wybranego silnika. Lista dostępnych modułów znajduje się w sekcji "Wymagania". </para>
+</sect1>
+<sect1 id="configure-collection">
+<title
+>Konfiguracja kolekcji</title>
+<screenshot>
+	<screeninfo
+>Zrzut ekranu karty Kolekcja</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Karta Kolekcja jest wykorzystywana do zmiany ustawień kolekcji. Można tu ustawić katalogi, w których znajduje się Twoja muzyka oraz rodzaj bazy danych, która obsługuje kolekcję.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Katalogi kolekcji</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Tutaj wybierasz katalogi, w których &amarok-mianownik; ma szukać muzyki. Po prostu zaznacz kwadraty przy odpowiednich katalogach w widoku drzewa katalogów. Sekcja <guilabel
+>Katalogi kolekcji</guilabel
+> zawiera również kilka opcji, określających w jaki sposób &amarok-mianownik; ma korzystać z wybranych katalogów.</para>
+<para
+><guilabel
+>Przeszukuj katalogi rekurencyjnie</guilabel
+>: powoduje, że &amarok-mianownik; będzie przeszukiwać wybrane katalogi razem z ich podkatalogami.</para>
+<para
+><guilabel
+>Śledź zmiany w katalogach</guilabel
+>: powoduje, że  &amarok-mianownik; obserwuje wybrane katalogi w poszukiwaniu zmian (na przykład dodanych lub usuniętych plików muzycznych). Wykonywane jest również przeszukiwanie przyrostowe, by dokonać niezbędnych zmian w Twojej kolekcji.</para>
+<para
+><guilabel
+>Importuj listy odtwarzania</guilabel
+>: powoduje, że &amarok-mianownik; zaimportuje wszystkie listy odtwarzania (pliki .pls oraz .m3u), które znajdzie szukając utworów do Twojej kolekcji. Po zaimportowaniu znajdziesz je w karcie "Listy" &amarok-dopelniacz;.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Baza danych kolekcji</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Dział <guilabel
+>Baza danych kolekcji</guilabel
+> służy do wybrania bazy danych wykorzystywanej dla kolekcji. Zaznacz pole <guilabel
+>Moduł:</guilabel
+>, aby wybrać Sqlite albo MySql. Jeżeli wybrane zostanie MySql, wymagane będą dodatkowe informacje w sekcji <guilabel
+>Konfiguracja MySql</guilabel
+>.</para>
+<para
+>Sekcja <guilabel
+>Konfiguracja MySql</guilabel
+> służy do podania nazwy i lokalizacji bazy danych, używanej przez &amarok-dopelniacz;. Pierwsze pole, <guilabel
+>Nazwa serwera:</guilabel
+>, określa na jakim komputerze znajduje się baza danych. Następne pole <guilabel
+>Port:</guilabel
+> oznacza port sieciowy wykorzystywany do łączenia się z bazą. Pole <guilabel
+>Nazwa:</guilabel
+> określa nazwę bazy danych, do której należy się podłączyć.</para>
+<para
+>Użyj pól: <guilabel
+>Nazwa użytkownika:</guilabel
+> oraz <guilabel
+>Hasło:</guilabel
+>, aby określić nazwę użytkownika i hasło używane do łączenia się z bazą danych MySql.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-scrobbler">
+<title
+>Konfiguracja Last.fm</title>
+<screenshot>
+	<screeninfo
+>Zrzut ekranu konfiguracji last.fm</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_scrobbler.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Karta ustawień last.fm konfiguruje obsługę <ulink url="http://www.last.fm"
+>last.fm</ulink
+> w &amarok-miejscownik;. Odtwarzane utwory są wysyłane do serwera last.fm i, jeżeli sobie tego zażyczysz, &amarok-mianownik; spróbuje pobrać stamtąd rekomendacje na podstawie aktualnie odtwarzanego utworu.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Profil last.fm</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>To miejsce, gdzie mozesz wpisać swoją nazwę użytkownika i hasło profilu last.fm. Jeżeli nie posiadasz jeszcze swojego profilu to możesz się <ulink url="http://www.last.fm:80/signup.php"
+>zarejestrować na stronie last.fm </ulink
+>.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Usługi last.fm</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+><guilabel
+>Uzupełnij mój profil, dodając utwory, które odtwarzam</guilabel
+>: pozwala &amarok-celownik; wysyłać odtwarzane utwory do Twojego profilu last.fm.</para>
+<para
+><guilabel
+>Pobieraj podobnych wykonawców</guilabel
+>: spowoduje, że &amarok-mianownik; będzie pobierał z last.fm listę wykonawców podobnych do tego, którego właśnie słuchasz. Są oni również wyświetlani w przeglądarce kontekstowej. Uwaga: nie potrzebujesz profilu na last.fm, żeby pobierać zbliżonych wykonawców - po prostu zaznacz tę opcję.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</chapter>

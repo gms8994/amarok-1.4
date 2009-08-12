@@ -1,0 +1,24 @@
+debian/tmp/usr/share/apps/amarok/*
+debian/tmp/usr/share/apps/profiles/*
+debian/tmp/usr/share/doc/*
+debian/tmp/usr/share/icons/*
+debian/tmp/usr/share/locale/*
+debian/tmp/usr/share/config.kcfg/amarok.kcfg
+debian/tmp/usr/share/services/amarok_void-engine_plugin.desktop
+debian/tmp/usr/share/services/amarok_generic-mediadevice.desktop
+debian/tmp/usr/share/services/amarok_ifp-mediadevice.desktop
+debian/tmp/usr/share/services/amarok_ipod-mediadevice.desktop
+debian/tmp/usr/share/services/amarok_njb-mediadevice.desktop
+debian/tmp/usr/share/services/amarok_smb-device.desktop
+debian/tmp/usr/share/services/amarok_massstorage-device.desktop
+debian/tmp/usr/share/services/amarok_nfs-device.desktop
+debian/tmp/usr/share/services/amarok_daap-mediadevice.desktop
+
+#libkarma is not in MAIN yet
+#debian/tmp/usr/share/services/amarok_riokarma-mediadevice.desktop
+
+debian/tmp/usr/share/services/amarok_mtp-mediadevice.desktop
+debian/tmp/usr/bin/amarok_proxy.rb
+debian/tmp/usr/bin/amarok_daapserver.rb
+debian/tmp/etc/*
+

@@ -1,0 +1,10 @@
+--- amarok/amarok/src/engine/xine/amarok_xine-mp3_install.desktop~	2006-07-02 19:37:44.000000000 +0000
++++ amarok/amarok/src/engine/xine/amarok_xine-mp3_install.desktop	2006-07-05 01:07:35.000000000 +0000
+@@ -3,5 +3,6 @@
+ ServiceTypes=Amarok/CodecInstall
+ X-KDE-Amarok-codec=mp3
+ X-KDE-Amarok-engine=xine-engine
+-Exec=kdialog --msgbox "Hello World"
++Exec=/usr/lib/amarok/install-mp3
++
+ 

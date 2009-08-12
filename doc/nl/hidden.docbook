@@ -1,0 +1,63 @@
+<chapter id="hidden_features">
+<title
+>&amarok;'s verborgen functies</title>
+
+<para
+>Dit hoofdstuk helpt u bij het vinden van enkele functies in &amarok; die minder zichtbaar zijn. Dit hoofdstuk is verdeeld in drie secties: het afspelervenster, het afspeellijstvenster, en het systeemvakpictogram.</para>
+
+<sect1 id="player_hidden">
+<title
+>Het afspelervenster</title>
+
+<para
+>De ontlederweergve in &amarok;'s speler kan worden losgekoppeld van het weergaveventer. Druk op de toets <keycap
+>d</keycap
+> van uw toetsenbord om de actieve ontleder te openen in een onafhankelijk venster.</para>
+
+</sect1>
+
+
+<sect1 id="playlist_hidden">
+<title
+>Het afspelervenster</title>
+<para
+>Als u naar de afspeellijst kijkt zou u kunnen denken dat deze al alle functies heeft die  u ooit zou willen gebruiken. In het afspelervenster zijn ook enkele functies verborgen, zoals:</para>
+
+<para
+>Met de &RMB; klikken terwijl u de toets <keycap
+>Control</keycap
+> ingedrukt houdt plaatst bestanden in de wachtrij in de volgorde waarin u erop geklikt hebt.</para>
+
+<para
+>Drukken op de toets <keycap
+>Enter</keycap
+> na een afspeellijst-zoekopdracht zal het eerste gevonden item afspelen, en de zoekopdracht wissen.</para>
+
+</sect1>
+
+
+<sect1 id="tray_hidden">
+<title
+>Het systeemvakpictogram</title>
+
+<para
+>Hoewel het systeemvakpictogram van &amarok; klein is biedt deze vrijwel dezelfde functionaliteit als het afspelervenster. U weet misschien al dat u het volume kunt regelen door met de muiswiel over het systeemvakpictogram te draaien, maar wist u dat:</para>
+
+<para
+>klikken met de middelste muisknop op het pictogram pauzeert het afspelen van de huidige track.</para>
+
+<para
+>de toets <keycap
+>Shift</keycap
+> ingedrukt houden tijdens het draaien met de muiswiel zoekt door de huidige track.</para>
+
+<para
+>De toets <keycap
+>Control</keycap
+> ingedrukt houden tijdens het draaien met de muiswiel navigeert door de tracks in de afspeellijst.</para>
+
+<para
+>het verslepen van items naar het pictogram opent een contextmenu waarin u uit drie opties kunt kiezen: Aan afspeellijst toevoegen, Toevoegen en afspelen en In wachtrij na huidige track.</para>
+</sect1>
+
+</chapter>

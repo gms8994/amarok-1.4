@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+          <!ENTITY amarok "amaroK">
+          <!ENTITY kappname "&amarok;">
+          <!ENTITY % addindex "IGNORE">
+          <!ENTITY % Swedish "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>Funktionsguide för &amarok;</title>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inledning</title>
+
+<!-- Short intro here.-->
+
+<para
+></para>
+
+</chapter>
+
+<chapter id="features">
+<title
+>Funktioner</title>
+
+<!-- All the features go here. This could end up being huge.-->
+<!-- A one line description of each feature should go here to. -->
+
+<para
+></para>
+
+</chapter>
+
+
+<chapter id="using-features">
+<title
+>Använda funktionerna</title>
+
+<!-- Hopefully we can help reduce the number of users errors here. At least we can say RTFM and have some decent docs to read. -->
+
+<para
+></para>
+
+<sect1 id="feature-cover-manager">
+<title
+>Omslagshantering</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-visualizations">
+<title
+>Visningarna</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-equalizer">
+<title
+>Equalizern</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-scripts">
+<title
+>Skripten</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-context-browser">
+<title
+>Sammanhangsbläddraren</title>
+
+<para
+></para>
+
+<!-- If there are any brave souls, please add CSS theme stuff here -->
+
+<sect2 id="home">
+<title
+>Fliken Hem</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="current-track">
+<title
+>Fliken Aktuellt spår</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="lyrics">
+<title
+>Fliken Sångtexter</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-collection-browser">
+<title
+>Samlingsbläddraren</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-playlist-browser">
+<title
+>Spellistebläddraren</title>
+
+<para
+></para>
+
+
+<sect2 id="smart-playlists">
+<title
+>Smarta spellistor</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-search-browser">
+<title
+>Sökbläddraren</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-media-device-browser">
+<title
+>Mediaenhetsbläddraren</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-files-browser">
+<title
+>Filbläddraren</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-cd-burning">
+<title
+>Bränna cd</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-tagging">
+<title
+>Taggning</title>
+
+<para
+></para>
+
+</sect1>
+
+
+</chapter>
+
+</book>

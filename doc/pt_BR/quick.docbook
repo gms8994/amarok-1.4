@@ -1,0 +1,142 @@
+<chapter id="quick-start">
+<title
+>Guia de Iniciação Rápida do &amarok;</title>
+
+<para
+>A audição de música deverá ser simples. Com o Guia de Iniciação Rápida, você deverá colocar o &amarok; funcionando em minutos.</para>
+
+
+<sect1 id="collection-building">
+<title
+>Criando uma coleção</title>
+
+<screenshot>
+	<screeninfo
+>Imagem do Navegador de Coleção</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A criação da sua coleção é um passo essencial para usar todos os recursos do &amarok;. A partir do Navegador da Coleção, clique no botão <guibutton
+>Configurar Pastas</guibutton
+> da barra de ferramentas. A seguir, você irá selecionar as pastas que gostaria que estivessem na sua coleção no diálogo para <guilabel
+>Configurar a Coleção</guilabel
+>. A partir daí, terá também a opção para <guilabel
+>Pesquisar pastas recursivamente</guilabel
+>, <guilabel
+>Vigiar pastas por alterações</guilabel
+> e <guilabel
+>Importar as listas de músicas</guilabel
+> que forem encontradas nas pastas de coleções. Depois de selecionar as suas pastas e de assinalar as opções relevantes, clique no botão <guibutton
+>OK</guibutton
+>. Depois da pesquisa inicial, a sua coleção é criada e você poderá criar uma lista de reprodução.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title
+>Criando uma lista de músicas</title>
+
+<screenshot>
+	<screeninfo
+>Imagem da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A criação de uma lista de músicas é tão simples como arrastar os itens da Árvore do Navegador da Coleção para a Lista de Reprodução. Para tornar a procura dos itens mais simples, aparece um campo de texto para filtrar a sua coleção. Basta começar a escrever no campo de texto para que a árvore mude para mostrar apenas os resultados relevantes. Depois de ficar satisfeito com a sua lista, poderá salvá-la com o botão <guibutton
+>Salvar Lista de Reprodução Como</guibutton
+> que aparece na barra da lista de músicas.</para>
+
+<screenshot>
+	<screeninfo
+>Imagem do Navegador de Lista</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="pl_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Se você tiver as suas próprias listas de músicas, poderá adicioná-las no Navegador da Lista de Músicas clicando no botão <guibutton
+>Adicionar Lista de Músicas</guibutton
+> na barra de ferramentas. Se as suas pastas de coleções tiverem as suas listas de músicas e você tiver selecionado a opção Importar as Listas de Músicas na configuração da coleção, as suas listas irão ficar imediatamente na árvore. Clicando com o botão direito numa lista de músicas na árvore irão aparecer várias opções para carregar a lista de reprodução.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title
+>Ouvindo transmissões</title>
+
+<para
+>Esta parte do guia ainda não está completa.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title
+>Tocando um CD de áudio</title>
+
+<screenshot>
+	<screeninfo
+>Imagem do Menu da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Para ler um CD de áudio, selecione a opção <menuchoice
+><guimenu
+>Ações</guimenu
+><guimenuitem
+>Tocar CD de Áudio</guimenuitem
+></menuchoice
+> no menu da Lista de Reprodução. O navegador de arquivos irá aparecer com várias pastas, assim como as faixas de CD também listadas no formato WAV. Arraste os arquivos WAV para a lista de reprodução e clique no botão <guibutton
+>Tocar</guibutton
+>.</para>
+
+<note
+><para
+>O recurso para Tocar um CD de Áudio usa o protocolo audiocd:/ e não é compatível com todos os motores disponíveis.</para
+></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title
+>Gravando um CD de áudio</title>
+
+<para
+>A gravação de um CD de áudio no &amarok; é simples, graças à integração com o <ulink url="http://www.k3b.org"
+>K3B</ulink
+>. Para gravar um álbum, abra primeiro o Navegador da Coleção. Depois, ao expandir um item de um artista na árvore, clique com o botão direito no álbum que deseja gravar. Irá aparecer um menu de contexto, onde poderá clicar em <guilabel
+>Gravar Este Álbum</guilabel
+>, assim como aparece um diálogo que lhe pergunta o modo de gravação. No diálogo, selecione o botão de <guibutton
+>Modo de Áudio</guibutton
+>, para que o K3B comece logo a gravar o álbum.</para>
+
+<note
+><para
+>O recurso de gravação também é oferecido na Lista de Reprodução. Basta clicar com o botão direito num item da lista de músicas e seguir o menu <guilabel
+>Gravar</guilabel
+> para selecionar várias opções de gravação de CDs.</para
+></note>
+
+</sect1>
+
+
+</chapter>

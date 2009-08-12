@@ -1,0 +1,1666 @@
+<chapter id="advanced-features">
+<title
+>Muud Amaroki võimalused</title>
+
+
+<sect1 id="keybd-shortcuts">
+<title
+>Kiirklahvid</title>
+
+<para
+>&amarok; kasutab kiirklahve nagu iga muu korralik rakendus. Allpool on ära toodud kiirklahvid ja nendega käivitatavad toimingud. Globaalseid kiirklahve saab seadistada, kui klõpsata hiire parema nupuga mängija aknas ja valida <guimenuitem
+>Globaalsete kiirklahvide seadistamine...</guimenuitem
+> &amarok;i enda kiirklahve saab seadistada, kui klõpsata hiire parema nupuga mängija aknas ja valida <guimenuitem
+>Kiirklahvide seadistamine...</guimenuitem
+></para>
+
+<tip
+><para
+>Oma multimeediaklahvide kasutamiseks &amarok;i kiirklahvidena tuleb määrata klaviatuur &amarok;i juhtimiskeskuses.</para
+></tip>
+
+<para
+>Globaalsed kiirklahvid:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Klahvikombinatsioon</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>X</keycap
+></keycombo
+></entry>
+<entry
+>Esitus</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Paus</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>V</keycap
+></keycombo
+></entry>
+<entry
+>Stopp</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Järgmine pala</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Eelmine pala</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>KP_Add</keycap
+></keycombo
+></entry>
+<entry
+>Heli juurde</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>KP_Subtract</keycap
+></keycombo
+></entry>
+<entry
+>Heli maha</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Shift</keycap
+><keycap
+>KP_Add</keycap
+></keycombo
+></entry>
+<entry
+>Palas edasiliikumine</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Shift</keycap
+><keycap
+>KP_Subtract</keycap
+></keycombo
+></entry>
+<entry
+>Palas tagasiliikumine</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Lisa andmekandja</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>P</keycap
+></keycombo
+></entry>
+<entry
+>Esitusnimekirja lülitamine</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>O</keycap
+></keycombo
+></entry>
+<entry
+>OSD näitamine</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Heli välja</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>&amarok;i kiirklahvid:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Klahvikombinatsioon</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Kopeeri</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>KP_Enter</keycap
+></keycombo
+></entry>
+<entry
+>Mine praegusele</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+></entry>
+<entry
+>Valitud palad järjekorda</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Välju</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Tee uuesti</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+></entry>
+<entry
+>Salvesta esitusnimekiri</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Vali kõik</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Menüüriba näitamine</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+></entry>
+<entry
+>Segatud</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Võta tagasi</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+
+<para
+>Esitusnimekirja sirvija kiirklahvid:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Klahvikombinatsioon</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycap
+>Tühikuklahv</keycap
+></entry>
+<entry
+>Esitusnimekirja laadimine</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>F2</keycap
+></entry>
+<entry
+>Esitusnimekirja ümbernimetamine</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>Backspace</keycap
+></entry>
+<entry
+>Esitusnimekirja eemaldamine</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+<sect1 id="the-dcop-interface">
+<title
+>DCOP-liides</title>
+
+<para
+>Amaroki DCOP-liides võimaldab imelihtsalt juhtida Amaroki tööd enda loodud skriptidega.</para>
+
+<para
+>Amaroki DCOP-liides pakub mitmeid üldisi funktsioone, mida kasutavad ka muud KDE rakendused. Käesolevas osas kirjeldame kuues tabelis nii muusikakogu, kontekstisirvija, mängija, esitusnimekirja, esitusnimekirja sirvija kui ka skriptide DCOP-funktsioone. Näiteks DCOP-funktsioon <quote
+>pause</quote
+> näeb välja selline:</para>
+
+<para
+><prompt
+>&percnt;</prompt
+>dcop amarok player pause</para>
+
+<sect2 id="dcop-collection">
+<title
+>DCOP ja amaroKi muusikakogu</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-väljakutse</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>int totalAlbums()</entry>
+<entry
+>Tagastab albumite koguarvu muusikakogus.</entry>
+</row>
+
+<row>
+<entry
+>int totalArtists()</entry>
+<entry
+>Tagastab esitajate koguarvu muusikakogus.</entry>
+</row>
+
+<row>
+<entry
+>int totalCompilations()</entry>
+<entry
+>Tagastab kompilatsioonide koguarvu muusikakogus.</entry>
+</row>
+
+<row>
+<entry
+>int totalGenres()</entry>
+<entry
+>Tagastab žanride koguarvu muusikakogus.</entry>
+</row>
+
+<row>
+<entry
+>int totalTracks()</entry>
+<entry
+>Tagastab palade koguarvu muusikakogus.</entry>
+</row>
+
+<row>
+<entry
+>QString query( QString sql)</entry>
+<entry
+>Esitab andmebaasile päringu SQL-i vahendusel.</entry>
+</row>
+
+<row>
+<entry
+>QStringList similarArtists( int artists )</entry>
+<entry
+>Tagastab aktiivse pala esitajaga sarnased esitajad, piiranguks 'int artists' antud arv.</entry>
+</row>
+
+<row>
+<entry
+>void migrateFile( QString oldURL, QString newURL )</entry>
+<entry
+>Liigutab kogus faili, jättes statistika muutmata.</entry>
+</row>
+
+<row>
+<entry
+>void scanCollection()</entry>
+<entry
+>Uurib muusikakogu.</entry>
+</row>
+
+<row>
+<entry
+>void scanCollectionChanges()</entry>
+<entry
+>Uurib muusikakogu puhul ainult muutusi.</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-context">
+<title
+>dcop amarok contextbrowser</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-väljakutse</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>void showCurrentTrack()</entry>
+<entry
+>Näitab kontekstisirvijas aktiivset pala.</entry>
+</row>
+
+<row>
+<entry
+>void showLyrics()</entry>
+<entry
+>Näitab kontekstisirvijas sõnade kaarti.</entry>
+</row>
+
+<row>
+<entry
+>void showWiki()</entry>
+<entry
+>Näitab kontekstisirvijas Wikipedia kaarti.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-player">
+<title
+>dcop amarok player</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-väljakutse</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>bool dynamicModeStatus()</entry>
+<entry
+>Tagastab dünaamilise režiimi oleku.</entry>
+</row>
+
+<row>
+<entry
+>bool equalizerEnabled()</entry>
+<entry
+>Tagastab ekvalaiseri oleku.</entry>
+</row>
+
+<row>
+<entry
+>bool isPlaying()</entry>
+<entry
+>Tagastab 'tõene', kui midagi esitatakse.</entry>
+</row>
+
+<row>
+<entry
+>bool randomModeStatus()</entry>
+<entry
+>Tagastab juhusliku režiimi oleku.</entry>
+</row>
+
+<row>
+<entry
+>bool repeatPlaylistStatus()</entry>
+<entry
+>Tagastab esitusnimekirja kordamise oleku.</entry>
+</row>
+
+<row>
+<entry
+>bool repeatTrackStatus()</entry>
+<entry
+>Tagastab pala kordamise oleku.</entry>
+</row>
+
+<row>
+<entry
+>int getVolume()</entry>
+<entry
+>Tagastab helitugevuse vahemikus 0-100%.</entry>
+</row>
+
+<row>
+<entry
+>int sampleRate()</entry>
+<entry
+>Tagastab parajasti esitatava pala diskreetimissageduse.</entry>
+</row>
+
+<row>
+<entry
+>int score()</entry>
+<entry
+>Tagastab parajasti esitatava pala hinde.</entry>
+</row>
+
+<row>
+<entry
+>int status()</entry>
+<entry
+>Tagastab esitamise oleku: 0 - peatatud, 1 - paus, 2 - esitatakse.</entry>
+</row>
+
+<row>
+<entry
+>int trackCurrentTime()</entry>
+<entry
+>Tagastab pala esitamiskoha sekundites.</entry>
+</row>
+
+<row>
+<entry
+>int trackPlayCounter()</entry>
+<entry
+>Tagastab aktiivse laulu esitamiskorrad.</entry>
+</row>
+
+<row>
+<entry
+>int trackTotalTime()</entry>
+<entry
+>Tagastab pala pikkuse sekundites.</entry>
+</row>
+
+<row>
+<entry
+>QString album()</entry>
+<entry
+>Tagastab parajasti mängitava pala albumi.</entry>
+</row>
+
+<row>
+<entry
+>QString artist()</entry>
+<entry
+>Tagastab parajasti mängitava pala esitaja.</entry>
+</row>
+
+<row>
+<entry
+>QString bitrate()</entry>
+<entry
+>Tagastab parajasti mängitava pala bitikiiruse (XX kbps).</entry>
+</row>
+
+<row>
+<entry
+>QString comment()</entry>
+<entry
+>Tagastab parajasti mängitava pala kommentaari.</entry>
+</row>
+
+<row>
+<entry
+>QString coverImage()</entry>
+<entry
+>Tagastab parajasti mängitava pala kaanepildi URL-i. </entry>
+</row>
+
+<row>
+<entry
+>QString currentTime()</entry>
+<entry
+>Tagastab parajasti mängitava pala positsiooni ([h:]mm:ss vormingus).</entry>
+</row>
+
+<row>
+<entry
+>QString encodedURL()</entry>
+<entry
+>Tagastab parajasti mängitava pala kodeeritud URL-i.</entry>
+</row>
+
+<row>
+<entry
+>QString engine()</entry>
+<entry
+>Tagastab parajasti kasutatatava audiomootori nime.</entry>
+</row>
+
+<row>
+<entry
+>QString genre()</entry>
+<entry
+>Tagastab parajasti mängitava pala žanri.</entry>
+</row>
+
+<row>
+<entry
+>QString lyrics()</entry>
+<entry
+>Tagastab parajasti mängitava pala sõnad.</entry>
+</row>
+
+<row>
+<entry
+>QString lyricsByPath( QString path )</entry>
+<entry
+>Tagastab pala sõnad määratud asukohast.</entry>
+</row>
+
+<row>
+<entry
+>QString nowPlaying()</entry>
+<entry
+>Parajasti mängitava andmekandja pealkiri.</entry>
+</row>
+
+<row>
+<entry
+>QString path()</entry>
+<entry
+>Tagastab parajasti mängitava pala kodeerimata asukoha.</entry>
+</row>
+
+<row>
+<entry
+>QString setContextStyle( QString )</entry>
+<entry
+>Määrab kontekstisirvijale CSS-stiili.</entry>
+</row>
+
+<row>
+<entry
+>QString title()</entry>
+<entry
+>Tagastab parajasti mängitava pala pealkirja.</entry>
+</row>
+
+<row>
+<entry
+>QString totalTime()</entry>
+<entry
+>Tagastab parajasti mängitava pala kogupikkuse ([h:]mm:ss vormingus).</entry>
+</row>
+
+<row>
+<entry
+>QString track()</entry>
+<entry
+>Tagastab pala järjekorranumbri.</entry>
+</row>
+
+<row>
+<entry
+>QString type()</entry>
+<entry
+>Tagastab failitüübi.</entry>
+</row>
+
+<row>
+<entry
+>QString year()</entry>
+<entry
+>Tagastab parajasti mängitava pala aasta.</entry>
+</row>
+
+<row>
+<entry
+>void configEqualizer()</entry>
+<entry
+>Ekvalaiseri seadistustedialoogi lülitamine.</entry>
+</row>
+
+<row>
+<entry
+>void enableDynamicMode(bool enable)</entry>
+<entry
+>Dünaamilise režiimi lülitamine sisse või välja.</entry>
+</row>
+
+<row>
+<entry
+>void enableOSD(bool enable)</entry>
+<entry
+>OSD kuvamise lülitamine sisse või välja.</entry>
+</row>
+
+<row>
+<entry
+>void enableRandomMode(bool enable)</entry>
+<entry
+>Juhusliku režiimi lülitamine sisse või välja</entry>
+</row>
+
+<row>
+<entry
+>void enableRepeatPlaylist(bool enable)</entry>
+<entry
+>Esitusnimekirja kordamise lülitamine sisse või välja.</entry>
+</row>
+
+<row>
+<entry
+>void enableRepeatTrack(bool enable)</entry>
+<entry
+>Pala kordamise lülitamine sisse või välja.</entry>
+</row>
+
+<row>
+<entry
+>void mediaDeviceMount()</entry>
+<entry
+>Määrab käsu meediaseadme ühendamiseks.</entry>
+</row>
+
+<row>
+<entry
+>void mediaDeviceUmount()</entry>
+<entry
+>Määrab käsu meediaseadme lahutamiseks.</entry>
+</row>
+
+<row>
+<entry
+>void mute()</entry>
+<entry
+>Tummuse lülitamine.</entry>
+</row>
+
+<row>
+<entry
+>void next()</entry>
+<entry
+>Sama, mis klõps nupule "Järgmine".</entry>
+</row>
+
+<row>
+<entry
+>void pause()</entry>
+<entry
+>Sama, mis klõps nupule "Paus".</entry>
+</row>
+
+<row>
+<entry
+>void play()</entry>
+<entry
+>Sama, mis klõps nupule "Esitus".</entry>
+</row>
+
+<row>
+<entry
+>void playPause()</entry>
+<entry
+>Esituse/pausi oleku lülitamine (sobib multimeediaklaviatuuri kasutajatele). </entry>
+</row>
+
+<row>
+<entry
+>void prev()</entry>
+<entry
+>Sama, mis klõps nupule "Eelmine".</entry>
+</row>
+
+<row>
+<entry
+>void queueForTransfer( KURL url )</entry>
+<entry
+>Faili seadmine järjekorda ülekandmiseks meediaseadmele.</entry>
+</row>
+
+<row>
+<entry
+>void seek(int s)</entry>
+<entry
+>Hüppamine palas sekunditega määratud positsiooni.</entry>
+</row>
+
+<row>
+<entry
+>void seekRelative(int s)</entry>
+<entry
+>Hüppamine palas positsiooni, mis erineb määratud sekundite võrra aktiivsest positsioonist.</entry>
+</row>
+
+<row>
+<entry
+>void setEqualizer(int, int, int, int, int, int, int, int, int, int, int)</entry>
+<entry
+>Ekvalaiseri liugurite väärtuste määramine. </entry>
+</row>
+
+<row>
+<entry
+>void setEqualizerEnabled( bool active )</entry>
+<entry
+>Ekvalaiseri lülitamine.</entry>
+</row>
+
+<row>
+<entry
+>void setEqualizerPreset( QString name )</entry>
+<entry
+>Ekvalaiseri valmisseadistuse kehtestamine. </entry>
+</row>
+
+<row>
+<entry
+>void setLyricsByPath( QString url, QString lyrics )</entry>
+<entry
+>Pala sõnade määramine asukoha järgi.</entry>
+</row>
+
+<row>
+<entry
+>void setScore( int score )</entry>
+<entry
+>Parajasti mängitava pala hinde määramine.</entry>
+</row>
+
+<row>
+<entry
+>void setScoreByPath( QString url, int score )</entry>
+<entry
+>Pala hinde määramine asukoha järgi.</entry>
+</row>
+
+<row>
+<entry
+>void setVolume(int volume)</entry>
+<entry
+>Helitugevuse määramine vahemikus 0-100%.</entry>
+</row>
+
+<row>
+<entry
+>void showBrowser( QString browser )</entry>
+<entry
+>Sirvijate näitamine esitusnimekirja aknas.</entry>
+</row>
+
+<row>
+<entry
+>void showOSD()</entry>
+<entry
+>OSD näitamine ekraanil.</entry>
+</row>
+
+<row>
+<entry
+>void stop()</entry>
+<entry
+>Sama, mis klõps nupule "Peata".</entry>
+</row>
+
+<row>
+<entry
+>void transferDeviceFiles()</entry>
+<entry
+>Failide ülekandmine meediaseadmele.</entry>
+</row>
+
+<row>
+<entry
+>void volumeDown()</entry>
+<entry
+>Helitugevuse vähendamine mõistliku sammu võrra.</entry>
+</row>
+
+<row>
+<entry
+>void volumeUp()</entry>
+<entry
+>Helitugevuse suurendamine mõistliku sammu võrra.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-playlist">
+<title
+>dcop amarok playlist</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-väljakutse</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>int getActiveIndex()</entry>
+<entry
+>Tagstab aktiivse pala indeksi või -1, kui seda pole.</entry>
+</row>
+
+<row>
+<entry
+>int getTotalTrackCount()</entry>
+<entry
+>Tagastab palade arvu esitusnimekirjas või 0, kui seal pole ühtegi pala.</entry>
+</row>
+
+<row>
+<entry
+>QString saveCurrentPlaylist()</entry>
+<entry
+>Salvestab aktiivse esitusnimekirja failina current.xml ja tagastab selle asukoha.</entry>
+</row>
+
+<row>
+<entry
+>void addMedia( KURL )</entry>
+<entry
+>Lisab URL-iga määratud audioandmekandja.</entry>
+</row>
+
+<row>
+<entry
+>void addMediaList( KURL::List )</entry>
+<entry
+>Lisab mitu URL-iga määratud audioandmekandjat.</entry>
+</row>
+
+<row>
+<entry
+>void clearPlaylist()</entry>
+<entry
+>Puhastab esitusnimekirja.</entry>
+</row>
+
+<row>
+<entry
+>void playByIndex(int)</entry>
+<entry
+>Alustab pala esitamist määratud indeksist.</entry>
+</row>
+
+<row>
+<entry
+>void playMedia( KURL )</entry>
+<entry
+>Lisab URL-iga määratud audioandmekandja.</entry>
+</row>
+
+<row>
+<entry
+>void popupMessage( QString)</entry>
+<entry
+>Näitab ajutist hüpikdialoogi.</entry>
+</row>
+
+<row>
+<entry
+>void removeCurrentTrack()</entry>
+<entry
+>Eemaldab aktiivse pala esitusnimekirjast.</entry>
+</row>
+
+<row>
+<entry
+>void repopulate()</entry>
+<entry
+>Täidab esitusnimekirja uuesti juhuslike paladega.</entry>
+</row>
+
+<row>
+<entry
+>void saveM3u( QString path, bool relativePaths)</entry>
+<entry
+>Salvestab aktiivse esitusnimekirja m3u-failina.</entry>
+</row>
+
+<row>
+<entry
+>void setStopAfterCurrent( bool )</entry>
+<entry
+>Lülitab sisse/välja võimaluse "Peata pärast aktiivset pala".</entry>
+</row>
+
+<row>
+<entry
+>void shortStatusMessage( QString)</entry>
+<entry
+>Näitab ajutist teadet olekuribal.</entry>
+</row>
+
+<row>
+<entry
+>void shufflePlaylist()</entry>
+<entry
+>Segab esitusnimekirja järjekorra.</entry>
+</row>
+
+<row>
+<entry
+>void togglePlaylist()</entry>
+<entry
+>Lülitab esitusnimekirja akna näitamist.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-playlistbrowser">
+<title
+>dcop amarok playlistbrowser</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-väljakutse</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>void addPodcast( QString )</entry>
+<entry
+>Lisab esitusnimekirja sirvijasse Podcasti kirje.</entry>
+</row>
+
+<row>
+<entry
+>void scanPodcasts()</entry>
+<entry
+>Uurib kõigi Podcastide uuendusi.</entry>
+</row>
+
+<row>
+<entry
+>void addPlaylist( QString )</entry>
+<entry
+>Lisab esitusnimekirja sirvijasse esitusnimekirja.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-script">
+<title
+>dcop amarok script</title>
+
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-väljakutse</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>bool runScript( QString name)</entry>
+<entry
+>Käivitab määratud nimega skripti. Õnnestumise korral tagastab 'tõene'.</entry>
+</row>
+
+<row>
+<entry
+>bool stopScript( QString name)</entry>
+<entry
+>Peatab määratud nimega skripti. Õnnestumise korral tagastab 'tõene'.</entry>
+</row>
+
+<row>
+<entry
+>QStringList listRunningScripts()</entry>
+<entry
+>Tagastab kõigi parajasti töötavate skriptide nimekirja.</entry>
+</row>
+
+<row>
+<entry
+>void addCustomMenuItem(QString submenu, QString itemTitle )</entry>
+<entry
+>Kehtestab ja määrab kohandatud menüüelemendi nime.</entry>
+</row>
+
+<row>
+<entry
+>void removeCustomMenuItem(QString submenu, QString itemTitle )</entry>
+<entry
+>Eemaldab kohandatud menüüelemendi.</entry>
+</row>
+
+<row>
+<entry
+>QString readConfig( QString key)</entry>
+<entry
+>Tagastab AmarokConfigi seadistuskirje väärtuse antud võtme põhjal.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+
+</sect2>
+
+</sect1>
+
+<sect1 id="cmd-line-options">
+<title
+>Käsurea võtmed</title>
+
+<para
+>Amarok toetab standardseid Qt ja KDE käsurea võtmeid, kuid pakub ka mõningaid spetsiifilisi võtmeid.</para>
+
+<para
+>Qt ja KDE võtmed:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Võti</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--help</entry>
+<entry
+>Näitab abiteadet võtmete kohta.</entry>
+</row>
+
+<row>
+<entry
+>--help-qt</entry>
+<entry
+>Näitab Qt spetsiifilisi võtmeid.</entry>
+</row>
+
+<row>
+<entry
+>--help-kde</entry>
+<entry
+>Näitab KDE spetsiifilisi võtmeid.</entry>
+</row>
+
+<row>
+<entry
+>--help-all</entry>
+<entry
+>Näitab kõiki võtmeid.</entry>
+</row>
+
+<row>
+<entry
+>--author</entry>
+<entry
+>Näitab infot autori kohta.</entry>
+</row>
+
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Näitab versiooni.</entry>
+</row>
+
+<row>
+<entry
+>--license</entry>
+<entry
+>Näitab litsentsi.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>Amaroki võtmed:</para>
+
+<note
+><para
+>&amarok;i võtmed on mõeldud kasutamiseks &amarok;i töötamise ajal.</para
+></note>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Võti</entry>
+<entry
+>Toiming</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>-r, --previous</entry>
+<entry
+>Hüppab esitusnimekirjas eelmisele palale.</entry>
+</row>
+
+<row>
+<entry
+>-p, --play</entry>
+<entry
+>Alustab esitusnimekirja mängimist.</entry>
+</row>
+
+<row>
+<entry
+>-s, --stop</entry>
+<entry
+>Katkestab taasesituse.</entry>
+</row>
+
+<row>
+<entry
+>--pause</entry>
+<entry
+>Peatab taasesituse.</entry>
+</row>
+
+<row>
+<entry
+>-f, --next</entry>
+<entry
+>Hüppab esitusnimekirjas järgmisele palale.</entry>
+</row>
+
+<row>
+<entry
+>-a, --append</entry>
+<entry
+>Lisab failid/URL-id esitusnimekirja.</entry>
+</row>
+
+<row>
+<entry
+>-e, --enqueue</entry>
+<entry
+>Vaata append (kasutusel tagasiühilduvuse nimel).</entry>
+</row>
+
+<row>
+<entry
+>--queue</entry>
+<entry
+>Seab failid/URL-id järjekorda parajasti mängitava pala järele.</entry>
+</row>
+
+<row>
+<entry
+>-m, --toggle-playlist-window</entry>
+<entry
+>Esitusnimekirja akna lülitamine.</entry>
+</row>
+
+<row>
+<entry
+>--wizard</entry>
+<entry
+>Käivitab esimese korra nõustaja.</entry>
+</row>
+
+<row>
+<entry
+>--engine "nimi"</entry>
+<entry
+>Käivitab &amarok;i mootoriga "nimi".</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+
+<sect1 id="script-writing">
+<title
+>Skriptide kirjutamine</title>
+
+<para
+>Skriptid võimaldavad &amarok;ki väga lihtsalt laiendada ilma selle põhikoodi muutmata. Skriptid sarnanevad selles mõttes pluginatele, kuid erinevalt spetsiaalsest pluginate API-st kasutavad nad kommunikatsiooniks &amarok;i DCOP-liidest. Nii on skripte võimalik kirja panna peaaegu mis tahes programmeerimiskeeles (nt. Ruby, Python, PHP). Skripte saab luua mitte ainult klassikalistes skriptikeeltes, vaid ka keerukamates keeltes, näiteks C++ või puhas C. Lisaks võib &amarok; edastada skriptidele teatud sündmuste korral märguande, mis paneb neid midagi tegema. Seda selgitame käesolevas osas edaspidi.</para>
+
+<sect2 id="script-bindings">
+<title
+>Seosed</title>
+
+<para
+>Võimalik on kirjutada nii lihtsaid skripte, mis ei vaja kasutaja sekkumist, kui ka graafilise kasutajaliidesega skripte, mis tegutsevad justkui omaette väikesed rakendused. Viimaste korral saab kasutada mõnda arvukatest seostes, mida KDE pakub, näiteks Qt teegi seost Ruby jaoks RubyQt. Tuleb siiski märkida, et mitte kõigil kasutajatel ei pruugi kõik seosed paigaldatud olla. Kui otsustad mõnda seost kasutada, ürita pruukida mõnda levinumat (nt. RubyQt või PyQt).</para>
+
+<para
+>Tagasiside saamiseks, kui skripti töö peaks ebaõnnestuma puuduva sõltuvuse tõttu, lisa palun skripti kontroll, kas moodul, mida soovid kasutada, on ka tegelikult olemas. Kui seda pole, peaks skript veast aru saama ning näitama infodialoogi (käsureatööriista "kdialog" abil), et kasutaja saaks teada, miks skript ei töötanud.</para>
+
+<para
+>Üks näide, kuidas tuvastada puuduv sõltuvus Ruby korral:</para>
+
+<programlisting
+>begin
+       require 'Korundum'
+rescue LoadError
+       error = 'Korundum (KDE bindings for ruby) from kdebindings v3.4 is required for this script.'
+       `kdialog --sorry '#{error}'`
+       exit
+end
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-templates">
+<title
+>Alustamine: mallid</title>
+
+<para
+>&amarok; pakub mitmes keeles skriptimalle kataloogis <filename class="directory"
+>scripts/templates/</filename
+>. Neid saab kasutada alusena enda skripti loomisel. Küllap märkad, et skriptide loomine on üsna lihtne: kui sa tunned näiteks vähegi programmeerimist Pythoni keeles, ei ole vastava skripti loomine kuigi pikk tegevus.</para>
+
+</sect2>
+
+<sect2 id="script-controlling-amarok">
+<title
+>&amarok;i juhtimine DCOP-i abil</title>
+
+<para
+>Skriptidega saab Amaroki tegevust juhtida, kutsudes välja selle DCOP-funktsioone. Lihtsaim viis DCOP-funktsiooni väljakutsumiseks on kasutada käsureautiliiti "dcop", mis kuulub alati KDE koosseisu.</para>
+
+<para
+>Toome näite peamise helitugevuse suurendamise kohta:</para>
+
+<programlisting
+>dcop amarok player volumeUp</programlisting>
+
+<para
+>Enamik skriptikeeli võimaldab käivitada väliseid programme (näiteks funktsiooniga exec()). Nii saab utiliiti "dcop" üsna lihtsalt välja kutsuda. Toome ühe lihtsa näite Pythoni keeles:</para>
+
+<programlisting
+>import os
+ os.system("dcop amarok player volumeDown")
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-notifications">
+<title
+>Märguanded</title>
+
+<para
+>&amarok; võib saata kõigile töötavatele skriptidele märguandeid, kirjutades vastava stringi nende standardsisendi kanalisse. Seepärast peab skript pidevalt jälgima oma standardsisendit ja võimalike märguannete puhul vajalikult tegutsema. Skriptid võivad küll ka mitte tegutseda teatud sündmuste puhul, kui need neid ei puuduta.</para>
+
+<para
+>&amarok; saadab järgmisi märguandeid:</para>
+
+<programlisting
+><cmdsynopsis
+><command
+>configure</command
+></cmdsynopsis>
+Annab skriptile korralduse näidata oma seadistustedialoogi.
+Skript peab seadistusvalikute salvestamise ja laadimisega ise toime tulema.
+Skripti käivitamisel määrab Amarok selle töökataloogi kataloogiks,
+kuhu salvestada kõik andmed.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>engineStateChange:</command
+><arg
+>empty|idle|paused|playing</arg
+></cmdsynopsis>
+Annab märku mootori oleku muutumisest.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>trackChange</command
+></cmdsynopsis>
+Annab märku uue pala algusest. Skript võib seejärel kasutada DCOP-funktsioone
+pala kohta täiendava info hankimiseks (nt. metaandmed, pikkus).
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>volumeChange</command
+><arg
+>newVolume</arg
+></cmdsynopsis>
+Annab märku peamise helitugevuse muutumisest.
+Helitugevus on täisarv vahemikus 0 kuni 100.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>customMenuClicked:</command
+><arg
+>submenu itemTitle paths</arg
+></cmdsynopsis>
+Tagastab esitusnimekirja valitud failide asukohad,
+kui klõpsatakse kohandatud esitusnimekirja kontekstimenüü mõnda kirjet.
+Tagastatakse ka alammenüü ja elemendi nimi, mida läheb vaja juhul,
+kui skript jälgib mitmeid märguandeid.
+Elemendi lisamiseks kontekstimenüüsse kasuta DCOP-väljakutset 
+'dcop amarok script addCustomMenuItem( submenu itemTitle )'.
+Elemendi eemaldamiseks kontekstimenüüst kasuta DCOP-väljakutset 
+'dcop amarok script removeCustomMenuItem( submenu itemTitle )'.
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-termination">
+<title
+>Skripti töö lõpetamine</title>
+
+<para
+>Enne seda, kui &amarok; töö lõpetab või kui kasutaja peatab skripti skriptihalduris, saadab &amarok; skriptile signaali SIGTERM. Selle signaali saamisel peab skript ette võtma vajalikud toimingud, näiteks salvestama andmed või seadistused.</para>
+
+</sect2>
+
+<sect2 id="script-packaging">
+<title
+>Pakkimine</title>
+
+<para
+>&amarok;i skriptihaldur oskab paigaldada skriptipakke, mida kasutaja on veebist alla laadinud. Pakid on pakitud tavaliselt (.tar), lisaks on võimalik tihendada neid ka bzip2-ga (.bz2). Me soovitame tungivalt kasutada failinime kujul minuskript.amarokscript.tar.bz2, et kasutajad saaksid kohe aru, et tegemist on just Amaroki skriptiga.</para>
+
+<note
+><para
+>&amarok; 1.3 tunnustab ainult laiendiga amarokscript skriptipakke, nii et mõistlik oleks seda igal juhul kasutada.</para
+></note>
+
+<para
+>Paki sisu peab olema järgmine:</para>
+
+<programlisting
+>minuskript/
+   README
+   minuskript.py (käivitatav fail)
+   mingimoodul.py
+   foo.data
+   ...
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-permissions">
+<title
+>Failiõigused</title>
+
+<para
+>Põhiskriptil peab olema käivitamise õigus (+x), teised moodulid aga, mida skript laeb, ei tohi olla käivitamisõigusega. Failiõiguste säilitamiseks pakis tuleks see pakkida võtmega -p:</para>
+
+<programlisting
+>tar -cf minuskript.amarokscript.tar -p minuskript</programlisting>
+
+<note
+><para
+>&amarok; ei saa skripti paigaldada, kui õigused ei ole korrektsed.</para
+></note>
+
+</sect2>
+
+<sect2 id="script-distributing">
+<title
+>Levitamine</title>
+
+<para
+>Kui oled paki valmis teinud, võid laadida selle saidile <ulink url="http://www.kde-apps.org"
+>www.kde-apps.org</ulink
+> ja lisada lingi &amarok;i <ulink url="http://amarok.kde.org/amarokwiki/index.php/Scripts"
+>Wiki skriptileheküljele</ulink
+>. Saidil kde-apps tuleks kasutada kategooriat <ulink url="http://kde-apps.org/index.php?xcontentmode=56"
+>&amarok; Scripts</ulink
+>.</para>
+
+</sect2>
+
+</sect1>
+
+
+</chapter>
+

@@ -1,0 +1,106 @@
+#!/usr/bin/make -f
+
+### CDBS INCLUDES
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/kde.mk
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+
+### VARIABLES
+# Exempt amarok engines from being handled as proper public libraries
+# by dh_makeshlibs
+DEB_DH_MAKESHLIBS_ARGS_ALL = -Xlibamarok_\\w*-engine
+
+export KUBUNTU_DESKTOP_POT=extragear-multimedia_amarok
+
+DEB_CONFIGURE_EXTRA_FLAGS  :=	--without-included-sqlite \
+				--disable-final \
+				--without-akode \
+				--with-gstreamer10 \
+				--without-libkarma \
+				--with-ifp      \
+				--with-libgpod  \
+				--with-libnjb   \
+				--with-libmtp   \
+				--enable-mysql  \
+				--enable-postgresql \
+				--without-yauap \
+				--without-arts
+
+# Ship upstream README in amarok docs
+DEB_INSTALL_DOCS_ALL =
+DEB_INSTALL_DOCS_amarok = $(DEB_SRCDIR)/README
+
+# Amarok engines should not auto-depend on amarok. 
+# Appropriate relationships are set manually in the control file.
+DEB_DH_SHLIBDEPS_ARGS_amarok-engine-xine = -- -xamarok
+#DEB_DH_SHLIBDEPS_ARGS_amarok-engine-yauap = -- -xamarok
+
+### Libtool and Automake updates
+# Autoguess automake /usr/share subdirectory. Insure from failures
+DEB_AUTOMAKE_SHARE_DIR = /usr/share/automake-$(shell automake --version | head -n 1 | sed 's/^automake (GNU automake) \([0-9]\+\.[0-9]\+\).*/\1/')
+ifneq ($(words $(DEB_AUTOMAKE_SHARE_DIR)),1)
+DEB_AUTOMAKE_SHARE_DIR =
+endif
+
+post-patches:: debian/stamp-automake
+debian/stamp-automake:
+	touch debian/stamp-automake-started
+	if test -n "$(DEB_AUTOMAKE_SHARE_DIR)"; then \
+		for f in $(DEB_AUTOMAKE_SHARE_DIR)/*; do \
+			if  test -f $$f && \
+			test -f $(DEB_SRCDIR)/admin/`basename $$f`; then \
+			cp -f $$f $(DEB_SRCDIR)/admin; \
+			fi; \
+		done; \
+	fi
+	$(MAKE) -C $(DEB_SRCDIR) -f admin/Makefile.common
+	touch $@
+
+# Install ${curpkg}.install as lintian overrides
+$(patsubst %,binary-install/%,$(DEB_PACKAGES))::
+	if test -e debian/$(cdbs_curpkg).lintian; then \
+		install -p -D -m644 debian/$(cdbs_curpkg).lintian \
+		    debian/$(cdbs_curpkg)/usr/share/lintian/overrides/$(cdbs_curpkg); \
+	fi
+
+clean::
+	if test -d $(DEB_SRCDIR) && test -f debian/stamp-automake-started; then \
+		cd $(DEB_SRCDIR); \
+		find . -name Makefile.in -print | \
+				xargs --no-run-if-empty rm -f; \
+		rm -f Makefile.am acinclude.m4 aclocal.m4 config.h.in \
+				configure configure.files configure.in stamp-h.in \
+				subdirs; \
+	fi
+	rm -f debian/stamp-automake*
+
+binary-fixup/amarok-common::
+	# Fix permissions of some amarok scripts
+	chmod a+x  \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/lyrics_astraweb/lyrics_astraweb.rb \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/playlist2html/Playlist.py \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/ruby_debug/debug.rb \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/templates/python_qt_template.py \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/templates/ruby_qt_template.rb \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/webcontrol/Playlist.py \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/webcontrol/RequestHandler.py
+
+binary-post-install/amarok-common::
+	# Remove excess COPYING files from script directories
+	rm -f \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/lyrics_astraweb/COPYING \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/lyrics_lyrc/COPYING \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/score_default/COPYING \
+	    debian/$(cdbs_curpkg)/usr/share/apps/amarok/scripts/score_impulsive/COPYING
+	# Remove Mac OSX resource fork file
+	rm -f debian/$(cdbs_curpkg)/usr/share/apps/amarok/ruby_lib/rubygems/._gem_commands.rb
+
+### POST-INSTALL HACKING
+common-binary-post-install-arch::
+	# Check for not installed files
+	dh_install --no-act --list-missing
+
+	#chmod a+x debian/amarok/usr/lib/amarok/install-mp3
+	#chmod +x debian/amarok/usr/bin/kubuntu-media-amarok
+	mkdir -p debian/amarok14/usr/lib/amarok
+	ln -s /usr/bin/amarokapp debian/amarok14/usr/lib/amarok/amarokapp

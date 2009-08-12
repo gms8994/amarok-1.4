@@ -1,0 +1,46 @@
+[Desktop Entry]
+ServiceTypes=media/audiocd
+Actions=Play;
+Encoding=UTF-8
+X-KDE-Priority=TopLevel
+
+[Desktop Action Play]
+Name=Play Audio CD with amaroK
+Name[ar]=قراءة قرص مدمج صوتي بواسطة amaroK
+Name[bg]=Възпроизвеждане на аудио CD с amaroK
+Name[bn]=ক্যাফিন দিয়ে অডিও সিডি চালাও
+Name[br]=Seniñ ur bladenn klevet gant amaroK
+Name[ca]=Reprodueix Audio CD amb amaroK
+Name[cs]=Pehrát audio CD amaroK
+Name[da]=Spil lyd-cd med amaroK
+Name[de]=Audio-CD mit amaroK abspielen
+Name[el]=Αναπαραγωγή CD ήχου με το amaroK
+Name[es]=Reproducir CD de audio con amaroK
+Name[et]=Esita audio-CD amaroK'is
+Name[fi]=Soita musiikki-cd amaroKssa
+Name[fr]=Jouer un CD Audio avec amaroK
+Name[ga]=Seinn CD Fuaime le amaroK
+Name[gl]=Reproducir o CD de Áudio con amaroK
+Name[he]=נגן תקליטור שמע עם amaroK
+Name[is]=Spila tónlistardisk með amaroK
+Name[it]=Riproduci CD audio con amaroK
+Name[ja]=amaroKで音楽CDを再生
+Name[ka]=აუდიო CD-ის დაკვრა amaroK-ით
+Name[km]=ចាក់​ស៊ីឌី​អូឌីយ៉ូ​​ជាមួយ amaroK
+Name[nb]=Spill lyd-CD med amaroK
+Name[nl]=Audio-cd met amaroK afspelen
+Name[nn]=Spel lyd-CD med amaroK
+Name[pa]=ਕੈਫੀਨ ਨਾਲ ਆਡੀਓ CD ਚਲਾਓ
+Name[pl]=Odtwarzaj audio CD w amaroK
+Name[pt]=Tocar o CD de Áudio com o amaroK
+Name[pt_BR]=Reproduzir o CD de Áudio com o amaroK
+Name[sr]=Пустио аудио CD amaroK-ом
+Name[sr@Latn]=Pustio audio CD amaroK-om
+Name[sv]=Spela ljud-cd med amaroK
+Name[tr]=amaroK ile Ses CD'si Çal
+Name[uk]=Програти аудіо-КД з amaroK
+Name[xx]=xxPlay Audio CD with amaroKxx
+Name[zh_CN]=用 amaroK 播放音频 CD
+Name[zh_TW]=使用 amaroK 播放音樂 CD
+Icon=amarok
+Exec=bash kubuntu-media-amarok %u

@@ -1,0 +1,665 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY amarok "Amarok">
+ <!ENTITY amarok-quick SYSTEM "quick.docbook">
+ <!ENTITY amarok-config SYSTEM "config.docbook">
+ <!ENTITY amarok-using SYSTEM "using.docbook">
+ <!ENTITY amarok-advanced SYSTEM "advanced.docbook">
+ <!ENTITY amarok-req SYSTEM "requirements.docbook">
+ <!ENTITY amarok-faq SYSTEM "faq.docbook">
+ <!--<!ENTITY amarok-tech SYSTEM "technology.docbook"
+>-->
+ <!ENTITY kappname "&amarok;">
+ <!ENTITY package "extragear">
+ <!ENTITY RMB "right mouse button">
+ <!ENTITY k3b "K3b">
+ <!ENTITY % addindex "IGNORE">
+ <!ENTITY % Estonian  "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>&amarok;i käsiraamat</title>
+
+<authorgroup>
+ <author
+><firstname
+>Mike</firstname
+> <surname
+>Diehl</surname
+> <affiliation
+> <address
+><email
+>madpenguin8@yahoo.com</email
+></address>
+ </affiliation>
+</author>
+
+<othercredit role="developer">
+ <firstname
+>Amaroki arendajate meeskond</firstname>
+ <contrib
+>Arendajad</contrib>
+</othercredit>
+
+<othercredit role="translator"
+><firstname
+>Marek</firstname
+> <surname
+>Laane</surname
+> <affiliation
+><address
+><email
+>bald@starman.ee</email
+></address
+></affiliation
+><contrib
+>Tõlge eesti keelde</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+ <year
+>2005</year>
+ <holder
+>Amaroki arendajate meeskond</holder>
+</copyright>
+
+<copyright>
+ <year
+>2006</year>
+ <holder
+>DoKymotioni kamp</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2006-02-20</date
+> <!-- CHANGE ME -->
+<releaseinfo
+>2.1</releaseinfo>
+
+<abstract>
+ <para
+>&amarok; on KDE meediamängija.</para>
+</abstract>
+
+<keywordset>
+ <keyword
+>KDE</keyword>
+ <keyword
+>multimeedia</keyword>
+ <keyword
+>mängija</keyword>
+ <keyword
+>audio</keyword>
+ <keyword
+>ogg</keyword>
+ <keyword
+>mp3</keyword>
+ <keyword
+>wav</keyword>
+ <keyword
+>muusika</keyword>
+ <keyword
+>heli</keyword>
+ <keyword
+>skript</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> <!--Merge with technology.docbook-->
+<title
+>Sissejuhatus</title>
+
+<screenshot>
+ <screeninfo
+>Logo</screeninfo>
+ <mediaobject>
+ <imageobject
+><imagedata fileref="logo.png" format="PNG"/></imageobject>
+ </mediaobject>
+</screenshot>
+
+<para
+>&amarok; on &kde; audiofailide mängija. See on avarate võimaluste, ühtaegu võimas ja hõlpsasti kasutatav rakendus. </para>
+
+<para
+>Kas oled sageli tundnud masendust, kui pead muudkui lappama menüüd, et lihtsalt muusikafaile esitusnimekirja lisada? &amarok; võimaldab seda teha pelgalt vajalikke faile esitusnimekirja lohistades. Oletame, et otsid mingit konkreetset pala oma tuhandete lugude seast. &amarok;i muusikakogu sirvija pakub sulle otsinguriba, mis võimaldab vajaliku pala mõne sekundiga üles leida.</para>
+
+<para
+>Nii pakub &amarok; kõiki neid häid ja teada-tuntud võimalusi, mida iga muugi audiofailide mängija, aga see pole veel kõik. Heida vaid pilk kontekstisirvijale ja sa näed, et &amarok; on teistest tubli sammu võrra ees. Kontekstisirvija kujutab endast käigult loodavat andmebaasi, kus uuendatakse järjepidevalt sinu esitusnimekirja kohta käivat statistikat. Seda saab pruukida ka albumi kaanepiltide tõmbamiseks, mis muudab sirvija mitte lihtsalt inforohkemaks, vaid ka visuaalselt köitvamaks. Lisaks sellele pakub kontekstisirvija kõikvõimalikku teavet: sama esitaja teisi lugusid, sarnaseid esitajaid ja veel palju muud.</para>
+
+<para
+>Sul on juba terve hulk esitusnimekirju ja sa ei suuda kunagi otsustada, millist neist parajasti ette võtta? Siis sobib sulle esitusnimekirja sirvija. Salvestatud esitusnimekirjade laadimine sirvijasse käib üheainsa klahvivajutusega. Sa ei tea, mida parajasti kuulata? Amaroki dünaamiline esitusrežiim valib muusikat sinu eest, nutikad esitusnimekirjad lubavad aga oma muusikakogus valida otse mõne huvipakkuva koha.</para>
+
+<para
+>Amarok toetab suurepäraselt Apple'i Ipodi, iRiveri IFP-d ja veel tervet rida USB-seadmeid. Samuti on pakkuda mitmeid audiotaustaprogramme, mis lubab just sinul määrata, kuidas oma muusikat kuulata. Need ja veel arvukad omadused muudavad Amaroki parimaks muusikamängijaks. &amarok; on nutikas, seksikas taiplik. Me loodane, et see aitab sul tõepoolest "muusikat avastada"!</para>
+
+</chapter>
+
+<!--&amarok-tech;-->
+
+&amarok-quick;
+
+&amarok-config;
+
+&amarok-using;
+
+&amarok-advanced;
+
+&amarok-faq;
+
+<chapter id="credits">
+<title
+>Autorid ja litsents</title>
+
+<para
+>Rakenduse autoriõigus 2003-2005: Mark Kretschmann <email
+>markey@web.de</email
+> ja amaroKi meeskond.</para>
+
+<itemizedlist>
+<title
+>amaroKi meeskond</title>
+<listitem
+><para
+>Christian <quote
+>babe-magnet</quote
+> Muehlhaeuser <email
+>chris@chris.de</email
+></para
+></listitem>
+<listitem
+><para
+>Frederik <quote
+>ich bin kein Deustcher!</quote
+> Holljen <email
+>fh@ez.no</email
+></para
+></listitem>
+<listitem
+><para
+>Mark <quote
+>it's good, but it's not irssi</quote
+> Kretschmann <email
+>markey@web.de</email
+></para
+></listitem>
+<listitem
+><para
+>Max <quote
+>Turtle-Power</quote
+> Howell <email
+>max.howell@methylblue.com</email
+></para
+></listitem>
+<listitem
+><para
+>Mike <quote
+>purple is not girly!</quote
+> Diehl <email
+>madpenguin8@yahoo.com</email
+></para
+></listitem>
+<listitem
+><para
+>Pierpaolo <quote
+>Spaghetti Coder</quote
+> Di Panfilo<email
+>pippo_dp@libero.it</email
+></para>
+</listitem>
+<listitem
+><para
+>Roman <quote
+>and God said, let there be Mac</quote
+> Becker <email
+>roman@formmorf.de</email
+></para
+></listitem>
+<listitem
+><para
+>Seb <quote
+>Surfin' down under</quote
+> Ruiz <email
+>me@sebruiz.net</email
+></para
+></listitem>
+<listitem
+><para
+>Stanislav <quote
+>did someone say DCOP?</quote
+> Karchebny <email
+>Stanislav.Karchebny@kdemail.net</email
+></para
+></listitem>
+</itemizedlist>
+
+<itemizedlist>
+<title
+>Kaasautorid:</title>
+
+<listitem>
+<para
+>Adam Pigg (analüsaatorid, paigad) <email
+>adam@piggz.fsnet.co.uk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Adeodato Simo (paigad) <email
+>asp16@alu.ua.es</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Alexandre Oliveira (parandused, veaparandused) <email
+>aleprj@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andreas Mair (MySql toetus) <email
+>am_ml@linogate.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andrew de Quincey (Postgresql toetus) <email
+>adq_dvb@lidskialf.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Christie Harris (roKymoter) <email
+>dangle.baby@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Leinir Turthra Jensen (esimese korra nõustaja) <email
+>admin@removeleinir.dk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Meltzer (roKymoter) <email
+>hydrogen@notyetimplemented.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Enrico Ros (analüsaatorid, openGL kuningas) <email
+>eros.kde@email.it</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Florian 'da-flow' Egerer (Amaroki ikoon 'Blue Wolf) <email
+>flo_for_never@gmx.at</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Gérard Dürrmeyer (ikoonid ja pildivärk) <email
+>gerard@randomtree.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Greg Meyer (imetletav abi meie 1.2-eelse vigadelaviini juures) <email
+>greg@gkmweb.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Harald Sitter (roKymoter, tõlked, veaparandused, ekraanipildid) <email
+>harald.sitter@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Ian Monroe (paigad, Ruby skripti mall (eean) ) <email
+>ian@monroe.nu</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jarkko Lehti (testija) <email
+>grue@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jocke Andersson (roKymoter) <email
+>ajocke@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenneth Wesley Wimer II (ikoonid) <email
+>kwwii@bootsplash.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenny Lemieux (Amaroki veebimeister) <email
+>swaft@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Melchior Franz (uus FFT rutiin, veaparandused) <email
+>mfranz@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Michael Pyne (K3B ekspordi kood) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Nenad Grujicic (1.1 käivitusekraan) <email
+>mchitman@neobee.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Olivier Bédard (veebilehekülje hoidja) <email
+>paleo@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Reigo Reinmets (Wikipedia toetus, paigad) <email
+>xatax@hot.ee</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Roland Gigler (MAS mootor) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sami Nieminen (Audioscrobbleri toetus) <email
+>sami.nieminen@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Scott Wheeler (TagLib) <email
+>wheeler@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Bogner (väga palju igasugu asju) <email
+>bochi@online.ms</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Siegel (paigad, veaparandused) <email
+>kde@sdas.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sven Krohlas (roKymoter) <email
+>sven@asbest-online.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Whitehawk Stormchaser (testija, parandused) <email
+>zerokode@gmx.net</email
+></para>
+</listitem>
+
+</itemizedlist>
+
+<para
+>Dokumentatsiooni autoriõigus 2005: Mike Diehl <email
+>madpenguin8@yahoo.com</email
+></para>
+&underFDL; &underGPL; </chapter>
+
+&amarok-req;
+
+<appendix id="installation">
+<title
+>Paigaldamine</title>
+
+<sect1 id="getting-kapp">
+<title
+>&amarok;i hankimine</title>
+
+<para
+>&amarok;i saab alla tõmmata <ulink url="http://amarok.kde.org"
+>&amarok;i koduleheküljelt</ulink
+></para>
+
+
+<para
+>Uusima arendusversiooni leiab &kde; SVN-ist moodulist /trunk/extragear/multimedia/amarok/.</para>
+
+<sect2>
+<title
+>&amarok;i kompileerimine</title>
+
+<para
+>Amaroki kompileerimiseks ja paigaldamiseks oma süsteemi anna Amaroki lähteteksti baaskataloogis järgmised käsud:</para>
+
+<para
+><command
+>./configure --prefix=`kde-config --prefix`</command
+> <command
+>make</command
+> <command
+>su -c "make install"</command
+> </para>
+
+<note
+><para
+>Konfiguratsioonivõti --enable-final ei ole enam toetatud.</para
+></note>
+
+<para
+>Et &amarok; kasutab <keycap
+>autoconf</keycap
+>'i ja <keycap
+>automake</keycap
+>'i, ei tohiks kompileerimisel probleeme tekkida. Kui neid siiski esineb, anna sellest teada &kde; meililistides</para>
+
+</sect2>
+
+<sect2>
+<title
+>Konfiguratsioonivõtmed</title>
+
+<para
+>&amarok; sarnaneb ülejäänud rakendustele selle poolest, et ka tema võib kasutada kompileerimise ajal konfiguratsioonivõtmeid (või ka mitte kasutada). Toome siin ära võtmed, mida saab kasutada.</para>
+
+<note
+><para
+>Mõned kompileerimisel kasutatavad võtmed nõuavad spetsiaalseid sõltuvusi. Täpsemalt räägib neist <link linkend="requirements"
+>nõuete osa</link
+>.</para
+></note>
+
+<informaltable>
+<tgroup cols="3">
+<thead>
+
+<row>
+<entry
+>Võti</entry>
+<entry
+>Vaikimisi</entry>
+<entry
+>Kirjeldus</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--enable-debug=</entry>
+<entry
+>no</entry>
+<entry
+>Silumissümbolite lubamine. Valikud on <quote
+>yes</quote
+>, <quote
+>no</quote
+> ja <quote
+>full</quote
+>. Kasuta võtit <quote
+>full</quote
+>, kui soovid kaasa aidata &amarok;i arendamisele.</entry>
+</row>
+
+<row>
+<entry
+>--enable-mysql</entry>
+<entry
+>Disabled</entry>
+<entry
+>MySQL andmebaasi toe lubamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--disable-amazon</entry>
+<entry
+>Enabled</entry>
+<entry
+>Amazoni kaanepiltide tõmbamise toe keelamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--without-arts</entry>
+<entry
+>With</entry>
+<entry
+>aRtsi toe keelamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--without-gstreamer</entry>
+<entry
+>With</entry>
+<entry
+>GStreameri toe keelamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--with-helix</entry>
+<entry
+>With</entry>
+<entry
+>Helixi toe lubamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--without-xine</entry>
+<entry
+>With</entry>
+<entry
+>xine toe keelamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--with-nmm</entry>
+<entry
+>Without</entry>
+<entry
+>NMM toe lubamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--with-mas</entry>
+<entry
+>Without</entry>
+<entry
+>MAS toe lubamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--without-opengl</entry>
+<entry
+>With</entry>
+<entry
+>OpenGL (analüsaatorite) toe keelamine &amarok;is</entry>
+</row>
+
+<row>
+<entry
+>--without-included-sqlite</entry>
+<entry
+>With</entry>
+<entry
+>Ei kasutata kaasatud sqlite'i allikaid (nõuab sqlite'i paigaldamist)</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+
+</book>

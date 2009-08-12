@@ -1,0 +1,22 @@
+01_libtool_update.diff
+02_admin_cleanup.diff
+03_am_maintainer_mode.patch -p0
+04_disable_no_undefined.patch -p0
+05_gmo_files_at_build_time.patch -p0
+06_disable-final.diff -p0
+10_queuemedia.patch -p0
+11_bug403340_cancel_rename_when_deleting_items.diff -p0
+12_devicemanager_dcopcall_no_timeout.diff
+13_lastfm_crash_434835.diff
+14_ruby_libs_not_scripts.diff
+15_temptables_more_indices.diff
+97_automake_cleanup.diff
+kubuntu_01_kdepot.diff -p1
+kubuntu_04_install_mp3.diff -p1
+kubuntu_07_gnome_multimedia_keys.diff -p1
+kubuntu_08_luks_device_detection.diff
+kubuntu_09_add_lastfm_recommended_radio.diff
+kubuntu_10_audio_mimetypes.diff
+kubuntu_11_fix_libmtp-0.3.0-API.diff
+bb_01_wikipedia_fixes.diff
+bb_02_amarok_compatibility.diff

@@ -1,0 +1,148 @@
+<chapter id="quick-start">
+<title
+>Snabbstartshandledning till &amarok;</title>
+
+<para
+>Det ska vara enkelt att lyssna på musik. För att hjälpa till med det tillhandahåller vi en startguide som visas första gången &amarok; körs. För de som vill uppdatera sin samling senare, eller inte använda guiden, finns den här snabbstartshandledningen. Den hjälper dig att få igång &amarok; på några minuter.</para>
+
+
+<sect1 id="collection-building">
+<title
+>Bygga en samling</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av samlingsbläddraren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Att bygga din samling är ett väsentligt steg för att använda alla funktioner i &amarok;. Klicka på knappen <guibutton
+>Anpassa kataloger</guibutton
+> i verktygsraden för samlingsbläddraren. Därefter väljer du vilka kataloger du vill ska finnas i din samling från dialogrutan <guilabel
+>Anpassa samling</guilabel
+>. Här har du också alternativen <guilabel
+>Sök rekursivt i kataloger</guilabel
+>, <guilabel
+>Bevaka katalog efter ändringar</guilabel
+> och <guilabel
+>Importera spellistor</guilabel
+> som finns i samlingskatalogerna. Efter att ha valt dina kataloger, och kryssat i alla relevanta kryssrutor, klicka på knappen <guibutton
+>Ok</guibutton
+>. Efter den ursprungliga avsökningen har samlingen byggts, och du kan gå vidare till att skapa en spellista.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title
+>Skapa en spellista</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistan</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Att skapa en spellista är så enkelt som att dra objekt från samlingsbläddrarens trädvy till spellistan. För att göra det enklare att leta efter objekt, tillhandahålls en textruta för att filtrera samlingen. Börja bara skriva i textrutan, så ändras trädvyn för att bara visa relevanta resultat. När du är nöjd med din spellista kan du spara den genom att klicka på alternativet <guibutton
+>Spara spellista som</guibutton
+> som finns i spellistans meny.</para>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistebläddraren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Om du har dina egna spellistor, kan du lägga till dem i spellistebläddraren genom att klicka på knappen <guibutton
+>Lägg till</guibutton
+> och välja alternativet <guibutton
+>Spellista...</guibutton
+> i verktygsraden. Om dina samlingskataloger innehåller spellistan, och du valde att importera spellistor i samlingsinställningen, finns dina spellistor redan i trädvyn. Att högerklicka på en spellista i trädvyn ger dig flera alternativ för hur spellistan ska laddas.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title
+>Lyssna på strömmar</title>
+
+<para
+>Radioströmmar i &amarok; spelas upp genom att lägga till dem från spellistebläddraren. &amarok; levereras med ett urval av strömmar för att avnjutas av lyssnare, Häftiga strömmar. Att dubbelklicka på eller dra en post laddar den i spellistan, och när den väl är där kan den spelas upp. För att lägga till egna strömmar i spellistebläddraren, klicka på knappen <guibutton
+>Lägg till</guibutton
+> i verktygsraden och välj <guibutton
+>Radioströmmar...</guibutton
+> bland kombinationsrutans alternativ. Efter att ha lagt till en egen ström kan den också spelas efter den har laddats i spellistan.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title
+>Spela en ljud-cd</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistans menyrad</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>För att spela en ljud-cd, väj <menuchoice
+><guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Spela ljud-cd</guimenuitem
+></menuchoice
+> i spellistans menyrad. Filbläddraren öppnas och visar flera kataloger och även cd-spåren listade med WAV-format. Dra WAV-filerna till spellistan och klicka på knappen <guibutton
+>Spela</guibutton
+>.</para>
+
+<note
+><para
+>Funktionen för att spela ljud-cd använder protokollet audiocd:/ och fungerar inte tillsammans med alla tillgängliga gränssnitt.</para
+></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title
+>Bränna en ljud-cd</title>
+
+<para
+>Att bränna en ljud-cd i &amarok; är enkelt, tack vara integreringen med <ulink url="http://www.k3b.org"
+>K3B</ulink
+>. För att bränna ett album, öppna först samlingsbläddraren. Högerklicka därefter på albumet du vill bränna, genom att expandera en artists post i trädet. En meny visas. Klicka på <guilabel
+>Bränn den här skivan</guilabel
+>, så öppnas en dialogruta som frågar dig efter läget för bränning. Klicka på knappen <guibutton
+>Ljudläge</guibutton
+> i dialogrutan, så öppnas K3B klart att bränna albumet.</para>
+
+<note
+><para
+>Funktionen för att bränna är också tillgänglig i spellistan. Högerklicka helt enkelt på ett objekt i spellistan och använd menyn <guilabel
+>Bränn</guilabel
+> för flera alternativ av cd-bränning.</para
+></note>
+
+</sect1>
+
+
+</chapter>

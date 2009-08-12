@@ -1,0 +1,12 @@
+diff -Nur -x '*.orig' -x '*~' amarok-1.4.8/amarok/src/amarok.desktop amarok-1.4.8.new/amarok/src/amarok.desktop
+--- amarok-1.4.8/amarok/src/amarok.desktop	2008-04-03 00:50:58.509525000 +0200
++++ amarok-1.4.8.new/amarok/src/amarok.desktop	2008-04-03 00:51:56.857526386 +0200
+@@ -104,7 +104,7 @@
+ Icon=amarok
+ X-KDE-Protocols=http
+ #don't add inode/directory to mimetypes it leads to misbehavior
+-MimeType=audio/aac;audio/mp4;audio/mpeg;audio/mpegurl;audio/vnd.rn-realaudio;audio/vorbis;audio/x-flac;audio/x-mp3;audio/x-mpegurl;audio/x-ms-wma;audio/x-musepack;audio/x-oggflac;audio/x-pn-realaudio;audio/x-scpls;audio/x-speex;audio/x-vorbis;audio/x-wav;video/x-ms-asf;
++MimeType=audio/aac;audio/mp4;audio/mpeg;audio/mpegurl;audio/vnd.rn-realaudio;audio/vorbis;audio/x-flac;audio/x-mp3;audio/x-mpegurl;audio/x-ms-wma;audio/x-musepack;audio/x-oggflac;audio/x-pn-realaudio;audio/x-scpls;audio/x-speex;audio/x-vorbis;audio/x-wav;video/x-ms-asf;audio/flac;audio/ogg;
+ DocPath=amarok/index.html
+ Terminal=false
+ Categories=Qt;KDE;AudioVideo;Audio;Player;

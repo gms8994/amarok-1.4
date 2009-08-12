@@ -1,0 +1,651 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY amarok "Amarok">
+ <!ENTITY amarok-quick SYSTEM "quick.docbook">
+ <!ENTITY amarok-config SYSTEM "config.docbook">
+ <!ENTITY amarok-using SYSTEM "using.docbook">
+ <!ENTITY amarok-advanced SYSTEM "advanced.docbook">
+ <!ENTITY amarok-req SYSTEM "requirements.docbook">
+ <!ENTITY amarok-faq SYSTEM "faq.docbook">
+ <!--<!ENTITY amarok-tech SYSTEM "technology.docbook"
+>-->
+ <!ENTITY kappname "&amarok;">
+ <!ENTITY package "extragear">
+ <!ENTITY RMB "right mouse button">
+ <!ENTITY k3b "K3b">
+ <!ENTITY % addindex "IGNORE">
+ <!ENTITY % Danish "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>&amarok;-håndbogen</title>
+
+<authorgroup>
+ <author
+><firstname
+>Mike</firstname
+> <surname
+>Diehl</surname
+> <affiliation
+> <address
+><email
+>madpenguin8@yahoo.com</email
+></address>
+ </affiliation>
+</author>
+
+<othercredit role="developer">
+ <firstname
+>Amarok's udviklingshold</firstname>
+ <contrib
+>Udviklere</contrib>
+</othercredit>
+
+&erik.kjaer.pedersen.role; 
+</authorgroup>
+
+<copyright>
+ <year
+>2005</year>
+ <holder
+>Amarok's udviklingshold</holder>
+</copyright>
+
+<copyright>
+ <year
+>2006</year>
+ <holder
+>Dokumentationsholdet</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2006-02-20</date
+> <!-- CHANGE ME -->
+<releaseinfo
+>2.1</releaseinfo>
+
+<abstract>
+ <para
+>&amarok; er en mediespiller for K-desktopmiljøet.</para>
+</abstract>
+
+<keywordset>
+ <keyword
+>KDE</keyword>
+ <keyword
+>multimedie</keyword>
+ <keyword
+>afspiller</keyword>
+ <keyword
+>lyd</keyword>
+ <keyword
+>ogg</keyword>
+ <keyword
+>MP3</keyword>
+ <keyword
+>wav</keyword>
+ <keyword
+>musik</keyword>
+ <keyword
+>lyd</keyword>
+ <keyword
+>script</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> <!--Merge with technology.docbook-->
+<title
+>Indledning</title>
+
+<screenshot>
+ <screeninfo
+>Logo</screeninfo>
+ <mediaobject>
+ <imageobject
+><imagedata fileref="logo.png" format="PNG"/></imageobject>
+ </mediaobject>
+</screenshot>
+
+<para
+>&amarok; er en lydafspiller for &kde; som er yderst kraftfuld, men alligevel forbavsende let at bruge. </para>
+
+<para
+>Med &amarok; kan du helt enkelt trække og slippe musik i spillelisten i stedet for at gennemsøge endeløse menuer. Måske leder du efter netop en bestemt sang blandt tusindevis i din samling? &amarok;s samlingsbrowser med sin søgelinje hjælper dig med at finde sangen efter kun nogle få sekunder.</para>
+
+<para
+>Det kan virke som om &amarok; har de samme gamle funktioner som findes i de sædvanlige lydafspillere, men vi sluttede ikke med det. Tag et kig på sammenhængsbrowseren så ser du hvorfor &amarok; er et skridt forud for mængden. Sammenhængsbrowseren viser al mulig information som hører sammen med sporet som du for øjeblikket spiller, fra albumomslaget til anden musik af samme artist, samt lignende artister: en informativ og morsom måde at lære dig mere om din samling.</para>
+
+<para
+>Har du allerede mange forskellige spillelister men kan aldrig bestemme dig for hvilken du vil bruge? Da er spillelistebrowseren noget for dig. Ved du aldrig hvad du vil lytte til. Den dynamiske tilstand i Amarok vælger musik for dig, og smarte spillelister lader dig hoppe direkte til specielle dele af din samling.</para>
+
+<para
+>Der er enestående understøttelse for Apples iPod, iRivers IFP og en mængde generelle USB-enheder i Amarok. Der er også flere forskellige lydgrænseflader som lader dig vælge hvordan du lytter til din musik. Disse og andre funktioner gør den til den mest avancerede lydafspiller som er tilgængelig. &amarok; er smart, sexet og klog. Vi håber at dens brug virkelig får dig til at "genopdage din musik" ved at bruge den!</para>
+
+</chapter>
+
+<!--&amarok-tech;-->
+
+&amarok-quick;
+
+&amarok-config;
+
+&amarok-using;
+
+&amarok-advanced;
+
+&amarok-faq;
+
+<chapter id="credits">
+<title
+>Medvirkende og licens</title>
+
+<para
+>Program ophavsret 2003-2005 Mark Kretschmann <email
+>markey@web.de</email
+> og AmaroK-holdet</para>
+
+<itemizedlist>
+<title
+>AmaroK-holdet</title>
+<listitem
+><para
+>Christian <quote
+>babe-magnet</quote
+> Muehlhaeuser <email
+>chris@chris.de</email
+></para
+></listitem>
+<listitem
+><para
+>Frederik <quote
+>jeg er ikke tysk.</quote
+> Holljen <email
+>fh@ez.no</email
+></para
+></listitem>
+<listitem
+><para
+>Mark <quote
+>det er godt, men det er ikke irssi</quote
+> Kretschmann <email
+>markey@web.de</email
+></para
+></listitem>
+<listitem
+><para
+>Max <quote
+>Turtle-Power</quote
+> Howell <email
+>max.howell@methylblue.com</email
+></para
+></listitem>
+<listitem
+><para
+>Mike <quote
+>lille er ikke tøset!</quote
+> Diehl <email
+>madpenguin8@yahoo.com</email
+></para
+></listitem>
+<listitem
+><para
+>Pierpaolo <quote
+>Spaghetti Coder</quote
+> Di Panfilo<email
+>pippo_dp@libero.it</email
+></para>
+</listitem>
+<listitem
+><para
+>Roman <quote
+>og gud sagde, lad der være Mac</quote
+> Becker <email
+>roman@formmorf.de</email
+></para
+></listitem>
+<listitem
+><para
+>Seb <quote
+>Surfer nedenunder</quote
+> Ruiz <email
+>me@sebruiz.net</email
+></para
+></listitem>
+<listitem
+><para
+>Stanislav <quote
+>var der nogen der sagde DCOP?</quote
+> Karchebny <email
+>Stanislav.Karchebny@kdemail.net</email
+></para
+></listitem>
+</itemizedlist>
+
+<itemizedlist>
+<title
+>Bidragydere:</title>
+
+<listitem>
+<para
+>Adam Pigg (analysatorer, rettelser) <email
+>adam@piggz.fsnet.co.uk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Adeodato Simo (fejlrettelser) <email
+>asp16@alu.ua.es</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Alexandre Oliveira (forbedringer, fejlrettelser) <email
+>aleprj@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andreas Mair (støtte for MySql) <email
+>am_ml@linogate.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andrew de Quincey (støtte for Postgresql) <email
+>adq_dvb@lidskialf.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Christie Harris (roKymoter) <email
+>dangle.baby@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Leinir Turthra Jensen (førstekørselsguide) <email
+>admin@removeleinir.dk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Meltzer (roKymoter) <email
+>hydrogen@notyetimplemented.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Enrico Ros (analysatorer, konge af openGL) <email
+>eros.kde@email.it</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Florian 'da-flow' Egerer (Amarok programikon 'Blå ulv') <email
+>flo_for_never@gmx.at</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Gérard Dürrmeyer (ikoner og billedarbejde) <email
+>gerard@randomtree.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Greg Meyer (vidunderlig hjælp med vort jordskred af fejl inden 1.2) <email
+>greg@gkmweb.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Harald Sitter (roKymoter, oversættelser, fejlrettelser, skærmaftryk) <email
+>harald.sitter@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Ian Monroe (programrettelser, Ruby-scriptskabelon (eean) ) <email
+>ian@monroe.nu</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jarkko Lehti (test) <email
+>grue@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jocke Andersson (roKymoter) <email
+>ajocke@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenneth Wesley Wimer II (ikoner) <email
+>kwwii@bootsplash.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenny Lemieux (Amarok webmaster) <email
+>swaft@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Melchior Franz (ny FFT-rutine, fejlrettelser) <email
+>mfranz@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Michael Pyne (K3B eksportkode) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Nenad Grujicic (opstartskærm for 1.1) <email
+>mchitman@neobee.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Olivier Bédard (netstedsvært) <email
+>paleo@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Reigo Reinmets (understøttelse for Wikipedia, programrettelser) <email
+>xatax@hot.ee</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Roland Gigler (MAS-motor) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sami Nieminen (støtte for Audioscrobbler) <email
+>sami.nieminen@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Scott Wheeler (TagLib) <email
+>wheeler@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Bogner (Masser af ting) <email
+>bochi@online.ms</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Siegel (fejlrettelser) <email
+>kde@sdas.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sven Krohlas (roKymoter) <email
+>sven@asbest-online.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Whitehawk Stormchaser (test, programrettelser) <email
+>zerokode@gmx.net</email
+></para>
+</listitem>
+
+</itemizedlist>
+
+<para
+>Documentation ophavsret 2005 Mike Diehl <email
+>madpenguin8@yahoo.com</email
+></para>
+&underFDL; &underGPL; </chapter>
+
+&amarok-req;
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-kapp">
+<title
+>Hvordan får man fat i &amarok;</title>
+
+<para
+>&amarok; kan hentes fra <ulink url="http://amarok.kde.org"
+>&amarok;s hjemmeside</ulink
+></para>
+
+
+<para
+>Den seneste udviklingsversion kan skaffes fra &kde; SVN-modulet /trunk/extragear/multimedia/amarok/.</para>
+
+<sect2>
+<title
+>Hvordan kompileres &amarok;</title>
+
+<para
+>For at kompilere og installere Amarok på dit system, skrives følgende i basismappen for din Amarok-distribution:</para>
+
+<para
+><command
+>./configure --prefix=`kde-config --prefix`</command
+> <command
+>make</command
+> <command
+>su -c "make install"</command
+> </para>
+
+<note
+><para
+>Flaget --enable-final for configure er ikke længere understøttet.</para
+></note>
+
+<para
+>Idet &amarok; bruger <keycap
+>autoconf</keycap
+> og <keycap
+>automake</keycap
+> skulle du ikke have porblemer med at kompilere den. Skulledu løbe ind i problemer så rapportér dem venligst til &kde;'s e-mail-lister.</para>
+
+</sect2>
+
+<sect2>
+<title
+>Indstillingstilvalg</title>
+
+<para
+>&amarok; ligner mange andre programmer i den henseende at det har flere valgfrie funktioner ved kompilering som kan aktiveres eller deaktiveres under konfigureringen. Dette er en liste over funktionerne som kan konfigureres.</para>
+
+<note
+><para
+>Visse kompileringsfunktioner kræver at særlige afhængigheder er opfyldte. Se <link linkend="requirements"
+>afsnittet om krav</link
+> for mere detaljeret information.</para
+></note>
+
+<informaltable>
+<tgroup cols="3">
+<thead>
+
+<row>
+<entry
+>Tilvalg</entry>
+<entry
+>Standard</entry>
+<entry
+>Beskrivelse</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--enable-debug=</entry>
+<entry
+>no</entry>
+<entry
+>Aktiverer fejlsøgningssymboler. Vælg enten <quote
+>yes</quote
+> (ja), <quote
+>no</quote
+> (nej) eller <quote
+>full</quote
+> (fuldstændig). Brug flaget <quote
+>full</quote
+> hvis du har til hensigt at hjælpe til med udvikling af &amarok;.</entry>
+</row>
+
+<row>
+<entry
+>--enable-mysql</entry>
+<entry
+>Deaktiveret</entry>
+<entry
+>Aktiverer understøttelse for MySql database i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--disable-amazon</entry>
+<entry
+>Aktiveret</entry>
+<entry
+>Deaktiverer støtte for at hente omslagsbilleder fra Amazon i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-arts</entry>
+<entry
+>Med</entry>
+<entry
+>Deaktiverer støtte for aRts i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-gstreamer</entry>
+<entry
+>Med</entry>
+<entry
+>Deaktiverer støtte for Gstreamer i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--with-helix</entry>
+<entry
+>Med</entry>
+<entry
+>Aktiverer understøttelse for Helix-grænsefladen i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-xine</entry>
+<entry
+>Med</entry>
+<entry
+>Deaktiverer støtte for Xine i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--with-nmm</entry>
+<entry
+>Uden</entry>
+<entry
+>Aktiverer støtte for NMM i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--with-mas</entry>
+<entry
+>Uden</entry>
+<entry
+>Aktiverer støtte for MAS i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-opengl</entry>
+<entry
+>Med</entry>
+<entry
+>Deaktiverer støtte for OpenGL (analysatorer) i &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-included-sqlite</entry>
+<entry
+>Med</entry>
+<entry
+>Brug ikke den inkluderede kildekode for sqlite (kræver at sqlite er installeret)</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+
+</book>

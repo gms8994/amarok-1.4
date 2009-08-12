@@ -1,0 +1,2302 @@
+<chapter id="using-kapp">
+<title
+>Verwenden von &amarok;</title>
+
+<para
+>&amarok; ist ein vielseitiger Multimedia-Player. Er bietet viele verschiedene Wege, Ihre Musik-Sammlung unter Kontrolle zu behalten. Wie jeder normale Multimedia-Player hat auch &amarok; ein Player-Fenster mit den wichtigsten Funktionen. Zusätzlich hat &amarok; allerdings eine Wiedergabeliste, die allen anderen überlegen ist. Das Wiedergabelisten-Fenster enthält mehrere Browser, mit denen Sie Ihre gesamte Musik-Sammlung erfassen und durchsuchen können.</para>
+
+<para
+>In diesem Kapitel wird erklärt, wie all die Funktionen von &amarok; benutzt werden, inklusive dem Erstellen einer Sammlung und einer Wiedergabeliste.</para>
+
+<sect1 id="player-window">
+<title
+>Das Player-Fenster</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Player-Fenster</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Das Player-Fenster ist Ihr "Ein-Klick &amarok; Kontrollzentrum". Am oberen Rand des Fenster befindet sich eine Lauftextanzeige, die das aktuell laufende Stück oder den aktuell laufenden Stream anzeigt. Direkt darunter ist der Bereich, der Spielzeit, Bitrate und Samplerate des aktuellen Stücks wiedergibt. Ein Klick auf diesen Bereich ändert die Anzeige der bereits abgelaufenen Spielzeit zur noch verbleibenden Spielzeit des Stücks.</para>
+
+<para
+>Außerdem enthält das Player-Fenster eine Auswahl von Audio-Analyzern, auch unter der Lauftextanzeige. Sie können durch die verfügbaren Analyzer wechseln, indem Sie mit der linken Maustaste auf den Bereich klicken.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Analyzer-Tipp</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Die &amarok;-Analyzer können vom Player-Fenster abgetrennt werden. Drücken Sie <keycap
+>d</keycap
+> auf Ihrer Tastatur und der aktuelle Analyzer wird in einem unabhängigen, vergrößerbaren Fenster angezeigt.</para>
+</tip>
+
+<para
+>Unter der Lauftextanzeige befinden sich auch die Knöpfe <guimenuitem
+>PL</guimenuitem
+> und <guimenuitem
+>EQ</guimenuitem
+>. Der Knopf <guimenuitem
+>PL</guimenuitem
+> aktiviert oder deaktiviert das Wiedergabelisten-Fenster, während der Knopf <guimenuitem
+>EQ</guimenuitem
+> zum Einrichten Equalizers genutzt wird.</para>
+
+<para
+>Der Rest des Player-Fensters besteht aus den Wiedergabe-Knöpfen, der Lautstärke-Regelung und dem Stück-Positions-Schieberegler. Benutzen Sie die Schieberegler, um die Stück-Position oder die Lautstärke einzustellen. Mit den Wiedergabe-Knöpfen können Sie die Wiedergabe starten/stoppen und zum nächsten oder vorigen Stück wechseln.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>Das Equalizer-Fenster</title>
+
+<para
+>Die Verwendung des eingebauten Equalizers ist einfach und funktioniert mit allen Audiotreibern. Es gibt 17 Voreinstellungen, von Klassik bis Techno, und Sie können ganz einfach eigene Voreinstellungen erstellen. </para>
+
+<para
+>Um den Equalizer anzuzeigen verwenden Sie <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+>Equalizer</guimenuitem
+></menuchoice
+> aus dem Hauptmenü oder Klicken Sie auf den Knopf <guibutton
+>EQ</guibutton
+> im Player-Fenster. Sobald Sie das Ankreuzfeld <guibutton
+>Equalizer aktivieren</guibutton
+> markieren, ist der Equalizer in Betrieb.</para>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Equalizers</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Verwenden Sie das Auswahlfeld "Voreinstellungen", um eine der Voreinstellungen auszuwählen. Selbstverständlich können Sie dennoch die einzelnen Regler nach Belieben verschieben. Dadurch wird die aktive Voreinstellung automatisch auf "Manuell" umgeschaltet und Sie können nach eigenem Gutdünken experimentieren, bis Sie eine gute Einstellung gefunden haben. Wenn Sie mit dem Ergebnis zufrieden Sind, klicken Sie auf den Knopf <guiicon
+>Neue Voreinstellung hinzufügen</guiicon
+> rechts neben der Liste der Voreinstellungen. Wenn Sie eine andere Voreinstellung auswählen, ohne Ihre Änderungen zu speichern, so gehen sie verloren. Desweiteren können Sie auch auf den Knopf <guiicon
+>Voreinstellungen verwalten</guiicon
+> klicken und in dem Dialog Voreinstellungen umbenennen oder löschen.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>Das Wiedergabelisten-Fenster</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Wiedergabelisten-Fensters</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Die Wiedergabeliste von &amarok; ist die am weitesten entwickelte Wiedergabeliste aller für &kde; verfügbaren Multimedia-Player. Sie hat viele Funktionen, die es in keinem anderen Player gibt. Aber lassen Sie sich von der Fülle an Funktionen nicht abschrecken, sie sind alle leicht zu benutzen.</para>
+
+<para
+>Das Wiedergabelisten-Fenster kann man in zwei Hauptbereiche einteilen, auf der linken Seite ist der Navigationsbereich. Im Navigationsbereich finden Sie einige der exzellenten Funktionen der Wiedergabeliste, wie z. B. den <link linkend="context-browser"
+>Kontext-Browser</link
+>. Auf der rechten Seite befindet sich die Wiedergabeliste selbst. Die Wiedergabeliste ist einfach zu benutzen und dennoch selbst für fortgeschrittene Benutzer Leistungsstark genug.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Die Browser im Navigationsbereich</title>
+
+<para
+>Mit Hilfe der Browser in &amarok; können Sie auf unterschiedlichste Weise auf Ihre Musik zugreifen. Sie befinden sich auf der linken Seite des Fensters. Jedes Browser-Fenster wird dargestellt durch einen Karteireiter mit dem Browser-Namen als Beschriftung. Ein Klick auf den Karteireiter bringt den Browser in den sichtbaren Vordergrund. Ein weiterer Klick auf den Karteireiter eines bereits sichtbaren Browsers klappt den Browser vollständig ein. Es kann jeweils nur ein Browser zur gleichen Zeit sichtbar sein. Dennoch können Sie Stücke von einem Browser in den anderen ziehen. Ziehen Sie ein Stück mit der Maus über den Karteireiter eines anderen Browsers und verweilen Sie dort eine Sekunde, sodass der Browser sichtbar wird. Sie können einzelne Browser auch ganz abschalten, indem Sie mit der rechten Maustaste auf einen Karteireiter klicken und im Kontextmenü Ihre Auswahl treffen.</para>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Browser-Auswahl</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>Kontext-Browser</title>
+
+<para
+>Der Kontext-Browser zeigt verschiedene Informationen bezüglich des jeweils laufenden Stücks an. Sein Aussehen kann mit Hilfe von <link linkend="configure-appearance"
+>Kontext-Browser-Designs</link
+> angepasst werden. Der Kontext-Browser enthält drei Unterfenster: <quote
+>Musik</quote
+>, <quote
+>Text</quote
+> und <quote
+>Interpret</quote
+>. Diese drei Unterfenster werden später noch ins Detail erläuter. Sie stellen Informationen zum laufenden Stück zu jeweils unterschiedlichen Aspekten dar.</para>
+
+<note
+><para
+>Wenn Sie bereits frühere Versionen von &amarok; benutzt haben, fällt Ihnen vielleicht auf, dass das Unterfenster <quote
+>Start</quote
+> weggefallen ist. Die dort dargestellten Informationen sind nun in andere Teile von &amarok; verteilt worden. Außerdem können die Informationen im Statistikfenster gesammelt betrachtet werden (<menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+>Statistiken</guimenuitem
+></menuchoice
+>).</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Kontext-Browser</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>Das Unterfenster "Musik"</title>
+
+<para
+>Das Unterfenster <guilabel
+>Musik</guilabel
+> zeigt Informationen über das gerade laufende Stück, sowie den Interpreten und das Album an.</para>
+
+<para
+>Der erste Bereich in diesem Unterfenster zeigt Informationen zum Stück an. Im Titel befindet sich der Name des Stücks, Interpret und das Album. Darunter sehen Sie das Cover-Bild des Albums und daneben ein <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+>-Symbol. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Klicken Sie auf dieses Symbol um das Stück in der MusicBrainz-Datenbank nachzuschlagen.</para>
+
+<para
+>Unter dem MusicBrainz-Symbol finden Sie weitere Informationen zum aktuellen Stück. Sie sehen hier, wie oft und wann das Stück zum ersten und letzten Mal abgespielt wurde sowie dessen Bewertung.</para>
+
+<tip
+><para
+>Um Cover-Bilder im Kontext-Browser anzuzeigen, müssen die Cover-Bilder im gleichen Ordner wie das aktuelle Stück liegen. Die Dateiformate .jpg, .jpeg, .gif und .png werden unterstützt. Die Bilder können beliebige Namen haben, aber Bilder mit dem Wort <quote
+>front</quote
+> im Namen werden bevorzugt behandelt. Der Kontext-Browser wird auch Cover-Bilder anzeigen, die entweder mit der Cover-Verwaltung heruntergeladen wurden oder in ID3v2-Tags eingebettet sind.</para
+></tip>
+
+<para
+>Der nächste Bereich, <guilabel
+>Empfohlene Stücke</guilabel
+>, listet mehrere empfohlene Stücke auf. Wenn Sie auf eines dieser Stücke klicken, wird es sofort abgespielt.</para>
+
+<para
+>Unter den <guilabel
+>Empfohlenen Stücken</guilabel
+> befinden sich die <guilabel
+>Lieblingsstücke von diesem Interpreten</guilabel
+>. Dieser Bereich zeigt die fünf höchstbewerteten Stücke des aktuellen Interpreten an.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Sie können einstellen, welche Informationen im <guilabel
+>Musik</guilabel
+>-Unterfenster angezeigt werden sollen. Klicken Sie dazu mit der rechten Maustaste irgendwo in das Unterfenster und wählen Sie aus dem Kontextmenü.</para
+></tip>
+
+<para
+>Der letzte Bereich, <guilabel
+>Alben des Interpreten</guilabel
+>, listet alle Alben des aktuellen Interpreten auf, die Sie in Ihrer Sammlung haben. Wenn Sie auf ein Album klicken, wird es aufgeklappt und Sie sehen den Inhalt des Albums.</para>
+
+<tip
+><para
+>Sie können auf alle Stücke in den einzelnen Bereichen klicken um sofort mit der Wiedergabe zu beginnen. Sie können auch mit der rechten Maustaste darauf klicken und dann aus dem Kontextmenü eine der Möglichkeiten zum Hinzufügen des Stücks oder Albums zur Wiedergabeliste wählen.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>Das Unterfenster "Text"</title>
+
+<para
+>Im Unterfenster <guilabel
+>Text</guilabel
+> wird der heruntergeladene Liedtext für das laufende Stück angezeigt. Diese Funktion ist sehr flexibel und es ist möglich, mit Hilfe von selbst geschriebenen Skripten Texte von anderen Webseiten herunterzuladen. Beachten Sie dazu auch das Kapitel zum Schreiben von Skripten. Sobald Sie auf das Text-Unterfenster klicken, versucht &amarok;, den Text für das Stück aus dem Internet herunterzuladen. Wenn noch kein Text-Skript läuft, können Sie wählen, welches gestartet werden soll.</para>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Liedtexte</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>mit Hilfe der Knöpfe in der Werkzeugleiste können Sie im Text-Unterfenster verschiedene Funktionen ausführen.</para>
+
+<para
+><guibutton
+>Hinzufügen</guibutton
+> öffnet die <quote
+>Webseite zum Hinzufügen eines Liedtextes</quote
+> in einem externen Browser.</para>
+
+<para
+>Der Knopf <guibutton
+>Bearbeiten</guibutton
+> ermöglicht es Ihnen, den Liedtext zu bearbeiten. Die veränderte Version wird dann in &amarok;s Sammlungsdatenbank gespeichert. Dazu ist kein laufendes Text-Skript nötig.</para>
+
+<para
+>Der Knopf <guibutton
+>Suchen</guibutton
+> öffnet eine Suche auf google.com nach dem Liedtext für das laufende Stück (in einem externen Browserfenster).</para>
+
+<para
+>Der Knopf <guibutton
+>Aktualisieren</guibutton
+> leert den Zwischenspeicher für aktuellen Liedtext und sucht ihn erneut.</para>
+
+<para
+><guibutton
+>In externem Browser öffnen</guibutton
+> zeigt den gefundenen Liedtext in einem externen Browser an.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>Das Unterfenster "Interpret"</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Interpret-Unterfensters</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Das Wikipedia-Unterfenster zeigt den Wikipedia-Artikel zum aktuellen Interpreten an. Die Werkzeugleiste enthält die folgenden Symbole:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Navigationsknöpfe vorwärts und rückwärts</para>
+</listitem>
+<listitem>
+<para
+>Knöpfe zum Wechseln zwischen Wikipedia-Artikeln für Interpret, Album oder den Titel</para>
+</listitem>
+<listitem>
+<para
+>Ein Knopf zum Öffnen der aktuellen Seite in einem externen Browser</para>
+</listitem>
+<listitem>
+<para
+>Ein Einrichtungsknopf zum Einstellen der Wikipedia-Sprache</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Sammlung-Browser</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Sammlung-Browser</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Der Sammlung-Browser ist das Herz von &amarok;. Hier ist die gesamte Musiksammlung sichtbar und nach verschiedenen Kriterien gruppiert. Innerhalb jeder Gruppierung ist alles alphabetisch sortiert (zuerst Symbole und Zahlen, dann Buchstaben). Stücke, für die der Interpret oder das Album unbekannt sind, werden innerhalb jeder Gruppierung zuerst als <quote
+>Unbekannt</quote
+> angezeigt. Auch wenn die Stücknummern nicht sichtbar sind, so werden die Stücke dennoch in der richtigen Album-Reihenfolge angezeigt. Wenn Sie auf den Spaltentitel klicken, wird die Sortierreihenfolge umgedreht. Ein Klick mit der linken Maustaste auf das "+" neben einem Eintrag klappt den entsprechenden Zweig auf.</para>
+
+<para
+>Über den Knopf <quote
+>Gruppierung</quote
+> können Sie die Ansicht Ihrer Sammlung auf verschiedene Weise gruppiert anzeigen lassen:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppierung</guimenu
+><guimenuitem
+>Interpret</guimenuitem
+></menuchoice
+> - Gruppiert nur die oberste Ebene, jedes Stück wird direkt unterhalb des Interpreten angezeigt. Alben oder Genres werden dabei außer Acht gelassen.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppierung</guimenu
+><guimenuitem
+>Interpret / Album</guimenuitem
+></menuchoice
+> - Zuerst werden die Stücke nach Interpret geordnet und darunter wird eine weitere Aufteilung nach dem jeweiligen Album vorgenommen. Wenn Sie Zusammenstellungen oder Soundtrack-Alben sehen möchten, so ist dies die beste Ansicht auf Ihre Sammlung - diese Alben werden am Beginn der Liste unter <quote
+>Verschiedene Interpreten</quote
+> angezeigt.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppierung</guimenu
+><guimenuitem
+>Interpret / Jahr - Album</guimenuitem
+></menuchoice
+> - Sortiert nach Interpret und dann nach dem Jahr des Albums in absteigender Reihenfolge (die neuesten zuerst). Wenn das Jahr für ein Album unbekannt ist, wird der Standard <quote
+>0 - Albumname</quote
+> verwandt.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppierung</guimenu
+><guimenuitem
+>Album</guimenuitem
+></menuchoice
+> - Alle Alben Ihrer Sammlung werden alphabetisch sortiert untereinander angezeigt. Der Interpret wird dabei ignoriert.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppierung</guimenu
+><guimenuitem
+>Genre / Interpret</guimenuitem
+></menuchoice
+> - Ihre Stücke werden zuerst nach Genre und darunter nach Interpret sortiert angezeigt.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppierung</guimenu
+><guimenuitem
+>Genre / Interpret / Album</guimenuitem
+></menuchoice
+> - Diese Einstellung funktioniert genauso wie die obige, jedoch wird zusätzlich noch nach Album unterhalb des Interpreten sortiert.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>Mit Hilfe der verbleibenden Knöpfe können Sie die Gruppierung ganz nach Belieben anpassen und kombinieren.</para>
+
+<para
+>Die nächsten zwei Knöpfe regeln legen die Ansichtsweise für Ihre Sammlung fest. Die erste Ansicht (Baumansicht) ist die Voreinstellung. Diese werden Sie vermutlich die meiste Zeit verwenden. Der zweite Knopf aktiviert die Listenansicht, die grundsätzlich anfangs leer erscheint. Sobald Sie Text in die obige Suchzeile eingeben, wird die Listenansicht mit Inhalten gefüllt. Die Liste kann nach verschiedenen Kriterien sortiert werden. Klicken Sie dazu auf die entsprechenden Spaltenköpfe. Ein Klick mit der rechten Maustaste auf die Spaltenköpfe lässt Sie auswählen, welche Spalten in der Liste angezeigt werden sollen.</para>
+
+<para
+>Mit dem letzten Knopf können Sie die Einstellungen zur Sammlung ändern. Beachten Sie: &amarok; wird Ihre Sammlung automatisch neu erfassen, sobald Sie etwas an den ausgewählten Ordnern ändern. Wenn Sie viele Stücke besitzen, könnte dies eine Weile dauern.</para>
+
+<para
+>Direkt unter der Werkzeugleiste befindet sich ein Suchfilter. Er verhält sich in der Listenansicht sowie in der Baumansicht gleich. Hinweise zur Verwendung dieses Filters finden Sie im Abschnitt zur Wiedergabeliste in diesem Handbuch.</para>
+
+<para
+>Unter dem Suchfilter befindet sich ein Auswahlfeld, mit dessen Hilfe Sie die zuletzt hinzugefügten Stücke zu Ihrer Sammlung herausfiltern können. Ihnen stehen verschiedene Zeitfenster zur Verfügung, angefangen von den letzten 24 Stunden bis zu einem Jahr. Außerdem können Sie natürlich auch Ihre "Gesamte Sammlung" auswählen, wodurch der Filter praktisch abgeschaltet wird.</para>
+
+<sect3 id="collection-rmb">
+<title
+>Das Kontextmenü des Sammlung-Browsers</title>
+<para
+>Durch das Klicken mit der rechten Maustaste auf einen Eintrag im Sammlung-Browser erhalten Sie die folgenden Möglichkeiten.</para>
+
+<para
+><guilabel
+>Laden</guilabel
+> - Dies leert die aktuelle Wiedergabeliste und fügt die ausgewählten Stücke in der derzeit gültigen Reihenfolge in die Wiedergabe ein.</para>
+
+<para
+><guilabel
+>An Wiedergabeliste anhängen</guilabel
+> - Fügt die ausgewählten Stücke der aktuellen Wiedergabeliste an. Durch einen Doppelklick auf einen Eintrag erreichen Sie den gleichen Effekt.</para>
+
+<para
+><guilabel
+>Stücke in Warteschlange einstellen</guilabel
+> - Diese Funktion fügt die ausgewählten Stücke in die Warteschlange ein. Dadurch werden Sie als nächstes gespielt.</para>
+
+<para
+><guilabel
+>Als Wiedergabeliste speichern ...</guilabel
+> - Speichert die ausgewählten Stücke als Wiedergabeliste. Sie werden nach einem Namen gefragt, unter dem die Liste gespeichert werden soll.</para>
+
+<para
+><guilabel
+>Auf Media-Player übertragen</guilabel
+> - Fügt die Stücke in die Warteschlange zur Übertragung auf den Media-Player ein. Weitere Details finden Sie im Abschnitt über den <link linkend="media-device-browser"
+>Media-Player-Browser</link
+>.</para>
+
+<para
+><guilabel
+>Alle Stücke dieses Interpreten brennen / Auf CD brennen</guilabel
+> - Dadurch werden die ausgewählten Stücke an K3b gesendet und entweder als Daten- oder als Audio-CD gebrannt. Falls K3b nicht installiert ist, wird diese Option nicht angezeigt.</para>
+
+<para
+><guilabel
+>Cover-Bild herunterladen</guilabel
+> - Sucht auf amazon.com nach einem Cover-Bild für dieses Album.</para>
+
+<para
+><guilabel
+>Metadaten (für n Stücke) bearbeiten ...</guilabel
+> - Öffnet den Dialog für <guilabel
+>Stück-Informationen</guilabel
+> und lässt Sie die Tags für ein oder mehrere Stücke ändern. </para>
+
+<para
+><guilabel
+>Dateivewaltung</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>(n) Dateien verwalten ...</guilabel
+> - Öffnet den Dialog zur Dateiverwaltung. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>(n) Dateien in den Mülleimer verschieben ...</guilabel
+> - Öffnet einen Bestätigungsdialog. Wenn Sie diesen bestätigen, werden die ausgewählten Dateien von Ihrem Computer gelöscht.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Als Zusammenstellung markieren</guilabel
+> - Markiert das ausgewählte Album als Zusammenstellung, woraufhin es unter <quote
+>Verschiedene Interpreten</quote
+> erscheint.</para>
+
+<para
+><guilabel
+>Zusammenstellung-Markierung aufheben</guilabel
+> - Ändert ein als Zusammenstellung markierte Album zurück in ein normales Album. Das Album wird danach nicht mehr unter <quote
+>Verschiedene Interpreten</quote
+> sondern wieder unter dem zugehörigen Interpreten angezeigt.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Wiedergabelisten-Browser</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Wiedergabelisten-Browser</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Der Wiedergabelisten-Browser gestaltet den Umgang mit vielen Wiedergabelisten ganz einfach. Unter anderem enthält er auch Intelligente Wiedergabelisten.</para>
+
+<para
+>Der Wiedergabelisten-Browser ist in zwei Abschnitte geteilt, Wiedergabelisten und Intelligente Wiedergabelisten. Der Abschnitt Wiedergabelisten enthält Ihre eigenen Wiedergabelisten. Sie können den Inhalt Ihrer Listen ansehen, indem Sie auf das <quote
+>+</quote
+> neben dem Namen klicken. Wenn Sie eine Wiedergabeliste ansehen, können Sie einfach Stücke hinzufügen, indem Sie sie hineinziehen und fallen lassen. Wenn Sie eine Wiedergabeliste laden möchten, klicken Sie einfach doppelt darauf oder drücken Sie die <keycap
+>Leertaste</keycap
+>. Weitere Kurzbefehle für den Wiedergabelisten-Browser finden Sie im Abschnitt <link linkend="keybd-shortcuts"
+>Tastenkürzel</link
+>.</para>
+
+<tip
+><para
+>Wenn Sie im Wiedergabelisten-Fenster eine neue Wiedergabeliste abspeichern, wird sie dem Wiedergabelisten-Bereich automatisch hinzugefügt.</para
+></tip>
+
+<para
+>Der untere Teil des Wiedergabelisten-Browsers enthält die intelligenten Wiedergabelisten. Diese nutzen &amarok;s eingebaute Datenbank, um einige nützliche Wiedergabelisten zur Laufzeit automatisch zu erstellen. Die intelligenten Wiedergabelisten bestehen aus:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Gesamte Sammlung: eine Wiedergabeliste mit allen Stücken in Ihrer Sammlung.</para>
+</listitem>
+
+<listitem>
+<para
+>Lieblingsstücke: enthält mehrere Wiedergabelisten mit den jeweils 15 höchstgewerteten Stücken je Interpret.</para>
+</listitem>
+
+<listitem>
+<para
+>Meistgespielte: enthält mehrere Wiedergabelisten mit den jeweils 15 meistgespielten Stücken je Interpret.</para>
+</listitem>
+
+<listitem>
+<para
+>Neueste Stücke: enthält mehrere Wiedergabelisten mit den jeweils 15 neuesten Stücken je Interpret.</para>
+</listitem>
+
+<listitem>
+<para
+>Zuletzt gespielt: eine Wiedergabeliste mit den 15 zuletzt gespielten Stücken in Ihrer Sammlung.</para>
+</listitem>
+
+<listitem>
+<para
+>Nie gespielt: eine Wiedergabeliste mit den Stücken in Ihrer Sammlung, die noch nie gespielt wurden.</para>
+</listitem>
+
+<listitem>
+<para
+>Genres: enthält mehrere Wiedergabelisten mit allen Stücken jeweils nach Genre sortiert.</para>
+</listitem>
+
+<listitem>
+<para
+>Auch selbst erstellte Intelligente Wiedergabelisten sind möglich. Klicken Sie auf <guibutton
+>Intelligente Wiedergabeliste hinzufügen</guibutton
+>, um den Dialog zum Erstellen einer neuen Intelligenten Wiedergabeliste zu öffnen. Dort können Sie alle nötigen Kriterien für Ihre neue Wiedergabeliste eingeben.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Media-Player-Browser</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Media-Player-Browser</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Das Unterfenster Media-Player wird für die Verbindung von &amarok; mit Ihrem tragbaren Media-Player (z. B. iPod) verwendet. Um beispielsweise Ihren iPod mit &amarok; verwenden zu können, muss er vor dem Start von &amarok; in /mnt/ipod eingebunden sein. Wenn &amarok; gestartet ist, finden Sie die Stücke auf Ihrem iPod nach Interpret sortiert in der oberen Listenansicht des Media-Player-Browsers wieder.</para>
+
+<para
+>Um Stücke auf Ihren iPod zu übertragen, ziehen Sie die gewünschten Titel aus der Wiedergabeliste und lassen Sie sie auf der Liste <quote
+>Interpret</quote
+> fallen. Wenn Sie fertig sind, klicken Sie auf <quote
+>Übertragen</quote
+>. Dadurch werden die Stücke auf Ihren iPod hochgeladen. Wenn die Übertragung abgeschlossen ist, beenden Sie &amarok; und lösen die Laufwerkseinbindung für Ihren iPod.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Datei-Browser</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Datei-Browser</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Der Datei-Browser ist im Grunde ein kleiner, in die Wiedergabeliste eingebetteter Konqueror. Sie können mit dem Datei-Browser Ihr gesamtes Dateisystem durchsuchen und der Wiedergabeliste Audio-Dateien hinzufügen. Am oberen Rand des Datei-Browsers finden Sie einige Knöpfe für hoch, zurück und vorwärts, mit denen Sie durch das Dateisystem navigieren können. In der Werkzeugleiste befinden sich auch die Knöpfe Persönlicher Ordner, Erneut laden, Kurzdarstellung und Detaillierte Ansicht. Außerdem enthält sie einen Knopf, mit dem Sie Lesezeichen in Ihrem Dateisystem erstellen können.</para>
+
+<para
+>Unter der Werkzeugleiste befindet sich ein Suchbereich, mit dem Sie nach einer Datei suchen können. Die Suche ist besonders in Ordnern mit sehr vielen Dateien nützlich, weil in der Dateiliste alle Dateien ausgeblendet werden, die nicht Ihren Suchkriterien entsprechen.</para>
+
+<para
+>Im unteren Teil des Datei-Browsers befindet sich eine Adressleiste, mit der Sie Musik von einer eingegebenen URL holen können. Wenn Sie zum Beispiel <filename class="directory"
+>tar:/home/mike/musik.tar.gz</filename
+> eingeben und <keycap
+>Eingabetaste</keycap
+> drücken, können Sie auf Musik in der Datei musik.tar.gz zugreifen. Nun können Sie die Musik von dort in die Wiedergabeliste ziehen und fallen lassen.</para>
+
+<tip
+><para
+>Wenn die Wiedergabeliste länger wird, als im Fenster Platz ist, kann das Anhängen von Dateien durch einfaches Fallenlassen schwierig werden. In dem Fall kann das Festhalten der <keycap
+>Shift</keycap
+>-Taste hilfreich sein: dadurch werden fallengelassene Dateien automatisch am Ende der Liste eingefügt, und nicht an der Mausposition.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>Die Wiedergabeliste</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Wiedergabeliste</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Die Wiedergabeliste enhält alle von Ihnen zum Abspielen angehängten Stücke. Sie können die Reihenfolge ändern, indem Sie die Einträge einfach mit der Maus an die gewünschte Stelle ziehen und fallen lassen. Über der Wiedergabeliste befindet sich ein Textfeld, in das Sie einen Filter eingeben können. Sobald Sie dort Buchstaben eingeben, werden nur noch die Stücke angezeigt, die die Buchstaben enthalten. Um den Filter zurückzusetzen, drücken Sie so lange die <keycap
+>Rücktaste</keycap
+>, bis das Textfeld wieder leer ist.</para>
+
+<tip
+><para
+>Sie können auch eine erweiterte, Google-artige Syntax verwenden.</para>
+
+<para
+>Wenn Sie durch Leerzeichen getrennte Suchbegriffe eingeben, wird &amarok; nach Einträgen suchen, die alle Suchbegriffe enthalten. Wenn Sie z. B. <quote
+>eins zwei drei</quote
+> eingeben, wird die Suche alle Einträge finden, die eins, zwei und drei enthalten.</para>
+
+<para
+>Wenn Sie zwischen die Suchbegriffe OR eingeben, wird nach Einträgen gesucht, die entweder den einen oder den anderen Suchbegriff enthalten. Beispiel: <quote
+>eins OR zwei OR drei</quote
+>. In diesem Beispiel werden alle Stücke gefunden, die eins oder zwei oder drei enthalten (oder eine Kombination daraus).</para>
+
+<para
+>Wenn Sie nach Einträgen suchen möchten, die Leerzeichen enthalten, dann umschließen Sie den Suchbegriff mit Gänsefüßchen: "Mike Oldfield". Dadurch wird nach Einträgen gesucht, die Mike Oldfield enthalten, nicht aber nach Einträgen wie z. B. Mike J. Oldfield.</para>
+
+<para
+>Standardmäßig wird in allen derzeit sichtbaren Spalten der Wiedergabeliste gesucht. Sie können aber die Schreibweise column:suchbegriff verwenden, um anzugeben, in welcher Spalte der Suchbegriff vorkommen soll: title:amarok (die Spalte muss dafür nicht sichtbar sein). Auf diese Weise wird nur nach Titeln gesucht, die das Wort "amarok" im Titel enthalten, und nicht z. B. im Album.
+
+Beachten Sie: Sie müssen leider den englischen Spaltennamen angeben:
+Dateiname =
+> filename
+Titel =
+> title
+Interpret =
+> artist
+Album =
+> album
+Jahr =
+> year
+Kommentar =
+> comment
+Genre =
+> genre
+Stück =
+> track
+Pfad =
+> directory
+Länge =
+> length
+Bitrate =
+> bitrate
+Bewertung =
+> score
+Typ =
+> type
+Abspielzähler =
+> playcount</para>
+
+<para
+>Wenn Sie eine bestimmte Suchspalte angeben, können Sie auch nach größer oder kleiner suchen. Zum Beispiel: Bewertung:
+>50. Dies sucht nach Stücken, die eine höhere Bewertung als 50 haben.</para>
+
+<para
+>Wenn Sie nach einem Stück suchen möchten, das einen bestimmten Suchbegriff nicht enthält, stellen Sie ein Minus-Zeichen vor den Suchbegriff: -etwas sucht nach Stücken, die "etwas" nicht enthalten.</para>
+
+<para
+>Sie können diese Syntaxvarianten nach Belieben miteinander kombinieren. Beispiel: "Mike Oldfield" OR score:
+>50 -comment:bad. Dies sucht nach allen Stücken, die entweder Mike Oldfield enthalten, oder eine höhere Bewertung als 50 haben und nicht den Kommentar "bad" enthalten.</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Tipp für die Wiedergabeliste</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Sie können die Abspielreihenfolge von Einträge festlegen, indem Sie die <keycap
+>Strg</keycap
+>-Taste gedrückt halten, und dann mit der rechten Maustaste in der gewünschten Reihenfolge auf die Einträge klicken. Die Einträge erhalten dann eine Kennzeichnung mit einer Nummer. Die Nummer entspricht der Reihenfolge, in der die Stücke wiedergegeben werden.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>Die Menüleiste der Wiedergabeliste</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Menüleiste</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>Das Menü Aktionen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aktionen</guimenu
+> <guimenuitem
+>Medien abspielen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zeigt einen kleinen Dialog zur Eingabe einer URL an.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aktionen</guimenu
+> <guimenuitem
+>Audio-CD abspielen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ermöglicht das Ansehen und Abspielen einer Audio-CD über das Protokoll autiocd:/.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Windows</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aktionen</guimenu
+> <guimenuitem
+>Zurück</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Springt zum vorigen Stück in der Wiedergabeliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aktionen</guimenu
+> <guimenuitem
+>Pause</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Hält die Wiedergabe des aktuellen Stücks an.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>V</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aktionen</guimenu
+> <guimenuitem
+>Anhalten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Stoppt die Wiedergabe.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>B</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aktionen</guimenu
+> <guimenuitem
+>Vorwärts</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Springt zum nächsten Stück in der Wiedergabeliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aktionen</guimenu
+> <guimenuitem
+>Beenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Beendet &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>Das Menü der Wiedergabeliste</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Hinzufügen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zeigt einen Dialog zum Hinzufügen von Medien zur Wiedergabeliste an.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Wiedergabeliste speichern unter ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zeigt einen Dialog zum Speichern der aktuellen Wiedergabeliste an.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Rückgängig</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Macht die letzte Änderung an der Wiedergabeliste rückgängig.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>Umschalt</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Wiederherstellen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Stellt rückgängig gemachte Änderungen wieder her.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Löschen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Leert die aktuelle Wiedergabeliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Zufällig Mischen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Bringt die Stücke in der aktuellen Wiedergabeliste in eine zufällige Reihenfolge.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>Eingabetaste</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Zum aktuellen Stück springen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Rollt die Ansicht der Wiedergabeliste zum aktuell laufenden Stück.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Ausgewählte Stücke in Warteschlange einstellen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Hängt die ausgewählten Stücke an die Warteschlange an.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Duplikate/Tote Einträge entfernen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Entfernt alle Stücke aus der Wiedergabeliste, die entweder mehrfach vorhanden sind oder nicht mehr auf der Festplatte existieren.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Wiedergabeliste</guimenu
+> <guimenuitem
+>Alles auswählen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wählt alle Stücke in der aktuellen Wiedergabeliste aus.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>Das Menü Extras</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Cover-Verwaltung ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet die <link linkend="cover-manager"
+>Cover-Verwaltung</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Cover-Verwaltung</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet die <link linkend="queue_manager"
+>Warteschlangen-Verwaltung</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Einrichtungsassistent ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Startet den Einrichtungsassistent.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Visualisierungs-Plugins ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnen den Dialog für <link linkend="visualizations"
+>Visualisierungs-Plugins</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Equalizer ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Dialog <link linkend="equalizer"
+>Equalizer</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Skripte ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet die <link linkend="script_manager"
+>Skript-Verwaltung</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Sammlung neu erfassen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Startet das manuelle Neuerfassen der gesamten Sammlung.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Das Menü Einstellungen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Strg</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Menüleiste ausblenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Blendet die <link linkend="menubar"
+>Menüleiste</link
+> im Wiedergabelisten-Fenster aus.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Werkzeugleiste ausblenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Blendet die <link linkend="toolbar"
+>Werkzeugleiste</link
+> im Wiedergabelisten-Fenster aus.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Player-Fenster ausblenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Blendet das <link linkend="player-window"
+>Player-Fenster</link
+> aus.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Stück wiederholen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wenn diese Option aktiviert ist, wird das aktuelle Stück wiederholt.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Wiedergabeliste wiederholen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wenn diese Option aktiviert ist, wird die aktuelle Wiedergabeliste wiederholt.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Zufallsmodus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wenn diese Option aktiviert ist, werden die Stücke in der Wiedergabeliste in zufälliger Reihenfolge abgespielt.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Dynamischer Modus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Schaltet den dynamischen Modus ein oder aus.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Globale Tastenkürzel einrichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Dialog zum Einrichten der Globalen Tastenkürzel.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Kurzbefehle festlegen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Dialog zum Festlegen der Kurzbefehle.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Werkzeugleisten einrichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Dialog zum Einrichten der &amarok;-Werkzeugleisten.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Amarok einrichten&nbsp;...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Einrichtungsdialog von &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>Das Menü Hilfe</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Hilfe</guimenu
+> <guimenuitem
+>Handbuch zu Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet diese Dokumentation.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Umschalt</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Hilfe</guimenu
+> <guimenuitem
+>Was ist das?</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Aktiviert den "Was ist das?"-Mauszeiger.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+> <guimenuitem
+>Probleme oder Wünsche berichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Startet das Programm zum Einschicken eines Problemberichts.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+> <guimenuitem
+>Über Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet einen Informationsdialog zu Amarok.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+> <guimenuitem
+>Über KDE</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet einen Informationsdialog zu KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>Die Werkzeugleiste der Wiedergabeliste</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Werkzeugleiste</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Die Werkzeugleiste der Wiedergabeliste befindet sich am unteren Rand des Fensters. Sie enthält Knöpfe für einige Funktionen der Wiedergabeliste. An der linken Seite finden Sie den Knopf <guimenuitem
+>Hinzufügen</guimenuitem
+>, mit dem Sie der Wiedergabeliste Stücke hinzufügen können. Rechts daneben finden Sie <guimenuitem
+>Wiedergabeliste speichern</guimenuitem
+>, <guimenuitem
+>Wiedergabeliste leeren</guimenuitem
+> und <guimenuitem
+>Zufällig Mischen</guimenuitem
+>.</para>
+
+<para
+>Als nächstes folgen die Knöpfe <guimenuitem
+>Rückgängig</guimenuitem
+> und <guimenuitem
+>Wiederherstellen</guimenuitem
+>. Damit können Sie Änderungen an der Wiedergabeliste rückgängig machen oder wiederherstellen.</para>
+
+<para
+>In der Mitte der Werkzeugleiste befindet sich ein einzigartiger, vergrößerbarer Analyzer. Die Auffrischrate kann mit einem Klick der rechten Maustaste auf den Analyzer eingestellt werden.</para>
+
+<para
+>Der letzte Knopf in der Werkzeugleiste ist <guimenuitem
+>Menü</guimenuitem
+>. Er öffnet das gleiche Menü wie das, das Sie im Player-Fenster über die rechte Maustaste angezeigt bekommen. Über dieses Menü können Sie &amarok;'s Konfiguration einrichten.</para>
+
+<tip
+><para
+>Es gibt noch viele weitere verfügbare Knöpfe für die Werkzeugleiste, zum Beispiel Wiedergabekontrollen und Lautstärkeregler. Sie können die angezeigten Knöpfe einrichten, indem Sie auf <guibutton
+>Menü</guibutton
+> klicken und dort <guimenuitem
+>Werkzeugleisten einrichten ...</guimenuitem
+> auswählen.</para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>Die Statusleiste der Wiedergabeliste</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Statusleiste</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Die Statusleiste gibt Ihnen einen schnellen Überblick der nützlichen Informationen zur Wiedergabeliste. Sie zeigt den Titel des aktuellen Stücks, die Anzahl der Stücke und die Gesamtspielzeit aller Stücke an. Außerdem wird der Status für Zufallsmodus und Wiederholen, ein Schieberegler für die Abspielposition und die Spielzeit des aktuellen Stücks angezeigt. Der Status für Zufallsmodus und Wiederholen lässt sich einfach ändern, indem Sie mit der Maus doppelt in den entsprechenden Anzeigebereich klicken.</para>
+
+<para
+>Sie können die Statusleiste auch ausblenden. Dazu deaktivieren Sie die Option <guimenuitem
+>Statusleiste anzeigen</guimenuitem
+> in den <link linkend="general-options"
+>Allgemeinen Einstellungen</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>Das Kontext-Menü</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto des Kontext-Menü</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Das Kontext-Menü erreichen Sie durch einen Klick mit der rechten Maustaste in das Player-Fenster, oder indem Sie in der Wiedergabeliste auf <guimenuitem
+>Menü</guimenuitem
+> klicken. Über dieses Menü können Sie die Einstellungen von &amarok; erreichen.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Stück wiederholen</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Wenn diese Option aktiviert ist, wird das aktuelle Stück wiederholt.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Wiedergabeliste wiederholen</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Wenn diese Option aktiviert ist, wird die aktuelle Wiedergabeliste wiederholt.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Zufallsmodus</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Wenn diese Option aktiviert ist, werden die Stücke in der Wiedergabeliste in zufälliger Reihenfolge abgespielt.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Empfohlene Stücke hinzufügen</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Dadurch werden alle empfohlenen Stücke automatisch an die Wiedergabeliste angehängt.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Cover-Verwaltung</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Öffnet die <link linkend="cover-manager"
+>Cover-Verwaltung</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einrichtungsassistent</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ein Klick auf diesen Eintrag öffnet den Assistent für den ersten Start und führt die Grundeinrichtung von &amarok; durch.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualisierungs-Plugins</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ein Klick auf diesen Eintrag öffnet das Fenster <link linkend="visualizations"
+>Visualisierungs-Plugins</link
+>. Dort können Sie die Visualisierungen von &amarok; auswählen.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Equalizer</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Öffnet das <link linkend="equalizer"
+>Equalizer</link
+>-Fenster.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Skript-Verwaltung</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Öffnen den Dialog zur Verwaltung der installierten Skripte.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Werkzeugleisten einrichten ...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ein Klick auf diesen Eintrag öffnet ein Fenster, mit dem Sie die <link linkend="toolbar"
+>Werkzeugleiste der Wiedergabeliste</link
+> anpassen können.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Kurzbefehle festlegen ...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ein Klick auf diesen Eintrag öffnet ein Dialogfenster zum Einrichten der <link linkend="keybd-shortcuts"
+>&amarok;-Kurzbefehle</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Globale Tastenkürzel einrichten ...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ein Klick auf diesen Eintrag öffnet ein Dialogfenster, mit dem Sie die <link linkend="keybd-shortcuts"
+>globalen Tastenkürzel</link
+> einrichten können.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Amarok einrichten&nbsp;...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ein Klick auf diesen Eintrag öffnet den <link linkend="configuring-kapp"
+>Einrichtungs-Dialog</link
+> von &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Hinter diesem Eintrag verbirgt sich ein Untermenü mit Verknüpfungen zu diesem Dokument und anderen Informationen zu &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Beenden</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ein Klick auf diesen Eintrag beendet &amarok;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Cover-Verwaltung</title>
+
+<screenshot>
+	<screeninfo
+>Cover-Verwaltung</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Die Cover-Verwaltung ist ein nützliches Hilfsmittel zur Verwaltung Ihrer Cover-Bilder. Sie können sie starten, indem Sie <menuchoice
+><guimenu
+>Aktionen</guimenu
+><guimenuitem
+>Cover-Verwaltung</guimenuitem
+></menuchoice
+> im Sammlung-Browser auswählen.</para>
+
+<para
+>Die Cover-Verwaltung enthält eine Listenansicht aller Alben in Ihrer Sammlung. Sie können alle Alben eines Interpreten in Ihrer Sammlung betrachten, indem Sie auf der linken Seite den Interpret auswählen.</para>
+
+<para
+>Die Cover-Verwaltung enthält auch eine Suchleiste, mit der Sie nach Cover-Bildern suchen können.</para>
+
+<para
+>Mit dem Menü <guimenuitem
+>Ansicht</guimenuitem
+> können Sie wählen, was in der Cover-Verwaltung angezeigt werden soll. Wählen Sie aus:</para>
+
+<para
+><guimenuitem
+>Alle Alben</guimenuitem
+>, dadurch werden alle Alben in Ihrer Sammlung angezeigt.</para>
+
+<para
+><guimenuitem
+>Alben mit Cover</guimenuitem
+>, dadurch werden nur Alben mit vorhandenem Cover-Bild angezeigt.</para>
+
+<para
+><guimenuitem
+>Alben ohne Cover</guimenuitem
+>, dadurch werden nur Alben ohne vorhandenes Cover-Bild angezeigt.</para>
+
+<para
+>Der Knopf <guimenuitem
+>Fehlende Cover holen</guimenuitem
+> bewirkt, dass fehlende Cover-Bilder für Ihre Alben heruntergeladen werden.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>Die Warteschlangen-Verwaltung</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Warteschlangen-Verwaltung</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Die Warteschlangen-Verwaltung erhielt Ihren großen Einzug in &amarok; 1.3. Mit dieser Funktion haben Sie noch mehr Kontrolle über die Wiedergabeliste. Nachdem Sie ein Stück in die Warteschlange eingestellt haben, erscheint in der Wiedergabeliste eine Nummer neben dem Titel. Diese Nummer repräsentiert die Reihenfolge, in der &amarok; die Stücke abspielen wird: 1 wird zuerst abgespielt, 2 als zweites, und so weiter.</para>
+
+<para
+>Die Verwaltung der Warteschlange öffnen Sie über <menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Warteschlangen-Verwaltung</guimenuitem
+></menuchoice
+>. Wenn Sie der Warteschlange ein Stück hinzufügen möchten, wählen Sie das Stück in der Wiedergabeliste aus und klicken dann auf <guibutton
+>+</guibutton
+>. Sie können die Stücke auch einfach mit der Maus hinzufügen oder das Kontext-Menü in der Wiedergabeliste verwenden. Die Reihenfolge der Stücke können Sie dann in der Warteschlangen-Verwaltung ändern.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Dynamische Wiedergabelisten</title>
+
+	<sect2>
+		<title
+>Was ist das?</title>
+		<para
+>Dynamische Wiedergabelisten sind Wiedergabelisten, die sich selbst nach bestimmten Regelsätzen füllen und leeren. Die eigentliche Wiedergabeliste wird dadurch übersichtlich kurz gehalten. Zwar geht &amarok; wirklich sparsam mit Systemressourcen um, aber das Laden von sehr vielen Stücken in eine Wiedergabeliste erhöht den Speicherverbrauch und beeinflusst somit auch die Geschwindigkeit des Gesamtsystems. Durch dynamische Wiedergabelisten wird dies verhindert. Auch als Party-Modus bezeichnet ist diese Funktion einfach ideal, um die ganze Nacht lang Musik zu hören ohne auch nur einen Finger rühren zu müssen! </para>
+	</sect2>
+
+	<sect2>
+		<title
+>Wo befinden sie sich?</title>
+		<para
+>Sie finden die dynamischen Wiedergabelisten im Wiedergabelisten-Browser.</para>
+	
+		<screenshot>
+			<screeninfo
+>Wiedergabelisten-Browser</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Wiedergabelisten-Browser</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Es gibt drei Arten dynamische Wiedergabelisten, von denen zwei bereits vorgegeben sind (die Details zur Einrichtung dieser folgen später).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Zufälliger Mix</term>
+				<listitem
+><para
+>Füllt Ihre Wiedergabeliste mit zufälligen Stücken aus Ihrer gesamten Sammlung und fügt während der Wiedergabe weitere zufällige Stücke hinzu.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Empfohlene Stücke</term>
+				<listitem>
+					<para
+>Fügt Stücke basierend auf <ulink url="http://www.last.fm"
+>Last.fm</ulink
+>-Empfehlungen (früher: Audioscrobbler) hinzu. Dieser Modus erfordert, dass sich bereits einige Stücke in Ihrer Wiedergabeliste befinden. Sie benötigen kein Last.fm-Profil damit diese dynamische Wiedergabeliste funktioniert.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Wiedergabelisten-Mischung (selbsterstellt)</term>
+				<listitem
+><para
+>Fügt zufällige Stücke von ausgewählten Wiedergabelisten hinzu. Die Wiedergabelisten können voreingestellt oder selbst erstellt sein.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>Wie werden sie benutzt?</title>
+		<para
+>Klicken Sie doppelt auf die gewünschte Wiedergabeliste, ziehen Sie sie in das Wiedergabelisten-Fenster oder klicken Sie mit der rechten Maustaste auf Sie und wählen dann "Laden". Auf diese Weise wird Ihre derzeitige Wiedergabeliste durch die neue ersetzt. Sie sollten die alte Wiedergabeliste also unter Umständen speichern!mit der </para>
+		<para
+>Die beiden voreingestellten Modi Zufälliger Mix und Wiedergabelisten-Mix füllen sofort Ihre Wiedergabeliste und Sie können die Wiedergabe direkt starten. Die Wiedergabeliste "Empfohlene Stücke" beginnt mit einer leeren Wiedergabeliste und Sie müssen mindestens ein Stück selbst aus Ihrer Sammlung hinzufügen. Die Empfohlenen Stücke werden jeweils beim nächsten Stückwechsel hinzugefügt, daher wird Ihre Wiedergabeliste erst am Ende des ersten Stücks gefüllt.</para>
+		<para
+>Wenn Sie die aktuelle Wiedergabeliste behalten möchten, dann aktivieren Sie den letzten möglichen dynamischen Modus: <menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guimenuitem
+>Dynamischer Modus</guimenuitem
+></menuchoice
+>. Dies wird Ihre bestehende Wiedergabeliste als Startpunkt verwenden. Über den selben Menüeintrag kann der dynamische Modus auch wieder deaktiviert werden.</para>
+		<screenshot>
+			<screeninfo
+>geladene dynamische Wiedergabeliste</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>geladene dynamische Wiedergabeliste</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>Der Knopf <guibutton
+>Neu füllen</guibutton
+> leert die aktuelle Wiedergabeliste und fügt entsprechend dem dynamischen Modus neue Stücke hinzu. <guibutton
+>Wiedergabeliste bearbeiten</guibutton
+> öffnet den Dialog zum Bearbeiten der Wiedergabeliste und Sie können die entsprechenden Einstellungen verändern.</para
+> <note
+><para
+>Diese Knöpfe sind nur sichtbar, wenn der dynamische Modus aktiviert ist.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Dynamische Wiedergabelisten einrichten</title>
+	<sect2>
+		<title
+>Das Verhalten einer dynamischen Wiedergabeliste festlegen</title>
+		<para
+>Mit einem Rechtsklick auf eine <guilabel
+>dynamische Wiedergabeliste</guilabel
+> haben Sie die Möglichkeit, auf <guimenuitem
+>Bearbeiten</guimenuitem
+> zu klicken. Daraufhin öffnet sich der Dialog zum Bearbeiten der Einstellungen der Wiedergabeliste.</para>
+	
+		<screenshot>
+			<screeninfo
+>Einstellungen zur Dynamische Wiedergabeliste</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Name der dynamischen Wiedergabeliste</term>
+				<listitem>
+					<para
+>Geben Sie hier einen beliebigen Namen für die Wiedergabeliste ein. Der Name sollte allerdings einmalig sein, um Verwirrung zu vermeiden.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Gespielte Stücke entfernen</term>
+				<listitem>
+					<para
+>Wenn diese Einstellung nicht aktiv ist, wird Ihre Wiedergabeliste kontinuierlich wachsen, die Einstellung für kommende Stücke wird übergangen und sie werden in dieser Wiedergabeliste kein Stück doppelt hören. Falls die Einstellung jedoch aktiv ist, werden die bereits gespielten Stücke unter Beachtung der Einstellung "Gespielte Stücke" entfernt.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Verlauf kennzeichnen</term>
+				<listitem>
+					<para
+>Wenn diese Einstellung aktiv ist, werden bereits gespielte Stücke grau dargestellt.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Gespielte Stücke</term>
+				<listitem>
+					<para
+>Gespielte Stücke - dies ist die Anzahl der gespielten Stücke, die am Anfang der Wiedergabeliste aufbewahrt werden sollen. Dadurch können Sie leicht sehen, welche Stücke kürzlich gespielt wurden.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Kommende Stücke</term>
+				<listitem>
+					<para
+>Dies ist die Einstellung, die die Größe Ihrer Wiedergabeliste einschränkt.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Anzuhängende Stücke</term>
+				<listitem>
+					<para
+>Dies ist die Anzahl der Stücke, die nach jedem gespielten Stück zur Wiedergabeliste hinzugefügt werden sollen. Wenn Sie hier mehr als 1 einstellen, so wird die Wiedergabeliste kontinuierlich wachsen, weil nur jeweils ein Stück gespielt und entfernt werden kann.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Dieser Einstellungsdialog ist auch über den Knopf <guibutton
+>Wiedergabeliste bearbeiten</guibutton
+> rechts oben im Wiedergabelisten-Fenster aufrufbar.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Die Leiste "Dynamischer Modus"</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Hinzufügen einer eigenen dynamischen Wiedergabeliste</title>
+		<para
+>Klicken Sie mit der rechten Maustaste auf "Dynamische Wiedergabelisten" und wählen Sie den Eintrag "Neue dynamische Wiedergabeliste".</para>
+
+		<screenshot>
+			<screeninfo
+>Eine neue dynamische Wiedergabeliste erstellen</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>Die Einstellungen auf der rechten Seite wurden bereits im vorigen Abschnitt beschrieben. Auf der linken Seite des Dialogs können Sie aus bereits bestehenden Wiedergabelisten bzw. intelligenten Wiedergabelisten auswählen. Wenn Sie mehrere Wiedergabelisten ankreuzen, wird &amarok; zufällige Stücke aus jeder der angekreuzten Wiedergabelisten hinzufügen.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>Die Skript-Verwaltung</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Skript-Verwaltung</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Skripte sind sehr ein einfacher Weg mit dem man &amarok; um jede Menge Funktionen erweitern kann. Um ein &amarok;-Skript zu starten, starten Sie die Skript-Verwaltung unter <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+>Skript-Verwaltung</guimenuitem
+></menuchoice
+>. In dem Dialogfenster sehen sie eine Liste der installierten Skripte. Wählen Sie ein Skript aus und klicken Sie dann auf <guibutton
+>Ausführen</guibutton
+> um das Skript zu starten. Das Skript läuft bis zum Ende, oder bis Sie es mittels <guibutton
+>Stoppen</guibutton
+> beenden.</para>
+
+<tip
+><para
+>Manche Skripte ermöglichen eigene Einstellungen. Sie können die Einstellungen anpassen, indem Sie das Skript starten und dann auf <guibutton
+>Einrichten</guibutton
+> klicken.</para
+></tip>
+
+<para
+>Sie können neue &amarok;-Skripte installieren, indem Sie auf <guibutton
+>Skript installieren</guibutton
+> klicken. Es wird sich ein Auswahldialog öffnen, in dem ein Skript-Paket zur Installation auswählen können. Nachdem Sie das Skript installiert haben, erscheint ein neuer Eintrag in der Liste. Sie können auch neue Skripte direkt aus dem Internet installieren. Verwenden Sie dazu den Knopf <guibutton
+>Weitere Skripte holen</guibutton
+>.</para>
+
+<para
+>Wenn Sie ein Skript nicht länger verwenden möchten, können Sie es löschen. Wählen Sie dazu das zu löschende Skript aus klicken dann auf <guibutton
+>Deinstallieren</guibutton
+>.</para>
+
+<note
+><para
+>Falls Sie Informationen zum Schreiben eigener Skripte suchen, schauen Sie bitte im Abschnitt <link linkend="script-writing"
+>Schreiben von Skripten</link
+> nach.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>Visualisierungs-Plugins</title>
+
+<screenshot>
+	<screeninfo
+>Bildschirmphoto der Visualisierungen</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Das Dialog-Fenster Visualisierungs-Plugins wird zum Aktivieren der verfügbaren Visualisierungen in &amarok; benutzt. Das Fenster enthält eine Liste aller verfügbaren Plugins. Um ein Plugin zu benutzen, aktivieren Sie einfach das Ankreuzfeld neben dem Namen.</para>
+
+</sect1>
+
+</chapter>

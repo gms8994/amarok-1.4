@@ -1,0 +1,2272 @@
+<chapter id="using-kapp">
+<title
+>Använda &amarok;</title>
+
+<para
+>&amarok; är en mångsidig ljuspelare som erbjuder många olika sätt att kontrollera din musiksamling. Som alla vanliga ljudspelare, har &amarok; ett spelarfönster för att kontrollera de mest grundläggande funktionerna. &amarok; har också en spellista som slår det mesta. Spellistans fönster har flera bläddrare för att skapa och bläddra i hela din ljudsamling.</para>
+
+<para
+>I det här kapitlet går vi igenom hur alla funktioner i &amarok; används, inklusive att skapa en samling och en spellista.</para>
+
+<sect1 id="player-window">
+<title
+>Spelarfönstret</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spelarfönstret</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Spelarfönstret är kontrollcentralen i &amarok; som styrs med ett klick. Längst upp i fönstret finns en skärm där spåret eller strömmen som nu spelas rullar förbi. Precis under skärmen finns ett område som visar speltid, bithastighet och samplingshastighet för nuvarande spår. Genom att klicka på området ändras spårtiden från totalt uppspelad tid till totalt återstående tid.</para>
+
+<para
+>Spelarfönstret erbjuder också en uppsättning ljudanalysatorer som också syns under den rullande skärmen. Du kan gå igenom tillgängliga analysatorer genom att vänsterklicka i analysatorområdet.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Analysatortips</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>&amarok;s analysatorer kan kopplas loss från spelarfönstret. Genom att trycka på <keycap
+>d</keycap
+> på tangentbordet, öppnas den aktiva analysatorn i ett oberoende fönster, vars storlek kan ändras.</para>
+</tip>
+
+<para
+>Under skärmen finns också knapparna <guibutton
+>PL</guibutton
+> och <guibutton
+>EQ</guibutton
+>. Knappen <guibutton
+>PL</guibutton
+> används för att snabbt visa eller dölja spellistans fönster, medan knappen <guibutton
+>EQ</guibutton
+> används för att aktivera eller inaktivera equalizern om gränssnittet kan hantera den.</para>
+
+<para
+>Resten av fönstret innehåller uppspelningsknappar samt volym- och spårpositionsreglage. Använd skjutreglagen för att välja en spårposition eller volymnivå som passar dina behov. Använd uppspelningsknapparna för att kontrollera uppspelningen av nuvarande spår, eller antingen gå framåt eller bakåt bland dina spår.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>Equalizerfönstret</title>
+
+<para
+>Den inbyggda equalizern är lättanvänd och fungerar med alla gränssnitt. Det finns 17 förinställningar från klassiskt till tekno, och du kan enkelt skapa dina egna förinställningar. </para>
+
+<para
+>Välj <menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Equalizer</guimenuitem
+></menuchoice
+> i huvudfönstret för att komma åt equalizern, eller klicka på knappen <guibutton
+>EQ</guibutton
+> i spelarfönstret. När du väl markerat knappen <guibutton
+>Aktivera equalizer</guibutton
+> i fönstret är equalizern aktiv.</para>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av equalizern</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Du använda dialogrutans kombinationsruta för att välja en av de inbyggda förinställningarna. Du kan också justera enskilda skjutreglage här. Att flytta ett reglage byter automatiskt till den manuella förinställningen så tveka inte att experimentera med dem till du hittar en önskvärd kombination. När du är klar att spara, klicka på ikonen <guiicon
+>Lägg till ny förinställning</guiicon
+> till höger om kombinationsrutan. Om du byter till en annan förinställning utan att spara dina ändringar går det förlorade. Förutom att spara dina ändringar, kan du också klicka på ikonen <guiicon
+>Hantera förinställningar</guiicon
+> till höger om kombinationsrutan för att ta bort eller byta namn på förinställningar.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>Spellistan</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistan</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>&amarok;s spellista är den mest avancerade spellistan tillgänglig i någon ljudspelare för &kde;. Spellistan erbjuder många funktioner som inte finns i någon annan ljudspelare. Du ska dock inte bli avskräckt av hur kraftfull spellistan är, eftersom den ändå är den enklaste att använda.</para>
+
+<para
+>Spellistans fönster kan delas upp i två huvuddelar. Till vänster finns sidoraden. Det är här du hittar några av de utmärkta funktionerna som spellistan har, som <link linkend="context-browser"
+>sammanhangsbläddraren</link
+>. Till höger i fönstret finns själva spellistan. Den är enkel att använda, men ändå kraftfull nog till och med för de mest avancerade användarna.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Sidoradens bläddrare</title>
+
+<para
+>Bläddrarna i &amarok; gör det möjligt att komma åt din musiksamling på flera olika sätt. De är placerade till vänster i fönstret, och var och en representeras av en flik med dess namn skrivet på den. Att klicka på en flik gör att den valda bläddraren blir synlig. Om en bläddrare är aktiv fälls den ihop genom att klicka på dess flik igen. Bara en bläddrare är synlig åt gången, även om du kan dra spår från en flik till en annan genom att stanna över målfliken under en sekund till den fliken blir synlig. Du kan också dölja bläddrare genom att helt enkelt högerklicka på vilken flik som helst och (av)markera önskade bläddrare i den sammanhangsberoende menyn som tillhandahålls.</para>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av bläddrarval</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>Sammanhangsbläddraren</title>
+
+<para
+>Sammanhangsbläddraren visar diverse information som hör ihop med spåret som för närvarande spelas. Dess utseende kan ändras genom att använda teman kända som <link linkend="configure-appearance"
+>sammanhangsbläddrarens stilar</link
+>. Den är organiserad i tre flikar: <quote
+>Musik</quote
+>, <quote
+>Sångtext</quote
+> och <quote
+>Artist</quote
+>. Flikarnas, vars funktioner beskrivs utförligare nedan, tillhandahåller information om olika aspekter av spåret som för närvarande lyssnas på.</para>
+
+<note
+><para
+>Användare av tidigare versioner av &amarok; märker att fliken <quote
+>Hem</quote
+> inte längre finns. Informationen från den fliken har fördelats om över hela gränssnittet i &amarok;. Liknande information hittas i huvudsak i statistikdialogrutan, som kan kommas åt via <menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Statistik</guimenuitem
+></menuchoice
+>.</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av sammanhang</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>Fliken Musik</title>
+
+<para
+>Fliken <guilabel
+>Musik</guilabel
+> erbjuder information om spåret som för närvarande spelas, och dess artist och album.</para>
+
+<para
+>Den första rutan under fliken ger information om spåret. Rutans titel listar spårnamn, artistnamn och album. Inne i rutan ser du att den visar spårets albumomslagsbild. Intill bilden hittar du en <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+> ikon. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Klicka på ikonen för att slå upp spåret med MusicBrainz.</para>
+
+<para
+>Under ikonen för MusicBrainz finns det mer information om det aktuella spåret. Här ser du totalt antal gånger spåret har spelats, spårets nuvarande poäng, och när spåret först och senast spelades.</para>
+
+<tip
+><para
+>För att visa skivomslagsbilder i sammanhangsbläddraren måste du har skivomslagsbilden i samma katalog som spåret du lyssnar på. Filformat som stöds är .jpg, .jpeg, .gif och .png. Bilderna kan heta vad som helst, men bilder med ordet <quote
+>front</quote
+> i filnamnet används i första hand. Sammanhangsbläddraren använder också skivomslag som sparats från nerladdning av skivomslag eller bilder inbäddade i ID3v2-taggar.</para
+></tip>
+
+<para
+>Nästa ruta, <guilabel
+>Sånger som föreslås</guilabel
+>, listar flera spår som föreslås att lyssna på. Klicka på något av de listade spåren för att börja spela upp det.</para>
+
+<para
+>Under <guilabel
+>Sånger som föreslås</guilabel
+> finns <guilabel
+>Favoritspår av artist</guilabel
+>. Rutan listar de fem högst rankade spåren av det nuvarande spårets artist.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Du kan justera informationsmängden som visas under fliken <guilabel
+>Musik</guilabel
+> genom att högerklicka var som helst i musikfliken och ändra alternativ i den sammanhangsberoende menyn.</para
+></tip>
+
+<para
+>Den sista rutan <guilabel
+>Album av artist</guilabel
+>, listar alla album av det nuvarande spårets artist som finns i din samling. Genom att klicka på något av albumen i rutan expanderar det för att visa albumets innehåll.</para>
+
+<tip
+><para
+>Du kan klicka på spår i alla rutorna för att börja spela upp spåret. Du kan också högerklicka på album och spår för att visa en meny där flera sätt att spela eller köa spåret eller albumet kan väljas.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>Fliken Sångtexter</title>
+
+<para
+>Fliken <guilabel
+>Sångtext</guilabel
+> hämtar sångtexten för sången som för närvarande spelas från en av webbplatserna som stöds Funktionen är flexibel, och det är möjligt att skriva skript för att hämta sångtexter från olika platser. Se kapitlet om hur man skriver skript. När du klickar på fliken Sångtext, försöker &amarok; hämta sångtexten för det nuvarande spåret. Om det inte finns något sångtextskript som kör, får du möjlighet att välja ett.</para>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av sångtext</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>Du kan utföra diverse åtgärder under sångtextfliken med knapparna i dess verktygsrad.</para>
+
+<para
+>Knappen <guibutton
+>Lägg till</guibutton
+> öppnar sidan <quote
+>Lägg till sångtext</quote
+> på webbplatsen med sångtexten (i en extern webbläsare), beroende på vilket skript du kör.</para>
+
+<para
+>Knappen <guibutton
+>Redigera</guibutton
+> låter dig redigera sångtexten för nuvarande spår. De lagras därefter i samlingsdatabasen i &amarok;. Detta kräver inte något sångtextskript för att fungera.</para>
+
+<para
+>Knappen <guibutton
+>Sök</guibutton
+> startar en sökning med google.com efter det nuvarande spårets sångtext (i en extern webbläsare).</para>
+
+<para
+>Knappen <guibutton
+>Uppdatera</guibutton
+> rensar lagrad sångtext för det nuvarande spåret, och söker igen.</para>
+
+<para
+><guibutton
+>Öppna i extern webbläsare</guibutton
+> visar det nuvarande spårets sångtext i en extern webbläsare.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>Fliken Artist</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av artistflik</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Fliken Artist visar artikeln i Wikipedia om artisten som för närvarande spelas. Verktygsraden innehåller:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Navigationsknappar för att gå framåt eller bakåt</para>
+</listitem>
+<listitem>
+<para
+>Sidknappar för att gå till artistens, albumets eller spårets sida i Wikipedia,</para>
+</listitem>
+<listitem>
+<para
+>En knapp för att öppna den aktuella sidan i en extern webbläsare</para>
+</listitem>
+<listitem>
+<para
+>En inställningsknapp för att välja land för Wikipedia</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Samlingsbläddraren</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av samlingsbläddraren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Samlingsbläddraren är hjärtat i &amarok;. Hela samlingen är synlig här och kan sorteras enligt olika grupperingar. Inom varje gruppering visas allting alltid alfabetiskt, med symboler och siffror först, och utan hänsyn till skiftläge. Med alla grupperingsmetoder, grupperas alltid spår som har okända artister och/eller album alltid först i samlingen under <quote
+>Okänd</quote
+>. Även om spårnummer inte visas, listas spår i sin albumordning. Att klicka på samlingslistans rubrik vänder på sorteringsordningen. Ett vänsterklick på expansionsikonen till vänster om varje post i samlingen expanderar posten.</para>
+
+<para
+>Menyn i kombinationsrutan <quote
+>Gruppera enligt</quote
+> låter dig gruppera samlingen på flera olika sätt:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppera enligt</guimenu
+> <guimenuitem
+>Artist</guimenuitem
+></menuchoice
+>: Bara sortering på toppnivå, där varje spår grupperas under motsvarande artist utan någon hänsyn till album eller genrer.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppera enligt</guimenu
+> <guimenuitem
+>Artist/Album</guimenuitem
+></menuchoice
+>: Spår sorteras enligt artister, och därunder sorteras de enligt album. Om du vill se samlingsalbum eller filmmusik är det bästa sättet att visa samlingen - dessa album grupperas tillsammans mot slutet av listan under <quote
+>Diverse artister</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppera enligt</guimenu
+> <guimenuitem
+>Artist/År - Album</guimenuitem
+></menuchoice
+>: Sorterar enligt artister, med album i fallande ordning enligt år (senaste först). Om taggen <quote
+>År</quote
+> inte finns för spåret används standardvärdet <quote
+>0 - albumnamn</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppera enligt</guimenu
+> <guimenuitem
+>Album</guimenuitem
+></menuchoice
+>: Alla album i samlingen visas alfabetiskt baserat på albumnamn, oberoende av artist.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppera enligt</guimenu
+> <guimenuitem
+>Genre/Artist</guimenuitem
+></menuchoice
+>: Spår grupperas enligt sin genretagg, och därefter enligt artist.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppera enligt</guimenu
+> <guimenuitem
+>Genre/Artist/Album</guimenuitem
+></menuchoice
+>: Samma som ovan, endast med spår sorterade enligt album, under varje artist.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>Återstående alternativ i kombinationsrutans meny låter dig anpassa grupperingen med vilken kombination som helst av de ovanstående.</para>
+
+<para
+>Följande två ikoner i verktygsraden ändrar sättet som samlingen visas. Den första, trädvyn, är standardvyn och den som du troligen tittar oftast på. Nästa knapp aktiverar Enkel vy, som först verkar vara tom. Att skriva in sökbegrepp i textinmatningsrutan precis nedanför verktygsraden börjar fylla i samlingen, som kan sorteras på ett antal olika sätt genom att vänsterklicka på kolumnrubrikerna. Ett högerklick på kolumnrubrikerna visar en sammanhangsberoende meny som låter dig ändra vilka kolumner som visas.</para>
+
+<para
+>Den sista ikonen i verktygsraden låter dig ändra samlingens inställningar. Observera att om du ändrar någon katalog, söker &amarok; automatiskt igenom samlingen igen. Det kan ta ganska lång tid om du har många spår.</para>
+
+<para
+>Omedelbart nedanför verktygsraden finns ett sökfilter som beter sig på samma sätt både i enkel vy och i trädvyn. Se avsnittet om spellistan i handboken för mer detaljinformation om söktekniker.</para>
+
+<para
+>Under sökfiltret gör en annan kombinationsruta det möjligt att se spåren som senast lagts till i samlingen. Flera tidsperioder är tillgängliga, från de senaste 24 timmarna till 1 år, eller hela samlingen.</para>
+
+<sect3 id="collection-rmb">
+<title
+>Samlingsbläddrarens alternativ i den sammanhangsberoende menyn</title>
+<para
+>Följande alternativ är tillgängliga genom att klicka med höger musknapp på poster i sammanhangsbläddraren:</para>
+
+<para
+><guilabel
+>Ladda</guilabel
+>: Rensar aktuell spellista och lägger till markerade spår som första spår i sorteringsordningen.</para>
+
+<para
+><guilabel
+>Lägg till i spellista</guilabel
+>: Lägger till markerade spår i slutet på den aktuella spellistan. Att dubbelklicka på ett enstaka spår i samlingen uppnår också samma resultat.</para>
+
+<para
+><guilabel
+>Köa spår</guilabel
+>: Lägger till markerade spår i kön som de följande att spela.</para>
+
+<para
+><guilabel
+>Spara som spellista</guilabel
+>: Spara markerade spår som en spellista. Du blir tillfrågad om ett namn att spara den som.</para>
+
+<para
+><guilabel
+>Lägg till i mediaenhetens överföringskö</guilabel
+>: Lägger till spåren i en kö klara att överföras till en mediaenhet, när en sådan enhet är ansluten. Se avsnittet <link linkend="media-device-browser"
+>Mediaenhetsbläddraren</link
+> för mer detaljinformation.</para>
+
+<para
+><guilabel
+>Bränn alla spår av artisten/Bränn den här skivan</guilabel
+>: Skickar spår till &k3b; för att antingen bränna som data- eller ljud-cd. Om &k3b; inte är installerat kan alternativet inte väljas.</para>
+
+<para
+><guilabel
+>Hämta omslagsbild</guilabel
+>: Söker på amazon.com efter en omslagsbild för albumet.</para>
+
+<para
+><guilabel
+>Redigera information för (n) spår</guilabel
+>: Visar dialogrutan <guilabel
+>Spårinformation</guilabel
+> och låter dig ändra taggar för ett eller flera spår. </para>
+
+<para
+><guilabel
+>Hantera filer</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Organisera (n) filer</guilabel
+>: Visar dialogrutan <guilabel
+>Organisera samlingsfiler</guilabel
+>. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>Ta bort (n) filer</guilabel
+>: Visar en bekräftelsedialogruta som frågar dig om du vill ta bort markerade spår permanent från datorn.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Markera som samling</guilabel
+>: Ställer in det markerade albumet som ett samlingsalbum, att lista under <quote
+>Diverse artister</quote
+></para>
+
+<para
+><guilabel
+>Avmarkera som samling</guilabel
+>: Ändrar ett album markerat som ett samlingsalbum till ett vanligt album och flyttar listningen från <quote
+>Diverse artister</quote
+> tillbaka till de listade artisterna.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Spellistebläddraren</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistebläddraren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Spellistebläddraren används för att enkelt hantera flera spellistor. Spellistebläddraren har också en funktion för inbyggda smarta spellistor, vilket gör den till den listigaste spellistan omkring.</para>
+
+<para
+>Spellistebläddraren är uppdelad i två delar. Spellistor och Smarta spellistor. Rutan spellistor är till för dina egna spellistor. Du kan visa innehållet i spellistorna i en listvy genom att klicka på symbolen <quote
+>+</quote
+> intill var och en av de listade spellistorna. När du visar en spellista i listvyn kan nya objekt läggas till i den genom att dra och släppa dem i vyn. När du har hittat en spellista som du skulle vilja ladda, kan du dubbelklicka på den, eller trycka på tangenten <keycap
+>Mellanslag</keycap
+> för att låta &amarok; ladda den. De övriga snabbtangenterna i spellistebläddraren finns under <link linkend="keybd-shortcuts"
+>avsnittet Snabbtangenter</link
+>.</para>
+
+<tip
+><para
+>När du sparar en ny spellista i spellistans fönster, läggs den automatiskt till i spellistebläddraren.</para
+></tip>
+
+<para
+>Den nedre rutan i spellistebläddraren är Smarta spellistor. Smarta spellistor använder &amarok;s inbyggda databas för att skapa några användbara spellistor i farten. Smarta spellistor omfattar följande:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Hela samlingen: En spellista med alla spår som finns i din inställda samling.</para>
+</listitem>
+
+<listitem>
+<para
+>Favoritspår: Flera spellistor med de femton högst rankade spåren i en listvy enligt artist.</para>
+</listitem>
+
+<listitem>
+<para
+>Mest spelad: Flera spellistor med de femton mest spelade spåren i en listvy enligt artist.</para>
+</listitem>
+
+<listitem>
+<para
+>Mest aktuella spår: Flera spellistor med de femton senast tillagda spåren i en listvy enligt artist.</para>
+</listitem>
+
+<listitem>
+<para
+>Senast spelad: En spellista med de femton senast spelade spåren i din samling.</para>
+</listitem>
+
+<listitem>
+<para
+>Aldrig spelad: En spellista med spåren i din samling som aldrig tidigare har spelats.</para>
+</listitem>
+
+<listitem>
+<para
+>Genrer: Flera spellistor i en listvy ordnade efter genre.</para>
+</listitem>
+
+<listitem>
+<para
+>Det är också möjligt att skapa användardefinierade smarta spellistor. Genom att klicka på knappen <guibutton
+>Skapa smart spellista</guibutton
+> visas en dialogruta för att ställa in en smart spellista som motsvarar dina kriterier.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Mediaenhetsbläddraren</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av mediaenhetsbläddraren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Rutan Mediaenhet används för att ansluta en iPod till &amarok;. För att använda din iPod med mediaenhetsbläddraren måste du ha monterat din iPod som /mnt/ipod innan du startar &amarok;. När du väl har startat &amarok; hittar du spåren på din iPod listade enligt artist i en listvy längst upp i bläddraren.</para>
+
+<para
+>För att lägga till spår i din iPod, dra spåren du vill lägga till från spellistan och släpp dem på i listvyn Artist. När du är klar med att lägga till spår i listan klicka på knappen <guibutton
+>Överföring</guibutton
+> för att ladda upp dem till din iPod. Efter överföringen är klar, stäng &amarok; och avmontera din iPod.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Filbläddraren</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av filbläddraren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Filbläddrarens ruta är som en minimal version av Konqueror inbäddat i spellistan. Du kan använda filbläddrares ruta för att bläddra i hela filsystemet efter ljudfiler som ska läggas till i spellistan. Längst upp i filbläddraren hittar du en verktygsrad med navigeringsknappar för att gå upp, tillbaka och framåt i filsystemet. Verktygsraden erbjuder också knapparna Hemkatalog, Uppdatera, Kort format och Detaljerat format. Det har dessutom en bokmärkesknapp för att skapa bokmärken till dina favoritplatser i filsystemet.</para>
+
+<para
+>Nedanför verktygsraden finns en praktisk sökrad för att söka enligt filnamn. Du märker att sökraden är användbar för kataloger med många filer eftersom den söker medan du skriver in, och lämnar bara de relevanta filnamnen i vyn.</para>
+
+<para
+>Längst ner i filbläddraren finns en adressrad för att komma åt musik via vilken webbadress som du än skriver in. Genom att till exempel skriva <filename class="directory"
+>tar:/home/kontonamn/musik.tar.gz</filename
+> i adressraden och trycka på returtangenten, gör att du kan komma åt filer i det komprimerade musikarkivet. Nu kan du dra ljudfiler från arkivet och släppa dem i spellistan.</para>
+
+<tip
+><para
+>När spellistan växer sig större än en full skärm, blir det svårt att lägga till filer genom att helt enkelt släppa dem. Att hålla nere <keycap
+>Skift</keycap
+>-tangenten på tangentbordet när filerna släpps kan hjälpa i detta fall: filerna läggs till i slutet av spellistan istället för att infogas på platsen där de släpps.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>Spellistan</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistan</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Spellistan innehåller alla spår som du har köat för att spela upp. Du kan ändra ordningen genom att dra omkring objekt med musen, och släppa dem på önskad plats. Ovanför spellistan ser du ett textruta, där du kan skriva in en filtreringssträng. Så snart du skriver in en bokstav där, visas spellistan igen, men bara med rader som innehåller bokstaven som skrivits in. För att stoppa filtreringen, tryck helt enkelt på <keycap
+>Backsteg</keycap
+> till filtret är tomt.</para>
+
+<tip
+><para
+>Avancerad, Google-liknande syntax är också tillgänglig.</para>
+
+<para
+>Normalt, när du skriver in sökord åtskilda med mellanslag, sökes efter objekt som innehåller alla. Till exempel söker "ett två tre" efter allt som innehåller ett, två och tre.</para>
+
+<para
+>Du kan dock skriva in OR mellan sökord för att söka efter objekt som någondera, så här: ett OR två OR tre. På så sätt söks efter objekt som antingen innehåller ett, två eller tre (eller en kombination av dem).</para>
+
+<para
+>Du kan också använda citationstecken för att söka efter text med mellanslag: "Mike Oldfield". Det söker efter text som innehåller Mike Oldfield, men till exempel inte efter text som innehåller Mike J. Oldfield.</para>
+
+<para
+>Normalt söks i alla kolumner i spellistan som för närvarande är synliga. Du kan dock använda kolumn:sökord för att ange kolumnen att söka i: titel:amarok (det kan också vara en kolumn som inte syns). På så sätt söks bara efter objekt som har ordet amarok i titeln, och inte till exempel i albumet.</para>
+
+<para
+>När en viss kolumn att söka i anges, kan du också söka efter objekt som är mindre än eller större än ett sökord, till exempel poäng:
+>50, vilket söker efter objekt med en poäng som är större än 50.</para>
+
+<para
+>För att ange ett sökord som du vill att objekten inte ska matcha, kan du lägga till ett minustecken (-) innan det: -sak, för att söka efter allt som inte innehåller sak.</para>
+
+<para
+>Du kan kombinera ovanstående som du vill, till exempel "Mike Oldfield" OR poäng:
+>50 -kommentar:dålig. Det söker efter allting som antingen innehåller Mike Oldfield eller har poäng större än 50, men undantar objekt där kommentaren innehåller "dålig".</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Tips om spellistan</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Du kan välja objekt att spela i en viss ordning genom att hålla nere <keycap
+>Ctrl</keycap
+> och klicka med höger musknapp på objekt i den ordning som du vill spela dem. Objekten markeras med ett nummer som visar ordningen du valt dem.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>Spellistans menyrad</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistans menyrad</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>Menyn Åtgärder</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Spela media...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar en dialogruta för att skriva in en webbadress.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Spela ljud-cd</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Låter dig visa och spela en ljud-cd med protokollet audiocd:/.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Föregående spår</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Gå till föregående spår i spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Paus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Gör paus i uppspelningen av nuvarande spår.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Stoppa</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Stoppar uppspelning.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Nästa spår</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Gå till nästa spår i spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Avsluta</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avslutar &amarok;</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>Menyn Spellista</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Lägg till media...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öppnar en dialogruta för att lägga till media i den nuvarande spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Spara spellista som...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar en dialogruta för att spara den nuvarande spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Ångra</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ångrar den senaste ändringen i spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Skift</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Gör om</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Gör om ångrade ändringar.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Rensa</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Rensar den nuvarande spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Blanda</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Blandar ordningen i den nuvarande spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Gå till aktuellt spår</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Går till spåret som för närvarande spelas i spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Köa markerade spår</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Köar alla markerade spår i spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Ta bort kopior eller saknade poster</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Tar bort alla duplicerade eller saknade poster i den nuvarande spellistan.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spellista</guimenu
+> <guimenuitem
+>Markera alla</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Markerar alla spår i den nuvarande spellistan.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>Menyn Verktyg</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Omslagshantering</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öppnar <link linkend="cover-manager"
+>omslagshanteringen</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Köhantering</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öppnar <link linkend="queue_manager"
+>köhanteringen</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Startguide</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öppnar startguiden.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Visningar</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öppnar <link linkend="visualizations"
+>visningsdialogrutan</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Equalizer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öppnar <link linkend="equalizer"
+>equalizerfönstret</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Skript</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öppnar <link linkend="script_manager"
+>skripthanteringen</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Omsök samling</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Startar en manuell avsökning av dina samlingskataloger.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Menyn Inställningar</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Dölj menyrad</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Dölj spellistefönstrets <link linkend="menubar"
+>menyrad</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Dölj verktygsrad</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Dölj spellistefönstrets <link linkend="toolbar"
+>verktygsrad</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Dölj spelarfönster</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Dölj <link linkend="player-window"
+>spelarens fönster</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Upprepa spår</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Upprepa uppspelningen av nuvarande spår.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Upprepa spellista</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Upprepa uppspelningen av nuvarande spellista.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Slumpmässigt läge</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Spelar upp spåren i spellistan i slumpmässig ordning.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Dynamiskt läge</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Startar det dynamiska läget för spellistan.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Anpassa globala genvägar...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar dialogrutan för inställning av globala genvägar.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Anpassa genvägar...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar &amarok;s inställningsdialogruta för genvägar.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Anpassa verktygsrader...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar &amarok;s dialogruta för inställning av verktygsrad.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Anpassa Amarok...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar &amarok;s inställningsdialogruta.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>Menyn Hjälp</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Hjälp</guimenu
+> <guimenuitem
+>Amarok-handbok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar den här dokumentationen.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Skift</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Hjälp</guimenu
+> <guimenuitem
+>Vad är det här?</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Aktiverar muspekaren Vad är det här.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+> <guimenuitem
+>Rapportera fel...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Startar felrapporteringsverktyget.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+> <guimenuitem
+>Om Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar dialogrutan Om Amarok.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+> <guimenuitem
+>Om KDE</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Visar dialogrutan Om KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>Spellistans verktygsrad</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av spellistans verktygsrad</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Verktygsraden i spellistans fönster finns nära nederkanten i fönstret. Verktygsraden innehåller knappar för många av spellistans åtgärder. Till höger i verktygsraden finns knappen <guibutton
+>Lägg till media</guibutton
+>, som visar en fildialogruta för att lägga till mediafiler i spellistan. Efter knappen <guibutton
+>Lägg till media</guibutton
+> finns knapparna <guibutton
+>Spara spellista</guibutton
+>, <guibutton
+>Rensa spellista</guibutton
+> och <guibutton
+>Uppdatera spellista</guibutton
+>. Du kan använda knapparna för att hantera den nuvarande spellistan.</para>
+
+<para
+>Nästa uppsättning knappar är <guibutton
+>Ångra</guibutton
+> och <guibutton
+>Gör om</guibutton
+>. Du kan använda knapparna för att ångra eller göra om alla ändringar i spellistan.</para>
+
+<para
+>I mitten av verktygsraden ser du en unik analysator, som kan ändra storlek. Du kan justera analysatorns uppdateringsfrekvens genom att använda menyn som visas med ett högerklick och välja önskad ramhastighet.</para>
+
+<para
+>Den sista knappen i verktygsraden är knappen <guibutton
+>Meny</guibutton
+>. <guibutton
+>Meny</guibutton
+> visar samma meny som ett högerklick i spelarfönstret. Du kan använda menyn för att komma åt &amarok;s inställningsalternativ.</para>
+
+<tip
+><para
+>Det finns många andra knappar tillgängliga för verktygsraden, inklusive uppspelningsknappar och en volymkontroll. Du kan ställa in vilka knappar som finns i verktygsraden genom att klicka på knappen <guibutton
+>Meny</guibutton
+> och välja <guimenuitem
+>Anpassa verktygsrader...</guimenuitem
+></para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>Spellistans statusrad</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av statusrad</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Statusraden ger snabb åtkomst till viss användbar information om spellistan. Statusraden visar nuvarande spårs titel, antal spår i spellistan tillsammans med total tid i spellistan, status för slumpmässig uppspelning och upprepning, ett litet spårpositionsreglage och nuvarande spårets speltid. Du kan ändra status för slumpmässig uppspelning och upprepning genom att dubbelklicka i respektive område i statusraden.</para>
+
+<para
+>Du kan också välja att inte visa statusraden med alternativet <guilabel
+>Visa statusrad</guilabel
+> i dialogrutan <link linkend="general-options"
+>Anpassa allmänna inställningar</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>Menyn som visas med höger musknapp</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av sammanhangsberoende meny</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Den sammanhangsberoende menyn visas genom att högerklicka i spelarfönstret. Den visas också genom att klicka på knappen <guibutton
+>Meny</guibutton
+> i spelarlistans fönster. Den sammanhangsberoende menyn används för att komma åt alla alternativ i &amarok;.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Upprepa spår</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Det här alternativet upprepar uppspelningen av nuvarande spår när det är aktiverat.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Upprepa spellista</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Det här alternativet upprepar uppspelningen av hela spellistan när det är aktiverat.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Slumpmässigt läge</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Det här alternativet gör att spåren i spellistan spelas upp i slumpmässig ordning, när det är aktiverat.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Lägg till förslag</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Lägger till föreslagna sånger från samlingsbläddraren i den nuvarande spellistan.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Omslagshantering...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Öppnar <link linkend="cover-manager"
+>omslagshanteringen</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Startguide...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Genom att klicka på det här alternativet öppnas startguiden för första inställning av &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visningar...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Genom att klicka på alternativet öppnas <link linkend="visualizations"
+>Visningsfönstret</link
+> för att välja vilka visningar som ska användas med &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Equalizer...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Öppnar <link linkend="equalizer"
+>equalizerfönstret</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Skripthantering</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Öppnar dialogrutan för skripthantering.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Anpassa verktygsrader...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Genom att klicka på det här alternativet öppnas en dialogruta för att ställa in <link linkend="toolbar"
+>spellistans verktygsrad</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Anpassa genvägar...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Genom att klicka på det här alternativet öppnas en dialogruta för att ställa in <link linkend="keybd-shortcuts"
+>genvägar i &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Anpassa globala genvägar...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Genom att klicka på alternativet öppnas en dialogruta för att ställa in <link linkend="keybd-shortcuts"
+>globala genvägar i &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Anpassa Amarok...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Genom att klicka på det här alternativet öppnas <link linkend="configuring-kapp"
+>inställningsdialogrutan i &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Det här alternativet tillhandahåller en undermeny som ger länkar till det här dokumentet och annan information om &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Avsluta</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>När det här alternativet klickas, avslutas &amarok;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Skivomslagshantering</title>
+
+<screenshot>
+	<screeninfo
+>Skivomslagshantering</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Skivomslagshantering är ett användbart verktyg för att hantera dina skivomslag. Du kan starta omslagshanteringen genom att välja <menuchoice
+><guimenu
+>Åtgärder</guimenu
+> <guimenuitem
+>Omslagshantering</guimenuitem
+></menuchoice
+> i samlingsbläddraren.</para>
+
+<para
+>Omslagshanteringen tillhandahåller en listvy av alla omslag i din samling. Du kan visa alla skivomslag för en artist genom att klicka på artisten i listvyn.</para>
+
+<para
+>Omslagshanteringen tillhandahåller en sökrad för att söka bland dina skivomslag. Omslagshanteringen söker bland albumen med sökbegreppet som du skriver in i sökraden.</para>
+
+<para
+>Menyn <guimenuitem
+>Visa</guimenuitem
+> låter dig välja vad som visas i omslagshanteringen. Du kan välja bland:</para>
+
+<para
+><guimenuitem
+>Alla album</guimenuitem
+>, som visar alla album i samlingen.</para>
+
+<para
+><guimenuitem
+>Album med omslag</guimenuitem
+>, som bara visar album som har omslagsbilder.</para>
+
+<para
+><guimenuitem
+>Album utan omslag</guimenuitem
+>, som bara visar album som inte har omslagsbilder.</para>
+
+<para
+>Knappen <guimenuitem
+>Hämta saknade omslag</guimenuitem
+> används för att ladda ner omslagsbilder för album som inte redan har omslagsbilder tillgängliga.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>Köhantering</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av köhantering</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Köhanteringen gör sitt stora intåg i &amarok; 1.3. Funktionen är konstruerad för att göra det möjligt för användare att ha ännu bättre kontroll över sina spellistor. Efter att ha köat ett spår, visas ett könummer intill det i köhanteringen. Numret anger ordningen som &amarok; kommer att spela spåret: ett kommer först, två därefter, och så vidare.</para>
+
+<para
+>Du kan använda köhanteringen genom att öppna den från <menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Köhantering</guimenuitem
+></menuchoice
+>, markera spåret och därefter klicka på ikonen <guibutton
+>+</guibutton
+> i köhanteringen. Du kan också bara dra spår till köhanteringen för att skapa en kö. Som ett alternativ kan spellistans sammanhangsberoende meny också användas och köhanteringen kan därefter öppnas för att ändra ordningen.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Dynamiska spellistor</title>
+
+	<sect2>
+		<title
+>Vad är de?</title>
+		<para
+>Dynamiska spellistor är självgenererande spellistor, som skapas enligt definierade regler, som används för att hålla den aktuella spellistan vid en hanterbar storlek. Medan &amarok; använder relativt få resurser under körning, ökas minnesanvändningen av att ladda ett stort antal spår i en spellista samtidigt, vilket möjligen kan påverka systemprestanda, något som helt kan undvikas genom att använda dynamiska spellistor. Också känt som festläge, är det ett mycket bra sätt att hålla musiken igång hela natten utan att behöva göra någonting. </para>
+	</sect2>
+
+	<sect2>
+		<title
+>Var finns de?</title>
+		<para
+>Du hittar dynamiska spellistor i spellistans sidorad.</para>
+	
+		<screenshot>
+			<screeninfo
+>Spellistans sidorad</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Spellistans sidorad</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Det finns tre typer av dynamiska spellistor, som kallas dynamiskt läge, varav två är fördefinierade (mer information om inställning av dem följer senare).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Slumpmässig blandning</term>
+				<listitem
+><para
+>Initierar en spellista med slumpmässiga spår från hela din samling, och fortsätter lägga till slumpmässiga spår.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Sånger som föreslås</term>
+				<listitem>
+					<para
+>Lägger till sånger baserat på förslag från <ulink url="http://www.last.fm"
+>last.fm</ulink
+> (tidigare Audioscrobbler). Kräver att några spår redan finns i spellistan. Observera att du inte behöver en last.fm-profil för att det ska fungera.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Blanda spellista (skapad av användaren)</term>
+				<listitem
+><para
+>Lägger till slumpmässiga spår från en angiven smart spellista, antingen inbyggd eller användardefinierad.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>Hur använder jag dem?</title>
+		<para
+>Dubbelklicka helt enkelt på spellistan du önskar, dra den till spellistans fönster, eller högerklicka och välj Ladda. Det ersätter din nuvarande spellista, så du kanske vill spara den först om den är viktig för dig. </para>
+		<para
+>Både Slumpmässig blandning och Blanda spellista befolkar spellistan och låter dig börja spela omedelbart. Föreslagna sånger börjar med en tom spellista, och kräver att du åtminstone lägger till en sång från samlingen för hand. Förslagen läggs till vid byte av spår, så spellistan befolkas inte förrän slutet av den första sången.</para>
+		<para
+>Om du vill behålla din nuvarande spellista, kan du aktivera den sista typen av dynamiskt läge genom att välja <menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Dynamiskt läge</guimenuitem
+></menuchoice
+>. Det använder den befintliga spellistan som startpunkt. Du kan inaktivera dynamiskt läge med samma menyalternativ.</para>
+		<screenshot>
+			<screeninfo
+>Dynamisk spellista laddad</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Dynamisk spellista laddad</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>Knappen <guibutton
+>Fyll i igen</guibutton
+> rensar spellistan och lägger till spår igen enligt det dynamiska läge du använder, och knappen <guibutton
+>Redigera dynamisk spellista</guibutton
+> gör att dialogrutan för inställning av dynamiskt läge dyker upp.</para
+> <note
+><para
+>Knapparna visas inte om dynamiskt läge inte har aktiverats.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Anpassa dynamiska spellistor</title>
+	<sect2>
+		<title
+>Ändra beteende hos dynamiska spellistor</title>
+		<para
+>Att högerklicka på en <guilabel
+>Dynamisk spellista</guilabel
+> gör att du kan välja <guimenuitem
+>Redigera</guimenuitem
+>, vilket öppnar dialogrutan för inställning av dynamiskt läge.</para>
+	
+		<screenshot>
+			<screeninfo
+>Inställning av dynamiskt läge</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Dynamiska spellistans namn</term>
+				<listitem>
+					<para
+>Byt namn till vad du vill, om du önskar. Spellistornas namn bör vara unika för att undvika förvirring.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Ta bort spelade spår</term>
+				<listitem>
+					<para
+>Om du inte markerar det här, växer din spellista hela tiden, inställningen Kommande spår överskrids, och du får ingen repetition av spellistan. Om inställningen markeras, tas spelade spår bort från listans början, enligt inställningen Spelade spår att visa nedan.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Markera historik</term>
+				<listitem>
+					<para
+>Gör spelade spår gråa.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Spelade spår att visa</term>
+				<listitem>
+					<para
+>Spelade spår att visa: antal spelade spår som lämnas i början på spellistan. Användbart för att se vad som nyligen har spelats.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Kommande spår</term>
+				<listitem>
+					<para
+>Det här är inställningen som begränsar storleken hos spellistan.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Spår att lägga till</term>
+				<listitem>
+					<para
+>Antal spår som läggs till i spellistan efter varje sång har spelats. Observera att om du ställer in det till mer än 1, kommer spellistan att snabbt växa, eftersom bara ett spår kan spelas och därefter tas bort åt gången.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Du kan också komma åt dialogrutan via knappen <guibutton
+>Redigera dynamisk spellista</guibutton
+> längst upp till höger i spellistans fönster.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Raden för dynamiskt läge</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Lägga till en egen dynamisk spellista</title>
+		<para
+>Högerklicka på Dynamiska spellistor och välj Ny dynamisk spellista.</para>
+
+		<screenshot>
+			<screeninfo
+>Skapa ny dynamisk spellista</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>Inställningarna till höger är som beskrivs i föregående avsnitt. I rutan till vänster kan du välja bland vilka som helst av de befintliga spellistorna och smarta spellistorna på systemet. Om du väljer flera spellistor, lägger &amarok; till slumpmässiga spår från var och en av dem.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>Skripthanteringen</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av skripthantering</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Skriptgränssnittet tillhandahåller ett enkelt sätt att utöka funktioner i &amarok;. Starta skripthanteringen genom att välja <menuchoice
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Skripthantering</guimenuitem
+></menuchoice
+> från menyraden i &amarok; för att köra ett skript i &amarok;. I skripthanteringens dialogruta hittar du en listvy med installerade skript. Markera ett skript i listvyn och klicka på knappen <guibutton
+>Kör</guibutton
+> för att starta skriptet. Skriptet i &amarok; körs till det är klart, eller stoppas manuellt genom att markera det i skripthanteringen och klicka på knappen <guibutton
+>Stoppa</guibutton
+>.</para>
+
+<tip
+><para
+>Vissa skript tillhandahåller särskilda inställningsalternativ. För att komma åt alternativen, kör först skriptet och klicka därefter på knappen <guibutton
+>Anpassa</guibutton
+> för att komma åt skriptets inställningsdialogruta.</para
+></tip>
+
+<para
+>För att installera nya skript i &amarok;, klicka på knappen <guibutton
+>Installera skript</guibutton
+> i skripthanteringens dialogruta. En filvalsdialogruta visas som låter dig välja ett skriptpaket för &amarok;. Efter att ha valt ett paket att installera, visas en ny post för skriptet i listvyn. Du kan också installera nya skript genom att klicka på knappen <guibutton
+>Hämta fler skript</guibutton
+>, som visar en dialogruta för att automatiskt ladda ner och installera skript från Internet.</para>
+
+<para
+>Du kanske också märker att det finns skript som du inte längre använder. För att avinstallera ett skript, markera skriptet i skripthanteringens listvy och klicka på knappen <guibutton
+>Avinstallera</guibutton
+>.</para>
+
+<note
+><para
+>Om du letar efter information om hur man skriver ett skript i &amarok;, se avsnittet <link linkend="script-writing"
+>Skriva skript</link
+> i det här dokumentet.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>Visningarna</title>
+
+<screenshot>
+	<screeninfo
+>Skärmbild av visningar</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Visningsfönstret används för att aktivera dina tillgängliga visningar i &amarok;. En lista med tillgängliga visningar anges i fönstret. För att aktivera en visning, markera kryssrutan intill den specifika visningen.</para>
+
+</sect1>
+
+</chapter>

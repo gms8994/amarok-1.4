@@ -1,0 +1,63 @@
+Source: amarok
+Section: kde
+Priority: optional
+Maintainer: Bogdan Butnaru <bogdanb@gmail.com>
+XSBC-Original-Maintainer: Modestas Vainius <modestas@vainius.eu>
+Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>
+Build-Depends: cdbs, debhelper (>= 5.0.0), quilt, bzip2, automake, libtool,
+ kdelibs4-dev,
+ libxine-dev, libdbus-qt-1-dev,
+ libtag1-dev, libsqlite3-dev, libtunepimp-dev,
+ libmysqlclient15-dev, libpq-dev,
+ libvisual-0.4-dev, libsdl1.2-dev,
+ libifp-dev, libusb-dev, libgpod-nogtk-dev (>= 0.4.2), libnjb-dev, libmtp-dev,
+ ruby, ruby1.8-dev
+Standards-Version: 3.8.0
+XS-VCS-Bzr: http://bazaar.launchpad.net/~kubuntu-members/amarok/debian
+XS-Original-Vcs-Svn: svn://svn.debian.org/svn/pkg-kde/kde-extras/amarok/trunk/
+Homepage: http://amarok.kde.org
+
+Package: amarok14
+Architecture: any
+Depends:  amarok14-common (>= ${source:Version}), amarok14-engine-xine (= ${binary:Version}), unzip, ${shlibs:Depends}
+Suggests: amarok14-engines, moodbar, konqueror | www-browser,
+ python, python-qt3, libqt0-ruby1.8, libvisual-0.4-plugins
+Conflicts: amarok
+Description: Amarok 1.4 series
+ This is the last version of Amarok in the 1.4 series that was published
+ in the Ubuntu repositories, before those switched to Amarok 2.*.
+ .
+ I made a few packaging tweaks, though:
+   - all binary packages are suffixed with '14'; this way aptitude 
+   doesn't attempt to upgrade them to the 2.* series
+   - packages conflict with their non-suffixed versions; note that it's
+   not normally possible to install Amarok from both 1.4 and 2.* series.
+   (It's probably technically possible, but would need much work to make
+   sure settings aren't lost.)
+   - version incremented
+
+Package: amarok14-common
+Architecture: all
+Depends: ruby
+Recommends: amarok14 (>= ${source:Version})
+Suggests: libqt0-ruby1.8, python, python-qt3
+Conflicts: amarok14 (<= 2:1.4.9.1-0ubuntu3), amarok, amarok-common
+Description: architecture independent files for Amarok
+ This package contains architecture independent files needed for Amarok to run
+ properly. It also provides Amarok documentation. Therefore, unless you have
+ 'amarok14' package installed, you will hardly find this package useful.
+ .
+ See 'amarok14' for more info
+
+Package: amarok14-engine-xine
+Architecture: any
+Depends: ${shlibs:Depends}
+Recommends: amarok14 (= ${binary:Version}), libxine1-ffmpeg
+Conflicts: amarok-xine, amarok-engine-xine
+Replaces: amarok-xine
+Description: xine engine for Amarok 1.4 series
+ This package provides the xine engine for Amarok 1.4.
+ .
+ BB: This is the only one I bothered to compile, and I suspect the others
+ might not be working anymore.
+

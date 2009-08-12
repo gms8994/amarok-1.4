@@ -1,0 +1,610 @@
+<chapter id="configuring-kapp">
+<title
+>Configurando o &amarok;</title>
+
+
+<para
+>O &amarok; é facilmente configurado no diálogo de configuração. Ele possui várias páginas para configurar as diferentes funções do &amarok;.</para>
+
+<para
+>O diálogo de configuração poderá ser encontrado selecionando a opção <guimenuitem
+>Configurar o &amarok;</guimenuitem
+> na janela do leitor, com o <link linkend="rmb-menu"
+>menu do &RMB;</link
+>.</para>
+
+
+<sect1 id="general-options">
+<title
+>Opções Gerais</title>
+
+<screenshot>
+	<screeninfo
+>Imagem das Opções Gerais</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_general.png" format="PNG"/></imageobject>
+</mediaobject>
+</screenshot>
+
+<para
+>A página de Opções Gerais está dividida em duas seções, a <guimenuitem
+>Opções Gerais</guimenuitem
+> e a <guimenuitem
+>Opções da Lista de Músicas</guimenuitem
+>.</para>
+
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opções Gerais</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Na seção das Opções Gerais, você poderá configurar algumas opções básicas do &amarok;.</para>
+
+<para
+>A sua primeira opção, a <guilabel
+>Mostrar a tela de abertura na inicialização</guilabel
+> é usada para ativar ou desativar a tela de abertura, sempre que o usuário inicia o &amarok;.</para>
+
+<para
+>Após a tela de abertura, aparece a opção <guilabel
+>Mostrar o ícone da bandeja</guilabel
+> que lhe permite ativar ou desativar o ícone da bandeja.</para>
+ 
+<para
+>A opção <guilabel
+>Animar o ícone da bandeja</guilabel
+> é usada para ativar ou desativar a animação do estado na bandeja do sistema.</para>
+
+<para
+>Em seguida existe a opção para <guilabel
+>Mostrar a Janela do Leitor</guilabel
+>. Se ativar esta opção, ativa a <link linkend="player-window"
+>janela do leitor</link
+> ao lado da <link linkend="playlist-window"
+>janela da lista de músicas</link
+> como acontece no XMMS. Se desligar esta opção, fica apenas com a lista de músicas, de forma muito semelhante ao JUK.</para>
+
+<para
+>A última opção, a <guilabel
+>Tamanho padrão das previsões das capas</guilabel
+> é uma caixa de contagem para ajustar o tamanho da imagem de capa do álbum no Navegador do Contexto para a opção <guilabel
+>Tocando Atualmente:</guilabel
+>.</para>
+
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opções da Lista de Músicas</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Na seção das Opções da Lista de Músicas você poderá configurar o comportamento da lista de músicas.</para>
+
+<para
+>A primeira opção <guilabel
+>Recordar a lista atual ao sair</guilabel
+> serve para salvar a sua lista de músicas ao sair do &amarok;. Assinale isto se quiser salvar a sua lista de músicas atual quando sair do &amarok;.</para>
+
+<para
+>Se opção <guilabel
+>Ocultar a lista de músicas com a janela principal</guilabel
+> estiver assinalada, a <link linkend="playlist-window"
+>Janela da Lista de Músicas</link
+> será ocultada também quando a janela principal também for ocultada. Se desligá-la, você poderá ocultar apenas a <link linkend="player-window"
+>Janela do Leitor</link
+> para que possa controlar o &amarok; completamente a partir da <link linkend="playlist-window"
+>Janela da Lista de Músicas</link
+>.</para>
+
+<para
+>A opção <guilabel
+>A lista desloca-se com a canção ativa</guilabel
+> desloca automaticamente a <link linkend="playlist-window"
+>Lista de Músicas</link
+> de modo que ela mostre a música que está sendo tocada atualmente.</para>
+
+<para
+>A opção <guilabel
+>Adicionar pastas recursivamente</guilabel
+> é útil quando desejar adicionar os itens multimídia de uma pasta e de todas as suas sub-pastas de uma vez.</para>
+
+<para
+>A opção <guilabel
+>Mostrar barra de estado</guilabel
+> é usada para ativar ou desativar a <link linkend="statusbar"
+>barra de estado</link
+> na janela da <link linkend="playlist-window"
+>Lista de Músicas</link
+>.</para>
+
+<para
+>Finalmente, a opção <guilabel
+>Mostrar automaticamente o Navegador de Contexto</guilabel
+> é usada para ativar o navegador de contexto automaticamente quando iniciar a reprodução.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+
+<sect1 id="configure-appearance">
+<title
+>Configurar a Aparência</title>
+
+<screenshot>
+	<screeninfo
+>Imagem para Configurar a Aparência</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_appearance.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A página de Aparência permite-lhe configurar como se parece o &amarok;. A página está dividida em três seções.</para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Fontes</guimenu
+></menuchoice
+></term>
+<listitem>
+
+<para
+>A seção de fontes é usada para selecionar as fontes usadas com o &amarok;. Selecionando a opção <guilabel
+>Usar fontes personalizadas</guilabel
+>, irá ativar a seleção de fontes no &amarok;. As opções disponíveis servem para a <link linkend="player-window"
+>Janela do Leitor</link
+>, a  <link linkend="playlist-window"
+>Janela da Lista de Músicas</link
+> e o Navegador de Contexto. Clicando no botão <guibutton
+>Escolher</guibutton
+>, você poderá escolher uma fonte no diálogo Selecionar Fontes.</para>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Esquema de Cor</guimenu
+></menuchoice
+></term>
+<listitem>
+
+<para
+>A seção do esquema de cores é usada para escolher o esquema de cores do &amarok;. <guilabel
+>O esquema de cores atual do KDE</guilabel
+> faz com que o &amarok; siga as suas cores atuais do KDE. <guilabel
+>O tema clássico, "funky-monkey", do &amarok;</guilabel
+> faz com que o &amarok; siga as cores do &amarok; original. Finalmente, se escolher o <guilabel
+>Esquema de cores personalizado</guilabel
+>, ativará seletores de cores para escolher um esquema personalizado para o &amarok;.</para>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Marcas</guimenu
+></menuchoice
+></term>
+<listitem>
+
+<para
+>A seção de marcas é para escolher a codificação das suas marcas ID3v1. Se ativar a opção <guilabel
+>Recodificar as marcas ID3v1</guilabel
+>, irá ativar uma lista para escolher a codificação que deseja usar.</para>
+
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+
+
+<sect1 id="configure-playback">
+<title
+>Configurar a Reprodução</title>
+
+
+<screenshot>
+	<screeninfo
+>Imagem de Configurar a Reprodução</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_playback.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A página para Configurar a Reprodução oferece uma interface para configurar as características da sua reprodução de áudio.</para>
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Comportamento na Transição</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Você poderá configurar como o &amarok; transita de uma música para a próxima. O <guilabel
+>Sem Decaimento</guilabel
+> apresenta um intervalo de silêncio indicado em milisegundos. O <guilabel
+>Decaimento</guilabel
+> usa uma transição suave, em que o período é também definido em milisegundos.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opções Restantes</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>O resto da página de Reprodução contém várias caixas para configurar as seguintes opções:</para>
+
+<para
+>A <guilabel
+>Reiniciar a reprodução ao iniciar</guilabel
+> permite-lhe continuar, depois de reiniciar o aplicativo, a última música que estava sendo tocada quando o &amarok; foi fechado pela última vez. </para>
+
+<para
+>A opção <guilabel
+>Usar o controle de volume por 'hardware'</guilabel
+> configura a sua barra de volume do &amarok;, de modo a que se ajuste a mesa do mixador da sua placa de som para controlar o nível de volume.</para>
+
+<para
+>A opção <guilabel
+>Relembrar efeitos</guilabel
+> salva os efeitos do seu servidor de som, que são configurados com o botão <guibutton
+>FX</guibutton
+> na <link linkend="player-window"
+>Janela do Leitor</link
+>.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+
+<sect1 id="configure-osd">
+<title
+>Configurar a Visualização na Tela (OSD)</title>
+
+<screenshot>
+	<screeninfo
+>Imagem de Configurar o OSD</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_osd.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar a Visualização na Tela</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>A página para <guilabel
+>Configurar a Visualização na Tela</guilabel
+> permite-lhe ativar este recurso. Se a opção da Visualização na Tela estiver assinalada, é ativada uma área para configurar a aparência da visualização. Quando a Visualização na Tela for ativada, é mostrado um item de previsão que lhe permite ver os efeitos das suas alterações de acordo com a aparência da Visualização na Tela</para>
+
+<para
+>A primeira opção para o OSD é a Fonte. Clicando no botão <guibutton
+>Escolher</guibutton
+>, irá abrir um diálogo de Seleção de Fonte que lhe permite escolher a fonte usada pelo OSD. Existe também uma opção para <guilabel
+>Desenhar sombra</guilabel
+> que ativa ou desativa a utilização do texto sombreado no OSD</para>
+
+<para
+>A próxima opção é para as cores do OSD. Se assinalar a opção <guibutton
+>Usar cores personalizadas</guibutton
+>, irá ativar os botões <guibutton
+>Cor do texto:</guibutton
+> e <guibutton
+>Cor de fundo:</guibutton
+>. Clicando nos botões irá abrir um diálogo para escolher a cor para o Texto do OSD e para o Fundo do OSD. Se a opção <guilabel
+>Usar cores personalizadas</guilabel
+> estiver desligada, o OSD irá seguir o seu esquema de cores atual do &kde;.</para>
+
+<para
+>O campo <guilabel
+>Mostrar o Texto</guilabel
+> é usado para configurar o texto que aparece no OSD. Se atribuir algumas variáveis, poderá personalizar o OSD de acordo com as suas necessidades. Abaixo encontra-se uma lista das variáveis e do texto que elas representam.</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Texto</entry>
+<entry
+>Variável</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>Título</entry>
+<entry
+>%title</entry>
+</row>
+
+<row>
+<entry
+>Álbum</entry>
+<entry
+>%album</entry>
+</row>
+
+<row>
+<entry
+>Artista</entry>
+<entry
+>%artist</entry>
+</row>
+
+<row>
+<entry
+>Gênero</entry>
+<entry
+>%genre</entry>
+</row>
+
+<row>
+<entry
+>Taxa de Dados</entry>
+<entry
+>%bitrate</entry>
+</row>
+
+<row>
+<entry
+>Ano</entry>
+<entry
+>%year</entry>
+</row>
+
+<row>
+<entry
+>Tamanho da Faixa</entry>
+<entry
+>%length</entry>
+</row>
+
+<row>
+<entry
+>Número de Faixa</entry>
+<entry
+>%track</entry>
+</row>
+
+<row>
+<entry
+>Nome do arquivo</entry>
+<entry
+>%file</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>A opção incremental da <guilabel
+>Duração</guilabel
+> é usada para ajustar o tempo, em milisegundos, que o OSD fica visível na sua tela.</para>
+
+<para
+>A opção do <guilabel
+>Tela</guilabel
+> só está disponível para os usuários do Xinerama. Esta opção é usada para determinar em que tela o OSD será mostrado numa configuração com vários monitores.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="configure-engine">
+<title
+>Configurar o Motor</title>
+
+<screenshot>
+	<screeninfo
+>Imagem de Configurar o Motor</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_engine.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A página para Configurar o Motor permite-lhe ajustar o seu motor de som. Alguns motores poderão ativar mais opções nesta página e isso depende do motor que selecionar.</para>
+
+</sect1>
+
+<sect1 id="configure-collection">
+<title
+>Configurar a Coleção</title>
+
+<screenshot>
+	<screeninfo
+>Imagem de Configurar a Coleção</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A página para Configurar a Coleção é usada para configurar todas as opções da coleção. Elas incluem as pastas que são usadas na sua coleção, bem como o tipo de base de dados usada para a coleção. Este diálogo está dividido em duas seções, as Pastas da Coleção e a Base de Dados da Coleção.</para>
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pastas de Coleção</guimenu
+></menuchoice
+></term>
+<listitem>
+
+<para
+>As <guilabel
+>Pastas da Coleção</guilabel
+> permitem a seleção das pastas usadas na sua coleção, mostrando o seu sistema de arquivos numa árvore. A seção das <guilabel
+>Pastas da Coleção</guilabel
+> também possui várias opções para assinalar a forma como a coleção usa as pastas selecionadas.</para>
+
+<para
+>Ative a opção <guilabel
+>Procurar as pastas recursivamente</guilabel
+> se quiser que a coleção percorra as pastas selecionadas e todas as suas sub-pastas. Se quiser que a coleção vigie as alterações feitas ao seu sistema de arquivos, ative a opção <guilabel
+>Monitorar alterações</guilabel
+>. Finalmente, se quiser importar todas as listas de músicas que forem encontradas na sua coleção, ative a opção <guilabel
+>Importar Listas de Músicas</guilabel
+>.</para>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Base de Dados de Coleção</guimenu
+></menuchoice
+></term>
+<listitem>
+
+<para
+>A <guilabel
+>Base de Dados da Coleção</guilabel
+> é usada para selecionar a base de dados a usar na coleção. Use a lista <guilabel
+>Motor:</guilabel
+> para selecionar entre o Sqlite e o MySql. Se for selecionado o MySql, será necessária mais alguma configuração na seção da <guilabel
+>Configuração do MySql</guilabel
+>.</para>
+
+<para
+>A seção <guilabel
+>Configuração MySql</guilabel
+> serve para configurar a base de dados que o &amarok; usa e onde ela se encontra. Em primeiro lugar está a <guilabel
+>Máquina:</guilabel
+> onde a base de dados MySql se encontra. Em seguida está a <guilabel
+>Porta:</guilabel
+>, que corresponde à porta da rede usada para conectar-se à base de dados. A última opção, o <guilabel
+>Nome:</guilabel
+>, é a base de dados real à qual se conectar.</para>
+
+<para
+>Use as caixas de texto <guilabel
+>Nome do usuário:</guilabel
+> e <guilabel
+>Senha:</guilabel
+> para especificar o nome de usuário e senha para se conectar à base de dados do MySql.</para>
+
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+
+<sect1 id="configure-scrobbler">
+<title
+>Configurar o Scrobbler</title>
+
+<screenshot>
+	<screeninfo
+>Imagem de Configuração do Scobbler</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_scrobbler.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A página do Scrobbler configura o suporte do Audioscrobbler no &amarok;. O Audioscrobbler envia as faixas que você ouve e corresponde o seu perfil com outras pessoas que tenham os mesmos gostos musicais, gerando deste modo recomendações com base no seu perfil.</para>
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Perfil do Audioscrobbler</guimenu
+></menuchoice
+></term>
+<listitem>
+
+<para
+>Aqui é onde você preenche o seu <guilabel
+>Usuário:</guilabel
+> e <guilabel
+>Senha:</guilabel
+> do seu perfil do Audioscrobbler,. Se não tiver um perfil do Audioscrobbler, você poderá <ulink url="http://www.audioscrobbler.com:80/signup.php"
+>registar-se aqui</ulink
+>.</para>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Envio de Faixas</guimenu
+></menuchoice
+></term>
+<listitem>
+
+<para
+>Se enviar as faixas que ouvir, o &amarok; poderá sugerir músicas novas para ouvir no Navegador de Contexto. Se assinalar a opção <guilabel
+>Enviar as faixas que toco</guilabel
+>, irá ativar este recurso e irá enviar as faixas ouvidas por você para o seu perfil do Audioscrobbler.</para>
+
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+</chapter>

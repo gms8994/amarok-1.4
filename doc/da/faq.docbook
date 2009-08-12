@@ -1,0 +1,1350 @@
+<chapter id="faq">
+<title
+>Spørgsmål og svar</title>
+
+<sect1 id="faq1">
+<title
+>Hvad er &amarok;?</title>
+
+<qandaset id="what-is">
+<qandaentry>
+
+<question>
+<para
+>Hvad er &amarok;?</para>
+</question>
+
+<answer>
+<para
+>&amarok; er en musikspiller for Unix-systemer (f.eks. Linux). Mere information findes i en <ulink url="http://amarok.kde.org/amarokwiki/index.php/What_is_Amarok%3F"
+>opsummering af dets funktioner</ulink
+> og i <ulink url="http://amarok.kde.org/index.php?set_albumName=Screenshots&amp;option=com_gallery&amp;Itemid=60&amp;include=view_album.php"
+>skærmaftryksgalleriet</ulink
+>.</para>
+</answer>
+
+</qandaentry>
+</qandaset>
+
+</sect1>
+
+<sect1 id="faq2">
+<title
+>Installation</title>
+
+<qandaset id="installation-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Kan jeg bruge &amarok; uden KDE?</para>
+</question>
+
+<answer>
+<para
+>&amarok; kræver kun KDElibs ingen andre ting fra KDE. Du skal altså have installeret KDElibs rigtigt (inklusive alle binære filer som levereres med det, eftersom &amarok; behøver visse af dem for at finde plugin og for scriptplugin). Vi har skrevet et afsnit om <ulink url="http://amarok.kde.org/amarokwiki/index.php/KDElibs_without_aRts"
+>hvordan man kompilerer et minimalt KDElibs</ulink
+>, som kan være nyttigt.</para>
+<para
+>For at visse funktioner skal være rigtige, såsom skærmvisningen, kræves at vindueshåndteringen understøtter den tilsvarende standard fra freedesktop.org. Derfor fungerer GNOME godt, mens fluxbox har visse problemer. Vi har til hensigt  at støtte &amarok; på alle platforme. Vi bruger KDElibs og Qt eftersom de tilbyder et udmærket udviklingsmiljø.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq3">
+<title
+>Fejlsøgning</title>
+
+<qandaset id="troubleshooting">
+
+<qandaentry>
+<question>
+<para
+>&amarok; bryder sammen under søgning i samlingen, altid på samme sted. Hvad er det som sker?</para>
+</question>
+
+<answer>
+<para
+>Det er sandsynligt at en fil i din samling udløser en fejl i biblioteket TagLib, og det får &amarok; til at bryde sammen. Du kan identificere filen ved at kigge i ~/.kde/share/apps/amarok/collection_scan.log. Du bør rapportere sammenbruddet til fejldatabasen for TagLib på <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+> og vedføje den fejlagtige fil. Derefter kan du fjerne filen fra din samling og gentage søgningen.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>&amarok; bryder sammen når jeg spiller et bestemt spor, hver gang. Hvad er det som er forkert?</para>
+</question>
+
+<answer>
+<para
+>Det betyder oftest at TagLib bryder sammen mens sporets mærker læses. Rapportér fejlen til TagLib på <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; bryder ofte sammen, hvad kan jeg gøre?</para>
+</question>
+
+<answer>
+<para
+>Opgradér ALSA-bibliotekerne og værktøjerne til de seneste versioner, eller brug OSS eller OSS-emulering.</para>
+<para
+>Hvis du bruger MySQL som databasegrænseflade, så forsøg med SQLite, der er noget mere moden (koden i &amarok;, ikke selve databasen). </para>
+<para
+>Forsøg med en andet lydgrænseflade.</para>
+<para
+>Sørg for at alle biblioteker som &amarok; bruger er kompileret med samme version af GCC som &amarok; selv. Situationen hvor &amarok; er kompileret med GCC 3.4.x med TagLib som er kompileret med GCC 3.3.x kan forårsage sammenbrud ved redigering af mærker.</para>
+<para
+>Hvis du bruger KDE med aRts, så forsøg at deaktivere "Luk af automatisk hvis tomgang i:" i lydsystemindstillingerne, eller brug i det mindste ikke værdien 1 sekund eftersom det blander sig i hvert gang Amarok skifter sang.</para>
+<para
+>Sende ellers tilbagemeldinger når e-mailen dukker op (du mærker det). Hvis du ofte får et sammenbrud kan du være sikker på at det rettes hvis du sender et virkeligt godt backtrace til os. Se næste afsnit for hjælp til det.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan kan jeg få et godt backtrace?</para>
+</question>
+
+<answer>
+<para
+>Se <ulink url="http://amarok.kde.org/amarokwiki/index.php/Debugging_HowTo"
+>Debugging HowTo</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; bruger ikke mærker som jeg véd findes i mine filer.</para>
+</question>
+
+<answer>
+<para
+>Hvis Konqueror eller andre programmer viser en anden information for titel, artist, album eller genre end den som &amarok; henter når din samling laves, mærkes der måske med det ældre ID3v1-formatet i stedet for de nyere ID3v2-mærker. Det kan skyldes at indstillingen <guilabel
+>Tegnsæt</guilabel
+>: Gå til <menuchoice
+><guimenu
+>Opsætning</guimenu
+><guimenuitem
+>Indstil &amarok;</guimenuitem
+></menuchoice
+> og find derefter afsnittet Tegnsæt i indstillingspanelet. Afmarkér alle afkrydsningsfelter under "Afkod ikke følgende som Latin-1:". Skan din samling igen for at hente ID3v2-mærkerne. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; viser ikke mine UTF-8 id3v2-mærker rigtigt.</para>
+</question>
+
+<answer>
+<para
+>Det skyldes at de fleste programmer skriver UTF-8 data i id3v2-mærker, men angiver ikke tegnsættet som Unicode. Følgende perl-script ordner dette:</para>
+<programlisting
+>#!/usr/bin/perl
+die "Filen $ARGV[0] findes ikke" unless -f $ARGV[0];
+use MP3::Mplib;
+my $mp3 = MP3::Mplib->new($ARGV[0]);
+my $v2tag = $mp3->get_v2tag;
+print "Fejl ved skrivning af mærket til $ARGV[0]\n" unless $mp3->set_v2tag($v2tag,&amp;UTF8);
+</programlisting>
+<note
+><para
+>Dette script kræver perl-modulet MP3::Mplib som kan installeres ved at give kommandoen <command
+>perl -MCPAN -e 'install MP3::Mplib'</command
+>.</para
+></note>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Hvorfor synes ikonerne i statuslinjen altid at være aktive?</para>
+</question>
+
+<answer>
+<para
+>Ikonerne på statuslinjen i &amarok; (tilfældig, gentag, tilføj) synes hele tiden aktive med KDE 3.4.0. Det er en kendt fejl i KDE 3.4.0. Ikoneffekter glemmes sommetider. En enkel rettelse kontrolcentret er at indstille deaktiveret tilstand til "Grå" og "Semitransparent" under <menuchoice
+><guimenu
+>Udseende og temaer</guimenu
+> <guisubmenu
+>Ikoner</guisubmenu
+> <guimenuitem
+>Avanceret</guimenuitem
+></menuchoice
+>. Bemærk at du sommetider skal klikke tre gange på ikonen inden det får effekt efter ændringen er gjort. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvorfor klager &amarok; over udefinerede symboler og nægter derefter at starte?</para>
+</question>
+
+<answer>
+<para
+>Hvis du får følgende fejl: "amarokapp: symbol lookup error: amarokapp: undefined symbol: _ZN11KSystemTray9setPixmapERK7QPixmap", så kontrollér at amarokapp bruger det rigtige libqt (kontrollér med: ldd `which amarokapp` | grep qt). </para>
+<para
+>For at rette det kan du behøve at  fjerne libqt som forårsager konflikter og/eller redigere /etc/ld.so.conf så den rigtige version hentes først.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq5">
+<title
+>Generel brug</title>
+
+<qandaset id="general-use">
+
+
+<qandaentry>
+<question>
+<para
+>Hvor kan jeg få støtte for &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Der er flere valgmuligheder. Ofte besvares problemer du har med den oprindelige installationen af &amarok; bedst af eksperter på din specielle distribution af Unix eller Linux. Du kan søge hjælp fra andre brugere eller udviklere på <ulink url="http://amarok.kde.org/index.php?option=com_simpleboard"
+>&amarok; forum</ulink
+> og <ulink url="irc://irc.freenode.net/amarok"
+>IRC-kanalen</ulink
+> på irc.freenode.net kanalen #amarok.</para>
+<note
+><para
+><ulink url="http://bugs.kde.org"
+>Bugzilla</ulink
+> er ikke et sted at søge efter understøttelse. Rapportér gerne en fejl hvis du mener det alvorligt med at hjælpe til med at rette en fejl i selve &amarok;.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Når jeg starter &amarok; ser jeg en tom spilleliste. Hvordan får jeg spor derind?</para>
+</question>
+
+<answer>
+<para
+>Enkelt. Brug filbrowseren til venstre for at gå til den ønskede mappe. Træk siden filerne til spillelisten til højre.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvor er fanebladet "Hjem"?</para>
+</question>
+
+<answer>
+<para
+>For at undgå at rode grænsefladen til er fanebladet "Hjem" overført til værktøjet "Statistik" tilgængelig med <menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guimenuitem
+>Statistik</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Der der en måde at indstille informationsmængden som "sammenhængsbrowseren" viser?</para>
+</question>
+
+<answer>
+<para
+>Ja, brug menuen som vises med højre museknap hvor som helst i "sammenhængsbrowseren" for at ændre den.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvorfor er stjerner og tal i "sammenhængsbrowseren" ikke synkroniserede?</para>
+</question>
+
+<answer>
+<para
+>Betydningen af de symboler er ændret i Amarok 1.4 "Hurtig fremad": stjerner repræsenterer den brugerdefinerede klassifikation mens cifrene viser den beregnede scoring.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>At klikke på stjernerne i "sammenhængsbrowseren" virker ikke. Hvordan klassificerer man en sang?</para>
+</question>
+
+<answer>
+<para
+>For at klassificere et spor har du brug for søjlen "Klassificering" i spillelisten. Klik med højre museknap på spillelistens titel og vælg <menuchoice
+><guimenu
+>Tilføj søjle</guimenu
+> <guimenuitem
+>Klassificering</guimenuitem
+></menuchoice
+>. Klik hvor som helst i søjlen "Klassificering" for at angive klassificeringen for et spor. Du kan også bruge genvejstaster (Win+[1-5]) for hurtigt at klassificere en sang, når Amarok kører i baggrunden.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan fjerner jeg spor fra spillelisten?</para>
+</question>
+
+<answer>
+<para
+>Vælg filerne du vil fjerne og tryk på <keycap
+>Delete</keycap
+>-tasten på tastaturet, eller højreklik på markeringen og vælg <guimenuitem
+>Fjern markerede</guimenuitem
+> i den sammenhængsafhængige menu.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan kan jeg indlæse en spilleliste?</para>
+</question>
+
+<answer>
+<para
+>Træk og slip blot spillelistefilen på spillelisten, som du ville gøre med en hvilken som helst anden fil. Det er så enkelt! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Hvordan kan jeg gemme den nuværende spilleliste?</para>
+</question>
+
+<answer>
+<para
+>Knappen <guibutton
+>Gem spilleliste</guibutton
+> er ved siden af knappen <guibutton
+>Tilføj medie</guibutton
+> i spillelistens værktøjslinje. Klik blot på den!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Der er ingen visualiseringer i visualiseringsdialogen.</para>
+</question>
+
+<answer>
+<para
+>Du har formodentlig ikke xmms-config installeret, genindstil og byg efter at have installeret den passende xmms-devel-pakke. Du vil måske også ønske at installere den nyeste udgave af  <ulink url="http://libvisual.sourceforge.net"
+>libvisual</ulink
+>, som har nogle ultralækre visualiseringer.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvor er equalizeren?</para>
+</question>
+
+<answer>
+<para
+>Equalizervinduet findes i menuen som vises med højre museknap. Du kan også finde det i menulinjen ved at vælge <menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guimenuitem
+>Equalizer</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq6">
+<title
+>Afspilning</title>
+
+<qandaset id="playback-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvilket medietyper understøtter &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Ingen. Ja, der er rigtigt. Ingen. Vores metode er uafhængig af det underliggende program, så det spørgsmål du skulle stille er "Hvilke medietyper understøtter GStreamer/xine/aRts/NMM/MAS/KDEmm support?" Som du kan gætte betyder det at vi mere understøtter nogenlunde absolut ethvert lydformat du kan komme i tanker om. GStreamer kan endog afkode tekst og PNG. </para>
+<para
+>For mere information, kig på <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Audio Engine Comparison</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvorfor kan &amarok; ikke spille MP3'er?</para>
+</question>
+
+<answer>
+<para
+>Den kan, Chancen er at du bruger Fedora/RedHat linux, de leveres ikke med MP3-dekodere som standard (på grund af patent-problemer). Løsning: Alt-F2, gg:redhat mp3 kde, ENTER</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; spiller ikke MP3-filer med SUSE Linux 9.3, hvad kan jeg gøre?</para>
+</question>
+
+<answer>
+<para
+>Åbn "YaST Online Update" og installér programrettelsen 'Multimedia Option Pack 1'. Voila, &amarok; spiller MP3-filer.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Med GStreamer-motoren får jeg 100% CPU-forbrug når jeg afspiller. Hvordan kan jeg ordne det?</para>
+</question>
+
+<answer>
+<para
+>Når GStreamer-motoren bruges med alsasink, kræver &amarok; at enheden sørger for en mikser. At mikse tillader flere programmer at få adgang til enheden samtidigt, og at lave lyde samtidigt. Dette kan enten opnås ved at bruge et lydkort med hardware-miksning (f.eks. SBLive), eller ved at bruge "dmix" plugin for alsa, som sørger for software-miksning. Se <ulink url="http://amarok.kde.org/amarokwiki/index.php/Setting_up_Dmix_for_ALSA"
+>Opsætning af Dmix for ALSA</ulink
+>. </para>
+<para
+>Efter installation skal du angive "dmix" som lydenheden i motorens indstillingsdialog.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg kan ikke få  nogetsomhelst til at blive afspillet i &amarok;, hvorfor ikke?</para>
+</question>
+
+<answer>
+<para
+>Du bliver nødt til at teste lyd-skelettet fra kommandolinjen: </para>
+<para
+><command
+>artsplay fil.mp3</command
+> <command
+>gst-launch filesrc location=/home/brugere/fil.mp3 ! spider ! audioscale ! audioconvert ! alsasink</command
+> <command
+>xine-check</command
+> </para>
+<para
+>Uddata fra disse kommandoer skulle hjælpe dig med at identificere de problemer du har og hvordan de skal rettes. Bemærk venligst at du måske har brug for en anden måde at teste GStreamer (f.eks. osssink).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kan &amarok; sende uddata direkte til OSS/ALSA?</para>
+</question>
+
+<answer>
+<para
+>Det gør vi allerede. Glem ikke at mediet skal afkodes først. Du kan ikke  blot videresende en MP3 til ALSA, så vil du kun få hvis støj. GStreamer er det bedste valg for de fleste der ønsker en afkodningsløsning med små omkostninger, den læser filen, afkoder den og sender PCM-data til ALSA. Nøjagtigt ligesom XMMS.</para>
+</answer>
+</qandaentry>
+
+
+
+<qandaentry>
+<question>
+<para
+>Men XMMS kan sende data direkte til ALSA.</para>
+</question>
+
+<answer>
+<para
+>Men den afkoder dem først. GStreamer kan også sende data direkte til ALSA. Det kan xine også.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Lyden stammer, er der noget jeg kan gøre for at forbedre dette?</para>
+</question>
+
+<answer>
+<para
+>Du kan enten bruge grænsefladen GStreamer (det er udmærket!), eller justere aRts. Åbn <menuchoice
+><guimenu
+>Kontrolcentret</guimenu
+> <guisubmenu
+>Lyd og multimedia</guisubmenu
+> <guimenuitem
+>Lydsystem</guimenuitem
+></menuchoice
+>. Aktivér <guimenuitem
+>Kør med højest mulige prioritet</guimenuitem
+> og øg størrelsen på <guimenuitem
+>Lydbuffer:</guimenuitem
+> (advarsel: se næste spørgsmål). Du bør også sikre dig at artswrapper er suid:</para>
+<para
+><command
+>su</command
+> <command
+>chmod a+rsx /path/to/kde/bin/artswrapper</command
+> <command
+>killall -9 artsd</command
+> </para>
+<para
+>Med KDE 3.2.x er der problemer med KDEMultimedia codec'er der kan forårsage  forvrænget afspilning, se venligst <ulink url="http://bugs.kde.org/show_bug.cgi?id=80497"
+>denne fejlrapport</ulink
+>. Det kan også hjælpe en hel del at forøge lydbufferen i din .asoundrc.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>CPU-forbruget er højt, er der noget jeg kan gøre for at forbedre dette?</para>
+</question>
+
+<answer>
+<para
+>Du skal enten ikke bruge aRts-motoren, brug GStreamer- eller xine-motorerne, eller adressér det  høje CPU-forbrug ved at installere KDEMultimedia i sin helhed for at få de hurtigere aRts-codec'er (f.eks. libarts_mpeglib.so, osv.)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok;-analysatorerne svarer meget langsomt.</para>
+</question>
+
+<answer>
+<para
+>Du bruger formodentlig aRts-motoren. Brug enten  en anden motor (xine-motoren er blevet stærkt modificeret til at give perfekt analyzer-sync), eller reducér størrelsen af din aRts-buffer i  kcontrol's lydsystem. Jo lavere bufferen er jo mere responsiv det visuelle. Ja det er en fejl, hjælp os venligst med at ordne den.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg har GStreamer installeret men når jeg prøver at skifte til GStreamer-motoren bryder &amarok; sammen, hvad foregår der?</para>
+</question>
+
+<answer>
+<para
+>Efter at have installeret GStreamer skal du registrere dets komponenter. At køre 'gst-register' (sommetider med et versionssuffiks, såsom gst-register-0.8) bør tage sig af registreringen af GStreamers komponenter.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg kørte gst-register men jeg har stadig besvær med GStreamer, hvad kan jeg gøre?</para>
+</question>
+
+<answer>
+<para
+>Du kan prøve <ulink url="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-using.html"
+>GStreamer FAQ</ulink
+>. Hvis alt andet mislykkes kan du prøve de meget vidende mennesker på <ulink url="irc://irc.freenode.net/gstreamer"
+>#gstreamer IRC-kanal</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; siger at GStreamer-grænsefladen ikke kan spille MP3-filer, selvom jeg har kompileret eller installeret pluginnet mad.</para>
+</question>
+
+<answer>
+<para
+>Forsøg med følgende (sørg for at &amarok; ikke kører): <ulink url="http://gstreamer.freedesktop.org/src/gst-ffmpeg/"
+>Hent</ulink
+>, kompilér og installér pakken ffmpeg. Kør gst-register (du skal måske køre det to gange, som systemadministrator og som "almindelig" brugere). Gå til pluginmappen for GStreamer (du finder den med gst-config eller gstreamer-config). Fjern ffmpeg-filerne (eller flyt dem til et andet sted). Kør gst-register igen. Start &amarok;. </para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq7">
+<title
+>Udvikling</title>
+
+<qandaset id="development-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan får jeg cvs/svn-udgaven af &amarok;?</para>
+</question>
+
+<answer>
+<para
+><ulink url="http://amarok.kde.org/amarokwiki/index.php/Installation_HowTo#Building_SVN_Amarok"
+>Hvordan får man fat i og bygger &amarok; fra SVN</ulink
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg har fundet en fejl / Jeg har en storartet idé for &amarok;.</para>
+</question>
+
+<answer>
+<para
+>Rapportér venligst til <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>, hvis du har en liste af forslag/ønsker er det måske bedre at sende dem til vores e-mail-liste: <email
+>amarok-devel@lists.sourceforge.net</email
+> </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Accepterer i programrettelser?</para>
+</question>
+
+<answer>
+<para
+>Gerne. Din bedste angrebsvinkel er at lade os vide hvad du planlægger at gøre før du udfører noget arbejde så vi kan diskutere det, men tag det roligt, vi har endnu ikke afslået nogen programrettelse. Diskussion er mest for at hjælpe dig med at rette de rigtige dele af &amarok;. Så enten indsen en rettelse til e-mail-listen, eller indsend den hvis du har adgang til svn. Lad os imidlertid vide det før du indsender nye funktioner til svn. hvis du har en fejlrettelse så gå blot i gang, dette er jo åben kilde :)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvorfor valgte i navnet &amarok;?</para>
+</question>
+
+<answer>
+<para
+>&amarok; er et album af den engelske komponist Mike Oldfield. Jeg kan  vældig godt lide det, og jeg synes at navnet klinger godt. Desuden indeholder det naturligvis det meget vigtige <quote
+>K</quote
+>.. :) </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Er det &amarok;, AmaroK eller Amarok?</para>
+</question>
+
+<answer>
+<para
+>Det er &amarok;! Men vi forstår at det er ukonventionelt.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq8">
+<title
+>Tips og Tricks</title>
+
+<qandaset id="tipsandtricks-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan bruger jeg &amarok; som et vækkeur?</para>
+</question>
+
+<answer>
+<para
+>Rent faktisk kan du allerede dette takket være DCOPs magi :) Sæt blot en alarm i dit foretrukne kalenderprogram og bed det om at køre følgende kommando: <command
+>dcop amarok player play</command
+> </para>
+<para
+>Denne kommando vil bede &amarok; om at begynde at spille. Sørg for at &amarok; kører før du går i seng, så skulle du blive vækket til de muntre toner af det du trykkede på stop for før du gik i seng.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan får jeg det &amarok; spiller lige nu, når jeg er på en anden computer?</para>
+</question>
+
+<answer>
+<para
+>Hvis du har et rigtigt indstille ssh-miljø, kan du bruge det til at få fat i  informationen. Følgende kommando vil give strengen der spilles nu. <command
+>ssh -i ~/.ssh/id_rsa yourip dcop --user ditbrugernavn amarok player nowPlaying</command
+> </para>
+<para
+>Sørg for at du erstatter dit-ip med dit IP og dit-brugernavn med dit brugernavn. Bemærk også at dette forventer at din identifikation findes i  ~/.ssh/id_rsa filen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvilke slags trick kan spillervinduet udføre?</para>
+</question>
+
+<answer>
+<para
+>&amarok;-spillerens analysatorer kan frigøres fra spillervinduet. Ved at trykke på <keycap
+>D</keycap
+> på tastaturet, åbnes den aktive analysator i et uafhængigt vindue, hvis størrelse kan ændres.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvilke slags trick kan spillelistens vindue udføre?</para>
+</question>
+
+<answer>
+<para
+>At holde Ctrl nede og klikke med højre museknap sætter filerne i kø i den rækkefølge du klikker på dem. At trykke på returtasten efter at have gjort en søgning i spillelisten spiller første søgepunkt og rydder søgningen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg forstår at spillervinduet og spillelistens vindue har smarte tricks, men hvad gælder for ikonen i statusfeltet?</para>
+</question>
+
+<answer>
+<para
+>At holde musen stille over ikonen viser en behagelig meddelelse med information om det nuværende spor. At klikke med musens midterste knap holder pause i det nuværende spor. At rulle med mushjulet ændrer lydstyrken. At holde shift-tasten nede mens musehjulet rulles søger i det nuværende spor. At holde Ctrl-tasten nede mens musehjulet rulles hopper mellem sporene i spillelisten. At trække og slippe punkter på ikonen i statusfeltet viser en sammenhængsafhængig menu som lader dig vælge mellem tre muligheder, Tilføj til spilleliste, Tilføj og spil, og Annullér. Ikonen i statusfeltet angiver også position i sangen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvor finder jeg indstillingerne i &amarok;?</para>
+</question>
+
+<answer>
+<para
+>~/.kde/share/apps/amarok ~/.kde/share/config/amarokrc</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan deaktiverer man en browserfunktion i &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Ved at klikke med højre museknap på en hvilken som helst browsertitel vises en liste med synlige browsere. Du kan bruge denne liste til at deaktivere eller reaktivere tilgængelige browsere.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq9">
+<title
+>Generelle spørgsmål</title>
+
+<qandaset id="general-questions-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan bruger jeg en ekstern MySQL-database med &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Se <ulink url="http://amarok.kde.org/amarokwiki/index.php/MySQL_HowTo"
+>MySQL HowTo</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Min hjemmemappe $HOME findes på NFS. Efter start mislykkes &amarok; med at bygge samlingen, og skriver mange databasfejl ud på terminalen. Hvad kan gøres?</para>
+</question>
+
+<answer>
+<para
+>Den interne databasen SQLite som &amarok; normalt bruger fungerer ikke med NFS. Du skal enten lave et link til en lokal enhed for mappen ~/.kde/share/apps/amarok, eller bruge understøttelse for MySQL.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan kan jeg rippe og indkode en lyd-cd med &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Indsæt din cd, og klik derefter på "Spil lyd-cd" i menuen. Filbrowseren dukker op og viser et træ med flere mapper. Gå til mappen "wav", vælg nogle spor og træk dem til det ønskede sted i et Konqueror-vindue for normal lagring. Træk filer fra mapperne "mp3" eller "ogg" i stedet, for automatisk kodning.</para>
+<note
+><para
+>Cd-ripning kræver at "Audiocd I/O-slaven" er installeret. Den er en del af KDE Multimedia.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan bestemmes sporenes scoring?</para>
+</question>
+
+<answer>
+<para
+>&amarok; tildeler scoring (et tal 1-100) til en sang baseret på hvor mange ganger du har lyttet til den og om du springer over sangen uden at lytte færdigt. Hver gang sangen holder op med at spille ændres scoringen. Koden for at ændre scoring er i collectiondb.cpp. I version 1.2.2 fandtes den på linje 1181, men du kan finde den ved at søge efter "CollectionDB::addSongPercentage". Når scoring defineres for et spor som aldrig tidligere er spillet, bruger &amarok; beregningen score = ( ( 50 + percentage ) / 2 ).</para>
+<para
+>Dette sætter scoringen lig med et tal fra 25-75 afhængig af hvor langt sangen blev tilladt at spille. Hvis brugeren for eksempel stopper eller springer over sangen efter kun 25 % er spillet, bliver scoringen  (50+25)/2, eller 37,5. Scoring vises dog som heltal, så tallet afrundes til nærmeste heltal inden det vises. Scoringer opbevares imidlertid internt som et decimaltal, eftersom når en sang er spillet flere gange kan det være umuligt at ændre scoringen mere end et skridt med en enkelt afspilning (se nedenfor). Når scoringen defineres for et spor som er spillet tidligere er beregningen noget mere kompliceret. I kildekoden er det score = ( ( values[2].toDouble() * values.first().toInt() ) + percentage ) / ( values.first().toInt() + 1 );</para>
+<para
+>Erstat værdierne på følgende linje:</para>
+<programlisting
+>QStringList values = query( QString(
+           "SELECT playcounter, createdate, percentage FROM statistics "
+           "WHERE url = '%1';" )
+           .arg( escapeString( url ) ) );
+</programlisting>
+<para
+>Vi har score = ( ( statistics_percentage.toDouble() * PlayCounter.toInt() ) + percentage ) / ( PlayCounter.toInt() + 1 ); </para>
+<para
+>Egentlig justeres den tidligere scoring (statistics_percentage) med en aftagende værdi afhængig af hvor mange gange sporet spilles. Jo flere gange et spor bliver spillet, desto mindre påvirkning har hver afspilning på scoringen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan ændrer jeg et spors scoring manuelt?</para>
+</question>
+
+<answer>
+<para
+>Du kan ændre scoring manuelt ved at højreklikke på spillelistens søjleoverskrifter (dem som siger titel, artist, album, osv.) og vælge Scoring. Derefter kan du ændre scoring som en hvilken som helst anden egenskab for sangen, ved at højreklikke på den og vælge "Redigér mærket 'Scoring'" eller trykke på F2. Du kan også redigere scoring i mærkedialogen, tilgængelig ved at højreklikke på et spor.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvorfor er &amarok; ikke en del af KDE multimedia?</para>
+</question>
+
+<answer>
+<para
+>Udviklerne vil ikke at øvrigheden skal fortælle dem hvornår de kan udgive (hvilket betyder at pakkerne i selve KDE ikke har en udgivelsesplan som passersammen med den hurtige udvikling af &amarok;).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan forhindrer jeg at ikonen for &amarok; blinker i statusfeltet?</para>
+</question>
+
+<answer>
+<para
+>Det er en ny funktion som er tilføjedes som visse brugere kan synes er distraherende. Afmarkér blot tilvalget "Blinkende ikon i statusfeltet under afspilning" under generelle tilvalg.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan kan jeg vise eller fjerne analysatoren i spillelistens vindue?</para>
+</question>
+
+<answer>
+<para
+>Spillelistens analysator er en del af spillelistens værktøjslinje. Vælg <menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guimenuitem
+>Indstil værktøjslinjer</guimenuitem
+></menuchoice
+>, og tilføj eller fjern analysatoren fra nuværende handlinger. Klik på O.k. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan ændrer jeg sammenhængsbrowserens tema?</para>
+</question>
+
+<answer>
+<para
+>Hent et <ulink url="http://amarok.kde.org/amarokwiki/index.php/Themes"
+>tema</ulink
+> eller lav dit <ulink url="http://amarok.kde.org/amarokwiki/index.php/CSS_Styles"
+>eget</ulink
+>. Installér det med <menuchoice
+><guimenu
+>Indstil &amarok;...</guimenu
+><guisubmenu
+>Udseende</guisubmenu
+> <guimenuitem
+>Stil for sammenhængsbrowsere</guimenuitem
+></menuchoice
+>, og klik på Installér ny stil.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvilke legale problemer forårsagede at ikonen "Blå ulv" blev erstattet?</para>
+</question>
+
+<answer>
+<para
+>Ikonen lignede alt for meget logotypen for Warp Graphics, Inc. (elfquest.com), så det var nødvendigt at fjerne den for at undgå problemer.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg ser ingen visualiseringer. Hvor kan jeg få fat på dem?</para>
+</question>
+
+<answer>
+<para
+>Installér seneste udgave af <ulink url="http://libvisual.sf.net"
+>libvisual</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan kan jeg tilføje mine favoritstrømme til &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Indlæs først af alt strømmen i spillelisten. Der er flere måder at gøre dette. Du kan helt enkelt klikke på en url til en strømmende spilleliste i Konqueror. &amarok; åbner så automatisk strømmen. Klik for eksempel på knappen "Tune in" i <ulink url="http://www.shoutcast.com"
+>shoutcast.com</ulink
+>. Du kan også bruge funktionen "Tilføj medie" til at indlæse en strøm. Når strømmen er indlæst, kan du gemme den ved at højreklikke på "Nuværende spilleliste" i spillelistebrowseren og derefter vælge "Gem" og give den et meningsfuldt navn. Strømmen tilføjes derefter i spillelistebrowserens visning til senere brug.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq10">
+<title
+>Konquerors sidebjælke</title>
+
+<qandaset id="konq-sidebar-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvad er Konquerors sidebjælke?</para>
+</question>
+
+<answer>
+<para
+>Konquerors sidebjælke lader dig overvåge og styre &amarok; mens du bladrer med Konqueror. For at se den, kør Konqueror, tryk på F9 for at vise sidebjælken, klik på (den øverste) knap Egenskaber og vælg <menuchoice
+><guimenu
+>Tilføj</guimenu
+> <guimenuitem
+> &amarok;</guimenuitem
+></menuchoice
+> i dropned-feltets menu.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq11">
+<title
+>Audioscrobbler</title>
+
+<qandaset id="audioscrobbler-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvad er Audioscrobbler?</para>
+</question>
+
+<answer>
+<para
+>Audioscrobbler er en gratistjeneste som sender information om hvilke sange som spilles til en uafhængig server. At anmelde sig til tjenesten er gratis og kræver kun at du vælger et brugernavn og kodeord som ikke allerede bruges. Audioscrobbler udnyttes for øjeblikket i &amarok;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg vil ikke have at &amarok; skal sende information til Audioscrobbler.</para>
+</question>
+
+<answer>
+<para
+>Afmarkér "send spor jeg spiller ind" for at forhindre at Audioscrobbler spørges om foreslåede spor.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan kommer jeg til gruppen &amarok; i Audioscrobbler?</para>
+</question>
+
+<answer>
+<para
+>Gruppen &amarok; i Audioscrobbler er her: <ulink url="http://www.audioscrobbler.com/group/Amarok+users/"
+>Gruppen &amarok; i Audioscrobbler</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq12">
+<title
+>Generelle  grænseflade- og afspilningsspørgsmål</title>
+
+<qandaset id="general-engine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvilken lydgrænseflade skal jeg bruge?</para>
+</question>
+
+<answer>
+<para
+>Kig i <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Audio Engine Comparison</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hvilken version af ALSA skal jeg bruge?</para>
+</question>
+
+<answer>
+<para
+>Hvis du bruger ALSA til lyd, skal du bruge den seneste tilgængelige udgave af ALSA. Gamle versioner af ALSA har forårsaget mange sammenbrud, og har forårsaget mange fejldirigerede sammenbrudsrapporter.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg har installeret GStreamer, Xine, osv., men tilsvarende lydgrænseflade vises ikke. Hvad foregår der?</para>
+</question>
+
+<answer>
+<para
+>&amarok; blev formodentlig kompileret inden du havde installeret Xine og/eller GStreamer, så scriptet ./configure ikke inkluderede dem i listen med grænseflader som skulle bygges. Du skal genbygge &amarok;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Men jeg byggede &amarok; igen efter at have installeret GStreamer og/eller Xine, men grænsefladen vises alligevel ikke. Hvad skete der?</para>
+</question>
+
+<answer>
+<para
+>Du bruger formodentlig en distribution som pakker udviklingsbiblioteker separat fra hovedbiblioteket, så selvom gstreamer er installeret, kan &amarok; ikke linkes med det eftersom gstreamer-devel ikke er installeret. Det samme gælder for xine, du skal installere xine-devel hvis din distribution opdeler pakker på denne måde. Glem ikke at genbygge &amarok; efter udviklingspakken er installeret.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq13">
+<title
+>GStreamer-grænsefladen</title>
+
+<qandaset id="gstreamer-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvorfor er det altid et gap også selvom jeg har aktiveret glidende overgang?</para>
+</question>
+
+<answer>
+<para
+>Sørg for at du ikke har installeret gst-ffmpeg. Installér i stedet pluginnet gst-mad. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg får følgende fejl:  "GStreamer-CRITICAL **: Factory for `adder' has no type.". Hvordan kan det ordnes?</para>
+</question>
+
+<answer>
+<para
+>GStreamer blev bygget med prelinking, hvilket ikke virker for GStreamer. Du skal genbygge det uden dette tilvalg. Desuden råder merlin-tc: <quote
+>Brug desuden ikke nogen ldflags når GStreamer bygges.</quote
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Du får fejlen "There is no element present to handle the file's mimetype audia/mp4" også selvom du har installeret det rigtige plugin gstreamer-faad.</para>
+</question>
+
+<answer>
+<para
+>For at spille mp4- eller m4a-filer med GStreamer skal du også have gstreamer-quicktime installeret udover gstreamer-faad.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Du får fejlen "There is no element present to handle the stream's mimetype audio/mpeg".</para>
+</question>
+
+<answer>
+<para
+>Du forsøger at spille en MP3-strøm uden pluginnet gstreamer-mad installeret. Installér pluginnet gstreamer-mad og kør "gst-register" som systemadministrator inden du genstarter &amarok;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jeg har et andet lydkort og bruger ALSA. Hvordan får jeg Amarok til at bruge dette i stedet for standardkortet?</para>
+</question>
+
+<answer>
+<para
+>Markér afkrydsningsfeltet 'Enhed' og markér enheden under <menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guisubmenu
+>Indstil Amarok</guisubmenu
+><guimenuitem
+>Grænseflade</guimenuitem
+></menuchoice
+>. Typisk værdi for standardlydkort er 'hw:0' og 'hw:1' for det andet lydkort.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq14">
+<title
+>Xine-grænsefladen</title>
+
+<qandaset id="xine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hvordan kan jeg ændre hvor lyd kommer ud?</para>
+</question>
+
+<answer>
+<para
+>Hvis du bruger ALSA kan du sende lyden ud til en specifik enhed med Xine. Indstil filen ~/.asoundrc (kun for brugeren) eller /etc/asound.conf (for hele systemet) til at oprette aliasser for dine hardwareenheder, og indsæt et alias i Xine-grænsefladens indstillingsfaneblad i feltet "Enhed som bruges for stereoudskrift:". Alternativt kan du direkte indtaste ALSA-enheden (hw:0,0 eller hw:1,0 og så videre). Hvis du vælger den sidste (alternative) metode, skal du være klar over at metoden at sende via ALSA-biblioteket med tilsvarende ALSA plug (f.eks. plughw:0,0 eller plughw:1,0 og så videre) stærkt foretrækkes.</para>
+<para
+>Her er et eksempel på en ~/.asoundrc for en maskine som har en indbygget Intel AC97-afkoder og en usb-audio enhed:</para>
+<programlisting
+>       pcm.intel8x0 {
+          type plug
+          slave.pcm "hw:0"
+       }
+      
+       ctl.intel8x0 {
+          type hw
+          card 0
+       }
+       
+       pcm.usb-audio {
+          type plug
+          slave.pcm "hw:1"
+       }
+       
+       ctl.usb-audio {
+          type hw
+          card 1
+       }
+</programlisting>
+<para
+>Skriv nu usb-audio i Xine-grænsefladens indstillingsskærm, så skulle lyden gå til enheden usb-audio (hvor ALSA-biblioteket håndterer konvertering af samplingsfrekvens, kanaler og så videre).</para>
+<para
+>For at bruge en virtuel enhed med dmix, skal du sørge for at afkrydsningsfeltet "Lydkortet kan udføre mmap" er afmarkeret.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq15">
+<title
+>aRts-grænsefladen</title>
+
+<note
+><para
+>Desværre har aRts-grænsefladen ikke nogen udvikler, men føl dig fri til at ordne det selv. Du vil kunne blive den nye udvikler af aRts-grænsefladen som vi desperat behøver!</para
+></note>
+
+</sect1>
+
+
+</chapter>

@@ -1,0 +1,665 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY amarok "Amarok">
+ <!ENTITY amarok-quick SYSTEM "quick.docbook">
+ <!ENTITY amarok-config SYSTEM "config.docbook">
+ <!ENTITY amarok-using SYSTEM "using.docbook">
+ <!ENTITY amarok-advanced SYSTEM "advanced.docbook">
+ <!ENTITY amarok-req SYSTEM "requirements.docbook">
+ <!ENTITY amarok-faq SYSTEM "faq.docbook">
+ <!--<!ENTITY amarok-tech SYSTEM "technology.docbook"
+>-->
+ <!ENTITY kappname "&amarok;">
+ <!ENTITY package "extragear">
+ <!ENTITY RMB "right mouse button">
+ <!ENTITY k3b "K3b">
+ <!ENTITY % addindex "IGNORE">
+ <!ENTITY % Portuguese "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>O Manual do &amarok;</title>
+
+<authorgroup>
+ <author
+><firstname
+>Mike</firstname
+> <surname
+>Diehl</surname
+> <affiliation
+> <address
+><email
+>madpenguin8@yahoo.com</email
+></address>
+ </affiliation>
+</author>
+
+<othercredit role="developer">
+ <firstname
+>A Equipa de Desenvolvimento Amarok</firstname>
+ <contrib
+>Programadores</contrib>
+</othercredit>
+
+<othercredit role="translator"
+><firstname
+>Pedro</firstname
+><surname
+>Morais</surname
+><affiliation
+><address
+><email
+>morais@kde.org</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+ <year
+>2005</year>
+ <holder
+>A Equipa de Desenvolvimento do Amarok</holder>
+</copyright>
+
+<copyright>
+ <year
+>2006</year>
+ <holder
+>A Ekipa do doKymotion</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2006-02-20</date
+> <!-- CHANGE ME -->
+<releaseinfo
+>2.1</releaseinfo>
+
+<abstract>
+ <para
+>&amarok; é uma leitor multimédia para o Ambiente de Trabalho K.</para>
+</abstract>
+
+<keywordset>
+ <keyword
+>KDE</keyword>
+ <keyword
+>multimédia</keyword>
+ <keyword
+>leitor</keyword>
+ <keyword
+>áudio</keyword>
+ <keyword
+>ogg</keyword>
+ <keyword
+>mp3</keyword>
+ <keyword
+>wav</keyword>
+ <keyword
+>música</keyword>
+ <keyword
+>som</keyword>
+ <keyword
+>programa</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> <!--Merge with technology.docbook-->
+<title
+>Introdução</title>
+
+<screenshot>
+ <screeninfo
+>Logótipo</screeninfo>
+ <mediaobject>
+ <imageobject
+><imagedata fileref="logo.png" format="PNG"/></imageobject>
+ </mediaobject>
+</screenshot>
+
+<para
+>O &amarok; é o leitor de áudio para o &kde;, que é extremamente poderoso, mas à mesma simples de usar. </para>
+
+<para
+>Com o &amarok;, poderá simplesmente arrastar e largar músicas na lista. Talvez queira procurar por aquela música em especial no meio dos milhares da sua colecção. O navegador da colecção do &amarok;, com a sua barra de procura, ajudá-lo-á a procurar essa música numa questão de segundos.</para>
+
+<para
+>Com isto, parece que o &amarok; tem as mesmas funcionalidades antigas que qualquer leitor de áudio médio tem, mas ainda não parámos. Uma vista de olhos no navegador de contexto fará com que veja porque é que o &amarok; está um passo à frente do resto. O navegador de contexto mostra todos os tipos de informação relacionados com a sua faixa actua - desde a capa do álbum até às outras músicas do mesmo artista, passando pelos artistas relacionados - uma forma informativa mas também divertido de ver a sua colecção!</para>
+
+<para
+>Você já tem várias listas de músicas diferentes mas não se consegue decidir qual deseja usar? Então o navegador das listas de músicas é mesmo o indicado para si. Nunca sabe o que deseja ouvir? O Modo Dinâmico do Amarok irá escolher as suas músicas por si, e as Listas Inteligentes permitem-lhe saltar para áreas específicas da sua colecção.</para>
+
+<para
+>O Amarok tem um suporte impecável para o iPod da Apple, o IFP da iRiver e para uma variedade de dispositivos genéricos USB. Também oferece várias plataformas de áudio diferentes, permitindo a SI escolher como deseja ouvir a sua música. Estas e muitas outras funcionalidades fazem dele o leitor de áudio mais avançado disponível. O &amarok; é inteligente, 'sexy' e apto. Esperamos que o seu uso lhe permita de facto "Descobrir de novo a sua música!"</para>
+
+</chapter>
+
+<!--&amarok-tech;-->
+
+&amarok-quick;
+
+&amarok-config;
+
+&amarok-using;
+
+&amarok-advanced;
+
+&amarok-faq;
+
+<chapter id="credits">
+<title
+>Créditos e Licença</title>
+
+<para
+>Programa copyright 2003-2005 Mark Kretschmann <email
+>markey@web.de</email
+> e A Equipa do AmaroK.</para>
+
+<itemizedlist>
+<title
+>A Equipa AmaroK</title>
+<listitem
+><para
+>Christian <quote
+>babe-magnet</quote
+> Muehlhaeuser <email
+>chris@chris.de</email
+></para
+></listitem>
+<listitem
+><para
+>Frederik <quote
+>ich bin kein Deustcher!</quote
+> Holljen <email
+>fh@ez.no</email
+></para
+></listitem>
+<listitem
+><para
+>Mark <quote
+>é bom, mas não é o irssi</quote
+> Kretschmann <email
+>markey@web.de</email
+></para
+></listitem>
+<listitem
+><para
+>Max <quote
+>Turtle-Power</quote
+> Howell <email
+>max.howell@methylblue.com</email
+></para
+></listitem>
+<listitem
+><para
+>Mike <quote
+>purple is not girly!</quote
+> Diehl <email
+>madpenguin8@yahoo.com</email
+></para
+></listitem>
+<listitem
+><para
+>Pierpaolo <quote
+>Spaghetti Coder</quote
+> Di Panfilo<email
+>pippo_dp@libero.it</email
+></para>
+</listitem>
+<listitem
+><para
+>Roman <quote
+>e Deus disse, haja o Mac</quote
+> Becker <email
+>roman@formmorf.de</email
+></para
+></listitem>
+<listitem
+><para
+>Seb <quote
+>Surfin' down under</quote
+> Ruiz <email
+>me@sebruiz.net</email
+></para
+></listitem>
+<listitem
+><para
+>Stanislav <quote
+>alguém disse DCOP?</quote
+> Karchebny <email
+>Stanislav.Karchebny@kdemail.net</email
+></para
+></listitem>
+</itemizedlist>
+
+<itemizedlist>
+<title
+>Contribuições:</title>
+
+<listitem>
+<para
+>Adam Pigg (analisadores, correcções) <email
+>adam@piggz.fsnet.co.uk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Adeodato Simo (correcções) <email
+>asp16@alu.ua.es</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Alexandre Oliveira (melhorias, correcções de erros) <email
+>aleprj@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andreas Mair (Suporte MySql) <email
+>am_ml@linogate.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andrew de Quincey (suporte de Postgresql) <email
+>adq_dvb@lidskialf.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Christie Harris (roKymoter) <email
+>dangle.baby@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Leinir Turthra Jensen (assistente de primeira execução) <email
+>admin@removeleinir.dk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Meltzer (roKymoter) <email
+>hydrogen@notyetimplemented.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Enrico Ros (analisadores, rei do openGL) <email
+>eros.kde@email.it</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Florian 'da-flow' Egerer (ícone Lobo Azul da aplicação Amarok) <email
+>flo_for_never@gmx.at</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Gérard Dürrmeyer (ícones e trabalho de imagens) <email
+>gerard@randomtree.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Greg Meyer (Ajuda fabulosa com a nossa avalanche de erros pré-1.2) <email
+>greg@gkmweb.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Harald Sitter (roKymoter, melhorias no manual, traduções, correcções de erros, imagens) <email
+>harald.sitter@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Ian Monroe (correcções, modelo de programas em Ruby (eean) )<email
+>ian@monroe.nu</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jarkko Lehti (testes) <email
+>grue@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jocke Andersson (roKymoter) <email
+>ajocke@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenneth Wesley Wimer II (ícones) <email
+>kwwii@bootsplash.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenny Lemieux (administrador Web do Amarok) <email
+>swaft@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Melchior Franz (nova rotina FFT, correcções) <email
+>mfranz@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Michael Pyne (código de exportação para o K3B) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Nenad Grujicic (ecrã inicial do 1.1) <email
+>mchitman@neobee.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Olivier Bédard (alojamento da página Web) <email
+>paleo@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Reigo Reinmets (suporte de Wikipedia, correcções) <email
+>xatax@hot.ee</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Roland Gigler (motor do MAS) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sami Nieminen (suporte do Audioscrobbler) <email
+>sami.nieminen@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Scott Wheeler (TagLib) <email
+>wheeler@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Bogner (Montes de coisas) <email
+>bochi@online.ms</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Siegel (correcções de erros, actualizações) <email
+>kde@sdas.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sven Krohlas (roKymoter) <email
+>sven@asbest-online.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Whitehawk Stormchaser (testes, correcções) <email
+>zerokode@gmx.net</email
+></para>
+</listitem>
+
+</itemizedlist>
+
+<para
+>Documentação copyright 2005 Mike Diehl <email
+>madpenguin8@yahoo.com</email
+></para>
+&underFDL; &underGPL; </chapter>
+
+&amarok-req;
+
+<appendix id="installation">
+<title
+>Instalação</title>
+
+<sect1 id="getting-kapp">
+<title
+>Como obter o &amarok;</title>
+
+<para
+>&amarok; pode ser obtido na <ulink url="http://amarok.kde.org"
+>página do &amarok;</ulink
+></para>
+
+
+<para
+>A versão de desenvolvimento mais recente pode ser obtida no módulo de SVN do &kde; /trunk/extragear/multimedia/amarok/.</para>
+
+<sect2>
+<title
+>Como compilar o &amarok;</title>
+
+<para
+>Para poder compilar e instalar o Amarok no seu sistema, escreva o seguinte comando na directoria de base da distribuição do Amarok:</para>
+
+<para
+><command
+>./configure --prefix=`kde-config --prefix`</command
+> <command
+>make</command
+> <command
+>su -c "make install"</command
+> </para>
+
+<note
+><para
+>A opção do 'configure' --enable-final já não é mais suportada.</para
+></note>
+
+<para
+>Dado que o &amarok; usa o <keycap
+>autoconf</keycap
+> e o <keycap
+>automake</keycap
+>, não deverá ter problemas a compilá-lo. Se porventura os tiver, comunique-os por favor nas listas de correio do &kde;.</para>
+
+</sect2>
+
+<sect2>
+<title
+>Opções de Configuração</title>
+
+<para
+>O &amarok; é como as outras aplicações, na medida em que tem várias opções de compilação que poderão ser activadas ou desactivadas durante o 'configure'. Esta é uma lista das opções que poderão ser configuradas.</para>
+
+<note
+><para
+>Algumas das opções de compilação necessitam de usar certas dependências específicas. Veja a <link linkend="requirements"
+>secção de requisitos</link
+> para mais detalhes.</para
+></note>
+
+<informaltable>
+<tgroup cols="3">
+<thead>
+
+<row>
+<entry
+>Opção</entry>
+<entry
+>Predefinição</entry>
+<entry
+>Descrição</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--enable-debug=</entry>
+<entry
+>no</entry>
+<entry
+>Activa os símbolos de depuração. Opte por <quote
+>yes</quote
+>, <quote
+>no</quote
+> e <quote
+>full</quote
+>. Por favor, use o <quote
+>full</quote
+> se estiver interessado em ajudar no desenvolvimento do &amarok;.</entry>
+</row>
+
+<row>
+<entry
+>--enable-mysql</entry>
+<entry
+>Desactivado</entry>
+<entry
+>Activa o suporte da base de dados MySQL no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--disable-amazon</entry>
+<entry
+>Activo</entry>
+<entry
+>Desactiva o suporte de obtenções das capas na Amazon para o &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-arts</entry>
+<entry
+>Com</entry>
+<entry
+>Desactiva o suporte do aRts no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-gstreamer</entry>
+<entry
+>Com</entry>
+<entry
+>Desactiva o suporte do GStreamer no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--with-helix</entry>
+<entry
+>Com</entry>
+<entry
+>Desactiva o suporte do motor Helix no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-xine</entry>
+<entry
+>Com</entry>
+<entry
+>Desactiva o suporte do Xine no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--with-nmm</entry>
+<entry
+>Sem</entry>
+<entry
+>Activa o suporte do NMM no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--with-mas</entry>
+<entry
+>Sem</entry>
+<entry
+>Activa o suporte do MAS no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-opengl</entry>
+<entry
+>Com</entry>
+<entry
+>Desactiva o suporte de OpenGL (analisador) no &amarok;</entry>
+</row>
+
+<row>
+<entry
+>--without-included-sqlite</entry>
+<entry
+>Com</entry>
+<entry
+>Não usa o código do 'sqlite' incluído (necessita de ter o 'sqlite' instalado)</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+
+</book>

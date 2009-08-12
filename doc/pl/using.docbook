@@ -1,0 +1,2272 @@
+<chapter id="using-kapp">
+<title
+>Korzystanie z programu &amarok-mianownik;</title>
+
+<para
+>&amarok-mianownik; jest odtwarzaczem audio, który umożliwia zarządzanie plikami muzycznymi na wiele różnych sposobów. Podobnie jak zwyczajne odtwarzacze audio, &amarok-mianownik; posiada okno odtwarzacza służące do obsługi najważniejszych funkcji programu. &amarok-mianownik; obsługuje także listy odtwarzania. Okno list odtwarzania posiada wiele sekcji, które umożliwiają tworzenie i przeglądanie kolekcji plików audio.</para>
+
+<para
+>W tym rozdziale omówione zostanie korzystanie z wszystkich funkcji programu &amarok-mianownik;, łącznie z tworzeniem kolekcji i list odtwarzania.</para>
+
+<sect1 id="player-window">
+<title
+>Okno odtwarzacza</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu okna odtwarzacza</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Okno odtwarzacza jest Twoim centrum sterowania programem &amarok-mianownik;. U góry odtwarzacza znajduje się obszar pokazujący obecnie odtwarzany utwór. Zaraz poniżej umieszczony jest obszar, który przedstawia czas trwania utworu, jego szybkość transmisji, oraz częstotliwość próbkowania. Kliknięcie na tym obszarze powoduje przełączenie pokazywanego czasu na pokazywanie czasu jaki został do końca odtwarzanego utworu.</para>
+
+<para
+>Okno odtwarzacza umożliwia także wybór analizatorów dźwięku, umieszczonych pod obszarem pokazującym dane o utworze. Możesz zmieniać analizator na kolejny klikając lewym przyciskiem myszy na obszarze analizatora.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Wskazówka</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Analizatory odtwarzacza &amarok-mianownik; mogą zostać odłączone od jego okna. Wciskając klawisz <keycap
+>d</keycap
+> na klawiaturze spowodujesz, że aktywny analizator zostanie otwarty w niezależnym oknie, którego rozmiar możesz zmieniać.</para>
+</tip>
+
+<para
+>Poniżej pola informacji o utworze znajdują się również przyciski <guibutton
+>PL</guibutton
+> oraz <guibutton
+>FX</guibutton
+>. Przycisk <guibutton
+>PL</guibutton
+> jest wykorzystywany do przywoływania okna listy odtwarzania, natomiast przycisk <guibutton
+>FX</guibutton
+> umożliwia konfigurację dostępnych efektów dźwiękowych (o ile moduł dźwiękowy je obsługuje).</para>
+
+<para
+>Okno odtwarzacza zawiera także przyciski służące do kontroli odtwarzania oraz suwaki głośności i postępu utworu. Suwaki możesz wykorzystać do zmiany głośności czy pozycji odtwarzania w utworze. Natomiast za pomocą przycisków sterujesz odtwarzaniem bieżącego utworu, możesz także przechodzić do następnego bądź poprzedniego utworu.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>Okno korektora</title>
+
+<para
+>Wbudowany korektor jest łatwy w użyciu i działa ze wszystkimi modułami dźwiękowymi. Dołączonych jest standardowo 17 ustawień korektora, poczynając od muzyki klasycznej, a kończąc na techno. Możesz również w prosty sposób stworzyć własne ustawienie. </para>
+
+<para
+>Żeby otworzyć korektor, wybierz w głównym oknie  <menuchoice
+><guimenu
+>Narzędzia</guimenu
+><guimenuitem
+>Korektor</guimenuitem
+></menuchoice
+>, lub wciśnij przycisk <guibutton
+>EQ</guibutton
+> w oknie odtwarzacza. Kiedy zaznaczysz opcję <guibutton
+>Włącz korektor</guibutton
+>, korektor stanie się aktywny.</para>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu okna korektora</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Możesz wybrać z listy rozwijanej jedno z wbudowanych ustawień korektora. Przesunięcie jednego z suwaków automatycznie przełączy Cię w tryb ręcznego ustawiania. Poeksperymentuj trochę z suwakami, aż znajdziesz ustawienie, które ci odpowiada, a następnie kliknij ikonę <guiicon
+>Dodaj nowy zestaw</guiicon
+> po prawej stronie listy rozwijanej, żeby je zapisać. Jeżeli wybierzesz inne ustawienie bez zapisywania, Twoje ustawienia zostaną stracone. Poza zapisywaniem, możesz również kliknąć ikonę <guiicon
+>Zarządzaj zestawami</guiicon
+> po prawej stronie listy rozwijanej, żeby usunąć lub zmienić nazwę zestawu.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>Okno listy odtwarzania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu okna listy odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Lista odtwarzania &amarok-dopelniacz; jest najbardziej zaawansowaną listą odtwarzania dostępną dla odtwarzaczy ze środowiska &kde;. Lista odtwarzania zawiera wiele funkcji, których nie posiadają inne odtwarzacze. Ponadto jest ona bardzo prosta w użyciu.</para>
+
+<para
+>Okno listy odtwarzania dzieli się na dwie główne sekcje. Po lewej stronie znajduje się panel boczny, w którym znajdziesz niektóre znakomite funkcje listy odtwarzania jak np. <link linkend="context-browser"
+>Przeglądarka kontekstowa</link
+>. Po prawej stronie okna znajduje się sama lista odtwarzania. Jest ona łatwa w użyciu, ale zawiera jednocześnie bardzo zaawansowane funkcje, które powinny zadowolić nawet najbardziej zaawansowanych użytkowników.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Przeglądarki panelu bocznego</title>
+
+<para
+>Przeglądarki w programie &amarok-mianownik; dają Ci dostęp do Twojej muzycznej kolekcji na kilka różnych sposobów. Znajdują się w lewej części okna, każda reprezentowana jest przez kartę z odpowiednią nazwą. Kliknięcie na karcie powoduje, że przeglądarka staje się widoczna. Jeżeli przeglądarka jest już aktywna, to kliknięcie na karcie spowoduje jej ukrycie. W danym momencie widoczna jest tylko jedna przeglądarka, jednakże możesz przeciągać utwory z jednej karty do drugiej, utrzymując kursor przez ok. 1 sekundę nad docelową kartą, wtedy widoczna powinna się stać wskazana przeglądarka. Możesz ukrywać przeglądarki klikając prawym przyciskiem myszy na dowolnej karcie i wybierając potrzebne Ci przeglądarki z menu kontekstowego.</para>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki plików</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>Przeglądarka kontekstowa</title>
+
+<para
+>Przeglądarka kontekstowa wyświetla różne informacje na temat aktualnie odtwarzanego utworu. Jej wygląd może być zmienany za pomocą <link linkend="configure-appearance"
+>motywów przeglądarki kontekstowej</link
+>. Przeglądarka jest podzielona na trzy karty: <quote
+>Muzyka</quote
+>, <quote
+>Teksty</quote
+> i <quote
+>Wykonawca</quote
+>. Te karty, których rola zostanie szerzej wyjaśniona poniżej, pokazują różne informacje o aktualnie odtwarzanym utworze.</para>
+
+<note
+><para
+>Użytkownicy wcześniejszych wersji &amarok-dopelniacz; z pewnością zauważą brak karty <quote
+>Dom</quote
+>. Informacje z tej karty zostały rozdzielone pomiędzy różne elementy interfejsu &amarok-dopelniacz;. Odpowiednie informacje można znaleźć przede wszystkim w oknie dialogowym Statystyki. Jest ono dostępne przez opcję menu <menuchoice
+><guimenu
+>Narzędzia</guimenu
+><guimenuitem
+>Statystyki</guimenuitem
+></menuchoice
+>.</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki kontekstowej</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>Karta Muzyka</title>
+
+<para
+>Karta <guilabel
+>Muzyka</guilabel
+> zawiera informacje na temat odtwarzanego utworu, jego wykonawcy oraz albumu z którego pochodzi.</para>
+
+<para
+>Pierwsze okno karty zawiera informacje na temat utworu. Tytuł okna zawiera nazwy: utworu, wykonawcy, a także albumu. W samym oknie znajduje się obraz okładki albumu z którego pochodzi utwór. Obok niej znajdziesz ikonę <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+>. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Kliknij na nią, aby wyszukać utwór na stronie MusicBrainz.</para>
+
+<para
+>Poniżej ikony MusicBrainz znajdują się dodatkowe informacje na temat odtwarzanego utworu: ile razy był on odtwarzany, jaka jest jego aktualna ocena, kiedy był odtwarzany po raz pierwszy, a kiedy po raz ostatni.</para>
+
+<tip
+><para
+>Aby obraz okładki został wyświetlony w przeglądarce kontekstowej, musi on być umieszczony w tym samym katalogu co utwór, którego słuchasz. Obsługiwane formaty obrazów to: .jpg, .jpeg, .gif, oraz .png. Obrazy mogą być nazwane dowolnie, ale obrazy zawierające słowo <quote
+>front</quote
+> w nazwie będą wykorzystywane w pierwszej kolejności. Przeglądarka kontekstowa korzysta także z obrazów okładek zapisanych przez narzędzie pobierania okładek lub znajdujących się w znacznikach ID3v2.</para
+></tip>
+
+<para
+>Następne okno <guilabel
+>Sugerowane utwory</guilabel
+> zawiera listę sugerowanych do odtworzenia utworów. Kliknij dowolny z nich, aby rozpocząć jego odtwarzanie.</para>
+
+<para
+>Poniżej okna <guilabel
+>Sugerowane utwory</guilabel
+> znajduje się okno <guilabel
+>Ulubione utwory tego wykonawcy</guilabel
+>. To pole zawiera pięć najwyżej ocenionych utworów wykonawcy, którego utwór jest obecnie odtwarzany.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Możesz ustawić ilość informacji pokazywanych na karcie <quote
+>Muzyka</quote
+> klikając prawym przyciskiem myszy gdziekolwiek na karcie i wybierając elementy z menu kontekstowego.</para
+></tip>
+
+<para
+>Ostatne okno, <guilabel
+>Albumy wykonawcy</guilabel
+>, zawiera listę wszystkich posiadanych w kolekcji albumów odtwarzanego wykonawcy. Kliknięcie na dowolnym albumie znajdującym się w tym oknie powoduje rozwinięcie tego albumu i ukazanie jego zawartości.</para>
+
+<tip
+><para
+>Wystarczy kliknąć utwór znajdujący się w jednym z okien, aby rozpocząć jego odtwarzanie. Możesz także kliknąć prawym przyciskiem myszy na album lub utwór, aby zdecydować w jaki sposób ma zostać odtworzony czy dodany do kolejki.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>Karta Teksty</title>
+
+<para
+>Karta <guilabel
+>Teksty</guilabel
+> pobiera tekst odtwarzanej piosenki z jednej z obsługiwanych stron internetowych. Ta funkcja jest uniwersalna i możliwe jest pisanie skryptów pobierających słowa piosenki z różnych stron. Po więcej informacji sięgnij do rozdziału na temat pisania skryptów. Kiedy klikasz na karcie Teksty, &amarok-mianownik; spróbuje pobrać słowa aktualnej piosenki. Jeżeli żaden skrypt do pobierania tekstów nie jest uruchomiony, będziesz miał możliwość wybrania jednego z nich.</para>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu tekstów piosenek</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>Na karcie tekstów możesz wykonywać różne czynności, używając przycisków znajdujących się na pasku narzędzi.</para>
+
+<para
+>Przycisk <guibutton
+>Dodaj</guibutton
+> otwiera (w osobnej przeglądarce) odpowiednią stronę służącą do dodawanie tekstów, w zależności od skryptu, z którego korzystasz.</para>
+
+<para
+>Przycisk <guibutton
+>Edytuj</guibutton
+> pozwala Ci edytować słowa aktualnie odtwarzanej piosenki. Są one przechowywane w bazie danych kolekcji &amarok-dopelniacz;. Ta opcja nie wymaga uruchomionego skryptu tekstów.</para>
+
+<para
+>Przycisk <guibutton
+>Szukaj</guibutton
+> otwiera w zewnętrznej przeglądarce stronę google.com w poszukiwaniu tekstu do aktualnie odtwarzanego utworu.</para>
+
+<para
+>Przycisk <guibutton
+>Odśwież</guibutton
+> usuwa pobrane słowa piosenki i szuka ich na nowo.</para>
+
+<para
+>Przycisk <guibutton
+>Otwórz w zewnętrznej przeglądarce</guibutton
+> wyświetla słowa danej piosenki w osobnej przeglądarce.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>Karta Wykonawca</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu karty Wykonawca</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Karta Wykonawca pokazuje artykuł z Wikipedii na temat wykonawcy odtwarzanego utworu. Pasek narzędzi zawiera:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Przyciski nawigacji w przód i w tył.</para>
+</listitem>
+<listitem>
+<para
+>Przyciski pozwalające przejść na stronę Wikipedii dotyczącą wykonawcy, albumu lub utworu.</para>
+</listitem>
+<listitem>
+<para
+>Przycisk pozwalający otworzyć daną stronę w zewnętrznej przeglądarce.</para>
+</listitem>
+<listitem>
+<para
+>Przycisk konfiguracji, pozwalający ustawić język wikipedii.</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Przeglądarka kolekcji</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki kolekcji</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Przeglądarka kolekcji to serce &amarok-dopelniacz;. Widoczna jest tutaj cała kolekcja, pogrupowana na różne sposoby. W każdym grupowaniu, elementy kolekcji posortowane są alfabetycznie, napierw symbole i cyfry, potem litery (ich wielkość nie gra roli). W każdym sposobie grupowania utwory o nieznanym wykonawcy i/lub albumie są zawsze zgrupowane razem na początku kolekcji jako <quote
+>Nieznany</quote
+>. Pomimo, że numery utworów nie są wyświetlane, utwory wypisane są w porządku takim, jak na płycie. Kliknięcie nagłówka listy kolekcji odwraca porządek sortowania. Kliknięcie na ikonie rozwinięcia, po lewej stronie elementu kolekcji, rozwija dany wpis.</para>
+
+<para
+>Menu rozwijane <quote
+>Grupuj wg</quote
+> pozwala Ci pogrupować Twoją kolekcję na kilka sposobów:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Grupuj wg</guimenu
+><guimenuitem
+>Wykonawca</guimenuitem
+></menuchoice
+> - Sortowanie tylko najwyższego poziomu, każdy utwór przypisany jest swojemu wykonawcy, album i gatunek nie są brane pod uwagę.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Grupuj wg</guimenu
+><guimenuitem
+>Wykonawca/Album</guimenuitem
+></menuchoice
+> - Utwory sortowane są według wykonawcy, a następnie według albumu. Jeżeli chcesz przejrzeć składanki albo albumy ze ścieżkami dźwiękowymi filmów, to jest to najlepszy sposób - takie albumy zostaną zgrupowane razem na końcu listy jako <quote
+>Różni wykonawcy</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Grupuj wg</guimenu
+><guimenuitem
+>Wykonawca / Rok - Album</guimenuitem
+></menuchoice
+>- Sortuje według wykonawcy, albumy przedstawione są w kolejności od najmłodszych do najstarszych. Jeżeli znacznik <quote
+>Rok</quote
+> utworu nie jest ustawiony, domyślnie stosowane jest <quote
+>0 - nazwa albumu</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Grupuj wg</guimenu
+><guimenuitem
+>Album</guimenuitem
+></menuchoice
+> - Albumy w Twojej kolekcji są wyświetlane w kolejności alfabetycznej, na podstawie tytułu albumu, bez względu na wykonawcę.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Grupuj wg</guimenu
+><guimenuitem
+>Gatunek / Wykonawca</guimenuitem
+></menuchoice
+> - Utwory zostanę pogrupowane według ich znacznika gatunku, a następnie według wykonawcy.</para>
+</listitem>
+<listitem>
+<para
+> <menuchoice
+><guimenu
+>Grupuj wg</guimenu
+><guimenuitem
+>Gatunek / Wykonawca / Album</guimenuitem
+></menuchoice
+> - Tak jak wyżej, z tą róznicą, że utwory jednego wykonawcy posortowane są według albumu.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>Pozostałe elementy menu rozwiajnego pozwalają Ci dostosować sortowanie i grupowanie z pomocą dowolnej kombinacji powyższych możliwości.</para>
+
+<para
+>Kolejne dwie ikony na pasku narzędzi zmieniają sposób, w jaki pokazywana jest Twoja kolekcja. Pierwszy, widok drzewa, jest widokiem domyślnym i pozwala Ci zobaczyć najwięcej. Kolejny przycisk uaktywnia widok płaski, który z początku wydaje się pusty. Wpisanie kryterium wyszukiwania w polu poniżej paska narzędzi, pozwoli na wypełnienie Twojej kolekcji, która może zostać nasŧępnie posortowana na różne sposoby, poprzez klikanie na nagłówkach kolumn. Kliknięcie prawym przyciskiem myszy na nagłówku kolumny, pozwala wybrać pokazywane kolumny z menu kontekstowego.</para>
+
+<para
+>Ostatnia ikona na pasku narzędzi pozwala Ci zmienić ustawienia kolekcji. Zauważ, że jeżeli zmienisz zaznaczenie jakiegoś katalogu, &amarok-mianownik; automatycznie przeszuka Twoją kolekcję - może to trochę potrwać, jeżeli posiadasz w niej wiele utworów.</para>
+
+<para
+>Bezpośrednio pod paskiem narzędzi znajduje się filtr wyszukiwania, który zachowuje się tak samo zarówno w widoku drzewa, jak i płaskim. Więcej informacji o technikach wyszukiwania znajdziesz w rozdziale poświęconym listom odtwarzania.</para>
+
+<para
+>Pod filtrem wyszukiwania kolejna lista rozwijana pozwala Ci zobaczyć utwory dodane do kolekcji w ostatnim czasie. Dostępnych jest kilka przedziałów czasowych, od 24 godzin do jednego roku, oraz pokazanie całej Twojej kolekcji.</para>
+
+<sect3 id="collection-rmb">
+<title
+>Opcje przeglądarki kolekcji dostępne pod prawym przyciskiem myszy</title>
+<para
+>Następujące opcje są dostępne po kliknięciu prawym przyciskiem myszy na wpisach w przeglądarce kolekcji.</para>
+
+<para
+><guilabel
+>Wczytaj</guilabel
+> - usuwa aktualną listę odtwarzania i tworzy nową dodając wybrane utwory w wybranym porządku sortowania.</para>
+
+<para
+><guilabel
+>Dołącz do listy odtwarzania</guilabel
+> - dodaje wybrane utwory na końcu listy odtwarzania. Ten sam rezultat można uzyskać poprzez podwójne kliknięcie na pojedynczym utworze w kolekcji.</para>
+
+<para
+><guilabel
+>Kolejkuj utwory</guilabel
+> - dodaje wybrane utwory do kolejki odtwarzania, jako te, które mają zostać odtworzone jako kolejne.</para>
+
+<para
+><guilabel
+>Zapisz jako listę odtwarzania</guilabel
+> - zapisuje wybrane utwory jako listę odtwarzania. Zostanie zapytany o nazwę, pod jaką zachować.</para>
+
+<para
+><guilabel
+>Dodaj do kolejki przenoszenia na urządzenia mediów</guilabel
+> - dodaje utwory do kolejki utworów, które zostaną przeniesione na urządzenie mediów, kiedy takowe zostanie podłączone. Więcej szczegółów znajdziesz w rozdziale <link linkend="media-device-browser"
+>Przeglądarka urządzeń mediów</link
+>.</para>
+
+<para
+><guilabel
+>Nagraj wszystkie utwory tego wykonawcy</guilabel
+> - wysyła utwory do &k3b;, żeby zostały nagrane jako CD z danymi lub płyta Audio CD. Jeżeli &k3b; nie jest zainstalowane, ta opcja nie jest dostępna.</para>
+
+<para
+><guilabel
+>Pobierz obrazek okładki</guilabel
+> - przeszukuje stronę amazon.com w poszukiwaniu okładki danego albumu.</para>
+
+<para
+><guilabel
+>Edytuj informację dla (n) utworów</guilabel
+> - otwiera okno dialogowe <guilabel
+>Informacje o utworze</guilabel
+> i pozwala zmienić znaczniki jednego lub wielu utworów. </para>
+
+<para
+><guilabel
+>Zarządzaj plikami</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Zbierz pliki</guilabel
+> - otwiera okno dialogowe <guilabel
+>Organizuj pliki kolekcji</guilabel
+>. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>Usuń pliki</guilabel
+> - pokazuje okno potwierdzenia, pytając czy chcesz usunąć wybrane utwory na stałe z komputera.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Zaznacz jako składankę</guilabel
+> - oznacza wybrany utwór jako sładankę, będzie on od tej pory wypisany w kategorii <quote
+>Różni wykonawcy</quote
+></para>
+
+<para
+><guilabel
+>Odznacz jako składankę</guilabel
+> - zmienia album oznaczony jako składanka w zwykły album, i przesuwa go z kategorii <quote
+>Różni wykonawcy</quote
+> z powrotem do jego wykonawcy.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Przeglądarka list odtwarzania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki list odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Przeglądarka list odtwarzania służy do obsługi stworzonych przez Ciebie list. Przeglądarka ta obsługuje także wbudowane inteligentne listy, co czyni ją najbardziej inteligentną przeglądarką w swoim rodzaju.</para>
+
+<para
+>Przeglądarka list odtwarzania podzielona jest na dwie sekcje: Listy odtwarzania i Inteligentne listy odtwarzania. Sekcja Listy odtwarzania jest przeznaczona na Twoje własne listy. Możesz przeglądać ich zawartość w widoku list klikając symbol <quote
+>+</quote
+> znajdujący się z boku każdej listy. Kiedy przeglądasz listę odtwarzania w widoku listy, możesz dodać do niej nowe elementy metodą przeciągnij i upuść. Kiedy odnajdziesz listę odtwarzania, którą chcesz wczytać, możesz kliknąć ją dwukrotnie albo wcisnąć klawisz <keycap
+>Spacji</keycap
+>, aby &amarok-mianownik; ją wczytał. Pozostałe klawisze skrótów przeglądarki listy odtwarzania można znaleźć w dziale <link linkend="keybd-shortcuts"
+>Skróty klawiszowe</link
+>.</para>
+
+<tip
+><para
+>Kiedy zapiszesz nową listę odtwarzania z okna listy odtwarzania, to zostanie ona automatycznie dodana do sekcji list odtwarzania.</para
+></tip>
+
+<para
+>Dolna część przeglądarki list odtwarzania nosi nazwę Inteligentne listy odtwarzania. Inteligentne listy odtwarzania korzystają z wbudowanej bazy danych programu &amarok-mianownik;, aby tworzyć użyteczne listy w trakcie pracy programu. Sekcja inteligentnych list odtwarzania zawiera:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Cała kolekcja: lista odtwarzania zawierająca wszystkie utwory znajdujące się w Twojej skonfigurowanej kolekcji.</para>
+</listitem>
+
+<listitem>
+<para
+>Ulubione utwory: wiele list odtwarzania składających się z piętnastu najwyżej ocenianych utworów, pogrupowanych według wykonawców.</para>
+</listitem>
+
+<listitem>
+<para
+>Najczęściej odtwarzane: wiele list odtwarzania składających się z piętnastu najczęściej odtwarzanych utworów, pogrupowanych według wykonawców.</para>
+</listitem>
+
+<listitem>
+<para
+>Najnowsze utwory: wiele list odtwarzania składających się z piętnastu ostatnio dodanych utworów, pogrupowanych według wykonawców.</para>
+</listitem>
+
+<listitem>
+<para
+>Ostatnio odtwarzane: lista odtwarzania składająca się z piętnastu ostatnio odtwarzanych utworów.</para>
+</listitem>
+
+<listitem>
+<para
+>Nigdy nie odtwarzane: lista odtwarzania składająca się z utworów nigdy nie odtwarzanych.</para>
+</listitem>
+
+<listitem>
+<para
+>Gatunki: wiele list odtwarzania pogrupowanych według gatunków muzycznych.</para>
+</listitem>
+
+<listitem>
+<para
+>Również Ty możesz dodawać inteligentne listy odtwarzania. Kliknięcie przycisku <guibutton
+>Utwórz inteligentną listę odtwarzania</guibutton
+> spowoduje otwarcie okna konfiguracji takiej listy.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Przeglądarka urządzeń multimedialnych</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki urządzeń multimedialnych</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Przeglądarka urządzeń multimedialnych służy do połączenia Twojego iPoda z &amarok-narzednik;. Abyś mógł korzystać z przeglądarki multimediów, musisz zamontować ipoda w /mnt/ipod, przed uruchomieniem &amarok-dopelniacz;. Jak tylko uruchomisz program, utwory z Twojego iPoda znajdą się w górnej części przeglądarki, uszeregowane według wykonawcy.</para>
+
+<para
+>Aby przenieść utwory do iPoda, przeciągnij je z listy odtwarzania i upuść na liście Wykonawca. Gdy zakończysz dodawanie utworów, naciśnij przycisk  <guibutton
+>Przenieś</guibutton
+>, aby przesłać je do iPoda. Gdy zakończysz przesyłanie, zamknij &amarok-dopelniacz; i odmontuj iPoda.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Przeglądarka plików</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki plików</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Panel przeglądarki plików wygląda jak mini Konqueror dołączony do listy odtwarzania. Możesz używać panelu do przeglądania Twojego systemu plików w poszukiwaniu plików dźwiękowych, które chcesz dodać do listy odtwarzania. U góry przeglądarki odnajdziesz pasek narzędzi z przyciskami nawigacji, służącymi do poruszania się w górę, w tył i w przód w systemie plików. Pasek narzędzi zawiera również przyciski: Katalog domowy, Odśwież, Widok skrócony oraz Widok szczegółowy. Znajduje się tam również przycisk Zakładki, służący do tworzenia zakładek do Twoich ulubionych lokalizacji w systemie plików.</para>
+
+<para
+>Poniżej paska narzędzi znajduje się podręczny pasek wyszukiwania, służący do wyszukiwania plików po ich nazwach. Jest on szczególnie użyteczny w przypadku katalogów zawierających wiele plików, gdyż podczas wprowadzania poszukiwanego słowa, narzędzie wyświetla tylko spełniające kryteria nazwy plików.</para>
+
+<para
+>U dołu przeglądarki plików znajduje się pasek adresu, dzięki któremu możesz pobierać muzykę z dowolnego adresu URL. Na przykład wpisując <filename class="directory"
+>tar:/home/mike/music.tar.gz</filename
+> do paska adresu i wciskając klawisz <keycap
+>Enter</keycap
+>, uzyskasz dostęp do plików z archiwum tar. Teraz możesz przeciągnąć pliki z pakietu do listy odtwarzania.</para>
+
+<tip
+><para
+>Kiedy lista odtwarzania zajmuje więcej niż jeden ekran, trudno jest korzystać z metody przeciąg i upuść. Przytrzymanie klawisza <keycap
+>Shift</keycap
+> podczas tej operacji może pomóc: pliki będą dołączane na końcu listy odtwarzania, a nie wstawiane w bieżącej pozycji.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>Lista odtwarzania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu listy odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Lista odtwarzania zawiera wszystkie utwory oczekujące na odtworzenie. Możesz zmieniać ich kolejność, przeciągać i upuszczać w dowolnym miejscu. U góry listy odtwarzania znajduje się pole tekstowe, w którym wprowadzasz kryteria filtrowania. Jak tylko wprowadzisz literę, lista odtwarzania zostanie przefiltrowana, pokazując tylko obiekty zawierające podane znaki. Aby usunąć filtrowanie, wystarczy wcisnąć klawisz <keycap
+>Backspace</keycap
+>, do momentu aż pole stanie puste.</para>
+
+<tip
+><para
+>Możesz również posługiwać się zaawansowaną, wzorowaną na Google składnią.</para>
+
+<para
+>Jeśli wprowadzasz słowa oddzielone spacjami, to domyślnie zostaną wyszukane elementy zawierające wszystkie te słowa. Np. wprowadzenie jeden dwa trzy spwoduje wyszukanie wszystkich elementów zawierających jeden, dwa i trzy.</para>
+
+<para
+>Pomiędzy słowami można wprowadzić "or", aby wyszukać którekolwiek ze słów: jeden lub dwa lub trzy. Dzięki temu, nastąpi wyszukiwanie elementów zawierających jeden lub dwa lub trzy (albo ich kombinację).</para>
+
+<para
+>Do wyszukiwania wyrażeń oddzielonych spacjami można również użyć cudzysłowu: "Mike Oldfield". Zostaną wówczas wyszukane wyrażenia zawierające Mike Oldfield, ale już nie np. Mike J. Oldfield.</para>
+
+<para
+>Wyszukiwanie odbywa się domyślnie w widocznych kolumnach listy odtwarzania. Możesz jednak wpisać column:wyrażenie, aby określić przeszukiwaną kolumnę: title:amarok (może to być również niewidoczna kolumna). W ten sposób, wyszukasz jedynie wyrażenia mające w tytule utworu słowo amarok, ale nie będą już brane pod uwagę np. tytuły albumów.</para>
+
+<para
+>Określając przeszukiwanie konkretnej kolumny, możesz również zdefiniować wyszukiwanie elementów mniejszych lub większych niż dane wyrażenie np. score:
+>50 spowoduje wyszukiwanie elementów, których punktacja jest większa niż 50.</para>
+
+<para
+>Aby określić wyrażenie, które nie ma być wyszukiwane, umieść przed nim znak minus (-): -rzecz powoduje wyszukiwanie wyrażeń nie zawierających słowa rzecz.</para>
+
+<para
+>Powyższe metody wyszukiwania można ze sobą łączyć, np.  "Mike Oldfield" OR score:
+>50 -comment:bad. Spowoduje to wyszukiwanie wyrażeń zawierających albo Mike Oldfield albo mających punktację większą niż 50, ale wykluczy wyrażenia zawierające w komentarzu "bad".</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Wskazówka</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Aby określić kolejność odtwarzania utworów, przytrzymaj klawisz <keycap
+>Control</keycap
+> i kliknij prawym przyciskiem myszy na utwory, w kolejności w jakiej mają być odtwarzane. Utworom zostanie przypisany numer, informujący o kolejności ich odtwarzania.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>Menu Lista odtwarzania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu menu Lista odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>Menu Akcje</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Akcje</guimenu
+> <guimenuitem
+>Odtwarzaj multimedia...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno do wprowadzenia adresu URL.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Akcje</guimenu
+> <guimenuitem
+>Odtwarzaj płytę CD audio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Pozwala na przeglądanie i odtwarzanie płyty audio CD za pomocą protokołu audiocd:/.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Akcje</guimenu
+> <guimenuitem
+>Poprzedni utwór</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Przechodzi do poprzedniego utworu na liście odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Akcje</guimenu
+> <guimenuitem
+>Pauza</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wstrzymuje odtwarzanie bieżącego utworu.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Akcje</guimenu
+> <guimenuitem
+>Stop</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zatrzymuje odtwarzanie.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Akcje</guimenu
+> <guimenuitem
+>Następny utwór</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Przechodzi do następnego utworu na liście odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Akcje</guimenu
+> <guimenuitem
+>Zakończ</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zamyka program &amarok-mianownik;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>Menu Lista odtwarzania</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Dodaj multimedia...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno dodawania multimediów do Twojej bieżącej listy odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Zapisz listę odtwarzania jako...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno zapisu Twojej bieżącej listy odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Cofnij</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Cofa ostatnią zmianę na liście odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Przywróć</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Przywraca cofniętą czynność.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Wyczyść</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Czyści bieżącą listę odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Tasuj</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Tasuje kolejność bieżącej listy odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Idź do bieżącego utworu</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Przesuwa listę do odtwarzanego w danej chwili utworu.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Kolejkuj wybrane utwory</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Kolejkuje wybrane utwory z listy.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Usuń powtarzające się/puste wpisy</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Usuwa wszystkie powtarzające się lub puste wpisy (nie będące odnośnikiem do rzeczywistego utworu) na bieżącej liście odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista odtwarzania</guimenu
+> <guimenuitem
+>Zaznacz wszystko</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zaznacza wszystkie utwory na bieżącej liście odtwarzania.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>Menu Narzędzia</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Menedżer okładek</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera <link linkend="cover-manager"
+>Menedżera okładek</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Menedżer kolejkowania</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera <link linkend="queue_manager"
+>Menedżera kolejkowania</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Asystent pierwszego uruchamiania</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera asystenta pierwszego uruchamiania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Wizualizacje</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno <link linkend="visualizations"
+>Wizualizacje</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Korektor</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno <link linkend="equalizer"
+>Korektora graficznego</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Skrypty</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno <link linkend="script_manager"
+>Menedżera skryptów</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Przeskanuj ponownie kolekcję</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Rozpoczyna ręczne skanowanie katalogów Twojej kolekcji.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Menu Ustawienia</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Ukryj menu</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ukrywa <link linkend="menubar"
+>Pasek menu</link
+> okna listy odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Ukryj pasek narzędzi</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ukrywa <link linkend="toolbar"
+>Pasek narzędzi</link
+> okna listy odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Ukryj okno odtwarzacza</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ukrywa <link linkend="player-window"
+>Okno odtwarzacza</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Powtarzaj utwór</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Powtórnie odtwarza bieżący utwór.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Powtarzaj listę odtwarzania</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ponownie odtwarza bieżącą listę odtwarzania.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Tryb losowy</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Losuje kolejność odtwarzania utworów z listy.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Tryb dynamiczny</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Uruchamia dynamiczny tryb listy odtwarzania.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguracja skrótów globalnych...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno konfiguracji skrótów globalnych.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguruj skróty...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno konfiguracji skrótów programu &amarok-mianownik;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguracja pasków narzędzi...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno konfiguracji pasków narzędzi programu &amarok-mianownik;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguracja Amaroka...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno konfiguracji programu &amarok-mianownik;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>Menu Pomoc</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Pomoc</guimenu
+> <guimenuitem
+>Podręcznik programu Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera niniejszą dokumentację.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Shift</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Pomoc</guimenu
+> <guimenuitem
+>Co to jest?</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Uaktywnia wskaźnik Co to jest.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pomoc</guimenu
+> <guimenuitem
+>Raport o błędzie...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Uruchamia narzędzie zgłaszania błędów.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pomoc</guimenu
+> <guimenuitem
+>O programie Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno informacyjne o programie Amarok.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pomoc</guimenu
+> <guimenuitem
+>Informacje o KDE</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Otwiera okno informacyjne o KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>Pasek narzędzi listy odtwarzania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu paska narzędzi listy odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Pasek narzędzi okna listy odtwarzania jest umieszczony u dołu okna. Zawiera on przyciski funkcyjne listy odtwarzania. Po prawej stronie paska narzędzi znajduje się przycisk <guibutton
+>Dodaj multimedia</guibutton
+>, który otwiera okno dodawania plików multimedialnych do listy. Za przyciskiem <guibutton
+>Dodaj multimedia</guibutton
+> znajdują się przyciski <guibutton
+>Zapisz listę odtwarzania</guibutton
+>, <guibutton
+>Wyczyść listę odtwarzania</guibutton
+>, a także <guibutton
+>Odśwież listę odtwarzania</guibutton
+>. Możesz używać tych przycisków do obsługi bieżącej listy odtwarzania.</para>
+
+<para
+>Następny zestaw przycisków to <guibutton
+>Cofnij</guibutton
+>, oraz <guibutton
+>Przywróć</guibutton
+>. Możesz z nich skorzystać do cofania i przywracania zmian dokonanych na liście odtwarzania.</para>
+
+<para
+>Na środku paska narzędzi możesz znaleźć analizator. Możesz dostosować częstotliwość jego odświeżania za pomocą menu podręcznego, w którym możesz wybrać preferowaną szybkość klatek.</para>
+
+<para
+>Ostatnim przyciskiem na pasku narzędzi jest przycisk <guibutton
+>Menu</guibutton
+>. Przycisk <guibutton
+>Menu</guibutton
+> otwiera to samo menu podręczne, co menu wywoływane przez kliknięcie prawym klawiszem myszy w oknie odtwarzacza. To menu umożliwia dostęp do opcji konfiguracyjnych &amarok-dopelniacz;.</para>
+
+<tip
+><para
+>Istnieje wiele innych przycisków dostępnych dla paska narzędzi, włączając w to przyciski kontroli odtwarzacza i suwak głośności. Możesz wybrać przyciski, które znajdą na pasku narzędzi, klikając <guibutton
+>Menu</guibutton
+> i wybierając polecenie <guimenuitem
+>Konfiguracja pasków narzędzi...</guimenuitem
+></para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>Pasek stanu listy odtwarzania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu paska stanu listy odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Pasek stanu zawiera kilka użytecznych informacji dotyczących listy odtwarzania. Wyświetla on tytuł bieżącego utworu, ilość utworów na liście odtwarzania wraz z jej całkowitym czasem trwania, status powtarzania i odtwarzania losowego, mały suwak postępu i czas odtwarzania bieżącego utworu. Możesz zmienić status powtarzania i odtwarzania losowego, dwukrotnie klikając na odpowiedni obszar paska stanu.</para>
+
+<para
+>Możesz także wyłączyć wyświetlanie paska dzięki opcji <guilabel
+>Wyświetlaj pasek stanu</guilabel
+> znajdującej się w <link linkend="general-options"
+>Oknie konfiguracji opcji ogólnych</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>Menu podręczne</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu podręcznego menu</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Podręczne menu jest wyświetlane po kliknięciu prawym przyciskiem na oknie odtwarzacza. To samo można uzyskać wybierając <guibutton
+>Menu</guibutton
+> w oknie listy odtwarzania. Menu podręczne wykorzystywane jest do obsługi wszystkich funkcji &amarok-dopelniacz;.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Powtarzaj utwór</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Jeśli ta opcja jest włączona, to bieżący utwór jest powtarzany.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Powtarzaj listę odtwarzania</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Jeśli ta opcja jest włączona, to bieżąca lista odtwarzania jest powtarzana.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tryb losowy</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Jeśli ta opcja jest włączona, to utwory z listy są odtwarzane w trybie losowym.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Dodaj sugestie</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Dodaje sugerowane piosenki w przeglądarce kontekstowej.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Menedżer okładek</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Otwiera <link linkend="cover-manager"
+>Menedżera okładek</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Asystent pierwszego uruchamiania</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Kliknięcie tej opcji powoduje uruchomienie asystenta pierwszego uruchamiania, pomagającego we wstępnej konfiguracji &amarok-dopelniacz;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Wizualizacje...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Kliknięcie tej opcji otwiera <link linkend="visualizations"
+>Okno wizualizacji</link
+>, w którym wybierasz wizualizacje wykorzystywane przez &amarok-dopelniacz;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Korektor</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Otwiera <link linkend="equalizer"
+>Okno korektora.</link
+></para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Menedżer skryptów</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Otwiera okno menedżera skryptów</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Konfiguracja pasków narzędzi...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Kliknięcie tej opcji spowoduje otwarcie okna konfiguracji <link linkend="toolbar"
+>Paska narzędzi listy odtwarzania</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Konfiguracja skrótów...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Kliknięcie tej opcji otwiera okno konfiguracji <link linkend="keybd-shortcuts"
+>Skrótów programu &amarok-mianownik;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Konfiguracja skrótów globalnych...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Kliknięcie tej opcji otwiera okno <link linkend="keybd-shortcuts"
+>Konfiguracja skrótów globalnych</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Konfiguracja globalna programu Amarok...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Kliknięcie tej opcji spowoduje otwarcie <link linkend="configuring-kapp"
+>Okna konfiguracji programu &amarok-mianownik;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pomoc</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ta pozycja zawiera podmenu w którym umieszczone są odnośniki do niniejszego dokumentu i innych informacji o &amarok-miejscownik;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Zakończ</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Kliknięcie tej opcji spowoduje zamknięcie programu &amarok-mianownik;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Menedżer okładek</title>
+
+<screenshot>
+	<screeninfo
+>Menedżer okładek</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Menedżer okładek jest narzędziem służącym do zarządzania okładkami albumów. Menedżera okładek możesz uruchomić wybierając w przeglądarce kolekcji <menuchoice
+><guimenu
+>Akcje</guimenu
+><guimenuitem
+>Menedżer okładek</guimenuitem
+></menuchoice
+>.</para>
+
+<para
+>Menedżer okładek wyświetla listę wszystkich albumów znajdujących się w Twojej kolekcji. Możesz przejrzeć wszystkie Twoje okładki albumów danego wykonawcy, klikając na jego nazwę w widoku listy.</para>
+
+<para
+>Menedżer okładek zawiera pasek wyszukiwania okładek albumów. Menedżer będzie prowadził wyszukiwanie zgodnie z kryteriami określonymi na pasku wyszukiwania.</para>
+
+<para
+>W menu <guimenuitem
+>Widok</guimenuitem
+> wybierasz to, co ma być wyświetlane w oknie menedżera okładek. Możesz wybrać:</para>
+
+<para
+><guimenuitem
+>Wszystkie albumy</guimenuitem
+>, a wyświetlane będą wszystkie albumy znajdujące się w Twojej kolekcji.</para>
+
+<para
+><guimenuitem
+>Albumy z okładką</guimenuitem
+>, a wyświetlane będą tylko te albumy, które posiadają obrazy okładek.</para>
+
+<para
+><guimenuitem
+>Albumy bez okładki</guimenuitem
+>, a wyświetlane będą albumy nie posiadające obrazu okładki.</para>
+
+<para
+>Przycisk <guimenuitem
+>Pobierz brakujące okładki</guimenuitem
+> służy do pobierania obrazów okładek dla tych Twoich albumów, które jeszcze ich nie posiadają.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>Menedżer kolejkowania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu menedżera kolejkowania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Menedżer kolejkowania jest wielką nowością w &amarok-mianownik; 1.3. W założeniu, ma on pozwalać użytkownikowi na lepszą kontrolę nad listami odtwarzania. Po dodaniu utworu do kolejki, w menedżerze okładek obok utworu zostanie wyświetlony numer. Będzie on wskazywał kolejność, w jakiej &amarok-mianownik; będzie odtwarzał utwory: pierwszy utwór do odtworzenia będzie oznaczony jedynką, drugi dwójką itd.</para>
+
+<para
+>Możesz uruchomić menedżera kolejkowania wybierając <menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Menedżer kolejkowania</guimenuitem
+></menuchoice
+>, a następnie wybierając utwór i naciskając ikonę <guibutton
+>+</guibutton
+>. Możesz również po prostu przeciągnąć utwory do menedżera kolejkowania i w ten sposób stworzyć kolejkę. Ewentualnie możesz użyć menu kontekstowego listy odtwarzania. W nim możesz otworzyć menedżera kolejkowania i zmodyfikować kolejność utworów.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Dynamiczne listy odtwarzania</title>
+
+	<sect2>
+		<title
+>Czym są?</title>
+		<para
+>Dynamiczne listy odtwarzania są samogenerującymi się listami odtwarzania, tworzonymi na podstawie określonych reguł, używanymi do zachowania rozsądnej wielkości bieżącej listy odtwarzania. &amarok-mianownik; pochłania mało zasobów systemowych, jednak wczytywanie dużej ilości utworów do listy odtwarzania na raz zwiększa zużycie pamięci RAM, co może mieć negatywny wpływ na wydajność systemu. Można tego uniknąć korzystając z dynamicznych list odtwarzania. Są one również znane jako "tryb imprezy", pozwalając na odtwarzanie muzyki przez cały wieczór, bez ingerencji użytkownika. </para>
+	</sect2>
+
+	<sect2>
+		<title
+>Gdzie się znajdują?</title>
+		<para
+>Możesz znaleźć dynamiczne listy odtwarzania na pasku bocznym listy odtwarzania.</para>
+	
+		<screenshot>
+			<screeninfo
+>Pasek boczny listy odtwarzania</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Pasek boczny listy odtwarzania</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Istnieją trzy rodzaje dynamicznych list odtwarzania, określane mianem trybów dynamicznych. Dwa z nich są już zdefiniowane (więcej szczegółów na temat ich konfiuracji omówimy później).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Losowe mieszanie</term>
+				<listitem
+><para
+>Zapełnia listę odtwarzania losowymi utworami z Twojej całej kolekcji i systematycznie je dodaje.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Sugerowane piosenki</term>
+				<listitem>
+					<para
+>Dodaje utwory na podstawie sugestii <ulink url="http://www.last.fm"
+>last.fm</ulink
+> (poprzednio audioscrobbler). Do działania wymaga przynajmniej kilku utworów na liście odtwarzania. Zauważ, że nie musisz posiadać profilu na last.fm, żeby ta opcja działała.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Tasowanie list odtwarzania (utworzonych przez użytkownika)</term>
+				<listitem
+><para
+>Dodaje losowe utwory z określonych inteligentnych list odtwarzania - wbudowanych lub zdefiniowanych przez użytkownika.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>Jak ich używać?</title>
+		<para
+>Po prostu kliknij dwukrotnie na liście odtwarzania, przeciągnij ją do okna listy odtwarzania, lub kliknij na niej prawym przyciskiem myszy i wybierz Wczytaj. Zastąpi to Twoją biezącą listę odtwarzania, więc możesz chcieć napierw ją zapisać, jeżeli jest dla Ciebie ważna. </para>
+		<para
+>Zarówno "losowe mieszanie", jak i "wymieszanie list" odtwarzania zapełni Twoją listę odtwarzania i pozwoli ci natychmiast ją odsłuchać. "Sugerowane piosenki" zaczną od pustej listy odtwarzania, wymagając od ciebie dodania przynajmniej jednej piosenki z twojej kolekcji ręcznie. Sugerowane piosenki są dodawane przy zmianie utworu, więc Twoja lista odtwarzania nie zostanie zapełniona, aż do końca odtwarzania pierwszej piosenki.</para>
+		<para
+>Jeżeli chces zachować bieżącą listę odtwarzania, możesz włączyć ostatni typ trybu dynamicznego, poprzez wybranie <menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Tryb dynamiczny</guimenuitem
+></menuchoice
+>. Ten tryb użyje twojej istniejącej listy odtwarzania jako punktu wyjścia. Możesz go wyłączyć tą samą pozycją w menu.</para>
+		<screenshot>
+			<screeninfo
+>Dynamiczna lista odtwarzania załadowana</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Dynamiczna lista odtwarzania załadowana</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>Przycisk  <guibutton
+>Zapełnij</guibutton
+> wyczyści Twoją listę odtwarzania i doda do niej na nowo utwory, w zależności od trybu dynamicznego, którego uzywasz. Przycisk <guibutton
+>Edytuj ten tryb dynamiczny</guibutton
+> pokaże okno konfiguracji trybu dynamicznego.</para
+> <note
+><para
+>Te przyciski nie będą widoczne, jeżeli wyłączyłeś tryb dynamiczny.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Konfiguracja dynamicznych list odtwarzania</title>
+	<sect2>
+		<title
+>Zmiana zachowania dynamicznych list odtwarzania</title>
+		<para
+>Klikniecie prawym przyciskiem myszy na <guilabel
+>dynamicznej liście odtwarzania</guilabel
+> pozwoli ci wybrać opcję <guimenuitem
+>Edytuj</guimenuitem
+>, która otworzy okno konfiguracji trybu dynamicznego.</para>
+	
+		<screenshot>
+			<screeninfo
+>Ustawienia trybu dynamicznego</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Nazwa dynamicznej listy odtwarzania.</term>
+				<listitem>
+					<para
+>Jeżeli chcesz zmień nazwę na taką, jaka ci odpowiada. Nazwy list odtwarzania powinny być unikalne, żeby uniknąć pomyłek.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Usuwaj odtwarzane utwory</term>
+				<listitem>
+					<para
+>Jeżeli wyłączysz tę opcję, twoja lista odtwarzania będzie systematycznie się powiększać, ustawienia zbliżających się utworów są ignorowane i utwory nie będą powtarzane na liście odtwarzania. Jeżeli ta opcja jest włączona, odtwarzane utwory są usuwane z początku lisy, biorąc pod uwagę ustawienia ilości pokazywanych odtworzonych utworów (nizej).</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Zaznaczaj hisorię</term>
+				<listitem>
+					<para
+>Zaciemnia utwory, które były już odtworzone.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Utwory odtworzone</term>
+				<listitem>
+					<para
+>Utwory odtworzone - ilość odtworzonych utworów, pozostawianych na początku listy odtwarzania. Przydatne, do sprawdzania, co było odtwarzane ostatnio.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Zbliżające się utwory.</term>
+				<listitem>
+					<para
+>To ustawienie ogranicza wielkość Twojej listy odtwarzania.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Utwory do dołączenia</term>
+				<listitem>
+					<para
+>Taka liczba utworów zostanie dołączona do twojej listy odtwarzania po odegraniu każdego utworu. Zauważ, że jeżeli ustawisz tę opcję na wartość większą niż 1, twoja lista odtwarzania zacznie rosnąć bardzo szybko, jako że tylko jeden utwór może zostać jednorazowo odtworzony i usunięty.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Możesz również uzyskać dostęp do tego okna dialogowego poprzez przycisk <guibutton
+>Edytuj ten tryb dynamiczny</guibutton
+> na górze Twojego okna listy odtwarzania.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Pasek trybu dynamicznego</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Dodawanie własnej dynamicznej listy odtwarzania</title>
+		<para
+>Kliknij prawym przyciskiem myszy na dynamicznej liście odtwarzania i wybierz Nowa dynamiczna lista odtwarzania.</para>
+
+		<screenshot>
+			<screeninfo
+>Tworzenie nowej dynamicznej listy odtwarzania</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>Ustawienia po prawej stronie zostały opisane w poprzedniej sekcji. Na panelu po lewej strone, możesz wybierać z istniejących w twoim systemie list odtwarzania i inteligentnych list odtwarzania. Jeżeli wybierzesz kilka list odtwarzania, &amarok-mianownik; będzie dodawał losowe utwory z kazdej z nich.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>Menedżer skryptów</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu menedżera skryptów</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Skrypty pozwalają w łatwy sposób poszerzyć funkcjonalność &amarok-dopelniacz;. Aby uruchomić skrypt &amarok-dopelniacz; uruchom menedżera skryptów wchodząc do menu <menuchoice
+><guimenu
+>Narzędzia</guimenu
+><guimenuitem
+>Menedżer skryptów</guimenuitem
+></menuchoice
+> na pasku narzędzi &amarok-dopelniacz;. W oknie dialogowym menedżera skryptów znajdziesz listę zainstalowanych skryptów; wybierz z niej skrypt i naciśnij przycisk <guibutton
+>Uruchom</guibutton
+>, aby rozpocząć jego działanie. Skrypt będzie działał aż do momentu jego zakończenia lub ręcznego zatrzymania, poprzez wskazanie go w menedżerze skryptów i naciśnięcie przycisku <guibutton
+>Stop</guibutton
+>.</para>
+
+<tip
+><para
+>Niektóre skrypty udostępniają specjalne opcje konfiguracyjne. Aby mieć do nich dostęp, najpierw uruchom skrypt, a następnie kliknij przycisk <guibutton
+>Konfiguruj</guibutton
+>, a wówczas otworzy się okno konfiguracyjne.</para
+></tip>
+
+<para
+>Aby zainstalować nowe skrypty &amarok-dopelniacz; kliknij przycisk <guibutton
+>Zainstaluj skrypt</guibutton
+> w oknie dialogowym menedżera skryptów. Pojawi się okno wyboru pliku, pozwalające wybrać pakiet skryptu &amarok-dopelniacz;. Po wybraniu pakietu do instalacji, na liście pojawi się nowy wpis. Możesz również instalowac nowe skrypty klikając przycisk <guibutton
+>Pobierz więcej skryptów</guibutton
+>, co spowoduje otwarcie okna pobierania i instalacji skryptów bezpośrednio z Internetu.</para>
+
+<para
+>Możesz natrafić również na nieużywane skrypty. Aby je usunąć, zaznacz je w menedżerze skryptów i kliknij przycisk <guibutton
+>Odinstaluj</guibutton
+>.</para>
+
+<note
+><para
+>Jeśli szukasz informacji na temat tworzenia skryptów &amarok-dopelniacz;, przeczytaj proszę rozdział tego dokumentu zatytułowany <link linkend="script-writing"
+>Tworzenie skryptów</link
+>.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>Wizualizacje</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu wizualizacji</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Okno wizualizacji jest wykorzystywane do włączania dostępnych wizualizacji w &amarok-narzednik;. Lista dostępnych wizualizacji będzie wyświetlona w oknie. Aby je włączyć, zaznacz odpowiednie pole obok wybranej wizualizacji.</para>
+
+</sect1>
+
+</chapter>

@@ -1,0 +1,1665 @@
+<chapter id="advanced-features">
+<title
+>Zaawansowane funkcje programu Amarok</title>
+
+
+<sect1 id="keybd-shortcuts">
+<title
+>Skróty klawiszowe</title>
+
+<para
+>&amarok-mianownik; tak jak większość programów, wykorzystuje skróty klawiszowe; poniżej znajduje się lista tych skrótów i opis ich działania. Aby skonfigurować skróty globalne, wystarczy kliknąć prawym przyciskiem myszy na oknie odtwarzacza i wybrać polecenie <guimenuitem
+>Konfiguracja skrótów globalnych...</guimenuitem
+>. Podobnie postępujemy chcąc ustalić skróty &amarok-dopelniacz;, tyle, że po kliknięciu wybieramy polecenie <guimenuitem
+>Konfiguracja skrótów...</guimenuitem
+></para>
+
+<tip
+><para
+>Możesz przyporządkować swoim klawiszom multimedialnym skróty &amarok-dopelniacz;. W ten sposób zamienisz swoją klawiaturę w centrum sterowania programu &amarok-mianownik;.</para
+></tip>
+
+<para
+>Skróty globalne:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Kombinacja klawiszy</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>X</keycap
+></keycombo
+></entry>
+<entry
+>Odtwarzaj</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Pauza</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>V</keycap
+></keycombo
+></entry>
+<entry
+>Stop</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Następny utwór</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Poprzedni utwór</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>KP_Add</keycap
+></keycombo
+></entry>
+<entry
+>Podgłośnij</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>KP_Subtract</keycap
+></keycombo
+></entry>
+<entry
+>Przycisz</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Shift</keycap
+><keycap
+>KP_Add</keycap
+></keycombo
+></entry>
+<entry
+>Wyszukaj do przodu</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Shift</keycap
+><keycap
+>KP_Subtract</keycap
+></keycombo
+></entry>
+<entry
+>Wyszukaj do tyłu</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Dodaj media</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>P</keycap
+></keycombo
+></entry>
+<entry
+>Przełącz listę odtwarzania</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>O</keycap
+></keycombo
+></entry>
+<entry
+>Pokaż OSD</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Wycisz</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>Skróty programu &amarok-mianownik;:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Kombinacja klawiszy</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Kopiuj</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>KP_Enter</keycap
+></keycombo
+></entry>
+<entry
+>Idź do bieżącego utworu</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+></entry>
+<entry
+>Kolejkuj wybrane utwory</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Zakończ</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Przywróć</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+></entry>
+<entry
+>Zapisz listę odtwarzania jako...</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Zaznacz wszystko</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Pokaż pasek menu</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+></entry>
+<entry
+>Tasuj</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Cofnij</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+
+<para
+>Skróty przeglądarki listy odtwarzania:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Kombinacja klawiszy</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycap
+>Spacja</keycap
+></entry>
+<entry
+>Wczytaj listę odtwarzania</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>F2</keycap
+></entry>
+<entry
+>Zmień nazwę listy odtwarzania</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>Backspace</keycap
+></entry>
+<entry
+>Usuń listę odtwarzania</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+<sect1 id="the-dcop-interface">
+<title
+>Interfejs DCOP</title>
+
+<para
+>Interfejs DCOP umożliwia łatwe zarządzanie programem Amarok, za pomocą samodzielnie stworzonych skryptów.</para>
+
+<para
+>Interfejs DCOP programu Amarok posiada wiele standardowych funkcji, występujących również w innych programach KDE. Sekcja ta jest podzielona na sześć tabeli i opisuje funkcje interfejsu DCOP odpowiedzialne za kolekcję, przeglądarkę kontekstową, odtwarzacz, listę odtwarzania, przeglądarkę list odtwarzania oraz skrypty. Przykładowe wywołanie funkcji dcop <quote
+>pause</quote
+> będzie miało następującą postać:</para>
+
+<para
+><prompt
+>&percnt;</prompt
+>dcop amarok player pause</para>
+
+<sect2 id="dcop-collection">
+<title
+>dcop amarok collection</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Funkcja DCOP</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>int totalAlbums()</entry>
+<entry
+>Zwraca całkowitą liczbę albumów w kolekcji.</entry>
+</row>
+
+<row>
+<entry
+>int totalArtists()</entry>
+<entry
+>Zwraca całkowitą liczbę wykonawców w kolekcji.</entry>
+</row>
+
+<row>
+<entry
+>int totalCompilations()</entry>
+<entry
+>Zwraca całkowitą liczbę kompilacji w kolekcji.</entry>
+</row>
+
+<row>
+<entry
+>int totalGenres()</entry>
+<entry
+>Zwraca całkowitą liczbę gatunków w kolekcji.</entry>
+</row>
+
+<row>
+<entry
+>int totalTracks()</entry>
+<entry
+>Zwraca całkowitą liczbę utworów w kolekcji.</entry>
+</row>
+
+<row>
+<entry
+>QString query( QString sql)</entry>
+<entry
+>Zapytuje bazę danych poprzez SQL</entry>
+</row>
+
+<row>
+<entry
+>QStringList similarArtists( int wykonawcy )</entry>
+<entry
+>Zwraca wykonawców zbliżonych do wykonawcy bieżącego utworu; ograniczone do wykonawców.</entry>
+</row>
+
+<row>
+<entry
+>void migrateFile( QString staryURL, QString nowyURL )</entry>
+<entry
+>Przenosi plik do kolekcji, pozostawiając statystyki niezmienione.</entry>
+</row>
+
+<row>
+<entry
+>void scanCollection()</entry>
+<entry
+>Skanuje kolekcję.</entry>
+</row>
+
+<row>
+<entry
+>void scanCollectionChanges()</entry>
+<entry
+>Wyszukuje w kolekcji jedynie zmiany.</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-context">
+<title
+>dcop amarok contextbrowser</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Funkcja DCOP</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>void showCurrentTrack()</entry>
+<entry
+>Wyświetla bieżący utwór w przeglądarce kontekstowej.</entry>
+</row>
+
+<row>
+<entry
+>void showLyrics()</entry>
+<entry
+>Wyświetla kartę tekstów w przeglądarce kontekstowej.</entry>
+</row>
+
+<row>
+<entry
+>void showWiki()</entry>
+<entry
+>Wyświetla kartę Wikipedii w przeglądarce kontekstowej.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-player">
+<title
+>dcop amarok player</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Funkcja DCOP</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>bool dynamicModeStatus()</entry>
+<entry
+>Zwraca status trybu dynamicznego.</entry>
+</row>
+
+<row>
+<entry
+>bool equalizerEnabled()</entry>
+<entry
+>Zwraca status equalizera.</entry>
+</row>
+
+<row>
+<entry
+>bool isPlaying()</entry>
+<entry
+>Zwraca wartość prawda, jeśli coś jest odtwarzane.</entry>
+</row>
+
+<row>
+<entry
+>bool randomModeStatusf()</entry>
+<entry
+>Zwraca status trybu losowego.</entry>
+</row>
+
+<row>
+<entry
+>bool repeatPlaylistStatus()</entry>
+<entry
+>Zwraca status trybu powtarzania listy odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>bool repeatTrackStatus()</entry>
+<entry
+>Zwraca status trybu powtarzania utworu.</entry>
+</row>
+
+<row>
+<entry
+>int getVolume()</entry>
+<entry
+>Zwraca siłę głosu z przedziału 0-100%.</entry>
+</row>
+
+<row>
+<entry
+>int sampleRate()</entry>
+<entry
+>Zwraca częstotliwość próbkowania aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>int score()</entry>
+<entry
+>Zwraca ocenę aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>int status()</entry>
+<entry
+>Zwraca status odtwarzania: 0 - stop, 1 - pauza, 2 - odtwarzanie.</entry>
+</row>
+
+<row>
+<entry
+>int trackCurrentTime()</entry>
+<entry
+>Zwraca bieżącą pozycję odtwarzania wyrażoną w sekundach.</entry>
+</row>
+
+<row>
+<entry
+>int trackPlayCounter()</entry>
+<entry
+>Zwraca liczbę odtworzeń bieżącego utworu.</entry>
+</row>
+
+<row>
+<entry
+>int trackTotalTime()</entry>
+<entry
+>Zwraca długość utworu w sekundach.</entry>
+</row>
+
+<row>
+<entry
+>QString album()</entry>
+<entry
+>Zwraca album, z którego pochodzi aktualnie odtwarzany utwór.</entry>
+</row>
+
+<row>
+<entry
+>QString artist()</entry>
+<entry
+>Zwraca wykonawcę aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>QString bitrate()</entry>
+<entry
+>Zwraca średnią bitowa aktualnie odtwarzanego utworu (XX kbps).</entry>
+</row>
+
+<row>
+<entry
+>QString comment()</entry>
+<entry
+>Zwraca komentarz na temat aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>QString coverImage()</entry>
+<entry
+>Zwraca kodowany adres URL do obrazu okładki aktualnie odtwarzanego utworu. </entry>
+</row>
+
+<row>
+<entry
+>QString currentTime()</entry>
+<entry
+>Zwraca pozycję aktualnie odtwarzanego utworu (format [h:]mm:ss).</entry>
+</row>
+
+<row>
+<entry
+>QString encodedURL()</entry>
+<entry
+>Zwraca kodowany adres URL aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>QString engine()</entry>
+<entry
+>Zwraca informację o bieżącym silniku audio.</entry>
+</row>
+
+<row>
+<entry
+>QString genre()</entry>
+<entry
+>Zwraca informację o gatunku muzyki, do którego należy aktualnie odtwarzany utwór.</entry>
+</row>
+
+<row>
+<entry
+>QString lyrics()</entry>
+<entry
+>Zwraca tekst aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>QString lyricsByPath( QString ścieżka )</entry>
+<entry
+>Zwraca tekst utworu określony ścieżką.</entry>
+</row>
+
+<row>
+<entry
+>QString nowPlaying()</entry>
+<entry
+>Nazwa medium w trakcie odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>QString path()</entry>
+<entry
+>Zwraca niekodowaną ścieżkę aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>QString setContextStyle( QString )</entry>
+<entry
+>Ustala styl CCS dla przeglądarki kontekstowej.</entry>
+</row>
+
+<row>
+<entry
+>QString title()</entry>
+<entry
+>Zwraca tytuł aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>QString totalTime()</entry>
+<entry
+>Zwraca całkowitą długość aktualnie odtwarzanego utworu (format [h:]mm:ss).</entry>
+</row>
+
+<row>
+<entry
+>QString track()</entry>
+<entry
+>Zwraca numer utworu.</entry>
+</row>
+
+<row>
+<entry
+>QString type()</entry>
+<entry
+>Zwraca typ pliku.</entry>
+</row>
+
+<row>
+<entry
+>QString year()</entry>
+<entry
+>Zwraca rok aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>void configEqualizer()</entry>
+<entry
+>Przełącza okno konfiguracyjne equalizera.</entry>
+</row>
+
+<row>
+<entry
+>void enableDynamicMode(bool włączony)</entry>
+<entry
+>Włącza lub wyłącza tryb dynamiczny.</entry>
+</row>
+
+<row>
+<entry
+>void enableOSD(bool włączony)</entry>
+<entry
+>Włącza lub wyłącza wyświetlanie OSD.</entry>
+</row>
+
+<row>
+<entry
+>void enableRandomMode(bool włączony)</entry>
+<entry
+>Włącza lub wyłącza tryb losowy.</entry>
+</row>
+
+<row>
+<entry
+>void enableRepeatPlaylist(bool włączony)</entry>
+<entry
+>Włącza lub wyłącza tryb powtarzania listy.</entry>
+</row>
+
+<row>
+<entry
+>void enableRepeatTrack(bool włączony)</entry>
+<entry
+>Włącza lub wyłącza tryb powtarzania utworu.</entry>
+</row>
+
+<row>
+<entry
+>void mediaDeviceMount()</entry>
+<entry
+>Ustawia polecenie służące do montowania urządzenia odtwarzającego.</entry>
+</row>
+
+<row>
+<entry
+>void mediaDeviceUmount()</entry>
+<entry
+>Ustawia polecenie służące do odmontowania urządzenia odtwarzającego.</entry>
+</row>
+
+<row>
+<entry
+>void mute()</entry>
+<entry
+>Przełącza wyciszanie.</entry>
+</row>
+
+<row>
+<entry
+>void next()</entry>
+<entry
+>Równoznaczne z naciśnięciem przycisku "Dalej".</entry>
+</row>
+
+<row>
+<entry
+>void pause()</entry>
+<entry
+>Równoznaczne z naciśnięciem przycisku "Pauza".</entry>
+</row>
+
+<row>
+<entry
+>void play()</entry>
+<entry
+>Równoznaczne z naciśnięciem przycisku "Odtwarzaj".</entry>
+</row>
+
+<row>
+<entry
+>void playPause()</entry>
+<entry
+>Przełącza pomiędzy odtwarzaniem a pauzą (wygodne dla użytkowników klawiatur mm). </entry>
+</row>
+
+<row>
+<entry
+>void prev()</entry>
+<entry
+>Równoznaczne z naciśnięciem przycisku "Poprzedni".</entry>
+</row>
+
+<row>
+<entry
+>void queueForTransfer( KURL url )</entry>
+<entry
+>Kolejkuj plik przed przesłaniem do urządzenia odtwarzającego.</entry>
+</row>
+
+<row>
+<entry
+>void seek(int s)</entry>
+<entry
+>Wyszukaj w utworze według pozycji w sekundach.</entry>
+</row>
+
+<row>
+<entry
+>void seekRelative(int s)</entry>
+<entry
+>Wyszukuje pozycję względną do bieżącej pozycji utworu.</entry>
+</row>
+
+<row>
+<entry
+>void setEqualizer(int, int, int, int, int, int, int, int, int, int, int)</entry>
+<entry
+>Ustawia częstotliwości equalizera. </entry>
+</row>
+
+<row>
+<entry
+>void setEqualizerEnabled( bool aktywny )</entry>
+<entry
+>Przełącza equalizer.</entry>
+</row>
+
+<row>
+<entry
+>void setEqualizerPreset( QString nazwa )</entry>
+<entry
+>Ustawia domyślną konfigurację equalizera. </entry>
+</row>
+
+<row>
+<entry
+>void setLyricsByPath( QString url, QString tekst )</entry>
+<entry
+>Ustawia tekst utworu określonego przez ścieżkę.</entry>
+</row>
+
+<row>
+<entry
+>void setScore( int ocena )</entry>
+<entry
+>Ustawia ocenę aktualnie odtwarzanego utworu.</entry>
+</row>
+
+<row>
+<entry
+>void setScoreByPath( QString url, int wynik )</entry>
+<entry
+>Ustawia ocenę utworu określonego przez ścieżkę.</entry>
+</row>
+
+<row>
+<entry
+>void setVolume(int głośność)</entry>
+<entry
+>Ustawia głośność w przedziale 0-100%.</entry>
+</row>
+
+<row>
+<entry
+>void showBrowser( QString przeglądarka )</entry>
+<entry
+>Wyświetla przeglądarki w oknie listy odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>void showOSD()</entry>
+<entry
+>Wyświetla OSD na ekranie.</entry>
+</row>
+
+<row>
+<entry
+>void stop()</entry>
+<entry
+>Równoznaczne z naciśnięciem przycisku "Stop".</entry>
+</row>
+
+<row>
+<entry
+>void transferDeviceFiles()</entry>
+<entry
+>Transferuje pliki do urządzenia odtwarzającego.</entry>
+</row>
+
+<row>
+<entry
+>void volumeDown()</entry>
+<entry
+>Zmniejsza głośność o rozsądną wielkość.</entry>
+</row>
+
+<row>
+<entry
+>void volumeUp()</entry>
+<entry
+>Zwiększa głośność o rozsądną wielkość.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-playlist">
+<title
+>dcop amarok playlist</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Funkcja DCOP</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>int getActiveIndex()</entry>
+<entry
+>Zwraca listę aktywnych utworów. -1 jeśli ich brak.</entry>
+</row>
+
+<row>
+<entry
+>int getTotalTrackCount()</entry>
+<entry
+>Zwraca liczbę utworów na liście. 0 jeśli ich brak.</entry>
+</row>
+
+<row>
+<entry
+>QString saveCurrentPlaylist()</entry>
+<entry
+>Zapisuje bieżącą listę do current.xml i zwraca ścieżkę do pliku.</entry>
+</row>
+
+<row>
+<entry
+>void addMedia( KURL )</entry>
+<entry
+>Dodaje media dźwiękowe określone przez URL.</entry>
+</row>
+
+<row>
+<entry
+>void addMediaList( KURL::List lista )</entry>
+<entry
+>Dodaje pewne media dźwiękowe określone przez URL.</entry>
+</row>
+
+<row>
+<entry
+>void clearPlaylist()</entry>
+<entry
+>Oczyszcza listę odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>void playByIndex(int)</entry>
+<entry
+>Uruchamia odtwarzanie utworu według określonego indeksu.</entry>
+</row>
+
+<row>
+<entry
+>void playMedia( KURL )</entry>
+<entry
+>Dodaje media dźwiękowe określone przez URL.</entry>
+</row>
+
+<row>
+<entry
+>void popupMessage( QString)</entry>
+<entry
+>Wyświetla czasową wiadomość wyskakującą.</entry>
+</row>
+
+<row>
+<entry
+>void removeCurrentTrack()</entry>
+<entry
+>Usuwa bieżący utwór z listy odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>void repopulate()</entry>
+<entry
+>Zapełnia listę przypadkowymi utworami.</entry>
+</row>
+
+<row>
+<entry
+>void saveM3u( QString ścieżka, bool relatywneŚcieżki)</entry>
+<entry
+>Zapisuje bieżącą listę jako m3u.</entry>
+</row>
+
+<row>
+<entry
+>void setStopAfterCurrent( bool )</entry>
+<entry
+>Włącza i wyłącza funkcję "Zatrzymaj po bieżącym utworze".</entry>
+</row>
+
+<row>
+<entry
+>void shortStatusMessage( QString)</entry>
+<entry
+>Wyświetla tymczasowy komunikat na pasku stanu.</entry>
+</row>
+
+<row>
+<entry
+>void shufflePlaylist()</entry>
+<entry
+>Tasuje listę odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>void togglePlaylist()</entry>
+<entry
+>Włącza/wyłącza okno listy odtwarzania.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-playlistbrowser">
+<title
+>dcop amarok playlistbrowser</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Funkcja DCOP</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>void addPodcast( QString )</entry>
+<entry
+>Dodaje pozycję podcast do przeglądarki list.</entry>
+</row>
+
+<row>
+<entry
+>void scanPodcasts()</entry>
+<entry
+>Wyszukaje aktualizacje wszystkich podcastów.</entry>
+</row>
+
+<row>
+<entry
+>void addPlaylist( QString )</entry>
+<entry
+>Dodaje listę odtwarzania do przeglądarki list.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-script">
+<title
+>dcop amarok script</title>
+
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Funkcja DCOP</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>bool runScript( QString nazwa)</entry>
+<entry
+>Uruchamia skrypt o danej nazwie. Zwraca wartość prawda, jeśli operacja się powiedzie.</entry>
+</row>
+
+<row>
+<entry
+>bool stopScript( QString nazwa)</entry>
+<entry
+>Zatrzymuje skrypt o danej nazwie. Zwraca wartość prawda, jeśli operacja się powiedzie.</entry>
+</row>
+
+<row>
+<entry
+>QStringList listRunningScripts()</entry>
+<entry
+>Zwraca listę aktualnie uruchomionych skryptów.</entry>
+</row>
+
+<row>
+<entry
+>void addCustomMenuItem(QString podmenu, QString tytułPozycji )</entry>
+<entry
+>Włącza i ustala własną nazwę pozycji w menu.</entry>
+</row>
+
+<row>
+<entry
+>void removeCustomMenuItem(QString podmenu, QString tytułPozycji )</entry>
+<entry
+>Usuwa własną pozycję z menu.</entry>
+</row>
+
+<row>
+<entry
+>QString readConfig( QString klucz)</entry>
+<entry
+>Zwraca wartość konfiguracyjną AmarokConfig z podanego klucza.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+
+</sect2>
+
+</sect1>
+
+<sect1 id="cmd-line-options">
+<title
+>Opcje wiersza poleceń</title>
+
+<para
+>Amarok obsługuje standardowe funkcje wiersza poleceń Qt oraz kde, posiada także opcje wykorzystywane tylko przez niego samego.</para>
+
+<para
+>Opcje Qt i kde:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Opcja</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--help</entry>
+<entry
+>Wyświetla pomoc na temat opcji.</entry>
+</row>
+
+<row>
+<entry
+>--help-qt</entry>
+<entry
+>Wyświetla opcje właściwe QT.</entry>
+</row>
+
+<row>
+<entry
+>--help-kde</entry>
+<entry
+>Wyświetla opcje właściwe KDE.</entry>
+</row>
+
+<row>
+<entry
+>--help-all</entry>
+<entry
+>Wyświetla wszystkie opcje.</entry>
+</row>
+
+<row>
+<entry
+>--author</entry>
+<entry
+>Wyświetla informacje na temat autora.</entry>
+</row>
+
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Pokazuje informacje o wersji.</entry>
+</row>
+
+<row>
+<entry
+>--license</entry>
+<entry
+>Wyświetla informacje na temat licencji.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>Opcje Amarok:</para>
+
+<note
+><para
+>Opcje &amarok-dopelniacz; są zaprojektowane do korzystania z nich podczas działania programu.</para
+></note>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Opcja</entry>
+<entry
+>Działanie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>-r, --previous</entry>
+<entry
+>Przechodzi do poprzedniego utworu na liście odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>-p, --play</entry>
+<entry
+>Rozpoczyna odtwarzanie bieżącej listy odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>-s, --stop</entry>
+<entry
+>Zatrzymanie odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>--pause</entry>
+<entry
+>Pauzuje odtwarzanie.</entry>
+</row>
+
+<row>
+<entry
+>-f, --next</entry>
+<entry
+>Przechodzi do następnego utworu na liście odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>-a, --append</entry>
+<entry
+>Dołącza pliki/adresy URL do listy odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>-e, --enqueue</entry>
+<entry
+>Zobacz append, dostępny na potrzeby wstecznej kompatybilności</entry>
+</row>
+
+<row>
+<entry
+>--queue</entry>
+<entry
+>Kolejkuj pliki/adresu URL po aktualnie odtwarzanym utworze.</entry>
+</row>
+
+<row>
+<entry
+>-m, --toggle-playlist-window</entry>
+<entry
+>Włącza/wyłącza okno listy odtwarzania.</entry>
+</row>
+
+<row>
+<entry
+>--wizard</entry>
+<entry
+>Uruchamia asystenta pierwszego uruchamiania.</entry>
+</row>
+
+<row>
+<entry
+>--engine "name"</entry>
+<entry
+>Uruchamia program &amarok-mianownik; z silnikiem o nazwie...</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+
+<sect1 id="script-writing">
+<title
+>Pisanie skryptów</title>
+
+<para
+>Skrypty pozwalają na poszerzenie możliwości &amarok-dopelniacz; bez zmiany głównego kodu. Skrypty przypominają wtyczki, ale zamiast dedykowanej wtyczki API, wykorzystują one do komunikacji interfejs DCOP &amarok-dopelniacz;. Umożliwia to pisanie skryptów w prawie każdym języku programowania, jak np. Ruby, Python lub PHP. Każdy może tworzyć skrypty, nie tylko w klasycznych językach skryptowych, ale również w językach programowania jak C++ lub C. Dodatkowo, &amarok-mianownik; może powiadamiać skrypty o specjalnych zdarzeniach i sprawiać, że będą działać w odpowiedni sposób. Ten system powiadamiania będzie wyjaśniony w dalszej części tej sekcji.</para>
+
+<sect2 id="script-bindings">
+<title
+>Powiązania dla języków skryptowych</title>
+
+<para
+>Możliwe jest tworzenie prostych skryptów, które nie wymagają interakcji z użytkownikiem, można także tworzyć skrypty z przyjaznym interfejsem, które zachowują się jak samodzielne programy. Przy programowaniu interfejsu może być wykorzystane jedno lub więcej powiązań dostarczonych przez KDE, np. RubyQt, biblioteka powiązania dla języka Ruby. Traci to jednak jakąkolwiek wartość, jeśli nie każdy z użytkowników ma zainstalowane wszystkie dostępne powiązania. Jeśli zdecydujesz się na użycie powiązania, wybierz jedno z bardziej rozpowszechnionych (np. RubyQt lub PyQt).</para>
+
+<para
+>Aby otrzymywana była informacja zwrotna, w sytuacji gdy jakiś skrypt nie działa z powodu brakującej zależności, musisz sprawdzić w skrypcie czy moduł, który chcesz dołączyć rzeczywiście istnieje. Jeśli brak jest zależności, powinieneś wychwycić błąd i wyświetlić okno informacyjne za pomocą programu "kdialog". Dzięki temu użytkownik dowie się, czemu jego skrypt nie działa.</para>
+
+<para
+>Ten przykład pokazuje jak wychwycić brakującą zależność w języku Ruby:</para>
+
+<programlisting
+>begin
+       require 'Korundum'
+rescue LoadError
+       error = 'Korundum (powiązania KDE dla języka Ruby) z pakietu kdebindings v3.4 są wymagane przez ten skrypt.'
+       `kdialog --sorry '#{error}'`
+       exit
+end
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-templates">
+<title
+>Podstawowe informacje o szablonach</title>
+
+<para
+>&amarok-mianownik; udostępnia szablony skryptów dla wielu języków w katalogu <filename class="directory"
+>scripts/templates/</filename
+>. Możesz użyć tych skryptów jako podstawy Twoich własnych skryptów i poszerzyć je o pożądane funkcje. Przekonasz się, że tworzenie skryptów jest teraz rzeczywiście łatwe. Np. jeśli znasz nieco język Python; stworzenie skryptu nie zajmie Ci wiele czasu.</para>
+
+</sect2>
+
+<sect2 id="script-controlling-amarok">
+<title
+>Zarządzanie &amarok-narzednik; za pomocą interfejsu DCOP</title>
+
+<para
+>Poprzez odwołania do niektórych funkcji DCOP, skrypty mogą zarządzać programem Amarok. Najprostszym sposobem wywołania funkcji DCOP jest użycie linii poleceń "dcop", która jest częścią każdej dystrybucji KDE.</para>
+
+<para
+>Oto przykład jak zwiększyć głośność:</para>
+
+<programlisting
+>dcop amarok player volumeUp</programlisting>
+
+<para
+>Większość języków skryptowych zezwala na wykonywanie zewnętrznych programów, z funkcją typu exec(). W ten sposób narzędzie "dcop" może być łatwo wywołane. Oto prosty przykład z języka Python:</para>
+
+<programlisting
+>import os
+ os.system("dcop amarok player volumeDown")
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-notifications">
+<title
+>Powiadomienia</title>
+
+<para
+>&amarok-mianownik; wysyła powiadomienia do wszystkich uruchomionych skryptów poprzez wprowadzenie napisów do kanału stdin. Skrypt powinien zatem nieustannie monitorować stdin i odpowiednio reagować na każde z możliwych zdarzeń. Skrypty mogą również zignorować każde, nieistotne dla nich zdarzenie.</para>
+
+<para
+>&amarok-mianownik; wysyła następujące powiadomienia:</para>
+
+<programlisting
+><cmdsynopsis
+><command
+>configure</command
+></cmdsynopsis>
+Nakazuje skryptowi wyświetlenie okna konfiguracyjnego. Skrypt musi obsługiwać 
+samodzielnie przechowywanie i wczytywanie opcji konfiguracyjnych. Kiedy skrypt 
+jest uruchomiony, amaroK przenosi jego katalog roboczy do katalogu w którym 
+powinny być przechowane wszystkie dane.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>engineStateChange:</command
+><arg
+>empty|idle|paused|playing</arg
+></cmdsynopsis>
+Sygnalizuje zmianę stanu silnika.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>trackChange</command
+></cmdsynopsis>
+Sygnalizuje rozpoczęcie nowego utworu. Skrypt może wykorzystać funkcje DCOP do
+zapytań o dalsze informacje o utworze, np o metadane i o długość.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>volumeChange</command
+><arg
+>newVolume</arg
+></cmdsynopsis>
+Sygnalizuje zmianę poziomu głośności. Poziom głośności jest liczbą całkowitą z
+ zakresu 0-100.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>customMenuClicked:</command
+><arg
+>submenu itemTitle paths</arg
+></cmdsynopsis>
+Zwraca ścieżki do wybranych plików listy odtwarzania, po kliknięciu w menu 
+kontekstowym listy odtwarzania użytkownika. W celach identyfikacyjnych zwracane są również podmenu i tytuł, 
+na wypadek gdyby skrypt oczekiwał licznych powiadomień. 
+Aby umieścić element w menu kontekstowym, użyj funkcji DCOP 
+'dcop amarok script addCustomMenuItem( podmenu tytułPozycji )'. Aby usunąć element z 
+menu kontekstowego, użyj funkcji DCOP 
+'dcop amarok script removeCustomMenuItem( podmenu tytułPozycji )'.
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-termination">
+<title
+>Zakończenie skryptu</title>
+
+<para
+>Zanim &amarok-mianownik; zostanie zamknięty lub kiedy użytkownik zatrzyma skrypt w menedżerze skryptów, &amarok-mianownik; wysyła do skryptu sygnał SIGTERM. Sygnał może być zatrzymany w celu wykonania prac porządkowych, typu zapisanie danych czy opcji konfiguracyjnych.</para>
+
+</sect2>
+
+<sect2 id="script-packaging">
+<title
+>Pakowanie</title>
+
+<para
+>Menedżer skryptów &amarok-dopelniacz; potrafi instalować paczki skryptów, które użytkownik pobrał z serwera WWW. Paczki to zwykłe tarball (.tar), opcjonalnie skompresowane za pomocą bzip2 (.bz2). Gorąco zachęcamy do używania nazw takich jak myscript.amarokscript.tar.bz2, tak aby użytkownik zidentyfikował paczkę jako skrypt programu Amarok.</para>
+
+<note
+><para
+>&amarok-mianownik; 1.3 zaakceptuje jedynie paczki z rozszerzeniem amarokscript, więc lepiej używać tego rozszerzenia już teraz.</para
+></note>
+
+<para
+>Zawartość tarball musi być zorganizowana w sposób następujący:</para>
+
+<programlisting
+>myscript/
+   README
+   mojskrypt.py (program wykonywalny)
+   modul.py
+   foo.data
+   ...
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-permissions">
+<title
+>Zezwolenia pliku</title>
+
+<para
+>Główny skrypt musi posiadać zestaw zezwoleń wykonawczych (+x), podczas gdy dodatkowe moduły wczytywane przez skrypt nie powinny być wykonawcze. Aby chronić zezwolenia pliku w tarball, powinieneś użyć tar z -p flag:</para>
+
+<programlisting
+>tar -cf myscript.amarokscript.tar -p myscript</programlisting>
+
+<note
+><para
+>&amarok-mianownik; nie będzie w stanie zainstalować skryptu, jeśli zezwolenia nie będą poprawnie ustawione.</para
+></note>
+
+</sect2>
+
+<sect2 id="script-distributing">
+<title
+>Dystrybucja</title>
+
+<para
+>Kiedy paczka jest skończona, możesz wysłać ją do <ulink url="http://www.kde-apps.org"
+>www.kde-apps.org</ulink
+>i umieścić odnośnik w &amarok-narzednik; <ulink url="http://amarok.kde.org/amarokwiki/index.php/Scripts"
+>Wiki Scripts Page</ulink
+>. Przy wpisach kde-apps powinieneś użyć kategorii <ulink url="http://kde-apps.org/index.php?xcontentmode=56"
+>&amarok; Scripts</ulink
+>.</para>
+
+</sect2>
+
+</sect1>
+
+
+</chapter>
+

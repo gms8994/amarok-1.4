@@ -1,0 +1,682 @@
+<chapter id="faq">
+<title
+>Perguntas e Respostas</title>
+
+<sect1 id="faq-index">
+<title
+>As FAQs</title>
+
+<para
+>Esta FAQ está organizada em seções para ajudá-lo a encontrar melhor a resposta que procura. Por favor, escolha uma das seguintes seções.</para>
+ 
+<para
+><link linkend="general-usage"
+>Seção de Uso Geral</link
+>: Dúvidas sobre o uso geral do &amarok;.</para>
+
+<para
+><link linkend="playback"
+>Seção de Reprodução</link
+>: Dúvidas sobre os tipos de arquivos suportados e outros problemas de reprodução.</para>
+
+<para
+><link linkend="dev-faq"
+>Seção de Desenvolvimento</link
+>: Erros, Pedidos de Novos Recursos e outras dúvidas de desenvolvimento.</para>
+
+<para
+><link linkend="tips"
+>Seção de Dicas &amp; Truques</link
+>: Outros recursos úteis que não são encontradas em mais nenhum lugar.</para>
+
+</sect1>
+
+<sect1 id="general-usage">
+<title
+>Uso Geral</title>
+
+<qandaset id="faq1">
+
+<qandaentry>
+<question>
+<para
+>Onde posso obter ajuda para o &amarok;?</para>
+</question>
+<answer>
+<para
+>Você poderá falar com os programadores e fazer perguntas <ulink url="irc://irc.freenode.net/amarok"
+>no nosso canal de IRC</ulink
+>. Esperamos encontrá-lo aqui :) </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Quando inicio o &amarok;, vejo uma lista de músicas em branco. Como eu coloco as músicas no tocador?</para>
+</question>
+<answer>
+<para
+>Simples. Use o <link linkend="file-browser"
+>Navegador de Arquivos</link
+> do lado esquerdo para ir para a pasta desejada. Depois arraste os arquivos para a <link linkend="playlist"
+>Lista de Músicas</link
+> à direita. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Como retiro faixas da Lista de Reprodução?</para>
+</question>
+<answer>
+<para
+>Selecione os arquivos que deseja remover e pressione a tecla  <keycap
+>Del</keycap
+> do seu teclado. Ou clique com o &RMB; e escolha a opção <guimenuitem
+>Remover Selecionados</guimenuitem
+> no menu de contexto.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Como carrego uma lista de músicas?</para>
+</question>
+<answer>
+<para
+>Basta arrastar e soltar o arquivo da lista de músicas na janela da <link linkend="playlist"
+>Lista de Músicas</link
+>, tal como faria com qualquer outro arquivo. É tão simples quanto isso!</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Como posso salvar a lista atual?</para>
+</question>
+<answer>
+<para
+>O botão <guibutton
+>Salvar a Lista de Músicas</guibutton
+> está ao lado do botão <guibutton
+>Adicionar Mídia</guibutton
+> na <link linkend="toolbar"
+>Barra de Ferramentas da Lista de Músicas</link
+>. Basta clicar nele! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Não existem visualizações no diálogo de visualizações. </para>
+</question>
+<answer>
+<para
+>Provavelmente você não tem o 'xmms-config' instalado; reconfigure e recompile depois de instalar o pacote xmms-devel apropriado. Você poderá também querer instalar a última versão da <ulink url="http://libvisual.sf.net"
+>libvisual</ulink
+>, que possui algumas visualizações engraçadas. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Onde está o equalizador? </para>
+</question>
+<answer>
+<para
+>A <link linkend="equalizer"
+>Janela do Equalizador</link
+> pode ser encontrada no <link linkend="rmb-menu"
+>menu do botão direito do mouse</link
+>. Você poderá também encontrá-lo no <link linkend="menubar"
+>menu</link
+> selecionando <menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Equalizador</guimenuitem
+></menuchoice
+>. </para>
+</answer>
+</qandaentry>
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="playback">
+<title
+>Reprodução</title>
+
+<qandaset id="Playback">
+
+<qandaentry>
+<question
+><para
+>Que tipos de mídias o amaroK suporta?</para
+></question>
+<answer>
+<para
+>Nenhum. Sim, é verdade! Nenhum! A política atual é independente da infra-estrutura, assim a pergunta a fazer é "Que tipos de mídias o GStreamer/xine/aRts/NMM/MAS/KDEmm suporta?". Aí, como poderá calcular, são suportados quase todos os formatos de áudio que possa pensar. O GStreamer até consegue decodificar texto e PNGs! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Porque o amaroK não toca MP3s?</para>
+</question>
+<answer>
+<para
+>Ele consegue! Talvez você esteja usando o Linux da Fedora/RedHat, que não vem com nenhum decodificador de MP3 padrão (devido a questões de patentes). A solução é: </para>
+<para
+><keycombo
+>&Alt; <keycap
+>F2</keycap
+></keycombo
+>, gg:redhat mp3 kde, <keycap
+>ENTER</keycap
+> </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Com o motor do GStreamer estou obtendo 100% de utilização do CPU ao tocar músicas. Como posso resolver isto?</para>
+</question>
+<answer>
+<para
+>Ao usar o motor do GStreamer com o 'alsasink', o amaroK necessita que o dispositivo ofereça uma mesa de mixagem. A mixagem permite a vários aplicativos acessarem ao dispositivo ao mesmo tempo e enviarem som simultaneamente. Isto pode ser conseguido com uma placa de som com mixagem por 'hardware' (p.ex., a SBLive), ou usando o plugin "dmix" do ALSA, que faz a mixagem por 'software'. </para>
+<para
+>Aqui estão instruções para a instalação e configuração do plugin dmix: </para>
+<para>
+<ulink url="http://opensrc.org/alsa/index.php?page=DmixPlugin"
+>FAQ do 'dmix' do ALSA</ulink>
+</para>
+<para
+>Depois da instalação, você terá que indicar "dmix" como dispositivo de som no diálogo de configuração do motor. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Não consigo tocar nenhum arquivo multimídia no amaroK, porquê?</para>
+</question>
+<answer>
+<para
+>Você precisa testar as plataformas de som na linha de comando:</para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>artsplay teste.mp3</command
+> </para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>gst-launch filesrc location=/home/teste/teste.mp3 ! spider ! audioscale ! audioconvert ! alsasink</command
+> </para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>xine-check</command
+> </para>
+<para
+>Os resultados destes comandos deverão ajudá-lo a identificar os problemas que estão ocorrendo e como resolvê-los. Provavelmente você terá que usar um 'sink' (canal) diferente para testar o GStreamer (&eg;, o osssink). </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>O amaroK pode trabalhar diretamente com OSS/ALSA? </para>
+</question>
+<answer>
+<para
+>Isto já é feito! Não se esqueça que os dados têm que ser decodificados primeiro. Você não poderá simplesmente encaminhar um MP3 para o ALSA; tudo o que irá obter serão ruídos. O GStreamer é a melhor escolha para a maioria das pessoas que desejam uma solução de decodificação com baixa sobrecarga, uma vez que lê o arquivo, decodifica-o e encaminha os dados de PCM para o ALSA. Exatamente como o XMMS. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Mas o XMMS pode enviar diretamente os dados para o ALSA! </para>
+</question>
+<answer>
+<para
+>Mas ele decodifica-os primeiro! O GStreamer pode enviar diretamente para o ALSA. Assim como o xine. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>O som 'se engasga'; existe algo que eu possa fazer para melhorá-lo? </para>
+</question>
+<answer>
+
+<para
+>Você poderá tanto usar o motor do GStreamer (é ótimo!) como ajustar o aRts. Abra o <menuchoice
+><guimenu
+>Centro de Controle</guimenu
+><guisubmenu
+>Som e Multimídia</guisubmenu
+><guimenuitem
+>Sistema de Som</guimenuitem
+></menuchoice
+>. Ative a opção <guimenuitem
+>Rodar com a maior prioridade possível</guimenuitem
+> e aumente o tamanho do <guimenuitem
+>'Buffer' de som:</guimenuitem
+> (atenção, veja a próxima FAQ!). Você deverá também certificar-se de que o seu 'artswrapper' está SUID:</para>
+
+<para
+><prompt
+>&percnt;</prompt
+><command
+>su</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>chmod a+rsx /caminho/kde/bin/artswrapper</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>killall -9 artsd</command
+></para>
+
+<para
+>Com o KDE 3.2.x, existem problemas com os decodificadores do KDEMultimedia que poderão causar uma reprodução distorcida; por favor veja <ulink url="http://bugs.kde.org/show_bug.cgi?id=80497"
+>este relatório de erros</ulink
+>.</para>
+
+<para
+>Do mesmo modo, aumentar o tamanho do 'buffer' de som no seu arquivo de configuração do ALSA .asoundrc, poderá ser uma grande ajuda. </para>
+
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>A utilização do CPU é elevada; existe algo que eu possa fazer para melhorá-la? </para>
+</question>
+<answer>
+<para
+>Tanto poderá não usar o motor do aRts, usar os motores do GStreamer ou do xine ou lidar diretamente com o uso alto do CPU, instalando todo o KDEMultimedia para obter os decodificadores mais rápidos do aRts (&eg;, olibarts_mpeglib.so, etc.)</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Os analisadores do amaroK estão completamente inoperáveis! </para>
+</question>
+<answer>
+<para
+>Você poderá estar provavelmente usando o motor do aRts; tanto poderá usar outro motor (o motor do 'xine' foi ajustado seriamente para dar uma sincronização perfeita do analisador), como reduzir o tamanho do seu 'buffer' do 'aRts' no &kcontrol;, no sistema de som. Quanto menor o 'buffer', mais reativas ficam as visualizações. Sim, isto é um erro! Por favor ajude-nos a corrigí-lo! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Tenho o GStreamer instalado mas quando tento mudar para o motor do GStreamer, o &amarok; estoura; o que está acontecendo? </para>
+</question>
+<answer>
+<para
+>Depois de instalar o GStreamer, você terá que registrar os seus componentes, executando o 'su -c gst-register' que deverá se encarregar de registrar os seus componentes do GStreamer. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Eu executei o 'gst-register' mas tenho ainda alguns problemas com o GStreamer; o que posso fazer?</para>
+</question>
+<answer>
+<para
+>Você poderá tentar a <ulink url="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-using.html"
+>FAQ do GStreamer</ulink
+>. Se tudo o mais falhar, poderá tentar as pessoas mais experientes no <ulink url="irc://irc.freenode.net/gstreamer"
+>canal #gstreamer de IRC</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="dev-faq">
+<title
+>Desenvolvimento</title>
+
+<qandaset id="development">
+
+<qandaentry>
+<question>
+<para
+>Como obtenho a versão CVS do &amarok;? </para>
+</question>
+<answer>
+<para
+>Aqui está um pequeno tutorial de Christian Muehlhaeuser.</para>
+
+<para
+>Crie uma nova pasta no seu disco, por exemplo "kde-cvs":</para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>mkdir kde-cvs</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>cd kde-cvs </command
+></para>
+
+<para
+>Colocaremos todo o código nela, que será obtido agora:</para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>export CVSROOT=":pserver:anonymous@anoncvs.kde.org:/home/kde"</command
+> </para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>cvs -z4 co kde-common/admin</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>cvs -z4 co -l kdeextragear-1</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>cvs -z4 co kdeextragear-1/amarok</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>cd kdeextragear-1</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>ln -s ../kde-common/admin</command
+></para>
+
+<para
+>Vamos compilar!</para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>make -f Makefile.cvs</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>./configure --prefix=`kde-config --prefix`</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>make</command
+></para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>su -c "make install"</command
+></para>
+
+<para
+>Divirta-se! Lembre-se de fazer "make install" regularmente para garantir que as modificações aos plugins são instaladas.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Como poderei obter um registro completo depois de um estouro? </para>
+</question>
+
+<answer>
+<para
+>A forma mais confiável é compilar o 'amarok' com a opção --enable-debug=full, e depois usar o 'gdb' (o depurador da GNU):</para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>gdb amarokapp</command
+></para>
+<para
+><prompt
+>(gdb) </prompt
+><command
+>run</command
+></para>
+<para
+><prompt
+>(gdb) </prompt
+><command
+>[wait for crash..]</command
+></para>
+<para
+><prompt
+>(gdb) </prompt
+><command
+>bt</command
+></para>
+<para
+>Se quiser enviar os dados de rastreamento para o <ulink url="irc://irc.freenode.net/amarok"
+>nosso canal de IRC</ulink
+>, então use por favor os recursos fabulosos em <ulink url="http://nopaste.php.cd"
+>http://nopaste.php.cd</ulink
+>. Obrigado! </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Descobri um erro / tive uma ideia ótima para o amaroK! </para>
+</question>
+<answer>
+<para
+>Por favor comunique-as em <ulink url="http://bugs.kde.org"
+></ulink
+>, se tiver uma lista de sugestões/pedidos será melhor enviá-los para a nossa lista de correio: <email
+>amarok-devel@lists.sourceforge.net</email
+>. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Vocês aceitam alterações ('patches')? </para>
+</question>
+<answer>
+<para
+>Com prazer! A melhor abordagem é comunicar-nos o que planeja fazer antes de fazer alguma coisa, para que possamos discutir o assunto, mas não se assuste, uma vez que ainda não recusamos nenhuma alteração! A discussão é principalmente para o ajudar a alterar as partes corretas do amaroK. Depois, você poderá então submeter um 'patch' para a lista de correio ou aplicá-lo logo, se tiver acesso ao CVS. Contudo, avise-nos antes de aplicar novos recursos no CVS! Se tiver uma correção para um erro pode seguir em frente; afinal, esto é código aberto :) </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Porque escolheram o nome &amarok;? </para>
+</question>
+<answer>
+<para
+>O &amarok; é um álbum do compositor britânico Mike Oldfield. O autor gosta bastante dele e pensa que o nome tem um som legal. Mais, obviamente, ele contém o importantíssimo <quote
+>K</quote
+>.. :) </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Escreve-se &amarok;, AmaroK ou Amarok? </para>
+</question>
+<answer>
+<para
+>É com certeza <quote
+>&amarok;</quote
+>! Mas concordamos que isto é pouco convencional :) </para>
+</answer>
+</qandaentry>
+
+</qandaset>
+</sect1>
+
+<sect1 id="tips">
+<title
+>Dicas &amp; Truques</title>
+
+<qandaset id="tricks">
+
+<qandaentry>
+<question>
+<para
+>Como uso o &amarok; como um despertador? </para>
+</question>
+<answer>
+<para
+>De fato, graças à magia do DCOP, já é possível :) Basta definir um alarme no seu programa de calendário favorito e dizer-lhe para executar o seguinte comando: </para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>dcop amarok player play</command
+></para>
+<para
+>Este comando irá dizer ao &amarok; para começar a tocar. Certifique-se que o &amarok; esteja rodando antes de ir deitar, para poder então acordar com o som maravilhoso que colocou tocando antes de parar a reprodução e ir para cama. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Como sei o que o &amarok; está tocando agora, quando estiver noutro computador? </para>
+</question>
+<answer>
+<para
+>Se tiver um ambiente de SSH devidamente configurado, poderá usá-lo para obter essa informação. O seguinte comando irá devolver o texto de 'Tocando Agora' </para>
+<para
+><prompt
+>&percnt;</prompt
+><command
+>ssh -i ~/.ssh/id_rsa seu_ip dcop --user seu_usuário amarok player nowPlaying</command
+></para>
+<para
+>Certifique-se que substitui o 'seu_ip' pelo seu endereço IP e 'seu_usuário' pelo nome do seu usuário. Lembre-se também que isto espera que a sua identificação conste no arquivo ~/.ssh/id_rsa. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Que tipos de truques a <link linkend="player-window"
+>Janela do Leitor</link
+> faz? </para>
+</question>
+<answer>
+<para
+>Os analisadores do leitor do &amarok; podem ser destacados da <link linkend="player-window"
+>Janela do Leitor</link
+>. Pressionando em <keycap
+>d</keycap
+> no seu teclado, o analisador ativo se abrirá numa janela independente e redimensionável. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Que tipos de truques a <link linkend="playlist-window"
+>Janela da Lista de Músicas</link
+> faz?</para>
+</question>
+<answer>
+<para
+>Se mantiver o <keycap
+>Control</keycap
+> pressionado enquanto clica no &RMB;, isto coloca os arquivos na lista de espera, na ordem na qual clicou neles. </para>
+
+<para
+>Pressionando <keycap
+>Enter</keycap
+> depois de ter feito uma pesquisa na lista de músicas, irá tocar o primeiro item da procura e a limpará. </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Já vi que a <link linkend="player-window"
+>Janela do Leitor</link
+> e a <link linkend="playlist-window"
+>Janela da Lista de Músicas</link
+> possuem truques legais, mas e o ícone na bandeja? </para>
+</question>
+<answer>
+
+<para
+>Clicar com o &MMB; no ícone toca ou coloca em pausa a faixa atual. </para>
+
+<para
+>Manter o <keycap
+>Shift</keycap
+> pressionado enquanto desloca a roda do mousa avança ou recua na faixa atual. </para>
+
+<para
+>Manter o <keycap
+>Control</keycap
+> pressionado enquanto desloca a roda do mouse irá saltar faixas na lista de músicas. </para>
+
+<para
+>Se arrastar e soltar itens no ícone da bandeja do sistema irá abrir um menu de contexto que lhe permite escolher entre três opções: Adicionar à Lista de Músicas, Adicionar e Tocar e Colocar após à Faixa Atual. </para>
+
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+</chapter>

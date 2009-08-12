@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+          <!ENTITY amarok "amaroK">
+          <!ENTITY kappname "&amarok;">
+          <!ENTITY % addindex "IGNORE">
+          <!ENTITY % Estonian  "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>&amarok; võimaluste ülevaade</title>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Sissejuhatus</title>
+
+<!-- Short intro here.-->
+
+<para
+></para>
+
+</chapter>
+
+<chapter id="features">
+<title
+>Võimalused</title>
+
+<!-- All the features go here. This could end up being huge.-->
+<!-- A one line description of each feature should go here to. -->
+
+<para
+></para>
+
+</chapter>
+
+
+<chapter id="using-features">
+<title
+>Võimaluste kasutamine</title>
+
+<!-- Hopefully we can help reduce the number of users errors here. At least we can say RTFM and have some decent docs to read. -->
+
+<para
+></para>
+
+<sect1 id="feature-cover-manager">
+<title
+>Kaanepiltide haldur</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-visualizations">
+<title
+>Visualiseeringud</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-equalizer">
+<title
+>Ekvalaiser</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-scripts">
+<title
+>Skriptid</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-context-browser">
+<title
+>Kontekstisirvija</title>
+
+<para
+></para>
+
+<!-- If there are any brave souls, please add CSS theme stuff here -->
+
+<sect2 id="home">
+<title
+>Kodukaart</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="current-track">
+<title
+>Aktiivse pala kaart</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="lyrics">
+<title
+>Sõnade kaart</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-collection-browser">
+<title
+>Muusikakogu sirvija</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-playlist-browser">
+<title
+>Lugude nimekirja sirvija</title>
+
+<para
+></para>
+
+
+<sect2 id="smart-playlists">
+<title
+>Nutikad lugude nimekirjad</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-search-browser">
+<title
+>Otsingusirvija</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-media-device-browser">
+<title
+>Meediaseadme sirvija</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-files-browser">
+<title
+>Failisirvija</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-cd-burning">
+<title
+>CD-de kirjutamine</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-tagging">
+<title
+>Sildistamine</title>
+
+<para
+></para>
+
+</sect1>
+
+
+</chapter>
+
+</book>

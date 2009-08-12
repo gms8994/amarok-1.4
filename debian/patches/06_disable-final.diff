@@ -1,0 +1,10 @@
+--- amarok/src/Makefile.am.orig
++++ amarok/src/Makefile.am
+@@ -8,6 +8,7 @@
+     KONQSIDEBAR_SUBDIR = konquisidebar
+ endif
+ 
++KDE_OPTIONS = nofinal
+ 
+ lib_LTLIBRARIES = libamarok.la
+ 

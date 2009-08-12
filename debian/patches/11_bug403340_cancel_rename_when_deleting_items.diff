@@ -1,0 +1,15 @@
+--- amarok/src/playlist.cpp	2007-12-25 23:53:35.000000000 +0200
++++ amarok/src/playlist.cpp	2007-12-26 00:00:38.000000000 +0200
+@@ -4381,6 +4381,12 @@
+             setStopAfterMode( DoNotStop );
+     }
+ 
++    //cancel rename if it is pending (Bug: #147587)
++    if ( m_itemToRename == item ) {
++        m_clicktimer->stop();
++        m_itemToRename = 0;
++    }
++
+     //keep m_nextTracks queue synchronized
+     if( m_nextTracks.removeRef( item ) && !multi )
+        emit queueChanged( PLItemList(), PLItemList( item ) );

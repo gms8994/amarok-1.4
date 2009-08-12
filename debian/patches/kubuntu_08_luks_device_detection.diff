@@ -1,0 +1,76 @@
+Index: amarok-1.4.9.1/amarok/src/medium.cpp
+===================================================================
+--- amarok-1.4.9.1.orig/amarok/src/medium.cpp	2008-04-10 22:16:37.000000000 +0200
++++ amarok-1.4.9.1/amarok/src/medium.cpp	2008-04-12 13:45:47.000000000 +0200
+@@ -40,6 +40,8 @@
+ 	m_properties+= QString::null; /* BASE_URL */
+ 	m_properties+= QString::null; /* MIME_TYPE */
+ 	m_properties+= QString::null; /* ICON_NAME */
++	m_properties+= "false"; /* ENCRYPTED */
++	m_properties+= QString::null; /* CLEAR_DEVICE_UDI */
+ 
+ 	loadUserLabel();
+ }
+@@ -78,6 +80,8 @@
+ 	m_properties+= QString::null; /* BASE_URL */
+ 	m_properties+= QString::null; /* MIME_TYPE */
+ 	m_properties+= QString::null; /* ICON_NAME */
++	m_properties+= QString::null; /* ENCRYPTED */
++	m_properties+= QString::null; /* CLEAR_DEVICE_UDI */
+ }
+ 
+ const Medium Medium::create(const QStringList &properties)
+@@ -100,6 +104,8 @@
+ 		m.m_properties[BASE_URL] = properties[BASE_URL];
+ 		m.m_properties[MIME_TYPE] = properties[MIME_TYPE];
+ 		m.m_properties[ICON_NAME] = properties[ICON_NAME];
++		m.m_properties[ENCRYPTED] = properties[ENCRYPTED];
++		m.m_properties[CLEAR_DEVICE_UDI] = properties[CLEAR_DEVICE_UDI];
+ 	}
+ 
+ 	return m;
+@@ -125,7 +131,6 @@
+ 			props.erase(first, last);
+ 		}
+ 	}
+-
+ 	return l;
+ }
+ 
+Index: amarok-1.4.9.1/amarok/src/medium.h
+===================================================================
+--- amarok-1.4.9.1.orig/amarok/src/medium.h	2008-04-10 22:16:37.000000000 +0200
++++ amarok-1.4.9.1/amarok/src/medium.h	2008-04-12 13:45:47.000000000 +0200
+@@ -43,7 +43,9 @@
+     static const uint BASE_URL = 10;
+     static const uint MIME_TYPE = 11;
+     static const uint ICON_NAME = 12;
+-    static const uint PROPERTIES_COUNT = 13;
++    static const uint ENCRYPTED = 13;
++    static const uint CLEAR_DEVICE_UDI = 14;
++    static const uint PROPERTIES_COUNT = 15;
+     static const QString SEPARATOR;
+ 
+     Medium();
+@@ -67,6 +69,8 @@
+     QString baseURL() const { return m_properties[BASE_URL]; };
+     QString mimeType() const { return m_properties[MIME_TYPE]; };
+     QString iconName() const { return m_properties[ICON_NAME]; };
++    bool isEncrypted() const { return m_properties[ENCRYPTED]=="true"; };
++    QString clearDeviceUdi() const { return m_properties[CLEAR_DEVICE_UDI]; };
+ 
+     bool needMounting() const;
+     KURL prettyBaseURL() const;
+Index: amarok-1.4.9.1/amarok/src/mediadevicemanager.cpp
+===================================================================
+--- amarok-1.4.9.1.orig/amarok/src/mediadevicemanager.cpp	2008-04-12 13:46:11.000000000 +0200
++++ amarok-1.4.9.1/amarok/src/mediadevicemanager.cpp	2008-04-12 13:46:47.000000000 +0200
+@@ -77,6 +77,8 @@
+             manualDevices.append( QString::null );     //baseURL
+             manualDevices.append( QString::null );     //MIMEtype
+             manualDevices.append( QString::null );     //iconName
++            manualDevices.append( "false" );           //encrypted
++            manualDevices.append( QString::null );     //clearDeviceUdi
+             manualDevices.append( "---" );             //separator
+         }
+     }

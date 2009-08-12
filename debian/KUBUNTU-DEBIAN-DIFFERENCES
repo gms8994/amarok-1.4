@@ -1,0 +1,14 @@
+debian/install-mp3			/usr/lib/amarok
+amarok/src/engine/xine/amarok_xine-mp3_install.desktop /usr/share/services
+Depend on amarok-xine | amarok-engine
+export KUBUNTU_DESKTOP_POT=extragear-multimedia_amarok
+install debian/kubuntu-media-amarok and debian/amarok_play_audiocd.desktop in amarok.install
+chmod x debian/amarok/usr/bin/kubuntu-media-amarok in debian/rules in section
+	common-binary-post-install-arch::
+remove amarok-common.lintian, amarok.lintian
+make watch file actually work
+
+#### due to removal of KDE 3 packages ####
+remove kdemultimedia-dev, kdebase-dev from Build-Depends
+remove amarok-konqsidebar, kdemultimedia-kio-plugins from Recommends
+remove complete amarok-konqsidebar package

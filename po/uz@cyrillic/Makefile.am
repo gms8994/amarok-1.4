@@ -1,0 +1,3 @@
+KDE_LANG = uz@cyrillic
+SUBDIRS  = $(AUTODIRS)
+POFILES  = AUTO

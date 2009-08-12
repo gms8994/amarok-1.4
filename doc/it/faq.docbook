@@ -1,0 +1,1334 @@
+<chapter id="faq">
+<title
+>Domande e risposte</title>
+
+<sect1 id="faq1">
+<title
+>Cosa è &amarok;?</title>
+
+<qandaset id="what-is">
+<qandaentry>
+
+<question>
+<para
+>Cosa è &amarok;?</para>
+</question>
+
+<answer>
+<para
+>&amarok; è un lettore musicale per sistemi Unix (ad es. Linux). Ulteriori informazioni possono essere reperite in un <ulink url="http://amarok.kde.org/amarokwiki/index.php/What_is_AmaroK%3F"
+>riassunto delle sue caratteristiche</ulink
+> e nella <ulink url="http://amarok.kde.org/index.php?set_albumName=Screenshots&amp;option=com_gallery&amp;Itemid=60&amp;include=view_album.php"
+>galleria delle immagini</ulink
+>.</para>
+</answer>
+
+</qandaentry>
+</qandaset>
+
+</sect1>
+
+<sect1 id="faq2">
+<title
+>Installazione</title>
+
+<qandaset id="installation-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Posso usare &amarok; senza KDE?</para>
+</question>
+
+<answer>
+<para
+>&amarok; richiede solamente KDElibs, null'altro di KDE. Bisogna quindi avere KDElibs installato correttamente (compresi tutti i binari ad esso inclusi, perché &amarok; necessita di alcuni di questi per trovare i plugin e per i plugin degli script). Abbiamo scritto un'introduzione su <ulink url="http://amarok.kde.org/amarokwiki/index.php/KDElibs_without_aRts"
+>come compilare un KDElibs minimale</ulink
+> che può essere utile.</para>
+<para
+>Affinché alcune caratteristiche funzionino correttamente, come l'on-screen display, viene richiesto che il proprio gestore finestre supporti gli standard freedesktop.org. GNOME funzionerà bene, ma fluxbox avrà dei problemi. Ci stiamo impegnando a supportare &amarok; in tutte le piattaforme. Usiamo KDElibs e Qt perché offrono un ambiente di sviluppo eccezionale.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq3">
+<title
+>Risoluzione problemi</title>
+
+<qandaset id="troubleshooting">
+
+<qandaentry>
+<question>
+<para
+>&amarok; va in crash durante la scansione della collezione, sempre allo stesso punto. Cosa succede?</para>
+</question>
+
+<answer>
+<para
+>È probabile che un file nella collezione causi un errore nella libreria TagLib e faccia arrestare &amarok;. Si può identificare questo file guardando ~/.kde/share/apps/amarok/collection_scan.log. Bisognerebbe segnalare questo crash al database di bug di TagLib su <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+> ed allegare il file in questione. In seguito si può rimuovere il file dalla collezione e ripetere la scansione.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>&amarok; va in crash quando riproduce una determinata traccia, ogni volta. Cosa c'è che non va?</para>
+</question>
+
+<answer>
+<para
+>Questo solitamente significa che TagLib va in crash mentre sta leggendo il tag di quel brano. Segnala l'errore di TagLib a <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; va spesso in crash, cosa posso fare?</para>
+</question>
+
+<answer>
+<para
+>Aggiornare le librerie e le utilità ALSA all'ultima versione, oppure usare OSS o l'emulazione OSS.</para>
+<para
+>Se si usa MySQL quale database in backend, provare SQLite che è più maturo (il codice &amarok;, non il database in sé). </para>
+<para
+>Provare un motore audio differente.</para>
+<para
+>Assicurarsi che tutte le librerie che usa &amarok; siano state compilate con la stessa versione di GCC con cui è stato compilato &amarok;. Se &amarok; è stato compilato con GCC 3.4.x e viene collegato a taglib compilato con GCC 3.3.x, si possono verificare arresti durante la modifica dei tag.</para>
+<para
+>Se si sta usando KDE con artsd, provare a disabilitare "Sospendi automaticamente se inattivo dopo..." nelle impostazioni del sistema sonoro oppure non usare un valore di 1 secondo fintanto che ciò interferisca ogni volta che amarok cambia brano.</para>
+<para
+>Altrimenti, inviaci i backtrace quando appare l'email (lo vedrai). Se si dovesse verificare spesso un crash, lo si vedrà risolto sicuramente solo se verrà inviato un buon backtrace. Vedere le sezioni seguenti per assistenza.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come posso avere un backtrace decente?</para>
+</question>
+
+<answer>
+<para
+>Vedere <ulink url="http://amarok.kde.org/amarokwiki/index.php/Debugging_HowTo"
+>Come fare il debug</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; non sta usando i tag che so essere nei miei file!</para>
+</question>
+
+<answer>
+<para
+>Se Konqueror od altre applicazioni mostrano differenti informazioni di Titolo, Artista, Album o Genere da quelle che &amarok; prende quando crea la collezione, può essere che stiano leggendo i vecchi tag ID3v1 piuttosto che i nuovi ID3v2. Questo può essere determinato dalle impostazione delle proprie <guilabel
+>Codifiche</guilabel
+>: andare in <menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura &amarok;</guimenuitem
+></menuchoice
+> e cercare la sezione Codifiche nel pannello Impostazioni. Deselezionare tutte le caselle "Non decodificare i seguenti come latin1". Rieseguire la scansione della collezione per prelevare i tag ID3v2. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; non mostra correttamente i tag utf-8 ID3v2!</para>
+</question>
+
+<answer>
+<para
+>Questo succede perché molte applicazioni mettono i dati utf8 nei tag ID3v2 ma non specificano la codifica come unicode. Questo script perl correggerà l'errore.</para>
+<programlisting
+>#!/usr/bin/perl
+die "File $ARGV[0] doesn't exist" unless -f $ARGV[0];
+use MP3::Mplib;
+my $mp3 = MP3::Mplib->new($ARGV[0]);
+my $v2tag = $mp3->get_v2tag;
+print "Error writing tags of $ARGV[0]\n" unless $mp3->set_v2tag($v2tag,&amp;UTF8);
+</programlisting>
+<note
+><para
+>Questo script richiede il modulo perl MP3::Mplib che può essere installato con il comando <command
+>perl -MCPAN -e 'install MP3::Mplib'</command
+></para
+></note>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Come mai l'icona nella barra di stato sembra sempre attiva?</para>
+</question>
+
+<answer>
+<para
+>L'icona nella barra di stato di &amarok; (Casuale/Ripeti/Accoda) sembra costantemente attiva in KDE 3.4.0. È un bug conosciuto. Gli effetti dell'icona sono qualche volta dimenticati. Cambiare semplicemente in kcontrol <menuchoice
+><guimenu
+>Aspetto</guimenu
+><guisubmenu
+>Icone</guisubmenu
+><guimenuitem
+>Avanzate</guimenuitem
+></menuchoice
+>, impostare lo stato disabilitato a "In grigio" e "Semitrasparente". Notare che alcune volte bisogna premere sull'icona tre volte prima che abbia un effetto dopo questa modifica. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Perché &amarok; evidenzia simboli indefiniti e poi si rifiuta di partire?</para>
+</question>
+
+<answer>
+<para
+>Se si ottiene questo errore : "amarokapp: symbol lookup error: amarokapp: undefined symbol: _ZN11KSystemTray9setPixmapERK7QPixmap", bisogna controllare che amarokapp usi la libqt corretta (controllare con : ldd `which amarokapp` | grep qt). </para>
+<para
+>Per rimediare, bisogna rimuovere tutti i conflitti libqt e/o modificare /etc/ld.so.conf in modo da fargli prendere la versione corretta.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq5">
+<title
+>Uso generale</title>
+
+<qandaset id="general-use">
+
+
+<qandaentry>
+<question>
+<para
+>Dove posso trovare aiuto per &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Ci sono molteplici opzioni. Spesso i problemi che si hanno con l'installazione iniziale di &amarok; sono meglio spiegati dagli esperti della propria distribuzione Unix o Linux. Si può cercare aiuto dagli utenti e sviluppatori nel <ulink url="http://amarok.kde.org/index.php?option=com_simpleboard"
+>forum di &amarok;</ulink
+> e nel <ulink url="irc://irc.freenode.net/amarok"
+>canale IRC</ulink
+> su irc.freenode.net canale #amarok.</para>
+<note
+><para
+><ulink url="http://bugs.kde.org"
+>Bugzilla</ulink
+> non è un luogo in cui cercare supporto. Inserire un bug se si vuole seriamente aiutare a correggerlo.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Quando avvio &amarok;, trovo una playlist vuota. Come aggiungo le tracce?</para>
+</question>
+
+<answer>
+<para
+>Semplice. Basta usare il navigatore file a sinstra per giungere fino alla cartella desiderata. Poi trascinare i file nella sezione Playlist a destra.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Dove è la scheda "Home"?</para>
+</question>
+
+<answer>
+<para
+>Per evitare un'interfaccia confusionaria la scheda "Home" è stata trasformata nello strumento "Statistiche", disponibile in <menuchoice
+><guimenu
+>Strumenti</guimenu
+><guimenuitem
+>Statistiche</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>C'è un modo per impostare la quantità di informazioni che il navigatore "Contesto" mostra?</para>
+</question>
+
+<answer>
+<para
+>Sì, usa il menu del tasto destro del mouse ovunque nel navigatore "Contesto" per modificarla.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Perché le stesse e i numeri nel navigatore "Contesto" non sono sincronizzati?</para>
+</question>
+
+<answer>
+<para
+>Il significato di questi simboli è cambiato in Amarok 1.4 "Fast Forward": le stelle rappresentano la valutazione definita dall'utente, mentre i numeri mostrano il punteggio calcolato.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Facendo clic sulle stelle nel navigatore "Contesto" non funziona! Come valuto un brano?</para>
+</question>
+
+<answer>
+<para
+>Per valutare una traccia hai bisogno della colonna "Valutazione" nella playlist. Facendo clic con il &RMB; sul titolo della playlist, e scegliendo <menuchoice
+><guimenu
+> Aggiungi colonna</guimenu
+><guimenuitem
+>Valutazione</guimenuitem
+></menuchoice
+>. Un clic ovunque all'interno della colonna "Valutazione" per impostare la valutazione per una traccia. Puoi anche usare le scorciatoie [Win]+[1-5] per valutare rapidamente un brano, con Amarok che lavora sullo sfondo.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come rimuovo tracce musicali dalla Playlist?</para>
+</question>
+
+<answer>
+<para
+>Selezionare i file che si vuole rimuovere e premere il tasto Del della tastiera. Oppure fare clic con il pulsante destro del mouse sul file da rimuovere e poi scegliere Rimuovi selezione dal menu a comparsa.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come carico una playlist?</para>
+</question>
+
+<answer>
+<para
+>Basta trascinare il file della playlist nella Playlist, come si farebbe con qualsiasi altro file. Semplice! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Come salvo l'attuale playlist?</para>
+</question>
+
+<answer>
+<para
+>Il pulsante Salva la playlist è vicino al pulsante Aggiungi media nella playlist. Basta un clic!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Non ci sono visualizzazioni nella apposita finestra di dialogo.</para>
+</question>
+
+<answer>
+<para
+>Probabilmente non si è installato xmms-config, riconfigurare e ricompilare dopo aver installato l'appropriato pacchetto xmms-devel. Forse bisognerebbe anche installare l'ultima versione di <ulink url="http://libvisual.sourceforge.net/v2/"
+>libvisual</ulink
+>, che ha altre visualizzazioni ultra simpatiche.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Dov'è l'equalizzatore?</para>
+</question>
+
+<answer>
+<para
+>La finestra dell'equalizzatore si trova nel menu a comparsa del pulsante destro del mouse. La si può anche trovare nella barra dei menu selezionando <menuchoice
+><guimenu
+>Strumenti</guimenu
+><guimenuitem
+>Equalizzatore</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq6">
+<title
+>Riproduzione</title>
+
+<qandaset id="playback-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Quali tipi di media supporta &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Nessuno. Già, proprio nessuno! Abbiamo un approccio indipendente, la domanda dovrebbe essere "Quali tipi di media supporta GStreamer/xine/aRts/NMM/MAS/KDEmm?". Perciò, come puoi immaginare, supportiamo assolutamente ogni formato audio che tu possa pensare. GStreamer può persino decodificare testo e PNG! </para>
+<para
+>Per ulteriori informazioni, dare un'occhiata a <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Confronto motori audio</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Perché r&amarok; non riesce a riprodurre file MP3?</para>
+</question>
+
+<answer>
+<para
+>Può! Forse stai utilizzando il sistema Linux Fedora/RedHat, che viene distribuito senza decodificatori MP3 (a causa di brevetti). Soluzione: Alt-F2, gg:redhat mp3 kde, INVIO</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; non riproduce MP3 in SUSE Linux 9.3, cosa posso fare?</para>
+</question>
+
+<answer>
+<para
+>Bisogna aprire lo "Yast aggiornamento in linea" ed installare la patch 'Multimedia Option Pack 1'. Voila, &amarok; riprodurrà MP3.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Con il motore GStreamer l'utilizzo del processore va al 100% durante l'utilizzo. Come posso rimediare?</para>
+</question>
+
+<answer>
+<para
+>Quando si usa il motore GStreamer con alsasink, &amarok; richiede al dispositivo di fornire un mixer. Il missaggio permette l'accesso da parte di più applicazioni al dispositivo allo stesso tempo, e l'uscita è simultanea. Questo può anche essere ottenuto usando una scheda sonora con missaggio hardware (es. SBLive), oppure usando il plugin "dmix" per alsa, che fornisce un missaggio software. Vedere <ulink url="http://amarok.kde.org/amarokwiki/index.php/Setting_up_Dmix_for_ALSA"
+>Impostare Dmix per ALSA</ulink
+>. </para>
+<para
+>Dopo l'installazione devi specificare "dmix" come dispositivo sonoro nella finestra di dialogo del motore.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Non riesco a mettere nessun file da riprodurre in &amarok;, perché?</para>
+</question>
+
+<answer>
+<para
+>Devi verificare l'infrastruttura sonora da linea di comando: </para>
+<para
+><command
+>artsplay foobar.mp3</command
+> <command
+>gst-launch filesrc location=/home/foo/bar.mp3 ! spider ! audioscale ! audioconvert ! alsasink</command
+> <command
+>xine-check</command
+> </para>
+<para
+>Il risultato di questi comandi dovrebbe aiutarti ad identificare i problemi ed a sistemarli. Potresti aver bisogno di usare un dissipatore (sink) differente per testare GStreamer (ad es. osssink).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; può dirigere l'uscita direttamente su OSS/ALSA?</para>
+</question>
+
+<answer>
+<para
+>L'abbiamo già fatto! Non dimenticare che il file multimediale deve essere decodificato prima! Non puoi passare direttamente un MP3 ad ALSA, quello che otterrai sarà rumore-bianco. GStreamer è la scelta migliore per la maggior parte della gente che desidera una soluzione di decodifica di basso costo: legge il file, lo decodifica e convoglia i dati del PCM ad ALSA. Esattamente come XMMS.</para>
+</answer>
+</qandaentry>
+
+
+
+<qandaentry>
+<question>
+<para
+>Ma XMMS può dirigere l'uscita direttamente su ALSA!</para>
+</question>
+
+<answer>
+<para
+>Ma prima lo decodifica! Anche GStreamer può dirigere l'uscita direttamente su ALSA! Così pure xine!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Il suono balbetta, posso fare qualcosa per migliorarlo?</para>
+</question>
+
+<answer>
+<para
+>Si può usare sia il motore GStreamer (è grande!) che aRts. Aprire Centro di controllo <menuchoice
+><guimenu
+>Suono e Multimedia</guimenu
+> <guimenuitem
+>Sistema sonoro</guimenuitem
+></menuchoice
+>. Abilitare Avvia con la priorità più alta possibile ed incrementare la dimensione del Buffer audio: (attenzione, leggere la prossima FAQ!) Bisogna anche assicurarsi che artswrapper sia suid:</para>
+<para
+><command
+>su</command
+> <command
+>chmod a+rsx /path/to/kde/bin/artswrapper</command
+> <command
+>killall -9 artsd</command
+> </para>
+<para
+>Con KDE 3.2.x ci sono problemi con i codificatori di KDEMultimedia che possono causare riproduzioni distorte, guardare <ulink url="http://bugs.kde.org/show_bug.cgi?id=80497"
+>questo rapporto di errore</ulink
+>. Inoltre, può aiutare molto incrementare la dimensione del buffer sonoro nel file di configurazione di alsa .asoundrc.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>L'uso del processore è elevato, posso fare qualcosa per migliorarlo?</para>
+</question>
+
+<answer>
+<para
+>Si può non usare il motore aRts ed usare il motore di GStreamer o di xine, oppure gestire l'alto uso del processore installando KDEMultimedia nella sua totalità per avere i codificatori aRts più veloci (per es. libarts_mpeglib.so, ecc.)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Gli analizzatori di &amarok; sono davvero insensibili!</para>
+</question>
+
+<answer>
+<para
+>Probabilmente si sta usando il motore aRts, usare invece un altro motore (il motore di xine è stato seriamente rivisto per dare una perfetta sincronizzazione degli analizzatori), oppure ridurre l'ampiezza del buffer di aRts in kcontrol, sistema sonoro. Meno ampio è il buffer e più sensibili saranno gli analizzatori. Sì, questo è un difetto! Aiutateci a porre rimedio!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ho installato Gstreamer ma quando provo a passare al motore di GStreamer &amarok; va in crash, cosa succede?</para>
+</question>
+
+<answer>
+<para
+>Dopo aver installato GStreamer bisogna registrare i suoi componenti lanciando 'gst-register' (alcune volte con un suffisso di versione, per es. gst-register-0.8) che si occuperà di registrarli.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ho lanciato gst-register ma ho ancora problemi con GStreamer, cosa posso fare?</para>
+</question>
+
+<answer>
+<para
+>Si può provare le <ulink url="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-using.html"
+>FAQ di GStreamer</ulink
+>. Se tutto questo non aiuta, si può provare a contattare gente più esperta sul <ulink url="irc://irc.freenode.net/gstreamer"
+>canale IRC #gstreamer</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; dice che il motore GStreamer non può riprodurre file MP3, nonostante io abbia compilato/installato il plugin mad!</para>
+</question>
+
+<answer>
+<para
+>Bisogna provare (assicurarsi che &amarok; non sia in esecuzione): - <ulink url="http://gstreamer.freedesktop.org/src/gst-ffmpeg/"
+>Scarica</ulink
+>, compilare ed installare il pacchetto ffmpeg - Lanciare gst-register (forse bisognerà lanciarlo due volte, come root e come utente "normale") - Andare nella directory dei plugin di GStreamer (la si trova nel gst-config / gstreamer-config) - Eliminare i file ffmpeg (o spostarli altrove) - Lanciare ancora gst-register - Avviare &amarok; </para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq7">
+<title
+>Sviluppo</title>
+
+<qandaset id="development-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Come faccio ad avere una versione cvs/svn di &amarok;?</para>
+</question>
+
+<answer>
+<para
+><ulink url="http://amarok.kde.org/amarokwiki/index.php/Installation_HowTo#Building_SVN_Amarok"
+>Come ottenere una versione SVN di &amarok;</ulink
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ho trovato un bug / Ho avuto una grande idea per &amarok;!</para>
+</question>
+
+<answer>
+<para
+>Scrivere il tutto a <ulink url="http://bugs.kde.org"
+>bugs.kde.org</ulink
+>, se si ha una lista di suggerimenti/desideri potrebbe essere meglio inviarla alla nostra mailing list: <email
+>amarok-devel@lists.sourceforge.net</email
+> </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Accettate patch?</para>
+</question>
+
+<answer>
+<para
+>Con gioia! La cosa migliore è farci sapere cosa si vorrebbe fare prima di intraprendere qualsiasi lavoro in modo da poterne discutere, ma non temete, non abbiamo mai scartato alcuna patch per ora! La discussione deve aiutare a rattoppare &amarok; nei punti giusti. Poi si potrà inviare una patch alla mailing list, oppure farne un commit se si ha un accesso svn. Tuttavia, preghiamo di farci sapere prima quali commit si andrà a fare sul cvs! Se avete una correzione di un bug allora andate avanti, questo è un programma libero dopo tutto :)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Perché avete scelto il nome &amarok;?</para>
+</question>
+
+<answer>
+<para
+>&amarok; è un album del compositore britannico Mike Oldfield. Mi piace molto, e credo che il nome suoni bene. In più, ovviamente, contiene l'importante <quote
+>K</quote
+>... :) </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; è AmaroK o Amarok?</para>
+</question>
+
+<answer>
+<para
+>In definitiva è &amarok;! Ma capiamo che è inconsueto! :)</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq8">
+<title
+>Consigli e suggerimenti</title>
+
+<qandaset id="tipsandtricks-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Come posso usare &amarok; come sveglia?</para>
+</question>
+
+<answer>
+<para
+>Si può farlo grazie alla magia di DCOP :) Basta semplicemente impostare un appuntamento nel programma calendario (agenda) preferito preferito e dirgli di avviare il seguente comando: <command
+>dcop amarok player play</command
+> </para>
+<para
+>Questo comando dice ad &amarok; di iniziare a riprodurre. Assicurati che &amarok; sia in funzione prima di andare a letto, e ti dovresti svegliare con il dolce suono di qualsiasi cosa tu abbia interrotto prima di andare a dormire.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come posso sapere ciò che &amarok; sta riproducendo quando sono su un altro computer?</para>
+</question>
+
+<answer>
+<para
+>Se si possiede un ambiente ssh opportunamente impostato, si può utilizzarlo per ottenere l'informazione. Il seguente comando restituirà la stringa Now Playing. <command
+>ssh -i ~/.ssh/id_rsa yourip dcop --user yourusername amarok player nowPlaying</command
+> </para>
+<para
+>Assicurarsi di sostituire yourip con il proprio IP e yourusername con il proprio nome utente. Inoltre notare che per l'identificazione bisogna essere presente nel file ~/.ssh/id_rsa.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Che tipo di trucchetti può fare la finestra del lettore?</para>
+</question>
+
+<answer>
+<para
+>L'analizzatore di &amarok; può essere staccato dalla finestra del lettore. Premendo d sulla tastiera l'analizzatore attivo verrà aperto in una finestra indipendente ridimensionabile.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Che tipo di trucchetti può fare la finestra della Playlist?</para>
+</question>
+
+<answer>
+<para
+>Tenendo premuto Control e facendo clic sul pulsante destro del mouse, verranno accodati file nell'ordine in cui sono stati selezionati.Premendo Invio dopo aver aver effettuato una ricerca nella playlist, verrà riprodotta la prima traccia della ricerca e la ricerca verrà pulita.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Vedo che la finestra del lettore e la finestra della Playlist hanno trucchetti interessanti, e l'icona nel vassoio di sistema?</para>
+</question>
+
+<answer>
+<para
+>Ponendo il cursore del mouse sopra l'icona, verrà mostrato un bel popup con informazioni sulla traccia attuale. Facendo clic sul pulsante centrale del mouse sull'icona, si metterà in pausa il brano corrente. Muovendo la rotella del mouse si modifica il livello del volume. Tenendo premuto Shift mentre di muove la rotella del mouse, ci si sposterà all'interno del brano corrente. Tenendo premuto Control mentre si muove la rotella del mouse, si salterà tra le tracce nella playlist. Trascinando oggetti sull'icona nel vassoio di sistema, si aprirà un menu a comparsa che permetterà di scegliere tra tre opzioni, Accodare alla Playlist, Accodare e riprodurre e Accodare dopo la tracce corrente. L'icona è anche un indicatore della posizione di canzone.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Dove trovo le impostazioni di &amarok;?</para>
+</question>
+
+<answer>
+<para
+>~/.kde/share/apps/amarok ~/.kde/share/config/amarokrc</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come faccio a disabilitare una sezione del navigatore in &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Il clic con il &RMB; su qualsiasi titolo del navigatore mostra un elenco di navigatori. Puoi usare questo elenco per disabilitare/riabilitare qualunque navigatore disponibile.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq9">
+<title
+>Domande generali</title>
+
+<qandaset id="general-questions-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Come posso usare un database MySQL esterno con &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Vedere <ulink url="http://amarok.kde.org/amarokwiki/index.php/MySQL_HowTo"
+>Come fare con MySQL</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>La mia cartella $HOME è collocata in NFS. Dopo l'avvio, &amarok; fallisce nella costruzione della collezione mostrando molti errori in console. Cosa faccio?</para>
+</question>
+
+<answer>
+<para
+>Il database interno SQLite che &amarok; usa automaticamente non lavora in NFS. Bisogna collegare la cartella ~/.kde/share/apps/amarok ad un disco locale, oppure usare il supporto MySQL.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come posso estrarre/codificare CD audio con &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Inserire il CD, poi premere su "Riproduci cd audio" nel menu. Si aprirà il navigatore dei file a mostrare un albero con numerose cartelle. Per estrazioni normali, andare nella cartella "wav", selezionare alcune tracce e trascinarle nella destinazione desiderata in una finestra di Konqueror. Per una codifica automatica, trascinare invece file da cartelle "mp3" o "ogg".</para>
+<note
+><para
+>L'estrazione da CD richiede che sia installato "CD audio KIO-slave". Fa parte di KDE-Multimedia.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come sono determinati i punteggi dei brani?</para>
+</question>
+
+<answer>
+<para
+>&amarok; assegna un voto (un numero tra 1 e 100) ad un brano basandosi su quante volte lo si ha ascoltato e se lo si è saltato prima della fine. Ogni volta che termina la riproduzione del brano, cambia il punteggio. Il codice per il cambiamento del punteggio è in collectiondb.cpp. Come per la versione 1.2.2, era alla linea 1181, benché lo si possa trovare cercando "CollectionDB::addSongPercentage". Quando definisce un punteggio per una traccia mai riprodotta prima, &amarok; usa il calcolo punteggio = ( ( 50 + percentuale ) / 2 )</para>
+<para
+>Questo eguaglia il punteggio ad un numero tra 25 e 75, a seconda di quanto a lungo è stata riprodotto il brano. Per esempio, se l'utente ferma o salta il brano dopo solo il 25%, il punteggio verrà impostato a (50+25)/2, o 37.5. Tuttavia i punteggi sono mostrati come numeri interi, così questo numero verrà arrotondato al più vicino numero intero prima di venire mostrato. Tuttavia, il punteggio è mantenuto internamente come numero con virgola mobile, poiché dopo che un brano è stata riprodotto molte volte, possa essere impossibile alterarlo di più di un punto con una singola riproduzione (vedere sotto). Nel definire il punteggio per una traccia riprodotta in precedenza, il calcolo è ancora un po' più complicato. Nel sorgente è score = ( ( values[2].toDouble() * values.first().toInt() ) + percentage ) / ( values.first().toInt() + 1 );</para>
+<para
+>Sostituendo dei valori in questa linea:</para>
+<programlisting
+>QStringList values = query( QString(
+           "SELECT playcounter, createdate, percentage FROM statistics "
+           "WHERE url = '%1';" )
+           .arg( escapeString( url ) ) );
+</programlisting>
+<para
+>Abbiamo il punteggio = ( ( statistics_percentage.toDouble() * PlayCounter.toInt() ) + percentage ) / ( PlayCounter.toInt() + 1 ); </para>
+<para
+>Alla fine, questo modifica il punteggio precedente (statistics_percentage) per un ammontare decrescente dipendente da quante volte la traccia è stata riprodotta. Più volte il brano è stato riprodotto, meno impatto ha ogni riproduzione sul punteggio.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come si può modificare manualmente il punteggio di un brano?</para>
+</question>
+
+<answer>
+<para
+>Lo si può modificare facendo clic con il pulsante destro del mouse sulle colonne dei titoli della playlist (quelle etichettate come titolo, artista, album, ecc.) e selezionando Punteggio. Così si potrà modificare il punteggio come qualsiasi altro attributo di ogni brano, facendo clic con il pulsante destro del mouse e selezionando "Modifica il tag 'Punteggio'" o premendo F2. Il punteggio può essere modificato anche nella finestra di dialogo Tag, disponibile facendo clic con il pulsante destro del mouse su una traccia.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Perché &amarok; non fa parte di KDEmultimedia?</para>
+</question>
+
+<answer>
+<para
+>Gli sviluppatori non vogliono che qualcuno gli dica quando possono fare un nuovo rilascio (si intende che i pacchetti propri di KDE hanno programma di rilascio che non concorda con lo sviluppo veloce di &amarok;).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come si può fare affinché l'icona di &amarok; non lampeggi nel vassoio di sistema?</para>
+</question>
+
+<answer>
+<para
+>Questa è una nuova caratteristica introdotta che alcuni utenti potrebbero trovare fastidiosa. Basta semplicemente disabilitare l'opzione "Icona lampeggiante nel vassoio di sistema durante la riproduzione" nelle Opzioni generali.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come si può mostrare/rimuovere l'analizzatore nella finestra della playlist?</para>
+</question>
+
+<answer>
+<para
+>L'analizzatore della playlist fa parte della sua barra degli strumenti. Selezionare <menuchoice
+><guimenu
+>Impostazioni</guimenu
+><guimenuitem
+>Configura le barre degli strumenti</guimenuitem
+></menuchoice
+> aggiungere/rimuovere l'analizzatore dalle Azioni attuali. Premere OK. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come si modifica il tema del navigatore per contesti?</para>
+</question>
+
+<answer>
+<para
+>Bisogna scaricare un <ulink url="http://amarok.kde.org/amarokwiki/index.php/Themes"
+>tema</ulink
+> oppure farsene uno <ulink url="http://amarok.kde.org/amarokwiki/index.php/CSS_Styles"
+>proprio</ulink
+>. Installarlo con <menuchoice
+><guimenu
+>Configura &amarok;...</guimenu
+><guisubmenu
+>Aspetto</guisubmenu
+><guimenuitem
+>Stile del navigatore per contesti</guimenuitem
+></menuchoice
+>, premere su Installa nuovo stile.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Quali aspetti legali hanno causato il rimpiazzo dell'icona "Blue Wolf"?</para>
+</question>
+
+<answer>
+<para
+>L'icona era troppo simile al logo della Warp Graphics Inc., così è stata rimossa per evitare problemi.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Non c'è alcuna visualizzazione. Come si può ottenerle?</para>
+</question>
+
+<answer>
+<para
+>Bisogna installare la versione più recente di <ulink url="http://libvisual.sf.net"
+>libvisual</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Come si fa ad aggiungere i flussi preferiti ad &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Prima di tutto, bisogna caricare il flusso nella playlist. Ci sono molti vie per farlo. Su può semplicemente fare clic su un URL Stream-Playlist in Konqueror, &amarok; aprirà automaticamente il flusso. Per esempio su <ulink url="http://www.shoutcast.com"
+>shoutcast.com</ulink
+>, fare clic sul pulsante "Tun In". Oppure si può usare la funzione "Aggiungi media" per caricare un flusso. Una volta caricato il flusso, si può salvarlo facendo clic con il pulsante destro su "Playlist attuale" nel navigatore della playlist, poi selezionare "Salva" e dargli un nome significativo. Allora il flusso sarà aggiunto nella vista del navigatore della playlist per usi successivi.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq10">
+<title
+>Barra laterale di Konqueror</title>
+
+<qandaset id="konq-sidebar-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Cos'è la barra laterale di Konqueror?</para>
+</question>
+
+<answer>
+<para
+>Questa permette di monitorare/controllare &amarok; mentre si naviga con Konqueror. Per visualizzarla, avviare Konqueror, premere F9 per mostrare la barra laterale, fare clic sulle preferenze (primo pulsante), nel menu a discesa scegliere <menuchoice
+><guimenu
+>Aggiungi nuovo</guimenu
+> <guimenuitem
+>Barra laterale di &amarok;</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq11">
+<title
+>Audioscrobbler</title>
+
+<qandaset id="audioscrobbler-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Cos'è Audioscrobbler?</para>
+</question>
+
+<answer>
+<para
+>Audioscrobbler è un servizio gratuito che invia informazioni riguardanti i brani riprodotti ad un server indipendente. L'iscrizione al servizio è gratuita e richiede solamente la scelta di un nome utente ed una password che non siano già in uso. Audioscrobbler è attualmente utilizzato in &amarok;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Non voglio che &amarok; invii informazioni ad Audioscrobbler!</para>
+</question>
+
+<answer>
+<para
+>Disabilitare "Invia le tracce che riproduco" per evitare l'interrogazione di Audioscrobbler per i brani riprodotti.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Dove trovo il gruppo &amarok; di Audioscrobbler?</para>
+</question>
+
+<answer>
+<para
+>Il gruppo &amarok; di Audioscrobbler si trova qui: <ulink url="http://www.audioscrobbler.com/group/Amarok+users/"
+>&amarok; Audioscrobbler Group</ulink
+></para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq12">
+<title
+>Domande generali su Motore/Riproduzione</title>
+
+<qandaset id="general-engine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Quale motore sonoro bisognerebbe usare?</para>
+</question>
+
+<answer>
+<para
+>È meglio fare riferimento a <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Confronto motori audio</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Quale versione di ALSA bisognerebbe usare?</para>
+</question>
+
+<answer>
+<para
+>Se l'uscita è su ALSA, bisognerebbe utilizzarne la versione più aggiornata possibile! Vecchie versioni hanno causato molti crash e l'attribuzione errata di molte segnalazioni di crash.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ho installato GStreamer/xine/ecc., ma il motore audio relativo non viene rilevato. Cosa succede?</para>
+</question>
+
+<answer>
+<para
+>Probabilmente &amarok; è stato compilato prima di aver installato xine e/o gstreamer, perciò la routine ./configure non li include nella lista dei motori da configurare. Bisogna ricompilare &amarok;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ho ricompilato &amarok; dopo aver installato gstreamer e/o xine, ma il motore non viene ugualmente mostrato. Cosa è successo?</para>
+</question>
+
+<answer>
+<para
+>Probabilmente si sta usando una distribuzione che comprende librerie di sviluppo separate dalla libreria principale, perciò anche se gstreamer è installato &amarok; non può collegarsi a lui perché gstreamer-devel non è installato. Lo stesso problema esiste per xine, bisogna installare xine-devel se la propria distribuzione separa i pacchetti in questa maniera. Non bisogna dimenticarsi di ricompilare &amarok; dopo aver installato i pacchetti di sviluppo.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq13">
+<title
+>Motore GStreamer</title>
+
+<qandaset id="gstreamer-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Perché c'è sempre un'interruzione anche se si abilita la dissolvenza?</para>
+</question>
+
+<answer>
+<para
+>Assicurarsi di non aver installato gst-ffmpeg. Installare, invece, il plugin gst-mad. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ottengo questo errore: "GStreamer-CRITICAL **: Factory for `adder' has no type.". Come lo risolvo?</para>
+</question>
+
+<answer>
+<para
+>GStreamer è stato compilato con Prelinking, che non è compatibile con GStreamer. Bisognerà ricompilarlo senza questa opzione. merlin-tc raccomanda: <quote
+>Inoltre, non usare alcun idflag quando si compila GStreamer.</quote
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Si riceve un errore "Non c'è alcun elemento presente per gestire i file di tipo audio/mp4" nonostante si abbia installato il corretto plugin gstreamer-faad.</para>
+</question>
+
+<answer>
+<para
+>Per riprodurre correttamente file mp4 o m4a con gstreamer, bisogna avere installato anche gstreamer.quicktime oltre che gstreamer-faad.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Si riceve un errore "Non c'è alcun elemento presente per gestire il flusso di tipo audio/mpeg".</para>
+</question>
+
+<answer>
+<para
+>Si sta tentando di riprodurre un flusso mp3 senza il plugin gstreamer-mad installato. Installarlo e lanciare "gst-register" come root prima di far ripartire &amarok;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ho una seconda scheda audio e sto utilizzando ALSA. Come faccio a far usare ad &amarok; questa anziché quella predefinita?</para>
+</question>
+
+<answer>
+<para
+>In <menuchoice
+><guimenu
+>Impostazioni</guimenu
+><guisubmenu
+>Configura &amarok;</guisubmenu
+><guimenuitem
+>Motore</guimenuitem
+></menuchoice
+>, spuntare "Dispositivo" ed inserire il dispositivo. Tipicamente questo è 'hw:0' per la scheda audio predefinita, e 'hw:1' per la secondaria</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq14">
+<title
+>Motore xine</title>
+
+<qandaset id="xine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Come si può variare la destinazione dell'uscita?</para>
+</question>
+
+<answer>
+<para
+>Se si sta usando ALSA, si potrà reindirizzare l'output ad un dispositivo specifico con xine. Impostare un file ~/.asoundrc (solo utente) o /etc/asound.conf che faccia un alias del dispositivo hardware, poi inserire questo alias nel campo "dispositivo usato per l'uscita stereo" nella scheda di configurazione del motore xine. In alternativa, si potrà immettere direttamente il dispositivo alsa (hw:0,0 o hw:1,0 e così via). Se si sceglie quest'ultimo metodo (alternativo), stare attenti che l'instradamento corrispondente plugfoo di ALSA (per es. plughw:0,0 o plughw:1,0 e così via) attraverso alsa-lib è più preferito.</para>
+<para
+>Qui c'è un esempio di ~/.asoundrc per un sistema che ha a bordo il codec AC97 Intel ed un dispositivo usb-audio:</para>
+<programlisting
+>pcm.intel8x0 {
+          type plug
+          slave.pcm "hw:0"
+       }
+      
+       ctl.intel8x0 {
+          type hw
+          card 0
+       }
+       
+       pcm.usb-audio {
+          type plug
+          slave.pcm "hw:1"
+       }
+       
+       ctl.usb-audio {
+          type hw
+          card 1
+       }
+</programlisting>
+<para
+>Ora inserire usb-audio nella schermata di impostazione del motore-xine e l'output dovrebbe andare al dispositivo usb-audio (con alsa-lib che gestisce correttamente la conversione del campionamento, canali e così via).</para>
+<para
+>Per usare un dispositivo dmixed, assicurarsi che la casella "la scheda audio può fare mmap" non sia spuntata.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq15">
+<title
+>Motore aRts</title>
+
+<note
+><para
+>Spiacenti, il motore aRts non ha un responsabile, ma sentitevi liberi di apportare correzioni! Potreste divenire i nuovi responsabili del motore aRts di cui abbiamo un disperato bisogno!</para
+></note>
+
+</sect1>
+
+
+</chapter>

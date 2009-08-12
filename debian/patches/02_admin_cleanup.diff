@@ -1,0 +1,116 @@
+--- kde/admin/acinclude.m4.in	2008-02-24 17:49:46.000000000 +0200
++++ kde/admin/acinclude.m4.in	2008-02-24 17:19:06.000000000 +0200
+@@ -1589,6 +1589,11 @@
+   fi
+ done
+ 
++# Export just Qt libs in LIB_QT, "extended" version will be exported as LIB_QT_EXT
++LIB_QT_EXT="$LIB_QT"
++LIB_QT="$kde_int_qt"
++
++AC_SUBST(LIB_QT_EXT)
+ AC_SUBST(LIB_QT)
+ AC_SUBST(LIB_QPE)
+ 
+@@ -2684,7 +2689,7 @@
+ ],
+     [return (TIFFOpen( "", "r") == 0); ],
+ [
+-    kde_cv_libtiff_$1="-l$1 $LIBJPEG $LIBZ"
++    kde_cv_libtiff_$1="-l$1"
+ ], [
+     kde_cv_libtiff_$1=no
+ ])
+@@ -2748,7 +2753,8 @@
+            EXRSTATUS=old
+         else
+            kde_save_LIBS="$LIBS"
+-           LIBS="$LIBS $all_libraries $USER_LDFLAGS `pkg-config --libs OpenEXR` $LIBZ"
++           kde_libexr_libs="`pkg-config --libs OpenEXR | sed -e 's/-lImath//' -e 's/-lIex//' -e 's/-lz//'`"
++           LIBS="$LIBS $all_libraries $USER_LDFLAGS $kde_libexr_libs"
+            AC_LANG_SAVE
+            AC_LANG_CPLUSPLUS
+            kde_save_CXXFLAGS="$CXXFLAGS"
+@@ -2764,7 +2770,7 @@
+                RgbaInputFile file ("dummy");
+                return 0;
+                ],
+-               eval "ac_cv_libexr='`pkg-config --libs OpenEXR`'",
++               eval "ac_cv_libexr='$kde_libexr_libs'",
+                eval "ac_cv_libexr=no"
+            )
+            LIBS="$kde_save_LIBS"
+@@ -2773,7 +2779,7 @@
+            ])dnl
+            if eval "test ! \"`echo $ac_cv_libexr`\" = no"; then
+                AC_DEFINE_UNQUOTED(HAVE_EXR, 1, [Define if you have OpenEXR])
+-               LIB_EXR="$ac_cv_libexr"
++               LIB_EXR="$kde_libexr_libs"
+                AC_MSG_RESULT($ac_cv_libexr)
+            else
+                AC_MSG_RESULT(no)
+@@ -2840,7 +2846,7 @@
+ AC_CACHE_VAL(ac_cv_jasper,
+ [
+ kde_save_LIBS="$LIBS"
+-LIBS="$LIBS $all_libraries $USER_LDFLAGS -ljasper $LIBJPEG -lm"
++LIBS="$LIBS $all_libraries $USER_LDFLAGS -ljasper -lm"
+ kde_save_CFLAGS="$CFLAGS"
+ CFLAGS="$CFLAGS $all_includes $USER_INCLUDES"
+ 
+@@ -2851,7 +2857,7 @@
+     [
+     return( jas_init() );
+     ],
+-    eval "ac_cv_jasper='-ljasper $LIBJPEG -lm'",
++    eval "ac_cv_jasper='-ljasper -lm'",
+     eval "ac_cv_jasper=no"
+ )
+ LIBS="$kde_save_LIBS"
+@@ -4474,7 +4480,7 @@
+ kde_save_cflags="$CFLAGS"
+ CFLAGS="$CFLAGS $PYTHONINC"
+ kde_save_libs="$LIBS"
+-LIBS="$LIBS $LIBPYTHON $2 $LIBDL $LIBSOCKET"
++LIBS="$LIBS $LIBPYTHON $2 $LIBSOCKET"
+ kde_save_ldflags="$LDFLAGS"
+ LDFLAGS="$LDFLAGS $PYTHONLIB"
+ 
+@@ -4612,7 +4618,7 @@
+     and contact the authors to let them know about this problem])
+ 	])
+ 
+-  LIBPYTHON="$LIBPYTHON $LIBDL $LIBSOCKET"
++  LIBPYTHON="$LIBPYTHON $LIBSOCKET"
+   AC_SUBST(PYTHONINC)
+   AC_SUBST(PYTHONLIB)
+   AC_SUBST(LIBPYTHON)
+--- kde/admin/ltmain.sh	2008-02-24 17:49:46.000000000 +0200
++++ kde/admin/ltmain.sh	2008-02-24 16:51:22.000000000 +0200
+@@ -2395,16 +2395,16 @@
+ 	    # It is a libtool convenience library, so add in its objects.
+ 	    convenience="$convenience $ladir/$objdir/$old_library"
+ 	    old_convenience="$old_convenience $ladir/$objdir/$old_library"
+-	    tmp_libs=
+-	    for deplib in $dependency_libs; do
+-	      deplibs="$deplib $deplibs"
+-              if test "X$duplicate_deps" = "Xyes" ; then
+-	        case "$tmp_libs " in
+-	        *" $deplib "*) specialdeplibs="$specialdeplibs $deplib" ;;
+-	        esac
+-              fi
+-	      tmp_libs="$tmp_libs $deplib"
+-	    done
++#	    tmp_libs=
++#	    for deplib in $dependency_libs; do
++#	      deplibs="$deplib $deplibs"
++#              if test "X$duplicate_deps" = "Xyes" ; then
++#	        case "$tmp_libs " in
++#	        *" $deplib "*) specialdeplibs="$specialdeplibs $deplib" ;;
++#	        esac
++#              fi
++#	      tmp_libs="$tmp_libs $deplib"
++#	    done
+ 	  elif test "$linkmode" != prog && test "$linkmode" != lib; then
+ 	    $echo "$modename: \`$lib' is not a convenience library" 1>&2
+ 	    exit $EXIT_FAILURE

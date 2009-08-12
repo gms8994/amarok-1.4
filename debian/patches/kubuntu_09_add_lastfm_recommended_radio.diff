@@ -1,0 +1,14 @@
+diff -Nur -x '*.orig' -x '*~' amarok-1.4.8/amarok/src/playlistbrowser.cpp amarok-1.4.8.new/amarok/src/playlistbrowser.cpp
+--- amarok-1.4.8/amarok/src/playlistbrowser.cpp	2007-12-31 15:21:43.331246000 +0100
++++ amarok-1.4.8.new/amarok/src/playlistbrowser.cpp	2007-12-31 17:33:45.446046817 +0100
+@@ -566,6 +566,10 @@
+     last = new LastFmEntry( m_lastfmCategory, tagsFolder, url, i18n( "Neighbor Radio" ) );
+     last->setKept( false );
+ 
++    url = KURL::fromPathOrURL( QString("lastfm://user/%1/recommended/100").arg( user ) );
++    last = new LastFmEntry( m_lastfmCategory, last, url, i18n( "Recommended Radio" ) );
++    last->setKept( false );
++
+     if( subscriber )
+     {
+         url = KURL::fromPathOrURL( QString("lastfm://user/%1/personal").arg( user ) );

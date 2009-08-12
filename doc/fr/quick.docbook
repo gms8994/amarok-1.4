@@ -1,0 +1,148 @@
+<chapter id="quick-start">
+<title
+>Guide de démarrage rapide pour &amarok;</title>
+
+<para
+>Écouter de la musique devrait être facile. À cette fin, nous avons fourni un Assistant First Run (démarrage initial) qui s'affiche lorsqu'&amarok; est lancé pour la première fois. Ce guide de démarrage rapide est conçu pour ceux qui souhaitent mettre leur collection à jour plus tard ou ne souhaitent pas utiliser l'assistant. Il vous aidera en quelques minutes à avoir &amarok; prêt et fonctionnant.</para>
+
+
+<sect1 id="collection-building">
+<title
+>Créer une collection</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du Navigateur de Collection</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Créer votre collection est une étape essentielle dans l'utilisation de toutes les fonctionnalités d'&amarok;. Depuis le navigateur de Collections, cliquez sur le bouton <guibutton
+>Configurer les dossiers</guibutton
+> situé dans la barre d'outils. Choisissez les dossiers que vous souhaitez avoir dans votre collection depuis la fenêtre <guilabel
+>Configurer la collection</guilabel
+>. Vous avez aussi des options pour <guilabel
+>Analyser les dossiers récursivement</guilabel
+>, <guilabel
+>Surveiller les modifications sur ces dossiers</guilabel
+>, et <guilabel
+>Importer des listes de lecture</guilabel
+> qui sont trouvées dans les dossiers de la collection. Après avoir sélectionné vos dossiers, et coché toutes les cases intéressantes, cliquez sur le bouton <guibutton
+>OK</guibutton
+>. Après l'analyse initiale, votre collection est créée et vous pouvez continuer pour créer une liste de lecture.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title
+>Créer une liste de lecture</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Créer une liste de lecture est aussi simple que tirer des éléments depuis la Vue de l'Arborescence du Navigateur de Collection vers la Liste de lecture. Pour rendre la recherche des éléments plus facile, un champ est fourni pour vous permettre de filtrer votre collection. Commencez simplement à saisir du texte dans ce champ, et l'arborescence changera pour ne vous montrer que les résultats intéressants. Quand vous serez satisfait de votre liste de lecture, vous pouvez l'enregistrer en cliquant le bouton <guibutton
+>Enregistrer la Liste de lecture sous</guibutton
+> qui se trouve sans la barre d'outil de la liste de lecture.</para>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran du navigateur de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Si vous avez vos propres listes de lecture, vous pouvez les ajouter dans le navigateur de la liste de lecture en cliquant sur le bouton <guibutton
+>Ajouter</guibutton
+> et en choisissant l'option <guibutton
+>liste de lecture</guibutton
+> dans la barre d'outils. Si vos dossiers de la collection contiennent des listes de lecture, et que vous avez sélectionné Importer les listes de lecture dans la configuration de la collection, vos listes de lecture seront déjà dans l'arborescence. Effectuer un clic droit sur une liste de lecture dans l'arborescence vous donnera plusieurs options sur la façon de charger la liste de lecture.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title
+>Écouter des flux</title>
+
+<para
+>Les flux radios dans &amarok; sont joués en les ajoutant depuis le navigateur de la liste de lecture. &amarok; est fourni avec une présélection de flux dont l'utilisateur peut profiter ; les flux sympas. En double-cliquant sur un flux ou en le tirant dans la fenêtre de la Liste de lecture, il y sera ajouté et il pourra ensuite être joué. Pour ajouter vos propres flux dans le Navigateur de la liste de lecture, cliquez sur le bouton <guibutton
+>Ajouter</guibutton
+> dans la barre d'outils et choisissez <guibutton
+>Flux radio...</guibutton
+> depuis la liste déroulante. Après avoir ajouté votre flux personnel, il pourra également être joué en l'ajoutant dans la liste de lecture.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title
+>Lire un cd audio</title>
+
+<screenshot>
+	<screeninfo
+>Capture d'écran de la barre de menus de la liste de lecture</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Pour lire un cd audio, sélectionnez <menuchoice
+><guimenu
+>Engager</guimenu
+><guimenuitem
+>Lire un CD audio</guimenuitem
+></menuchoice
+> dans la barre de menu de la liste de lecture. Le navigateur de fichiers s'ouvrira en affichant plusieurs dossiers ainsi que les pistes listées dans le format WAV. Tirez les fichiers WAV dans la liste de lecture et cliquez sur le bouton <guibutton
+>Lecture</guibutton
+>.</para>
+
+<note
+><para
+>La fonctionnalité de lecture d'un CD audio utilise le protocole audiocd:/ et n'est pas compatible avec tous les types de moteurs disponibles.</para
+></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title
+>Graver un cd audio</title>
+
+<para
+>Graver un cd audio dans &amarok; est facile grâce à l'intégration de <ulink url="http://www.k3b.org"
+>K3B</ulink
+>. Pour graver un album, ouvrez d'abord le navigateur de collection. Puis en étendant l'entrée d'un artiste dans l'arborescence, effectuez un clic droit sur l'album que vous voulez graver. Un menu s'ouvrira, cliquez sur <guilabel
+>Graver cet album</guilabel
+>, et une fenêtre vous demandera de choisir un mode de gravure. Dans la boîte de dialogue, cliquez sur le bouton <guibutton
+>Mode Audio</guibutton
+>, K3B s'ouvrira prêt à graver l'album.</para>
+
+<note
+><para
+>La fonctionnalité de gravure est aussi fournie dans la liste de lecture. Effectuez un simple clic droit sur un élément dans la liste de lecture et suivez le menu <guilabel
+>Graver</guilabel
+> pour plus d'options de gravure.</para
+></note>
+
+</sect1>
+
+
+</chapter>

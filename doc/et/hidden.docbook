@@ -1,0 +1,63 @@
+<chapter id="hidden_features">
+<title
+>&amarok;i varjatud omadused</title>
+
+<para
+>Selles osas tutvustame mõningaid &amarok;i võimalusi, mis ei ole just kõige nähtavamad. Peatükk jaguneb kolmeks alajaotuseks: mängija aken, lugude nimekirja aken ja süsteemse salve ikoon.</para>
+
+<sect1 id="player_hidden">
+<title
+>Mängija aken</title>
+
+<para
+>&amarok;i mängija analüsaatoreid saab mängija aknast lahutada. Kui vajutad klaviatuuril klahvi <keycap
+>d</keycap
+>, avatakse parajasti aktiivne analüsaator omaette aknas, mille suurust on võimalik soovikohaselt muuta.</para>
+
+</sect1>
+
+
+<sect1 id="playlist_hidden">
+<title
+>Lugude nimekirja aken</title>
+<para
+>Lugude nimekirja akent vaadates võib tunduda, et see juba pakub kõiki võimalusi, mida vaid hing oskab ihaldada. Ometi on sellelgi mõningad varjatumad omadused.</para>
+
+<para
+>Klahvi <keycap
+>Control</keycap
+> all hoides ja &HPN;ga klõpsates saab seada failid sellesse järjekorda, millises järjekorras sa neil klõpsad.</para>
+
+<para
+>Klahvi <keycap
+>Enter</keycap
+> vajutamisel pärast lugude nimekirja otsingut esitatakse otsingutulemuste esimene element ja puhastatakse otsingutulemused.</para>
+
+</sect1>
+
+
+<sect1 id="tray_hidden">
+<title
+>Süsteemse salve ikoon</title>
+
+<para
+>&amarok;i süsteemse salve ikoon on küll tilluke, kuid pakub peaaegu samu võimalusi, mida saab kasutada mängija aknas. Usutavasti oled juba teada saanud, et hiireratast ikooni kohal liigutades saab muuta helitugevust, aga see pole veel kaugeltki kõik:</para>
+
+<para
+>Klõps hiire keskmise nupuga ikoonil peatab parajasti esitatava pala või hakkab seda uuesti edasi mängima.</para>
+
+<para
+>Kui hoida hiireratta kerimisel all klahv <keycap
+>Shift</keycap
+>, saab mängitava pala sees edasi-tagasi liikuda.</para>
+
+<para
+>Kui hoida hiireratta kerimisel all klahv <keycap
+>Control</keycap
+>, saab lugude nimekirjas palade vahel liikuda.</para>
+
+<para
+>Millegi lohistamine süsteemse salve ikoonile avab hüpikmenüü kolme võimalusega: Lisa lugude nimekirja, Lisa ja mängi ning Järjekorda aktiivse pala taha.</para>
+</sect1>
+
+</chapter>

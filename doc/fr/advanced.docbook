@@ -1,0 +1,991 @@
+<chapter id="advanced-features">
+<title
+>Fonctionnalités avancées d'amaroK</title>
+
+
+<sect1 id="keybd-shortcuts">
+<title
+>Raccourcis clavier</title>
+
+<para
+>&amarok; utilise des raccourcis claviers comme la plupart des autres applications, en dessous il y a une liste de ces raccourcis et leurs actions respectives. Les raccourcis globaux peuvent être configurés en effectuant un clic droit sur la fenêtre du lecteur et en sélectionnant <guimenuitem
+>Configurer les raccourcis globaux...</guimenuitem
+>. Les raccourcis d'&amarok; peuvent être configurés en effectuant un clic droit sur la fenêtre de lecture et en sélectionnant <guimenuitem
+>Configurer les raccourcis clavier...</guimenuitem
+>.</para>
+
+<tip
+><para
+>Vous pouvez assigner les touches multimédia pour qu'elle fonctionnent en tant que raccourcis d'&amarok;, en faisant de votre clavier le centre de contrôle d'&amarok;.</para
+></tip>
+
+<para
+>Les raccourcis globaux sont :</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Combinaison de touches</entry>
+<entry
+>Action</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>X</keycap
+></keycombo
+></entry>
+<entry
+>Jouer</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Pause</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>V</keycap
+></keycombo
+></entry>
+<entry
+>Arrêt</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Piste suivante</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Piste précédente</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>PN_+</keycap
+></keycombo
+></entry>
+<entry
+>Monter le son</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>PN_-</keycap
+></keycombo
+></entry>
+<entry
+>Baisser le son</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Ajouter un morceau</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>P</keycap
+></keycombo
+></entry>
+<entry
+>Afficher la liste de lecture</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Démarrer</keycap
+><keycap
+>O</keycap
+></keycombo
+></entry>
+<entry
+>Montrer l'affichage à l'écran</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>Les raccourcis &amarok; sont  :</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Combinaison de touches</entry>
+<entry
+>Action</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Copier</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>PN_Entrée</keycap
+></keycombo
+></entry>
+<entry
+>Aller au morceau actuel</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Quitter</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Maj</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Refaire</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+></entry>
+<entry
+>Enregistrer la liste de lecture</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Sélectionner tout</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+></entry>
+<entry
+>Répéter la piste</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Annuler</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+
+<para
+>Les raccourcis du navigateur de la liste de lecture sont :</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Combinaison de touches</entry>
+<entry
+>Action</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycap
+>Espace</keycap
+></entry>
+<entry
+>Charger la liste de lecture</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>F2</keycap
+></entry>
+<entry
+>Renommer la liste de lecture</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>Effacement</keycap
+></entry>
+<entry
+>Supprimer la liste de lecture</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+<sect1 id="the-dcop-interface">
+<title
+>L'interface DCOP</title>
+
+<para
+>L'interface DCOP d'amaroK vous fournit une façon simple de contrôler amaroK avec vos propres scripts personnalisés.</para>
+
+<para
+>L'interface DCOP pour amaroK a beaucoup de fonctions génériques qui peuvent être trouvés dans d'autres applications KDE. Cette section est censée décrire les fonctions DCOP du lecteur. Un exemple de la fonction <quote
+>pause</quote
+> ressemble à :</para>
+
+<para
+><prompt
+>&percnt;</prompt
+>dcop amarok player pause</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Fonction DCOP</entry>
+<entry
+>Action</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>album</entry>
+<entry
+>La fonction <quote
+>album</quote
+> retourne le nom de l'album de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>artist</entry>
+<entry
+>La fonction <quote
+>artist</quote
+> retourne l'artiste de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>bitrate</entry>
+<entry
+>La fonction <quote
+>bitrate</quote
+> retourne le débit de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>comment</entry>
+<entry
+>La fonction <quote
+>comment</quote
+> retourne le commentaire de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>coverImage</entry>
+<entry
+>La fonction <quote
+>coverImage</quote
+> retourne l'URL de l'image de la pochette de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>currentTime</entry>
+<entry
+>La fonction <quote
+>currentTime</quote
+> retourne la position (mm:ss) sur la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>encodedURL</entry>
+<entry
+>La fonction <quote
+>encodedURL</quote
+> retourne l'URL de la piste actuellement jouée avec les espaces encodés.</entry>
+</row>
+
+<row>
+<entry
+>genre</entry>
+<entry
+>La fonction <quote
+>genre</quote
+> retourne le genre de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>nowPlaying</entry>
+<entry
+>La fonction <quote
+>nowPlaying</quote
+> retourne l'"Artiste - Titre" de la piste actuellement jouée. Si un des deux tags id3 est vide, seul "Artiste" ou "Titre" sera affiché (sans le "-").</entry>
+</row>
+
+<row>
+<entry
+>title</entry>
+<entry
+>La fonction <quote
+>titre</quote
+> retourne le titre de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>totalTime</entry>
+<entry
+>La fonction <quote
+>totalTime</quote
+> retourne le temps total (mm:ss) de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>track</entry>
+<entry
+>La fonction <quote
+>track</quote
+> retourne le numéro de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>year</entry>
+<entry
+>La fonction <quote
+>year</quote
+> retourne l'année de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>isPlaying</entry>
+<entry
+>La fonction <quote
+>isPlaying</quote
+> retourne une valeur vraie ou fausse indiquant si le lecteur joue une piste ou non.</entry>
+</row>
+
+<row>
+<entry
+>randomModeStatus</entry>
+<entry
+>La fonction <quote
+>randomModeStatus</quote
+> retourne l'état du mode Aléatoire par une valeur vraie ou fausse.</entry>
+</row>
+
+<row>
+<entry
+>repeatPlaylistStatus</entry>
+<entry
+>La fonction <quote
+>repeatPlaylistStatus</quote
+> retourne l'état du mode de répétition de la liste de lecture par une valeur vraie ou fausse.</entry>
+</row>
+
+<row>
+<entry
+>repeatTrackStatus</entry>
+<entry
+>La fonction <quote
+>repeatTrackStatus</quote
+> retourne l'état du mode de répétition de la piste par une valeur vraie ou fausse.</entry>
+</row>
+
+<row>
+<entry
+>getVolume</entry>
+<entry
+>La fonction <quote
+>getVolume</quote
+> retourne une valeur donnant le niveau du volume comprise entre 0-100.</entry>
+</row>
+
+<row>
+<entry
+>sampleRate</entry>
+<entry
+>La fonction <quote
+>sampleRate</quote
+> retourne le débit de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>score</entry>
+<entry
+>La fonction <quote
+>score</quote
+> retourne le score de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>status</entry>
+<entry
+>La fonction <quote
+>status</quote
+> retourne une valeur pour l'état de l'enfin, 2 pour joue, 1 pour pause, et trois pour en occupé.</entry>
+</row>
+
+<row>
+<entry
+>trackCurrentTime</entry>
+<entry
+>La fonction <quote
+>trackCurrentTime</quote
+> retourne la valeur en secondes du temps écoulé sur la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>trackTotalTime</entry>
+<entry
+>La fonction <quote
+>trackTotalTime</quote
+> retourne la valeur en secondes du temps total de la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>addMedia</entry>
+<entry
+>La fonction <quote
+>addMedia</quote
+> est utilisée pour ajouter des fichiers simples à la liste de lecture.</entry>
+</row>
+
+<row>
+<entry
+>addMediaList</entry>
+<entry
+>La fonction <quote
+>addMediaList</quote
+> est utilisée pour ajouter plusieurs fichiers à la liste de lecture.</entry>
+</row>
+
+<row>
+<entry
+>clearPlaylist</entry>
+<entry
+>La fonction <quote
+>clearPlaylist</quote
+> est utilisée pour effacer la liste lecture complète.</entry>
+</row>
+
+<row>
+<entry
+>configEqualizer</entry>
+<entry
+>La fonction <quote
+>configEqualizer</quote
+> affiche la fenêtre de l'égaliseur.</entry>
+</row>
+
+<row>
+<entry
+>enableOSD</entry>
+<entry
+>La fonction <quote
+>enableOSD</quote
+> vous permet de basculer vers l'affichage à l'écran avec une valeur vraie ou fausse</entry>
+</row>
+
+<row>
+<entry
+>enableRandomMode</entry>
+<entry
+>La fonction <quote
+>enableRandomMode</quote
+> est utilisée pour basculer vers le mode aléatoire avec une valeur de 0 pour désactivé, et 1 pour activé.</entry>
+</row>
+
+<row>
+<entry
+>mute</entry>
+<entry
+>La fonction <quote
+>mute</quote
+> vous permet de muter et de démuter la piste lue.</entry>
+</row>
+
+<row>
+<entry
+>next</entry>
+<entry
+>La fonction <quote
+>next</quote
+> avance le lecteur d'une piste.</entry>
+</row>
+
+<row>
+<entry
+>pause</entry>
+<entry
+>La fonction <quote
+>pause</quote
+> met en pause la piste actuellement jouée.</entry>
+</row>
+
+<row>
+<entry
+>play</entry>
+<entry
+>La fonction <quote
+>play</quote
+> démarre la lecture là ou elle avait été stoppée.</entry>
+</row>
+
+<row>
+<entry
+>playMedia</entry>
+<entry
+>La fonction <quote
+>playMEDIA</quote
+> démarre la lecture d'une piste spécifiée par sa KURL.</entry>
+</row>
+
+<row>
+<entry
+>playPause</entry>
+<entry
+>La fonction <quote
+>playPause</quote
+> démarre la lecture si elle est actuellement stoppée ou en pause. Cette fonction met aussi en pause la lecture si elle était en cours.</entry>
+</row>
+
+<row>
+<entry
+>prev</entry>
+<entry
+>La fonction <quote
+>prev</quote
+> recule le lecteur d'une piste.</entry>
+</row>
+
+<row>
+<entry
+>saveCurrentPlaylist</entry>
+<entry
+>La fonction <quote
+>saveCurrentPlaylist</quote
+> enregistre la liste de lecture sous ~/.kde/share/apps/amarok/current.xml.</entry>
+</row>
+
+
+<row>
+<entry
+>scanCollection</entry>
+<entry
+>La fonction <quote
+>scanCollection</quote
+> effectue un scan manuel de votre collection.</entry>
+</row>
+
+<row>
+<entry
+>seek</entry>
+<entry
+>La fonction <quote
+>seek</quote
+> est utilisée pour se rendre à un point précis de la piste spécifié par une valeur en secondes.</entry>
+</row>
+
+<row>
+<entry
+>seekRelative</entry>
+<entry
+>La fonction <quote
+>seekRelative</quote
+> est utilisée pour se rendre à un point précis de la piste spécifié par une valeur en secondes.</entry>
+</row>
+
+<row>
+<entry
+>setEqualizerEnabled</entry>
+<entry
+>La fonction <quote
+>setEqualizerEnabled</quote
+> est utilisée pour activer l'égaliseur par une valeur vraie ou fausse.</entry>
+</row>
+
+<row>
+<entry
+>setVolume</entry>
+<entry
+>La fonction <quote
+>setVolume</quote
+> ajuste le volume à un niveau spécifié par une valeur comprise entre 0 et 100.</entry>
+</row>
+
+<row>
+<entry
+>showOSD</entry>
+<entry
+>La fonction <quote
+>showOSD</quote
+> active l'OSD pour qu'il montre les informations sur la piste actuelle.</entry>
+</row>
+
+<row>
+<entry
+>stop</entry>
+<entry
+>La fonction <quote
+>stop</quote
+> stoppera la lecture si elle est en cours.</entry>
+</row>
+
+<row>
+<entry
+>togglePlaylist</entry>
+<entry
+>La fonction <quote
+>togglePlaylist</quote
+> bascule l'utilisation de la liste de lecture soit en l'activant ou en la désactivant.</entry>
+</row>
+
+<row>
+<entry
+>volumeDown</entry>
+<entry
+>La fonction <quote
+>volumeDown</quote
+> ajuste le volume vers le bas d'un cran.</entry>
+</row>
+
+<row>
+<entry
+>volumeUp</entry>
+<entry
+>La fonction <quote
+>volumeUp</quote
+> ajuste le volume vers le haut d'un cran.</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+<sect1 id="cmd-line-options">
+<title
+>Options en ligne de commande</title>
+
+<para
+>amaroK supporte l'utilisation des options Qt et kde standard. amaroK a aussi ses options spécifiques à l'application.</para>
+
+<para
+>Les options Qt et kde :</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Option</entry>
+<entry
+>Action</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--help</entry>
+<entry
+>Afficher l'aide à propos des options.</entry>
+</row>
+
+<row>
+<entry
+>--help-qt</entry>
+<entry
+>Afficher les options spécifiques à Qt.</entry>
+</row>
+
+<row>
+<entry
+>--help-kde</entry>
+<entry
+>Afficher les options spécifiques à KDE.</entry>
+</row>
+
+<row>
+<entry
+>--help-all</entry>
+<entry
+>Afficher toutes les options.</entry>
+</row>
+
+<row>
+<entry
+>--author</entry>
+<entry
+>Afficher les informations sur l'auteur.</entry>
+</row>
+
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Afficher les informations sur la version.</entry>
+</row>
+
+<row>
+<entry
+>--license</entry>
+<entry
+>Afficher les informations sur la licence.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>Les options amaroK :</para>
+
+<note
+><para
+>Les options &amarok; sont faites pour être utilisées quand &amarok; est en fonctionnement.</para
+></note>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Option</entry>
+<entry
+>Action</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>-r, --previous</entry>
+<entry
+>Revenir à la piste précédente dans la liste de lecture.</entry>
+</row>
+
+<row>
+<entry
+>-p, --play</entry>
+<entry
+>Démarrer la lecture de la piste actuelle.</entry>
+</row>
+
+<row>
+<entry
+>-s, --stop</entry>
+<entry
+>Arrêter la lecture.</entry>
+</row>
+
+<row>
+<entry
+>--pause</entry>
+<entry
+>Mettre en pause la lecture.</entry>
+</row>
+
+<row>
+<entry
+>-f, --next</entry>
+<entry
+>Aller à la piste suivante dans la liste de lecture.</entry>
+</row>
+
+<row>
+<entry
+>-a, --append</entry>
+<entry
+>Ajouter des fichiers/URLs à la liste de lecture.</entry>
+</row>
+
+<row>
+<entry
+>-e, --enqueue</entry>
+<entry
+>Voir append, disponible pour la compatibilité avec d'autres outils.</entry>
+</row>
+
+<row>
+<entry
+>--queue</entry>
+<entry
+>Mettre en queue des fichiers/URLs après la piste actuellement jouée.</entry>
+</row
+> 
+
+<row>
+<entry
+>-m, --toggle-playlist-window</entry>
+<entry
+>Basculer vers la fenêtre de la liste de lecture.</entry>
+</row>
+
+<row>
+<entry
+>--wizard</entry>
+<entry
+>Lancer l'assistant à la première utilisation.</entry>
+</row>
+
+<row>
+<entry
+>--engine "nom"</entry>
+<entry
+>Démarrer &amarok; avec le moteur "nom".</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+</chapter>

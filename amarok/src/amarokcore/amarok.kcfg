@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Stanislav Karchebny, berk@upnet.ru -->
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+<include>qdir.h</include>
+
+<kcfgfile name="amarokrc"/>
+
+<group name="General Options">
+    <entry key="Version" type="String">
+        <label>Amarok Version</label>
+        <whatsthis>Amarok version string, used to restart aRts in new installations.</whatsthis>
+        <default></default>
+    </entry>
+    <entry key="Player Pos" type="Point">
+        <label>Position of player window</label>
+        <whatsthis>The position of the Amarok main window when Amarok is started.</whatsthis>
+    </entry>
+    <entry key="Player Window Minimal View" type="Bool">
+        <label>Whether Player Window is in minimal or normal mode</label>
+        <whatsthis>If set the player window will start in minimal view</whatsthis>
+    <default>false</default>
+    </entry>
+    <entry key="Playlist Window Pos" type="Point">
+        <label>Position of playlist window</label>
+        <whatsthis>The position of the playlist window when Amarok is started.</whatsthis>
+    </entry>
+    <entry key="Playlist Window Size" type="Size">
+        <label>Size of playlist window</label>
+        <whatsthis>The size of the playlist window when Amarok is started.</whatsthis>
+    </entry>
+    <entry key="Save Playlist" type="Bool">
+        <label>Whether to save playlist on quit</label>
+        <whatsthis>If set, Amarok saves the current playlist on quit and restores it when restarted.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Follow Symlinks" type="Bool">
+        <label>Whether to follow symlinks while adding items to playlist recursively</label>
+        <whatsthis>If set, amarok follows symlinks when adding files or directories to the playlist.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Left Time Display Enabled" type="Bool">
+        <label>Whether to display a second, left time label.</label>
+        <whatsthis>Set this to display a second time label to the left of the seek slider in the player window.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Left Time Display Remaining" type="Bool">
+        <label>Whether to display remaining track time in the left time label.</label>
+        <whatsthis>Set this to display remaining track time instead of past track time in the player window.</whatsthis>
+        <default>false</default>
+    </entry>
+     <entry key="Use Scores" type="Bool">
+        <label>Whether to show scores for tracks</label>
+        <whatsthis>A score is a number from 0 to 100, determined automatically by Amarok based on how often you listen to a track and how much of it you listen to.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Use Ratings" type="Bool">
+        <label>Whether to show ratings for tracks</label>
+        <whatsthis>A rating is 1 to 5 stars, set manually by you to describe how well you like a given track.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Custom Ratings Colors" type="Bool">
+        <label>Whether to use custom colors for ratings stars</label>
+        <whatsthis>Selects whether the user wants to use custom colors for ratings stars.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Fixed Half Star Color" type="Bool">
+        <label>Whether half-stars should use a fixed color or follow the one above</label>
+        <whatsthis>Selects whether the user wants to define a custom color for the half-star.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Repeat" type="Enum">
+        <label>Which track(s) to play repeatedly</label>
+        <whatsthis>Whether to repeat the current track, the current album, or the current playlist indefinitely, or neither.</whatsthis>
+        <choices>
+            <choice name="Off">
+                <label>Don't Repeat</label>
+            </choice>
+            <choice name="Track">
+                <label>Repeat Track</label>
+            </choice>
+            <choice name="Album">
+                <label>Repeat Album</label>
+            </choice>
+            <choice name="Playlist">
+                <label>Repeat Playlist</label>
+            </choice>
+        </choices>
+        <default>Off</default>
+    </entry>
+    <entry key="Favor Tracks" type="Enum">
+        <label>Which tracks or albums to favor in Random Mode</label>
+        <whatsthis>Tracks or albums with the chosen property will be more likely to be chosen in Random Mode.</whatsthis>
+        <choices>
+            <choice name="Off"></choice>
+            <choice name="HigherScores"></choice>
+            <choice name="HigherRatings"></choice>
+            <choice name="LessRecentlyPlayed"></choice>
+        </choices>
+        <default>Off</default>
+    </entry>
+    <entry key="Random Mode" type="Enum">
+        <label>Whether to play tracks or albums in random order</label>
+        <whatsthis>If set, Amarok plays the tracks or albums in the playlist in a random order.</whatsthis>
+        <choices>
+            <choice name="Off"></choice>
+            <choice name="Tracks"></choice>
+            <choice name="Albums"></choice>
+        </choices>
+        <default>Off</default>
+    </entry>
+    <entry key="Last Dynamic Mode" type="String">
+        <label>The most recently used Dynamic Mode</label>
+        <whatsthis>The title of the Dynamic Mode that was most recently loaded in the playlist</whatsthis>
+        <default>Random Mix</default>
+    </entry>
+    <entry key="Last Score Script" type="String">
+        <label>The most recently used scoring script</label>
+        <whatsthis>The name of the custom scoring script which was most recently loaded</whatsthis>
+        <default></default>
+    </entry>
+    <entry key="Show Tray Icon" type="Bool">
+        <label>Whether to show icon in system tray</label>
+        <whatsthis>Enable/Disable tray icon for Amarok.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Animate Tray Icon" type="Bool">
+        <label>Whether to animate the systray icon</label>
+        <whatsthis>Enable/Disable tray icon animation.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Show Player Window" type="Bool">
+        <label>Whether to show player window</label>
+        <whatsthis>Makes Amarok more like XMMS and other Winamp clones with separate player and playlist windows.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Show Moodbar" type="Bool">
+        <label>Whether to show moodbars in track sliders and in a column in the playlist window</label>
+        <whatsthis>Displays a visual representation of the current track in the slider bar of the player window, the playlist window, and in a column of the playlist window.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Moods With Music" type="Bool">
+        <label>Store Mood data files with music</label>
+        <whatsthis>Enabling this option stores Mood data files with the music files. Disabling stores them in your home folder.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Make Moodier" type="Bool">
+        <label>Maximize color spread of Moodbar</label>
+        <whatsthis>When enabled, the hue distribution is quantised and respread evenly, giving a prettier but less meaningful output.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="AlterMood" type="Int">
+        <label>Alter Mood data according to theme</label>
+        <whatsthis>The hues are distributed according to a colour theme, giving a customisable look.</whatsthis>
+        <default>0</default>
+    </entry>
+    <entry key="Show Toolbar" type="Bool">
+        <label>Whether to show the toolbar in the playlist window.</label>
+        <whatthis>At the bottom of the playlist window, the toolbar can be used for buttons such as play and stop.</whatthis>
+        <default>true</default>
+    </entry>
+    <entry key="Cover Preview Size" type="Int">
+        <label>Size of the cover previews in Contextbrowser and Covermanager</label>
+        <whatsthis>Size of the cover previews in Contextbrowser and Covermanager</whatsthis>
+        <default>130</default>
+    </entry>
+    <entry key="Directories Recursively" type="Bool">
+        <label>Whether to add directories to playlist recursively</label>
+        <whatsthis>Enable/Disable recursive directory adding to the playlist.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Track Delay Length" type="Int">
+        <label>Delay between tracks, in milliseconds</label>
+        <whatsthis>Delay between tracks, in milliseconds.</whatsthis>
+        <default>0</default>
+    </entry>
+    <entry key="Playlist Window Enabled" type="Bool">
+        <label>Whether the playlist window is visible</label>
+        <whatsthis>Enable/Disable the playlist window. Equal to clicking the PL button in the player window.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Undo Levels" type="Int">
+        <label>Number of undo levels in playlist</label>
+        <whatsthis>The number of undo levels in the playlist.</whatsthis>
+        <default>30</default>
+    </entry>
+    <entry key="Current Analyzer" type="Int">
+        <label>Index of current visual analyzer</label>
+        <whatsthis>The ID of the visual analyzer to display.</whatsthis>
+        <default>-1</default>
+    </entry>
+    <entry key="Current Playlist Analyzer" type="Int">
+        <label>Index of analyzer displayed in playlist window</label>
+        <whatsthis>The ID of the visual analyzer to display in playlist window.</whatsthis>
+        <default>0</default>
+    </entry>
+    <entry key="Playlist Window Splitter" type="IntList">
+        <label>Playlist window splitter positions</label>
+        <whatsthis>Currently unused</whatsthis>
+        <default>70,140</default>
+    </entry>
+    <entry key="Show Splashscreen" type="Bool">
+        <label>Whether a splash-screen should be displayed on startup</label>
+        <whatsthis>Enable/Disable splashscreen during Amarok startup.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Auto Show ContextBrowser" type="Bool">
+        <label>Whether ContextBrowser should be activated when starting playback</label>
+        <whatsthis>Automatically switches to ContextBrowser when playback is started.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="ContextBrowser StyleSheet" type="String">
+        <label>Set CSS stylesheet used to customize ContextBrowser's rendering</label>
+        <whatsthis>Set this to the style dir you want to use.</whatsthis>
+        <default>Default</default>
+    </entry>
+    <entry key="Relative Playlist" type="Bool">
+        <label>Whether playlists store relative path</label>
+        <whatsthis>If set, Amarok's manually saved playlists will contain a relative path to each track, not an absolute path.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Overwrite Files" type="Bool">
+        <label>Whether organize files will overwrite existing files.</label>
+        <whatsthis>If set, Organize files will overwrite any existing destination.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Group By Filetype" type="Bool">
+        <label>Whether organize files will group directories according to their filetype.</label>
+        <whatsthis>If set, Organize files will group directories containing the same filetype.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Group Artists" type="Bool">
+        <label>Whether organize files will group artist starting in the same character.</label>
+        <whatsthis>If set, Organize files will group artist starting in the same character.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Ignore The" type="Bool">
+        <label>Whether organize files will ignore The in artist names.</label>
+        <whatsthis>If set, Organize files will ignore The in artist names.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Replace Space" type="Bool">
+        <label>Whether organize files will replace spaces in filenames by an underscore.</label>
+        <whatsthis>If set, Organize files will replace spaces in filenames by an underscore.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Cover Icons" type="Bool">
+        <label>Whether organize files will use cover art as folder icons.</label>
+        <whatsthis>If set, Organize files will use cover art as folder icons.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Organize Directory" type="Int">
+        <label>Index of collection folder destination for Organize files.</label>
+        <whatsthis>The ID of the collection folder destination for Organize files.</whatsthis>
+        <default>0</default>
+    </entry>
+    <entry key="Vfat Compatible" type="Bool">
+        <label>Whether organize files will rename files in a manner compatible with vfat filesystems.</label>
+        <whatsthis>If set, Organize files will replace characters that are not compatible with vfat filesystems (such as ':', '*' and '?').</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Ascii Only" type="Bool">
+        <label>Whether organize files will rename files such that they only contain 7-bit ASCII characters.</label>
+        <whatsthis>If set, Organize files will replace characters that are not compatible with the 7-bit ASCII character set.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Use Custom Scheme" type="Bool">
+        <label>Whether organize files will use a custom file naming scheme.</label>
+        <whatsthis>If set, Organize files will rename files according to a custom format string.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Custom Scheme" type="String">
+        <label>Format string for Organize files, if a custom naming scheme is used.</label>
+        <whatsthis>If the custom filename scheme is enabled, then Organize files will rename files according to this format string.</whatsthis>
+        <default>%folder/%filetype/%theartist/%album/%track_-_%title.%filetype</default>
+    </entry>
+    <entry key="Replacement Regexp" type="String">
+        <label>Regular expression that is to be replaced.</label>
+        <whatsthis>Organize files will replace substrings matching this regular expression.</whatsthis>
+        <default></default>
+    </entry>
+    <entry key="Replacement String" type="String">
+        <label>Replacing string.</label>
+        <whatsthis>Organize files will replace matching substrings with this string.</whatsthis>
+        <default></default>
+    </entry>
+    <entry key="External Browser" type="String">
+        <label>Filename of the external web browser to be invoked by Amarok.</label>
+        <default>kfmclient openURL</default>
+    </entry>
+    <entry key="Use Custom Icon Theme" type="Bool">
+        <label>Whether Amarok's custom icon theme or the system icon theme is used.</label>
+        <default>true</default>
+    </entry>
+    <entry key="Collection Browser View Mode" type="Int">
+        <label>Whether the collection view is in the flat or tree view mode</label>
+        <default>0</default>
+    </entry>
+</group>
+
+<group name="Playback">
+    <entry key="Master Volume" type="Int">
+        <label>Master volume</label>
+        <whatsthis>The Amarok master volume, a value between 0 (muted) and 100.</whatsthis>
+        <default>80</default>
+        <min>0</min>
+        <max>100</max>
+    </entry>
+    <entry key="Crossfade" type="Bool">
+        <label>Whether to crossfade between tracks</label>
+        <whatsthis>Enable/Disable crossfading between track changes.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Crossfade Length" type="Int">
+        <label>Length of crossfade, in milliseconds</label>
+        <whatsthis>The length of the crossfade between tracks in milliseconds.</whatsthis>
+        <default>4000</default>
+        <min>400</min>
+    </entry>
+    <entry key="Crossfade Type" type="Int">
+        <label>When to Crossfade</label>
+        <whatsthis>Determines whether to crossfade always, or on automatic/manual track changes only.</whatsthis>
+        <default>0</default>
+    </entry>
+    <entry key="Fadeout" type="Bool">
+        <label>Whether to fade out tracks when pressing stop.</label>
+        <whatsthis>Enable/Disable fadeout.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Fadeout Length" type="Int">
+        <label>Length of fadeout, in milliseconds</label>
+        <whatsthis>The length of the fadeout in milliseconds.</whatsthis>
+        <default>3500</default>
+        <min>400</min>
+    </entry>
+    <entry key="FadeoutOnExit" type="Bool">
+        <label>Whether to fade out when exiting the program.</label>
+        <default>true</default>
+    </entry>
+    <entry key="Sound System" type="String">
+        <label>Sound system to use</label>
+        <whatsthis>Select the sound system used to play media. Amarok currently support aRts, GStreamer, xine, and NMM; however, their availability depends on the configuration used at compile time.</whatsthis>
+    </entry>
+    <entry key="Equalizer Enabled" type="Bool">
+        <label>Enables the equalizer plugin</label>
+        <whatsthis>When enabled, an equalizer plugin filters the audio stream.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Equalizer Preamp" type="Int">
+        <label>Equalizer pre-amplification value, range -100..100, 0 is normal.</label>
+        <default>0</default>
+        <min>-100</min>
+        <max>100</max>
+    </entry>
+    <entry key="Equalizer Gains" type="IntList">
+        <label>Band gains for equalizer, 10 values, range -100..100, 0 is normal.</label>
+        <default>0, 0, 0, 0, 0, 0, 0, 0, 0, 0</default>
+    </entry>
+    <entry key="Equalizer Preset" type="String">
+        <label>Equalizer preset name.</label>
+        <default>Zero</default>
+    </entry>
+</group>
+
+<group name="Cover Manager">
+    <entry key="Amazon Locale" type="String">
+        <label>Amazon locale for cover retrieval</label>
+        <whatsthis>Determines which Amazon server cover images should be retrieved from.</whatsthis>
+        <default>us</default>
+    </entry>
+</group>
+
+<group name="Wikipedia">
+    <entry key="Wikipedia Locale" type="String">
+        <label>Wikipedia locale for information retrieval</label>
+        <whatsthis>Determines in which language the information is retrieved from Wikipedia.</whatsthis>
+        <default>en</default>
+    </entry>
+</group>
+
+<group name="OSD">
+    <entry key="Osd Enabled" type="Bool">
+        <label>Use On-Screen Display</label>
+        <whatsthis>Enable/Disable the On-Screen Display.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Osd Use Playlist Columns" type="Bool">
+        <label>Display the same information in the OSD as in the playlist columns.</label>
+        <whatsthis>If enabled, the OSD will display the same information and in the same order as the columns in the playlist.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Osd Text" type="String">
+        <label>The OSD text to show</label>
+        <whatsthis>Customize the OSD display text.</whatsthis>
+        <default>%artist - %title {(%length)}\n%album</default>
+    </entry>
+    <entry key="Osd Font" type="Font">
+        <label>Font for On-Screen Display</label>
+        <whatsthis>The font to use for the On-Screen Display.</whatsthis>
+        <default code="true">QFont("Arial",16)</default>
+    </entry>
+    <entry key="Osd Draw Shadow" type="Bool">
+        <label>Draw a shadow around the text.</label>
+        <whatsthis>Draws a shadow around the OSD-text.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Osd Use Fake Translucency" type="Bool">
+        <label>Fake-translucency Toggle</label>
+        <whatsthis>Make the background of the OSD use fake-translucency.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Osd Use Custom Colors" type="Bool">
+        <label>Whether to use custom colors for the OSD</label>
+        <whatsthis>You can use custom colors for the OSD if you set this true.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Osd Text Color" type="Color">
+        <label>Font Color for On-Screen Display</label>
+        <whatsthis>The color of the OSD text. The color is specified in RGB, a comma-separated list containing three integers between 0 and 255.</whatsthis>
+        <default>#ffff00</default>
+    </entry>
+    <entry key="Osd Background Color" type="Color">
+        <label>Background Color for On-Screen Display</label>
+        <whatsthis>The color of the OSD background. The color is specified in RGB, a comma-separated list containing three integers between 0 and 255.</whatsthis>
+        <default>#1500a0</default>
+    </entry>
+    <entry key="New Playlist Items Color" type="Color">
+        <label>The color that is used for new items in the playlist.</label>
+        <default>#0000ff</default>
+    </entry>
+    <entry key="Osd Duration" type="Int">
+        <label>How many milliseconds the text should be displayed</label>
+        <whatsthis>The time in milliseconds to show the OSD. A value of 0 means never hide. The default value is 5000 ms.</whatsthis>
+        <default>5000</default>
+        <min>0</min>
+    </entry>
+    <entry key="Osd Y Offset" type="Int">
+        <label>Y position offset</label>
+        <whatsthis>The Y position of the OSD relative to the chosen screen and  OSD alignment. If Top alignment is chosen the Y offset is the space between the upper part of the OSD and the top  of the screen. If Bottom alignment is chosen the Y offset is the space between the bottom part of the OSD and the bottom of the screen.</whatsthis>
+        <default>50</default>
+        <min>0</min>
+        <max>10000</max>
+    </entry>
+    <entry key="Osd Screen" type="Int">
+        <label>OSD screen</label>
+        <whatsthis>The screen that should display the OSD. For single-headed environments this setting should be 0.</whatsthis>
+        <default>0</default>
+    </entry>
+    <entry key="Osd Cover" type="Bool">
+        <label>Whether the album cover should be shown</label>
+        <whatsthis>If enabled, shows the album cover in the OSD.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Osd Alignment" type="Enum">
+        <label>Align OSD to</label>
+        <whatsthis>The relative position of the OSD. Possible choices are Left, Middle, Right and Center.</whatsthis>
+        <choices>
+            <choice name="Left"/>
+            <choice name="Middle"/>
+            <choice name="Center"/>
+            <choice name="Right"/>
+        </choices>
+        <default>Center</default>
+    </entry>
+
+</group>
+
+<group name="Fonts">
+    <entry key="Use Custom Fonts" type="Bool">
+        <label>Whether to use user-defined fonts</label>
+        <whatsthis>Enabled/Disables custom fonts.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Playlist Window Font" type="Font">
+        <label>Font in playlist window</label>
+        <whatsthis>The font to use in the playlist window.</whatsthis>
+    </entry>
+    <entry key="Player Widget Font" type="Font">
+        <label>Font in player window</label>
+        <whatsthis>The font to use in the player window.</whatsthis>
+    </entry>
+    <entry key="Context Browser Font" type="Font">
+        <label>Font in context browser</label>
+        <whatsthis>The font to use in the context browser.</whatsthis>
+    </entry>
+</group>
+
+<group name="Colors">
+    <entry key="Scheme Amarok" type="Bool">
+        <label>Whether to use Amarok standard colors in the playlist window</label>
+        <whatsthis>If set, Amarok uses the Amarok standard colors in the playlist.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Scheme KDE" type="Bool">
+        <label>Whether to use global KDE colors in the playlist window</label>
+        <whatsthis>If set, Amarok uses the KDE standard colors in the playlist.</whatsthis>
+        <default>true</default>
+    </entry>
+    <entry key="Scheme Custom" type="Bool">
+        <label>Whether to use user-defined colors in the playlist window</label>
+        <whatsthis>If set, Amarok uses the user-defined colors in the playlist.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Playlist Window Fg Color" type="Color">
+        <label>Playlist window foreground color</label>
+        <whatsthis>The color to use as foreground color in the playlist. The color is specified in RGB, a comma-separated list containing three integers between 0 and 255.</whatsthis>
+        <default>#80a0ff</default>
+    </entry>
+    <entry key="Playlist Window Bg Color" type="Color">
+        <label>Playlist window background color</label>
+        <whatsthis>The color to use as background color in the playlist. The color is specified in RGB, a comma-separated list containing three integers between 0 and 255.</whatsthis>
+        <default>#000000</default>
+    </entry>
+    <entry key="Star Color Half" type="Color">
+        <label>Color for half rating star</label>
+        <whatsthis>The color to use for a half rating star, if not the default.</whatsthis>
+    </entry>
+    <entry key="Star Color One" type="Color">
+        <label>Color for single rating star</label>
+        <whatsthis>The color to use for a single rating star, if not the default.</whatsthis>
+    </entry>
+    <entry key="Star Color Two" type="Color">
+        <label>Color for two rating stars</label>
+        <whatsthis>The color to use for two rating stars, if not the default.</whatsthis>
+    </entry>
+    <entry key="Star Color Three" type="Color">
+        <label>Color for three rating stars</label>
+        <whatsthis>The color to use for three rating stars, if not the default.</whatsthis>
+    </entry>
+    <entry key="Star Color Four" type="Color">
+        <label>Color for four rating stars</label>
+        <whatsthis>The color to use for four rating stars, if not the default.</whatsthis>
+    </entry>
+    <entry key="Star Color Five" type="Color">
+        <label>Color for five rating stars</label>
+        <whatsthis>The color to use for five rating stars, if not the default.</whatsthis>
+    </entry>
+</group>
+
+<group name="Session">
+    <entry key="Resume Playback" type="Bool">
+        <label>Resume playback of last played track on startup</label>
+        <whatsthis>If set, Amarok resumes playback of the last played track on startup.</whatsthis>
+        <default>false</default>
+    </entry>
+    <entry key="Resume Track" type="Path">
+        <label>Track URL to resume upon startup</label>
+        <whatsthis>Internal: URL of the track to resume on startup.</whatsthis>
+    </entry>
+    <entry key="Resume Time" type="Int">
+        <label>Time to resume at, in milliseconds</label>
+        <whatsthis>Internal: Playback position in the track to resume on startup.</whatsthis>
+    </entry>
+</group>
+
+<group name="Collection">
+    <entry key="DatabaseEngine" type="String">
+        <label>Database Engine</label>
+        <whatsthis>The database engine used to store collection</whatsthis>
+        <default>SQLite</default>
+    </entry>
+    <entry key="Scan Recursively" type="Bool">
+        <label>Whether Collections folders are scanned recursively</label>
+        <default>true</default>
+    </entry>
+    <entry key="Monitor Changes" type="Bool">
+        <label>Whether Collection folders are rescanned on change</label>
+        <default>true</default>
+    </entry>
+    <entry key="Collection Folders" type="PathList">
+        <label>List of folders in the Collection</label>
+    </entry>
+</group>
+
+<group name="MySql">
+    <entry key="MySqlHost" type="String">
+        <label>Host</label>
+        <whatsthis>The host MySql server is running on</whatsthis>
+        <default>localhost</default>
+    </entry>
+    <entry key="MySqlPort" type="Int">
+        <label>Port</label>
+        <whatsthis>The port MySql server is listening</whatsthis>
+        <default>3306</default>
+    </entry>
+    <entry key="MySqlDbName" type="String">
+        <label>Database name</label>
+        <whatsthis>The database's name</whatsthis>
+        <default>amarok</default>
+    </entry>
+    <entry key="MySqlUser" type="String">
+        <label>User</label>
+        <whatsthis>The user's name to use for connecting MySql</whatsthis>
+    </entry>
+    <entry key="MySqlPassword" type="Password">
+        <label>Password</label>
+        <whatsthis>The user's password</whatsthis>
+    </entry>
+    <entry key="MySqlPassword2" type="String">
+        <label>Password</label>
+        <whatsthis>The user's password</whatsthis>
+    </entry>
+</group>
+
+<group name="Postgresql">
+    <entry key="PostgresqlHost" type="String">
+        <label>Host</label>
+        <whatsthis>The host Postgresql server is running on</whatsthis>
+        <default>localhost</default>
+    </entry>
+    <entry key="PostgresqlPort" type="Int">
+        <label>Port</label>
+        <whatsthis>The port Postgresql server is listening</whatsthis>
+        <default>5432</default>
+    </entry>
+    <entry key="PostgresqlDbName" type="String">
+        <label>Database name</label>
+        <whatsthis>The database's name</whatsthis>
+        <default>amarok</default>
+    </entry>
+    <entry key="PostgresqlUser" type="String">
+        <label>User</label>
+        <whatsthis>The user's name to use for connecting Postgresql</whatsthis>
+        <default>amarok</default>
+    </entry>
+    <entry key="PostgresqlPassword" type="Password">
+        <label>Password</label>
+        <whatsthis>The user's password</whatsthis>
+    </entry>
+    <entry key="PostgresqlPassword2" type="String">
+        <label>Password</label>
+        <whatsthis>The user's password</whatsthis>
+    </entry>
+</group>
+
+<group name="Scrobbler">
+        <entry key="SubmitPlayedSongs" type="Bool">
+            <label>Submit played songs</label>
+            <whatsthis>Whether played songs are submitted to Audioscrobbler</whatsthis>
+            <default>false</default>
+        </entry>
+        <entry key="ScrobblerUsername" type="String">
+            <label>Username</label>
+            <whatsthis>The username to use for connecting to Audioscrobbler</whatsthis>
+            <default/>
+        </entry>
+        <entry key="ScrobblerPassword" type="String">
+            <label>Password</label>
+            <whatsthis>The password to use for connecting to Audioscrobbler</whatsthis>
+            <default/>
+        </entry>
+        <entry key="RetrieveSimilarArtists" type="Bool">
+            <label>Retrieve similar artists</label>
+            <whatsthis>Whether similar songs are retrieved from Audioscrobbler</whatsthis>
+            <default>false</default>
+        </entry>
+</group>
+
+<group name="MediaDevice">
+    <entry key="DeviceType" type="String">
+        <label>Device type</label>
+        <whatsthis>The type of media device.</whatsthis>
+    </entry>
+    <entry key="MountPoint" type="String">
+        <label>Mount point</label>
+        <whatsthis>The mount point used for the media device connection.</whatsthis>
+    </entry>
+    <entry key="MountCommand" type="String">
+        <label>Mount command</label>
+        <whatsthis>The mount command used for the media device connection.</whatsthis>
+    </entry>
+    <entry key="UmountCommand" type="String">
+        <label>UmountCommand</label>
+        <whatsthis>The umount command used for the media device connection.</whatsthis>
+    </entry>
+    <entry key="AutoDeletePodcasts" type="Bool">
+        <label>Auto delete podcasts</label>
+        <whatsthis>Whether podcasts shows already played are automatically deleted when media device is connected.</whatsthis>
+    </entry>
+    <entry key="SyncStats" type="Bool">
+        <label>Sync stats</label>
+        <whatsthis>Whether Amarok statistics should be synchronized with play count/ratings on device and whether tracks played should be submitted to last.fm.</whatsthis>
+    </entry>
+    <entry key="AutoConnect" type="Bool">
+        <label>Connect automatically</label>
+        <whatsthis>Whether to automatically try to connect media device when starting Amarok.</whatsthis>
+        <default>true</default>
+    </entry>
+</group>
+
+<group name="Daap">
+  <entry key="ManuallyAddedServers" type="StringList">
+      <label>Manually added servers</label>
+      <whatsthis>Music Sharing servers added by the user.</whatsthis>
+      <default/>
+  </entry>
+  <entry key="ServerPasswords" type="StringList">
+    <label>Server passwords</label>
+    <whatsthis>Passwords stored by hostname.</whatsthis>
+  </entry>
+</group>
+
+</kcfg>

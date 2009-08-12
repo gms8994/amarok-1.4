@@ -1,0 +1,83 @@
+diff -Nur amarok-1.4.7/amarok/src/scripts/gnome_media_keys/gnome_media_keys.py amarok-1.4.7.new/amarok/src/scripts/gnome_media_keys/gnome_media_keys.py
+--- amarok-1.4.7/amarok/src/scripts/gnome_media_keys/gnome_media_keys.py	1970-01-01 10:00:00.000000000 +1000
++++ amarok-1.4.7.new/amarok/src/scripts/gnome_media_keys/gnome_media_keys.py	2007-08-31 23:48:47.000000000 +1000
+@@ -0,0 +1,45 @@
++#!/usr/bin/env python
++#Gnome Multimedia Key's event handler script.
++#This script will allow the use of multimedia buttons in amarok as configured using gnome keyboard shortcuts.
++#Author: Chris Brown
++#Date: 22June2007
++#Version: 0.3
++#bug reports to: chris.scotland[at]gmail.com
++
++import os, gobject
++
++try:
++    import dbus
++except:
++    os.system("kdialog --sorry 'the package python-dbus (DBUS bindings for Python) is required for this script.'")
++    raise
++
++try:
++    from dbus import glib
++except:
++    os.system("kdialog --sorry 'the package libdbus-glib (Glib-based shared library for dbus) is required for this script.'")
++    raise
++
++bus = dbus.SessionBus()
++object = bus.get_object('org.gnome.SettingsDaemon', '/org/gnome/SettingsDaemon')
++
++def signal_handler(*mmkeys):
++	for mmk in mmkeys:
++        	if mmk == "Play":
++			os.system("dcop amarok player playPause")
++		elif mmk == "Pause":
++			os.system("dcop amarok player pause")
++		elif mmk == "Stop":
++			os.system("dcop amarok player stop")
++		elif mmk == "Next":
++			os.system("dcop amarok player next")
++		elif mmk == "Previous":
++			os.system("dcop amarok player prev")
++
++
++object.connect_to_signal("MediaPlayerKeyPressed", signal_handler, dbus_interface='org.gnome.SettingsDaemon')
++
++gobject.timeout_add(5000, signal_handler)
++
++loop = gobject.MainLoop()
++loop.run()
+diff -Nur amarok-1.4.7/amarok/src/scripts/gnome_media_keys/gnome_media_keys.spec amarok-1.4.7.new/amarok/src/scripts/gnome_media_keys/gnome_media_keys.spec
+--- amarok-1.4.7/amarok/src/scripts/gnome_media_keys/gnome_media_keys.spec	1970-01-01 10:00:00.000000000 +1000
++++ amarok-1.4.7.new/amarok/src/scripts/gnome_media_keys/gnome_media_keys.spec	2007-08-31 23:48:47.000000000 +1000
+@@ -0,0 +1,2 @@
++name = Gnome Multimedia Key's
++type = {generic}
+diff -Nur amarok-1.4.7/amarok/src/scripts/gnome_media_keys/README amarok-1.4.7.new/amarok/src/scripts/gnome_media_keys/README
+--- amarok-1.4.7/amarok/src/scripts/gnome_media_keys/README	1970-01-01 10:00:00.000000000 +1000
++++ amarok-1.4.7.new/amarok/src/scripts/gnome_media_keys/README	2007-08-31 23:48:47.000000000 +1000
+@@ -0,0 +1,24 @@
++<div align="center"><b>Gnome Multimedia Key's</b><br>Version: 0.1</div>
++
++<p>
++<b>About:</b><br>
++This script will allow the use of keyboard multimedia keys in Gnome 2.18 and above (eg. ubuntu feisty) to control playback. This includes most multimedia buttons found on many laptops.<br>
++Currently supported operations are:<br>
++<pre>	Play/Pause
++	Pause
++	Stop
++	Next Track
++	Previous Track
++</pre></p>
++<p>
++<b>Usage:</b><br>
++Simply run the script, no configuration of the script itself is required.<br>The desired keyboard shortcuts can be configured by selecting <i>"System-->Prefrences-->Keyboard Shortcuts"</i> from the Gnome pannel.
++</p>
++<p>
++<b>Author:</b><br>
++Chris Brown: chris.scotland[at]gmail.com<br>
++This is my first ever script and would love your feedback and bug reports.
++</p>
++<p><b>ENJOY!</b></p>
++
++

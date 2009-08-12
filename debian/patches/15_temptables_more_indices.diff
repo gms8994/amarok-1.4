@@ -1,0 +1,14 @@
+--- amarok-1.4.9.1.orig/amarok/src/collectiondb.cpp
++++ amarok-1.4.9.1/amarok/src/collectiondb.cpp
+@@ -701,6 +701,11 @@
+         query( "CREATE UNIQUE INDEX url_tagtemp ON tags_temp( url, deviceid );" );
+         query( "CREATE UNIQUE INDEX embed_urltemp ON embed_temp( url, deviceid );" );
+         query( "CREATE UNIQUE INDEX dir_temp_dir ON directories_temp( dir, deviceid );" );
++        query( "CREATE INDEX album_tagtemp ON tags_temp( album );" );
++        query( "CREATE INDEX artist_tagtemp ON tags_temp( artist );" );
++        query( "CREATE INDEX sampler_tagtemp ON tags_temp( sampler );" );
++        query( "CREATE INDEX uniqueidtemp_uniqueid ON uniqueid_temp( uniqueid );");
++        query( "CREATE INDEX uniqueidtemp_url ON uniqueid_temp( url, deviceid );");
+     }
+ }
+ 

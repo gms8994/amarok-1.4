@@ -1,0 +1,205 @@
+diff -uNr -x debian -x .pc build-tree/amarok-1.4.8/amarok/src/enginecontroller.cpp build-tree.n/amarok-1.4.8/amarok/src/enginecontroller.cpp
+--- amarok-1.4.8/amarok/src/enginecontroller.cpp	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/enginecontroller.cpp	2008-02-27 01:39:47.000000000 +0200
+@@ -403,7 +403,9 @@
+     {
+         if( LastFm::Controller::instance()->isPlaying() )
+         {
+-            LastFm::Controller::instance()->getService()->changeStation( url.url() );
++            if (LastFm::Controller::instance()->changeStation( url.url() ) == -1)
++                // Request was canceled, return immediately.
++                return;
+             connect( m_engine, SIGNAL( lastFmTrackChange() ), LastFm::Controller::instance()->getService()
+             , SLOT( requestMetaData() ) );
+             connect( LastFm::Controller::instance()->getService(), SIGNAL( metaDataResult( const MetaBundle& ) ),
+@@ -413,7 +415,12 @@
+         else
+         {
+             url = LastFm::Controller::instance()->getNewProxy( url.url(), m_engine->lastFmProxyRequired() );
+-            if( url.isEmpty() ) goto some_kind_of_failure;
++            if( url.isEmpty() )
++                goto some_kind_of_failure;
++            else if ( !url.isValid() && url.url() == "lastfm://" )
++                // Request was canceled, return immediately.
++                return;
++
+             m_lastFm = true;
+             connect( m_engine, SIGNAL( lastFmTrackChange() ), LastFm::Controller::instance()->getService()
+                     , SLOT( requestMetaData() ) );
+diff -uNr -x debian -x .pc build-tree/amarok-1.4.8/amarok/src/lastfm.cpp build-tree.n/amarok-1.4.8/amarok/src/lastfm.cpp
+--- amarok-1.4.8/amarok/src/lastfm.cpp	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/lastfm.cpp	2008-02-27 01:41:17.000000000 +0200
+@@ -166,17 +166,20 @@
+ 
+     if ( m_service ) playbackStopped();
+ 
+-    m_service = new WebService( this, useProxy );
++    WebService* service; 
++    // m_service might have already been reset until changeStation() and/or handshare()
++    // calls return
++    service = m_service = new WebService( this, useProxy );
+ 
+     if( checkCredentials() )
+     {
+         QString user = AmarokConfig::scrobblerUsername();
+         QString pass = AmarokConfig::scrobblerPassword();
+-
++        
+         if( !user.isEmpty() && !pass.isEmpty() &&
+-            m_service->handshake( user, pass ) )
++            service->handshake( user, pass ) )
+         {
+-            bool ok = m_service->changeStation( m_genreUrl );
++            bool ok = service->changeStation( m_genreUrl );
+             if( ok ) // else playbackStopped()
+             {
+                 if( !AmarokConfig::submitPlayedSongs() )
+@@ -185,6 +188,11 @@
+                 return KURL( m_service->proxyUrl() );
+             }
+         }
++        if (service->wasCanceled()) {
++            // It was canceled before (during kapp->processEvents() loop)
++            delete service;
++            return KURL("lastfm://"); // construct invalid url
++        }
+     }
+ 
+     // Some kind of failure happened, so crap out
+@@ -192,14 +200,34 @@
+     return KURL();
+ }
+ 
++int
++Controller::changeStation( QString url )
++{
++    if (isPlaying()) {
++        WebService* service = getService();
++        if (service->changeStation( url )) {
++            return 1; // success
++        } else if (service->wasCanceled()) {
++            delete service;
++            return -1; // canceled
++        } else {
++            return 0; // failed
++        }
++    } else {
++        return 0; // impossible, failed
++    }
++}
+ 
+ void
+ Controller::playbackStopped() //SLOT
+ {
+     setActionsEnabled( false );
+ 
+-    delete m_service;
+-    m_service = 0;
++    if (m_service) {
++        if (m_service->cancel()) 
++            delete m_service;;
++        m_service = 0;
++    }
+ }
+ 
+ 
+@@ -357,6 +385,8 @@
+ WebService::WebService( QObject* parent, bool useProxy )
+     : QObject( parent, "lastfmParent" )
+     , m_useProxy( useProxy )
++    , m_deletionUnsafe( false )
++    , m_wasCanceled( false )
+ {
+     debug() << "Initialising Web Service" << endl;
+ }
+@@ -367,6 +397,11 @@
+     DEBUG_BLOCK
+ }
+ 
++bool
++WebService::cancel() {
++    m_wasCanceled = true;
++    return !m_deletionUnsafe;
++}
+ 
+ void
+ WebService::readProxy() //SLOT
+@@ -401,10 +436,16 @@
+             .arg( "0" );
+ 
+     http.get( path );
+-
++
++    // We don't know what might happen within processEvents() loop.
++    // Therefore this service instance must be protected from deletion.
++    m_deletionUnsafe = true;
+     do
+         kapp->processEvents();
+     while( http.state() != QHttp::Unconnected );
++    m_deletionUnsafe = false;
++    if (this->wasCanceled())
++        return false;
+ 
+     if ( http.error() != QHttp::NoError )
+         return false;
+@@ -454,11 +495,15 @@
+         }
+     
+         QString line;
++        m_deletionUnsafe = true;
+         while( true ) {
+             kapp->processEvents();
+             m_server->readln( line );
+             if( line == "AMAROK_PROXY: startup" ) break;
+         }
++        m_deletionUnsafe = false;
++        if (this->wasCanceled())
++            return false;
+     
+         connect( m_server, SIGNAL( readReady( KProcIO* ) ), this, SLOT( readProxy() ) );
+         connect( m_server, SIGNAL( processExited( KProcess* ) ), Controller::instance(), SLOT( playbackStopped() ) );
+@@ -481,9 +526,13 @@
+              .arg( m_session )
+              .arg( url ) );
+ 
++    m_deletionUnsafe = true;
+     do
+         kapp->processEvents();
+     while( http.state() != QHttp::Unconnected );
++    m_deletionUnsafe = false;
++    if (this->wasCanceled())
++        return false;
+ 
+     if ( http.error() != QHttp::NoError )
+     {
+diff -uNr -x debian -x .pc build-tree/amarok-1.4.8/amarok/src/lastfm.h build-tree.n/amarok-1.4.8/amarok/src/lastfm.h
+--- amarok-1.4.8/amarok/src/lastfm.h	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/lastfm.h	2008-02-27 01:20:46.000000000 +0200
+@@ -79,6 +79,7 @@
+             static Controller* instance();
+ 
+             KURL        getNewProxy( QString genreUrl, bool useProxy );
++            int         changeStation ( QString url );
+ 
+             bool        isPlaying() const { return m_service != 0; }
+             WebService* getService() const { return m_service; }
+@@ -147,6 +148,9 @@
+             **/
+             void verifyUser( const QString& user, const QString& pass );
+ 
++            bool cancel();
++            bool wasCanceled() const { return m_wasCanceled; }
++
+             QString proxyUrl() { return m_proxyUrl; }
+ 
+         public slots:
+@@ -203,6 +207,9 @@
+             QString    m_proxyUrl;
+             MetaBundle m_metaBundle;
+ 
++            bool m_deletionUnsafe;
++            bool m_wasCanceled;
++
+         private slots:
+             void readProxy();
+             void metaDataFinished( int id, bool error );

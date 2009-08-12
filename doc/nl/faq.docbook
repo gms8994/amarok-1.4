@@ -1,0 +1,1366 @@
+<chapter id="faq">
+<title
+>Vraag en antwoord</title>
+
+<sect1 id="faq1">
+<title
+>Wat is &amarok;?</title>
+
+<qandaset id="what-is">
+<qandaentry>
+
+<question>
+<para
+>Wat is &amarok;?</para>
+</question>
+
+<answer>
+<para
+>&amarok; is een muziekspeler voor UNIX-systemen (zoals Linux). Meer informatie kunt u vinden in een <ulink url="http://amarok.kde.org/amarokwiki/index.php/What_is_Amarok%3F"
+>samenvatting van de mogelijkheden</ulink
+> en de <ulink url="http://amarok.kde.org/index.php?set_albumName=Screenshots&amp;option=com_gallery&amp;Itemid=60&amp;include=view_album.php"
+>galerij met schermafdrukken</ulink
+>.</para>
+</answer>
+
+</qandaentry>
+</qandaset>
+
+</sect1>
+
+<sect1 id="faq2">
+<title
+>Installatie</title>
+
+<qandaset id="installation-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Kan ik &amarok; zonder KDE gebruiken?</para>
+</question>
+
+<answer>
+<para
+>&amarok; heeft alleen kdelibs nodig, de rest van KDE niet. Installeer dus eerst kdelibs (inclusief alle binaire bestanden die meegeleverd worden, omdat &amarok; enkele van deze bestanden nodig heeft om plugins te vinden en voor de scriptplugins). We hebben een document geschreven over <ulink url="http://amarok.kde.org/amarokwiki/index.php/KDElibs_without_aRts"
+>hoe u een minimale kdelibs kunt compileren</ulink
+>, welke u misschien handig vindt.</para>
+<para
+>Sommige functies, zoals de on-screen-display,  hebben voor een correcte werking een windowmanager nodig die ondersteuning biedt voor de relevante freedesktop.org-standaarden. GNOME voldoet aan deze standaarden en werkt dus correct, maar fluxbox zal problemen veroorzaken. We zijn toegewijd om &amarok; op elk platform te ondersteunen. We maken gebruik van kdelibs en Qt omdat deze een excellente programmeeromgeving bieden.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq3">
+<title
+>Probleemoplossing</title>
+
+<qandaset id="troubleshooting">
+
+<qandaentry>
+<question>
+<para
+>&amarok; crasht tijdens de collectiescan, altijd op hetzelfde punt. Wat is er aan de hand?</para>
+</question>
+
+<answer>
+<para
+>Het is zeer waarschijnlijk dat uw collectie een fout in de taglib-bibliotheek tegenkomt, waardoor &amarok; crasht. U kunt dit bestand achterhalen door te zoeken in het bestand ~/.kde/share/apps/amarok/collection_scan.log. Meldt deze crash aan de Taglib-bugdatabase op <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+> en voeg het beschadigde bestand bij. Naderhand kunt u het bestand uit uw collectie verwijderen en het scannen herhalen.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>&amarok; crasht telkens als ik een bepaalde track afspeel. Wat gaat er fout?</para>
+</question>
+
+<answer>
+<para
+>Dit betekent meestal dat Taglib crasht tijdens het lezen van de tag van de track. Meld deze bug in Taglib op <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; loopt de hele tijd vast, wat kan ik hieraan doen?</para>
+</question>
+
+<answer>
+<para
+>Opwaardeer uw ALSA-bibliotheken en hulpprogramma's naar de nieuwste versie, of gebruik OSS of OSS-emulatie.</para>
+<para
+>Als u MySQL als database-backend gebruikt, probeer SQLite eens, deze is wat verder ontwikkeld (de programmacode van &amarok;, niet de database zelf). </para>
+<para
+>Probeer een andere geluidsengine.</para>
+<para
+>Verzeker u ervan dat alle bibliotheken die &amarok; gebruikt zijn gecompileerd met dezelfde GCC-versie als &amarok; zelf. De situatie waarin &amarok; is gecompileerd met behulp van GCC 3.4.x en gekoppeld aan taglib die is gecompileerd met behulp van GCC 3.3.x kan leiden tot crashes tijdens het bewerken van tags.</para>
+<para
+>Als u KDE met artsd gebruikt, probeer eens de optie "Automatisch onderbreken wanneer inactief gedurende:" uit te schakelen in de configuratiemodule "Geluid en multimedia->Geluidssysteem", of gebruik in ieder geval geen waarde van 1 seconden, aangezien dat telkens stoort als Amarok van track wisselt.</para>
+<para
+>Stuur ons anders de backtraces als de e-mail wordt geopend (u ziet hem vanzelf verschijnen). Als het programma vaak crasht, dan zal het zeker worden gerepareerd als u een heel goede backtrace naar ons stuurt. Zie de volgende secties voor assistentie.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik een fatsoenlijke backtrace krijgen?</para>
+</question>
+
+<answer>
+<para
+>Zie de <ulink url="http://amarok.kde.org/amarokwiki/index.php/Debugging_HowTo"
+>Debugging Howto</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; gebruikt de tags niet die in mijn bestanden staan!</para>
+</question>
+
+<answer>
+<para
+>Als Konqueror of andere programma's andere informatie voor titel, artiest, album of genre weergeven dan &amarok;, dan kan het zijn dat het programma de oudere ID3v1-tags leest in plaats van de nieuwere ID3v2-tags. Dit kan komen door uw <guilabel
+>tekensetcodering</guilabel
+>: Ga naar het menu <menuchoice
+><guimenu
+>Instellen</guimenu
+> <guimenuitem
+>&amarok; instellen</guimenuitem
+></menuchoice
+> en zoek de coderingssectie in het instellingenpaneel en deselecteer alle keuzevakjes onder "Het volgende niet als latin1 coderen:". Scan uw collectie opnieuw om de ID3v2-tags op te pikken. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; weergeeft mijn utf8-gecodeerde id3v2-tags niet correct!</para>
+</question>
+
+<answer>
+<para
+>Dit komt doordat de meeste programma's utf8-gegevens in id3v2-tags plaatsen, maar de codering niet op unicode zetten. Dit Perl-script repareert dat.</para>
+<programlisting
+>#!/usr/bin/perl
+die "File $ARGV[0] doesn't exist" unless -f $ARGV[0];
+use MP3::Mplib;
+my $mp3 = MP3::Mplib->new($ARGV[0]);
+my $v2tag = $mp3->get_v2tag;
+print "Error writing tags of $ARGV[0]\n" unless $mp3->set_v2tag($v2tag,&amp;UTF8);
+</programlisting>
+<note
+><para
+>Dit script heeft de Perl-module MP3::Mplib nodig, welke kan worden geïnstalleerd met het commando <command
+>perl -MCPAN -e 'install MP3::Mplib'</command
+></para
+></note>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Waarom zien mijn statusbalkpictogrammen er altijd actief uit?</para>
+</question>
+
+<answer>
+<para
+>&amarok; statusbalkpictogrammen (willekeurig/herhalen/toevoegen) zien er in KDE 3.4.0 constant geactiveerd uit. Dit is een bekende fout in KDE 3.4.0. De pictogrameffecten worden soms vergeten. Een eenvoudige manier om dit te verhelpen is door in kcontrol naar de module <menuchoice
+><guimenu
+>Uiterlijk en thema's</guimenu
+><guisubmenu
+>Pictogrammen</guisubmenu
+><guimenuitem
+>Geavanceerd</guimenuitem
+></menuchoice
+> te gaan. Zet het pictogrameffect voor "Inactief"  op "Grijs", en selecteer het keuzevakje "Semi-transparant". Let op, soms moet u 3 keer op het pictogram klikken voordat er een effect optreedt na deze wijziging. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waarom klaagt &amarok; over 'undefined symbols' en weigert het op te starten?</para>
+</question>
+
+<answer>
+<para
+>Als u deze foutmelding krijgt:  "amarokapp: symbol lookup error: amarokapp: undefined symbol: _ZN11KSystemTray9setPixmapERK7QPixmap", controleer dan of amarokapp de juiste libqt gebruikt (controleer dat met: ldd `which amarokapp` | grep qt). </para>
+<para
+>Om het te repareren, verwijder elke conflicterende libqt en/of bewerk het bestand /etc/ld.so.conf zodat het de juiste versie als eerste pakt.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq5">
+<title
+>Algemeen gebruik</title>
+
+<qandaset id="general-use">
+
+
+<qandaentry>
+<question>
+<para
+>Waar kan ik ondersteuning voor &amarok; krijgen?</para>
+</question>
+
+<answer>
+<para
+>Er zijn meerdere mogelijkheden. Vaak kunnen de problemen die u hebt tijdens de eerste installatie van &amarok; het beste worden beantwoord door de experts van uw UNIX- of Linux-distributie. U kunt hulp vragen van medegebruikers en -ontwikkelaars op het <ulink url="http://amarok.kde.org/index.php?option=com_simpleboard"
+>&amarok;-forum</ulink
+> en het <ulink url="irc://irc.freenode.net/amarok"
+>IRC-kanaal</ulink
+> #amarok op irc.freenode.net .</para>
+<note
+><para
+><ulink url="http://bugs.kde.org"
+>Bugzilla</ulink
+> is geen plek waar u ondersteuning kunt vinden. Meld hier eventuele bugs (programmafouten) die u in het &amarok; tegenkomt en u actief wilt meewerken bij het verhelpen van deze bugs.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Als ik &amarok; start zie ik een lege afspeellijst. Hoe kan ik die vullen met tracks?</para>
+</question>
+
+<answer>
+<para
+>Dat is vrij eenvoudig. Gebruik de bestandsbrowser aan de linker kant om naar de gewenste map te bladeren. Versleep vervolgens bestanden naar de afspeellijst rechts.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waar is tabblad "Begin" gebleven?</para>
+</question>
+
+<answer>
+<para
+>Om de interface van het programma ordelijk te houden is tabblad "Begin" verandert in een statistiekengereedschap, die te bereiken is via menuoptie <menuchoice
+><guimenu
+>Hulpmiddelen</guimenu
+><guimenuitem
+>Statistieken</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Is er een manier waarop ik de hoeveelheid informatie in de contextbrowser kan aanpassen?</para>
+</question>
+
+<answer>
+<para
+>Ja, gebruik de rechter muisknop binnen de contextbrowser om deze te wijzigen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waarom zijn de sterren en getallen in de contextbrowser niet gelijk aan elkaar?</para>
+</question>
+
+<answer>
+<para
+>De betekenis van deze symbolen is veranderd in Amarok 1.4 "Fast Forward": sterren weergeven de waardering van de gebruiker, terwijl de getallen de berekende score weergeven.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Klikken op de steren in de contextbrowser werkt niet. Hoe kan ik een waardering aan een track toekennen?</para>
+</question>
+
+<answer>
+<para
+>Om waarderingen aan een track toe te kennen heeft u de kolom "Waardering" in de afspeellijst nodig. Klik met de &RMB; op de afpeellijsttitel en kies <menuchoice
+><guimenu
+>Kolom toevoegen</guimenu
+><guimenuitem
+>waardering</guimenuitem
+></menuchoice
+>. Klik op een willekeurige plek binnen deze kolom om de waardering van een track in te stellen. U kunt ook de toetscombinaties [WIN]+[1-5] gebruiken om snel een waardering aan een lied toe te kennen, terwijl Amarok op de achtergrond draait.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik tracks uit de afspeellijst verwijderen?</para>
+</question>
+
+<answer>
+<para
+>Selecteer de tracks die u wilt verwijderen, en druk op de toets <keycap
+>Del</keycap
+> op uw toetsenbord. Of klik met de rechter muisknop en kies <guimenuitem
+>Selectie verwijderen</guimenuitem
+> in het contextmenu.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik een afspeellijst laden?</para>
+</question>
+
+<answer>
+<para
+>Versleep het afspeellijstbestand naar de Afspeellijst, net zoals u zou doen met elk ander bestand. Zo eenvoudig is het! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik de huidige afspeellijst opslaan?</para>
+</question>
+
+<answer>
+<para
+>In de werkbalk van de afspeellijst ziet u naast de knop <guibutton
+>Media toevoegen</guibutton
+> de knop <guibutton
+>Afspeellijst opslaan</guibutton
+>. Klik op deze knop.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Er zijn geen visualisaties in de visualisatiedialoog.</para>
+</question>
+
+<answer>
+<para
+>Waarschijnlijk is xmms-config niet geïnstalleerd. Installeer het pakket xmms-devel, en configureer/compileer Amarok opnieuw. Voor de mooiste visualisaties installeert u ook de nieuwste versie van <ulink url="http://libvisual.sourceforge.net/v2/"
+>libvisual</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waar is de equalizer?</para>
+</question>
+
+<answer>
+<para
+>Het equalizervenster kunt u vinden in het contextmenu, en in de menubalk via <menuchoice
+><guimenu
+>Hulpmiddelen</guimenu
+> <guimenuitem
+>Equalizer</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq6">
+<title
+>Afspelen</title>
+
+<qandaset id="playback-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Welke mediatypen ondersteunt &amarok;?</para>
+</question>
+
+<answer>
+<para
+>Geen enkele. Ja, dat klopt! Helemaal niets! Amarok maakt gebruik van een backend voor het afspelen van de muziekbestanden. De vraag is dus eigenlijk: "Welke mediatypen worden door GStreamer/xine/aRts/NMM/MAS/KDEmm ondersteunt?" We kunnen dus in feite zeggen dat we zo'n beetje elk audioformaat dat u kunt bedenken ondersteunen. De backend GStreamer kan zelfs tekst en PNG decoderen! </para>
+<para
+>Voor meer informatie ga naar de webpagina <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Audio Engine Comparison</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waarom kan ik geen MP3-bestanden met &amarok; afspelen?</para>
+</question>
+
+<answer>
+<para
+>Vanwege patentkwesties leveren enkele Linux-distributies, zoals RedHat en Fedora geen MP3-decoders mee. Oplossing: Alt-F2, gg:redhat mp3 kde, ENTER</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; speelt geen MP3-bestanden af onder SUSE Linux 9.3. Wat kan ik hieraan doen?</para>
+</question>
+
+<answer>
+<para
+>Open de "YaST Online Update" en installeer de patch 'Multimedia Option Pack 1'. Voila, &amarok; speelt MP3's.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Met de engine GStreamer wordt mijn processor 100% gebruikt tijdens het afspelen. Hoe kan ik dit voorkomen?</para>
+</question>
+
+<answer>
+<para
+>Als u GStreamer met alsasink gebruikt, dan vereist &amarok; dat het apparaat een mixer aanlevert. Dit mixen betekent dat verschillende programma's tegelijkertijd toegang kunnen krijgen tot de geluidskaart, en dat het geluid door elkaar kan worden afgespeeld. Dit kan worden bereikt door een geluidskaart te gebruiken die hardware-mixing ondersteunt (zoals SBLive), of door het gebruiken van de plugin "dmix" voor alsa. Deze biedt software-mixing. Zie <ulink url="http://amarok.kde.org/amarokwiki/index.php/Setting_up_Dmix_for_ALSA"
+>Setting up Dmix for ALSA</ulink
+>. </para>
+<para
+>Na de installatie dient u "dmix" als geluidsapparaat op te geven in de instellingendialoog voor de engine.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik kan geen enkel bestand afspelen in &amarok;. Hoe komt dat?</para>
+</question>
+
+<answer>
+<para
+>Test even het geluidsframewerk vanaf de commandoprompt: </para>
+<para
+><command
+>artsplay muziekbestand.mp3</command
+> <command
+>gst-launch filesrc location=/home/muziek/bestand.mp3 ! spider ! audioscale ! audioconvert ! alsasink</command
+> <command
+>xine-check</command
+> </para>
+<para
+>De uitvoer van deze commando's kan u helpen bij het identificeren van de problemen, en hoe u ze kunt oplossen. Opmerking: bij GStreamer heeft u in de test mogelijk een andere sink nodig (zoals osssink).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kan &amarok; rechtstreeks afspelen naar OSS/ALSA?</para>
+</question>
+
+<answer>
+<para
+>Dat gebeurt in feite al. Maar vergeet niet dat de bestanden eerst moeten worden ontcijferd! Het is niet mogelijk om een MP3-bestand onbewerkt rechtstreeks naar ALSA te sturen, het enige dat u dan zal horen is witte ruis. GStreamer is de beste keuze voor de meeste gebruikers die een snelle en slanke decodering willen. Het leest het bestand, ontcijfert het en stuurt de PCM-data naar ALSA. Net zoals XMMS het doet.</para>
+</answer>
+</qandaentry>
+
+
+
+<qandaentry>
+<question>
+<para
+>Maar! XMMS kan de muziek rechtstreeks naar ALSA sturen!</para>
+</question>
+
+<answer>
+<para
+>Klopt, maar ook XMMS ontcijfert eerst de bestanden. GStreamer en Xine de muziek kunnen ook direct naar ALSA sturen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Het geluid stottert. Hoe kan ik dat verhelpen?</para>
+</question>
+
+<answer>
+<para
+>U kunt overstappen op de GStreamer-engine (die is fantastisch!), of aRts beter afstellen. Open <menuchoice
+><guimenu
+>KDE Configuratiecentrum</guimenu
+><guisubmenu
+>Geluid en multimedia</guisubmenu
+><guimenuitem
+>Geluidssysteem</guimenuitem
+></menuchoice
+>, activeer de optie <guimenuitem
+>Uitvoeren met de hoogst mogelijke prioriteit</guimenuitem
+>, en verhoog de grootte van de <guimenuitem
+>Geluidsbuffer</guimenuitem
+> (waarschuwing, zie de volgende vraag!). Zorg er ook voor dat uw artswrapper SUID is:</para>
+<para
+><command
+>su</command
+> <command
+>chmod a+rsx /pad/naar/kde/bin/artswrapper</command
+> <command
+>killall -9 artsd</command
+> </para>
+<para
+>In KDE 3.2.x zijn er problemen met de codecs van kdemultimedia, wat kan leiden tot een verstoord afspelen. Kijk voor meer informatie bij dit <ulink url="http://bugs.kde.org/show_bug.cgi?id=80497"
+>bugrapport</ulink
+>. Ook kan het verhogen van de geluidsbuffer in het alsa-configuratiebestand asoundrc een stuk schelen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Het processorgebruik ligt hoog. Hoe kan ik dat verbeteren?</para>
+</question>
+
+<answer>
+<para
+>Of u gebruikt de aRts-engine niet, maar in plaats daarvan GStreamer of Xine, of u probeert dit op te lossen door de module kdemultimedia volledig te installeren. Deze bevat snellere aRts-codecs (zoals libarts_mpeglig.so, etc.).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>De ontleders van &amarok; lopen niet gelijk met het geluid!</para>
+</question>
+
+<answer>
+<para
+>U gebruikt waarschijnlijk de aRts-engine. Of u stapt over op een andere engine (die van Xine is flink bijgewerkt om de ontleder beter synchroon te laten lopen), of u verkleint de grootte van uw aRts-buffer in het Configuratiecentrum, module Geluidssysteem. Hoe lager de buffer, des te meer de visualisatie gelijk loopt met het geluid. Inderdaad, dit is een programmafout. Help ons om deze op te lossen!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik heb GStreamer geïnstalleerd, maar als ik probeer om over te stappen op de GStreamer=engine, dan loopt &amarok; vast. Wat is de oorzaak?</para>
+</question>
+
+<answer>
+<para
+>Nadat u GStreamer hebt geïnstalleerd dient u diens componenten te registreren. Voer het commando 'gst-register' (soms met het versienummer, gst-register-0.8) dus even uit om dit te realiseren.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik heb gst-register uitgevoerd, maar heb nog steeds GStreamer-problemen. Wat kan ik nog meer doen?</para>
+</question>
+
+<answer>
+<para
+>Lees even de <ulink url="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-using.html"
+>GStreamer FAQ</ulink
+>. Als niets helpt, probeer dan eens contact op te nemen met de deskundige personen op <ulink url="irc://irc.freenode.net/gstreamer"
+>IRC-kanaal #gstreamer</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; zegt dat de GStreamer-engine geen MP3-bestanden kan afspelen, terwijl ik wèl de mad-plugin heb geïnstalleerd/gecompileerd!</para>
+</question>
+
+<answer>
+<para
+>Probeer dit (verzeker u ervan dat &amarok; niet draait): <ulink url="http://gstreamer.freedesktop.org/src/gst-ffmpeg/"
+>Download</ulink
+>, compileer en installeer het pakket ffmpeg  - Voer gst-register uit (mogelijk tweemaal, als root en als "normale gebruiker") - Ga naar uw GStreamer-pluginmap (deze kunt u vinden met gst-config / gstreamer-config) - Verwijder de ffmpeg-bestanden (of zet ze ergens anders neer)- Voer gst-register nogmaals uit - Start &amarok;. </para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq7">
+<title
+>Ontwikkeling</title>
+
+<qandaset id="development-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik een CVS/SVN-versie van &amarok; krijgen?</para>
+</question>
+
+<answer>
+<para
+><ulink url="http://amarok.kde.org/amarokwiki/index.php/Installation_HowTo#Building_SVN_Amarok"
+>Hoe u &amarok; uit het SVN kunt halen en bouwen</ulink
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik heb een bug gevonden / ik heb een fantastisch idee voor &amarok;!</para>
+</question>
+
+<answer>
+<para
+>Meld deze op <ulink url="http://bugs.kde.org"
+>bugs.kde.org</ulink
+>. Als u een lijst met suggesties/wensen hebt, dan kunt u die het beste sturen aan onze mailinglijst: <email
+>amarok-devel@lists.sourceforge.net</email
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Accepteren jullie patches?</para>
+</question>
+
+<answer>
+<para
+>Uiteraard! U kunt ons het beste van te voren laten weten wat u van plan bent, zodat we het kunnen bespreken. Wees gerust, we hebben tot nu toe geen enkele patch geweigerd! De bespreking is voornamelijk bedoeld om u te helpen de juiste onderdelen van &amarok; te patchen. Stuur vervolgens de patch naar onze mailinglijst, of commit als u SVN-toegang hebt. Voordat u nieuwe functies in het svn commit, neem eerst contact met ons op! Als u een bugfix hebt, ga dan gerust uw gang, het is niet voor niets open source :)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waarom hebben jullie de naam &amarok; gekozen?</para>
+</question>
+
+<answer>
+<para
+>&amarok; is een album van de Britse componist Mike Oldfield. Ik vind dit album erg goed, en vond dat de naam een goede klank had. En, uiteraard, het bevat de o zo belangrijke <quote
+>K</quote
+> :) </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Is het &amarok;, AmaroK, of Amarok?</para>
+</question>
+
+<answer>
+<para
+>Het is zeer zeker <quote
+>&amarok;</quote
+>! Maar we begrijpen dat het wat ongebruikelijk is :)</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq8">
+<title
+>Tips en trucs</title>
+
+<qandaset id="tipsandtricks-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik &amarok; als een wekker gebruiken?</para>
+</question>
+
+<answer>
+<para
+>Dat kan met behulp van de magie van DCOP. Zet eenvoudigweg een herinnering in uw favoriete agenda/kalenderprogramma en vertel het om dit commando uit te voeren: <command
+>dcop amarok player play</command
+> </para>
+<para
+>Dit commando vertelt &amarok; om te starten met afspelen. Zorg er voor dat &amarok; draait voordat u naar bed gaat, en u zult wakker worden met het oorstrelende geluid van het nummer dat u hebt gestopt voordat u naar bed ging.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik uitvinden wat &amarok; op dit moment afspeelt als ik achter een andere computer zit?</para>
+</question>
+
+<answer>
+<para
+>Als u uw ssh-omgeving goed hebt ingesteld, dan kunt u die gebruiken om de informatie op te halen. Het volgende commando geeft de tekst van "momenteel te beluisteren" terug: <command
+>ssh -i ~/.ssh/id_rsa uw_ip dcop --user uw_gebruikersnaam amarok player nowPlaying</command
+> </para>
+<para
+>Zorg ervoor dat u 'uw_ip' vervangt door uw IP-adres en 'uw_gebruikersnaam' door uw gebruikersnaam. Merk ook op dat dit commando verwacht dat uw identificatie te vinden is in het bestand ~/.ssh/id_rsa file.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Wat voor trucs kan ik uithalen met het Afspelervenster?</para>
+</question>
+
+<answer>
+<para
+>De ontleders van de &amarok;-speler kunnen losgemaakt worden van het Afspelervenster Klik op de toets <keycap
+>d</keycap
+> om de actieve ontleder te openen in een onafhankelijk venster.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Wat voor trucs kan ik uithalen met het Afspeellijstvenster?</para>
+</question>
+
+<answer>
+<para
+>Het klikken van de rechter muisknop terwijl u de toets <keycap
+>Ctrl</keycap
+> ingedrukt houdt plaatst de bestanden in de wachtrij, op de volgorde waarin u erop geklikt hebt. Het drukken op <keycap
+>Enter</keycap
+> na een zoekactie in de afspeellijst zal het eerstgevonden item afspelen en de zoekopdracht wissen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik zie dat het Afspelervenster en Afspeellijstvenster handige trucs kennen. Wat kan het systeemvakpictogram?</para>
+</question>
+
+<answer>
+<para
+>Als u met de muisaanwijzer over het pictogram beweegt zal er een tekstballon verschijnen met daarin informatie over de huidige track. Klik met de middelste muisknop om de huidige track af te spelen of te pauzeren. Het volume kunt u wijzigen door het muiswiel te draaien als de muisaanwijzer op het pictogram staat. Draaien met de muiswiel terwijl u de toets <keycap
+>Shift</keycap
+> hebt ingedrukt spoelt vooruit/achteruit door de huidige track. De toets <keycap
+>Ctrl</keycap
+> ingedrukt houden tijdens het draaien loopt door de tracks in de afspeellijst. Als u muziekbestanden naar het systeempictogram sleept wordt er een contextmenu geopend waarin u uit drie opties kunt kiezen: toevoegen aan de afspeellijst, toevoegen en afspelen en in wachtrij na huidige track. De systeemvakpictogram geeft ook de afspeelpositie in de track aan.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waar kan ik instellingen van &amarok; vinden?</para>
+</question>
+
+<answer>
+<para
+>~/.kde/share/apps/amarok ~/.kde/share/config/amarokrc</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe schakel ik een browsersectie in &amarok; uit?</para>
+</question>
+
+<answer>
+<para
+>Als u rechtsklikt op een browsertab wordt er een lijst met zichtbare browsers geopend. U kunt deze lijst gebruiken om de beschikbare browsers aan of uit te zetten.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq9">
+<title
+>Algemene vragen</title>
+
+<qandaset id="general-questions-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik een externe MySQL-database met &amarok; gebruiken?</para>
+</question>
+
+<answer>
+<para
+>Zie de <ulink url="http://amarok.kde.org/amarokwiki/index.php/MySQL_HowTo"
+>MySQL HowTo</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mijn persoonlijke map ($HOME) bevindt zich op een NFS-share. Na het opstarten kan &amarok; de collectie niet opbouwen en geeft deze veel database-foutmeldingen in de console. Wat kan ik hieraan doen?</para>
+</question>
+
+<answer>
+<para
+>De internet SQLite-database die &amarok; standaard gebruikt werkt niet over NFS. Maak een symbolische koppeling van de map ~/.kde/share/apps/amarok naar een lokaal station, of gebruik MySQL.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik audio-cd's met &amarok; rippen/coderen?</para>
+</question>
+
+<answer>
+<para
+>Plaats uw cd, en klik op de menuoptie "Audio-cd afspelen". De bestandsbrowser wordt dan geopend en toont een boomstructuur met meerdere mappen. Voor gewoon rippen, open de map "wav", selecteer enkele tracks en sleep ze naar de gewenste locatie in een Konqueror-venster. Voor automatische codering, sleep de bestanden uit de map "mp3" of "ogg".</para>
+<note
+><para
+>Voor het rippen van cd's is de kioslave "audiocd" nodig. Deze is onderdeel van KDE-Multimedia.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe worden de trackscores bepaald?</para>
+</question>
+
+<answer>
+<para
+>&amarok; wijst een score (een getal tussen de 1 en 100) toe aan een track, gebaseerd op hoe vaak u er naar geluisterd hebt, en of u naar een andere track bent gegaan voordat de huidige track is afgelopen. Telkens als een track klaar is met afspelen wordt de score aangepast. De code voor het wijzigen van de score staat in het bestand collectiondb.cpp. Vanaf versie 1.2.2 stond deze op regel 1181, u kunt de regel terugvinden als u zoekt naar de term "CollectionDB::addSongPercentage".  Bij het definiëren van de score van een track die nooit eerder is afgespeeld gebruikt &amarok; de berekening score =  ( ( 50 + percentage ) / 2 )</para>
+<para
+>Dit zet de score op een getal tussen de 25 en 75, afhankelijk van hoe ver de track is afgespeeld. Bijvoorbeeld, als de gebruiker de track stopt of naar een andere track gaat nadat slechts 25% van de track is afgespeeld wordt de score gezet op (50+25)/2, oftewel 37,5. De scores worden getoond in hele getallen, dus dit getal wordt afgerond tot het dichtstbijzijnde hele getal. Intern blijft de score echter een decimaal getal, dit omdat nadat een track meerdere malen is afgespeeld, het onmogelijk kan zijn om de score met meer dan een punt te wijzigen wanneer deze eenmaal wordt afgespeeld (zie hieronder). Bij het definiëren van een track die eerder is afgespeeld is de berekening wat ingewikkelder. In de broncode is dit de berekening: score = ( ( values[2].toDouble() * values.first().toInt() ) + percentage ) / ( values.first().toInt() + 1 );</para>
+<para
+>Wijzigingen in de waarden van deze regel:</para>
+<programlisting
+>QStringList values = query( QString(
+           "SELECT playcounter, createdate, percentage FROM statistics "
+           "WHERE url = '%1';" )
+           .arg( escapeString( url ) ) );
+</programlisting>
+<para
+>We hebben score = ( ( statistics_percentage.toDouble() * PlayCounter.toInt() ) + percentage ) / ( PlayCounter.toInt() + 1 ); </para>
+<para
+>In principe wijzigt dit de vorige score (statistics_percentage) door een afnemende hoeveelheid, afhankelijk van het aantal maal dat de track is afgespeeld. Hoe vaker de track wordt afgespeeld, des te minder effect elke afspeelkeer op de score zal hebben.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik handmatig de score van een track wijzigen?</para>
+</question>
+
+<answer>
+<para
+>U kunt de score handmatig wijzigen door rechts te klikken op de titels van de afspeellijstkolommen (degene met titel, artiest, album, etc..) en 'Score' te selecteren. U kunt de score op dezelfde manier wijzigen als elk ander trackattribuut: rechtsklik erop en selecteer "Tag/score bewerken" of druk op de toets <keycap
+>F2</keycap
+>. U kunt ook de score bewerken in de tag-dialoog, deze kunt u openen door rechts te klikken op een track.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Waarom is &amarok; geen onderdeel van kdemultimedia?</para>
+</question>
+
+<answer>
+<para
+>De programmeurs willen niet opgelegd krijgen wanneer ze het programma mogen uitbrengen (of met andere woorden, de pakketen van KDE hebben een uitgaveschema dat niet in overeenstemming is met de snelle ontwikkeling van &amarok;).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe voorkom ik dat het &amarok;-pictogram in de systeemvak knippert?</para>
+</question>
+
+<answer>
+<para
+>Dit is een nieuwe functie die sommige gebruikers als storend ervaren. Deselecteer eenvoudigweg de optie "Bewegend syteemvakpictogram tijdens afspelen" bij de algemene opties.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik de ontleders uit het afspeellijstvenster laten weergeven of verwijderen?</para>
+</question>
+
+<answer>
+<para
+>De afspeellijstontleder is onderdeel van de afspeellijstwerkbalk. Selecteer <menuchoice
+><guimenu
+>Instellingen</guimenu
+><guimenuitem
+>Werkbalken instellen</guimenuitem
+></menuchoice
+>, plaats de Ontleder in de sectie 'Huidige acties' of verwijder deze en klik op <guibutton
+>OK</guibutton
+> </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik het thema van de contextbrowser veranderen?</para>
+</question>
+
+<answer>
+<para
+>Download een <ulink url="http://amarok.kde.org/amarokwiki/index.php/Themes"
+>thema</ulink
+> of maak uw <ulink url="http://amarok.kde.org/wiki/index.php/CSS_Styles"
+>eigen</ulink
+> thema. Installeer het via <menuchoice
+><guimenu
+>&amarok; instellen...</guimenu
+><guisubmenu
+>Uiterlijk</guisubmenu
+><guimenuitem
+>Stijl voor Contextbrowser</guimenuitem
+></menuchoice
+> en klik op 'Nieuwe stijl installeren'.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Welke juridische kwesties zijn de oorzaak voor het vervangen van het pictogram "Blue Wolf"?</para>
+</question>
+
+<answer>
+<para
+>Het pictogram leek teveel op het logo van Warp Graphics, Inc. (elfquest.com). Hij moest dus vervangen worden om eventuele problemen te voorkomen.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik heb geen enkele visualisatie. Waar kan ik die vandaan halen?</para>
+</question>
+
+<answer>
+<para
+>Installeer de nieuwste versie van <ulink url="http://libvisual.sf.net"
+>libvisual</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik mijn favoriete streams aan &amarok; toevoegen?</para>
+</question>
+
+<answer>
+<para
+>Laad eerst de stream in de afspeellijst. Dat kan op verschillende manieren. U kunt op het URL-adres van de stream-afspeellijst in Konqueror klikken, &amarok; zal dan de stream automatisch openen. Dus op <ulink url="http://www.shoutcast.com"
+>shoutcast.com</ulink
+>, klik op de knop "Tune in". Of u kunt de knop "Media toevoegen" gebruiken om een stream te laden. Als de stream eenmaal geladen is, dan kunt u het opslaan door rechts te klikken op "Huidige afspeellijst" in de Afspeellijstbrowser en dan "Opslaan" te selecteren. Nadat u een naam voor de stream hebt opgegeven zal de worden toegevoegd aan de Afspeellijstbrowser.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq10">
+<title
+>Konqueror-zijbalk</title>
+
+<qandaset id="konq-sidebar-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Wat is Konqueror-zijbalk?</para>
+</question>
+
+<answer>
+<para
+>Met Konqueror-zijbalk kunt u &amarok; volgen/bedienen terwijl u surft met Konqueror. Om de zijbalk te openen, start Konqueror op en druk op de toets <keycap
+>F9</keycap
+>. Klik daarnaar op de knop 'Voorkeuren (meestal bovenste knop) of rechtsklik op een leeg gedeelte in de verticale knoppenbalk van de zijbalk. In het contextmenu kies  <menuchoice
+><guimenu
+>Nieuwe toevoegen</guimenu
+> <guimenuitem
+>&amarok;</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq11">
+<title
+>Last.fm</title>
+
+<qandaset id="audioscrobbler-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Wat is Last.fm?</para>
+</question>
+
+<answer>
+<para
+>Last.fm is een gratis dienst die informatie met betrekking tot muziek die wordt afgespeeld naar een onafhankelijke server. Het lid worden van de dienst is gratis en vereist alleen dat u een gebruikersnaam en wachtwoord kiest die nog niet door iemand wordt gebruikt. Last.fm is momenteel onderdeel van &amarok;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik wil niet dat &amarok; informatie naar Last.fm stuurt!</para>
+</question>
+
+<answer>
+<para
+>Deselecteer het keuzevakje "Tracks die ik afspeel indienen" om te verhinderen dat Last.fm om tracksuggesties wordt gevraagd.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik de &amarok;-groep van Last.fm krijgen?</para>
+</question>
+
+<answer>
+<para
+>De &amarok;-groep bij Last.fm is hier te vinden: <ulink url="http://www.last.fm:80/group/Amarok+users"
+>http://www.last.fm:80/group/Amarok+users</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq12">
+<title
+>Algemene vragen over het afspelen en de engine</title>
+
+<qandaset id="general-engine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Welke geluidsengine moet ik gebruiken?</para>
+</question>
+
+<answer>
+<para
+>Kijk even in de <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Audio Engine Comparison</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Welke versie van ALSA moet ik gebruiken?</para>
+</question>
+
+<answer>
+<para
+>Als u de geluidsuitvoer naar ALSA stuurt, dan moet u de nieuwste beschikbare versie van ALSA gebruiken! Oude versies van ALSA zijn verantwoordelijk voor vele crashes, en hebben de nodige bugrapporten opgeleverd.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik heb GStreamer/Xine/etc geïnstalleerd, maar de relevante geluidengine verschijnt niet. Wat is hiervan de oorzaak?</para>
+</question>
+
+<answer>
+<para
+>Als u &amarok; zelf hebt gecompileerd, dan is &amarok; waarschijnlijk gecompileerd zonder dat er xine en/of gstreamer op het systeem aanwezig was. De ./configure-routine van het compileerproces heeft ze daarom niet meegenomen in de lijst met te bouwen engines. U moet &amarok; daarom opnieuw compileren. Als u een kant-en-klare versie van &amarok; hebt gedownload, dan is deze ofwel gecompileerd zonder ondersteuning voor de engine, of de ondersteuning wordt in aparte pakketten aangeleverd. Neem contact op met de bouwer van het pakket voor meer informatie.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Maar ik heb &amarok; gecompileerd nadat ik GStreamer en/of Xine heb geïnstalleerd. Toch verschijnt de engine niet in de lijst. Wat is er mis gegaan?</para>
+</question>
+
+<answer>
+<para
+>U gebruikt waarschijnlijk een distributie die de development-bibliotheken apart van de hoofdbibliotheken levert. Dus alhoewel GStreamer geïnstalleerd is kan &amarok; deze niet meenemen omdat gstreamer-devel niet geïnstalleerd is. Hetzelfde geldt voor Xine, u moet xine-devel eerst installeren als uw distributie de pakketten heeft opgesplitst. Vergeet niet om &amarok; opnieuw te compileren na het installeren van de devel-pakketten.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq13">
+<title
+>GStreamer-engine</title>
+
+<qandaset id="gstreamer-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Waarom zit er altijd een gat tussen de tracks, terwijl ik uitvagen heb geselecteerd?</para>
+</question>
+
+<answer>
+<para
+>Verzeker u ervan dat u gst-ffmpeg niet hebt geïnstalleerd. In plaats daarvan, installeer de plugin gst-mad. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik krijg de volgende fout: "GStreamer-CRITICAL **: Factory for `adder' has no type.". Hoe los ik dat op?</para>
+</question>
+
+<answer>
+<para
+>Uw GStreamer is gebouwd met Prelinking. Dit is echter niet compatible met GStreamer. U moet GStreamer zonder deze optie opnieuw compileren. merlin-tc adviseert: <quote
+>In addition, don't use any ldflags when building GStreamer.</quote
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>U krijgt de fout "Er is geen element aanwezig dat de MIME-soort audio/mp4 van de stroom kan verwerken"(There is no element present to handle the file's mimetype audia/mp4), terwijl u wel de correcte plugin gstreamer-faag geïnstalleerd hebt.</para>
+</question>
+
+<answer>
+<para
+>Om mp4- en m4a-bestanden met GStreamer te kunnen afspelen hebt u naast gstreamer-faad ook de plugin gstreamer-quicktime nodig.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>U krijgt de fout: "Er is geen element aanwezig dat de MIME-soort audio/mpeg van de stroom kan verwerken" (There is no element present to handle the stream's mimetype audio/mpeg).</para>
+</question>
+
+<answer>
+<para
+>U probeert een Mp3-stream af te spelen zonder dat u de plugin gstreamer-map hebt geïnstalleerd. Installeer gstreamer-mad en voer als root "gst-register" uit voordat u &amarok; start.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ik heb een tweede geluidskaart en ik gebruik ALSA. Hoe zorg ik ervoor dat Amarok de tweede kaart gebruikt in plaats van de standaardkaart?</para>
+</question>
+
+<answer>
+<para
+>Bij <menuchoice
+><guimenu
+>Instellingen</guimenu
+><guisubmenu
+>Amarok instellen</guisubmenu
+><guimenuitem
+>Engine</guimenuitem
+></menuchoice
+>, selecteer het keuzevakje 'Apparaat' en geeft het apparaat op. Dit is meestal 'hw:0' voor de standaardgeluidskaart, en 'hw:1' voor de tweede geluidskaart.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq14">
+<title
+>Xine-engine</title>
+
+<qandaset id="xine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Hoe kan ik bepalen waar de geluidsuitvoer naar toe gaat?</para>
+</question>
+
+<answer>
+<para
+>Als u ALSA gebruikt kunt u de uitvoer met xine naar een specifiek apparaat sturen. Stel een ~/.asoundrc (alleen voor gebruiker) of /etc/asound.conf (systeemwijd) bestand in die als alias van uw hardware-apparaten dient en vul die alias in in het vak "device used for stereo output:" bij tabblad 'xine-engine' Daarnaast kunt u rechtstreeks het ALSA-apparaat (hw:0,0 of hw:1,0 etc.) invoeren. Als u de laatste (alternatieve) methode kiest, onthoud dat ALSA's overeenkomende plugnogiets (dus plughw:0,0 of plughw:1,0 etc. ) routing door alsa-libs de voorkeur geniet.</para>
+<para
+>Hier is een voorbeeld van een ~/.soundrc voor een computer met een onboard Intel AC97 codec en een usb-audioapparaat:</para>
+<programlisting
+>pcm.intel8x0 {
+          type plug
+          slave.pcm "hw:0"
+       }
+      
+       ctl.intel8x0 {
+          type hw
+          card 0
+       }
+       
+       pcm.usb-audio {
+          type plug
+          slave.pcm "hw:1"
+       }
+       
+       ctl.usb-audio {
+          type hw
+          card 1
+       }
+</programlisting>
+<para
+>Voer nu usb-audio in in het instelscherm van de xine-engine en de uitvoer zal naar het usb-audioapparaat gaan (met alsalib die de sample-rate-conversie, kanalen, etc. correct afhandelt).</para>
+<para
+>Om een 'dmixed virtual device' te gebruiken, verzeker u ervan dat het keuzevakje "sound card can do mmap" (Geluidskaart kan mmap aan) niet is geselecteerd. </para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq15">
+<title
+>aRts-engine</title>
+
+<note
+><para
+>Helaas, aRts-engine heeft momenteel geen onderhouder. Maar u kunt dat zelf oplossen! U kunt de nieuwe onderhouder van de aRts-engine zijn waar we zo naar uitkijken!!</para
+></note>
+
+</sect1>
+
+
+</chapter>

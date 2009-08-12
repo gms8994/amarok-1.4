@@ -1,0 +1,555 @@
+<chapter id="configuring-kapp">
+<title
+>&amarok;i seadistamine</title>
+<para
+>&amarok;ki saab igati seadistada. Seadistustedialoogil on mitu kaarti, igaüks mõeldud &amarok;i erinevatele tahkudele.</para>
+<para
+>Seadistustedialoogi saab avada mängija aknas <link linkend="rmb-menu"
+>&HPN;ga</link
+> klõpsates ja ilmuvast menüüst käsku <guimenuitem
+>&amarok;i seadistamine</guimenuitem
+> valides või menüükäsuga <menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>&amarok;i seadistamine...</guimenuitem
+></menuchoice
+></para>
+<sect1 id="general-options">
+<title
+>Üldised valikud</title>
+<screenshot>
+	<screeninfo
+>Üldiste valikute pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_general.png" format="PNG"/></imageobject>
+</mediaobject>
+</screenshot>
+<para
+>Üldiste valikute kaart jaguneb kaheks: <guimenuitem
+>Üldised valikud</guimenuitem
+> ja <guimenuitem
+>Esitusnimekirja valikud</guimenuitem
+>.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Üldised valikud</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Üldiste valikutega saab seadistada mõningaid &amarok;i põhiomadusi.</para>
+<para
+><guilabel
+>Käivituslogo näitamine</guilabel
+>: võimaldab lubada või keelata käivituslogo näitamise &amarok;i käivitamisel.</para>
+<para
+><guilabel
+>Ikooni näitamine süsteemse salves</guilabel
+>: võimaldab lubada või keelata ikooni näitamise süsteemses salves.</para>
+ 
+<para
+><guilabel
+>Süsteemse salve ikooni vilgutamine</guilabel
+>: võimaldab lubada või keelata ikooni oleku animatsioonid.</para>
+<para
+><guilabel
+>Mängija akna näitamine</guilabel
+>: sisselülitamisel näidatakse <link linkend="player-window"
+>mängija akent</link
+>. Märkimatajätmisel on näha ainult <link linkend="playlist-window"
+>esitusnimekirja aken</link
+> (umbes nii nagu Jukis).</para>
+<para
+><guilabel
+>Tuju kasutamine</guilabel
+>: seda saab valida ainult siis, kui &amarok; on kompileeritud tujuriba (moodbar) toetusega. Siin saab sisse lülitada eksperimentaalse tujuriba toetuse.</para>
+<para
+><guilabel
+>Tujukamaks muutmine</guilabel
+>: seda saab valida ainult siis, kui &amarok; on kompileeritud tujuriba (moodbar) toetusega. Siin saab muuta tujuriba värviskeemi.</para>
+<para
+><guilabel
+>Tujuandmete failid salvestatakse koos muusikaga</guilabel
+>: seda saab valida ainult siis, kui &amarok; on kompileeritud tujuriba (moodbar) toetusega. Sisselülitamisel salvestatakse failid laiendiga <literal role="extension"
+>.mood</literal
+> vastava helifailiga samasse asukohta. Kui see pole sisse lülitatud, salvestada <literal role="extension"
+>.mood</literal
+>-failid &amarok;i seadistustekataloogi, milleks tavaliselt on <filename class="directory"
+>~/.kde/share/apps/amarok/moodbar/</filename
+>.</para>
+<para
+><guilabel
+>Kaanepildi eelvaatluse vaikesuurus</guilabel
+>: võimaldab muuta kaanepildi suurust kontekstisirvijas.</para>
+<para
+><guilabel
+>Väline veebilehitseja</guilabel
+>: võimaldab rippmenüüst valida brauseri, mida &amarok; kasutab väliste linkide avamisel.</para>
+<para
+><guilabel
+>Muu veebilehitseja</guilabel
+>: võimaldab määrata brauseri asukoha, kui seda ei leidu ülal paiknevas rippmenüüs.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Esitusnimekirja akna valikud</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Esitusnimekirja akna valikutega saabki seadistada esitusnimekirja akna käitumist.</para>
+<para
+><guilabel
+>Väljumisel salvestatakse esitusnimekiri</guilabel
+> võimaldab &amarok;i sulgemisel salvestada parajasti avatud esitusnimekirja, mille puhul see laaditakse järgmine kord kohe uuesti.</para>
+<para
+><guilabel
+>Käsitsi salvestatud esitusnimekirjad kasutavad suhtelist asukohta</guilabel
+>: märkimisel salvestab &amarok; esitusnimekirjade salvestamisel helifailide asukohad suhtelisena esitusnimekirja asukoha suhtes. Mittemärkimisel salvestab &amarok; esitusnimekirja helifailide täpsed asukohad.</para>
+<para
+><guilabel
+>Esitusnimekirja kerimine vastavalt mängitavale palale</guilabel
+> sunnib <link linkend="playlist"
+>esitusnimekirja</link
+> vajadusel edasi või tagasi kerima, et alati oleks näha parajasti mängitav pala.</para>
+<para
+><guilabel
+>Pala muutmisel lülitutakse kontekstisirvijale</guilabel
+>: märkimisel lülitutakse uue pala esitamahakkamisel kontekstisirvijale, kui see ei ole juba aktiivne.</para>
+<para
+><guilabel
+>Olekuriba näitamine</guilabel
+> võimaldab lubada &amarok;i <link linkend="statusbar"
+>olekuriba</link
+> näitamise <link linkend="playlist-window"
+>esitusnimekirja aknas</link
+>.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-appearance">
+<title
+>Välimuse seadistamine</title>
+<screenshot>
+	<screeninfo
+>Välimuse seadistamise pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_appearance.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Välimuse kaardil saab seadistada &amarok;i välimust. Kaart jaguneb kolmeks osaks.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Fondid</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Fontide osas saab valida &amarok;is kasutatavad fondid. Kasti <guilabel
+>Kohandatud fontide kasutamine</guilabel
+> märkimisel saab ise valida fondid. Neid on võimalik valida <link linkend="player-window"
+>mängija akna</link
+>, <link linkend="playlist-window"
+>esitusnimekirja akna</link
+>ja <link linkend="context-browser"
+>kontekstisirvija</link
+> jaoks. Klõpsuga nupule <guibutton
+>Vali...</guibutton
+> saab fontide valimise dialoogis valida vajalikud fondid.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Värviskeem</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Värviskeemi osas saab valida &amarok;is kasutatava värviskeemi.</para>
+<para
+><guilabel
+>KDE praegune värviskeem</guilabel
+> sunnib &amarok;i kasutama kehtivat KDE värviskeemi.</para>
+<para
+><guilabel
+>Klassikaline Amaroki "fanki-manki" teema</guilabel
+> sunnib &amarok;i kasutama tema enda algupärast värviskeemi.</para>
+<para
+><guilabel
+>Omaloodud värviskeem</guilabel
+> lülitab sisse värvivalijad, mille abil saab &amarok;ile valida meelepärase esiplaani- ja taustavärvi.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Kontekstisirvija stiil</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Siin saab muuta, paigaldada ja eemaldada kontekstisirvija stiile (teemasid). Rippmenüüst <guilabel
+>Stiil</guilabel
+> saab valida, millist paigaldatud stiili kasutada. Nupule <guibutton
+>Paigalda uus stiil...</guibutton
+> klõpsates avaneb failidialoog, kus saab otsida ja paigaldada failisüsteemi salvestatud stiili. Nupule <guibutton
+>Laadi stiilid alla...</guibutton
+> klõpsates avaneb dialoog, kus saab tõmmata uusi stiile saidilt kde-look.org. Nupp <guibutton
+>Eemalda stiil</guibutton
+> aga avab dialoogi, milles saab eemaldada kõik käsitsi paigaldatud stiilid.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-playback">
+<title
+>Taasesituse seadistamine</title>
+<screenshot>
+	<screeninfo
+>Taasesituse seadistamise pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_playback.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Taasesituse seadistamise kaardil saab määrata helifailide mängimise üksikasju.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Käitumine üleminekul</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Siin saab määrata, kuidas &amarok; käitub üleminekul ühelt laulult teisele.</para>
+<para
+><guilabel
+>Siire puudub</guilabel
+>: palade vahele jääb vaikus, mille pikkuse saab määrata millisekundites.</para>
+<para
+><guilabel
+>Siire</guilabel
+>: palade vahele lisatakse kena hääbumisefekt. Siirde pikkuse saab samuti kindlaks määrata millisekundites.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ülejäänud valikud</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ülejäänud märkekastidega saab määrata järgmisi asju:</para>
+<para
+><guilabel
+>Käivitamisel taasalustatakse mängimist</guilabel
+> lubab &amarok;i käivitamisel hakata uuesti mängima lugu, mida mängiti enne rakenduse viimast sulgemist.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-osd">
+<title
+>OSD seadistamine</title>
+<screenshot>
+	<screeninfo
+>OSD seadistamise pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_osd.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>OSD seadistamine</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+><guilabel
+>OSD seadistamise</guilabel
+> kaart võimaldab sisse lülitada ekraaniesituse (On-Screen-Display, OSD). Kui vastav võimalus on sisse lülitatud, aktiveerub sektsioon, kus seda saab täpsemalt häälestada. OSD lubamine aktiveerib ka eelvaatlusakna, kus võid näha, mida sinu tehtud muutused täpselt kaasa toovad.</para>
+<para
+>OSD esimene valik puudutab fonti. Klõpsuga nupule <guibutton
+>Vali</guibutton
+> saab avada fondi valimise dialoogi, kus tuleb siis määrata meelepärane font OSD-le. Märkekast <guilabel
+>Varju näitamine</guilabel
+> võimaldab lubada või keelata varjuga teksti näitamise OSD-s.</para>
+<para
+>Järgmine valik puudutab OSD värve. Kui märkida ära <guilabel
+>Kohandatud värvide kasutamine</guilabel
+>, saab pruukida nuppe <guibutton
+>Teksti värv:</guibutton
+> ja <guibutton
+>Taustavärv:</guibutton
+>. Neile klõpsates avaneb dialoog, milles saab valida OSD teksti ja selle tausta värvi. Kui <guilabel
+>Kohandatud värvide kasutamine</guilabel
+> märkimata jätta, tarvitab OSD &kde; parajasti kehtivat värviskeemi.</para>
+<para
+>Tekstikastis <guilabel
+>Teksti näitamine</guilabel
+> saab määrata teksti, mida OSD näitab. Muutujaid kasutades saab selle täiesti oma käe järgi seada. Allpool on toodud muutujate nimekiri ja tekst, mida nad tähistavad.</para>
+<informaltable>
+<tgroup cols="2">
+<thead>
+<row>
+<entry
+>Tekst</entry>
+<entry
+>Muutuja</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry
+>Pealkiri</entry>
+<entry
+>%title</entry>
+</row>
+<row>
+<entry
+>Album</entry>
+<entry
+>%album</entry>
+</row>
+<row>
+<entry
+>Esitaja</entry>
+<entry
+>%artist</entry>
+</row>
+<row>
+<entry
+>Žanr</entry>
+<entry
+>%genre</entry>
+</row>
+<row>
+<entry
+>Bitikiirus</entry>
+<entry
+>%bitrate</entry>
+</row>
+<row>
+<entry
+>Aasta</entry>
+<entry
+>%year</entry>
+</row>
+<row>
+<entry
+>Pala pikkus</entry>
+<entry
+>%length</entry>
+</row>
+<row>
+<entry
+>Rajanumber</entry>
+<entry
+>%track</entry>
+</row>
+<row>
+<entry
+>Failinimi</entry>
+<entry
+>%file</entry>
+</row>
+<row>
+<entry
+>Kommentaar</entry>
+<entry
+>%comment</entry>
+</row>
+<row>
+<entry
+>Hinnang</entry>
+<entry
+>%score</entry>
+</row>
+<row>
+<entry
+>Esitamiste arv</entry>
+<entry
+>%playcount</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para
+>Kerimiskastiga <guilabel
+>Kestvus</guilabel
+> saab millisekundites määrata aja, mille kestel OSD-d sinu töölaual näidatakse.</para>
+<para
+>Võimalus <guilabel
+>Ekraan</guilabel
+> on mõeldud ainult xinerama kasutajatele. Sellega saab määrata, millisel ekraanil OSD-d mitme monitoriga süsteemi korral näidatakse.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-engine">
+<title
+>Mootori seadistamine</title>
+<screenshot>
+	<screeninfo
+>Mootori seadistamise pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_engine.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Mootori seadistamise kaardil saab rippmenüüst valida, millist helimootorit kasutada. Mõned neist võivad pakkuda täiendavaid seadistamisvõimalusi. Erinevatest mootorites kõneleb osa "Nõuded". </para>
+</sect1>
+<sect1 id="configure-collection">
+<title
+>Muusikakogu seadistamine</title>
+<screenshot>
+	<screeninfo
+>Muusikakogu seadistamise pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Muusikakogu seadistamise kaardil saab määrata kõiki oma muusikakoguga seotud asju, sealhulgas kogu jaoks kasutatavad kataloogid ning andmebaasi tüübi.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Muusikakogu kataloogid</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Siin saab valida kataloogid, mida &amarok; kasutab sinu muusikakogu jaoks. Selleks näidatakse sinu failisüsteemi puukujulisena. <guilabel
+>Muusikakogu kataloogide</guilabel
+> osas on ka mõned märkekastid, millega saab määrata, kuidas muusikakogu valitud katalooge kasutab.</para>
+<para
+><guilabel
+>Kataloogide rekursiivne uurimine</guilabel
+>: annab &amarok;ile käsu uurida läbi valitud kataloogid ja kõik nende alamkataloogid.</para>
+<para
+><guilabel
+>Kataloogide muutuste jälgimine</guilabel
+>: annab &amarok;ile käsu jälgida valitud kataloogides failisüsteemi muutusi (nt. muusikafailide lisamist või kustutamist). Vajalike muutuste kandmiseks sinu muusikakogusse sooritatakse inkrementuuring.</para>
+<para
+><guilabel
+>Esitusnimekirjade import</guilabel
+>: lubab &amarok;il importida kõik esitusnimekirjad (-pls- ja .m3u-failid), mis leitakse kogusse lisatavate palade läbiuurimise ajal. Nimekirjad leiab hiljem külgribal "Esitusnimekirjad".</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Muusikakogu andmebaas</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+><guilabel
+>Muusikakogu andmebaas</guilabel
+>i osas saab valida muusikakogu jaoks kasutatava andmebaasi. Liitkastis <guilabel
+>Mootor:</guilabel
+> saab valida, kas selleks on Sqlite või MySQL. MySQL-i valimisel saab asju täpsemalt paika panna osas <guilabel
+>MySql seadistamine</guilabel
+>.</para>
+<para
+>Osas <guilabel
+>MySql seadistamine</guilabel
+> saab määrata, millist andmebaasi &amarok; kasutab ja kus see asub. Kõigepealt tuleb valikuga <guilabel
+>Masinanimi:</guilabel
+> määrata MySQL andmebaasi asukoht. <guilabel
+>Port:</guilabel
+> tähendab porti, mida kasutatakse andmebaasiga ühenduse loomisel. <guilabel
+>Nimi:</guilabel
+> tähendab tegelikku andmebaasi, millega ühendus luuakse.</para>
+<para
+>Tekstikastid <guilabel
+>Kasutajanimi:</guilabel
+> ja <guilabel
+>Parool:</guilabel
+> määravad ära MySQL-i andmebaasiga ühenduse loomisel vajaliku kasutajanime ja parooli.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+<sect1 id="configure-scrobbler">
+<title
+>Last.fm seadistamine</title>
+<screenshot>
+	<screeninfo
+>Last.fm seadistamise pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="config_scrobbler.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+<para
+>Last.fm-i seadistuste kaardil saab seadistada <ulink url="http://www.last.fm"
+>last.fm-i</ulink
+> tuge &amarok;is. Esitatud palad saadetakse last.fm-i serverisse ning sinu soovil küsib &amarok; sealt soovitusi vastavalt parajasti esitatavale palale.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Last.fm-i profiil</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Siin saad määrata oma last.fm-i profiili kasutajanime ja parooli. Kui sul ei ole last.fm-i profiili, saad ennast <ulink url="http://www.last.fm:80/signup.php"
+>siin registreerida</ulink
+>.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>last.fm-i teenused</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+><guilabel
+>Oma profiili arendamine mängitavaid palasid saates</guilabel
+>: lubab &amarok;il saata esitatud palad sinu last.fm-i profiilile.</para>
+<para
+><guilabel
+>Sarnaste esitajate hankimine</guilabel
+>: märkimisel küsib &amarok; last.fm-ilt esitajaid, kes sarnanevad sinu kuulatava pala esitajaga. Neid näidatakse ka kontekstisirvijas. Märkus: sarnaste esitajate hankimiseks ei pea olema last.fm-i profiili - piisab lihtsalt kastikese märkimisest.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</chapter>

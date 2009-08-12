@@ -1,0 +1,48 @@
+debian/tmp/usr/share/applications/kde/amarok.desktop
+debian/tmp/usr/share/services/amarokitpc.protocol
+debian/tmp/usr/share/services/amaroklastfm.protocol
+debian/tmp/usr/share/services/amarokpcast.protocol
+debian/tmp/usr/share/servicetypes/amarok_plugin.desktop
+debian/tmp/usr/share/servicetypes/amarok_codecinstall.desktop
+debian/tmp/usr/share/apps/konqueror/servicemenus/amarok_append.desktop
+debian/tmp/usr/share/apps/konqueror/servicemenus/amarok_addaspodcast.desktop 
+debian/tmp/usr/share/apps/konqueror/servicemenus/amarok_play_audiocd.desktop
+debian/tmp/usr/lib/kde3/libamarok_void-engine_plugin.la
+debian/tmp/usr/lib/kde3/libamarok_void-engine_plugin.so
+debian/tmp/usr/lib/kde3/libamarok_generic-mediadevice.la
+debian/tmp/usr/lib/kde3/libamarok_generic-mediadevice.so
+debian/tmp/usr/lib/kde3/libamarok_ifp-mediadevice.la
+debian/tmp/usr/lib/kde3/libamarok_ifp-mediadevice.so
+debian/tmp/usr/lib/kde3/libamarok_ipod-mediadevice.la
+debian/tmp/usr/lib/kde3/libamarok_ipod-mediadevice.so
+debian/tmp/usr/lib/kde3/libamarok_njb-mediadevice.la
+debian/tmp/usr/lib/kde3/libamarok_njb-mediadevice.so
+debian/tmp/usr/lib/kde3/libamarok_smb-device.la
+debian/tmp/usr/lib/kde3/libamarok_smb-device.so
+debian/tmp/usr/lib/kde3/libamarok_massstorage-device.la
+debian/tmp/usr/lib/kde3/libamarok_massstorage-device.so
+debian/tmp/usr/lib/kde3/libamarok_nfs-device.la
+debian/tmp/usr/lib/kde3/libamarok_nfs-device.so
+debian/tmp/usr/lib/kde3/libamarok_daap-mediadevice.la
+debian/tmp/usr/lib/kde3/libamarok_daap-mediadevice.so
+
+#libkarma is not in MAIN yet
+#debian/tmp/usr/lib/kde3/libamarok_riokarma-mediadevice.la
+#debian/tmp/usr/lib/kde3/libamarok_riokarma-mediadevice.so
+
+debian/tmp/usr/lib/kde3/libamarok_mtp-mediadevice.la
+debian/tmp/usr/lib/kde3/libamarok_mtp-mediadevice.so
+debian/tmp/usr/lib/ruby_lib/*           /usr/lib/ruby_lib/
+debian/tmp/usr/lib/libamarok.so.0
+debian/tmp/usr/lib/libamarok.so.0.0.0
+debian/tmp/usr/bin/amarok
+debian/tmp/usr/bin/amarokapp
+debian/tmp/usr/bin/amarok_libvisual
+debian/tmp/usr/bin/amarokcollectionscanner
+
+debian/icons/*                          /usr/share/pixmaps
+
+amarok/src/engine/xine/amarok_xine-mp3_install.desktop /usr/share/services
+debian/amarok_play_audiocd.desktop /usr/share/apps/konqueror/servicemenus
+debian/kubuntu-media-amarok /usr/bin
+#debian/install-mp3 /usr/lib/amarok

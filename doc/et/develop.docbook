@@ -1,0 +1,213 @@
+<chapter id="developers">
+<title
+>&amarok;ist arendajatele</title>
+
+<para
+>Kui tunned huvi &amarok;i arendamise vastu, olgu siis koodi täiendamise, graafika, dokumentatsiooni või mille tahes muu osas, ära kõhkle ja kirjuta aadressile <email
+>amarok-devel@lists.sourceforge.net</email
+> või astu meiega ühendusse IRC-s (kanal: #amarok, võrk: irc.freenode.net).</para>
+
+<para
+>Võid ka ühineda meie meililistiga <ulink url="http://lists.sourceforge.net/lists/listinfo/amarok-devel"
+></ulink
+> ja vaadata, mis toimub - ning võib-olla ka ise sõna sekka öelda...</para>
+
+<para
+>Sinu panus või tavalinegi tagasiside on enam kui teretulnud. Me ootame sind!</para>
+
+<sect1 id="source_file_list">
+<title
+>&amarok;i lähtefailid</title>
+
+<para
+>Failid on ära toodud tähestikulises järjestuses, mis ei anna sugugi aimu nende tähtsusest. Olulised failid on app.cpp, playlist.cpp ja playerwindow.cpp.</para>
+
+<informaltable>
+<tgroup cols="2">
+
+<thead>
+<row>
+<entry
+>Fail</entry>
+<entry
+>Kasutamine</entry>
+</row>
+</thead>
+
+<tbody>
+
+<row>
+<entry
+>actionclasses.cpp</entry>
+<entry
+>Pakub QPopupMenu, mis loetleb &amarok;i seadistusvalikud, väljumise ja pakub KHelpMenu, mis lubab &amarok;il salvestada paljude abimenüüde seisu.</entry>
+</row>
+
+<row>
+<entry
+>amarokconfig.cpp</entry>
+<entry
+>KConfig-XT</entry>
+</row>
+
+<row>
+<entry
+>amarokfilelist.cpp</entry>
+<entry
+>Pole praegu kasutusel. Hakkab sorteerima KFileLists-i.</entry>
+</row>
+
+<row>
+<entry
+>app.cpp</entry>
+<entry
+>See on kapplication-i järglasklass, mis on eellane paljudele &amarok;i tööks hädavajalikele objektidele, näiteks mootor, DCOP, süsteemne salv, tipptaseme vidinad jne.</entry>
+</row>
+
+<row>
+<entry
+>browserbar.cpp</entry>
+<entry
+>Tegeleb sirvijatega, KMultiTabBar vidinaga ja kohandatud eraldajaga.</entry>
+</row>
+
+<row>
+<entry
+>browserwin.cpp</entry>
+<entry
+>See on lihtsalt konteiner lugude nimekirjale, tööriistaribale ja sirvijaribale, tulevikus vahest veel vähemolulisem.</entry>
+</row>
+
+<row>
+<entry
+>collectionbrowser.cpp</entry>
+<entry
+>Veel valmimisel, midagi andmekandja teegi taolist.</entry>
+</row>
+
+<row>
+<entry
+>effectwidget.cpp</entry>
+<entry
+>Mootori efekti seadistuse vidin.</entry>
+</row>
+
+<row>
+<entry
+>enginecontroller.cpp</entry>
+<entry
+>&amarok;i ja mootori suhtlemise liides.</entry>
+</row>
+
+<row>
+<entry
+>fht.cpp</entry>
+<entry
+>&amarok;i nutikas ja paindlik FHT (põhimõtteliselt FFT) rutiin spektrianalüüsiks.</entry>
+</row>
+
+<row>
+<entry
+>filebrowser.cpp</entry>
+<entry
+>Failisirvija.</entry>
+</row>
+
+<row>
+<entry
+>kbookmarkhandler.cpp</entry>
+<entry
+>Seda kasutab failisirvija.</entry>
+</row>
+
+<row>
+<entry
+>osd.cpp</entry>
+<entry
+>Väga kena ekraaniesituse (On-Screen Display) klass, pole &amarok;i-spetsiifiline, väga paindlik.</entry>
+</row>
+
+<row>
+<entry
+>playerwindow.cpp</entry>
+<entry
+>Väike vidin teksti kerimise, analüsaatori ja mängi/paus jms. nuppudega.</entry>
+</row>
+
+<row>
+<entry
+>playlist.cpp</entry>
+<entry
+>Suur klass - lugude nimekirja vidin.</entry>
+</row>
+
+<row>
+<entry
+>playlistbrowser.cpp</entry>
+<entry
+>Lugude nimekirja sirvija.</entry>
+</row>
+
+<row>
+<entry
+>playlistitem.cpp</entry>
+<entry
+>KListViewItem-i järglane, lugude nimekirja elemendid.</entry>
+</row>
+
+<row>
+<entry
+>playlistloader.cpp</entry>
+<entry
+>Laeb rekursiivselt kataloogid, KURL-id ja lugude nimekirja failid PlaylistWidget-isse. Töötab lõimedegna taustal. Palub mootorilt kinnitust, kas see suudab esitada tundmatuid failitüüpe.</entry>
+</row>
+
+<row>
+<entry
+>pluginmanager.cpp</entry>
+<entry
+>Käsitleb &amarok;i pluginate süsteemi.</entry>
+</row>
+
+<row>
+<entry
+>sliderwidget.cpp</entry>
+<entry
+>Kohandatud liugurividin, mida kasutab PlayerWidget. Tõenäoliselt elab üle muutused ja saab QSlider-i järglaseks.</entry>
+</row>
+
+<row>
+<entry
+>streambrowser.cpp</entry>
+<entry
+>Vidin, mis näitab metaserveritelt tõmmatud voogude nimekirju.</entry>
+</row>
+
+<row>
+<entry
+>systray.cpp</entry>
+<entry
+>&amarok;i süsteemne salv. Väike, kompaktne.</entry>
+</row>
+
+<row>
+<entry
+>threadweaver.cpp</entry>
+<entry
+>Paindlik klass, mis seab <quote
+>tööd</quote
+> järjekoda, töötleb neid ja näitab tulemusi eraldi lõimes. Seda kasutavad paljud &amarok;i komponendid.</entry>
+</row>
+
+<row>
+<entry
+>tracktooltip.cpp</entry>
+<entry
+>Ei ole tegelikult seotud PlaylistWidget-iga. Seda kasutab PlayerWidget teatud info näitamiseks parajasti mängitava pala kohta.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</sect1>
+</chapter>

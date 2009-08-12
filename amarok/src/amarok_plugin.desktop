@@ -1,0 +1,88 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=ServiceType
+X-KDE-ServiceType=Amarok/Plugin
+Comment=Plugin for Amarok
+Comment[af]=Inprop module vir Amarok
+Comment[ar]= قابس ( برنامج مضاف الى) AmaroK
+Comment[bg]=Приставка за Amarok
+Comment[bn]=আমারক-এর জন্য প্লাগিন
+Comment[br]=Lugent evit Amarok
+Comment[ca]=Connector per l'Amarok
+Comment[cs]=Modul pro AmaroK
+Comment[de]=Modul für Amarok
+Comment[el]=Πρόσθετο για το AmaroK
+Comment[eo]=Kromaĵo por Amarok
+Comment[es]=Extensión para Amarok
+Comment[et]=Amaroki plugin
+Comment[fa]=وصله برای amaroK
+Comment[fi]=Amarok-liitännäinen
+Comment[fr]=Module pour Amarok
+Comment[ga]=Breiseán AmaroK
+Comment[gl]=Extensión para Amarok
+Comment[hu]=Bővítőmodul az Amarokhoz
+Comment[is]=Íforrit fyrir Amarok
+Comment[it]=Plugin per Amarok
+Comment[ja]=Amarok のためのプラグイン
+Comment[ka]=მოდული Amarok-ისთვის
+Comment[km]=កម្មវិធី​ជំនួយ​សម្រាប់ Amarok
+Comment[lt]=Amarok įskiepis
+Comment[mk]=Приклучок за Амарок
+Comment[nb]=Programtillegg for Amarok
+Comment[nds]=Moduul för Amarok
+Comment[ne]=अमारोकका लागि प्लगइन
+Comment[nl]=Plugin voor Amarok
+Comment[nn]=Programtillegg for Amarok
+Comment[pa]=ਅਮਰੋਕ ਲਈ ਪਲੱਗਇਨ
+Comment[pl]=Wtyczka Amaroka
+Comment[pt]='Plugin' para o Amarok
+Comment[pt_BR]=Plugin para o Amarok
+Comment[ru]=Модуль amaroK
+Comment[se]=Lassemoduvla Amarok:ii
+Comment[sk]=Amarok modul
+Comment[sr]=Прикључак за Amarok
+Comment[sr@Latn]=Priključak za Amarok
+Comment[sv]=Insticksprogram för Amarok
+Comment[th]=โปรแกรมเสริมสำหรับ Amarok
+Comment[tr]=Amarok için Eklenti
+Comment[uk]=Втулок для Amarok
+Comment[uz]=Amarok uchun plagin
+Comment[uz@cyrillic]=Amarok учун плагин
+Comment[wa]=Tchôke-divins po Amarok
+Comment[zh_CN]=Amarok 插件
+Comment[zh_TW]=amaroK 插件
+
+# Type of plugin, e.g. "engine".
+[PropertyDef::X-KDE-Amarok-plugintype]
+Type=QString
+
+# Internal name for identification, not translated.
+[PropertyDef::X-KDE-Amarok-name]
+Type=QString
+
+# List of authors.
+[PropertyDef::X-KDE-Amarok-authors]
+Type=QStringList
+
+# List of author's email addresses.
+[PropertyDef::X-KDE-Amarok-email]
+Type=QStringList
+
+# Priority of the plugin. When KTrader returns multiple offers, the one with the highest rank is chosen.
+# Range: 0 (disabled) - 255 (highest)
+[PropertyDef::X-KDE-Amarok-rank]
+Type=int
+
+# Version of the plugin.
+[PropertyDef::X-KDE-Amarok-version]
+Type=int
+
+# Version of the framework this plugin is compatible with.
+# Must be bumped after making binary incompatible changes.
+[PropertyDef::X-KDE-Amarok-framework-version]
+Type=int
+
+# If true, Amarok will show a warning dialog about the experimental nature of this plugin.
+[PropertyDef::X-KDE-Amarok-experimental]
+Type=bool
+

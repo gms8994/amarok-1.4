@@ -1,0 +1,1667 @@
+<chapter id="advanced-features">
+<title
+>Uitgebreide functies van Amarok</title>
+
+
+<sect1 id="keybd-shortcuts">
+<title
+>Sneltoetsen</title>
+
+<para
+>&amarok; maakt, net als vele andere programma's, gebruik van sneltoetsen. Hier onder ziet u een lijst met sneltoetsen en de bijhorende acties. De globale sneltoetsen kunnen worden ingesteld door met de rechter muisknop op het afspelervenster te klikken en <guimenuitem
+>Globale sneltoetsen instellen...</guimenuitem
+> te selecteren. De sneltoetsen van &amarok; kunt u instellen door met de rechter muisknop op het afspelervenster te klikken en <guimenuitem
+>Sneltoetsen instellen...</guimenuitem
+> te selecteren.</para>
+
+<tip
+><para
+>U kunt uw multimediatoetsen van uw toetsenbord gebruiken om &amarok; te bedienen.</para
+></tip>
+
+<para
+>De globale sneltoetsen zijn:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Toetsencombinatie</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>X</keycap
+></keycombo
+></entry>
+<entry
+>Afspelen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Pauze</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>V</keycap
+></keycombo
+></entry>
+<entry
+>Stoppen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Volgende track</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Vorige track</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>KP_Add</keycap
+></keycombo
+></entry>
+<entry
+>Volume verhogen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>KP_Subtract</keycap
+></keycombo
+></entry>
+<entry
+>Volume verlagen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Shift</keycap
+><keycap
+>KP_Add</keycap
+></keycombo
+></entry>
+<entry
+>Vooruit zoeken</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>Shift</keycap
+><keycap
+>KP_Subtract</keycap
+></keycombo
+></entry>
+<entry
+>Achteruit zoeken</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Medium toevoegen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>P</keycap
+></keycombo
+></entry>
+<entry
+>Afspeellijst aan/uit</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>O</keycap
+></keycombo
+></entry>
+<entry
+>On Screen Display tonen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Win</keycap
+><keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Volume dempen</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>De &amarok;-sneltoetsen zijn:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Toetsencombinatie</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>C</keycap
+></keycombo
+></entry>
+<entry
+>Kopiëren</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>KP_Enter</keycap
+></keycombo
+></entry>
+<entry
+>Ga naar huidige</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+></entry>
+<entry
+>Geselecteerde tracks in een wachtrij plaatsen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Afsluiten</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Opnieuw</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+></entry>
+<entry
+>Afspeellijst opslaan</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+></entry>
+<entry
+>Alles selecteren</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Menubalk tonen</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+></entry>
+<entry
+>Schudden (tracks in de afspeellijst door elkaar husselen)</entry>
+</row>
+
+<row>
+<entry
+><keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+></entry>
+<entry
+>Ongedaan maken</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+
+<para
+>De sneltoetsen voor de afspeellijstbrowser zijn:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Toetsencombinatie</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+><keycap
+>Spatie</keycap
+></entry>
+<entry
+>Afspeellijst laden</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>F2</keycap
+></entry>
+<entry
+>Afspeellijst hernoemen</entry>
+</row>
+
+<row>
+<entry
+><keycap
+>Backspace</keycap
+></entry>
+<entry
+>Afspeellijst verwijderen</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+<sect1 id="the-dcop-interface">
+<title
+>De DCOP-interface</title>
+
+<para
+>De DCOP-interface van Amarok biedt u een eenvoudige manier om Amarok met behulp van uw eigen aangepaste scripts te besturen.</para>
+
+<para
+>De DCOP-interface van Amarok heeft vele algemene aanroepen die ook in andere KDE-programma's gevonden kunnen worden. Deze sectie is opgedeeld in zes tabellen en bedoeld om de DCOP-aanroepen van de collectie, contextbrowser, speler, afspeellijst, afspeellijstbrowser en scripts te beschrijven. Een voorbeeld van de DCOP-aanroep voor <quote
+>pauzeren</quote
+> ziet er als volgt uit:</para>
+
+<para
+><prompt
+>&percnt;</prompt
+>dcop amarok player pause</para>
+
+<sect2 id="dcop-collection">
+<title
+>dcop amarok collection</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-aanroep</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>int totalAlbums()</entry>
+<entry
+>Geeft het totaal aantal albums in de collectie terug.</entry>
+</row>
+
+<row>
+<entry
+>int totalArtists()</entry>
+<entry
+>Geeft het totaal aantal artiesten in de collectie terug.</entry>
+</row>
+
+<row>
+<entry
+>int totalCompilations()</entry>
+<entry
+>Geeft het totaal aantal verzamelalbums in de collectie terug.</entry>
+</row>
+
+<row>
+<entry
+>int totalGenres()</entry>
+<entry
+>Geeft het totaal aantal genres in de collectie terug.</entry>
+</row>
+
+<row>
+<entry
+>int totalTracks()</entry>
+<entry
+>Geeft het totaal aantal tracks in de collectie terug.</entry>
+</row>
+
+<row>
+<entry
+>QString query( QString sql)</entry>
+<entry
+>Voert een query op de database uit via SQL.</entry>
+</row>
+
+<row>
+<entry
+>QStringList similarArtists( int artists )</entry>
+<entry
+>Geeft vergelijkbare artiesten terug voor de huidige tracks, beperkt tot int artists.</entry>
+</row>
+
+<row>
+<entry
+>void migrateFile( QString oldURL, QString newURL )</entry>
+<entry
+>Verplaatst een bestand binnen de collectie, waarbij de statistieken intact blijven.</entry>
+</row>
+
+<row>
+<entry
+>void scanCollection()</entry>
+<entry
+>Doorzoekt de collectie.</entry>
+</row>
+
+<row>
+<entry
+>void scanCollectionChanges()</entry>
+<entry
+>Doorzoekt de collectie alleen op wijzigingen.</entry>
+</row>
+
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-context">
+<title
+>dcop amarok contextbrowser</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-aanroep</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>void showCurrentTrack()</entry>
+<entry
+>Toont de huidige track in de contextbrowser.</entry>
+</row>
+
+<row>
+<entry
+>void showLyrics()</entry>
+<entry
+>Toont tabblad 'Liedteksten' in de contextbrowser.</entry>
+</row>
+
+<row>
+<entry
+>void showWiki()</entry>
+<entry
+>Toont tabblad 'Artiest' in de contextbrowser.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-player">
+<title
+>dcop amarok player</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-aanroep</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>bool dynamicModeStatus()</entry>
+<entry
+>Geeft de status terug van de dynamische modus.</entry>
+</row>
+
+<row>
+<entry
+>bool equalizerEnabled()</entry>
+<entry
+>Geeft de status van de equalizer terug.</entry>
+</row>
+
+<row>
+<entry
+>bool isPlaying()</entry>
+<entry
+>Geeft 'true' terug als er nu iets wordt afgespeeld.</entry>
+</row>
+
+<row>
+<entry
+>bool randomModeStatus()</entry>
+<entry
+>Geeft de status van willekeurige modus terug.</entry>
+</row>
+
+<row>
+<entry
+>bool repeatPlaylistStatus()</entry>
+<entry
+>Geeft de status van afspeellijst herhalen terug.</entry>
+</row>
+
+<row>
+<entry
+>bool repeatTrackStatus()</entry>
+<entry
+>Geeft de status van track herhalen terug.</entry>
+</row>
+
+<row>
+<entry
+>int getVolume()</entry>
+<entry
+>Geeft het volume terug in de waarde 0-100%.</entry>
+</row>
+
+<row>
+<entry
+>int sampleRate()</entry>
+<entry
+>Geeft de sample rate terug van de track die momenteel wordt afgespeeld.</entry>
+</row>
+
+<row>
+<entry
+>int score()</entry>
+<entry
+>Geeft de score terug van de track die momenteel wordt afgespeeld.</entry>
+</row>
+
+<row>
+<entry
+>int status()</entry>
+<entry
+>Geeft de status van het afspelen terug: 0 - gestopt, 1 - gepauzeerd, 2 - speelt af.</entry>
+</row>
+
+<row>
+<entry
+>int trackCurrentTime()</entry>
+<entry
+>Geeft de huidige afspeelpositie in seconden terug.</entry>
+</row>
+
+<row>
+<entry
+>int trackPlayCounter()</entry>
+<entry
+>Geeft de afspeelteller voor de huidige track terug.</entry>
+</row>
+
+<row>
+<entry
+>int trackTotalTime()</entry>
+<entry
+>Geeft de tracklengte in seconden terug.</entry>
+</row>
+
+<row>
+<entry
+>QString album()</entry>
+<entry
+>Geeft het album van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>QString artist()</entry>
+<entry
+>Geeft de artiest terug van de momenteel afgespeelde track.</entry>
+</row>
+
+<row>
+<entry
+>QString bitrate()</entry>
+<entry
+>Geeft de bitrate van de momenteel afgespeelde track terug (XX kbps).</entry>
+</row>
+
+<row>
+<entry
+>QString comment()</entry>
+<entry
+>Geeft het commentaar van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>QString coverImage()</entry>
+<entry
+>Geeft het URL-adres van de hoesafbeelding van de huidige track terug </entry>
+</row>
+
+<row>
+<entry
+>QString currentTime()</entry>
+<entry
+>Geeft de positie ([u]mm:ss) van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>QString encodedURL()</entry>
+<entry
+>Geeft het gecodeerde URL-adres van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>QString engine()</entry>
+<entry
+>Geeft huidige geluidsengine terug.</entry>
+</row>
+
+<row>
+<entry
+>QString genre()</entry>
+<entry
+>Geeft het genre van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>QString lyrics()</entry>
+<entry
+>Geeft de liedteksten van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>QString lyricsByPath( QString path )</entry>
+<entry
+>Geeft de liedteksten van een track terug op het pad.</entry>
+</row>
+
+<row>
+<entry
+>QString nowPlaying()</entry>
+<entry
+>De titel van de nu afgespeelde media.</entry>
+</row>
+
+<row>
+<entry
+>QString path()</entry>
+<entry
+>Geeft het niet-gecodeerde pad terug van de momenteel afgespeelde track.</entry>
+</row>
+
+<row>
+<entry
+>QString setContextStyle( QString )</entry>
+<entry
+>Zet de CSS-stijl van de contextbrowser.</entry>
+</row>
+
+<row>
+<entry
+>QString title()</entry>
+<entry
+>Geeft de titel van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>QString totalTime()</entry>
+<entry
+>Geeft de totale lengte van de momenteel afgespeelde track terug (in de opmaak [u:]mm:ss).</entry>
+</row>
+
+<row>
+<entry
+>QString track()</entry>
+<entry
+>Geeft het tracknummer terug.</entry>
+</row>
+
+<row>
+<entry
+>QString type()</entry>
+<entry
+>Geeft het bestandstype terug.</entry>
+</row>
+
+<row>
+<entry
+>QString year()</entry>
+<entry
+>Geeft het jaar van de momenteel afgespeelde track terug.</entry>
+</row>
+
+<row>
+<entry
+>void configEqualizer()</entry>
+<entry
+>Opent/sluit de configuratiedialoog van de equalizer.</entry>
+</row>
+
+<row>
+<entry
+>void enableDynamicMode(bool enable)</entry>
+<entry
+>Zet de dynamische modus aan of uit.</entry>
+</row>
+
+<row>
+<entry
+>void enableOSD(bool enable)</entry>
+<entry
+>Zet de OSD-weergave aan of uit.</entry>
+</row>
+
+<row>
+<entry
+>void enableRandomMode(bool enable)</entry>
+<entry
+>Zet de willekeurige modus aan of uit.</entry>
+</row>
+
+<row>
+<entry
+>void enableRepeatPlaylist(bool enable)</entry>
+<entry
+>Zet het herhalen van de afspeellijst aan of uit.</entry>
+</row>
+
+<row>
+<entry
+>void enableRepeatTrack(bool enable)</entry>
+<entry
+>Zet herhalen van de track aan of uit.</entry>
+</row>
+
+<row>
+<entry
+>void mediaDeviceMount()</entry>
+<entry
+>Zet het commando voor het aankoppelen (mounten) van een media-apparaat.</entry>
+</row>
+
+<row>
+<entry
+>void mediaDeviceUmount()</entry>
+<entry
+>Zet het commando voor het afkoppelen (unmount) van een media-apparaat.</entry>
+</row>
+
+<row>
+<entry
+>void mute()</entry>
+<entry
+>Zet het dempen aan of uit.</entry>
+</row>
+
+<row>
+<entry
+>void next()</entry>
+<entry
+>Staat gelijk aan het drukken op de knop "Volgende".</entry>
+</row>
+
+<row>
+<entry
+>void pause()</entry>
+<entry
+>Staat gelijk aan het drukken op de knop "Pauze".</entry>
+</row>
+
+<row>
+<entry
+>void play()</entry>
+<entry
+>Staat gelijk aan het drukken op de knop "Afspelen".</entry>
+</row>
+
+<row>
+<entry
+>void playPause()</entry>
+<entry
+>Schakelt de status voor afspelen/pauze om (bedoeld voor gebruikers van multimediatoetsenborden) </entry>
+</row>
+
+<row>
+<entry
+>void prev()</entry>
+<entry
+>Staat gelijk aan het drukken op de knop "Vorige".</entry>
+</row>
+
+<row>
+<entry
+>void queueForTransfer( KURL url )</entry>
+<entry
+>Plaats bestand in de wachtrij voor overdracht naar media-apparaat.</entry>
+</row>
+
+<row>
+<entry
+>void seek(int s)</entry>
+<entry
+>Spoel door de track tot de positie in seconden.</entry>
+</row>
+
+<row>
+<entry
+>void seekRelative(int s)</entry>
+<entry
+>Spoel door een track tot een positie die relatief is aan de huidige trackpositie.</entry>
+</row>
+
+<row>
+<entry
+>void setEqualizer(int, int, int, int, int, int, int, int, int, int, int)</entry>
+<entry
+>Zet de equalizerkanalen </entry>
+</row>
+
+<row>
+<entry
+>void setEqualizerEnabled( bool active )</entry>
+<entry
+>Equalizer aan/uit.</entry>
+</row>
+
+<row>
+<entry
+>void setEqualizerPreset( QString name )</entry>
+<entry
+>Zet de voorinstelling van de equalizer </entry>
+</row>
+
+<row>
+<entry
+>void setLyricsByPath( QString url, QString lyrics )</entry>
+<entry
+>Zet de liedteksten van een track aan de hand van diens pad.</entry>
+</row>
+
+<row>
+<entry
+>void setScore( int score )</entry>
+<entry
+>Zet de score van de momenteel afgespeelde track.</entry>
+</row>
+
+<row>
+<entry
+>void setScoreByPath( QString url, int score )</entry>
+<entry
+>Zet de score van een track aan de hand van diens pad.</entry>
+</row>
+
+<row>
+<entry
+>void setVolume(int volume)</entry>
+<entry
+>Zet het volume in een bereik van 0-100%.</entry>
+</row>
+
+<row>
+<entry
+>void showBrowser( QString browser )</entry>
+<entry
+>Toont browsers in het afspeellijstvenster</entry>
+</row>
+
+<row>
+<entry
+>void showOSD()</entry>
+<entry
+>Toont de onscreendisplay op het beeldscherm.</entry>
+</row>
+
+<row>
+<entry
+>void stop()</entry>
+<entry
+>Gelijk aan het klikken op de knop "Stop".</entry>
+</row>
+
+<row>
+<entry
+>void transferDeviceFiles()</entry>
+<entry
+>Schrijft bestanden naar het media-apparaat.</entry>
+</row>
+
+<row>
+<entry
+>void volumeDown()</entry>
+<entry
+>Verlaagt het volumeniveau met een acceptabele stap.</entry>
+</row>
+
+<row>
+<entry
+>void volumeUp()</entry>
+<entry
+>Verhoogt het volumeniveau met een acceptabele stap.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-playlist">
+<title
+>dcop amarok playlist</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-aanroep</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>int getActiveIndex()</entry>
+<entry
+>Geeft de index terug van de momenteel afgespeelde track. -1 indien geen.</entry>
+</row>
+
+<row>
+<entry
+>int getTotalTrackCount()</entry>
+<entry
+>Geeft het aantal tracks in de afspeellijst terug. 0 indien geen.</entry>
+</row>
+
+<row>
+<entry
+>QString saveCurrentPlaylist()</entry>
+<entry
+>Slaat de huidige afspeellijst op naar current.xml en geeft het pad ervan terug.</entry>
+</row>
+
+<row>
+<entry
+>void addMedia( KURL )</entry>
+<entry
+>Voegt geluidsmedia toe, opgegeven bij het url-adres.</entry>
+</row>
+
+<row>
+<entry
+>void addMediaList( KURL::List )</entry>
+<entry
+>Voegt enkele geluidsmedia toe, opgegeven door het URL-adres.</entry>
+</row>
+
+<row>
+<entry
+>void clearPlaylist()</entry>
+<entry
+>Wist de afspeellijst.</entry>
+</row>
+
+<row>
+<entry
+>void playByIndex(int)</entry>
+<entry
+>Start het spelen van de track bij de opgegeven index.</entry>
+</row>
+
+<row>
+<entry
+>void playMedia( KURL )</entry>
+<entry
+>Voegt geluidsmedia toe, opgegeven bij het url-adres.</entry>
+</row>
+
+<row>
+<entry
+>void popupMessage( QString)</entry>
+<entry
+>Toont een tijdelijk bericht.</entry>
+</row>
+
+<row>
+<entry
+>void removeCurrentTrack()</entry>
+<entry
+>Verwijdert de huidige track uit de afspeellijst.</entry>
+</row>
+
+<row>
+<entry
+>void repopulate()</entry>
+<entry
+>Vult de afspeellijst opnieuw met willekeurige tracks.</entry>
+</row>
+
+<row>
+<entry
+>void saveM3u( QString path, bool relativePaths)</entry>
+<entry
+>Slaat de huidige afspeellijst op als m3u.</entry>
+</row>
+
+<row>
+<entry
+>void setStopAfterCurrent( bool )</entry>
+<entry
+>Activeert/deactiveert de functie "Stoppen na huidige track".</entry>
+</row>
+
+<row>
+<entry
+>void shortStatusMessage( QString)</entry>
+<entry
+>Toont een tijdelijk bericht op de statusbalk.</entry>
+</row>
+
+<row>
+<entry
+>void shufflePlaylist()</entry>
+<entry
+>Haalt de afspeellijst door elkaar.</entry>
+</row>
+
+<row>
+<entry
+>void togglePlaylist()</entry>
+<entry
+>Opent/sluit het afspeellijstvenster.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-playlistbrowser">
+<title
+>dcop amarok playlistbrowser</title>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-aanroep</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>void addPodcast( QString )</entry>
+<entry
+>Voegt een podcast-item toe aan de afspeellijstbrowser.</entry>
+</row>
+
+<row>
+<entry
+>void scanPodcasts()</entry>
+<entry
+>Doorzoekt alle podcasts voor nieuwe versies.</entry>
+</row>
+
+<row>
+<entry
+>void addPlaylist( QString )</entry>
+<entry
+>Voegt een afspeellijst toe aan de afspeellijstbrowser.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+<sect2 id="dcop-script">
+<title
+>dcop amarok script</title>
+
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>DCOP-aanroep</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>bool runScript( QString name)</entry>
+<entry
+>Start het script met de opgegeven naam. Geeft 'true' terug bij succes.</entry>
+</row>
+
+<row>
+<entry
+>bool stopScript( QString name)</entry>
+<entry
+>Stopt het script met de opgegeven naam. Geeft 'true' terug bij succes.</entry>
+</row>
+
+<row>
+<entry
+>QStringList listRunningScripts()</entry>
+<entry
+>Geeft een lijst terug van alle momenteel draaiende scripts.</entry>
+</row>
+
+<row>
+<entry
+>void addCustomMenuItem(QString submenu, QString itemTitle )</entry>
+<entry
+>Activeert een aangepast menuoptie en stelt de titel ervan in.</entry>
+</row>
+
+<row>
+<entry
+>void removeCustomMenuItem(QString submenu, QString itemTitle )</entry>
+<entry
+>Verwijdert een aangepaste menuoptie.</entry>
+</row>
+
+<row>
+<entry
+>QString readConfig( QString key)</entry>
+<entry
+>Geeft de waarde van een AmarokConfig configuratie-item terug van de opgegeven toets.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+
+</sect2>
+
+</sect1>
+
+<sect1 id="cmd-line-options">
+<title
+>Commandoprompt-opties</title>
+
+<para
+>Naast de standaard-commando's van Qt en KDE heeft Amarok ook zijn eigen opties.</para>
+
+<para
+>Opties van Qt en KDE:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Optie</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--help</entry>
+<entry
+>Toont een samenvatting van opties die vanaf de prompt kunnen worden meegegeven aan het commando.</entry>
+</row>
+
+<row>
+<entry
+>--help-qt</entry>
+<entry
+>Toont een lijst met Qt-specifieke opties.</entry>
+</row>
+
+<row>
+<entry
+>--help-kde</entry>
+<entry
+>Toont een lijst met KDE-specifieke opties.</entry>
+</row>
+
+<row>
+<entry
+>--help-all</entry>
+<entry
+>Toont een lijst met alle opties.</entry>
+</row>
+
+<row>
+<entry
+>--author</entry>
+<entry
+>Toont informatie over de auteur.</entry>
+</row>
+
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Toont versie-informatie.</entry>
+</row>
+
+<row>
+<entry
+>--license</entry>
+<entry
+>Toont informatie over de licentie.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>De opties van Amarok:</para>
+
+<note
+><para
+>De &amarok;-opties kunnen ook worden gebruikt als &amarok; al draait.</para
+></note>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+
+<row>
+<entry
+>Optie</entry>
+<entry
+>Actie</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>-r, --previous</entry>
+<entry
+>Gaat naar de vorige track in de afspeellijst.</entry>
+</row>
+
+<row>
+<entry
+>-p, --play</entry>
+<entry
+>Start het afspelen van de huidige afspeellijst.</entry>
+</row>
+
+<row>
+<entry
+>-s, --stop</entry>
+<entry
+>Stopt het afspelen.</entry>
+</row>
+
+<row>
+<entry
+>--pause</entry>
+<entry
+>Pauzeert het afspelen.</entry>
+</row>
+
+<row>
+<entry
+>-f, --next</entry>
+<entry
+>Gaat naar de volgende track in de afspeellijst.</entry>
+</row>
+
+<row>
+<entry
+>-a, --append</entry>
+<entry
+>Voegt bestanden/URL-adressen toe aan de afspeellijst.</entry>
+</row>
+
+<row>
+<entry
+>-e, --enqueue</entry>
+<entry
+>Zie append, beschikbaar voor neerwaartse compatibiliteit.</entry>
+</row>
+
+<row>
+<entry
+>--queue</entry>
+<entry
+>Plaatst bestanden/URL-adressen in de wachtrij achter de huidige afgespeelde track.</entry>
+</row>
+
+<row>
+<entry
+>-m, --toggle-playlist-window</entry>
+<entry
+>Opent/sluit het afspeellijstvenster.</entry>
+</row>
+
+<row>
+<entry
+>--wizard</entry>
+<entry
+>Start de Configuratie-assistent.</entry>
+</row>
+
+<row>
+<entry
+>--engine "naam"</entry>
+<entry
+>Start &amarok; met de engine "naam".</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+
+<sect1 id="script-writing">
+<title
+>Scripts schrijven</title>
+
+<para
+>Met scripting kunt u &amarok; op eenvoudige wijze uitbreiden zonder dat u de broncode van het programma zelf hoeft te wijzigen. Scripts kunt u vergelijken met plugins, met als verschil dat er geen gebruik wordt gemaakt van een 'dedicated plugin API', maar van &amarok;'s DCOP-interface voor de communicatie. Dit maakt het mogelijk om scripts te schrijven in vrijwel elke programmeertaal, zoals Ruby, Python of PHP. U kunt niet alleen scripts schrijven in klassieke scripttalen, maar ook in gecompileerde talen zoals C++ of C. Aanvullend kan &amarok; de scripts waarschuwen bij speciale gebeurtenissen en ze hierop laten reageren. Dit waarschuwingssysteem zal later in deze sectie worden uitgelegd.</para>
+
+<sect2 id="script-bindings">
+<title
+>Bindingen</title>
+
+<para
+>U kunt eenvoudige scripts schrijven die geen interactie van de gebruiker nodig hebben, en scripts schrijven met comfortabele GUI's die zelf als een volwaardig programma reageren. Voor het programmeren van een GUI kunt u gebruik maken van één van de vele bindingen die KDE levert, zoals RubyQt, een Qt-bibliotheekbinding voor Ruby. Een nadeel van bindingen is dat niet iedere gebruiker ze allemaal hebben geïnstalleerd. Als u dus een binding wilt gebruiken, kies er dan een die vrij goed verspreid is, zoals RubyQt of PyQt.</para>
+
+<para
+>Om enige informatie te ontvangen als een script niet kan draaien vanwege een ontbrekende afhankelijkheid, laat uw script controleren of de module die u wilt insluiten echt bestaat. Als de afhankelijkheid ontbreekt, dan moet u de foutmelding opvangen en met behulp van het commandoregelprogramma "kdialog" in een informatiedialoog laten weergeven. De gebruiker kan dan zien waarom het script niet wil draaien.</para>
+
+<para
+>Dit voorbeeld laat zien hoe u een ontbrekende afhankelijkheid in Ruby kunt opvangen:</para>
+
+<programlisting
+>begin
+       require 'Korundum'
+rescue LoadError
+       error = 'Korundum (KDE bindings for ruby) from kdebindings v3.4 is required for this script.'
+       `kdialog --sorry '#{error}'`
+       exit
+end
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-templates">
+<title
+>Het begin: de sjablonen</title>
+
+<para
+>In de map <filename class="directory"
+>scripts/templates/</filename
+> van &amarok; vindt u enkele scriptsjablonen voor diverse talen. U kunt deze scripts gebruiken als basis voor uw eigen scripts en ze uitbreiden met de functionaliteit die u nodig hebt. U zult merken dat het schrijven van scripts vrij eenvoudig is. Bijvoorbeeld als u een beetje weet van programmeren in Python, dan zal het schrijven van uw eigen script niet veel moeite kosten.</para>
+
+</sect2>
+
+<sect2 id="script-controlling-amarok">
+<title
+>&amarok; besturen met DCOP</title>
+
+<para
+>Scripts kunnen Amarok besturen door enkel van zijn DCOP-functies aan te roepen. De eenvoudigste manier om een DCOP-functie aan te roepen is met behulp van het commandoregelprogramma "dcop". Dit programma is onderdeel van elke KDE-distributie.</para>
+
+<para
+>Hier is een voorbeeld voor het verhogen van het hoofdvolume:</para>
+
+<programlisting
+>dcop amarok player volumeUp</programlisting>
+
+<para
+>Met de meeste scripttalen kunt u externe programma's uitvoeren met een functie als exec(). Op deze manier kan het programma "dcop" eenvoudig worden aangeroepen. Hier is een klein voorbeeld in Python:</para>
+
+<programlisting
+>import os
+ os.system("dcop amarok player volumeDown")
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-notifications">
+<title
+>Waarschuwingen</title>
+
+<para
+>&amarok; stuurt waarschuwingen naar alle draaiende scripts door tekenreeksen naar hun stdin-kanaal te schrijven. Het script moet daarom constant stdin volgen, en reageren op elke mogelijke gebeurtenis. Scripts kunnen er ook voor kiezen om gebeurtenissen die ze niet kunnen gebruiken te negeren.</para>
+
+<para
+>De volgende waarschuwingen worden door &amarok; verzonden:</para>
+
+<programlisting
+><cmdsynopsis
+><command
+>configure</command
+></cmdsynopsis>
+vertelt het script om zijn configuratiedialoog te tonen. Het script moet 
+de configuratie-opties zelf opslaan en laden. Als een script wordt gestart 
+zet Amarok de werkmap ervan op de map waarin alle gegevens moeten 
+worden opgeslagen.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>engineStateChange:</command
+><arg
+>empty|idle|paused|playing</arg
+></cmdsynopsis>
+signaleert een wijziging in de status van de engine.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>trackChange</command
+></cmdsynopsis>
+signaleert de start van een nieuwe track. Het script kan dan de DCOP-functies
+gebruiken om verdere informatie over de track op te vragen, zoals metadata
+ en de lengte.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>volumeChange</command
+><arg
+>newVolume</arg
+></cmdsynopsis>
+signaleert een wijziging in het niveau van het hoofdvolume. Het volume is een heel getal in het bereik
+van 0-100.
+</programlisting>
+
+<programlisting
+><cmdsynopsis
+><command
+>customMenuClicked:</command
+><arg
+>submenu itemTitle paths</arg
+></cmdsynopsis>
+geeft het pad naar de geselecteerde bestanden in de afspeellijst als de  
+aangepaste optie in het contextmenu van de afspeellijst wordt aangeklikt. Het submenu 
+en item-titel worden ook gegeven voor identificatiedoeleinden in het geval een script naar 
+meerdere notificaties luistert. 
+Om een aangepaste optie toe te voegen aan het contextmenu gebruikt u de DCOP-aanroep 
+'dcop amarok script addCustomMenuItem( submenu itemTitle ). Om een optie uit het contextmenu 
+te verwijderen gebruikt u de DCOP-aanroep 
+'dcop amarok script removeCustomMenuItem( submenu itemTitle )'.
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-termination">
+<title
+>Scriptterminatie</title>
+
+<para
+>Voordat &amarok; afsluit, of als de gebruiker een script stopt met de Scriptbeheerder, stuurt &amarok; het signaal SIGTERM naar het script. Dit signaal kan worden opgevangen om wat schoonmaakwerk uit te voeren, zoals het opslaan van gegevens of configuratie-instellingen.</para>
+
+</sect2>
+
+<sect2 id="script-packaging">
+<title
+>Packaging</title>
+
+<para
+>&amarok;'s Scriptbeheerder kan scriptpakketten installeren die de gebruiker heeft gedownload van een webserver. Pakketten zijn gewoon normale tar-archieven (.tar), optioneel gecomprimeerd met bzip2 (.bz2). Wij adviseren het gebruik van bestandsnamen als myscript.amarokscript.tar.bz2, zodat de gebruiker het pakket meteen kan identificeren als een amarok-script.</para>
+
+<note
+><para
+>&amarok; 1.3 zal alleen scriptpakketten accepteren met de amarokscript-extensie.</para
+></note>
+
+<para
+>De inhoud van de tar-archieven moet als volgt zijn georganiseerd:</para>
+
+<programlisting
+>myscript/
+   README
+   myscript.py (executable)
+   somemodule.py
+   foo.data
+   ...
+</programlisting>
+
+</sect2>
+
+<sect2 id="script-permissions">
+<title
+>Bestandstoegangsrechten</title>
+
+<para
+>Het hoofdscript moet de uitvoerrechten ingesteld hebben (+x), terwijl aanvullende modules die het script laat niet uitvoerbaar moeten zijn. Om de bestandstoegangsrechten in het tar-archieven te behouden gebruikt u tar met de vlag '-p':</para>
+
+<programlisting
+>tar -cf myscript.amarokscript.tar -p myscript</programlisting>
+
+<note
+><para
+>&amarok; kan het script niet installeren als de toegangsrechten niet correct zijn ingesteld.</para
+></note>
+
+</sect2>
+
+<sect2 id="script-distributing">
+<title
+>Distribueren</title>
+
+<para
+>Als het pakket klaar is kunt u het uploaden naar <ulink url="http://www.kde-apps.org"
+>www.kde-apps.org</ulink
+> en de hyperlink toevoegen aan &amarok;'s <ulink url="http://amarok.kde.org/wiki/index.php/Scripts"
+>Wiki Scripts Page</ulink
+>. Bij kde-apps.org toevoegt u het script toe aan de categorie <ulink url="http://kde-apps.org/index.php?xcontentmode=56"
+>&amarok; Scripts</ulink
+>.</para>
+
+</sect2>
+
+</sect1>
+
+
+</chapter>
+

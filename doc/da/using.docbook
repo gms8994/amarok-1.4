@@ -1,0 +1,2272 @@
+<chapter id="using-kapp">
+<title
+>Brug af &amarok;</title>
+
+<para
+>&amarok; er en alsidig lydafspiller der tilbyder mange forskellige måder  at kontrollere din musiksamling. Ligesom enhver almindelig lydafspiller har &amarok; et afspillervindue til at kontrollere de mest grundlæggende funktioner. &amarok; har også en spilleliste der ikke står tilbage for nogen. Spillelistevinduet har flere browsere til at oprette og gennemsøge hele din lydsamling. </para>
+
+<para
+>I dette kapitel vil vi gennemgå  hvordan alle &amarok;'s funktioner bruges inklusive at oprette en samling og en spilleliste.</para>
+
+<sect1 id="player-window">
+<title
+>Spillervinduet</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillervinduet</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Afspillervinduet er &amarok;s kontrolcenter. For oven af afspilleren er der en rullende skærm der viser det spor eller den strøm der afspilles for øjeblikket. Lige under denne rulleskærm er der et område til at vise det nuværende spors spilletid, bitrate, og samplerate. Klik i dette område ændrer sportiden fra den totale spilletid til den tid der er tilbage.</para>
+
+<para
+>Afspillervinduet har også en smaling lydanalysatorer placeret under rulleskærmen. Du kan gå gennem de tilgængelige analysatorer cyklisk  ved at venstreklikke i analysatorområdet.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Analysator-vink</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>&amarok;-afspillerens analysatorer kan frigøres fra afspillervinduet. Ved at  trykke på <keycap
+>d</keycap
+> på dit tastatur vil den aktive analysator åbnes i et uafhængigt vindue, hvis størrelse kan ændres.</para>
+</tip>
+
+<para
+>Under den rullende skærm er også knapperne <guibutton
+>PL</guibutton
+> og <guibutton
+>EQ</guibutton
+>. Knappen <guibutton
+>PL</guibutton
+> bruges til hurtigt at vise eller skjule spillelistens vindue, mens knappen <guibutton
+>EQ</guibutton
+> bruges til at aktivere eller deaktivere equalizeren hvis grænsefladen kan håndtere den.</para>
+
+<para
+>Resten af afspilleren består af afspillerknapper og skyderne til kontrol af lydstyrke og position. Brug skyderne til at vælge en sporpostion eller et lydstyrkeniveau der passer til dit behov. Brug afspillerknapperne til at kontrollere afspilningen af det nuværende spor, eller til at springe enten fremad eller tilbage blandt dine spor.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>Equalizervinduet</title>
+
+<para
+>Den indbyggede equalizer er letanvendelig og virker med alle grænseflader. Der er 17 forindstillinger fra klassisk til tekno, og du kan nemt lave dine egne forindstillinger. </para>
+
+<para
+>Vælg <menuchoice
+><guimenu
+>Værktøj</guimenu
+> <guimenuitem
+>Equalizer</guimenuitem
+></menuchoice
+> i hovedvinduet for at få adgang til equalizeren, eller klik på knappen <guibutton
+>EQ</guibutton
+> i afspillervinduet. Når du har markeret knappen <guibutton
+>Aktivér equalizer</guibutton
+> i vinduet er equalizeren aktiv.</para>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af equalizer</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Du bruge dialogens dropned-felt til at vælge en af de indbyggede forindstillinger. Du kan også justere individuelle  skydere her. At flytte en skyder skifter automatisk til den manuel forindstillingen så  tøv ikke med at eksperimentere med dem til du finder en ønskværdig kombination. Når du er klar til at gemme, klik så på ikonen <guiicon
+>Tilføj ny forindstilling</guiicon
+> til højre for dropned-feltet. Hvis du skifter til en anden forindstilling uden at gemme dine ændringer går den tabt. Foruden at gemme dine ændringer, kan du også klikke på ikonen <guiicon
+>Håndtér forindstillinger</guiicon
+> til højre for dropned-feltn for at slette eller skifte navn på forindstillinger.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>Spillelisten</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelisten</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>&amarok;'s spilleliste er den mest avancerede spilleliste tilgængelig på nogen lydafspiller for &kde;. Spillelisten tilbyder mange funktioner der ikke findes i nogen anden afspiller. Du bør imidlertid ikke blive bange for spillelistens mange muligheder da det stadig er den nemmeste at bruge.</para>
+
+<para
+>Spillelistens vindue kan opdeles i to hovedafsnit, i venstre side er sidebjælken. Sidebjælken er stedet hvor du finder nogen af de glimrende funktioner for spillelisten såsom den <link linkend="context-browser"
+>sammenhængsafhængige browser</link
+>. I højre side af vinduet er selve spillelisten. Spillelisten er simpel at bruge og alligevel kraftfuld nok til selv de mest avancerede brugere.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Sidebjælkebrowser</title>
+
+<para
+>Browserne i &amarok; gør det muligt at få adgang til din musiksamling på flere forskellige måder. De er placerede til venstre i vinduet, og hver  repræsenteres af et faneblad med dets navn skrevet på det. Klik på et faneblad  gør at den valgte browser bliver synlig. Hvis en browser er aktiv foldes den sammen ved at klikke på dens faneblad igen. Kun én browser er synlig af gangen, selvom du kan trække spor fra et faneblad til et andet ved at stoppe over målfanebladet i et sekund indtil dette faneblad bliver synlig. Du kan også skjule browsere ved blot at  højreklikke på et hvilket som helst faneblad og (af)markere ønskede browsere i den sammenhængsafhængig menu.</para>
+
+<screenshot>
+	<screeninfo
+>Skærmbillede af browservalg</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>Sammenhængsbrowser</title>
+
+<para
+>Sammenhængsbrowseren viser forskellig information som hører sammen med sporet som for øjeblikket afspilles. Dens udseende kan ændres ved at bruge temaer kendt som <link linkend="configure-appearance"
+>sammenhængsbrowserens stile</link
+>. Den er organiseret i tre faneblade: <quote
+>Musik</quote
+>, <quote
+>Sangtekst</quote
+> og <quote
+>Artist</quote
+>. Disse faneblade , hvis funktioner beskrives udførligere nedenfor, sørger for information om forskellige aspekter af sporet som der for øjeblikket lyttes til.</para>
+
+<note
+><para
+>Brugere af tidligere versioner af &amarok; vil bemærke at fanebladet <quote
+>Hjem</quote
+> ikke længere findes. Informationen fra dette faneblad er omfordelt over hele grænsefladen i &amarok;. Lignende information findes i hovedsagen i statistikdialogen, som der er adgang til via <menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guimenuitem
+>Statistik</guimenuitem
+></menuchoice
+>.</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af Sammenhæng</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>Fanebladet Musik</title>
+
+<para
+>Fanebladet <guilabel
+>Musik</guilabel
+> tilbyder information om sporet som for øjeblikket spilles, og dets artist og album.</para>
+
+<para
+>Den første rude i fanebladet giver information om sporet. Rudens titel viser spornavn, artistnavn og album. Inde i ruden ser du at den viser sporets albumomslag. Ved siden af billedet finder du en <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+> ikon. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Klik på ikonen for at slå sporet op med MusicBrainz.</para>
+
+<para
+>Under ikonen for MusicBrainz er der mere information om det nuværendespor. Her ser du totalt antal gange sporet er spillet, sporets nuværende scoring, og hvornår sporet først og senest blev spillet.</para>
+
+<tip
+><para
+>For at vise forsidebilleder i sammenhængsbrowseren skal du have forsidebillederne i samme mappe som sporet du lytter til. Understøttede filformater er .jpg, .jpeg, .gif og .png. Billederne kan hedde hvad som helst, men billeder med ordet <quote
+>front</quote
+> i filnavnet bliver foretrukket. Sammenhængsbrowseren anvender også forsidebilleder som er gemt fra download af forsidebilleder, eller billeder indlejret i ID3v2-mærker.</para
+></tip>
+
+<para
+>Næste rude, <guilabel
+>Sange som foreslås</guilabel
+>, viser flere spor som det foreslås at lytte til. Klik på et af de listede spor for at begynde at afspillet det.</para>
+
+<para
+>Under <guilabel
+>Sange som foreslås</guilabel
+> er <guilabel
+>Favoritspor af artist</guilabel
+>. Ruden viser de fem højest rangerede spor for det nuværende spors artist.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Du kan justere informationsmængden som vises i fanebladet <guilabel
+>Musik</guilabel
+> ved at højreklikke hvor som helst i musikfanebladet og ændre punkterne i den sammenhængsafhængig menuen.</para
+></tip>
+
+<para
+>Den sidste rude <guilabel
+>Album af artist</guilabel
+>, viser alle albummer af det nuværende spors artist som er i din samling. Ved at klikke på et af albummerne i ruden ekspanderes det for at vise albummets indhold.</para>
+
+<tip
+><para
+>Du kan klikke på spor i alle ruderne for at begynde at afspille sporet. Du kan også højreklikke på albummer og spor for at vise en menu hvor flere måder at afspille eller sætte sporet eller albummet i kø kan vælges.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>Fanebladet Sangtekster</title>
+
+<para
+>Fanebladet <guilabel
+>Sangtekst</guilabel
+> henter sangteksten for sangen som for øjeblikket spilles fra et af netstederne som understøttes. Denne funktion er fleksibel, og det er muligt at skrive scripter til at hente sangtekster fra forskellige steder. Se kapitlet om hvordan man skriver scripter. Når du klikker på fanebladet Sangtekst, forsøger &amarok; at hente sangteksten for det nuværende spor. Hvis der ikke findes noget sangtekstscript som kører, får du mulighed for at vælge et.</para>
+
+<screenshot>
+	<screeninfo
+>Skærmbillede af sangtekst</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>Du kan udføre diverse handlinger i sangtekstfanebladet med knapperne i dets værktøjslinje.</para>
+
+<para
+>Knappen <guibutton
+>Tilføj</guibutton
+> åbner siden <quote
+>Tilføj sangtekst</quote
+> på netstedet med sangteksten (i en ekstern browser), afhængig af hvilket scripter du kører.</para>
+
+<para
+>Knappen <guibutton
+>Redigér</guibutton
+> lader dig redigere sangteksten for nuværende spor. De opbevares derefter i samlingsdatabasen i &amarok;. Dette kræver ikke at noget sangtekstscript er aktivt for at fungere.</para>
+
+<para
+>Knappen <guibutton
+>Søg</guibutton
+> starter en søgning med google.com efter det nuværende spors sangtekst (i en ekstern browser).</para>
+
+<para
+>Knappen <guibutton
+>Opdatér</guibutton
+> rydder cachet  sangtekst for det nuværende spor, og søger igen.</para>
+
+<para
+><guibutton
+>Åbn i ekstern browser</guibutton
+> viser det nuværende spors sangtekst i en ekstern browser.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>Fanebladet Artist</title>
+
+<screenshot>
+	<screeninfo
+>Skærmbillede af artistfaneblad</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Fanebladet Artist viser artiklen i Wikipedia om artisten som for øjeblikket spilles. Denne værktøjslinje indeholder:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Navigationsknapper for at gå fremad eller tilbage</para>
+</listitem>
+<listitem>
+<para
+>Sideknapper for at gå til artistens, albummets eller sporets side i Wikipedia,</para>
+</listitem>
+<listitem>
+<para
+>En knap til at åbne den nuværende side i en ekstern browser</para>
+</listitem>
+<listitem>
+<para
+>En indstillingsknap til at vælge land for Wikipedia</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Samlingsbrowser</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af samlings-browser</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Samlingsbrowseren er hjertet i &amarok;. Hele samlingen er synlig her og kan sorteres ifølge forskellige grupperinger. Indenfor hver gruppering vises alting altid alfabetisk, med symboler og tal først, og uden hensyn til store og små bogstaver. Med alle grupperingsmetoder, grupperes altid spor som har ukendte artister og/eller albummer først i samlingen under <quote
+>Ukendt</quote
+>. Selvom spornummer ikke vises, listes spor i sin albumrækkefølge. At klikke på samlingslistens overskrift vender på sorteringsrækkefølgen. Et venstreklik på ekspansionsikonen til venstre for hver indgang i samlingen ekspanderer den indgang.</para>
+
+<para
+>Menuen i dropned-feltet <quote
+>Gruppér efter</quote
+> tillader dig at gruppere samlingen på flere forskellige måder:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppér efter</guimenu
+> <guimenuitem
+>Artist</guimenuitem
+></menuchoice
+>: Kun sortering på topniveau, hvor hvert spor grupperes under tilsvarende artist uden hensyn til album eller genre.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppér efter</guimenu
+> <guimenuitem
+>Artist/Album</guimenuitem
+></menuchoice
+>: Spor sorteres ifølge artist, og derunder sorteres de ifølge album. Hvis du vil se samlingsalbum eller filmmusik er dette den bedste måde at vise samlingen - disse albummer grupperes sammen mod slutningen af listen under <quote
+>Diverse artiste</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppér efter</guimenu
+> <guimenuitem
+>Artist/År - Album</guimenuitem
+></menuchoice
+>: Sorterer efter artist, med albummer i faldende rækkefølge efter år (seneste først). Hvis mærket <quote
+>År</quote
+> ikke findes for sporet bruges standardværdien <quote
+>0 - albumnavn</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppér efter</guimenu
+> <guimenuitem
+>Album</guimenuitem
+></menuchoice
+>: Alle albummer i samlingen vises alfabetisk baseret på albumnavn, uafhængig af artist.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppér efter</guimenu
+> <guimenuitem
+>Genre/Artist</guimenuitem
+></menuchoice
+>: Spor grupperes ifølge deres genremærke, og derefter ifølge artist.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Gruppér efter</guimenu
+> <guimenuitem
+>Genre/Artist/Album</guimenuitem
+></menuchoice
+>: Samme som ovenfor, blot med spor sorterede ifølge album, under hver artist.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>De tilbageværende tilvalg i dropned-feltets menu lader dig indstille grupperingen med en hvilken som helst kombination af de ovenstående.</para>
+
+<para
+>De følgende to ikoner i værktøjslinjen ændrer måden som samlingen vises. Den første, trævisningen, er standardvisningen og den som du formodentlig kigger oftest på. Næste knap aktiverer Enkel visning, som først synes at være tom. At indtaste søgeudtryk i tekstindtastningsfeltet lige nedenfor værktøjslinjen begynder at udfylde samlingen, som kan sorteres på et antal forskellige måder ved at venstreklikke på søjleoverskrifterne. Et højreklik på søjleoverskrifterne viser en sammenhængsafhængig menu som lader dig ændre hvilke søjler der vises.</para>
+
+<para
+>Den sidste ikon i værktøjslinjen lader dig ændre samlingens indstillinger. Bemærk at hvis du ændrer en mappe, gennemsøger &amarok; automatisk samlingen igen. Dette kan tage ganske lang tid hvis du har mange spor.</para>
+
+<para
+>Umiddelbart nedenfor værktøjslinjen findes et søgefilter som opfører sig på samme måde både i enkel visning og i trævisninger. Se afsnittet om spillelisten i håndbogen for flere detaljer om søgeteknikker.</para>
+
+<para
+>Under søgefiltret gør et anden dropned-felt det muligt at se sporene som senest blev tilføjedet til samlingen. Flere tidsperioder er tilgængelige, fra de seneste 24 timer til 1 år, eller hele samlingen.</para>
+
+<sect3 id="collection-rmb">
+<title
+>Samlingsbrowserens tilvalg for højre museklik</title>
+<para
+>Følgende tilvalg er tilgængelige ved at klikke med højre museknap på indgange i sammenhængsbrowseren:</para>
+
+<para
+><guilabel
+>Indlæs</guilabel
+>: Rydder nuværende spilleliste og tilfjer de markerede spor som første spor i sorteringsrækkefølgen.</para>
+
+<para
+><guilabel
+>Tilføj til spilleliste</guilabel
+>: Tilføjer de markerede spor i slutningen på den nuværende spilleliste. At dobbeltklikke på et enkelt spor i samlingen opnår også samme resultat.</para>
+
+<para
+><guilabel
+>Sæt spor i kø</guilabel
+>: Tilføjer de markerede spor i køen som de følgende at spille.</para>
+
+<para
+><guilabel
+>Gem som spilleliste</guilabel
+>: Gem de markerede spor som en spilleliste. Du bliver bedt om et navn at gemme den som.</para>
+
+<para
+><guilabel
+>Tilføj til medieenhedens overførselskø</guilabel
+>: Tilføjer sporene i en kø klar til at overføres til en medieenhed, når en sådan enhed er forbundet. Se afsnittet <link linkend="media-device-browser"
+>Medieenhedsbrowseren</link
+> for flere detaljer.</para>
+
+<para
+><guilabel
+>Brænd alle spor af denne  artist/Brænd til cd</guilabel
+>: Sender spor til &k3b; for enten at brænde dem som data- eller lyd-cd. Hvis &k3b; ikke er installeret kan dette ikke vælges.</para>
+
+<para
+><guilabel
+>Hent omslagsbillede</guilabel
+>: Søger på amazon.com efter et omslagsbillede for albummet.</para>
+
+<para
+><guilabel
+>Redigér information for (n) spor</guilabel
+>: Viser dialogen <guilabel
+>Sporinformation</guilabel
+> og lader dig ændre mærker for et eller flere spor. </para>
+
+<para
+><guilabel
+>Håndtér filer</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Organisér (n) filer</guilabel
+>: Viser dialogen <guilabel
+>Organisér samlingsfiler</guilabel
+>. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>Slet (n) filer</guilabel
+>: Viser en bekræftelsesdialog som spørger dig om du vil slette de markerede spor permanent fra computeren.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Markér som samling</guilabel
+>: Sætter det markerede album som et samlingsalbum, at liste under <quote
+>Diverse artiste</quote
+></para>
+
+<para
+><guilabel
+>Afmarkér som samling</guilabel
+>: Ændrer et album markeret som et samlingsalbum til et sædvanligt album og flytter listningen fra <quote
+>Diverse artiste</quote
+> tilbage til de listede artiste.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Spillelistebrowser</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelistebrowseren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Spillelistebrowseren bruges til nem håndtering af flere spillelister. Spillelistebrowseren har også en funktion for indbyggede smarte spillelister, hvilket gør den til den smarteste spillelistebrowser der findes.</para>
+
+<para
+>Spillelistebrowseren er opdelt i to dele. Spillelister og Smarte spillelister. Afsnittet spillelister er til dine egne spillelister. Du kan vise indholdet i spillelisterne i en listevisning ved at klikke på symbolet <quote
+>+</quote
+> ved siden af hver af spillelisterne på listen. Når du viser en spilleliste i listevisningen kan nye punkter tilføjes til den ved at trække og slippe dem i visningen. Når du har fundet en spilleliste som du vil indlæse, kan du dobbeltklikke på den, eller trykke på tasten <keycap
+>Mellemrum</keycap
+> for at lade &amarok; indlæse den. De øvrige genvejstaster i spillelistebrowseren er i <link linkend="keybd-shortcuts"
+>afsnittet Genvejstaster</link
+>.</para>
+
+<tip
+><para
+>Når du gemmer en ny spilleliste i spillelistens vindue, tilføjes den automatisk til i spillelistebrowseren.</para
+></tip>
+
+<para
+>Det nederste feltet i spillelistebrowseren er Smarte spillelister. Smarte spillelister bruger &amarok;s indbyggede database til at oprette nogle nyttige spillelister i farten. Smarte spillelister omfatter følgende:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Hele samlingen: En spilleliste med alle spor som findes i din indstillede samling.</para>
+</listitem>
+
+<listitem>
+<para
+>Favoritspor: Flere spillelister med de femten højst rangerede spor i en listevisning efter artist.</para>
+</listitem>
+
+<listitem>
+<para
+>Mest spillede: Flere spillelister med de femten mest spillede spor i en listevisning efter  artist.</para>
+</listitem>
+
+<listitem>
+<para
+>Nyeste spor: Flere spillelister med de femten senest tilføjede spor i en listevisning efter artist.</para>
+</listitem>
+
+<listitem>
+<para
+>Senest spillede: En spilleliste med de femten senest afspillede spor i din samling.</para>
+</listitem>
+
+<listitem>
+<para
+>Aldrig spillede: En spilleliste med sporene i din samling som aldrig tidligere er afspillede.</para>
+</listitem>
+
+<listitem>
+<para
+>Genrer: Flere spillelister i en listevisning ordnet efter genre.</para>
+</listitem>
+
+<listitem>
+<para
+>Det er også muligt at oprette brugerdefinerede smarte spillelister. Ved at klikke på knappen <guibutton
+>Opret smart spilleliste</guibutton
+> vises en dialog til at indstille en smart spilleliste som svarer til dine kriterier.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Medieenhedssøger</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af medieenhedssøger</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Panelet Mediaenhed bruges til at forbinde en iPod til &amarok;. For at bruge din iPod med mediaenhedsbrowseren skal du have monteret din iPod som /mnt/ipod inden du starter &amarok;. Når du har startet &amarok; finder du sporene på din iPod listede efter artist i en listevisning længst op i browseren.</para>
+
+<para
+>For at tilføje spor til din iPod, trækkes sporene du vil tilføje fra spillelisten og de slippes i listevisningen af på Artist. Når du er færdig med at tilføje spor til listen klik på knappen <guibutton
+>Overførsel</guibutton
+> for at overføre dem til din iPod. Efter overførslen er færdig, lukkes &amarok; og din iPod afmonteres.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Filsøgeren</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af filsøger</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Filbrowserens panel er som en minimal version af Konqueror indlejret i spillelisten. Du kan bruge filbrowserens panel til at gennemsøge i hele filsystemet efter lydfiler som skal tilføjes til spillelisten. Længst oppe i filbrowseren finder du en værktøjslinje med navigeringsknapper til at gå op, tilbage og fremad i filsystemet. Værktøjslinjen tilbyder også knapperne Hjemmemappe, Opdatér, Kort format og Detaljeret format. Den har desuden en bogmærkeknap til at oprette bogmærker til dine foretrukne steder i filsystemet.</para>
+
+<para
+>Nedenfor værktøjslinjen er en praktisk søgelinje til at søge efter filnavne. Du bemærker at søgelinjen er nyttig til  mapper med mange filer eftersom den søger mens du skriver ind, og efterlader kun de relevante filnavne i visningen.</para>
+
+<para
+>Længst nede i filbrowseren er der en adresselinje til at huske musik via en hvilken som helst url du end skriver ind. Ved for eksempel at skrive <filename class="directory"
+>tar:/home/kontonavn/musik.tar.gz</filename
+> i adresselinjen og trykke på returtasten, kan du få adgang til filer i det komprimerede musikarkiv. Nu kan du trække lydfiler fra arkivet og slippe dem i spillelisten.</para>
+
+<tip
+><para
+>Når spillelisten vokser og bliver større end en skærm, bliver det svært at tilføje filer blot ved at droppe dem. Ved at holde <keycap
+>Shift</keycap
+>-tasten nede på tastaturet mens der droppes kan det muligvis hjælpe i dette tilfælde: filerne vil så blive tilføjet for enden af spillelisten i stedet for at blive indsat ved den øjeblikkelige drop-position.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>Spillelisten</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelisten</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Spillelisten indeholder alle spor som du har i kø for at afspille. Du kan ændre rækkefølgen ved at trække punkter rundt med musen, og slippe dem på det ønskede sted. Ovenfor spillelisten ser du et tekstfelt, hvor du kan indtaste en filterstreng. Så snart du skriver et bogstav der, vises spillelisten igen, men kun med linjer som indeholder de bogstaver som er skrevet. For at stoppe filtreringen, trykkes blot på <keycap
+>Backspace</keycap
+> indtil filtret er tomt. </para>
+
+<tip
+><para
+>Avanceret, Google-lignende syntaks er også tilgængelig.</para>
+
+<para
+>Som standard, når du skriver søgeord adskilte med mellemrum, søges efter punkter  som indeholder alle. For eksempel søger "et to tre" efter alt som indeholder et, to og tre.</para>
+
+<para
+>Du kan imidlertid indtaste OR mellem søgord for at søge efter punkter som indeholder et af dem, sådan her: et OR to OR tre. På den måde søges efter punkter som enten indeholder et, to eller tre (eller en kombination af dem).</para>
+
+<para
+>Du kan også bruge citationstegn for at søge efter tekst med mellemrum: "Mike Oldfield". Det søger efter tekst som indeholder Mike Oldfield, men for eksempel ikke efter tekst som indeholder Mike J. Oldfield.</para>
+
+<para
+>Som standard søges i alle søjler i spillelisten som for øjeblikket er synlig. Du kan imidlertid bruge søjle:søgeord for at angive søjlen at søge i: titel:amarok (det kan også være en søjle som ikke ses). På den måde søges kun efter punkter  som har ordet amarok i titlen, og ikke for eksempel i albummet.</para>
+
+<para
+>Når en bestemt søjle at søge i angives, kan du også søge efter punkter som er mindre end eller større end et søgeord, for eksempel scoring:
+>50, hvilket søger efter punkter med en scoring som er større end 50.</para>
+
+<para
+>For at angive et søgeord som du ønsker at punkterne ikke skal matche, kan du tilføje et minustegn (-) inden dem: -ting, for at søge efter alt som ikke indeholder ting.</para>
+
+<para
+>Du kan kombinere ovenstående som du vil, for eksempel "Mike Oldfield" OR scoring:
+>50 -kommentar:dårlig. Det søger efter alting som enten indeholder Mike Oldfield eller har scoring større end 50, men undtager punkter hvor kommentaren indeholder "dårlig".</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Spilleliste vink</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Du kan vælge punkter at afspille i en vis rækkefølge ved at holde <keycap
+>Ctrl</keycap
+> nede og klikke med højre museknap på punkterne i den rækkefølge som du vil afspille dem. Punkterne markeres med et nummer som viser rækkefølgen du valgte dem i.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>Spillelistens menulinje</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelistens menulinje</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>Handlingsmenuen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Handlinger</guimenu
+> <guibutton
+>Afspil medie...</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser en dialog til at indtaste en URL.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Handlinger</guimenu
+> <guibutton
+>Afspil lyd-cd</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Lader dig vise og afspille en lyd-cd med protokollen audiocd:/.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Handlinger</guimenu
+> <guibutton
+>Foregående spor</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Gå til foregående spor i spillelisten.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Handlinger</guimenu
+> <guibutton
+>Pause</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Holder pause i afspilningen af nuværende spor.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Handlinger</guimenu
+> <guibutton
+>Stop</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Stopper afspilning.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Handlinger</guimenu
+> <guibutton
+>Næste spor</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Gå til næste spor i spillelisten.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Handlinger</guimenu
+> <guibutton
+>Afslut</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Afslutter &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>Spillelistens menu</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guibutton
+>Tilføj medie...</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Åbner en dialog for at tilføje medie til den nuværende spilleliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guibutton
+>Gem spilleliste som...</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser en dialog for at gemme den nuværende spilleliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guibutton
+>Fortryd</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Fortryder den seneste ændring af spillelisten.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Skift</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guibutton
+>Annullér fortryd</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Annullér fortryd af fortrudte ændringer.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Spilleliste</guimenu
+> <guibutton
+>Ryd</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Rydder den nuværende spilleliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guibutton
+>Bland</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Blander rækkefølgen i den nuværende spilleliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guimenuitem
+>Gå til nuværende spor</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Går til sporet som for øjeblikket afspilles i spillelisten.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guimenuitem
+>Sæt markerede spor i kø</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Sætter alle markerede spor i kø i spillelisten.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Spilleliste</guimenu
+> <guimenuitem
+>Fjern kopier eller manglede indgange</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Fjerner alle duplikerede eller døde indgange i den nuværende spilleliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spilleliste</guimenu
+> <guibutton
+>Markér alle</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Markerer alle spor i den nuværende spilleliste.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>Værktøjsmenuen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guibutton
+>Omslagshåndtering</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Åbner <link linkend="cover-manager"
+>omslagshåndteringen</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guibutton
+>Køhåndtering</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Åbner <link linkend="queue_manager"
+>køhåndteringen</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guibutton
+>Startguide</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Åbner startguiden.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guibutton
+>Visninger</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Åbner <link linkend="visualizations"
+>visningsdialogen</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guibutton
+>Equalizer</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Åbner <link linkend="equalizer"
+>equalizervinduet</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guimenuitem
+>Scripter</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Åbner <link linkend="script_manager"
+>scripthåndteringen</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guimenuitem
+>Genskan samling</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Starter en manuel skanning af dine samlingsmapper.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Opsætningsmenuen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Opsætning</guimenu
+> <guibutton
+>Skjul menulinje</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Skjul spillelistevinduets <link linkend="menubar"
+>menulinje</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guibutton
+>Skjul værktøjslinje</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Skjul spillelistevinduets <link linkend="toolbar"
+>værktøjslinje</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guibutton
+>Skjul afspillervindue</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Skjul <link linkend="player-window"
+>Afspillervinduet</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guibutton
+>Gentag spor</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Gentager afspilningen af nuværende spor.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guibutton
+>Gentag spilleliste</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Gentager afspilningen af nuværende spilleliste.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guibutton
+>Tilfældig tilstand</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Gør at sporene i spillelisten afspilles i tilfældig rækkefølge.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guimenuitem
+>Dynamisk tilstand</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Starter den dynamiske tilstand for spillelisten.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guibutton
+>Indstil globale genveje...</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser dialogen for indstilling af globale genveje.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guimenuitem
+>Indstil genveje...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser &amarok;s indstillingsdialog for genveje.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guimenuitem
+>Indstil værktøjslinjer...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser &amarok;s dialog for indstilling af værktøjslinje.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guimenuitem
+>Indstil Amarok...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser &amarok;s indstillingsdialog.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>Hjælpemenuen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Hjælp</guimenu
+> <guimenuitem
+>Amarok-håndbog</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser denne dokumentation.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Skift</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Hjælp</guimenu
+> <guibutton
+>Hvad er dette?</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Aktiverer musemarkøren Hvad er dette.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjælp</guimenu
+> <guibutton
+>Rapportér fejl...</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Starter fejlrapporteringsværktøjet.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjælp</guimenu
+> <guimenuitem
+>Om Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser dialogen Om Amarok.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjælp</guimenu
+> <guibutton
+>Om KDE</guibutton
+> </menuchoice
+></term>
+<listitem
+><para
+>Viser dialogen Om KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>Spillelistens værktøjsliste</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelistens værktøjsliste</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Værktøjslinjen i spillelistens vindue er nær den nederste kant i vinduet. Værktøjslinjen indeholder knapper for mange af spillelistens handlinger. Til højre i værktøjslinjen er knappen <guibutton
+>Tilføj medie</guibutton
+>, som viser en fildialog for at tilføje mediefiler til spillelisten. Efter knappen <guibutton
+>Tilføj medie</guibutton
+> er knapperne <guibutton
+>Gem spilleliste</guibutton
+>, <guibutton
+>Ryd spilleliste</guibutton
+> og <guibutton
+>Opdatér spilleliste</guibutton
+>. Du kan bruge knapperne til at håndtere den nuværende spillelisten.</para>
+
+<para
+>Næste sæt knapper er <guibutton
+>Fortryd</guibutton
+> og <guibutton
+>Annullér fortryd</guibutton
+>. Du kan bruge knapperne til at fortryde eller omgøre alle ændringer i spillelisten.</para>
+
+<para
+>I midten af værktøjslinjen ser du en entydig analysator, som kan ændre størrelse. Du kan justere analysatorens opdateringsfrekvens ved at bruge menuen som vises med et højreklik og vælge ønsket rammerate.</para>
+
+<para
+>Den sidste knap i værktøjslinjen er knappen <guibutton
+>Menu</guibutton
+>. <guibutton
+>Menu</guibutton
+> viser samme menu som et højreklik i afspillervinduet. Du kan bruge menuen til at få adgang til &amarok;s indstillingstilvalg.</para>
+
+<tip
+><para
+>Der er mange andre knapper tilgængelige for værktøjslinjen, inklusive afspilningsknapper og en lydstyrkekontrol. Du kan indstille de knapper som er i værktøjslinjen ved at klikke på knappen <guibutton
+>Menu</guibutton
+> og vælge <guimenuitem
+>Indstil værktøjslinjer...</guimenuitem
+></para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>Spillelistens statuslinje</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af statuslinje</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Statuslinjen sørger for hurtig adgang til nyttig information om spillelisten. Statuslinjen viser det nuværende spors titel, antallet af spor i spillelisten sammen med den totale spillelistes tid, status for Tilfældig eller Gentag, en skyder for position i spor, og det nuværende spors afspilningstid. Du kan ændre status for Tilfældig og Gentag ved at dobbeltklikke på deres respektive områder i statuslinjen.</para>
+
+<para
+>Du kan også vælge ikke at vise statuslinjen med punktet <guilabel
+>Vis statuslinje</guilabel
+> i dialogen <link linkend="general-options"
+>Indstil generelle tilvalg</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>Menuen som vises med højre museknap</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af RMB-menu</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Den sammenhængsafhængige menu vises ved at højreklikke i afspillervinduet. Den vises også ved at klikke på knappen <guibutton
+>Menu</guibutton
+> i spillerlistens vindue. Den sammenhængsafhængige menu bruges til at få adgang til alle tilvalg i &amarok;.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Gentag spor</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Dette tilvalg gentager afspilningen af nuværende spor når det er aktiveret.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Spillelisten Gentag</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Dette tilvalg gentager afspilningen af hele spillelisten når det er aktiveret.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tilfældig tilstand</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Dette tilvalg gør at sporene i spillelisten afspilles i tilfældig rækkefølge, når det er aktiveret.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tilføj forslag</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Tilføjer de foreslagne sange fra samlingsbrowseren i den nuværende spilleliste.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Omslagshåndtering...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Åbner <link linkend="cover-manager"
+>omslagshåndteringen</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Startguiden</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ved at klikke på dette åbnes startguiden for første indstilling af &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualiseringer...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ved at klikke på dette åbnes <link linkend="visualizations"
+>Visualiseringsvinduet</link
+> til at vælge hvilke visualiseringer der skal bruges med &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Equalizer</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Åbner <link linkend="equalizer"
+>equalizervinduet</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Skripthåndtering</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Åbner scripthåndteringsdialogen</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Indstil værktøjslinjer...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ved at klikke på dette åbnes en dialog for at indstille <link linkend="toolbar"
+>Spillelistens værktøjslinje</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Indstil genveje...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ved at klikke på dette åbnes en dialog for at indstille <link linkend="keybd-shortcuts"
+>Genveje i &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Indstil globale genveje...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ved at klikke på dette åbnes en dialog for at indstille <link linkend="keybd-shortcuts"
+>globale genveje i &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Indstil Amarok...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Ved at klikke på dette åbnes <link linkend="configuring-kapp"
+>indstillingsdialogen for &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjælp</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Dette punkt sørger for en undermenu som giver et link til dette dokument og anden information om &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Afslut</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Når der klikkes på dette, afsluttes &amarok;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Forsidebilledehåndtering</title>
+
+<screenshot>
+	<screeninfo
+>Forsidebilledehåndtering</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Forsidebilledehåndtering er et nyttigt værktøj til at håndtere dine forsidebilleder. Du kan starte forsidebilledehåndteringen ved at vælge <menuchoice
+><guimenu
+>Handlinger</guimenu
+> <guibutton
+>Forsidebilledehåndtering</guibutton
+></menuchoice
+> i samlingsbrowseren.</para>
+
+<para
+>Forsidebilledehåndtering sørger for en listevisning af alle forsidebilleder din samling. Du kan vise alle forsidebilleder for en artist ved at klikke på artisten i listevisningen.</para>
+
+<para
+>Forsidebilledehåndteringen sørger for en søgelinje til at søge blandt dine forsidebilleder. Forsidebilledehåndtering søger blandt albumerne med søgekriteriet som du skriver ind i søgelinjen.</para>
+
+<para
+>Menuen <guibutton
+>Vis</guibutton
+> lader dig vælge det der vises i forsidebilledehåndteringen. Du kan vælge blandt:</para>
+
+<para
+><guibutton
+>Alle albummer</guibutton
+>, som viser alle albummer i samlingen.</para>
+
+<para
+><guibutton
+>Album med forsidebilleder</guibutton
+>, som kun viser albummer som har forsidebilleder.</para>
+
+<para
+><guibutton
+>Album uden forsidebilleder</guibutton
+>, som kun viser album som ikke har forsidebilleder.</para>
+
+<para
+>Knappen <guibutton
+>Hent manglende forsidebilleder</guibutton
+> bruges til at hente forsidebilleder for albummer som ikke allerede har forsidebilleder tilgængelige.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>Køhåndtering</title>
+
+<screenshot>
+	<screeninfo
+>Skærmbillede af køhåndtering</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Køhåndteringen får sin store debut i &amarok; 1.3. Denne funktion er konstrueret til at gøre det muligt for brugere at have endnu bedre kontrol over deres spillelister. Efter at have sat et spor i kø, vises et kønummer ved siden af det det i køhåndteringen. Nummeret angiver rækkefølgen som &amarok; vil spille sporet: et kommer først, to derefter, og så videre.</para>
+
+<para
+>Du kan bruge køhåndteringen ved at åbne den fra <menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guimenuitem
+>Køhåndtering</guimenuitem
+></menuchoice
+>, markere sporet og derefter klikke på ikonen <guibutton
+>+</guibutton
+> i køhåndteringen. Du kan også blot trække spor til køhåndteringen for at oprette en kø. Alternativt kan spillelistens sammenhængsafhængige menu også bruges og køhåndteringen kan derefter åbnes for at ændre rækkefølgen.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Dynamiske spillelister</title>
+
+	<sect2>
+		<title
+>Hvad er de?</title>
+		<para
+>Dynamiske spillelister er selvgenererende spillelister, som laves ifølge definerede regler, som bruges til at holde den nuværende spilleliste på en håndterbar størrelse. Mens &amarok; bruger relativt få ressourcer under kørslen, øges hukommelsesbrugen af at indlæse et stort antal spor i en spilleliste samtidigt, hvilket muligvis kan påvirke systemydelsen, noget som helt kan undgås ved at bruge dynamiske spillelister. Også kendt som partytilstand, er det en meget god måde at holde musikken i gang hele natten uden at behøve at gøre noget. </para>
+	</sect2>
+
+	<sect2>
+		<title
+>Hvor er de?</title>
+		<para
+>Du finder dynamiske spillelister i spillelistens sidebjælke.</para>
+	
+		<screenshot>
+			<screeninfo
+>Spillelistens sidebjælke</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Spillelistens sidebjælke</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Der er tre typer af dynamiske spillelister, som kaldes dynamisk tilstand, hvoraf to er fordefinerede (mere information om indstilling af dem følger senere).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Tilfældig blanding</term>
+				<listitem
+><para
+>Initierer en spilleliste med tilfældige spor fra hele din samling, og fortsætter med at tilføje tilfældige spor.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Sange som foreslås</term>
+				<listitem>
+					<para
+>Tilføjer sange baseret på forslag fra <ulink url="http://www.last.fm"
+>last.fm</ulink
+> (tidligere Audioscrobbler). Kræver at nogle spor allerede er i spillelisten. Bemærk at du ikke behøver en last.fm-profil for at dette kan virke.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Bland spilleliste (oprettet af brugeren)</term>
+				<listitem
+><para
+>Tilføjer tilfældige spor fra en angiven smart spilleliste, enten indbygget eller brugerdefineret.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>Hvordan bruger jeg dem?</title>
+		<para
+>Dobbeltklik blot på den spilleliste du ønsker, træk den til spillelistens vindue, eller højreklik og vælg Indlæse. Dette erstatter din nuværende spilleliste, så måske vil du gemme den først hvis den er vigtig for dig. </para>
+		<para
+>Både Tilfældig blanding og Bland spilleliste befolker spillelisten og lader dig begynde at spille med det samme. Foreslåede sange begynder med en tom spilleliste, og kræver at du i det mindste tilføjer en sang fra samlingen manuelt. Forslagene tilføjes ved skift af spor, så spillelisten befolkes ikke før end slutningen af den første sang.</para>
+		<para
+>Hvis du vil beholde din nuværende spilleliste, kan du aktivere den sidste type af dynamisk tilstand ved at vælge <menuchoice
+><guimenu
+>Opsætning</guimenu
+> <guimenuitem
+>Dynamisk tilstand</guimenuitem
+></menuchoice
+>. Dette bruger den eksisterende spilleliste som startpunkt. Du kan deaktivere dynamisk tilstand med det samme menupunkt.</para>
+		<screenshot>
+			<screeninfo
+>Dynamisk spilleliste indlæst</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Dynamisk spilleliste indlæst</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>Knappen <guibutton
+>Fyld på igen</guibutton
+> rydder spillelisten og tilføjer spor igen ifølge den dynamiske tilstand du bruger, og knappen <guibutton
+>Redigér dynamisk spilleliste</guibutton
+> gør at dialogen for indstilling af dynamisk tilstand dukker op.</para
+> <note
+><para
+>Knapperne vises ikke hvis dynamisk tilstand ikke er aktiveret.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Indstil dynamiske spillelister</title>
+	<sect2>
+		<title
+>Ændr opførsel af dynamiske spillelister</title>
+		<para
+>At højreklikke på en <guilabel
+>Dynamisk spilleliste</guilabel
+> gør at du kan vælge <guimenuitem
+>Redigér</guimenuitem
+>, hvilket åbner dialogen for indstilling af dynamisk tilstand.</para>
+	
+		<screenshot>
+			<screeninfo
+>Indstilling af dynamisk tilstand</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Dynamisk spillelistes navn</term>
+				<listitem>
+					<para
+>Omdøb til hvad du vil, hvis du ønsker det. Spillelisternes navne bør være entydige for at undgå forvirring.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Fjern afspillede spor</term>
+				<listitem>
+					<para
+>Hvis du ikke markerer dette, vokser din spilleliste hele tiden, indstillingen Kommende spor sættes ud af kraft, og du får ingen repetition af spillelisten. Hvis indstillingen markeres, fjernes afspillede spor fra listens begyndelse, ifølge indstillingen Afspillede spor at vise nedenfor.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Markér historik</term>
+				<listitem>
+					<para
+>Gør afspillede spor grå.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Afspillede spor at vise</term>
+				<listitem>
+					<para
+>Afspillede spor at vise: antal afspillede spor som efterlades i begyndelsen af spillelisten. Nyttigt for at se hvad som er afspillet for nylig.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Kommende spor</term>
+				<listitem>
+					<para
+>Dette er indstillingen som begrænser størrelsen af spillelisten.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Spor at tilføje</term>
+				<listitem>
+					<para
+>Antal spor som tilføjes til spillelisten efter hver sang er spillet. Bemærk at hvis du indstiller dette til mere end 1, kommer spillelisten til at vokse hurtigt, eftersom kun et spor kan spilles og derefter fjernes af gangen.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Du kan også få adgang til denne dialog via knappen <guibutton
+>Redigér dynamisk spilleliste</guibutton
+> længst oppe til højre i spillelistens vindue.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Bjælken for dynamisk tilstand</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Tilføj en egen dynamisk spilleliste</title>
+		<para
+>Højreklik på Dynamiske spillelister og vælg Ny dynamisk spilleliste.</para>
+
+		<screenshot>
+			<screeninfo
+>Opret ny dynamisk spilleliste</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>Opsætningen til højre er som beskrevet i foregående afsnit. I feltet til venstre kan du vælge blandt hvilke som helst af de eksisterende spillelister og smarte spillelisterne på systemet. Hvis du vælger flere spillelister, tilføjer &amarok; tilfældige spor fra hver af dem.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>Scripthåndteringen</title>
+
+<screenshot>
+	<screeninfo
+>Skærmbillede af scripthåndtering</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Scriptgrænsefladen sørger for en nem måde at udvide funktioner i &amarok;. Start scripthåndteringen ved at vælge <menuchoice
+><guimenu
+>Værktøjer</guimenu
+> <guimenuitem
+>Scripthåndtering</guimenuitem
+></menuchoice
+> fra menulinjen i &amarok; for at køre et script i &amarok;. I scripthåndteringens dialog finder du en listevisning med installerede scripter. Markér et script i listevisningen og klik på knappen <guibutton
+>Kør</guibutton
+> for at starte scriptet. Scriptet i &amarok; køres til det er færdigt, eller stoppes manuelt ved at markere det i scripthåndteringen og klikke på knappen <guibutton
+>Stop</guibutton
+>.</para>
+
+<tip
+><para
+>Vis scripter sørger for særlige indstillingstilvalg. For at komme til valgmulighederne, køres først scriptet og derefter klikkes på knappen <guibutton
+>Indstil</guibutton
+> for at komme til scriptets indstillingsdialog.</para
+></tip>
+
+<para
+>For at installere nye scripter i &amarok;, klik på knappen <guibutton
+>Installér script</guibutton
+> i scripthåndteringens dialog. En filvalgsdialog vises som lader dig vælge en scriptpakke for &amarok;. Efter at have valgt en pakke at installere, vises en ny indgang for scriptet i listevisningen. Du kan også installere nye scripter ved at klikke på knappen <guibutton
+>Hent flere scripter</guibutton
+>, som viser en dialog for  automatisk at hente og installere scripter fra internettet.</para>
+
+<para
+>Du bemærker måske også at der findes scripter som du ikke længere bruger. For at afinstallere et script, markeres scriptet i scripthåndteringens listevisning og klik så på knappen <guibutton
+>Afinstallér</guibutton
+>.</para>
+
+<note
+><para
+>Hvis du leder efter information om hvordan man skriver et script i &amarok;, så se afsnittet <link linkend="script-writing"
+>Skriv scripter</link
+> i dette dokument.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>Visualiringerne</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af visualiseringer</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Visualiseringsvinduet bruges til at aktivere tilgængelige visualiseringer i &amarok;. En liste med tilgængelige visualiseringer angives i vinduet. For at aktivere en visualisering, markeres afkrydsningsfeltet ved siden af den den specifikke visualisering.</para>
+
+</sect1>
+
+</chapter>

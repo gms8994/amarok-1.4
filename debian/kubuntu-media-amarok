@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DEVICE=$@
+
+if [ -n "$DEVICE" ];then
+	if [ ${DEVICE:0:7} = "audiocd" ]; then
+		amarok --cdplay ${DEVICE#*=}
+	elif [ ${DEVICE:0:1} = "/" ]; then
+		amarok --cdplay `dcop kded mediamanager fullList | grep -B1 $DEVICE | head -n1`
+	else
+		amarok --cdplay /dev/cdrom
+	fi
+else
+        amarok --cdplay /dev/cdrom
+fi
+

@@ -1,0 +1,148 @@
+<chapter id="quick-start">
+<title
+>&amarok;'s hurtigstart-guide</title>
+
+<para
+>Det skal være nemt at lytte til musik. For at hjælpe til med det sørger vi for en startguide som vises første gang &amarok; køres. For de som vil opdatere deres samling senere, eller ikke bruge guiden, findes denne hurtigstartsvejledning. Den hjælper dig med at få &amarok; i gang på nogle minutter.</para>
+
+
+<sect1 id="collection-building">
+<title
+>Opbygning af en samling</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af samlings-browser</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>At opbygge din samling er et væsentligt skridt i brugen af alle &amarok;'s funktioner. Fra samlings-browseren klikkes på knappen <guibutton
+>Indstil mapper</guibutton
+> der findes i værktøjslinjen. Dernæst vil du vælge hvilke mapper du vil have skal være i din samling fra dialogen <guilabel
+>Indstil samling</guilabel
+>. Også herfra har du valget <guilabel
+>Skan mapper rekursivt</guilabel
+>, <guilabel
+>Overvåg mapper for ændringer</guilabel
+> og <guilabel
+>Importér spillelister</guilabel
+> der findes i samlingsmapperne. Efter at have valgt dine mapper, og afkrydset alle relevante afkrydsningsfelter, klikkes på <guibutton
+>o.k.</guibutton
+>-knappen. Efter den første skanning, er din samling opbygget og du kan gå videre til at lave en spilleliste.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title
+>Lav en spilleliste</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelisten</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>At lave en spilleliste er lige så simpelt som at trække punkter fra samlings-browserens trævisning hen på spillelisten. For at gøre det nemmere at søge efter punkter, er der et tekstfelt til at filtrere din samling. Begynd blot på at skrive noget i tekstfeltet, så vil trævisningen ændres til kun at vise de relevante resultater. Når du er tilfreds med din spilleliste, kan du gemme de3n ved at klikke på knappen <guibutton
+>Gem spilleliste som</guibutton
+> der findes i spillelistemenuen.</para>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelistebrowseren</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Hvis du har dine egne spillelister, kan du tilføje dem i spillelistebrowseren ved at klikke på knappen <guibutton
+>Tilføj</guibutton
+> og vælge tilvalget <guibutton
+>Spilleliste...</guibutton
+> i værktøjslinjen. Hvis dine samlingsmapper indeholder spillelisten, og du valgte at importere spillelister i samlingsindstillingen, findes dine spillelister allerede i trævisningen. At højreklikke på en spilleliste i trævisningen giver dig flere valg for hvordan spillelisten skal indlæses.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title
+>Lytte til strømme</title>
+
+<para
+>Radiostrømme i &amarok; afspilles ved at tilføje dem fra spillistebrowseren. &amarok; levereres med et udvalg af strømme der kan  udnyttes af lytterne, meget lækre strømme. At dobbeltklikke på eller trække en indgang indlæser den i spillelisten, og når den er der kan den afspilles. For at tilføje egne strømme til spillelistebrowseren, klik på knappen <guibutton
+>Tilføj</guibutton
+> i værktøjslinjen og vælg <guibutton
+>Radiostrømme...</guibutton
+> blandt dropned-feltets alternativer. Efter at have tilføjet en egen strøm kan den også spilles efter den er indlæst i spillelisten.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title
+>Afspilning af lyd-cd</title>
+
+<screenshot>
+	<screeninfo
+>Skærmaftryk af spillelistens menulinje</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>For at afspille en lyd-cd, vælges <menuchoice
+><guimenu
+>Handlinger</guimenu
+><guimenuitem
+>Afspil lyd-CD</guimenuitem
+></menuchoice
+> i spillelistens menulinje. Filsøgeren vil så åbne og vise adskillige mapper og også de cd-spor der er i WAV-format. Træk WAV-filerne hen på spillelisten og klik på <guibutton
+>Spil</guibutton
+>-knappen.</para>
+
+<note
+><para
+>Funktionen Afspil lyd-CD bruger audiocd:/ protokollen og er ikke kompatibel med alle de tilgængelige motorer.</para
+></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title
+>Brænd en lyd-cd</title>
+
+<para
+>At brænde en lyd-cd i &amarok; er nemt tyakket være integrationen i <ulink url="http://www.k3b.org"
+>K3B</ulink
+>. For at brænde et album, åbnes først samlings-browseren. Dernæst, ved at ekspandere en artists indgang i trævisningen, højreklikkes på det album du ønsker at brænde. En popop-menu åbnes, klik på <guilabel
+>Brænd dette album</guilabel
+>, så vil en dialog komme frem der beder dig vælge en tilstand for at brænde. Fra dialogen klikkes på knappen <guibutton
+>Lyd-tilstand</guibutton
+>, så vil K3B blive åbnet og være parat til at brænde albummet.</para>
+
+<note
+><para
+>Brændefunktionaliteten er også tilstede i spillelisten. Højreklik blot på  et punkt i spillelisten og følg <guilabel
+>Brænd</guilabel
+>-menuen for flere cd'er og brændetilvalg.</para
+></note>
+
+</sect1>
+
+
+</chapter>

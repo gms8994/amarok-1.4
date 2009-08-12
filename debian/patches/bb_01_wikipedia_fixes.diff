@@ -1,0 +1,13 @@
+Index: amarok-1.4.10/amarok/src/contextbrowser.cpp
+===================================================================
+--- amarok-1.4.10.orig/amarok/src/contextbrowser.cpp	2009-04-05 16:29:46.000000000 +0200
++++ amarok-1.4.10/amarok/src/contextbrowser.cpp	2009-04-05 16:14:25.000000000 +0200
+@@ -4189,7 +4189,7 @@
+     }
+ 
+     // Ok lets remove the top and bottom parts of the page
+-    m_wiki = m_wiki.mid( m_wiki.find( "<h1 class=\"firstHeading\">" ) );
++    m_wiki = m_wiki.mid( m_wiki.find( "<h1 id=\"firstHeading\" class=\"firstHeading\">" ) );
+     m_wiki = m_wiki.mid( 0, m_wiki.find( "<div class=\"printfooter\">" ) );
+     // Adding back license information
+     m_wiki += copyright;

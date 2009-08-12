@@ -1,0 +1,63 @@
+<chapter id="hidden_features">
+<title
+>Funcionalidades Escondidas do &amarok;</title>
+
+<para
+>Este capítulo irá ajudá-lo a descobrir algumas das funcionalidades do &amarok; que não são das mais visíveis. Este capítulo está dividido em três secções: a Janela do Leitor, a Janela da Lista de Músicas e o Ícone da Bandeja.</para>
+
+<sect1 id="player_hidden">
+<title
+>A Janela do Leitor</title>
+
+<para
+>Os analisadores do leitor do &amarok; podem ser dissociados da janela do leitor. Se carregar em <keycap
+>d</keycap
+> no seu teclado, o analisador activo será aberto como uma janela independente e redimensionável.</para>
+
+</sect1>
+
+
+<sect1 id="playlist_hidden">
+<title
+>A Janela de Lista de Músicas</title>
+<para
+>Com uma vista de olhos sobre a Lista de Músicas, parece que ele teria todas as funcionalidades que você poderia desejar. Contudo, a lista de músicas tem algumas funcionalidades escondidas nele, como:</para>
+
+<para
+>Se mantiver o <keycap
+>Control</keycap
+> carregado enquanto carregar no &RMB;, coloca os ficheiros na lista de espera, pela ordem na qual carregou neles.</para>
+
+<para
+>Se carregar em <keycap
+>Enter</keycap
+> depois de ter feito uma pesquisa na lista de músicas, irá tocar o primeiro item da procura e limpá-la-á.</para>
+
+</sect1>
+
+
+<sect1 id="tray_hidden">
+<title
+>O Ícone da Bandeja</title>
+
+<para
+>O ícone da bandeja de sistema do &amarok;, ainda que pequeno, poderá conter quase as mesmas funcionalidades que a janela do leitor. Você poderá já saber que, se usar a roda do rato sobre o ícone da bandeja irá ajustar o nível de volume, mas será que sabia que:</para>
+
+<para
+>Se carregar no &MMB; no ícone toca ou põe em pausa a faixa actual.</para>
+
+<para
+>Se mantiver o <keycap
+>Shift</keycap
+> carregado enquanto desloca a roda do rato avança ou recua na faixa actual.</para>
+
+<para
+>Se mantiver o <keycap
+>Control</keycap
+> carregado enquanto desloca a roda do rato irá saltar faixas na lista de músicas.</para>
+
+<para
+>Se arrastar e largar itens no ícone da bandeja do sistema irá abrir um menu de contexto que lhe permite escolher entre três opções: Adicionar à Lista de Músicas, Adicionar e Tocar e Colocar a Seguir à Faixa Actual.</para>
+</sect1>
+
+</chapter>

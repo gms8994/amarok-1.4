@@ -1,0 +1,148 @@
+<chapter id="quick-start">
+<title
+>Krótki przewodnik po programie &amarok-mianownik;</title>
+
+<para
+>Słuchanie muzyki powinno być proste. W tym celu stworzyliśmy Asystenta pierwszego uruchomienia, który pokazuje się, kiedy &amarok-mianownik; jest uruchamiany pierwszy raz. Dla tych, którzy chcą później uaktualnić swoją kolekcję albo nie chcą używać asystenta, przygotowaliśmy ten krótki przewodnik po programie. Pomoże Ci on uruchomić i skonfigurować &amarok-biernik; w kilka minut.</para>
+
+
+<sect1 id="collection-building">
+<title
+>Tworzenie kolekcji</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki kolekcji</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Tworzenie własnych kolekcji jest jedną z najważniejszych funkcji &amarok-dopelniacz;. W przeglądarce kolekcji kliknij umieszczoną na pasku narzędzi ikonę <guibutton
+>Konfiguracja katalogów</guibutton
+>. Następnie w oknie <guilabel
+>Konfiguracja kolekcji</guilabel
+> wybierz te katalogi, które chcesz umieścić w swojej kolekcji. Możesz tam również włączyć: <guilabel
+>Skanowanie katalogów rekurencyjnie</guilabel
+>, <guilabel
+>Śledzenie zmian w katalogach</guilabel
+>, oraz <guilabel
+>Importowanie list odtwarzania</guilabel
+> znajdujących się w katalogach kolekcji. Po wybraniu katalogów i zaznaczeniu odpowiednich pól, kliknij przycisk <guibutton
+>OK</guibutton
+>. Po wstępnym skanowaniu, Twoja kolekcja zostanie utworzona i możesz przejść do tworzenia listy odtwarzania.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title
+>Tworzenie listy odtwarzania</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu listy odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Tworzenie listy odtwarzania sprowadza się tylko do przeciągnięcia obiektów z widoku drzewa katalogówprzeglądarki kolekcji do listy odtwarzania. Aby ułatwić wyszukiwanie, u góry zostało umieszczone pole tekstowe do filtrowania kolekcji. Wystarczy rozpocząć wpisywanie, a drzewo katalogów poniżej będzie pokazywało tylko obiekty odpowiadające wpisanym parametrom. Gdy lista odtwarzania już Ci odpowiada, możesz ją zapisać klikając przycisk <guibutton
+>Zapisz listę odtwarzania jako</guibutton
+> w menu listy.</para>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu przeglądarki listy odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Jeżeli posiadasz własne listy odtwarzania, to możesz je dodać w przeglądarce list odtwarzania, klikając przycisk <guibutton
+>Dodaj...</guibutton
+> na pasku narzędzi i wybierając <guibutton
+>Listę odtwarzania...</guibutton
+>. Jeżeli Twoje katalogi kolekcji zawierają listy odtwarzania i zaznaczyłeś opcję Importowanie list odtwarzania przy konfiguracji kolekcji, Twoje listy odtwarzania zostaną wyświetlone w widoku drzewa katalogów. Kliknięcie prawym przyciskiem na liście, daje możliwość wybrania kilku opcji wczytywania list odtwarzania.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title
+>Muzyka przesyłana strumieniowo</title>
+
+<para
+>Strumienie radiowe są odtwarzane poprzez dodanie ich do przeglądarki listy odtwarzania. &amarok-mianownik; jest zaopatrzony w wybrany zestaw strumieni radiowych dla naszych słuchaczy (folder Ciekawe radia). Podwójne kliknięcie lub przeciągnięcie wpisu umieszcza go na liście odtwarzania, skąd może zostać odtworzony. Żeby dodać własne strumienie radiowe do przeglądarki listy odtwarzania, kliknij przycisk <guibutton
+>Dodaj</guibutton
+> na pasku zadań i wybierz <guibutton
+>Strumień radiowy...</guibutton
+> z listy rozwijanej. Po dodaniu może on być odtwarzany poprzez przeniesienie na listę odtwarzania.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title
+>Odtwarzanie płyt audio CD</title>
+
+<screenshot>
+	<screeninfo
+>Zrzut ekranu menu listy odtwarzania</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Aby odtworzyć płytę audio CD, wybierz z menu listy odtwarzania: <menuchoice
+><guimenu
+>Akcje</guimenu
+><guimenuitem
+>Odtwarzaj płytę audio CD</guimenuitem
+></menuchoice
+>. Otwarta zostanie przeglądarka plików pokazująca kilka katalogów oraz utwory w formacie WAV. Przeciągnij pliki WAV na listę odtwarzania i kliknij przycisk <guibutton
+>Odtwarzaj</guibutton
+>.</para>
+
+<note
+><para
+>Funkcja odtwarzania płyty audio CD wykorzystuje protokół audiocd:/ i nie jest zgodna ze wszystkimi dostępnymi modułami dźwiękowymi.</para
+></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title
+>Nagrywanie płyt audio CD</title>
+
+<para
+>Nagrywanie płyt audio CD jest łatwe dzięki integracji &amarok-dopelniacz; z <ulink url="http://www.k3b.org"
+>K3B</ulink
+>. Aby nagrać album, najpierw otwórz przeglądarkę kolekcji. Następnie, rozwijając listę wykonawcy w widoku, kliknij prawym przyciskiem myszy na album, który chcesz nagrać. W menu podręcznym, kliknij <guilabel
+>Nagraj ten album</guilabel
+>, a wyświetlone zostanie okno informujące o wyborze trybu nagrywania. Wybierz <guibutton
+>Tryb audio</guibutton
+>, a otwarty zostanie K3B, gotowy do nagrania albumu.</para>
+
+<note
+><para
+>Funkcja nagrywania jest dostępna także z poziomu listy odtwarzania. Aby uzyskać dostęp do funkcji nagrywania, wystarczy kliknąć prawym przyciskiem myszy na elemencie na liście odtwarzania i wybrać menu <guilabel
+>Nagraj</guilabel
+>.</para
+></note>
+
+</sect1>
+
+
+</chapter>

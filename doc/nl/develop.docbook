@@ -1,0 +1,213 @@
+<chapter id="developers">
+<title
+>Programmeursgids voor &amarok;</title>
+
+<para
+>Als u geïnteresseerd bent in het helpen bij de ontwikkeling van &amarok;, door het bijdragen van code, illustraties, documentaties of iets anders, aarzel dan niet en neem contact met ons op via <email
+>amarok-devel@lists.sourceforge.net</email
+>. Of bezoek ons op IRC, kanaal: #amarok, netwerk: irc.freenode.net.</para>
+
+<para
+>U kunt ook lid worden van onze <ulink url="http://lists.sourceforge.net/lists/listinfo/amarok-devel"
+>malinglist</ulink
+> en de voortgang van de ontwikkeling observeren terwijl u ons van bruikbare commentaren voorziet :)</para>
+
+<para
+>Uw bijdrage of commentaren zijn meer dan welkom. We zien u graag terug!</para>
+
+<sect1 id="source_file_list">
+<title
+>Broncodebestanden van &amarok;</title>
+
+<para
+>De bestanden zijn geordend op alfabetische volgorde., wat niet bruikbaar is voor prioriteitordening. De meest belangrijke bestanden zijn app.cpp, playlist.cpp en playerwindow.cpp.</para>
+
+<informaltable>
+<tgroup cols="2">
+
+<thead>
+<row>
+<entry
+>Bestand</entry>
+<entry
+>Gebruik</entry>
+</row>
+</thead>
+
+<tbody>
+
+<row>
+<entry
+>actionclasses.cpp</entry>
+<entry
+>Levert een QPopupMenu met &amarok;'s configuratieopties, afsluiten en levert een KHelpMenu voor &amarok; om het aanroepen van veel helpmenu's te besparen.</entry>
+</row>
+
+<row>
+<entry
+>amarokconfig.cpp</entry>
+<entry
+>KConfig-XT</entry>
+</row>
+
+<row>
+<entry
+>amarokfilelist.cpp</entry>
+<entry
+>Momenteel niet gebruikt. Zal KFileLists sorteren</entry>
+</row>
+
+<row>
+<entry
+>app.cpp</entry>
+<entry
+>Dit is de kapplication derived class. Het is de parent van veel objecten die fundamenteel zijn voor het draaien van &amarok;, dus engine, dcop, systray, top-level widgets, etc.</entry>
+</row>
+
+<row>
+<entry
+>browserbar.cpp</entry>
+<entry
+>Dit handelt de browsers, de KMultiTabBar-widget en de custom splitter af.</entry>
+</row>
+
+<row>
+<entry
+>browserwin.cpp</entry>
+<entry
+>Dit is slechts een container wigdet voor de playlist, toolbar en browserbar. Uiteindelijk zal deze mogelijk zelfs minder omvatten.</entry>
+</row>
+
+<row>
+<entry
+>collectionbrowser.cpp</entry>
+<entry
+>Werk in uitvering, media library type-dingetje.</entry>
+</row>
+
+<row>
+<entry
+>effectwidget.cpp</entry>
+<entry
+>Widget voor de engine effect-configuratie.</entry>
+</row>
+
+<row>
+<entry
+>enginecontroller.cpp</entry>
+<entry
+>Interface tussen &amarok; en de engine.</entry>
+</row>
+
+<row>
+<entry
+>fht.cpp</entry>
+<entry
+>&amarok;'s uitgebreide en flexibele FHT (voornamelijk FFT) routine voor spectrum analyses.</entry>
+</row>
+
+<row>
+<entry
+>filebrowser.cpp</entry>
+<entry
+>De FileBrowser.</entry>
+</row>
+
+<row>
+<entry
+>kbookmarkhandler.cpp</entry>
+<entry
+>Gebruikt door de FileBrowser.</entry>
+</row>
+
+<row>
+<entry
+>osd.cpp</entry>
+<entry
+>Een mooie On-Screen-Display-class, niet &amarok;-specifiek, zeer flexibel.</entry>
+</row>
+
+<row>
+<entry
+>playerwindow.cpp</entry>
+<entry
+>Dit is de kleine widget met de scrolling text, analyser, en de knoppen play/pause/etc.</entry>
+</row>
+
+<row>
+<entry
+>playlist.cpp</entry>
+<entry
+>De playlist widget.</entry>
+</row>
+
+<row>
+<entry
+>playlistbrowser.cpp</entry>
+<entry
+>De Playlist Browser.</entry>
+</row>
+
+<row>
+<entry
+>playlistitem.cpp</entry>
+<entry
+>Afgeleid van KListViewItem, playlist-items.</entry>
+</row>
+
+<row>
+<entry
+>playlistloader.cpp</entry>
+<entry
+>Zal recursief mappen, KURL's en playlist-bestanden in de PlaylistWidget laden. Is threaded, zodat het op de achtergrond werkt. Zal de engine vragen om te bevestigen dat deze onbekende bestandstypen kan afspelen.</entry>
+</row>
+
+<row>
+<entry
+>pluginmanager.cpp</entry>
+<entry
+>Handelt het &amarok; plugin-systeem af.</entry>
+</row>
+
+<row>
+<entry
+>sliderwidget.cpp</entry>
+<entry
+>De custom Slider widget gebruikt door de PlayerWidget. Kandidaat voor refactoring door hem af te leiden van QSlider.</entry>
+</row>
+
+<row>
+<entry
+>streambrowser.cpp</entry>
+<entry
+>Widget dat stream listings toont die zijn gedownload van metaservers.</entry>
+</row>
+
+<row>
+<entry
+>systray.cpp</entry>
+<entry
+>&amarok;'s systeemvak. Klein en compact.</entry>
+</row>
+
+<row>
+<entry
+>threadweaver.cpp</entry>
+<entry
+>Flexibele class die queue, process, en dispatch results voor <quote
+>Jobs</quote
+> in een aparte thread uitvoert. Wordt gebruikt door diverse componenten van &amarok;.</entry>
+</row>
+
+<row>
+<entry
+>tracktooltip.cpp</entry>
+<entry
+>Niet echt gerelateerd aan de PlaListWidget. Wordt gebruikt door de PlayerWidget om wat informatie over de huidige afgespeelde track te tonen.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</sect1>
+</chapter>

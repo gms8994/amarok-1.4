@@ -1,0 +1,63 @@
+<chapter id="hidden_features">
+<title
+>Funzionalità nascoste di &amarok;</title>
+
+<para
+>Questo capitolo ti aiuterà a trovare alcune caratteristiche di &amarok; che non sono visibili. Il capitolo è diviso in tre sezioni La finestra del lettore, La finestra della playlist e L'icona nel vassoio di sistema.</para>
+
+<sect1 id="player_hidden">
+<title
+>La finestra del lettore</title>
+
+<para
+>Gli analizzatori del lettore di &amarok; possono essere staccati dalla finestra del lettore. Premendo <keycap
+>d</keycap
+> sulla tastiera l'analizzatore attivo si aprirà in una finestra indipendente e ridimensionabile.</para>
+
+</sect1>
+
+
+<sect1 id="playlist_hidden">
+<title
+>La finestra della playlist</title>
+<para
+>Dall'aspetto della playlist sembra che ci siano già tutte le funzionalità che mai avresti voluto avere. La playlist ha delle funzionalità nascoste, tipo:</para>
+
+<para
+>Tenendo premuto <keycap
+>Control</keycap
+> e facendo click con il &RMB; si accodano file nell'ordine in cui sono stati selezionati.</para>
+
+<para
+>Premendo <keycap
+>Invio</keycap
+> dopo aver eseguito una ricerca nella playlist verrà riprodotta la prima traccia e cancellata la ricerca.</para>
+
+</sect1>
+
+
+<sect1 id="tray_hidden">
+<title
+>L'icona nel vassoio di sistema</title>
+
+<para
+>L'icona nel vassoio di sistema di &amarok; anche se piccola fornisce quasi le stesse funzionalità della finestra del lettore. Muovendo la ruota del mouse sull'icona si regola il livello del volume.</para>
+
+<para
+>Facendo click con il pulsante di mezzo del mouse sull'icona si mette in pausa o si riproduce la traccia attuale.</para>
+
+<para
+>Tenendo premuto <keycap
+>Shift</keycap
+> mentre si scrolla la rotella del mouse, si effettuerà una ricerca nella traccia.</para>
+
+<para
+>Tenendo premuto <keycap
+>Control</keycap
+> mentre si scrolla la rotella del mouse si salterà attraverso le tracce nella playlist.</para>
+
+<para
+>Trascinando e rilasciando tracce sull'icona nel vassoio di sistema si aprirà un menu a comparsa che permetterà di scegliere tra tre opzioni: Aggiungi alla playlist, Unisci e riproduci, e Accoda dopo la tracce attuale.</para>
+</sect1>
+
+</chapter>

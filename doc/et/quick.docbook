@@ -1,0 +1,148 @@
+<chapter id="quick-start">
+<title
+>&amarok;i kirtutvustus</title>
+
+<para
+>Muusika kuulamine peab olema lihtne. Selleks pakume me esimese korra nõustajat, mida näeb kohe &amarok;i esimesel käivitamisel. Kui sa aga soovid muusikakogu hiljem luua või lihtsalt ei taha nõustajat kasutada, siis lubab käesolev kiirtutvustus sul hakata &amarok;ki kasutama sõna otseses mõttes mõne minutiga.</para>
+
+
+<sect1 id="collection-building">
+<title
+>Muusikakogu loomine</title>
+
+<screenshot>
+	<screeninfo
+>Muusikakogu sirvija pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Muusikakogu loomine on mõistagi &amarok;i võimaluste ärakasutamiseks olulise tähtsusega samm. Klõpsa muusikakogu sirvijas tööriistaribal asuvale nupule <guibutton
+>Seadista katalooge</guibutton
+>. Seejärel vali dialoogis <guilabel
+>Muusikakogu seadistamine</guilabel
+> kataloogid, mille põhjal sinu muusikakogu luuakse. Siin on ka mõned lisavõimalused: <guilabel
+>Kataloogide rekursiivne uurimine</guilabel
+>, <guilabel
+>Kataloogide muudatuste jälgimine</guilabel
+> ja <guilabel
+>Lugude nimekirjade import</guilabel
+>. Kui oled kataloogid valinud ja märkinud kõik vajalikud kastid, klõpsa nupule <guibutton
+>OK</guibutton
+>. Nüüd kulub veidi aega muusikakogu loomisele, seejärel võid aga hakata lugude nimekirjaga tegelema.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title
+>Esiitusnimekirja loomine</title>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Esitusnimekirja loomine on äärmiselt lihtne: lohista lihtsalt vajalikud elemendid muusikakogu sirvija puuvaatest esitusnimekirja. Elementide lihtsamaks leidmiseks on tekstikast, mille abil saab muusikakogus välja filtreerida just vajalikud elemendid. Hakka sellesse kasti kirjutama ning puuvaade muutub, näidates sulle vastavalt sisestatule leitud tulemusi. Kui oled esitusnimekirjaga valmis saanud, saad selle salvesta klõpsuga nupule <guibutton
+>Salvesta esitusnimekiri kui...</guibutton
+>, mille leiad esitusnimekirja menüüst.</para>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja sirvija pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Kui sul on juba esitusnimekirju, võid need lisada esitusnimekirja sirvijasse, klõpsates tööriistaribal nupule <guibutton
+>Lisa</guibutton
+> ja valides <guibutton
+>Esitusnimekiri...</guibutton
+> Kui sinu muusikakogudes on esitusnimekirju ja sa valisid muusikakogu luues esitusnimekirja importimise võimaluse, on esitusnimekirjad sind juba puuvaates ees ootamas. Puuvaates mõnel esitusnimekirjal hiire parema nupuga klõpsates avaneb kontekstimenüü, milles on teatud võimalused nimekirja laadimiseks.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title
+>Voogude kuulamine</title>
+
+<para
+>Raadiovooge saab &amarok;is esitada neid esitusnimekirja sirvijasse lisades. &amarok; pakub omalt poolt välja valiku vooge, niinimetatud lahedad raadiovood. Tee mõnel neist topeltklõps või lohista esitusnimekirja ja voogu hakatakse kohe esitama. Omaenda raadiovoo lisamiseks esitusnimekirja sirvijasse klõpsa tööriistaribal nupule <guibutton
+>Lisa</guibutton
+> ja vali <guibutton
+>Raadiovoog...</guibutton
+> Oma voo lisamise järel esitusnimekirja sirvijasse hakatakse ka seda aega viitmata mängima.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title
+>Audio CD mängimine</title>
+
+<screenshot>
+	<screeninfo
+>Lugude nimekirja menüüriba pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Audio CD mängimiseks vali lugude nimekirja menüüribal käsk <menuchoice
+><guimenu
+>Toimingud</guimenu
+><guimenuitem
+>Mängi audio CD-d</guimenuitem
+></menuchoice
+>. Avaneb failisirvija, kus on näha mitu kataloogi ning CD rajad WAV-vormingus. Lohista WAV-failid lugude nimekirja ning klõpsa nupule <guibutton
+>Mängi</guibutton
+>.</para>
+
+<note
+><para
+>Audio CD mängimiseks kasutatakse protokolli audiocd:/, mis ei ühildu kõigi saadaolevate mootoritega.</para
+></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title
+>Audio CD kirjutamine</title>
+
+<para
+>Audio CD kirjutamine &amarok;is on väga lihtne tänu põimitusele rakendusega <ulink url="http://www.k3b.org"
+>K3b</ulink
+>. Albumi kirjutamiseks ava kõigepealt muusikakogu sirvija. Seejärel ava puuvaates esineja nimi ja klõpsa hiire parema nupuga albumile, mida soovid CD-le kirjutada. Vali hüpikmenüüst <guilabel
+>Kirjuta see album</guilabel
+>. Ilmub dialoog, mis palub valida kirjutamisrežiimi. Klõpsa seal nupule <guibutton
+>Audio režiim</guibutton
+> ning K3b hakkabki plaati kirjutama.</para>
+
+<note
+><para
+>Kirjutamise võimalust saab kasutada ka lugude nimekirjast. Klõpsa lihtsalt hiire parema nupuga mõnel lugude nimekirja elemendil ning vali menüüst <guilabel
+>Kirjuta</guilabel
+> vajalikud valikud.</para
+></note>
+
+</sect1>
+
+
+</chapter>

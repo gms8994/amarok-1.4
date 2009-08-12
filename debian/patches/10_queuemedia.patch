@@ -1,0 +1,37 @@
+diff -u -Nrua amarok.orig/src/amarokcore/amarokdcophandler.cpp amarok/src/amarokcore/amarokdcophandler.cpp
+--- amarok.orig/src/amarokcore/amarokdcophandler.cpp	2006-10-26 22:40:20.000000000 +0200
++++ amarok/src/amarokcore/amarokdcophandler.cpp	2007-02-08 21:11:45.000000000 +0100
+@@ -585,6 +585,11 @@
+         Playlist::instance()->insertMedia(urls);
+     }
+ 
++    void DcopPlaylistHandler::queueMedia(const KURL &url)
++    {
++        Playlist::instance()->insertMedia(KURL::List( url ), Playlist::Queue);
++    }
++
+     void DcopPlaylistHandler::clearPlaylist()
+     {
+         Playlist::instance()->clear();
+diff -u -Nrua amarok.orig/src/amarokcore/amarokdcophandler.h amarok/src/amarokcore/amarokdcophandler.h
+--- amarok.orig/src/amarokcore/amarokdcophandler.h	2006-10-26 22:40:20.000000000 +0200
++++ amarok/src/amarokcore/amarokdcophandler.h	2007-02-08 21:11:56.000000000 +0100
+@@ -125,6 +125,7 @@
+       virtual int     getTotalTrackCount();
+       virtual QString saveCurrentPlaylist();
+       virtual void    addMedia(const KURL &);
++      virtual void    queueMedia(const KURL &);
+       virtual void    addMediaList(const KURL::List &);
+       virtual void    clearPlaylist();
+       virtual QString currentTrackUniqueId();
+diff -u -Nrua amarok.orig/src/amarokcore/amarokdcopiface.h amarok/src/amarokcore/amarokdcopiface.h
+--- amarok.orig/src/amarokcore/amarokdcopiface.h	2006-10-26 22:40:20.000000000 +0200
++++ amarok/src/amarokcore/amarokdcopiface.h	2007-02-08 21:12:12.000000000 +0100
+@@ -127,6 +127,7 @@
+ 
+    /* These two methods are used by mediacontrol. DO NOT TOUCH! */
+    virtual void addMedia(const KURL &) = 0;                 ///< Add audio media specified by the url.
++   virtual void queueMedia(const KURL &) = 0;                 ///< Queue audio media specified by the url.
+    virtual void addMediaList(const KURL::List &) = 0;       ///< Add some audio media specified by the url.
+    virtual void clearPlaylist() = 0;                        ///< Clears the playlist.
+    virtual QString currentTrackUniqueId() = 0;              ///< Return the current track's unique ID

@@ -1,0 +1,2270 @@
+<chapter id="using-kapp">
+<title
+>Usare &amarok;</title>
+
+<para
+>&amarok; è un lettore audio versatile che offre molteplici possibilità di controllo della collezione musicale. Come ogni altro lettore audio, &amarok; ha una finestra del lettore per controllare le funzioni basilari. Ha anche una finestra della playlist che non è seconda a nessuno. Questa finestra ha più navigatori per creare e navigare l'intera collezione audio.</para>
+
+<para
+>In questo capitolo vedremo come usare tutte le caratteristiche di &amarok; incluso come creare una collezione ed una playlist.</para>
+
+<sect1 id="player-window">
+<title
+>La finestra del lettore</title>
+
+<screenshot>
+	<screeninfo
+>Immagine della Finestra del lettore</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>La finestra del lettore è il primo centro di controllo di &amarok;. Nella parte superiore del lettore c'è un visualizzatore a scorrimento che mostra la traccia o il flusso in riproduzione. Subito sotto il visualizzatore c'è un'area che mostra l'avanzamento temporale della traccia, il bit rate ed il campionamento. Facendo clic con il mouse in questa area, si cambia il tempo della traccia dal totale riprodotto al totale rimanente.</para>
+
+<para
+>La finestra del lettore offre diversi analizzatori audio posizionati sotto il visualizzatore scorrevole. Puoi cambiare analizzatore facendo clic con il pulsante sinistro del mouse nell'area dell'analizzatore.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Suggerimento per l'analizzatore</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>L'analizzatore di &amarok; può essere staccato dalla finestra del lettore. Premendo <keycap
+>d</keycap
+> sulla tastiera, l'analizzatore attivo verrà aperto in una finestra indipendente e ridimensionabile.</para>
+</tip>
+
+<para
+>Sempre sotto il visualizzatore a scorrimento ci sono i pulsanti <guibutton
+>PL</guibutton
+> e <guibutton
+>EQ</guibutton
+>. Il pulsante <guibutton
+>PL</guibutton
+> viene usato per attivare/disattivare velocemente la finestra della playlist, mentre il pulsante <guibutton
+>EQ</guibutton
+> serve per attivare/disattivare l'equalizzatore se il motore usato lo permette.</para>
+
+<para
+>Il resto del lettore include i pulsanti per la riproduzione ed i cursori per il volume e posizione nella traccia. Usa questi cursori per scegliere una diversa posizione del brano oppure il volume desiderato. Usa i pulsanti per la riproduzione per controllare la riproduzione della traccia, oppure per saltare avanti o indietro tra le tracce.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>La finestra dell'equalizzatore</title>
+
+<para
+>L'equalizzatore integrato è facile da usare e funziona con tutti i motori. Sono incluse 17 preimpostazioni che vanno da Classical a Techno, e puoi facilmente crearne di tue. </para>
+
+<para
+>Per accedere all'equalizzatore scegli <menuchoice
+><guimenu
+>Strumenti</guimenu
+><guimenuitem
+>Equalizzatore</guimenuitem
+></menuchoice
+> dalla finestra principale o fai clic sul pulsante <guibutton
+>EQ</guibutton
+> dalla finestra del lettore. Una volta spuntata la casella di selezione <guibutton
+>Abilita equalizzatore</guibutton
+> in questa finestra l'equalizzatore sarà attivo.</para>
+
+<screenshot>
+	<screeninfo
+>Immagine dell'Equalizzatore</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Puoi usare la casella a discesa della finestra per scegliere una delle preimpostazioni predefinite. Qui puoi inoltre regolare i singoli cursori. Lo spostamento di un cursore passerà automaticamente alla preimpostazione Manuale per cui sei libero di fare delle prove con i cursori fino a trovare la giusta combinazione. Quando sei pronto a salvare, fai clic sull'icona <guiicon
+>Aggiungi nuova preimpostazione</guiicon
+> alla destra della casella a discesa. Se passi ad un'altra preimpostazione senza salvare perderai le tue modifiche. Oltre al salvataggio puoi anche fare clic sull'icona <guiicon
+>Gestisci preimpostazioni</guiicon
+>, alla destra dell'elenco a discesa, per eliminare o rinominare le preimpostazioni.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>La finestra della playlist</title>
+
+<screenshot>
+	<screeninfo
+>Immagine della Finestra della playlist</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La playlist di &amarok; è la più avanzata di qualsiasi riproduttore audio per &kde;. Offre molte caratteristiche che non si trovano in altri lettori. Non devi sentirti intimidito dalle potenzialità della playlist poiché è in ogni caso la più facile da usare.</para>
+
+<para
+>La finestra della playlist può essere suddivisa in due sezioni principali, a sinistra c'è la barra laterale dove si trovano alcune delle eccellenti caratteristiche della playlist come il <link linkend="context-browser"
+>Navigatore per contesti</link
+>. A destra della finestra c'è la playlist vera e propria. È semplice da usare e allo stesso tempo abbastanza potente anche per gli utenti più avanzati.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Il Navigatore della barra laterale</title>
+
+<para
+>I navigatori di &amarok; ti permettono di accedere alla tua collezione musicale in molti modi diversi. Essi sono posizionati sul lato sinistro della finestra, e ognuno è rappresentato da una scheda che riporta il proprio nome. Il clic su una scheda rende visibile il navigatore selezionato. Se un navigatore è attivo, un nuovo clic sulla sua scheda contrarrà il navigatore. Solo un navigatore alla volta può essere visibile, nonostante ciò puoi trascinare tracce da una scheda all'altra rimanendo sulla scheda di destinazione per 1 secondo fino a che essa diventa visibile. Puoi inoltre nascondere i navigatori semplicemente facendo clic con il tasto destro su una qualsiasi scheda e (de)selezionando il(i) navigatore(i) desiderato(i) nel menu contestuale fornito.</para>
+
+<screenshot>
+	<screeninfo
+>Immagine del Navigatore di selezione</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>Navigatore per contesti</title>
+
+<para
+>Il navigatore per contesti visualizza diverse informazioni relative alla traccia attualmente riprodotta. Il suo aspetto può essere modificato usando temi conosciuti come <link linkend="configure-appearance"
+>Stili navigatore per contesti</link
+>. È organizzato in tre schede: <quote
+>Musica</quote
+>, <quote
+>Testi</quote
+>, e <quote
+>Artista</quote
+>. Queste schede, la cui funzione sarà spiegata in maniera più completa in seguito, fornisce informazioni su differenti aspetti della traccia che si sta ascoltando.</para>
+
+<note
+><para
+>Gli utenti delle precedenti versioni di &amarok; noteranno la mancanza della scheda <quote
+>Home</quote
+>. Le informazioni fornite da questa scheda sono state redistribuite sull'interfaccia di &amarok;. Informazioni analoghe possono essere trovate principalmente nella finestra Statistiche, accessibile da <menuchoice
+><guimenu
+>Strumenti</guimenu
+><guimenuitem
+>Statistiche</guimenuitem
+></menuchoice
+>.</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Immagine del navigatore per contesti</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>La scheda Musica</title>
+
+<para
+>La scheda <guilabel
+>Musica</guilabel
+> offre informazioni sulla traccia in riproduzione, l'artista e l'album.</para>
+
+<para
+>La prima lista in questa scheda serve a fornire informazioni sulla traccia. Il titolo della lista elenca il nome della traccia, il nome dell'artista e l'album. Dentro la lista si troverà anche la copertina dell'album per la traccia. Vicino all'immagine si troverà l'icona di <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+>. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Premere questa icona per effettuare una ricerca su MusicBrainz della traccia.</para>
+
+<para
+>Sotto l'icona MusicBrainz ci sono ulteriori informazioni sulla traccia attuale. Qui troverai il numero totale delle volte che la traccia è stata riprodotta, il punteggio attuale della traccia, la prima e l'ultima volta in cui la traccia è stata riprodotta.</para>
+
+<tip
+><para
+>Per visualizzare le copertine degli album nel navigatore per contesti, queste dovranno trovarsi nella stessa cartella della tracce in ascolto. I formati supportati sono .jpg, .jpeg, .gif, e .png. Le immagini possono essere nominate in qualsiasi maniera, ma quelle con la parola <quote
+>front</quote
+> (fronte, davanti) nel nome, verranno usate con preferenza. Il navigatore per contesti userà anche copertine scaricate con il gestore delle copertine, oppure immagini incluse nei tag ID3v2.</para
+></tip>
+
+<para
+>La prossima lista, <guilabel
+>Brani suggeriti</guilabel
+>, elenca diverse tracce suggerite per l'ascolto. Fare clic su una qualsiasi per riprodurla.</para>
+
+<para
+>Sotto <guilabel
+>Brani suggeriti</guilabel
+> c'è <guilabel
+>Tracce preferite per artista</guilabel
+>. Questa lista mostra le cinque tracce con il punteggio più elevato dell'artista della traccia attuale.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Puoi regolare la quantità di informazioni mostrate nella scheda <guilabel
+>Musica</guilabel
+> facendo clic in un punto qualsiasi della scheda stessa e commutando gli elementi sul menu contestuale.</para
+></tip>
+
+<para
+>L'ultima lista, <guilabel
+>Album per artista</guilabel
+>, mostra tutti gli album dell'artista della traccia attuale che sono presenti nella collezione. Facendo clic su un album qualsiasi nella lista, si espanderà l'album per mostrarne i contenuti.</para>
+
+<tip
+><para
+>Si può fare clic sulle tracce in qualsiasi lista per cominciarne la riproduzione. Si può anche fare clic con il pulsante destro su album e tracce per far comparire un menu in cui scegliere numerosi modi di riproduzione o per accodare la traccia o l'album.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>La scheda Testi</title>
+
+<para
+>La scheda <guilabel
+>Testi</guilabel
+> scarica il testo per il brano attualmente riprodotto da uno dei siti web supportati. Questa funzionalità è flessibile, ed è possibile scrivere script per scaricare testi da diversi siti. Vedi il capitolo Scrittura di script. Quando fai clic sulla scheda Testi, &amarok;  prova a scaricare il testo per la traccia attuale. Se non ci sono script lyrics in esecuzione ti sarà data la possibilità di selezionarne uno.</para>
+
+<screenshot>
+	<screeninfo
+>Immagine della scheda Testi</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>Puoi eseguire diverse azioni sulla scheda Testi, usando i pulsanti della sua barra degli strumenti.</para>
+
+<para
+>Il pulsante <guibutton
+>Aggiungi</guibutton
+> apre (in un browser esterno) la pagina <quote
+>Add Lyrics</quote
+> sul sito web dei testi, a seconda dello script che esegui.</para>
+
+<para
+>Il pulsante <guibutton
+>Modifica</guibutton
+> ti permette di modificare il testo per la traccia attuale. Essi vengono conservati nel database della collezione di &amarok;. Ciò non richiede che uno script lyrics sia attivo.</para>
+
+<para
+>Il pulsante <guibutton
+>Cerca</guibutton
+> esegue una ricerca su google.com (in un browser esterno) per i testi della traccia attuale.</para>
+
+<para
+>Il pulsante <guibutton
+>Aggiorna</guibutton
+> cancella i testi in cache per la traccia attuale, e cerca nuovamente.</para>
+
+<para
+><guibutton
+>Apri in un browser esterno</guibutton
+> visualizza il testo della traccia attuale nel tuo browser esterno.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>La scheda Artista</title>
+
+<screenshot>
+	<screeninfo
+>Immagine della scheda Artista</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La scheda Artista mostra l'articolo di Wikipedia riguardante l'artista attualmente riprodotto. La barra degli strumenti contiene:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Pulsanti di navigazione per spostarsi in avanti e indietro</para>
+</listitem>
+<listitem>
+<para
+>Pulsanti di pagina per saltare alla pagina di Wikipedia dell'artista, dell'album o della traccia,</para>
+</listitem>
+<listitem>
+<para
+>Un pulsante per aprire la pagina attuale in un browser esterno</para>
+</listitem>
+<listitem>
+<para
+>Un pulsante di configurazione per impostare la localizzazione di Wikipedia</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Navigatore della collezione</title>
+
+<screenshot>
+	<screeninfo
+>Immagine del Navigatore della collezione</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Il navigatore Collezione è il cuore di &amarok;. L'intera collezione è visualizzabile qui e ordinata usando diversi criteri di raggruppamento. All'interno di ogni raggruppamento, tutto è in ordine alfabetico, prima simboli e numeri, senza discriminazione tra maiuscole e minuscole. In ogni metodo di raggruppamento, le tracce che hanno artista e/o album sconosciuto vengono raggruppati sempre all'inizio della collezione, sotto <quote
+>Sconosciuti</quote
+>. Nonostante i numeri di traccia non siano mostrati, le tracce sono elencate nell'ordine in cui sono presenti nell'album. Il clic sull'intestazione dell'elenco della collezione inverte l'ordine. Il clic del tasto sinistro sull'icona di espansione alla sinistra di ogni voce della collezione espanderà questa voce.</para>
+
+<para
+>Il menu a discesa <quote
+>Raggruppa per</quote
+> ti permette di raggruppare la collezione in diversi modi:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Raggruppa per</guimenu
+><guimenuitem
+>Artista</guimenuitem
+></menuchoice
+> - Ordine solo di primo livello, ogni traccia viene raggruppata sotto il suo artista, senza tener conto dell'album o del genere.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Raggruppa per</guimenu
+><guimenuitem
+>Artista/Album</guimenuitem
+></menuchoice
+> - Le tracce sono ordinate per artista, e quindi al di sotto, ordinate per album. Se vuoi vedere le compilation o album di colonne sonore, questo è il miglior modo per visualizzare la tua collezione - questi album vengono raggruppati all'inizio dell'elenco, sotto <quote
+>Artisti vari</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Raggruppa per</guimenu
+><guimenuitem
+>Artista/Anno-Album</guimenuitem
+></menuchoice
+> - Ordina per artista, con gli album in ordine discendente di anno (prima i più recenti). Se il tag <quote
+>Anno</quote
+> non è impostato per una traccia, in maniera predefinita <quote
+>0 - nome album</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Raggruppa per</guimenu
+><guimenuitem
+>Album</guimenuitem
+></menuchoice
+> - Ogni album nella tua collezione è visualizzato in ordine alfabetico in base al nome dell'album, senza tener conto dell'artista.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Raggruppa per</guimenu
+><guimenuitem
+>Genere/Artista</guimenuitem
+></menuchoice
+> - Le tracce sono raggruppare in accordo al loro tag genere, poi per artista.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Raggruppa per</guimenu
+><guimenuitem
+>Genere/Artista/Album</guimenuitem
+></menuchoice
+> - Stesso del precedente, solo con tracce ordinate per album, al di sotto di ogni artista.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>Gli elementi rimanenti nel menu a discesa ti permettono di personalizzare il raggruppamento con una combinazione dei precedenti.</para>
+
+<para
+>Le successive due icone sulla barra degli strumenti modificano il modo in cui la collezione è visualizzata. La prima Vista ad albero, è la vista predefinita, e quella che probabilmente vedrai più spesso. Il successivo pulsante abilita la Vista compatta, che appare inizialmente vuota. La scrittura di termini di ricerca nella casella di testo immediatamente sotto la barra degli strumenti inizierà a popolare la tua collezione, la quale può essere ordinata in una varietà di modi, facendo clic con il tasto destro sulle intestazioni delle colonne. Il clic con il tasto destro sulle intestazioni delle colonne mostrerà un menu contestuale che ti permetterà di cambiare le colonne mostrate.</para>
+
+<para
+>L'ultima icona nella barra degli strumenti ti consente di cambiare le impostazioni della collezione. Nota che se modifichi una qualunque cartella, &amarok; effettuerà automaticamente una nuova scansione della tua collezione - ciò potrebbe richiede del tempo se hai molte tracce.</para>
+
+<para
+>Immediatamente sotto la barra degli strumenti c'è un filtro di ricerca, che agisce allo stesso modo sia nella modalità compatta che in quella ad albero. Vedi la sezione Playlist del manuale per ulteriori dettagli sulle tecniche di ricerca.</para>
+
+<para
+>Sotto il filtro di ricerca, un altro menu a discesa ti consente di vedere le tracce aggiunte più di recente alla tua collezione. Sono disponibili diversi periodi di tempo, che vanno dalle ultime 24 ore, a 1 anno, o l'intera collezione.</para>
+
+<sect3 id="collection-rmb">
+<title
+>Opzioni &RMB; del navigatore della collezione</title>
+<para
+>Le seguenti opzioni sono accessibili facendo clic con il &RMB; sulle voci nel navigatore della collezione.</para>
+
+<para
+><guilabel
+>Carica</guilabel
+> - Cancella la playlist attuale e aggiunge le tracce come tracce iniziali, in ordine.</para>
+
+<para
+><guilabel
+>Aggiungi alla playlist</guilabel
+> - Aggiunge le tracce selezionate alla fine della playlist attuale. Il doppio clic su una singola traccia nella collezione produce lo stesso risultato.</para>
+
+<para
+><guilabel
+>Accoda tracce</guilabel
+> - Aggiunge le tracce selezionate al coda per la successiva riproduzione.</para>
+
+<para
+><guilabel
+>Salva come playlist</guilabel
+> - Salva le tracce selezionate come una playlist. Ti verrà richiesto un nome con il quale salvarla.</para>
+
+<para
+><guilabel
+>Aggiungi alla coda di trasferimento del dispositivo multimediale</guilabel
+> - Aggiunge le tracce ad una coda, pronte per essere trasferite ad un dispositivo multimediale, quando un dispositivo è collegato. Vedi la sezione <link linkend="media-device-browser"
+>Navigatore dispositivo multimediale</link
+> per ulteriori dettagli.</para>
+
+<para
+><guilabel
+>Masterizza tutte le tracce di questo artista/Masterizza CD</guilabel
+> - Invia le tracce a &k3b; per la scrittura di un CD audio o di dati. Se &k3b; non è installato, questa opzione non è selezionabile.</para>
+
+<para
+><guilabel
+>Scarica copertina</guilabel
+> - Cerca su amazon.com la copertina per l'album.</para>
+
+<para
+><guilabel
+>Modifica informazioni per (n) tracce</guilabel
+> - Apre la finestra <guilabel
+>Informazioni traccia</guilabel
+> e permette di modificare i tag di una o più tracce. </para>
+
+<para
+><guilabel
+>Gestisci i file</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Organizza (n) file</guilabel
+> - Apre la finestra <guilabel
+>Organizza i file della collezione</guilabel
+>. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>Elimina (n) file</guilabel
+> - Fa apparire una finestra di conferma che chiede se vuoi eliminare permanentemente le tracce selezionate dal tuo computer.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Segna come compilation</guilabel
+> - Imposta l'album selezionato come compilation, per essere elencato sotto <quote
+>Artisti vari</quote
+></para>
+
+<para
+><guilabel
+>Rimuovi segno di compilation</guilabel
+> - Cambia un album segnato come compilation in un album normale, e lo sposta da <quote
+>Artisti vari</quote
+>, alla normale elencazione per artista.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Navigatore della playlist</title>
+
+<screenshot>
+	<screeninfo
+>Immagine del navigatore della playlist</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Il navigatore della playlist è usato per gestire facilmente le tue svariate playlist. Gestisce anche playlist compatte che lo rendono il più geniale sulla piazza.</para>
+
+<para
+>Il navigatore della playlist è diviso in due sezioni, Playlist e Playlist veloci. La sezione Playlist è riservata alle playlist personali. Si possono vedere i contenuti delle playlist in una lista premendo il simbolo <quote
+>+</quote
+> che si trova vicino ad ogni playlist elencata. Quando si guarda una playlist nella vista ad elenco, si possono aggiungerci nuovi file trascinandoli dentro. Quando si trova una playlist da ascoltare, fare un doppio clic oppure premere la <keycap
+>Barra spaziatrice</keycap
+> per caricarla. Le altre scorciatoie di tastiera del navigatore della playlist possono essere trovate nella sezione <link linkend="keybd-shortcuts"
+>Scorciatorie di tastiera</link
+>. </para>
+
+<tip
+><para
+>Quando salvi una nuova playlist dalla finestra della playlist, viene automaticamente aggiunta nella sezione Playlist.</para
+></tip>
+
+<para
+>La sezione in basso del navigatore del navigatore della playlist riguarda le playlist veloci. Queste usano il database interno di &amarok; per creare al volo utili playlist. Le playlist veloci includono quanto segue:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Tutta la collezione: una playlist con tutte le tracce contenute nelle collezione configurata.</para>
+</listitem>
+
+<listitem>
+<para
+>Tracce preferite: playlist multiple delle quindici tracce con il punteggio più elevato in una lista per artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Più riprodotte: playlist multiple delle quindici tracce più riprodotte in una lista per artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Tracce più recenti: playlist multiple delle quindici tracce aggiunte più di recente in una lista per artista.</para>
+</listitem>
+
+<listitem>
+<para
+>L'ultima riprodotta: una playlist delle quindici tracce riprodotte più di recente nella tua collezione.</para>
+</listitem>
+
+<listitem>
+<para
+>Mai eseguite: una playlist delle tracce della tua collezione che non sono mai riprodotte.</para>
+</listitem>
+
+<listitem>
+<para
+>Generi: playlist multiple in una lista ordinata per genere.</para>
+</listitem>
+
+<listitem>
+<para
+>Sono possibili anche playlist veloci definite dall'utente. Facendo clic sul pulsante <guibutton
+>Nuova playlist veloce</guibutton
+> verrà aperta una finestra di dialogo per configurare una playlist veloce rispondente ai tuoi criteri.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Navigatore dispositivo multimediale</title>
+
+<screenshot>
+	<screeninfo
+>Immagine del Navigatore dispositivo multimediale</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Il pannello del dispositivo multimediale è utilizzato per la connessione dell'iPod ad &amarok;. Per utilizzare l'iPod con il navigatore dispositivo multimediale, l'iPod dev'essere montato in /mnt/ipod prima di avviare &amarok;. Una volta avviato &amarok;, si troveranno le tracce dell'iPod elencate per artista in una lista all'inizio del navigatore.</para>
+
+<para
+>Per aggiungere tracce all'iPod, bisogna trascinarle dalla playlist e rilasciarle nella lista Artisti. Una volta terminata l'operazione, bisogna fare clic sul pulsante <guibutton
+>Trasferisci</guibutton
+> per inviarle all'iPod. Finito il trasferimento, chiudere &amarok; e fare l'unmount dell'iPod.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Navigatore file</title>
+
+<screenshot>
+	<screeninfo
+>Immagine del Navigatore file</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Il pannello del navigatore file è simile ad un piccolo Konqueror inserito nella playlist. Puoi usarlo per navigare l'intero sistema alla ricerca di file audio da aggiungere alla playlist. In cima al navigatore file c'è una barra degli strumenti con pulsanti per muoversi Su, Indietro ed Avanti nel sistema. Ci sono anche i pulsanti Home, Ricarica, Vista a colonne e ad albero. C'è anche un pulsante Segnalibri per creare segnalibri per le zone preferite del sistema.</para>
+
+<para
+>Sotto la barra degli strumenti c'è una pratica barra di ricerca per ricercare per nome di file. Troverai questa barra utile per cercare in cartelle con parecchi file perché la ricerca verrà effettuata mentre digiti lasciando solo i nome dei file rilevanti nell'elenco.</para>
+
+<para
+>Sotto la barra degli strumenti c'è un campo per gli indirizzi per accedere ai file sonori digitando direttamente un URL. Per esempio scrivendo <filename class="directory"
+>tar:/home/mike/music.tar.gz</filename
+> e premendo <keycap
+>Invio</keycap
+> sulla tastiera, potrai accedere ai file musicali in un file compresso con tar. Poi potrai trascinare i file desiderati dal file tar e rilasciarli nella playlist.</para>
+
+<tip
+><para
+>Quando la playlist si è allungata oltre la schermata, diventa difficile aggiungere file semplicemente trascinandoli dentro. Può aiutare tenere premuto il pulsante <keycap
+>Shift</keycap
+> sulla tastiera mentre si rilasciano i file: saranno aggiunti alla fine della playlist anziché essere inseriti alla posizione su cui sono stati rilasciati.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>La playlist</title>
+
+<screenshot>
+	<screeninfo
+>Immagine della Playlist</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La playlist contiene tutte le tracce accodate per la riproduzione. Si può cambiare la sequenza trascinandole con il mouse e rilasciandole nella posizione desiderata. Sopra la playlist c'è un campo per l'immissione di testo in cui si può inserire un filtro di ricerca. Non appena si inserisce una lettera, la playlist verrà ridisposta a mostrare solo le voci contenenti i caratteri immessi. Per terminare l'azione del filtro, premere semplicemente <keycap
+>Backspace</keycap
+> (tasto di cancellazione a sinistra) fino a svuotare il campo.</para>
+
+<tip
+><para
+>Avanzato, è inoltre disponibile una sintassi alla Google.</para>
+
+<para
+>Normalmente, quando si inseriscono parole separate da spazi, verranno cercati risultati contenenti tutte le parole. Per esempio: uno due tre, verranno cercati risultati contenenti le parole uno, due e tre.</para>
+
+<para
+>Tuttavia, si può inserire OR tra le parole per cercare risultati che ne contengano una o l'altra, come questo: uno OR due OR tre. In questo modo, verranno cercati risultati che contengano o uno, o due, o tre (od una loro combinazione).</para>
+
+<para
+>So possono anche usare le virgolette per cercare termini con spazi tra loro: "Mike Oldfield". Questo cercherà risultati contenenti Mike Oldfield, ma non, per esempio, risultati contenenti Mike J. Oldfield.</para>
+
+<para
+>In modo predefinito, la ricerca verrà fatta in tutte le colonne della playlist attualmente visibili. Tuttavia, si può usare colonna:termine per specificare la colonna in cui cercare: titolo:amarok (questa può essere solo una colonna non visibile). In questo caso, verranno cercati solo risultati che contengono la parola amarok nel titolo, e non, per esempio, nell'album.</para>
+
+<para
+>Quando si specifica una colonna in cui cercare, si può anche cercare risultati minori di o maggiori di un termine, per esempio: score:
+>50, che cercherà risultati con un punteggio superiore a 50.</para>
+
+<para
+>Per specificare un termine che non si desidera abbinare alla ricerca, si può inserire un segno meno (-) prima: -termine, per cercare qualsiasi cosa che non contenga la parola specificata.</para>
+
+<para
+>Si può combinare quanto sopra a piacimento, per esempio: "Mike Oldfield" OR score:
+> 50 -comment:bad. Questo cercherà qualsiasi cosa contenga Mike Oldfield oppure abbia un punteggio maggiore di 50, ma escluderà i risultati il cui commento contenga "bad".</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Suggerimento per la playlist</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Puoi selezionare tracce da riprodurre in un ordine specifico premendo <keycap
+>Ctrl</keycap
+> ed il &RMB; sulle tracce nell'ordine di riproduzione desiderato. Le tracce verranno marcate con un numero progressivo a seconda dell'ordine di selezione.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>La barra degli strumenti della playlist</title>
+
+<screenshot>
+	<screeninfo
+>Immagine della Barra degli strumenti della playlist</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>Il menu Azioni</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Azioni</guimenu
+> <guimenuitem
+>Riproduci media...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre una finestra di dialogo per l'immissione di un URL.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Azioni</guimenu
+> <guimenuitem
+>Riproduci cd audio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ti permette di visualizzare e riprodurre un cd audio usando il protocollo audiocd:/.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Azioni</guimenu
+> <guimenuitem
+>Traccia precedente</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Passa alla traccia precedente nella playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Azioni</guimenu
+> <guimenuitem
+>Pausa</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Mette in pausa la riproduzione della traccia attuale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Azioni</guimenu
+> <guimenuitem
+>Stop</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ferma la riproduzione.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Azioni</guimenu
+> <guimenuitem
+>Traccia successiva</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Passa alla traccia successiva nella playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Azioni</guimenu
+> <guimenuitem
+>Chiudi</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Chiude &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>Il menu Playlist</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Aggiungi media...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre una finestra di dialogo per aggiungere media alla playlist attuale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Salva playlist come...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre una finestra di dialogo per salvare la playlist attuale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Annulla</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Annulla l'ultimo cambiamento alla playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Ripeti</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ripristina i cambiamenti fatti da Annulla.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Pulisci</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Pulisce la playlist attuale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Mescola</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Mescola l'ordine della playlist attuale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Vai alla traccia attuale</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Sposta la playlist alla traccia corrente.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Accoda tracce selezionate</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Accoda tutte le tracce selezionate nella playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Rimuovi duplicati &amp; elementi mancanti</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Rimuove tutte le tracce duplicate o elementi mancanti nell'attuale playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Playlist</guimenu
+> <guimenuitem
+>Seleziona tutti</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Seleziona tutte le tracce nella playlist attuale.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>Il menu Strumenti</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Gestore copertine</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre il <link linkend="cover-manager"
+>Gestore copertine</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Gestore code</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre il <link linkend="queue_manager"
+>Gestore code</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Assistente del primo avvio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre l'Assistente del primo avvio.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Visualizzazioni</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la finestra di dialogo delle <link linkend="visualizations"
+>visualizzazioni</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Equalizzatore</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la <link linkend="equalizer"
+>Finestra dell'equalizzatore</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Script</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre il <link linkend="script_manager"
+>Gestore degli script</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Analizza nuovamente la collezione</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avvia una scansione manuale delle cartelle della collezione.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Il menu Impostazioni</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Nascondi barra dei menu</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Nasconde la <link linkend="menubar"
+>Barra dei menu</link
+> nella finestra della playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Nascondi barra degli strumenti</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Nasconde la <link linkend="toolbar"
+>Barra degli strumenti</link
+> nella finestra della playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Nascondi finestra lettore</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Nasconde la <link linkend="player-window"
+>Finestra del lettore</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Ripeti traccia</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Riproduce nuovamente la traccia attuale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Ripeti playlist</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Riproduce nuovamente la playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Modalità casuale</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Riproduce casualmente le tracce nella playlist.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Modalità dinamica</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inizia la modalità dinamica della playlist.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura scorciatoie globali...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la finestra di configurazione delle scorciatoie globali.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura scorciatoie...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la finestra di configurazione delle scorciatoie di &amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura le barre degli strumenti...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la finestra di configurazione della barra degli strumenti di &amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura Amarok...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la finestra di configurazione di &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>Il menu Aiuto</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aiuto</guimenu
+> <guimenuitem
+>Manuale di Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre questa documentazione.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Shift</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Aiuto</guimenu
+> <guimenuitem
+>Che cos'è?</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Attiva il cursore Che cos'è?</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aiuto</guimenu
+> <guimenuitem
+>Segnala bug...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avvia lo strumento di segnalazione bug.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aiuto</guimenu
+> <guimenuitem
+>Informazioni su Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la finestra di informazioni su Amarok.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aiuto</guimenu
+> <guimenuitem
+>Informazioni su KDE</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Apre la finestra di informazioni su KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>La barra degli strumenti della playlist</title>
+
+<screenshot>
+	<screeninfo
+>Immagine della barra degli strumenti della playlist</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La La barra degli strumenti della finestra della playlist si trova in basso nella finestra. Contiene pulsanti per molte delle azioni della playlist. A destra della barra degli strumenti si trova il pulsante <guibutton
+>Aggiungi media</guibutton
+>, che apre una finestra di dialogo per aggiungere i file multimediali alla playlist. Di seguito ci sono i pulsanti <guibutton
+>Salva playlist</guibutton
+>, <guibutton
+>Elimina playlist</guibutton
+> e <guibutton
+>Aggiorna playlist</guibutton
+>. Usa questi pulsanti per gestire la playlist.</para>
+
+<para
+>Il prossimi pulsanti sono <guimenuitem
+>Annulla</guimenuitem
+> e <guimenuitem
+>Ripeti</guimenuitem
+>. Possono essere usati per annullare e ripetere qualsiasi modifica fatta alla playlist.</para>
+
+<para
+>Nel centro della barra degli strumenti si trova un analizzatore unico e ridimensionabile. Si può modificarne la frequenza di aggiornamento usando il menu &RMB; e selezionando quella desiderata.</para>
+
+<para
+>L'ultimo pulsante nella barra degli strumenti è il pulsante <guimenuitem
+>Menu</guimenuitem
+>. Apre lo stesso menu che si apre con il &RMB; nella finestra del lettore. Può essere usato per accedere alle opzioni di configurazione di &amarok;.</para>
+
+<tip
+><para
+>Ci sono molti altri pulsanti disponibili per la barra degli strumenti inclusi pulsanti per controllare il lettore ed un cursore per il volume. Si può configurare quali pulsanti debbano essere nella barra degli strumenti facendo clic sul pulsante <guibutton
+>Menu</guibutton
+> e selezionando  <guimenuitem
+>Configura barre degli strumenti...</guimenuitem
+></para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>La barra di stato della playlist</title>
+
+<screenshot>
+	<screeninfo
+>Immagine della Barra di stato</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La barra di stato fornisce informazioni veloci ed utili sulla playlist. Mostra il titolo della traccia attuale, il numero delle tracce nella playlist con la durata totale della playlist, lo stato Casuale e Ripeti, un piccolo cursore per la posizione nella traccia, ed il tempo attuale di riproduzione della traccia. Puoi cambiare lo stato Casuale e Ripeti facendo doppio clic sulle rispettive aree nella barra di stato.</para>
+
+<para
+>Si può anche scegliere di non avere la barra di stato con l'opzione <guilabel
+>Mostra barra di stato</guilabel
+> nella finestra di dialogo <link linkend="general-options"
+>Configura opzioni generali</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>Il menu del pulsante destro del mouse</title>
+
+<screenshot>
+	<screeninfo
+>Immagine del menu &RMB;</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Il menu &RMB; può essere fatto apparire premendo il pulsante destro nella finestra del lettore, oppure premendo il pulsante <guibutton
+>/gui</guibutton
+> nella finestra della playlist. È usato per accedere a tutte le opzioni di &amarok;.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ripeti traccia</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Questa opzione, quando abilitata, riproduce nuovamente la traccia attuale.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ripeti playlist</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Questa opzione, quando abilitata, riproduce nuovamente l'intera playlist.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Modalità casuale</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Questa opzione, quando abilitata, farà riprodurre casualmente le tracce nella playlist.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Accoda suggerimenti</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Accoda i brani suggeriti nel navigatore per contesti alla playlist attuale.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Gestore copertine</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Apre il <link linkend="cover-manager"
+>Gestore copertine</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Assistente del primo avvio</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Selezionando questa opzione si attiverà l'assistente del primo avvio per la configurazione iniziale di &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualizzazioni...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Scegliendo questa opzione si aprirà le <link linkend="visualizations"
+>Finestra delle visualizzazioni</link
+> in cui scegliere quali usare in &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Equalizzatore</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Apre la <link linkend="equalizer"
+>Finestra dell'equalizzatore</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Il Gestore degli script</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Apre la finestra di dialogo del gestore degli script.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configura le barre degli strumenti...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Selezionando questa opzione verrà aperta una finestra per la configurazione della <link linkend="toolbar"
+>Barra degli strumenti della playlist</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configura le scorciatoie...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Facendo clic su questa opzione si apre una finestra di dialogo per configurare le <link linkend="keybd-shortcuts"
+>Scorciatorie di &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configura le scorciatoie globali...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Facendo clic su questa opzione si apre una finestra di dialogo per configurare le <link linkend="keybd-shortcuts"
+>Scorciatorie globali di &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configura Amarok globalmente...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Facendo clic su questa opzione apre la finestra di dialogo <link linkend="configuring-kapp"
+>Configurazione di &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aiuto</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Questa voce fa accedere ad un sottomenu con collegamenti a questo documento e ad altre informazioni su &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Chiudi</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Un clic su questa voce chiuderà &amarok;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Gestore copertine album</title>
+
+<screenshot>
+	<screeninfo
+>Gestore copertine album</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Il gestore copertine album è uno strumento utile per la gestione delle copertine degli album. Puoi avviarlo selezionando <menuchoice
+><guimenu
+>Azioni</guimenu
+><guimenuitem
+>Gestore copertine</guimenuitem
+></menuchoice
+> nel navigatore di collezioni.</para>
+
+<para
+>Il gestore copertine offre una lista di tutti gli album nella tua collezione. Puoi vedere tutte le copertine degli album di un artista facendo clic sull'artista nella lista.</para>
+
+<para
+>Il gestore copertine fornisce una barra per la ricerca nelle copertine degli album. Effettuerà la ricerca seguendo i criteri immessi nella barra.</para>
+
+<para
+>Il menu <guimenuitem
+>Visualizza</guimenuitem
+> permette di scegliere cosa verrà mostrato nel gestore copertine. Puoi scegliere tra:</para>
+
+<para
+><guimenuitem
+>Tutti gli album</guimenuitem
+> che mostra tutti gli album nella tua collezione.</para>
+
+<para
+><guimenuitem
+>Album con copertina</guimenuitem
+> che mostra solo gli album che hanno immagini di copertina.</para>
+
+<para
+><guimenuitem
+>Album senza copertina</guimenuitem
+> che mostra solo gli album senza immagini di copertina.</para>
+
+<para
+>Il pulsante <guimenuitem
+>Scarica le copertine mancanti</guimenuitem
+> viene usato per scaricare le copertine per gli album che ancora non ne hanno.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>Il Gestore code</title>
+
+<screenshot>
+	<screeninfo
+>Immagine del Gestore code</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Il gestore code fa la sua grande entrata in &amarok; 1.3. Questa caratteristica è stata creata per dare la possibilità all'utente di avere maggior controllo sulle sue playlist. Dopo aver accodato una traccia, verrà mostrato al suo lato un numero nel gestore code. Questo numero indica l'ordine in cui &amarok; riprodurrà la traccia: uno sarà il primo, due sarà il secondo, e così via.</para>
+
+<para
+>Si può usare il gestore code aprendolo da <menuchoice
+><guimenu
+>Strumenti</guimenu
+> <guimenuitem
+>Gestore code</guimenuitem
+></menuchoice
+>, selezionando una traccia e poi premendo l'icona <guibutton
+>+</guibutton
+> nel gestore code. Si possono anche trascinare le tracce nel gestore per creare una coda. Alternativamente, si può anche usare il menu contestuale della playlist e poi aprire il gestore code per modificare l'ordine.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Playlist dinamiche</title>
+
+	<sect2>
+		<title
+>Cosa sono?</title>
+		<para
+>Le playlist dinamiche sono playlist generate automaticamente, creata in accordo a regole definite, le quali vengono usate per mantenere la playlist ad una dimensione gestibile. Mentre &amarok; è abbastanza leggero sulle risorse, il caricamento di un gran numero di tracce in una playlist in una sola volta incrementa l'utilizzo di RAM, incidendo sulle prestazioni del sistema, cosa che viene evitata completamente usando le playlist dinamiche. Anche conosciuta come Modalità party, è anche un ottimo modo per lasciar suonare la musica tutta la notte senza alcuna interazione. </para>
+	</sect2>
+
+	<sect2>
+		<title
+>Dove sono?</title>
+		<para
+>Puoi trovare Playlist dinamiche nella barra laterale Playlist.</para>
+	
+		<screenshot>
+			<screeninfo
+>Barra laterale Playlist</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Barra laterale Playlist</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Ci sono tre tipi di playlist dinamica, fare riferimento a Modalità dinamiche, due delle quali sono predefinite (ulteriori dettagli sulla configurazione in seguito).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Mix casuale</term>
+				<listitem
+><para
+>Inizializza una playlist con tracce casuali dall'intera collezione, e continua ad aggiungere tracce casuali.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Brani suggeriti</term>
+				<listitem>
+					<para
+>Aggiunge tracce basate sui suggerimenti di <ulink url="http://www.last.fm"
+>last.fm</ulink
+> (formalmente audioscrobbler). Richiede che alcune tracce siano già nella playlist. Non è necessario avere un profilo last.fm perché funzioni.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Playlist mescolata (creata dall'utente)</term>
+				<listitem
+><para
+>Aggiunge tracce casuali da playlist veloci specificate, sia predefinite che definite dall'utente.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>Come le uso?</title>
+		<para
+>Il semplice doppio clic sulla playlist desiderata, trascinarla nella finestra della playlist o il clic con il tasto destro e selezionare Carica. Ciò sostituirà la playlist attuale, per questo potresti volerla salvare prima, se per te è importante. </para>
+		<para
+>Sia Mix casuale che Playlist mescolata popoleranno la playlist permettendoti di avviare immediatamente la riproduzione. Brani suggeriti inizierà con una playlist vuota, è necessario che tu aggiunga manualmente almeno un brano della collezione. I suggerimenti verranno aggiunti al cambiamento di traccia, e la playlist verrà popolata solo dopo la fine del primo brano.</para>
+		<para
+>Se desideri mantenere la playlist attuale, puoi abilitare l'ultimo tipo di modalità dinamica usata selezionando <menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Modalità dinamica</guimenuitem
+></menuchoice
+>. Verrà usata la playlist esistente come punto di partenza. Puoi disabilitare la modalità dinamica attraverso la stessa opzione di menu.</para>
+		<screenshot>
+			<screeninfo
+>Playlist dinamica caricata</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Playlist dinamica caricata</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>Il pulsante <guibutton
+>Ripopola</guibutton
+> svuoterà la playlist e aggiungerà tracce in accordo alla modalità dinamica utilizzata, e il pulsante <guibutton
+>Modifica questa modalità dinamica</guibutton
+> farà apparire la finestra Impostazioni della modalità dinamica.</para
+> <note
+><para
+>Questi pulsanti non appariranno se hai disabilitato la modalità dinamica.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Configurazione playlist dinamiche</title>
+	<sect2>
+		<title
+>Cambiare il comportamento di una playlist dinamica</title>
+		<para
+>Il clic con il tasto destro su una <guilabel
+>Playlist dinamica</guilabel
+> ti permetterà di selezionare <guimenuitem
+>Modifica</guimenuitem
+>, che apre la finestra Impostazioni della modalità dinamica.</para>
+	
+		<screenshot>
+			<screeninfo
+>Impostazioni della modalità dinamica</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Nome della playlist dinamica</term>
+				<listitem>
+					<para
+>Rinomina come preferisci, se lo desideri. I nomi delle playlist dovrebbero essere diversi per evitare confusioni.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Rimuovi le tracce riprodotte</term>
+				<listitem>
+					<para
+>Se la deselezioni, le playlist cresceranno continuamente, l'impostazione Tracce in arrivo viene annullata, e non otterrai ripetizioni nella playlist. Se l'impostazione è selezionata, le tracce riprodotte vengono rimosse dall'inizio dell'elenco, in accordo alla seguente impostazione Tracce riprodotte da mostrare.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Segna riprodotte</term>
+				<listitem>
+					<para
+>Rende inattive le tracce che sono state riprodotte.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Tracce riprodotte da mostrare</term>
+				<listitem>
+					<para
+>Tracce riprodotte da mostrare - numero delle tracce riprodotte da mantenere visibili all'inizio della playlist. Utile per vedere cosa è stato riprodotto di recente.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Tracce in arrivo</term>
+				<listitem>
+					<para
+>Questa è l'impostazione che restringe la dimensione della playlist.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Tracce da aggiungere</term>
+				<listitem>
+					<para
+>Il numero di tracce che verranno aggiunte alla playlist dopo che ogni brano sarà stato riprodotto. Nota che se imposti questo valore maggiore di 1, la playlist crescerà rapidamente, poiché solo una traccia alla volta può essere riprodotta e poi rimossa </para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Puoi accedere a questa finestra anche attraverso il pulsante <guibutton
+>Modifica questa modalità dinamica</guibutton
+> in alto a destra della finestra della playlist.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Barra della modalità dinamica</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Aggiungere una playlist dinamica personalizzata</title>
+		<para
+>Clic con il tasto destro su Playlist dinamiche e seleziona Nuova playlist dinamica.</para>
+
+		<screenshot>
+			<screeninfo
+>Crea nuova della playlist dinamica</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>Le impostazioni sulla destra sono descritte nella sezione precedente. Nel pannello di sinistra, puoi selezionare da una qualsiasi delle playlist e playlist veloci esistenti sul tuo sistema. Se selezioni playlist multiple, &amarok; aggiungerà tracce casuali da ciascuna di esse.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>Il Gestore degli script</title>
+
+<screenshot>
+	<screeninfo
+>Immagine del Gestore degli script</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>L'interfaccia per gli script offre una semplice via per estendere la funzionalità di &amarok;. Per avviare uno script di &amarok;, bisogna avviare il Gestore script selezionando <menuchoice
+><guimenu
+>Strumenti</guimenu
+><guimenuitem
+>Gestore script</guimenuitem
+></menuchoice
+> nella Barra dei menu. Nella finestra del Gestore script si troverà una lista degli script installati; basterà selezionarne uno e fare clic sul pulsante <guibutton
+>Esegui</guibutton
+> per lanciarlo. Lo script verrà eseguito fino alla sua fine oppure fermato manualmente dopo averlo selezionato nel Gestore script e premuto il pulsante <guibutton
+>Ferma</guibutton
+>.</para>
+
+<tip
+><para
+>Alcuni script offrono opzioni speciali di configurazione. Per accedere a queste opzioni prima bisogna lanciare lo script e poi premere il pulsante <guibutton
+>Configura</guibutton
+> per aprire la finestra di configurazione.</para
+></tip>
+
+<para
+>Per installare un nuovo script di &amarok; bisogna fare clic sul pulsante <guibutton
+>Installa script</guibutton
+> nella finestra del gestore script. Apparirà una finestra che permetterà di selezionare un pacchetto di script di &amarok;. Dopo aver selezionato un pacchetto da installare, apparirà la nuova voce nella lista degli script. Si possono installare script anche facendo clic sul pulsante <guibutton
+>Scarica altri script</guibutton
+> che apre una finestra per scaricare e installare automaticamente degli script da internet.</para>
+
+<para
+>Ci si può anche accorgere che ci sono script non più utilizzati. Per disinstallarli bisogna selezionarli dalla lista nel gestore script e fare clic sul pulsante <guibutton
+>Disinstalla</guibutton
+>.</para>
+
+<note
+><para
+>Per maggiori informazioni su come scrivere script per &amarok;, vedere la sezione <link linkend="script-writing"
+>Scrivere script</link
+> di questo documento.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>Le visualizzazioni</title>
+
+<screenshot>
+	<screeninfo
+>Immagine delle Visualizzazioni</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La finestra delle visualizzazioni è usata per abilitare le visualizzazioni disponibili in &amarok;. La lista di queste viene fornita nella finestra. Per abilitare una visualizzazione seleziona la casella apposita.</para>
+
+</sect1>
+
+</chapter>

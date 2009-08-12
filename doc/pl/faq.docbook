@@ -1,0 +1,1332 @@
+<chapter id="faq">
+<title
+>Pytania i odpowiedzi</title>
+
+<sect1 id="faq1">
+<title
+>Czym jest &amarok-mianownik;?</title>
+
+<qandaset id="what-is">
+<qandaentry>
+
+<question>
+<para
+>Czym jest &amarok-mianownik;?</para>
+</question>
+
+<answer>
+<para
+>&amarok-mianownik; jest odtwarzaczem muzycznym dla systemów uniksowych (np. Linuksa). Więcej informacji znajdziesz na stronie <ulink url="http://amarok.kde.org/amarokwiki/index.php/What_is_amaroK%3F"
+>z opisem funkcjonalności</ulink
+>. Zajrzyj też do <ulink url="http://amarok.kde.org/index.php?set_albumName=Screenshots&amp;option=com_gallery&amp;Itemid=60&amp;include=view_album.php"
+>galerii</ulink
+>.</para>
+</answer>
+
+</qandaentry>
+</qandaset>
+
+</sect1>
+
+<sect1 id="faq2">
+<title
+>Instalacja</title>
+
+<qandaset id="installation-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Czy mogę używać &amarok-dopelniacz;, nie posiadając KDE?</para>
+</question>
+
+<answer>
+<para
+>&amarok-mianownik; do działania wymaga tylko KDElibs, jeśli chodzi o oprogramowanie z KDE. Tak więc musisz mieć poprawnie zainstalowane KDElibs (włączając w to wszystkie binaria, &amarok-mianownik; potrzebuje ich do wyszukania wtyczek, wymagają ich też skrypty &amarok-dopelniacz;). Napisaliśmy artykuł o tym, <ulink url="http://amarok.kde.org/amarokwiki/index.php/KDElibs_without_aRts"
+> jak skompilować najmniejszą wersję KDElibs</ulink
+>. Artykuł może być w języku angielskim.</para>
+<para
+>Aby niektóre funkcje mogły działać poprawnie (np. OSD), Twój menedżer okien musi być kompatybilny ze standardami freedesktop.org. Tak więc GNOME będzie działać dobrze, ale fluxbox może mieć problemy. Chcemy, aby &amarok-mianownik; działał na wszystkich platformach. Używamy KDElibs i Qt, ponieważ zapewniają one doskonałe środowisko programistyczne.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq3">
+<title
+>Rozwiązywanie problemów</title>
+
+<qandaset id="troubleshooting">
+
+<qandaentry>
+<question>
+<para
+>&amarok-mianownik; wyłącza się podczas skanowania Kolekcji, zawsze w tym samym miejscu. Co jest grane?</para>
+</question>
+
+<answer>
+<para
+>Prawdopodobnie jeden z Twoich plików muzycznych powoduje wystąpienie błędu w bibliotece TagLib, co znowu powoduje awarię &amarok-dopelniacz;. Możesz zidentyfikować feralny plik, zaglądając do ~/.kde/share/apps/amarok/collection_scan.log. Powinieneś zgłosić błąd w TagLib, można to zrobić na stronie <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>. Nie zapomnij wysłać pliku muzycznego, który powoduje wystąpienie błędu. Zanim błąd zostanie naprawiony, przenieś ów plik w miejsce, które nie jest skanowane przy tworzeniu Kolekcji.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>&amarok-mianownik; wyłącza się, gdy próbuję odsłuchać pewien utwór. Co jest nie tak?</para>
+</question>
+
+<answer>
+<para
+>Przyczyną przeważnie jest TagLib, który powoduje awarię programu przy próbie odczytu meta danych (znaczników) tego utworu. Zgłoś błąd na <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok-mianownik; sam się wyłącza, zbyt często. Co mogę poradzić</para>
+</question>
+
+<answer>
+<para
+>Uaktualnij biblioteki i narzędzia ALSA do najnowszej wersji lub użyj OSS, ewentualnie emulacji OSS.</para>
+<para
+>Jeśli używasz bazy danych MySQL do tworzenia Kolekcji, spróbuj użyć zamiast niej SQLite. Jej obsługa w &amarok-dopelniacz; jest nieco bardziej dojrzała. </para>
+<para
+>Spróbuj użyć innego modułu dźwiękowego.</para>
+<para
+>Upewnij się, że wszystkie biblioteki &amarok-dopelniacz; zostały skompilowane tą samą wersją GCC, co &amarok-mianownik;. Jeśli &amarok-mianownik; jest skompilowany za pomocą GCC 3.4.x, a zlinkowana z nim biblioteka TagLib za pomocą GCC 3.3.x, możesz się liczyć z wyłączeniami &amarok-dopelniacz; podczas edycji znaczników.</para>
+<para
+>Jeśli używasz KDE z artsd, spróbuj wyłączyć opcję "Wyłącz po czasie bezczynności..." w ustawieniach systemu dźwiękowego. Jeśli koniecznie nie chcesz tego robić, to nie używaj przynajmniej wartości 1 sekundy, ponieważ &arts; będzie się wyłączać podczas przechodzenia przez &amarok-dopelniacz; do kolejnego utworu, co nie jest najlepszym pomysłem.</para>
+<para
+>Jeżeli wszystkie możliwości rozwiązania problemu zawiodły, wyślij nam ślad wykonanych czynności programu. Po samoistnym wyłączeniu się &amarok-dopelniacz;, wyświetli się okno z e-mailem do autorów. Jeśli często doświadczasz awarii programu, na pewno zajmiemy się tą sprawą, pod warunkiem, że wyślesz naprawdę dobry ślad. Czytaj dalej, aby dowiedzieć się więcej o tej możliwości.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak zdobyć porządny ślad wykonanych czynności?</para>
+</question>
+
+<answer>
+<para
+>Zobacz <ulink url="http://amarok.kde.org/amarokwiki/index.php/Debugging_HowTo"
+>Debugging HowTo</ulink
+> (strona może być w j. angielskim).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok-mianownik; nie używa znaczników, o których wiem, że znajdują się w moich plikach!</para>
+</question>
+
+<answer>
+<para
+>Jeśli &konqueror-mianownik; lub inne programy wyświetlają inny Tytuł, Wykonawcę, Album lub Gatunek, to oznacza, że &amarok-mianownik; podczas tworzenia kolekcji odczytuje starszy format znaczników ID3v1, zamiast ID3v2. Może to być spowodowane Twoim ustawieniem <guilabel
+>Kodowań</guilabel
+>. Idź do menu <menuchoice
+><guimenu
+>Ustawienia</guimenu
+> <guimenuitem
+>Konfiguracja: &amarok-mianownik;</guimenuitem
+></menuchoice
+>, znajdź sekcję Kodowania. Odznacz wszystkie pola wyboru "Nie dekoduj tego jako latin1". Przeskanuj ponownie swoją kolekcję, aby uzyskać znaczniki ID3v2. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok-mianownik; nie wyświetla poprawnie moich znaczników id3v2, zakodowanych w utf-8!</para>
+</question>
+
+<answer>
+<para
+>Dzieje się tak, ponieważ większość programów zapisuje dane w tagach id3v2 w kodowaniu utf8, nie precyzując tego faktu. Następujący skrypt w Perlu może to poprawić:</para>
+<programlisting
+>#!/usr/bin/perl
+die "Plik $ARGV[0] nie istnieje" unless -f $ARGV[0];
+use MP3::Mplib;
+my $mp3 = MP3::Mplib->new($ARGV[0]);
+my $v2tag = $mp3->get_v2tag;
+print "Błąd podczas zapisywania znaczników do pliku $ARGV[0]\n" unless $mp3->set_v2tag($v2tag,&amp;UTF8);
+</programlisting>
+<note
+><para
+>Powyższy skrypt wymaga modułu perlowego MP3::Mplib, można go zainstalować, wpisując polecenie <command
+>perl -MCPAN -e 'install MP3::Mplib'</command
+></para
+></note>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Czemu ikonka statusu zawsze wygląda na aktywną?</para>
+</question>
+
+<answer>
+<para
+>Ikonki statusu &amarok-dopelniacz; (Losowo, Powtarzaj, Dołącz) sprawiają wrażenie stale aktywnych w KDE 3.4.0. Jest to znany błąd. Czasem nie są wyświetlane różne efekty. Można to poprawić w &kcontrolcenter-miejscownik;: <menuchoice
+><guimenu
+>Wygląd i motywy</guimenu
+><guisubmenu
+>Ikony</guisubmenu
+><guimenuitem
+>Zaawansowane</guimenuitem
+></menuchoice
+>. Ustaw efekt zablokowanej ikony na "Poszarzanie" i "Półprzezroczystość". Zauważ, że już po zastosowaniu zmian, czasem trzeba kliknąć na ikonkę statusu 3 razy, aby uzyskać odpowiedni efekt. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czemu &amarok-mianownik; najpierw narzeka na niezdefiniowane symbole, a potem odmawia startu?</para>
+</question>
+
+<answer>
+<para
+>Jeśli dostajesz błąd o treści : "amarokapp: symbol lookup error: amarokapp: undefined symbol: _ZN11KSystemTray9setPixmapERK7QPixmap", sprawdź, czy &amarok-mianownik; używa odpowiedniej wersji biblioteki libqt (na przykład tak: ldd `which amarokapp` | grep qt). </para>
+<para
+>Aby rozwiązać problem, prawdopodobnie trzeba usunąć wszystkie kolidujące ze sobą wersje libqt i/lub wyedytować plik /etc/ld.so.conf tak, aby najpierw wybierana była żądna wersja.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq5">
+<title
+>Pytania ogólne</title>
+
+<qandaset id="general-use">
+
+
+<qandaentry>
+<question>
+<para
+>Gdzie szukać wsparcia dla &amarok-dopelniacz;?</para>
+</question>
+
+<answer>
+<para
+>Jest wiele możliwości. Problemy, które wystąpiły z instalacją &amarok-dopelniacz; najprawdopodobniej najlepiej potrafią rozwiązać eksperci od Twojego systemu. Możesz szukać też pomocy u zwykłych użytkowników i programistów na <ulink url="http://amarok.kde.org/index.php?option=com_simpleboard"
+>forum &amarok-dopelniacz;</ulink
+> i <ulink url="irc://irc.freenode.net/amarok"
+>kanale IRC</ulink
+>, znajdującym się na irc.freenode.net, kanał #amarok.</para>
+<note
+><para
+><ulink url="http://bugs.kde.org"
+>Bugzilla (zgłaszanie błędów)</ulink
+> nie jest miejscem na szukanie wsparcia. Raporty o błędach należy zgłaszać, gdy jest się pewnym, że to pomoże rozwiązać jakiś błąd w samym &amarok-miejscownik;.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Podczas startu &amarok-dopelniacz; widzę pustą listę odtwarzania. Jak dodać tam utwory?</para>
+</question>
+
+<answer>
+<para
+>Zwyczajnie. Użyj przeglądarki plików po lewej stronie, aby dostać się do pożądanego folderu. Następnie przeciągnij pliki muzyczne do listy odtwarzania, znajdującej się po prawej.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Gdzie znajduje się zakładka "Podsumowanie"?</para>
+</question>
+
+<answer>
+<para
+>Aby uniknąć bałaganu w GUI, zakładka "Podsumowanie" została zmieniona w "Statystyki", dostępne z menu <menuchoice
+><guimenu
+>Narzędzia</guimenu
+><guimenuitem
+>Statystyki</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czy istnieje możliwość określenia ilości informacji wyświetlanych przez przeglądarkę kontekstu?</para>
+</question>
+
+<answer>
+<para
+>Tak, wciśnij prawy przycisk myszki w obrębie zakładki "Kontekst", aby dostosować zawartość.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Dlaczego gwiazdki i numery w przeglądarce kontekstu są nieaktualne?</para>
+</question>
+
+<answer>
+<para
+>Znaczenie tych symboli zmieniło się od Amaroka w wersji 1.4 "Fast Forward": gwiazdki reprezentują ocenę użytkownika, numery zaś wyliczoną przez program punktację.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Klikanie na gwiazdkach w przeglądarce kontekstu nie działa! Jak mam ocenić piosenkę?</para>
+</question>
+
+<answer>
+<para
+>Aby ocenić piosenkę, potrzebujesz kolumny "Notowania" na liście odtwarzania. Kliknij prawym przyciskiem myszy na pasku tytułowym listy odtwarzania i wybierz <menuchoice
+><guimenu
+>Pokaż kolumnę</guimenu
+><guimenuitem
+>Notowania</guimenuitem
+></menuchoice
+>. Kliknij gdziekolwiek w kolumnie "Notowania", aby ocenić piosenkę. Możesz także użyć skrótu [Win]+[1-5], aby szybko ocenić piosenkę, nawet jeśli Amarok działa w tle.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak usunąć utwory z listy odtwarzania?</para>
+</question>
+
+<answer>
+<para
+>Zaznacz pliki, które chcesz usunąć i wciśnij Delete na klawiaturze lub kliknij na wybranych plikach prawym przyciskiem myszy i z wyświetlonego menu wybierz pozycję Usuń z listy odtwarzania.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak załadować listę odtwarzania?</para>
+</question>
+
+<answer>
+<para
+>Po prostu przeciągnij plik listy odtwarzania na obszar Listy odtwarzania, tak, jak każdy inny plik muzyczny. To takie proste! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Jak zapisać bieżącą listę odtwarzania?</para>
+</question>
+
+<answer>
+<para
+>Pozycja "Zapisz listę odtwarzania jako..." znajduje się zaraz poniżej pozycji "Dodaj multimedia...", którą można znaleźć w menu "Lista odtwarzania". Wystarczy kliknąć!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>W oknie wizualizacji nie ma żadnych pozycji.</para>
+</question>
+
+<answer>
+<para
+>Prawdopodobnie nie masz zainstalowanego xmms-config. Skompiluj &amarok-dopelniacz; jeszcze raz, ale najpierw zainstaluj odpowiednią paczkę xmms-devel. Możesz też chcieć zainstalować najnowszą wersję <ulink url="http://libvisual.sourceforge.net/v2/"
+>libvisual</ulink
+>, która posiada kilka fantastycznych wizualizacji.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Gdzie znajdę korektor dźwięku (equalizer)?</para>
+</question>
+
+<answer>
+<para
+>Okno korektora dostępne jest pod prawym przyciskiem myszy. Możesz także je wywołać z menu, wybierając <menuchoice
+><guimenu
+>Narzędzia</guimenu
+> <guimenuitem
+>Korektor</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq6">
+<title
+>Odtwarzanie</title>
+
+<qandaset id="playback-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Jakie typy plików obsługuje &amarok-mianownik;?</para>
+</question>
+
+<answer>
+<para
+>Żadnych. Tak, to prawda! Żadnych! Używamy niezależnych programów do dekodowania dźwięku, więc pytanie powinno brzmieć "Jakie typy plików obsługują GStreamer/xine/aRts/NMM/MAS/KDE Multimedia?". Jak więc możesz zgadnąć, obsługują one prawie każdy format audio, o którym możesz pomyśleć. GStreamer może nawet dekodować tekst i obrazki PNG! </para>
+<para
+>Po więcej informacji sięgnij do artykułu <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Porównanie modułów dźwiękowych</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czemu &amarok-mianownik; nie odtwarza plików MP3?</para>
+</question>
+
+<answer>
+<para
+>Odtwarza! Jednak w niektórych dystrybucjach Linuksa, dekodery formatu MP3 nie są załączone, z powodu niejasnej sytuacji z patentami na oprogramowanie. Rozwiązanie: wyszukaj w Internecie "nazwa dystrybucji+mp3+kde".</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok-mianownik; nie chce odtwarzać plików MP3 pod Linuksem SUSE 9.3. Co mogę zrobić?</para>
+</question>
+
+<answer>
+<para
+>Otwórz "YaST Online Update" i zainstaluj pakiet 'Multimedia Option Pack 1'. Voila, &amarok-mianownik; odtwarza "empetrójki"!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Z modułem dźwiękowym GStreamer mam 100% użycia czasu procesora. Jak to poprawić?</para>
+</question>
+
+<answer>
+<para
+>Podczas użycia Gstreamera z wyjściem do ALSY, &amarok-mianownik; żąda od karty dźwiękowej sprzętowego miksowania. Miksowanie pozwala większej ilości programów na dostęp do karty dźwiękowej w tym samym czasie, przy czym dźwięk ze wszystkich tych programów jest odtwarzany równocześnie. Efekt ten można uzyskać na karcie dźwiękowej, która obsługuje sprzętowe miksowanie (np. SBLive) lub przy użyciu wtyczki "dmix" dla ALSY, która miksuje dźwięk programowo. Zobacz artykuł (może być w j. angielskim) <ulink url="http://amarok.kde.org/amarokwiki/index.php/Setting_up_Dmix_for_ALSA"
+>Konfiguracja Dmiksa dla ALSY</ulink
+>. </para>
+<para
+>Po instalacji, musisz wybrać "dmix" jako wtyczkę wyjściową w konfiguracji modułu dźwiękowego.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czemu nie mogę odtwarzać żadnych multimediów w &amarok-miejscownik;.</para>
+</question>
+
+<answer>
+<para
+>Musimy sprawdzić poprawność działania systemów dźwiękowych. Otwórz linię poleceń: </para>
+<para
+><command
+>artsplay muzyka.mp3</command
+> <command
+>gst-launch filesrc location=/home/Ty/muzyka.mp3 ! spider ! audioscale ! audioconvert ! alsasink</command
+> <command
+>xine-check</command
+> </para>
+<para
+>Wynik tych poleceń powinien Ci pomóc w  zdiagnozowaniu i naprawie problemu. Zauważ, że być może będziesz zmuszony użyć innej wtyczki wyjściowej dla GStreamera (np. OSS).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czy &amarok-mianownik; może grać bezpośrednio do OSS/ALSY?</para>
+</question>
+
+<answer>
+<para
+>Tak! Nie zapomnij jednak, że plik muzyczny musi być najpierw zdekodowany. Nie możesz po prostu przekazać pliku MP3 do ALSY, bo usłyszysz tylko szum. GStreamer jest najlepszym rozwiązaniem dla większości ludzi, którzy poszukują niewymagającego procesora narzędzia do dekodowania. Odczytuje on plik, dekoduje i wysyła wynik działania (cyfrowy sygnał) do ALSY. Tak, jak XMMS.</para>
+</answer>
+</qandaentry>
+
+
+
+<qandaentry>
+<question>
+<para
+>Chwila! XMMS potrafi wysyłać dźwięk bezpośrednio do ALSY!</para>
+</question>
+
+<answer>
+<para
+>Ale najpierw go dekoduje! GStreamer też potrafi wysyłać dźwięk bezpośrednio do ALSY! Tak, jak i xine!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Dźwięk się zacina, jak to poprawić?</para>
+</question>
+
+<answer>
+<para
+>Możesz użyć modułu dźwiękowego GStreamer (jest świetny!) lub dostosować aRts. Otwórz Centrum sterowania, <menuchoice
+><guimenu
+>Dźwięk i multimedia</guimenu
+> <guimenuitem
+>System dźwiękowy</guimenuitem
+></menuchoice
+>. Pozwól aRts na działanie z maksymalnym priorytetem i zwiększ bufor dźwięku (uwaga, przeczytaj następne FAQ!). Upewnij się także, że program artswrapper posiada bit UID:</para>
+<para
+><command
+>su</command
+> <command
+>chmod a+rsx /ścieżka/do/KDE/bin/artswrapper</command
+> <command
+>killall -9 artsd</command
+> </para>
+<para
+>W KDE 3.2.X są pewne problemy z KDEMultimedia, które powodują, że dźwięk jest zniekształcony. Zobacz <ulink url="http://bugs.kde.org/show_bug.cgi?id=80497"
+>ten raport o błędzie</ulink
+>. Pomóc może także zwiększenie bufora w pliku konfiguracyjnym ALSY, .asoundrc.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Użycie procesora jest duże, jak to poprawić?</para>
+</question>
+
+<answer>
+<para
+>Nie używaj aRts, używaj GStreamera lub xine lub zniweluj wysokie użycie procesora przez instalację KDEMultimedia. Pakiet ten zawiera szybsze dekodery (np. libarts_mpeglib.so, etc.)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Analizatory &amarok-dopelniacz; są wolne!</para>
+</question>
+
+<answer>
+<para
+>Prawdopodobnie używasz modułu dźwiękowego aRts. Spróbuj użyć innego modułu lub zmniejsz bufor aRts w Centrum sterowania. Im mniejszy, tym szybciej działają analizatory. Tak, to błąd! Ale nie przejmuj się, aRts odejdzie z KDE już w 4. wersji.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Zainstalowałem GStreamera, ale gdy próbuję zmienić używany moduł dźwiękowy, &amarok-mianownik; wyłącza się. Co robić?</para>
+</question>
+
+<answer>
+<para
+>Po instalacji GStreamera musisz zarejestrować jego komponenty. Uruchom w tym celu `gst-register` (czasem trzeba dodać wersję, np. gst-register-0.8).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Uruchomiłem gst-register, ale ciągle mam problemy z GStreamerem. Co robić?</para>
+</question>
+
+<answer>
+<para
+>Przeczytaj <ulink url="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-using.html"
+>FAQ GStreamera</ulink
+>. Jeśli wszystkie możliwości zawiodą, możesz skontaktować się z ekspertami na <ulink url="irc://irc.freenode.net/gstreamer"
+>kanale IRC #gstreamer</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok-mianownik; twierdzi, że GStreamer nie może odtwarzać plików MP3, chociaż mam zainstalowaną/skompilowaną wtyczkę mad!</para>
+</question>
+
+<answer>
+<para
+>Spróbuj tego (najpierw wyłącz &amarok-dopelniacz;): - <ulink url="http://gstreamer.freedesktop.org/src/gst-ffmpeg/"
+>Ściągnij</ulink
+>, skompiluj i zainstaluj paczkę ffmpeg. Uruchom gst-register (jako root i zwykły użytkownik). Idź do folderu z wtyczkami GStreamera (znajdziesz go przy pomocy polecenia gst-config / gstreamer-config). Usuń pliki, należące do ffmpeg (lub przenieś gdzieś). Uruchom ponownie gst-register. Uruchom &amarok-dopelniacz;. </para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq7">
+<title
+>Rozwijanie &amarok-dopelniacz;</title>
+
+<qandaset id="development-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Jak zdobyć wersję z SVN-a?</para>
+</question>
+
+<answer>
+<para
+><ulink url="http://amarok.kde.org/amarokwiki/index.php/Installation_HowTo#Building_SVN_Amarok"
+>Jak ściągnąć i skompilować wersję z SVN-a</ulink
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Znalazłem błąd / mam świetny pomysł, dotyczący &amarok-dopelniacz;!</para>
+</question>
+
+<answer>
+<para
+>Napisz go na <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>, jeśli masz dłuższą listę sugestii / życzeń, wyślij je na listę emailową: <email
+>amarok-devel@lists.sourceforge.net</email
+> </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Akceptujecie poprawki?</para>
+</question>
+
+<answer>
+<para
+>Pewnie! Jednak najlepiej poinformuj nas, co masz zamiar zrobić, zanim zaczniesz pracę, żebyśmy mogli przedyskutować planowane zmiany. Dyskusja służy głównie temu, które kawałki kodu powinno się zmienić. Następnie, albo wyślij poprawkę na listę emailową, albo zastosuj ją, jeśli masz dostęp do SVN-a. Jednak daj znać, zanim wyślesz poprawki, wnoszące nową funkcjonalność! Jeśli masz jednak poprawkę, która usuwa błędy, po prostu ją zastosuj, to w końcu wolne oprogramowanie :)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czemu wybraliście nazwę &amarok-mianownik;?</para>
+</question>
+
+<answer>
+<para
+>&amarok-mianownik; to nazwa albumy brytyjskiego kompozytora, Mike'a Oldfield'a. Tak się składa, że bardzo go lubię, a sama nazwa ładnie brzmi. Dodatkowo, zawiera tak istotne "K".. :) </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ten program zwie się &amarok-mianownik;, AmaroK, czy Amarok?</para>
+</question>
+
+<answer>
+<para
+>&amarok-mianownik;! Tak, rozumiemy że to trochę niestandardowe ;-)</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq8">
+<title
+>Wskazówki i sztuczki</title>
+
+<qandaset id="tipsandtricks-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Jak użyć &amarok-dopelniacz; w charakterze alarmu?</para>
+</question>
+
+<answer>
+<para
+>Skonfiguruj alarm w Twoim ulubionym organizerze tak, aby przy wystąpieniu zdarzenia uruchomił polecenie <command
+>dcop amarok player play</command
+>. </para>
+<para
+>Polecenie to każe &amarok-celownik; rozpocząć odtwarzanie. Upewnij się, że &amarok-mianownik; działa, zanim pójdziesz do łóżka. Powinna Cię obudzić miła melodia, kolejna na liście odtwarzania.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak dowiedzieć się, co odtwarza &amarok-mianownik;, gdy jestem przy innym komputerze?</para>
+</question>
+
+<answer>
+<para
+>Jeśli masz poprawnie skonfigurowane środowisko ssh, możesz go użyć w tym celu. Następujące polecenie zwróci łańcuch Odtwarzany: <command
+>ssh -i ~/.ssh/id_rsa Twój_numer_IP dcop --user Twoja_nazwa_użytkownika amarok player nowPlaying</command
+> </para>
+<para
+>Upewnij się, że zastąpiłeś "Twój_numer_IP" Twoim numerem IP i "Twoja_nazwa_użytkownika" Twoją nazwą użytkownika. Dodatkowo, w/w polecenie zakłada, że Twoja identyfikacja znajduje się w pliku ~/.ssh/id_rsa file.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Co ciekawego można zrobić w głównym oknie?</para>
+</question>
+
+<answer>
+<para
+>Analizatory &amarok-dopelniacz; mogą zostać odłączone od głównego okna przez wciśnięcie D na klawiaturze. Aktywny analizator otworzy się w nowym, rozszerzalnym oknie.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Co ciekawego można zrobić z listą odtwarzania?</para>
+</question>
+
+<answer>
+<para
+>Przytrzymanie Ctrl i naciskanie prawym przyciskiem myszy na utwory spowoduje ich skolejkowanie. Wciśnięcie Enter po wyszukiwaniu w liście odtwarzania spowoduje odegranie pierwszego wyszukanego utworu i wyczyszczenie listy z pozostałych.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Widzę, że główne okno zawiera niezłe sztuczki, co z ikoną na tacce systemowej?</para>
+</question>
+
+<answer>
+<para
+>Przytrzymanie myszy nad ikoną spowoduje wyświetlenie dymka z informacjami o bieżącym utworze. Kliknięcie środkowym przyciskiem spowoduje pauzę/wznowienie odtwarzania. Kręcenie kółkiem myszy zmienia głośność. Kręcenie kółkiem myszy przy jednoczesnym przytrzymywaniu Shift pozwala na przewijanie utworu. Kręcenie kółkiem myszy przy jednoczesnym przytrzymywaniu Ctrl pozwala na przechodzenie między utworami. Przeciągnięcie muzyki na ikonę na tacce systemowej wyświetli menu, w którym można zdecydować, czy dodać nagranie do listy odtwarzania, dodać i odtworzyć nagranie, czy skolejkować.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Gdzie znajdują się ustawienia &amarok-dopelniacz;?</para>
+</question>
+
+<answer>
+<para
+>~/.kde/share/apps/amarok ~/.kde/share/config/amarokrc</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak wyłączyć zakładkę w przeglądarce &amarok-dopelniacz;?</para>
+</question>
+
+<answer>
+<para
+>Kliknięcie prawym przyciskiem myszy na którymkolwiek z tytułów przeglądarek spowoduje wyświetlenie listy dostępnych przeglądarek. Możesz jej użyć do włączania lub wyłączania przeglądarek.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq9">
+<title
+>Pytania ogólne</title>
+
+<qandaset id="general-questions-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Jak użyć zewnętrznej bazy danych MySQL w &amarok-miejscownik;?</para>
+</question>
+
+<answer>
+<para
+>Zobacz <ulink url="http://amarok.kde.org/amarokwiki/index.php/MySQL_HowTo"
+> artykuł o MySQL</ulink
+> (strona może być w j. angielskim).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mój $HOME jest zasobem NFS. Po uruchomieniu, &amarok-mianownik; nie potrafi zbudować Kolekcji, wyrzucając na konsolę wiele błędów, związanych z bazą danych. Co robić?</para>
+</question>
+
+<answer>
+<para
+>Zintegrowana baza danych SQLite, której domyślnie używa &amarok-mianownik;. nie działa na NFS. Musisz dowiązać katalog ~/.kde/share/apps/amarok do lokalnego dysku lub użyć MySQL.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak zgrać/zakodować płyty Audio-CD przy pomocy &amarok-dopelniacz;?</para>
+</question>
+
+<answer>
+<para
+>Włóż płytę do napędu, kliknij na pozycję "Odtwarzaj płytę CD audio", znajdującą się w menu. Włączy się przeglądarka plików z kilkoma katalogami. Aby tylko zgrać muzykę, wejdź do katalogu "wav", zaznacz jakieś utwory i przeciągnij je do wybranego katalogu w Konquerorze. Jeśli chcesz automatycznie zakodować nagrania, przeciągnij je z katalogów "mp3" lub "ogg".</para>
+<note
+><para
+>Zgrywanie płyt audio wymaga wtyczki protokołu "AudioCD". Jest ona częścią pakietu KDE-Multimedia.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Na jakiej zasadzie utwory są punktowane?</para>
+</question>
+
+<answer>
+<para
+>&amarok-mianownik; przypisuje punkty do utworu (od 1 do 100) na podstawie tego, ile razy utwór był odtworzony i czy został wysłuchany do końca. Przy każdorazowym odegraniem piosenki, punktacja się zmienia. Kod źródłowy punktowania znajduje się w pliku collectiondb.cpp. Dla wersji 1.2.2 można go było znaleźć w 1181. linii. Wyszukać go można przez wpisanie "CollectionDB::addSongPercentage". Przy ustalaniu punktacji utworu, który nie był wcześniej odtwarzany, &amarok-mianownik; używa działania ( ( 50 + procent ) / 2 )</para>
+<para
+>Działanie to ustawia punktację od 25 do 75 punktów, zależnie od tego, jak długo utwór był odtwarzany. Na przykład, jeśli użytkownik zatrzyma lub pominie piosenkę po 25% czasu, punkty zostaną ustalone według działania (50+25)/2, co daje 37,5. Punkty są pokazywane jako liczby całkowite, więc przed wyświetleniem zostają zaokrąglone. Gdy utwór był już odtworzony, posiada on swoją punktację. Dlatego kod do obsługi już punktowanego utworu musi być nieco bardziej skomplikowany: score = ( ( values[2].toDouble() * values.first().toInt() ) + percentage ) / ( values.first().toInt() + 1 );</para>
+<para
+>Przy czy w tym wzorze wartości biorą się z następującego zapytania:</para>
+<programlisting
+>QStringList values = query( QString(
+           "SELECT playcounter, createdate, percentage FROM statistics "
+           "WHERE url = '%1';" )
+           .arg( escapeString( url ) ) );
+</programlisting>
+<para
+>Mamy punktację = ( ( statistics_percentage.toDouble() * PlayCounter.toInt() ) + percentage ) / ( PlayCounter.toInt() + 1 ); </para>
+<para
+>Ten kod zmienia poprzednią ilość punktów (statistics_percentage), coraz mniejszą ilością punktów, w zależności od tego, ile razy utwór był odtworzony. Im więcej razy utwór był odtworzony, tym mniejszy wpływ na punktację będzie miało każde odtworzenie.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak ręcznie zmienić punktację utworu?</para>
+</question>
+
+<answer>
+<para
+>Możesz samodzielnie zmienić punktację utworu przez dodanie do listy utworów kolumny Punktacja. Wystarczy kliknąć prawym przyciskiem myszy na jakąś kolumnę (Tytuł, Album, Wykonawca) i przy pomocy menu dodać kolumnę punktacji. Następnie możesz zmieniać punkty każdego utworu przez kliknięcie na nim prawym przyciskiem myszy w miejscu kolumny Punktacja i wybierając "Edytuj znacznik Punktacja" lub naciskając F2. Możesz także zmienić punktację w oknie informacji o utworze, dostępnym po kliknięciu prawym przyciskiem na utworze.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czemu &amarok-mianownik; nie jest częścią pakietu KDEmultimedia?</para>
+</question>
+
+<answer>
+<para
+>Programiści &amarok-dopelniacz; nie chcą, żeby ktoś im mówił, kiedy mają wydać nową wersję programu. Programy, należące do wydania KDE muszą być wydawane zgodnie z każdą wersją tego środowiska, a nie wcześniej, co koliduje z szybkim rozwojem &amarok-dopelniacz;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Denerwuje mnie mruganie ikonki &amarok-dopelniacz; na tacce systemowej</para>
+</question>
+
+<answer>
+<para
+>Niektórych użytkowników może rozpraszać mrugająca ikonka. Animację można wyłączyć w Ogólnych opcjach, pod nazwą "Animuj ikonę na tacce systemowej podczas odtwarzania".</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak wyświetlić / usunąć analizator w oknie listy odtwarzania?</para>
+</question>
+
+<answer>
+<para
+>Analizator jest częścią paska narzędzi listy odtwarzania. Wybierz <menuchoice
+><guimenu
+>Ustawienia</guimenu
+><guimenuitem
+>Konfiguracja pasków narzędzi...</guimenuitem
+></menuchoice
+>, a następnie dodaj lub usuń analizator. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak zmienić motyw przeglądarki kontekstu?</para>
+</question>
+
+<answer>
+<para
+>Ściągnij <ulink url="http://amarok.kde.org/amarokwiki/index.php/Themes"
+>styl</ulink
+> lub zrób <ulink url="http://amarok.kde.org/amarokwiki/index.php/CSS_Styles"
+>swój</ulink
+> (strona może być w j. angielskim). Zainstaluj go przez <menuchoice
+><guimenu
+>Konfiguracja: &amarok-mianownik;... </guimenu
+><guisubmenu
+>Wygląd</guisubmenu
+><guimenuitem
+>Motyw przeglądarki kontekstowej</guimenuitem
+></menuchoice
+>, Zainstaluj nowy motyw...</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Czemu zastąpiliście ikonę białego wilka?</para>
+</question>
+
+<answer>
+<para
+>Ikona budziła skojarzenia z logo firmy Warp Graphics, Inc (elfquest.com), więc musieliśmy ją usunąć, aby uniknąć problemów prawnych.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Nie mam żadnych wizualizacji. Jak je zdobyć?</para>
+</question>
+
+<answer>
+<para
+>Zainstaluj najnowszą wersję <ulink url="http://libvisual.sf.net"
+>libvisual</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak dodać swoje ulubione radia do &amarok-dopelniacz;?</para>
+</question>
+
+<answer>
+<para
+>Po pierwsze, dołącz strumień do listy odtwarzania. Jest na to kilka sposobów. Możesz kliknąć na odnośniku w Konquerorze, a &amarok-mianownik; rozpocznie wtedy odtwarzanie strumienia. Np. na stronie <ulink url="http://www.shoutcast.com"
+>shoutcast.com</ulink
+> (witryna może być w j. angielskim) kliknij na ikonce "Tune In". Możesz też w oknie przedlądania list użyć przycisku "Dodaj" (w lewym górnym rogu), a następnie wybrać "Strumień radiowy..." i wpisać adres (URL) i nazwę strumienia. Strumień pojawi się w folderze "Strumienie radiowe" wśród list odtwarzania.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq10">
+<title
+>Sterowanie poprzez Konquerora</title>
+
+<qandaset id="konq-sidebar-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Jak kontrolować &amarok-dopelniacz; przy pomocy Konquerora?</para>
+</question>
+
+<answer>
+<para
+>Panel nawigacji Konquerora pozwala na monitorowanie czy też kontrolę &amarok-dopelniacz; podczas pracy z Konquerorem. Aby go zobaczyć, uruchom Konquerora, wciśnij F9, aby zobaczyć panel nawigacji, kliknij na przycisku konfiguracji (ten najwyżej), z wyświetlonego menu wybierz <menuchoice
+><guimenu
+>Dodaj nowy</guimenu
+> <guimenuitem
+>&amarok-mianownik;</guimenuitem
+></menuchoice
+></para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq11">
+<title
+>Audioscrobbler</title>
+
+<qandaset id="audioscrobbler-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Co to jest Audioscrobbler?</para>
+</question>
+
+<answer>
+<para
+>Audioscrobbler to darmowa usługa, która wysyła informacje o aktualnie odtwarzanych utworach na niezależny serwer. Rejestracja jest darmowa i wymaga tylko podania wolnej nazwy użytkownika i hasła. Audioscrobbler jest aktualnie obsługiwany przez &amarok-dopelniacz;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Nie chcę, żeby &amarok-mianownik; wysyłał informacje do Audioscrobblera!</para>
+</question>
+
+<answer>
+<para
+>Wyłącz opcję "Wyślij informację o odtwarzanych utworach", aby nie pozwolić Audioscrobblerowi na kolejkowanie sugerowanych piosenek.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Jak zapisać się do grupy użytkowników &amarok-dopelniacz; na Audioscrobblerze?</para>
+</question>
+
+<answer>
+<para
+>Grupa użytkowników &amarok-dopelniacz; znajduje się pod adresem <ulink url="http://www.audioscrobbler.com/group/amaroK+users/"
+>http://www.audioscrobbler.com/group/amaroK+users</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq12">
+<title
+>Pytania ogólne dotyczące modułu i odtwarzania</title>
+
+<qandaset id="general-engine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Którego modułu dźwiękowego używać?</para>
+</question>
+
+<answer>
+<para
+>Proszę skonsultować się z artykułem <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Porównanie modułów dźwiękowych</ulink
+> (strona może być w j. angielskim).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Której wersji ALSA używać?</para>
+</question>
+
+<answer>
+<para
+>Jeśli korzystasz z ALSY, powinieneś używać najnowszej dostępnej wersji. Starsze wersje powodowały częste błędy, co było przyczyną zgłaszania błędów do programistów &amarok-dopelniacz;, które &amarok-dopelniacz; samego w sobie nie dotyczyły.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Zainstalowałem GStreamer/xine/etc., ale odpowiedni moduł dźwiękowy nie pojawił się na liście. Co dalej?</para>
+</question>
+
+<answer>
+<para
+>&amarok-mianownik; został skompilowany prawdopodobnie przed zainstalowaniem odpowiedniego modułu. Skrypt ./configure nie włączył obsługi modułu do programu, a więc czeka Cię ponowna kompilacja &amarok-dopelniacz;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ale skompilowałem już &amarok-dopelniacz; po instalacji odpowiedniego modułu, a jego ciągle nie ma na liście. O co chodzi?</para>
+</question>
+
+<answer>
+<para
+>Prawdopodobnie używasz systemu, który oddziela biblioteki programistyczne od zwykłych, tak więc nawet jeśli odpowiedni moduł jest zainstalowany, &amarok-mianownik; nie może go użyć. Zainstaluj pakiet o nazwie podobnej do moduł-devel (np. xine-devel, gstreamer-devel). Nie zapomnij ponownie skompilować &amarok-dopelniacz;.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq13">
+<title
+>Moduł dźwiękowy GStreamer </title>
+
+<qandaset id="gstreamer-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Dlaczego słyszę przerwę podczas przełączania utworów, mimo włączonego przenikania?</para>
+</question>
+
+<answer>
+<para
+>Upewnij się, że nie masz zainstalowanego pakietu gst-ffmpeg, zamiast niego użyj gst-mad. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Otrzymuję błąd:  "GStreamer-CRITICAL **: Factory for `adder' has no type.". Jak to naprawić?</para>
+</question>
+
+<answer>
+<para
+>Twój GStreamer został zbudowany z prelinkowaniem, co nie jest dobrym pomysłem w przypadku GStreamera. Musisz go skompilować ponownie bez tej opcji. merlin-tc radzi: <quote
+>Dodatkowo, nie używaj ldflags przy kompilacji GStreamera.</quote
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Otrzymujesz błąd "Brak elementu do odtworzenia pliku typu audio/mp4" chociaż masz zainstalowaną poprawną wtyczkę gstreamer-faad.</para>
+</question>
+
+<answer>
+<para
+>Aby móc odtwarzać pliki mp4 lub m4a za pomocą gstreamera, musisz mieć także zainstalowany gstreamer-quicktime oprócz gstreamer-faad.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Otrzymujesz błąd "Brak elementu do odtworzenia pliku typu audio/mpeg"</para>
+</question>
+
+<answer>
+<para
+>Próbujesz odtworzyć plik mp3, nie mając zainstalowanego gstreamer-mad. Po instalacji gstreamer-mad uruchom "gst-register" jako administrator, przed restartem &amarok-dopelniacz;.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mam drugą kartę dźwiękową i używam ALSY. Jak polecić &amarok-celownik;, żeby jej używał zamiast domyślnej?</para>
+</question>
+
+<answer>
+<para
+>W <menuchoice
+><guimenu
+>Ustawienia</guimenu
+><guisubmenu
+>Konfiguracja: &amarok-mianownik;</guisubmenu
+><guimenuitem
+>Moduł</guimenuitem
+></menuchoice
+>zaznacz pole 'Urządzenie' i wpisz nazwę urządzenia. Zwykle jest to 'hw:0' dla domyślnej karty dźwiękowej i 'hw:1' dla drugiej karty.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq14">
+<title
+>Moduł dźwiękowy xine</title>
+
+<qandaset id="xine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Jak zmienić miejsce przeznaczenia dźwięku?</para>
+</question>
+
+<answer>
+<para
+>Jeśli używasz systemu dźwięku ALSA, możesz przesyłać dźwięk do wybranego urządzenia za pomocą xine. Wyedytuj plik ~/.asoundrc (tylko dla użytkownika) lub /etc/asound.conf (dla całego systemu), wpisując aliasy dla swoich kart dźwiękowych, a potem użyj odpowiedniego aliasu w polu "Stereo:" w konfiguracji modułu dźwiękowego xine. Zamiast tego, możesz bezpośrednio wpisać urządzenie wg. oznaczeń ALSY (hw:0,0 lub hw:1,0 i tak dalej). Jeśli wybierzesz tę drugą, alternatywną, metodę, pamiętaj, że zalecaną metodą jest przekierowanie wyjścia do urządzeń plugXX (np. plughw:0,0 lub plughw:1,0 itd.) za pomocą alsa-lib.</para>
+<para
+>Poniżej znajduje się przykład pliku  ~/.asoundrc dla komputera, który posiada zintegrowaną kartę AC97 codec i osobną kartę dźwiękową na USB:</para>
+<programlisting
+>pcm.intel8x0 {
+          type plug
+          slave.pcm "hw:0"
+       }
+      
+       ctl.intel8x0 {
+          type hw
+          card 0
+       }
+       
+       pcm.usb-audio {
+          type plug
+          slave.pcm "hw:1"
+       }
+       
+       ctl.usb-audio {
+          type hw
+          card 1
+       }
+</programlisting>
+<para
+>Wpisz teraz usb-audio w oknie konfiguracji xine, a dźwięk powinien być wysłany do karty na USB (pod warunkiem, że alsa-lib poprawnie konwertuje częstotliwości próbkowania, kanały itd.).</para>
+<para
+>Aby używać wirtualnego urządzenia, utworzonego za pomocą dmix, upewnij się, że pole "sound card can do mmap" ("karta dźwiękowa obsługuje mmap") jest wyłączone.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq15">
+<title
+>Moduł dźwiękowy aRts</title>
+
+<note
+><para
+>Przykro nam, ale aRts nie ma opiekuna. Jeśli chcesz, możesz nim zostać, zapraszamy!</para
+></note>
+
+</sect1>
+
+
+</chapter>

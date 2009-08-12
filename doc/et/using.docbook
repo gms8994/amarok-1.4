@@ -1,0 +1,2274 @@
+<chapter id="using-kapp">
+<title
+>&amarok;i kasutamine</title>
+
+<para
+>&amarok; on mitmekülgne audiofailide mängija, mis pakub ohtralt võimalusi oma muusikakogu hallata ja korraldada. Nagu audiomängijal ikka, on &amarok;il mängija aken, kus saab juhtida kõiki olulisemaid asju. Samuti on &amarok;il võrreldamatult vahva esitusnimekirja aken. Selles on mitu sirvijat, mis lubavad oma muusikakogu igati ära kasutada.</para>
+
+<para
+>Käesolevas peatükis kirjeldame, kuidas kasutada kõiki &amarok;i pakutavaid võimalusi, sealhulgas seda, kuidas luua muusikakogu ja esitusnimekiri.</para>
+
+<sect1 id="player-window">
+<title
+>Mängija aken</title>
+
+<screenshot>
+	<screeninfo
+>Mängija akna pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>Mängija aken on põhimõtteliselt &amarok;i imelihtne juhtimiskeskus. Ülaosas on liikuva infoga riba, kus näeb parajasti mängitavat pala. Selle all on näha pala kestvus, bitikiirus ja diskreetimissagedus. Viimati mainitud alale klõpsates saab muuta näidatavat aega, milleks võib olla kas pala kogukestvus või see, kui palju on veel lõpuni jäänud.</para>
+
+<para
+>Mängija aknas asuvad ka audioanalüsaatorid, mis samuti on paigutatud esitusriba alla. Hiire vasaku nupu klõpsuga analüsaatorite alal saab läbi kerida kõik saadaolevad analüsaatorid.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Analüsaatori vihje</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>&amarok;i analüsaatorid võib soovi korral mängija aknast lahti haakida. Klaviatuuril klahvile <keycap
+>d</keycap
+> vajutades muutub aktiivne analüsaator omaette aknaks, mille suurust on võimalik vastavalt soovile muuta.</para>
+</tip>
+
+<para
+>Esitusriba all asuvad ka nupud <guibutton
+>PL</guibutton
+> ja <guibutton
+>EQ</guibutton
+>. Klõps <guibutton
+>PL</guibutton
+>-ile lubab kiiresti nähtavale tuua või varjata esitusnimekirja akna, <guibutton
+>EQ</guibutton
+> aga sisse või välja lülitada ekvalaiseri (kui mootor seda muidugi toetab).</para>
+
+<para
+>Ülejäänud osa aknast võtavad enda alla mängimise juhtimiseks mõeldud nupud ning helitugevuse ja mängimiskoha liugurid. Viimastega saad valida just sellise helitugevuse või koha palas, mis sulle meeldib. Nuppudega saab juhtida mängitava pala esitamist või valida eelmise või järgmise pala oma esitusnimekirjast.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>Ekvalaiseri aken</title>
+
+<para
+>Sisseehitatud ekvalaiserit on väga lihtne kasutada ja see töötab kõigi mootoritega. Ekvalaiseril on 17 eelnevalt määratud seadistust klassikalisest tehnoni ning neid võib väga hõlpsalt ka ise juurde tekitada.  </para>
+
+<para
+>Ekvalaiseri kasutamiseks vali peaaknas <menuchoice
+><guimenu
+>Tööriistad</guimenu
+><guimenuitem
+>Ekvalaiser</guimenuitem
+></menuchoice
+> või klõpsa mängija aknas nupule <guibutton
+>EQ</guibutton
+>. Kui märkida aknas kast <guibutton
+>Ekvalaiseri lubamine</guibutton
+>, muutub ekvalaiser aktiivseks.</para>
+
+<screenshot>
+	<screeninfo
+>Ekvalaiseri pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Dialoogi rippmenüüs saab valida mõne valmisseadistustest. Samuti võib iga liuguriga ise vajaliku väärtuse kindlaks määrata. Liuguri nihutamisega lülitutakse automaatselt valmisseadistusele 'Käsitsi', mis laseb sul vabalt katsetada, kuni oled leidnud vajaliku kombinatsiooni. Kui soovid seda salvestada, klõpsa rippmenüüst paremal asuvale ikoonile <guiicon
+>Lisa uus valmisseadistus</guiicon
+>. Kui valid salvestamata mõne muu valmisseadistuse, läheva tehtud muudatused kaotsi. Lisaks salvestamisele võib klõpsata ka rippmenüüst paremal asuvale ikoonile <guiicon
+>Halda valmisseadistusi</guiicon
+>, mis lubab valmisseadistusi kustutada või ümber nimetada.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>Esitusnimekirja aken</title>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja akna pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>&amarok;i esitusnimekiri on kõige parem esitusnimekiri üldse, mida &kde; audiomängijad pakuvad. Selle mitmeid võimalusi ei ole ühelgi teisel rakendusel. See ei tohiks sind siiski heidutada, sest võimsusele vaatamata on esitusnimekirja imelihtne kasutada.</para>
+
+<para
+>Esitusnimekirja aken on jagatud kaheks põhiosaks. Vasakul asub külgriba, kus võib leida mitmed esitusnimekirja akna suurepärased võimalused, näiteks <link linkend="context-browser"
+>kontekstisirvija</link
+>. Paremal pool asub esitusnimekiri ise. See on lihtne, kuid samas nii võimas, et rahuldab ka kõige nõudlikumaid kasutajaid.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Külgriba sirvijad</title>
+
+<para
+>&amarok;i sirvijad lubavad oma muusikakogu kasutada väga mitmel moel. Need asuvad akna vasakus servas ning kõiki tähistab vastava nimega sakk. Sakil klõpsates avatakse vastava sirvijaga kaart. Kui sirvija on avatud, siis klõps sakil sulgeb selle. Korraga saab aktiivne olla ainult üks sirvija, ehkki palu võib lohistada avatud kaardilt suletud sirvija sakile, mille puhul tuleb saki kohal nii sekundijagu oodata, enne kui see aktiveerub. Sirvijaid võib ka peita, klõpsates mis tahes sakil hiire parema nupuga ning kontekstimenüüs sirvijaid valides või valikumärget eemaldades.</para>
+
+<screenshot>
+	<screeninfo
+>Sirvija valiku pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>Kontekstisirvija</title>
+
+<para
+>Kontekstisirvija näitab mitmesugust teavet parajasti esitatava pala kohta. Selle välimust võib muuta teemade ehk <link linkend="configure-appearance"
+>kontekstisirvija stiilidega</link
+>. Sirvija on jagatud kolmeks kaardiks: <quote
+>Muusika</quote
+>, <quote
+>Sõnad</quote
+> ja <quote
+>Esitaja</quote
+>. Kaardid, mille funktsioone selgitatakse allpool, näeb teavet parajasti kuulatava pala mitme aspekti kohta.</para>
+
+<note
+><para
+>&amarok;i varasemate versioonide kasutajad kindlasti märkavad, et enam pole kaarti <quote
+>Kodu</quote
+>. Selle kaardi teave on laiali jagatud mitmele poole &amarok;i kasutajaliideses. Samalaadset teavet pakub statistikadialoog, mille saab avada menüükäsuga <menuchoice
+><guimenu
+>Tööriistad</guimenu
+><guimenuitem
+>Statistika</guimenuitem
+></menuchoice
+>.</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Konteksti pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>Muusika kaart</title>
+
+<para
+><guilabel
+>Muusika</guilabel
+> kaart annab infot parajasti mängitava pala ning selle esitaja ja albumi kohta.</para>
+
+<para
+>Selle kaardi esimesel paneelil on info antud pala kohta. Paneeli tiitlil näeb pala nime, esitaja nime ja albumit. Paneeli sees võib näha antud pala albumi kaanepilti. Pildi kõrval asub <ulink url="http://www.musicbrainz.org/"
+>MusicBrainzi</ulink
+> ikoon. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Klõps sellele ikoonile sooritab MusicBrainzis päringu antud pala kohta.</para>
+
+<para
+>MusicBrainzi ikooni all on rohkem infot antud pala kohta. Siin näeb, mitu korda on pala esitatud, selle praegust hinnangut ning seda, millal pala esimest ja viimast korda mängiti.</para>
+
+<tip
+><para
+>Albumi kaanepildi nägemiseks kontekstisirvijas peab kaanepilt asuma samas kataloogis kuulatava palaga. Toetatud failivormingud on .jpg, .jpeg, .gif ja .png. Pildid võivad kanda mis tahes nime, kuid ennekõike on tagatud nende piltide nägemine, mille nimes esineb <quote
+>front</quote
+>. Kontekstisirvija kasutab ka kaanepilte, mille on salvestanud kaanepiltide allalaadimisvahend, või ID3v2 siltidesse kaasatud pilte.</para
+></tip>
+
+<para
+>Paneelil <guilabel
+>Pakutavad palad</guilabel
+> on kirjas mitu lugu, mida sul soovitatakse kuulata. Klõps mõnele nimele käivitab antud pala esitamise.</para>
+
+<para
+>Paneeli <guilabel
+>Pakutavad palad</guilabel
+> all asub <guilabel
+>Esitaja lemmikpalad</guilabel
+>. See toob ära aktiivse pala esitaja viis kõige kõrgemalt hinnatud pala.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Kaardil <guilabel
+>Muusika</guilabel
+> näidatava teabe kogust saab muuta, kui klõpsata hiire parema nupuga kaardil ja lülitada vajalikke elemente kontekstimenüüs.</para
+></tip>
+
+<para
+>Viimasel paneelil <guilabel
+>Esitaja albumid</guilabel
+> on kirjas kõik aktiivse pala esitaja albumid, mis kuuluvad sinu muusikakogusse. Klõps mõne albumi nimel avab albumi, näidates selle sisu.</para>
+
+<tip
+><para
+>Kui klõpsad ükspuha millisel paneelil pala nimele, hakatakse seda mängima. Hiire parema nupuga albumite ja palade nimele klõpsates avaneb hüpikmenüü, mis võimaldab mitmel moel esitust juhtida või pala/album järjekorda seada.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>Sõnade kaart</title>
+
+<para
+><guilabel
+>Sõnade</guilabel
+> kaart tõmbab parajasti esitatava laulu sõnad mõnelt toetatud veebileheküljelt. See on väga paindlik omadus: võib kirjutada terve hulga skripte laulusõnade tõmbamiseks erinevatelt lehekülgedelt. Vaata selle kohta lähemalt skriptidest kõnelevat peatükki. Sõnade kaardile klõpsates püüab &amarok; tõmmata esitatava pala sõnad. Kui ükski sõnadeskript ei tööta, antakse sulle võimalus neist mõni valida.</para>
+
+<screenshot>
+	<screeninfo
+>Laulusõnade pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>Tööriistariba nuppudega saab sõnade kaardil ette võtta mitmeid toiminguid.</para>
+
+<para
+>Nupuga <guibutton
+>Lisa</guibutton
+> avatakse (välises brauseris) <quote
+>sõnade lisaise</quote
+> lehekülg laulusõnade veebisaidil (vastavalt sellele, milline skript parajasti töötab).</para>
+
+<para
+>Nupuga <guibutton
+>Redigeerimine</guibutton
+> saab muuta aktiivse pala sõnu. Muudatused salvestatakse &amarok;i muusikakogu andmebaasi. Selleks ei pea sõnadeskript töötama.</para>
+
+<para
+>Nupp <guibutton
+>Otsi</guibutton
+> käivitab google.com-i otsingu (välises brauseris), kus saab otsida aktiivse pala sõnu.</para>
+
+<para
+>Nupp <guibutton
+>Värskenda</guibutton
+> puhastab aktiivse pala puhverdatud sõnad ja otsib neid uuesti.</para>
+
+<para
+>Nupp <guibutton
+>Ava välises brauseris</guibutton
+> näitab aktiivse pala sõnu sinu määratud välises veebilehitsejas.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>Esitaja kaart</title>
+
+<screenshot>
+	<screeninfo
+>Esitaja kaardi pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Esitaja kaart näitab Wikipedia artiklit parajasti esitatava laulu esitaja kohta. Tööriistaribal paiknevad järgmised nupud:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Liikumisnupud edasi ja tagasi liikumiseks</para>
+</listitem>
+<listitem>
+<para
+>Leheküljenupud liikumiseks esitaja, albumi või pala leheküljele Wikipedias.</para>
+</listitem>
+<listitem>
+<para
+>Nupp aktiivse lehekülje avamiseks välises brauseris</para>
+</listitem>
+<listitem>
+<para
+>Seadistamisnupp Wikipedia lokaadi (keele) määramiseks</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Muusikakogu sirvija</title>
+
+<screenshot>
+	<screeninfo
+>Muusikakogu sirvija pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Muusikakogu sirvija on &amarok;i süda ja hing. Siin on näha terve kogu sordituna mitmesuguste tunnuste järgi. Iga rühmituse sees on kogu esitatud tähestikuliselt: algul sümbolid ja arvud, seejärel tähed, sealjuures ei arvestata tähesuurust. Iga rühmituse all on palad, mille esitaja ja/või album pole teada, toodud ära kohe algul pealkirja <quote
+>Tundmatu</quote
+> all. Kuigi palade järjekorranumbrit ei näidata, on nad toodud albumil esinemise järjekorras. Kogu nimekirja päisel klõpsates saab selle teistpidi sorteerida. Iga kirje ees asuvale avamisikoonile klõpsates avatakse kogu täielikult.</para>
+
+<para
+>Rippmenüü <quote
+>Rühmitamise alus</quote
+> võimaldab kogu rühmitada mitmel moel:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Rühmitamise alus</guimenu
+><guimenuitem
+>Esitaja</guimenuitem
+></menuchoice
+> - tipptaseme sorteerimiseks, iga pala tuuakse ära esitaja all, albumit või žanri arvestamata.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Rühmitamise alus</guimenu
+><guimenuitem
+>Esitaja/Album</guimenuitem
+></menuchoice
+> - palad sorteeritakse esitajate järgi ning iga esitaja all albumite järgi. Kui soovid nähja kompilatsioone või taustamuusikaalbumeid, on see parim viis: sellised albumid seisavad kohe nimekirja alguses pealkirja <quote
+>Mitu esitajat</quote
+> all.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Rühmitamise alus</guimenu
+><guimenuitem
+>Esitaja/Aasta-Album</guimenuitem
+></menuchoice
+> - sorteeritakse esitajate järgi ning nende all albumid alanevas järjekorras (uusim esimesena). Kui pala puhul pole antud silti <quote
+>Aasta</quote
+>, siis on järjekorraks vaikimisi <quote
+>0 - albumi nimi</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Rühmitamise alus</guimenu
+><guimenuitem
+>Album</guimenuitem
+></menuchoice
+> - kõiki kogu albumeid näidatakse vastavalt nimele tähestikulises järekorras, esinejat arvestamata.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Rühmitamise alus</guimenu
+><guimenuitem
+>Žanr/Esitaja</guimenuitem
+></menuchoice
+> - palad rühmitatakse vastavalt nende žanrisildile, selle all aga esitajate kaupa.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Rühmitamise alus</guimenu
+><guimenuitem
+>Žanr/Esitaja/Album</guimenuitem
+></menuchoice
+> - sama, mis eelmine, ainult et palad sorteeritakse iga esitaja all albumite kaupa.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>Ülejäänud rippmenüü kirjed lubavad rühmitamist lisaks eeltoodule veelgi täpsustada.</para>
+
+<para
+>Tööriistariba kahe järgmise ikooniga saab muuta kogu kuvamise viisi. Esimene, puuvaade, on vaikimisi valik. Teine ikoon lülitab sisse nimekirjavaate, mis esialgu on tühi. Otse tööriistariba all asuvasse tekstikasti otsingumõistet kirjutades hakatakse kogu täitma ning seda saab mitmel moel sorteerida, klõpsates veerupäistele (veerupäistele hiire parema nupuga klõpsates ilmub kontekstimenüü, kus saab muuta seda, milliseid veerge näidatakse).</para>
+
+<para
+>Tööriistariba viimase ikooniga saab muuta kogu enda seadistusi. Pane tähele, et kui muudad katalooge, uurib &amarok; otsekohe muusikakogu uuesti läbi, mis võib võtta omajagu aega, kui sul on palju palasid.</para>
+
+<para
+>Otse tööriistariba all asub otsingufilter, mis käitub ühtmoodi nii puu- kui ka nimekirjavaates. Otsimisviisidest räägib lähemalt käsiraamatu esitusnimekirja tutvustav osa.</para>
+
+<para
+>Otsingufiltri all on veel üks rippmenüü, mis võimaldab näha viimati kogusse lisatud palasid. Siin saab valida mitme ajavahemiku vahel alates viimasest 24 tunnist kuni ühe aastani või ka terve muusikakogu.</para>
+
+<sect3 id="collection-rmb">
+<title
+>Muusikakogu sirvija kontekstimenüü valikud</title>
+<para
+>Järgmisi valikuid saab kasutada, kui klõpsata &HPNga; muusikakogu sirvija kirjetel.</para>
+
+<para
+><guilabel
+>Laadi</guilabel
+> - puhastab aktiivse esitusnimekirja ja lisab valitud pala(d) esimes(t)e pala(de)na sorteerimise järjekorras.</para>
+
+<para
+><guilabel
+>Lisa esitusnimekirja</guilabel
+> - lisab valitud pala(d) aktiivse esitusnimekirja lõppu. Sama tulemuse annab topeltklõps mõnel muusikakogu palal.</para>
+
+<para
+><guilabel
+>Pala(d) järjekorda</guilabel
+> - lisab valitud pala(d) järjekorda, et neid hakataks järgmisena esitama.</para>
+
+<para
+><guilabel
+>Salvesta esitusnimekirjana</guilabel
+> - salvestab valitud palad esitusnimekirjana. Sul palutakse nimekirjale salvestamisel nimi anda.</para>
+
+<para
+><guilabel
+>Lisa meediaseadne ülekandejärjekorda</guilabel
+> - lisab pala(d) meediaseadmele ülekantavate lugude järjekorda, kui selline seade on ühendatud. Täpsemalt räägib sellest osa <link linkend="media-device-browser"
+>Meediaseadme sirvija</link
+>.</para>
+
+<para
+><guilabel
+>Kirjuta kõik selle esitaja palad/Kirjuta CD-le</guilabel
+> - saadab pala(d) rakendusele &k3b; andme- või audio-CD-na kirjutamiseks. Kui &k3b; pole paigaldatud, ei saa seda valikut kasutada.</para>
+
+<para
+><guilabel
+>Tõmba kaanepilt</guilabel
+> - otsib amazon.com-ist antud albumi kaanepilti.</para>
+
+<para
+><guilabel
+>Muuda (n) pala infot</guilabel
+> - avab dialoogi <guilabel
+>Pala info</guilabel
+>, mis lubab muuta ühe või enama pala silte. </para>
+
+<para
+><guilabel
+>Failide korraldamine</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Korralda (n) faili</guilabel
+> - avab dialoogi <guilabel
+>Muusikakogu failide korraldamine</guilabel
+>. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>Kustuta (n) faili</guilabel
+> - avab kinnitusdialoogi, mis pärib, kas soovid tõesti kustutada valitud pala(d) jäädavalt oma arvutist.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Näita mitme esitaja all</guilabel
+> - märgib valitud albumi kompilatsiooniks, mida näidatakse pealkirja <quote
+>Mitu esitajat</quote
+> all.</para>
+
+<para
+><guilabel
+>Ei näidata mitme esitaja all</guilabel
+> - muudab kompilatsiooniks märgitud albumi taas tavaliseks albumiks ning liigutab selle pealkirja <quote
+>Mitu esitajat</quote
+> alt tagasi esitaja nime alla.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Esitusnimekirja sirvija</title>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja sirvija pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Esitusnimekirja sirvijas saab hõlpsasti toime tulla oma arvukate esitusnimekirjadega. See võimaldab kasutada ka niinimetatud nutikaid esitusnimekirju, mis muudab brauseri ilmselt üldse kõige targemaks esitusnimekirja sirvijaks kogu maailmas.</para>
+
+<para
+>Esitusnimekirja sirvija on jagatud kaheks osaks: esitusnimekirjad ja nutikad esitusnimekirjad. Esitusnimekirjade osas paiknevad sinu loodud esitusnimekirjad. Nende sisu saab vaadata, kui klõpsata iga nimekirja ees asuvale märgile <quote
+>+</quote
+>. Kui oled mõne esitusnimekirja avanud, võid sinna uusi palasid lihtsalt juurde lohistada. Kui oled leidnud nimekirja, mille palasid tahaksid kuulata, tee sellel topeltklõps või vajuta <keycap
+>tühikuklahv</keycap
+>i ja &amarok; hakkab palasid esitama. Ülejäänud esitusnimekirja sirvija kiirklahvidega saab tutvuda <link linkend="keybd-shortcuts"
+>kiirklahvide peatükis</link
+>.</para>
+
+<tip
+><para
+>Kui salvestad esitusnimekirja aknas uue esitusnimekirja, lisatakse see automaatselt sirvija esitusnimekirja sektsiooni.</para
+></tip>
+
+<para
+>Esitusnimekirja sirvija alumises osas on nutikad esitusnimekirjad. Need kasutavad &amarok;i sisseehitatud andmebaasi mõningate tulusate esitusnimekirjade lennult koostamiseks. Nende seas võib leida järgmised:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Kogu muusikakogu: esitusnimekiri kõigi paladega, mis leiduvad sinu muusikakogus.</para>
+</listitem>
+
+<listitem>
+<para
+>Lemmikpalad: mitu esitusnimekirja 15 nimekirjavaates kõige kõrgemalt hinnatud esitajalt.</para>
+</listitem>
+
+<listitem>
+<para
+>Kõige enam esitatud: mitu esitusnimekirja 15 nimekirjavaates kõige enam mängitud esitajalt.</para>
+</listitem>
+
+<listitem>
+<para
+>Uusimad palad: mitu esitusnimekirja 15 nimekirjavaatesse kõige viimasena lisatud palade esitajalt.</para>
+</listitem>
+
+<listitem>
+<para
+>Viimati esitatud: esitusnimekiri 15 sinu muusikakogu viimati esitatud palaga.</para>
+</listitem>
+
+<listitem>
+<para
+>Esitamata: esitusnimekiri sinu muusikakogu selliste paladega, mida pole kunagi mängitud.</para>
+</listitem>
+
+<listitem>
+<para
+>Žanrid: mitu esitusnimekirja žanride kaupa.</para>
+</listitem>
+
+<listitem>
+<para
+>Ka kasutaja ise saab määratleda nutikaid esitusnimekirju. Klõps nupule <guibutton
+>Uus nutikas esitusnimekiri</guibutton
+> avab dialoogi, kus saab määrata, millistele kriteeriumidele peab uus nimekiri vastama.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Meediaseadme sirvija</title>
+
+<screenshot>
+	<screeninfo
+>Meediaseadme sirvija pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Meediaseadme paneeli saab kasutada oma iPodi ühendamiseks &amarok;iga. Oma iPodi kasutamiseks meediaseadme sirvijas peab iPod olema enne &amarok;i käivitamist ühendatud asukohta /mnt/ipod. Kui oled &amarok;i käivitanud, leiad iPodi palad esitajate kaupa rühmitatuna sirvija ülaosas.</para>
+
+<para
+>Palade lisamiseks iPodi lohista need esitusnimekirjast esitajate nimekirja. Kui oled palad lisanud, klõpsa nupule <guibutton
+>Kanna üle</guibutton
+> ning lood laaditaksegi iPodi. Ülekande lõppemise järel sulge &amarok; ja lahuta oma iPod.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Failisirvija</title>
+
+<screenshot>
+	<screeninfo
+>Failisirvija pilt</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Failisirvija on otsekui esitusnimekirja põimitud mini-Konqueror. Selles saab näha failisüsteemi ja seal liikudes lisada audiofaile esitusnimekirja. Sirvija ülaosas asub tööriistariba, mille nuppude abil saab failisüsteemis liikuda üles, tagasi ja edasi. Samuti saab seal liikuda kodukataloogi, vaate uuesti laadida, lasta faile näidata üksikasjaliku või vähema infoga või ka pruukida järjehoidjaid, mis viivad sind kohe just sulle vajalikku kohta failisüsteemis.</para>
+
+<para
+>Tööriistariba all asub mugav otsinguriba, kus saab faile leida nime järgi. See on mõttekas eriti väga paljude failidega kataloogide korral, sest otsimisel piiratakse näidatavad tulemused sellega, mida otsinguribale sisestad.</para>
+
+<para
+>Failisirvija allosas paikneb aadressiriba, millega saab URL-i sisestades avada just vajaliku muusikafaili. Kirjutades sinna näiteks <filename class="directory"
+>tar:/home/marek/muusika.tar.gz</filename
+> ja vajutades klahvi <keycap
+>Enter</keycap
+>, pääsed ligi ka pakitud failis olevatele lugudele. Seejärel võid sealt failid lohistades esitusnimekirja lisada.</para>
+
+<tip
+><para
+>Kui esitusnimekiri muutub suuremaks kui ekraan, ei ole faile lohistamisega enam nii lihtne lisada. Sellisel juhul aitab lohistamise ajal klahvi <keycap
+>Shift</keycap
+> allhoidmine, millisel juhul lohistatav fail lisatakse nimekirja lõppu, mitte aga sellesse kohta, kuhu sa hiire viid.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>Esitusnimekiri</title>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Esitusnimekirjas on kõik palad, mida soovid lasta ette mängida. Sa võid nende järjekorda muuta, lohistades faile hiirega ja kukutades need just sinna, kuhu soovid. Esitusnimekirja kohal asub tekstiväli, kuhu saab sisestada filtristringi. Kui sinna mõne tähe kirjutad, muutub esitusnimekirja vaade, näidates ainult sisestatud sümbolitele vastavaid palasid. Filtreerimise peatamiseks vajuta klahvi <keycap
+>Backspace</keycap
+>, kuni tekstikasti ei ole jäänud ühtegi sümbolit.</para>
+
+<tip
+><para
+>Otsimisel saab kasutada ka täiustatud Google'i-laadset süntaksit.</para>
+
+<para
+>Kui sisestad tühikutega eraldatud mõisted, otsitakse vaikimisi kõiki sisestatud mõisteid sisaldavaid kirjeid. Kui sisestad näiteks 'üks kaks kolm', otsitakse kirjeid, milles leidub üks, kaks ja kolm.</para>
+
+<para
+>Sa võid aga otsitavate mõistete vahele kirjuta OR: 'üks OR kaks OR kolm'. Sel juhul otsitakse kirjeid, milles sisaldub üks või kaks või kolm (või nende mis tahes kombinatsioon).</para>
+
+<para
+>Samuti saab otsimisel kasutada jutumärke, näiteks "Mike Oldfield". Sel juhul otsitakse kirjet, milles sisalduks Mike Oldfield, samas ei arvestata näiteks kirjeid, milles leidub Mike J. Oldfield.</para>
+
+<para
+>Vaikimisi otsitakse kõigist parajasti nähtavatest esitusnimekirja veergudest. Otsitava veeru saab määrata kujul veerg:mõiste - näiteks title:amarok (see võib olla ka veerg, mida pole parajasti näha). Nii saad otsida ainult kirjeid, milles 'amarok' esineb ainult pealkirjas, aga mitte näiteks albumi nimes.</para>
+
+<para
+>Otsitavat veergu määrates saab otsida ka elemente, mis sisaldavad väiksema või suurema väärtusega kirjeid, Näiteks score:
+>50 otsib kirjeid, mille hinnang oleks suurem kui 50.</para>
+
+<para
+>Mõiste määramiseks, mida kindlasti ei tuleks otsida, kirjuta selle ette miinus (-). Näiteks -jura korral jäetakse arvestamata kõik kirjed, milles vastav sõna esineb.</para>
+
+<para
+>Eelmainitud võimalusi võib ka kombineerida, näiteks "Mike Oldfield" OR score:
+>50 -comment:halb. Sel juhul otsitakse kõike, milles leidub 'Mike Oldfield' või mille hinnang on kõrgem kui 50, aga jäetakse arvestamata need kirjed, mille kommentaaris seisab sõna "halb".</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja nõuanne</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Elementide valimiseks, et neid kindlas järjekorras esitada, hoia all klahvi <keycap
+>Control</keycap
+> ja klõpsa &HPN;ga elementidel just selles järjekorras, nagu sa neid kuulda tahad. Elementidele lisatakse numbrid, mis näitavad taasesitamise järjekorda.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>Esitusnimekirja menüüriba</title>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja menüüriba pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>Menüü Toimingud</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Toimingud</guimenu
+> <guimenuitem
+>Mängi andmekandjat...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab dialoogi URL-i sisestamiseks.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Toimingud</guimenu
+> <guimenuitem
+>Mängi audio CD-d</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Võimaldab vaadata ja mängida audio CD-d (protokolliga audiocd:/).</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Toimingud</guimenu
+> <guimenuitem
+>Eelmine pala</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Liigub esitusnimekirjas eelmisele palale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Toimingud</guimenu
+> <guimenuitem
+>Paus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Peatab parajasti mängitava pala esituse.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Toimingud</guimenu
+> <guimenuitem
+>Peata</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Peatab esituse.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Toimingud</guimenu
+> <guimenuitem
+>Järgmine pala</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Liigub esitusnimekirjas järgmisele palale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Toimingud</guimenu
+> <guimenuitem
+>Välju</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Sulgeb &amarok;i</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>Menüü Esitusnimekiri</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Lisa andmekandja...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab dialoogi andmekandja lisamiseks aktiivsesse esitusnimekirja.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Salvesta esitusnimekiri kui...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab dialoogi aktiivse esitusnimekirja salvestamiseks.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Võta tagasi</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Tühistab viimase esitusnimekirjas ettevõetud muudatuse.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Tee uuesti</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Taastab tagasivõetud muudatuse.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Puhasta</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Puhastab aktiivse esitusnimekirja.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Segatud</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Segab aktiivse esitusnimekirja palade järjekorra.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Mine praegusele palale</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Liigub esitusnimekirjas parajasti mängitavale palale.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Valitud palad järjekorda</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Seab kõik esitusnimekirjas valitud palad järjekorda.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Eemalda duplikaadid ja surnud kirjed</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Eemaldab aktiivsest esitusnimekirjast kõik topelt- või puuduvad palad.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Esitusnimekiri</guimenu
+> <guimenuitem
+>Vali kõik</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Valib kõik aktiivse esitusnimekirja palad.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>Menüü Tööriistad</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Kaanepiltide haldur</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab <link linkend="cover-manager"
+>kaanepiltide halduri</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Järjekorrahaldur</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab <link linkend="queue_manager"
+>järjekorrahalduri</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Esimese korra nõustaja</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab esimese korra nõustaja.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Visualiseeringud</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab <link linkend="visualizations"
+>visualiseeringute</link
+> dialoogi.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Ekvalaiser</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab <link linkend="equalizer"
+>ekvalaiseri akna</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Skriptid</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab <link linkend="script_manager"
+>skriptihalduri</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Loe muusikakogu uuesti sisse</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Alustab sinu muusikakogu kataloogide läbiuurimist.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Menüü Seadistused</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Menüüriba peitmine</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Peidab esitusnimekirja akna <link linkend="menubar"
+>menüüriba</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Tööriistariba peitmine</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Peidab esitusnimekirja akna <link linkend="toolbar"
+>tööriistariba</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Mängija akna peitmine</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Peidab <link linkend="player-window"
+>mängija akna</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Pala kordamine</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Kordab parajasti esitatavat pala.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Esitusnimekirja kordamine</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Kordab tervet aktiivset esitusnimekirja.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Juhuslik režiim</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Esitusnimekirja palasid esitatakse juhuslikus järjekorras.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Dünaamiline režiim</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Käivitab dünaamilise esitusnimekirja režiimi.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Globaalsete kiirklahvide seadistamine...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab globaalsete kiirklahvide seadistamise dialoogi.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Kiirklahvide seadistamine...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab &amarok;i kiirklahvide seadistamise dialoogi.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Tööriistaribade seadistamine...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab &amarok;i tööriistaribade seadistamise dialoogi.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Amaroki seadistamine...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab &amarok;i seadistustedialoogi.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>Menüü Abi</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Abi</guimenu
+> <guimenuitem
+>Amaroki käsiraamat</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab käesoleva käsiraamatu.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Shift</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Abi</guimenu
+> <guimenuitem
+>Mis see on?</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Lülitab sisse "Mis see on" abiteksti hiirekursori.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Abi</guimenu
+> <guimenuitem
+>Saada vearaport...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Käivitab vigadest teatamise abivahendi.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Abi</guimenu
+> <guimenuitem
+>Amaroki info</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab Amaroki infodialoogi.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Abi</guimenu
+> <guimenuitem
+>KDE info</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Avab KDE infodialoogi.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>Esitusnimekirja tööriistariba</title>
+
+<screenshot>
+	<screeninfo
+>Esitusnimekirja tööriistariba pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Esitusnimekirja akna tööriistariba paikneb esitusnimekirja allosas. Seal asuvad nupud, mis võimaldavad hõlpsasti pruukida suurt osa esitusnimekirja võimalustest. Tööriistariba paremal poolel leiab nupu <guibutton
+>Lisa andmekandja</guibutton
+>, mis avab failidialoogi, kus saab valida, millist andmekandjat soovid kasutada. Nupu <guibutton
+>Lisa andmekandja</guibutton
+> kõrval paiknevad nupud <guibutton
+>Salvesta esitusnimekiri</guibutton
+>, <guibutton
+>Puhasta esitusnimekiri</guibutton
+> ja <guibutton
+>Uuenda esitusnimekirja</guibutton
+>. Nendega saab aktiivses esitusnimekirjas vastavaid toiminguid ette võtta.</para>
+
+<para
+>Teine nupurühm sisaldab nuppe <guibutton
+>Võta tagasi</guibutton
+> ja <guibutton
+>Tee uuesti</guibutton
+>. Nendega saab tagasi võtta või uuesti teha viimaseid muudatusi esitusnimekirjas.</para>
+
+<para
+>Tööriistariba keskel on unikaalne, muudetava suurusega analüsaator. &HPN;ga klõpsates saab muuta analüsaatori uuendamiskiirust.</para>
+
+<para
+>Tööriistariba viimane nupp on <guimenuitem
+>Menüü</guimenuitem
+>. Nupule <guimenuitem
+>Menüü</guimenuitem
+> klõpsates avaneb samasugune menüü, mis ilmub mängija aknas &HPN;ga klõpsates. See menüü lubab sul kasutada &amarok;i arvukaid seadistamisvõimalusi.</para>
+
+<tip
+><para
+>Tööriistaribal võib paikneda veel terve rida nuppe, sealhulgas mängija juhtimise nupud ja helitugevuse liugur. Seda, millised nupud tööriistaribal asuvad, saab seadistada klõpsuga nupule <guibutton
+>Menüü</guibutton
+> ning sealt käsku <guimenuitem
+>Tööriistaribade seadistamine...</guimenuitem
+> valides.</para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>Esitusnimekirja olekuriba</title>
+
+<screenshot>
+	<screeninfo
+>Olekuriba pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Olekuriba pakub teatud tulusat infot esitusnimekirja kohta. See näitab parajasti mängitavat pala, palade arvu esitusnimekirjas koos esitusnimekirja koguajaga, mängimise staatust (juhuslik või kordamine), miniatuurset mängitava pala asukohaliugurit ning pala esitamisele kulunud aega. Mängimise staatust saab juhtida ka otse olekuribalt, tehes vastaval kirjel topeltklõpsu.</para>
+
+<para
+>Kui soovid, võid ka olekuriba üldse peita. Seda võimaldab <link linkend="general-options"
+>seadistustedialoogi üldiste valikute</link
+> kaardil olev võimalus <guilabel
+>Olekuriba näitamine</guilabel
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>Hiire parema nupu menüü</title>
+
+<screenshot>
+	<screeninfo
+>Hiire parema nupu menüü pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>&HPNga; klõpsamisel avanevat menüüd saab kasutada nii mängija aknas klõpsates kui ka esitusnimekirja aknas paikneva nupuga <guibutton
+>Menüü</guibutton
+>. &HPNga; klõpsamisel avanev menüü lubab kasutada kõiki &amarok;i võimalusi.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pala kordamine</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sisselülitamisel korratakse parajasti aktiivset pala.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Esitusnimekirja kordamine</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sisselülitamisel korratakse tervet esitusnimekirja.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Juhuslik režiim</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sisselülitamisel esitatakse esitusnimekirja palasid juhuslikus järjekorras.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pakkumiste lisamine</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Lisab kontekstisirvijas pakutud laulud aktiivsesse esitusnimekirja.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Kaanepiltide haldur</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Avab <link linkend="cover-manager"
+>kaanepiltide halduri</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Esimese korra nõustaja</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sellele klõpsates avatakse esimese korra nõustaja, mis võimaldab sooritada &amarok;i esialgse seadistamise.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualiseeringud...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sellele klõpsates avatakse <link linkend="visualizations"
+>visualiseeringute aken</link
+>, kus saab valida, millist visualiseeringut &amarok; peab kasutama.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ekvalaiser</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Avab <link linkend="equalizer"
+>ekvalaiseri akna</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Skriptihaldur</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Avab skriptihalduri dialoogi.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Tööriistaribade seadistamine...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sellele klõpsates avaneb dialoog, kus saab seadistada <link linkend="toolbar"
+>esitusnimekirja tööriistariba</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Kiirklahvide seadistamine...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sellele klõpsates avaneb dialoog, kus saab seadistada <link linkend="keybd-shortcuts"
+>&amarok;i kiirklahve</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Globaalsete kiirklahvide seadistamine...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sellele klõpsates avaneb dialoog, kus saab seadistada globaalseid <link linkend="keybd-shortcuts"
+>&amarok;i kiirklahve</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Amaroki seadistamine...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sellele klõpsates avaneb <link linkend="configuring-kapp"
+>&amarok;i seadistustedialoog</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Abi</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>See võimalus pakub alammenüüd, kust saab avada käesoleva käsiraamatu või leida muud &amarok;ki puudutavat infot.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Välju</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Sellele klõpsates suletakse &amarok;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Albumi kaanepildi haldur</title>
+
+<screenshot>
+	<screeninfo
+>Albumi kaanepildi haldur</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Kaanepildi haldur on väga kasulik abimees oma albumite kaanepiltide korrastamisel. Halduri saab käivitada muusikakogu sirvijas menüükäsuga <menuchoice
+><guimenu
+>Toimingud</guimenu
+><guimenuitem
+>Kaanepildi haldur</guimenuitem
+></menuchoice
+>.</para>
+
+<para
+>Kaanepildi haldur näitab kõigi sinu muusikakogu albumite nimekirja. Võimalik on vaadata ka mõne esitaja albumi kaanepilte, kui klõpsata nimekirjas esitaja nimele.</para>
+
+<para
+>Halduri otsinguriba lubab kiiresti leida vajaliku kaanepildi, uurides vastavalt sellele, mida sa sisestad, läbi kõik sinu albumid.</para>
+
+<para
+>Menüüs <guimenuitem
+>Vaade</guimenuitem
+> saab määrata, mida kaanepildi haldur näitab. Võimalikud valikud on järgmised:</para>
+
+<para
+><guimenuitem
+>Kõik albumid</guimenuitem
+>: näidatakse kõiki sinu muusikakogu albumeid.</para>
+
+<para
+><guimenuitem
+>Kaanepildiga albumid</guimenuitem
+>: näidatakse ainult neid albumeid, millel on kaanepilt olemas.</para>
+
+<para
+><guimenuitem
+>Kaanepildita albumid</guimenuitem
+>: näidatakse ainult neid albumeid, millel ei ole kaanepilti.</para>
+
+<para
+>Nupuga <guimenuitem
+>Tõmba puuduvad kaanepildid</guimenuitem
+> saab alla laadida nende albumite kaanepildid, millele sul neid veel ei ole.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>Järjekorrahaldur</title>
+
+<screenshot>
+	<screeninfo
+>Järjekorrahalduri pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Järjekorrahaldur on &amarok;i versiooni 1.3 suur uustulnuk. Selle mõte on anda kasutajatele veelgi suurem kontroll oma esitusnimekirjade üle. Pärast järjekorda seadmist näidatakse järjekorrahalduris palade nimede kõrval arve. Need osutavad järjekorrale, milles &amarok; palasid esitab: esimesena 1, siis 2 ja nii edasi.</para>
+
+<para
+>Järjekorrahalduri kasutamiseks ava see menüükäsuga <menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Järjekorrahaldur</guimenuitem
+></menuchoice
+>, vali pala ja klõpsa järjekorrahalduris ikoonile <guibutton
+>+</guibutton
+>. Uue järjekorra loomiseks võib palasid ka lihtsalt järjekorrahaldurisse lohistada. Samuti võib kasutada esitusnimekirja kontekstimenüüd ning avada järjekorrahalduri palade järjekorra muutmiseks.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Dünaamilised esitusnimekirjad</title>
+
+	<sect2>
+		<title
+>Mis need on?</title>
+		<para
+>Dünaamilised esitusnimekirjad on isemoodustuvad esitusnimekirjad, mida luuakse vastavalt määratud reeglitele. Need aitavad hoida aktiivse esitusnimekirja suurust mõistlikus piiris. Kuigi &amarok; ei kuluta eriti palju ressursse, suurendab siiski suure arvu palade laadimine esitusnimekirja mälukasutust ning võib mõjutada süsteemi jõudlust. Dünaamiliste esitusnimekirjade puhul seda ohtu ei ole. Ka peorežiimi nime all tuntud dünaamilised esitusnimekirjad võimaldavad muu hulgas näiteks kogu öö muusikat esitada, ilma et kasutajal oleks vaja sekkuda. </para>
+	</sect2>
+
+	<sect2>
+		<title
+>Kus nad on?</title>
+		<para
+>Dünaamilised esitusnimekirjad leiab esitusnimekirja külgribalt.</para>
+	
+		<screenshot>
+			<screeninfo
+>Esitusnimekirja külgriba</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Esitusnimekirja külgriba</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Dünaamilisi esitusnimekirju on kolme laadi (kolm dünaamilist režiimi), millest kaks on eelnevalt määratud (seadistamisest tuleb juttu veidi hiljem).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Juhuslik miks</term>
+				<listitem
+><para
+>Käivitab esitusnimekirja tervest muusikakogust valitud juhuslike paladega ning lisab sellesse uusi palasid samuti juhuslikult.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Pakutavad palad</term>
+				<listitem>
+					<para
+>Lisab palad vastavalt <ulink url="http://www.last.fm"
+>last.fm-i</ulink
+> (varem audioscrobbler) pakkumistele. See eeldab, et esitusnimekirjas on juba vähemalt mõni pala. Pane tähele, et selleks pole vaja last.fm-i profiili.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Esitunimekiri suvalises järjekorras (kasutaja valikul)</term>
+				<listitem
+><para
+>Lisab juhuslikud palad määratud nutikatest esitusnimekirjadest kas sisseehitatud algoritmi alusel või kasutaja näpunäitel.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>Kuidas neid kasutada?</title>
+		<para
+>Lihtsalt klõpsa soovitud esitusnimekirjal, lohista see esitusnimekirja aknasse või tee klõps hiire parema nupuga ja vali 'Laadi'. Sellega asendatakse sinu aktiivne esitusnimekiri, nii et kui see on sulle oluline, oleks mõttekas see eelnevalt salvestada. </para>
+		<para
+>Nii juhusliku miksi kui ka esitusnimekirja suvalises järjekorras esitamise korral täidetakse esitusnimekiri ja hakatakse seda esitama aega viitmata. Pakutavate palade korral alustatakse tühja esitusnimekirjaga, oodates, et sa lisad vähemalt ühe oma kogus leiduva laulu. Pakkumised lisatakse pala muutumisel, mistõttu esitusnimekiri täidetakse alles esimese laulu lõppedes.</para>
+		<para
+>Kui soovid säilitada oma aktiivse esitusnimekirja, tuleks sisse lülitada viimast tüüpi dünaamiline režiim, valides <menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Dünaamiline režiim</guimenuitem
+></menuchoice
+>. Sel juhul võetakse aluseks olemasolev esitusnimekiri. Sama menüükäsuga saab dünaamilise režiimi välja lülitada.</para>
+		<screenshot>
+			<screeninfo
+>Laaditud dünaamiline esitusnimekiri</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Laaditud dünaamiline esitusnimekiri</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>Nupuga <guibutton
+>Täida uuesti</guibutton
+> puhastatakse esitusnimekiri ja lisatakse palad uuesti vastavalt kasutatavale dünaamilisele režiimile, nupuga <guibutton
+>Redigeerimine</guibutton
+> saab aga avada dünaamilise režiimi seadistustedialoogi.</para
+> <note
+><para
+>Neid nuppe pole näha, kui dünaamiline režiim pole sisse lülitatud.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Dünaamilise esitusnimekirja seadistamine</title>
+	<sect2>
+		<title
+>Dünaamilise esitusnimekirja käitumise muutmine</title>
+		<para
+>Klõpsates hiire parema nupuga kirjele <guilabel
+>Dünaamiline esitusnimekiri</guilabel
+>, saab valida <guimenuitem
+>Muuda</guimenuitem
+>, mis avab dünaamilise režiimi seadistustedialoogi.</para>
+	
+		<screenshot>
+			<screeninfo
+>Dünaamilise režiimi seadistused</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Dünaamilise esitusnimekirja nimi</term>
+				<listitem>
+					<para
+>Anna nimi täiesti oma suva järgi. Segaduste vältimiseks peavad esitusnimekirjade nimed siiski olema unikaalsed.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Esitatud palade eemaldamine</term>
+				<listitem>
+					<para
+>Kui sellest kastist märge eemaldada, pikeneb esitusnimekiri iga palaga, järgmiste palade sätet ei arvestata ning esitusnimekirjas ei teki kordusi. Kui see on märgitud, eemaldatakse esitatud palad nimekirja algusest vastavalt allpool toodud näidatavate palade sättele.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Ajaloo märkimine</term>
+				<listitem>
+					<para
+>Esitatud palad muudetakse halliks.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Näidatavaid esitatud palasid</term>
+				<listitem>
+					<para
+>Näidatavaid esitavaid palasid - arv, mitu esitatud pala jätta esitusnimekirja algusse. See on kasulik, kui soovid näha, mida hiljuti on mängitud.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Järgmised palad</term>
+				<listitem>
+					<para
+>See säte piirab esitusnimekirja suurus.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Lisatavad palad</term>
+				<listitem>
+					<para
+>Palade arv, mis lisatakse esitusnimekirja pärast iga pala esitamist. Pane tähele, et kui see on suurem kui 1, kasvab esitusnimekiri päris kiiresti, sest korraga esitatakse ja eemaldatakse ju ainult üks pala.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Sama dialoogi võib avada esitusnimekirja akna ülaosas paremal asuvale nupule <guibutton
+>Redigeerimine</guibutton
+> klõpsates.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Dünaamilise režiimi riba</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Kohandatud dünaamilise esitusnimekirja lisamine</title>
+		<para
+>Tee hiire parema nupuga klõps dünaamiliste esitusnimekirjade kirjel ja vali 'Uus dünaamiline esitusnimekiri'.</para>
+
+		<screenshot>
+			<screeninfo
+>Uue dünaamilise esitusnimekirja loomine</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>Paremal asuvad seadistusi on eespool kirjeldatud. Vasakul paiknevas paneelis saab valida mis tahes olemasoleva esitusnimekirja või nutika esitusnimekirja. Kui valid mitu esitusnimekirja, lisab &amarok; neist palasid juhuslikult.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>Skriptihaldur</title>
+
+<screenshot>
+	<screeninfo
+>Skriptihalduri pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Skriptiliides lubab &amarok;i võimalusi väga lihtsalt laiendada. &amarok;i skripti käivitamiseks ava skriptihaldur &amarok;i menüüribalt käsuga <menuchoice
+><guimenu
+>Tööriistad</guimenu
+><guimenuitem
+>Skriptihaldur</guimenuitem
+></menuchoice
+>. Skriptihalduris näed paigaldatud skriptide nimekirja. Vali sealt mõni ja klõpsa selle käivitamiseks nupule <guibutton
+>Käivita</guibutton
+>. &amarok;i skript töötab seni, kuni on oma töö lõpetanud või kuni sa selle käsitsi peatad, valides skriptihalduri nimekirjas skripti ja klõpsates nupule <guibutton
+>Peata</guibutton
+>.</para>
+
+<tip
+><para
+>Mõnda skripti on võimalik ka seadistada. Selleks klõpsa skriptihalduris nupule <guibutton
+>Seadista</guibutton
+>, mis avabki antud skripti seadistustedialoogi.</para
+></tip>
+
+<para
+>Uute &amarok;i skriptide paigaldamiseks klõpsa skriptihalduris nupule <guibutton
+>Paigalda skript</guibutton
+>. Ilmuvas failidialoogis saad valida paigaldatava &amarok;i skripti. Seejärel ilmub uue skripti nimi ka halduri nimekirja. Samuti võib uute skriptide paigaldamiseks klõpsata nupule <guibutton
+>Hangi rohkem skripte</guibutton
+>, mis avab dialoogi skriptide tõmbamiseks ja automaatseks paigaldamiseks internetist.</para>
+
+<para
+>Võid muidugi ka leida, et mõningaid skripte pole enam vaja. Skripti eemaldamiseks vali see skriptihalduri nimekirjast ja klõpsa nupule <guibutton
+>Eemalda</guibutton
+>.</para>
+
+<note
+><para
+>Kui soovid &amarok;i skriptidega lähemat tutvust teha, uuri käsiraamatu osa <link linkend="script-writing"
+>Skriptide kirjutamine</link
+>.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>Visualiseeringud</title>
+
+<screenshot>
+	<screeninfo
+>Visualiseeringute pilt</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Visualiseerimisaken võimaldab valida, milliseid visualiseerimispluginaid &amarok;is kasutada. Aken näitab saadaolevate visualiseeringute nimekirja. Nende valimiseks märgi ära vastavad kastid.</para>
+
+</sect1>
+
+</chapter>

@@ -1,0 +1,707 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY amarok "Amarok">
+ <!ENTITY amarok-quick SYSTEM "quick.docbook">
+ <!ENTITY amarok-config SYSTEM "config.docbook">
+ <!ENTITY amarok-using SYSTEM "using.docbook">
+ <!ENTITY amarok-advanced SYSTEM "advanced.docbook">
+ <!ENTITY amarok-req SYSTEM "requirements.docbook">
+ <!ENTITY amarok-faq SYSTEM "faq.docbook">
+ <!--<!ENTITY amarok-tech SYSTEM "technology.docbook"
+>-->
+ <!ENTITY kappname "&amarok;">
+ <!ENTITY package "extragear">
+ <!ENTITY RMB "right mouse button">
+ <!ENTITY k3b "K3b">
+ <!ENTITY % addindex "IGNORE">
+ <!ENTITY % Polish "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>Podręcznik użytkownika programu &amarok-mianownik;</title>
+
+<authorgroup>
+ <author
+><firstname
+>Mike</firstname
+> <surname
+>Diehl</surname
+> <affiliation
+> <address
+><email
+>madpenguin8@yahoo.com</email
+></address>
+ </affiliation>
+</author>
+
+<othercredit role="developer">
+ <firstname
+>Zespół programistów Amarok</firstname>
+ <contrib
+>Programiści</contrib>
+</othercredit>
+
+<othercredit role="translator"
+><firstname
+>(c) 2005 Mandriva</firstname
+><surname
+>Poland</surname
+><affiliation
+><address
+><email
+>biuro@mandriva.pl</email
+></address
+></affiliation
+><contrib
+>Polskie tłumaczenie</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Paweł</firstname
+><surname
+>Dąbek</surname
+><affiliation
+><address
+><email
+>pdabek@onet.pl</email
+></address
+></affiliation
+><contrib
+>Weryfikacja i uaktualnienie polskiego tłumaczenia</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Marcin</firstname
+><surname
+>Kocur</surname
+><affiliation
+><address
+><email
+>marcinkocur@op.pl</email
+></address
+></affiliation
+><contrib
+>Polskie tłumaczenie</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Michał</firstname
+><surname
+>Bendowski</surname
+><affiliation
+><address
+><email
+>bendowski@gmail.com</email
+></address
+></affiliation
+><contrib
+>Uaktualnienie do wersji 1.4</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+ <year
+>2005</year>
+ <holder
+>Zespół programistów Amarok</holder>
+</copyright>
+
+<copyright>
+ <year
+>2006</year>
+ <holder
+>Ekipa doKymotion</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2006-02-20</date
+> <!-- CHANGE ME -->
+<releaseinfo
+>2.1</releaseinfo>
+
+<abstract>
+ <para
+>&amarok-mianownik; jest multimedialnym odtwarzaczem dla środowiska KDE.</para>
+</abstract>
+
+<keywordset>
+ <keyword
+>KDE</keyword>
+ <keyword
+>multimedia</keyword>
+ <keyword
+>odtwarzacz</keyword>
+ <keyword
+>audio</keyword>
+ <keyword
+>ogg</keyword>
+ <keyword
+>mp3</keyword>
+ <keyword
+>wav</keyword>
+ <keyword
+>muzyka</keyword>
+ <keyword
+>dźwięk</keyword>
+ <keyword
+>skrypt</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> <!--Merge with technology.docbook-->
+<title
+>Wprowadzenie</title>
+
+<screenshot>
+ <screeninfo
+>Logo</screeninfo>
+ <mediaobject>
+ <imageobject
+><imagedata fileref="logo.png" format="PNG"/></imageobject>
+ </mediaobject>
+</screenshot>
+
+<para
+>&amarok-mianownik; jest odtwarzaczem audio dla środowiska &kde;. Ten program ma nie tylko ogromne możliwości, ale także jest łatwy w użyciu. </para>
+
+<para
+>W &amarok-miejscownik; możesz po prostu przeciągnąć muzykę do listy odtwarzania, zamiast przekopywać się przez niekończące się menu. Szukasz jednej, konkretnej piosenki w ogromnej kolekcji? Przeglądarka kolekcji programu &amarok-mianownik; wyposażona w pasek szybkiego wyszukiwania pomoże Ci znaleźć ją w przeciągu sekund.</para>
+
+<para
+>Może się wydawać, że &amarok-mianownik; posiada te same stare funkcje co każdy przeciętny odtwarzacz audio, ale my poszliśmy o krok dalej. Jedno spojrzenie na przeglądarkę konktekstową powie Ci, dlaczego &amarok-mianownik; zostawia inne odtwarzacze w tyle. Przeglądarka kontekstowa pokazuje wszelkiego rodzaju informacje związane z odtwarzanym w danym momencie utworem - od okładki albumu, poprzez inne utwory tego samego wykonawcy, aż do związanych z nim innych wykonawców - to ciekawy sposób, żeby dowiedzieć się czegoś o Twojej kolekcji!</para>
+
+<para
+>Masz już kilka list odtwarzania i nie wiesz, którą masz wybrać? To znaczy, że przeglądarka list odtwarzania jest właśnie dla Ciebie. Nigdy nie możesz się zdecydować jaką muzykę wybrać? Tryb dynamiczny wybierze dla Ciebie muzykę, a inteligentne listy przeniosą Cię precyzyjnie do właściwych części kolekcji.</para>
+
+<para
+>Amarok fantastycznie obsługuje iPod-a firmy Apple, iFP firmy iRiver i całą masę typowych urządzeń USB. Obsługuje również różne serwery dźwięku, dlatego to TY możesz wybrać w jaki sposób będziesz słuchał muzyki. Te i inne funkcje czynią z niego najnowocześniejszy istniejący odtwarzacz. &amarok-mianownik; jest sprytny, jest sexy i jest mądry. Mamy nadzieję, że jego używanie pozwoli Ci naprawdę "Odkryć na nowo muzykę!"</para>
+
+</chapter>
+
+<!--&amarok-tech;-->
+
+&amarok-quick;
+
+&amarok-config;
+
+&amarok-using;
+
+&amarok-advanced;
+
+&amarok-faq;
+
+<chapter id="credits">
+<title
+>Podziękowania i licencje</title>
+
+<para
+>Prawa autorskie do programu: &copy; 2003-2004 Mark Kretschmann <email
+>markey@web.de</email
+> oraz Zespół AmaroK.</para>
+
+<itemizedlist>
+<title
+>Zespół AmaroK</title>
+<listitem
+><para
+>Christian <quote
+>facet-magnes</quote
+> Muehlhaeuser <email
+>chris@chris.de</email
+></para
+></listitem>
+<listitem
+><para
+>Frederik <quote
+>ich bin kein Deustcher!</quote
+> Holljen <email
+>fh@ez.no</email
+></para
+></listitem>
+<listitem
+><para
+>Mark <quote
+>jest dobrze, ale nie cudownie</quote
+> Kretschmann <email
+>markey@web.de</email
+></para
+></listitem>
+<listitem
+><para
+>Max <quote
+>Turtle-Power</quote
+> Howell <email
+>max.howell@methylblue.com</email
+></para
+></listitem>
+<listitem
+><para
+>Mike <quote
+>purpura nie jest tylko dla dziewczyn!</quote
+> Diehl <email
+>madpenguin8@yahoo.com</email
+></para
+></listitem>
+<listitem
+><para
+>Pierpaolo <quote
+>programista-bałaganiarz</quote
+> Di Panfilo<email
+>pippo_dp@libero.it</email
+></para>
+</listitem>
+<listitem
+><para
+>Roman <quote
+>i Bóg powiedział, niech stanie się Mac</quote
+> Becker <email
+>roman@formmorf.de</email
+></para
+></listitem>
+<listitem
+><para
+>Seb <quote
+>Surfin' down under</quote
+> Ruiz <email
+>me@sebruiz.net</email
+></para
+></listitem>
+<listitem
+><para
+>Stanisław, <quote
+>czy ktoś powiedział DCOP?</quote
+> Karchebny <email
+>Stanislav.Karchebny@kdemail.net</email
+></para
+></listitem>
+</itemizedlist>
+
+<itemizedlist>
+<title
+>Współpraca:</title>
+
+<listitem>
+<para
+>Adam Pigg (analizatory, poprawki) <email
+>adam@piggz.fsnet.co.uk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Adeodato Simo (poprawki) <email
+>asp16@alu.ua.es</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Alexandre Oliveira (ulepszenia, usuwanie błędów) <email
+>aleprj@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andreas Mair (obsługa MySql) <email
+>am_ml@linogate.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Andrew de Quincey (obsługa Postgresql) <email
+>adq_dvb@lidskialf.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Christie Harris (roKymoter) <email
+>dangle.baby@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Leinir Turthra Jensen (asystent pierwszego uruchomienia) <email
+>admin@removeleinir.dk</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Dan Meltzer (roKymoter) <email
+>hydrogen@notyetimplemented.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Enrico Ros (analizatory, openGL) <email
+>eros.kde@email.it</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Florian 'da-flow' Egerer (ikona programu Amarok 'Blue Wolf) <email
+>flo_for_never@gmx.at</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Gérard Dürrmeyer (ikony i opracowanie obrazków) <email
+>gerard@randomtree.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Greg Meyer (nieoceniona pomoc przy lawinie błędów w wersjach poprzedzających 1.2) <email
+>greg@gkmweb.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Harald Sitter (roKymoter, tłumaczenia, poprawki, zrzuty ekranu) <email
+>harald.sitter@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Ian Monroe (poprawki, szablony skryptów Ruby (eean) )<email
+>ian@monroe.nu</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jarkko Lehti (tester) <email
+>grue@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Jocke Andersson (roKymoter) <email
+>ajocke@gmail.com</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenneth Wesley Wimer II (ikony) <email
+>kwwii@bootsplash.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Kenny Lemieux (twórca strony Amaroka) <email
+>swaft@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Melchior Franz (nowa procedura FFT, usuwanie błędów) <email
+>mfranz@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Michael Pyne (kod eksportu K3B) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Nenad Grujicic (winieta programu 1.1) <email
+>mchitman@neobee.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Olivier Bédard (hosting strony WWW) <email
+>paleo@pwsp.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Reigo Reinmets (obsługa Wikipedii, poprawki) <email
+>xatax@hot.ee</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Roland Gigler (silnik MAS) <email
+>michael.pyne@kdemail.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sami Nieminen (obsługa Audioscrobbler) <email
+>sami.nieminen@iki.fi</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Scott Wheeler (TagLib) <email
+>wheeler@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Bogner (masa rzeczy) <email
+>bochi@online.ms</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Stefan Siegel (poprawki, usuwanie błędów) <email
+>kde@sdas.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Sven Krohlas (roKymoter) <email
+>sven@asbest-online.de</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Whitehawk Stormchaser (testy, poprawki) <email
+>zerokode@gmx.net</email
+></para>
+</listitem>
+
+</itemizedlist>
+
+<para
+>Prawa autorskie do dokumentacji: &copy; 2004 Mike Diehl <email
+>madpenguin8@yahoo.com</email
+></para>
+&underFDL; &underGPL; </chapter>
+
+&amarok-req;
+
+<appendix id="installation">
+<title
+>Instalacja</title>
+
+<sect1 id="getting-kapp">
+<title
+>Jak zdobyć program &amarok-mianownik;</title>
+
+<para
+>&amarok-mianownik; może zostać pobrany stąd <ulink url="http://amarok.kde.org"
+>,czyli ze strony domowej programu</ulink
+></para>
+
+
+<para
+>Najnowszą wersję programu można znaleźc w module SVN &kde;: /trunk/extragear/multimedia/amarok/.</para>
+
+<sect2>
+<title
+>Jak skompilować &amarok-dopelniacz;</title>
+
+<para
+>Jeśli chcesz skompilować i zainstalować program Amarok w Twoim systemie, wpisz następujące polecenie w głównym katalogu dystrybucji amaroK:</para>
+
+<para
+><command
+>./configure --prefix=`kde-config --prefix`</command
+> <command
+>make</command
+> <command
+>su -c "make install"</command
+> </para>
+
+<note
+><para
+>Polecenie --enable-final configure flag nie jest już obsługiwane.</para
+></note>
+
+<para
+>Ponieważ &amarok-mianownik; wykorzystuje narzędzia <keycap
+>autoconf</keycap
+> oraz <keycap
+>automake</keycap
+>, nie powinieneś mieć problemów z jego kompilacją. Jeżeli wystąpią jakieś problemy, to zgłoś je na listy dyskusyjne &kde;.</para>
+
+</sect2>
+
+<sect2>
+<title
+>Opcje konfiguracyjne</title>
+
+<para
+>W trakcie kompilacji &amarok-dopelniacz;, tak jak ma to miejsce w przypadku innych programów, możemy włączyć lub wyłączyć pewne opcje. Oto lista opcji, które można skonfigurować:</para>
+
+<note
+><para
+>W trakcie kompilacji, niektóre z opcji wymagają korzystania z określonych zależności. Zobacz <link linkend="requirements"
+>dział wymagania</link
+>, aby uzyskać szczegółowe informacje.</para
+></note>
+
+<informaltable>
+<tgroup cols="3">
+<thead>
+
+<row>
+<entry
+>Opcja</entry>
+<entry
+>Ustawienie domyślne</entry>
+<entry
+>Opis</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry
+>--enable-debug=</entry>
+<entry
+>nie</entry>
+<entry
+>Włącza symbole debugowania. Masz do wyboru <quote
+>tak</quote
+>, <quote
+>nie</quote
+>, oraz <quote
+>pełne</quote
+>. Wybierz opcję <quote
+>pełne</quote
+> jeśli zamierzasz wspomagać rozwój &amarok-dopelniacz;.</entry>
+</row>
+
+<row>
+<entry
+>--enable-mysql</entry>
+<entry
+>Wyłączone</entry>
+<entry
+>Włącza obsługę bazy danych MySql w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--disable-amazon</entry>
+<entry
+>Włączone</entry>
+<entry
+>Wyłącza obsługę pobierania okładek z Amazon w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--without-arts</entry>
+<entry
+>Z</entry>
+<entry
+>Wyłącza obsługę aRts w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--without-gstreamer</entry>
+<entry
+>Z</entry>
+<entry
+>Wyłącza obsługę GStreamer w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--with-helix</entry>
+<entry
+>Z</entry>
+<entry
+>Włącza obsługę silnika Helix w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--without-xine</entry>
+<entry
+>Z</entry>
+<entry
+>Wyłącza obsługę xine w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--with-nmm</entry>
+<entry
+>Bez</entry>
+<entry
+>Włącza obsługę NMM w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--with-mas</entry>
+<entry
+>Bez</entry>
+<entry
+>Włącza obsługę MAS w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--without-opengl</entry>
+<entry
+>Z</entry>
+<entry
+>Wyłącza obsługę OpenGL (analizator) w programie &amarok-mianownik;</entry>
+</row>
+
+<row>
+<entry
+>--without-included-sqlite</entry>
+<entry
+>Z</entry>
+<entry
+>Nie używaj załączonych źródeł sqlite (wymagana instalacja sqlite)</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect2>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+
+</book>

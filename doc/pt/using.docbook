@@ -1,0 +1,2274 @@
+<chapter id="using-kapp">
+<title
+>Utilizar o &amarok;</title>
+
+<para
+>O &amarok; é um leitor de áudio versátil que oferece várias formas diferentes de controlar a sua colecção de músicas. Como qualquer leitor de áudio normal, o &amarok; tem uma janela do leitor para controlar as suas funções mais básicas. O &amarok; também tem uma lista de músicas que tem muito pouca coisa. A janela da lista de músicas tem vários navegadores para criar e navegar na sua colecção de áudio inteira.</para>
+
+<para
+>Neste capítulo iremos ver como usar todas as funcionalidades do &amarok;, incluindo a criação de uma colecção e de uma lista de músicas.</para>
+
+<sect1 id="player-window">
+<title
+>A Janela do Leitor</title>
+
+<screenshot>
+	<screeninfo
+>Imagem da Janela do Leitor</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>A janela do leitor é o seu centro de controlo do &amarok; através de apenas um botão. No topo do leitor existe uma área de visualização deslizante que mostra a faixa ou sequência transmitida a tocar de momento. Por baixo dessa área de visualização existe outra área que mostra o tempo de reprodução da faixa actual, a taxa de bits e a taxa de amostragem. Se carregar nesta área irá mudar o tempo da faixa do total que já foi tocado para o tempo que falta.</para>
+
+<para
+>A janela do leitor também contém uma selecção de analisadores de áudio, também localizados sobre a área de texto deslizante. Poderá circular pelos vários analisadores se carregar com o &LMB; na área do analisador.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Dica do Analisador</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Os analisadores do leitor do &amarok; podem ser dissociados da janela do leitor. Se carregar em <keycap
+>d</keycap
+> no seu teclado, o analisador activo será aberto como uma janela independente e dimensionável.</para>
+</tip>
+
+<para
+>Também por baixo da área deslizante existem os botões <guimenuitem
+>PL</guimenuitem
+> e <guimenuitem
+>EQ</guimenuitem
+>. O botão <guimenuitem
+>PL</guimenuitem
+> é usado para activar ou desactivar rapidamente a janela da lista de músicas, enquanto o botão <guimenuitem
+>EQ</guimenuitem
+> é usado para activar e desactivar o equalizador, se o seu motor for compatível com eles.</para>
+
+<para
+>O restante do leitor inclui os botões de leitura e as barras de volume e de posição na faixa. Use as barras para escolher a posição na faixa ou o nível de volume que se adequa às suas necessidades. Use os botões de leitura para controlar a reprodução da faixa actual ou para avançar ou recuar nas suas faixas.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>A Janela do Equalizador</title>
+
+<para
+>O equalizador incorporado é fácil de usar e funciona com todos os motores. Existem 17 opções predefinidas, que vão do Clássico ao Techno, podendo criar você mesmo os seus estilos próprios. </para>
+
+<para
+>Para aceder ao equalizador, escolha a opção <menuchoice
+><guimenu
+>Ferramentas</guimenu
+><guimenuitem
+>Equalizador</guimenuitem
+></menuchoice
+> da janela principal ou carregue no botão <guibutton
+>EQ</guibutton
+> da janela do Leitor. Assim que assinalar a opção <guibutton
+>Activar o Equalizador</guibutton
+> nesta janela, o equalizador ficará activo.</para>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Equalizador</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Poderá usar a lista para escolher um dos estilos predefinidos. Se deslocar uma barra, irá mudar automaticamente para a predefinição Manual. Experimente as barras, até que descubra uma combinação que goste e carregue no ícone <guiicon
+>Adicionar uma nova predefinição</guiicon
+> à direita da lista para a gravar. Se mudar para outra predefinição, sem gravar as suas alterações, estas serão perdidas. Para além de gravar, também poderá carregar no ícone <guiicon
+>Gerir as predefinições</guiicon
+> à direita da lista para Remover ou Mudar o Nome de uma predefinição.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>A Janela de Lista de Músicas</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã da Janela de Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A lista de músicas do &amarok; é a lista de músicas mais avançada que está disponível para qualquer leitor de áudio do &kde;. A lista de músicas oferece várias funcionalidades que não são encontradas em nenhum outro leitor. Você não deverá ficar intimidado pelo poder da lista de músicas, dado que continua ainda bastante simples de usar.</para>
+
+<para
+>A janela da lista de músicas pode ser dividida em duas secções principais, onde à esquerda se encontra a barra lateral. A barra lateral é onde você poderá encontrar algumas das funcionalidades excelentes da lista de músicas, como o <link linkend="context-browser"
+>navegador do contexto</link
+>. Do lado direito da janela existe a lista de músicas propriamente dita. A lista de músicas é simples de usar, mas à mesma poderosa o suficiente para os utilizadores mais avançados.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Os Navegadores da Barra Lateral</title>
+
+<para
+>Os navegadores no &amarok; permitem-lhe aceder à sua colecção de música de várias formas diferentes. Estas situam-se do lado esquerdo da janela, sendo cada uma representada por uma página com o seu nome escrito por cima. Se carregar no separador de uma página, mostra o navegador respectivo. Se estiver um navegador activo, ao carregar no separador volta a recolher o navegador. Só poderá estar um navegador visível em qualquer altura, ainda que possa arrastar as faixas de uma página para outra, arrastando para cima do separador da página de destino, durante um segundo, até que essa página fique visível. Poderá também esconder os navegadores se carregar com o botão direito em qualquer página e desligar os navegadores de contexto desejados no menu de contexto que aparece.</para>
+
+<screenshot>
+	<screeninfo
+>Ecrã de Selecção do Navegador</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>Navegador de Contexto</title>
+
+<para
+>O Navegador do Contexto mostra várias informações relacionadas com a faixa actualmente em reprodução. A sua aparência poderá ser modificada, com recurso a temas conhecidos como <link linkend="configure-appearance"
+>Estilos do Navegador de Contexto</link
+>. Está organizado em três páginas: <quote
+>Música</quote
+>, <quote
+>Letras</quote
+> e <quote
+>Artista</quote
+>. Estas páginas, cujas funções serão descritas por completo em baixo, mostram informações sobre vários aspectos da faixa que está a ser ouvida de momento.</para>
+
+<note
+><para
+>Os utilizadores das versões anteriores do &amarok; irão notar que não existe mais uma página de <quote
+>Início</quote
+>. A informação dessa página foi distribuída por toda a interface do &amarok;. Poderá encontrar informações análogas na janela de Estatísticas, acessíveis em <menuchoice
+><guimenu
+>Ferramentas</guimenu
+><guimenuitem
+>Estatísticas</guimenuitem
+></menuchoice
+>.</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Navegador de Contexto</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>A Página de Música</title>
+
+<para
+>A página da <guilabel
+>Música</guilabel
+> oferece informações sobre a faixa a tocar de momento, bem como o seu artista e álbum.</para>
+
+<para
+>A primeira área nesta página é para as informações acerca da faixa. O título da área mostra o nome da faixa, do artista e do álbum. Dentro desta área, poderá ver que ela mostra a imagem da capa do álbum para a faixa. A seguir à imagem, poderá encontrar um ícone do <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+>. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Carregue neste ícone para fazer uma pesquisa no MusicBrainz pela faixa.</para>
+
+<para
+>Por baixo do ícone do MusicBrainz existem mais informações sobre a sua faixa actual. Aqui poderá encontrar o número total de vezes que a faixa foi tocada, o núcleo actual da faixa e quando é que esta foi ouvida pela primeira e pela última vez.</para>
+
+<tip
+><para
+>Para mostrar as imagens das capas dos álbuns, você precisa de ter a imagem da capa do álbum na mesma directoria em que está a faixa que está a ouvir. Os formatos de ficheiros suportados são o .jpg, .jpeg, .gif, e .png. As imagens poderão ter qualquer nome, mas as imagens com a palavra <quote
+>front</quote
+> no nome do ficheiro serão usadas com preferência. O Navegador de Contexto irá também usar as imagens das capas gravadas da transferência de capas dos álbuns.</para
+></tip>
+
+<para
+>A próxima área, para as <guilabel
+>Músicas Sugeridas</guilabel
+>, indica várias faixas como sugestão de audição. Carregue em qualquer uma das faixas indicadas para começar a leitura dessa faixa.</para>
+
+<para
+>Por baixo das <guilabel
+>Músicas Sugeridas</guilabel
+>, encontra-se as <guilabel
+>Faixas Favoritas do Artista</guilabel
+>. Esta área mostra as cinco faixas mais cotadas pelo artista da faixa actual.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Poderá ajustar a quantidade de informação visível na página de <guilabel
+>Música</guilabel
+>, carregando com o botão direito do rato em qualquer ponto da página de Música e comutando os itens no menu de contexto.</para
+></tip>
+
+<para
+>A última área, os <guilabel
+>Álbuns dos Artistas</guilabel
+>, mostra todos os álbuns dos artistas da faixa actual que se encontram na sua colecção. Se carregar em qualquer dos álbuns desta área irá expandir o álbum para mostrar o conteúdo do mesmo.</para>
+
+<tip
+><para
+>Poderá carregar nas faixas de qualquer uma das áreas para começar a reprodução da mesma. Poderá também carregar com o botão direito nos álbuns e nas faixas para aparecer um menu de contexto, onde poderá escolher várias formas de ouvir ou colocar na fila a faixa ou o álbum.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>A Página de Letras</title>
+
+<para
+>As páginas de <guilabel
+>Letras Musicais</guilabel
+> transferem as letras da música actualmente em reprodução a partir de um dos servidores suportados. Esta funcionalidade é flexível e é possível criar programas para obter as letras musicais de vários sítios. Veja o Capítulo de Criação de Programas. Quando carregar na página de Letras, o &amarok; tenta obter as letras musicais da faixa actual. Se não existir nenhum programa de letras musicais em execução, terá a oportunidade de escolher um.</para>
+
+<screenshot>
+	<screeninfo
+>Ecrã de Letras Musicais</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>Poderá efectuar várias acções sobre a página de letras, usando os botões da sua barra de ferramentas.</para>
+
+<para
+>O botão <guibutton
+>Adicionar</guibutton
+> abre (num navegador externo) a página para <quote
+>Adicionar Letras Musicais</quote
+> na página de letras, dependendo do programa escolhido.</para>
+
+<para
+>O botão <guibutton
+>Editar</guibutton
+> permite-lhe editar as letras da música actual. Serão então gravadas na base de dados da colecção do &amarok;. Esta opção não necessita de um programa de letras musicais activo.</para>
+
+<para
+>O botão <guibutton
+>Procurar</guibutton
+> lança uma pesquisa no Google.com (num navegador externo) sobre as letras da faixa actual.</para>
+
+<para
+>O botão <guibutton
+>Actualizar</guibutton
+> limpa as letras da música actual da 'cache' e faz uma nova pesquisa.</para>
+
+<para
+>O <guibutton
+>Abrir num navegador externo</guibutton
+> mostra as letras da música actual no seu navegador externo.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>A Página do Artista</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã da Página do Artista</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A página do Artista mostra um artigo do Wikipedia acerca do artista actualmente em reprodução. A barra de ferramentas contém:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Botões de navegação para avançar e recuar</para>
+</listitem>
+<listitem>
+<para
+>Botões da página para ir para a página do artista, do álbum ou da faixa no Wikipedia,</para>
+</listitem>
+<listitem>
+<para
+>Um botão para abrir a página actual num navegador externo</para>
+</listitem>
+<listitem>
+<para
+>Um botão de configuração para a configuração regional do Wikipedia</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>Navegador de Colecção</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Navegador de Colecção</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>O navegador da Colecção é a razão de ser do &amarok;. A colecção inteira está visível aqui e está ordenada de acordo com vários agrupamentos. Dentro de cada um deles, tudo está ordenado de forma alfabética, estando os símbolos e números em primeiro lugar, sem distinção entre maiúsculas e minúsculas. Em todos os métodos de agrupamento, as faixas que tenham artistas e/ou álbuns desconhecidos estão sempre agrupadas no início da sua colecção, sob o <quote
+>Desconhecido</quote
+>. Ainda que os números das faixas não estejam visíveis, as faixas encontram-se listadas pela sua ordem no álbum. Se carregar no cabeçalho da lista de colecção, irá inverter o critério de ordenação. Se carregar no ícone de expansão à esquerda de qualquer item da sua colecção, irá expandir esse item.</para>
+
+<para
+>O menu <quote
+>Agrupar Por</quote
+> permite-lhe agrupar a sua colecção de várias formas:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar Por</guimenu
+><guimenuitem
+>Artista</guimenuitem
+></menuchoice
+> - Ordena apenas a nível do topo; cada faixa é agrupada com base no seu artista, sem distinção entre os álbuns ou géneros.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar Por</guimenu
+><guimenuitem
+>Artista/Álbum</guimenuitem
+></menuchoice
+> - As faixas são ordenadas por artistas e, por baixo destes, ordenadas por álbuns. Se quiser ver os álbuns de compilações ou bandas sonoras, será a melhor forma de ver a sua colecção - estes álbuns são agrupados em conjunto no fim da sua lista, em <quote
+>Vários Artistas</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar Por</guimenu
+><guimenuitem
+>Artista/Ano-Álbum</guimenuitem
+></menuchoice
+> - Ordena por artista, estando os álbuns por ordem decrescente de ano (primeiro os mais recentes). Se não existir uma marca de <quote
+>Ano</quote
+> para uma dada faixa, usa-se por omissão <quote
+>0 - nome álbum</quote
+>.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar Por</guimenu
+><guimenuitem
+>Álbum</guimenuitem
+></menuchoice
+> - Todos os álbuns da sua colecção são mostrados de forma alfabética, com base no nome do álbum, independentemente do artista.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar Por</guimenu
+><guimenuitem
+>Género/Artista</guimenuitem
+></menuchoice
+> - As faixas são organizadas de acordo com o seu género musical, e depois por artistas.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar Por</guimenu
+><guimenuitem
+>Género/Artista/Álbum</guimenuitem
+></menuchoice
+> - O mesmo que o anterior, só que as faixas são também ordenadas por cada álbum, sob cada um dos artistas.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>Os restantes itens do menu permitem-lhe personalizar o agrupamento com qualquer combinação dos anteriores.</para>
+
+<para
+>Os dois ícones seguintes da barra de ferramentas mudam a forma como a sua colecção é vista. O primeiro, a Vista em Árvore, é a vista predefinida e, provavelmente, a que mais lhe irá interessar ver. O botão seguinte activa a Vista Plana, que aparece vazia ao início. Se escrever termos de procura no campo de texto abaixo da barra de ferramentas, irá começar a preencher a sua colecção, que poderá ser ordenada de várias formas, carregando com o botão esquerdo do rato nos cabeçalhos das colunas. Se carregar com o botão direito nos cabeçalhos das colunas, irá mostrar um menu de contexto que lhe permite alterar as colunas apresentadas.</para>
+
+<para
+>O último ícone da barra de ferramentas permite-lhe alterar a sua configuração da colecção. Lembre-se que, se alterar alguma das pastas, o &amarok; irá pesquisar de novo a sua colecção - isto poderá levar algum tempo se tiver muitas faixas.</para>
+
+<para
+>Imediatamente abaixo da barra de ferramentas, existe um filtro de procura, que se comporta como nas vistas Plana e em Árvore. Veja a secção da Lista de Reprodução do manual, para saber mais detalhes das técnicas de procura.</para>
+
+<para
+>Por baixo do Filtro de Procura, outro menu permitir-lhe-á ver as faixas adicionadas mais recentemente à sua colecção. Estão disponíveis diversos períodos de tempo, desde as últimas 24 horas até 1 ano, ou na sua colecção inteira.</para>
+
+<sect3 id="collection-rmb">
+<title
+>As Opções do &RMB; do Navegador de Colecção</title>
+<para
+>As opções que se seguem estão acessíveis ao carregar com o &RMB; nos itens do seu navegador da colecção.</para>
+
+<para
+><guilabel
+>Carregar</guilabel
+> - Limpa a lista de reprodução actual e adiciona as faixas seleccionadas como primeiras faixas, usando o critério actual de ordenação.</para>
+
+<para
+><guilabel
+>Adicionar à Lista de Reprodução</guilabel
+> - Adiciona as faixas seleccionadas ao fim da lista de reprodução actual. Se fizer duplo-click numa única faixa da sua colecção, irá obter o mesmo resultado.</para>
+
+<para
+><guilabel
+>Colocar as Faixas na Fila</guilabel
+> - Adiciona as faixas seleccionadas à fila de espera, como sendo as próximas a ser tocadas.</para>
+
+<para
+><guilabel
+>Gravar Como Lista de Reprodução</guilabel
+> - Grava as faixas seleccionadas como uma lista de reprodução. Será pedido um nome com o qual gravar.</para>
+
+<para
+><guilabel
+>Adicionar à Fila de Transferência do Dispositivo Multimédia</guilabel
+> - Adiciona as faixas a uma fila, prontas a serem transferidas para um dispositivo multimédia, quando um desses dispositivos for ligado. Veja mais detalhes em <link linkend="media-device-browser"
+>Navegador dos Dispositivos Multimédia</link
+>.</para>
+
+<para
+><guilabel
+>Gravar Todas as Faixas deste Artista/Gravar num CD</guilabel
+> - Envia as faixas para o &k3b; para serem gravadas como um CD de dados ou de áudio. Se o &k3b; não estiver instalado, esta opção não estará disponível.</para>
+
+<para
+><guilabel
+>Obter a Imagem da Capa</guilabel
+> - Procura na amazon.com por uma imagem de capa para este álbum.</para>
+
+<para
+><guilabel
+>Editar a Informação das (n) Faixas</guilabel
+> - Abre a janela de <guilabel
+>Informação da Faixa</guilabel
+> e permite-lhe alterar as marcas de uma ou mais faixas. </para>
+
+<para
+><guilabel
+>Gerir os Ficheiros</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Organizar os (n) Ficheiros</guilabel
+> - Abre a janela para <guilabel
+>Organizar os Ficheiros da Colecção</guilabel
+>. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>Remover os (n) Ficheiros</guilabel
+> - Abre uma janela de confirmação que lhe pede se deseja remover de forma permanente as faixas seleccionadas do seu computador.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Marcar como Compilação</guilabel
+> - Configura o álbum seleccionado como um álbum de compilação, para ser listado sob os <quote
+>Vários Artistas</quote
+></para>
+
+<para
+><guilabel
+>Desmarcar como Compilação</guilabel
+> - Configura o álbum marcado como compilação, de modo a passar a ser um álbum normal, passando a listagem de <quote
+>Vários Artistas</quote
+> para a listagem de artistas respectiva.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>Navegador de Lista</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Navegador de Lista</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>O Navegador da Lista de Músicas é usado para lidar facilmente com as suas várias listas de músicas. O Navegador de Listas de Músicas também contém listas de músicas inteligentes que o tornam um dos navegadores mais hábeis por aí.</para>
+
+<para
+>O Navegador da Lista de Músicas está dividido em duas secções, as Listas de Músicas e as Listas de Músicas Inteligentes. A secção das Listas de Músicas é para as suas listas de músicas personalizadas. Poderá ver o conteúdo das suas listas de músicas numa lista se carregar no símbolo de <quote
+>+</quote
+> ao lado de cada uma das listas de músicas visíveis. Quando olhar para uma lista de músicas, os itens novos poderão ser adicionados à lista de músicas, ao arrastá-los e largá-los na janela. Quando tiver encontrado uma lista de músicas que deseje carregar, poderá fazer duplo-click na lista ou carregar em <keycap
+>Espaço</keycap
+> para que o &amarok; a carregue. Os outros atalhos de teclado do Navegador da Lista de Músicas poderão ser encontrados na <link linkend="keybd-shortcuts"
+>secção dos Atalhos de Teclado</link
+>.</para>
+
+<tip
+><para
+>Quando você gravar uma nova lista de músicas na Janela da Lista de Músicas, esta é adicionada automaticamente à secção da Lista de Músicas.</para
+></tip>
+
+<para
+>A secção inferior do Navegador da Lista de Músicas corresponde às Listas Inteligentes. As Listas Inteligentes usam a base de dados incorporada do &amarok; para compilar algumas listas de músicas úteis na altura. As Listas de Músicas Inteligentes incluem o seguinte:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Toda a Colecção: uma lista de músicas com todas as faixas que estão na sua colecção configurada.</para>
+</listitem>
+
+<listitem>
+<para
+>Faixas Favoritas: uma lista com as quinze músicas mais cotadas numa lista, classificadas por artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Mais Tocadas: várias listas com as quinze músicas mais tocadas numa lista, classificadas por artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Faixas Mais Recentes: várias listas com as quinze músicas adicionadas mais recentemente numa lista, classificadas por artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Últimas Tocadas: uma lista com as quinze músicas tocadas mais recentemente na sua colecção.</para>
+</listitem>
+
+<listitem>
+<para
+>Nunca Tocadas: uma lista com as músicas da sua colecção que nunca foram tocadas anteriormente.</para>
+</listitem>
+
+<listitem>
+<para
+>Géneros: várias listas de músicas numa lista, ordenadas por género.</para>
+</listitem>
+
+<listitem>
+<para
+>As listas de músicas inteligentes definidas pelo utilizador são também possíveis. Se carregar no botão <guimenuitem
+>Nova Lista de Músicas Inteligente</guimenuitem
+> irá abrir uma janela para configurar uma lista de músicas inteligente que se adeque ao seu critério.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Navegador de Dispositivos Multimédia</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Navegador de Dispositivos Multimédia</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>O Painel de Dispositivos Multimédia é usado para ligar o seu iPod ao &amarok;. Para usar o seu iPod com o navegador dos Dispositivos Multimédia, terá de ter o seu iPod montado em /mnt/ipod antes de iniciar o &amarok;. Logo que tenha iniciado o &amarok;, irá encontrar as faixas no seu iPod, indicadas por artista, numa lista no topo do navegador.</para>
+
+<para
+>Para adicionar faixas ao seu iPod, arraste as faixas que deseja adiciona da lista de músicas e largue-as na lista do Artista. Depois de ter adicionado as faixas à lista, carregue no botão <guibutton
+>Transferir</guibutton
+> para as enviar para o seu iPod. Depois de a transferência terminar, feche o &amarok; e desmonte o o ponto de montagem do seu iPod.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Navegador de Ficheiros</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã do Navegador de Ficheiros</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>O painel do Navegador de Ficheiros é como um mini-&konqueror; incorporado na lista de músicas. Poderá usar o painel do Navegador de Ficheiros para navegar no seu sistema de ficheiros inteiro à procura de ficheiros de áudio para adicionar à lista de músicas. No cimo do Navegador de Ficheiros, irá encontrar uma barra de ferramentas com botões de navegação para Subir, Recuar e Avançar no seu sistema de ficheiros. A barra de ferramentas também contém opções para a Pasta Pessoal, Recarregar, Vista Curta e Vista Detalhada, assim como um botão de Favoritos para criar favoritos das suas áreas favoritas do sistema de ficheiros.</para>
+
+<para
+>Por baixo da barra de ferramentas existe uma barra de procura útil para procurar pelo nome do ficheiro. Você irá achar a barra de procura útil para as pastas com vários ficheiros, dado que procura à medida que você escreve, deixando apenas os nomes de ficheiros relevantes na janela.</para>
+
+<para
+>No fundo do Navegador de Ficheiros existe uma barra de endereços para aceder à sua música através de qualquer &URL; que escreva. Por exemplo, se escrever <filename class="directory"
+>tar:/home/ze/musica.tar.gz</filename
+> na barra de endereços e carregar em <keycap
+>Enter</keycap
+> no seu teclado, poderá aceder aos ficheiros dentro do pacote TAR. Agora poderá arrastar o áudio no pacote e largá-lo na lista de músicas.</para>
+
+<tip
+><para
+>Quando a lista de músicas ocupar mais do que um ecrã, tornar-se-á difícil de adicionar ficheiros, largando-os simplesmente lá. Se mantiver a tecla <keycap
+>Shift</keycap
+> do teclado carregada enquanto larga as músicas, poderá ser útil neste caso: os ficheiros serão adicionados ao fim da lista em vez de serem inseridos na posição actual da largada.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>A Lista de Músicas</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A Lista de Músicas contém todas as faixas que colocou em espera para serem tocadas. Poderá alterar a sequência se arrastar os itens com o rato e os largar na posição desejada. Por cima da Lista de Músicas poderá ver um campo de texto onde poderá indicar um texto de filtragem. Assim que escrever nele uma letra, a Lista de Músicas será actualizada, mostrando apenas os itens que contenham os caracteres introduzidos. Para parar a filtragem, basta carregar em <keycap
+>Backspace</keycap
+>, até que o filtro fique em branco.</para>
+
+<tip
+><para
+>Está disponível uma sintaxe avançada, semelhante ao Google.</para>
+
+<para
+>Por omissão, quando indicar termos separados por espaços, ele irá procurar pelos itens que contenham todos esses termos. Por exemplo: se forem "um dois três", ele irá procurar por tudo que contém "um", "dois" e "três".</para>
+
+<para
+>Contudo, poderá colocar OR entre os termos para procurar itens que tenham um ou outro termo, como por exemplo: "um OR dois OR três", que irá procurar itens que contêm tanto "um", como "dois" ou "três" (ou uma combinação de ambos).</para>
+
+<para
+>Poderá usar aspas para procurar por termos que tenham espaços entre eles: "Mike Oldfield". Isto irá procurar pelos itens que contenham "Mike Oldfield", mas não, por exemplo, os que contêm "Mike J. Oldfield".</para>
+
+<para
+>Por omissão, ele irá procurar em todas as colunas da lista que estejam visíveis de momento. Contudo, poderá usar o formato coluna:termo para indicar a coluna onde procura: title:amarok (poderá também ser uma coluna que não esteja visível). Desta forma, só irá procurar nos itens que tenham a palavra "amarok" na coluna "title" (título) mas não, por exemplo, no álbum.</para>
+
+<para
+>Ao indicar uma dada coluna onde procurar, poderá também procurar por itens maiores ou menores que um determinado termo, como por exemplo: 'score:
+>50', que irá procurar pelos itens com pontuação maior que 50.</para>
+
+<para
+>Para indicar um termo com que não deseja fazer correspondência, pode colocar um sinal de menos (-), antes dele: -coisa, para procurar por algo que não contenha 'coisa'.</para>
+
+<para
+>Poderá usar uma combinação de tons os itens acima à vontade, como por exemplo: "Mike Oldfield" OR score:
+>50 -comment:bad. Isto irá procurar por tudo o que possa conter "Mike Oldfield" ou tenha uma pontuação maior que 50, mas excluindo os itens cujo comentário contenha "bad" (mau).</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Dica da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Poderá seleccionar os itens a tocar numa ordem específica, mantendo carregada a tecla <keycap
+>Control</keycap
+> enquanto carrega com o &RMB; nos itens pela ordem que deseja tocá-los. Os itens serão marcados com um número que mostra a ordem pela qual os seleccionou.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>O Menu da Lista de Músicas</title>
+
+<screenshot>
+	<screeninfo
+>Imagem do Menu da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>O Menu Acções</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Acções</guimenu
+> <guimenuitem
+>Tocar Média...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre uma janela para introduzir um URL.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Acções</guimenu
+> <guimenuitem
+>Tocar CD de Áudio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Permite-lhe ver e tocar um CD de áudio com o protocolo audiocd:/.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acções</guimenu
+> <guimenuitem
+>Faixa Anterior</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Vai para a faixa anterior na lista de músicas.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Acções</guimenu
+> <guimenuitem
+>Pausa</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Coloca em pausa a reprodução da faixa actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acções</guimenu
+> <guimenuitem
+>Parar</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Pára a leitura do ficheiro.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acções</guimenu
+> <guimenuitem
+>Próxima Faixa</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Vai para a próxima faixa na lista de músicas.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acções</guimenu
+> <guimenuitem
+>Sair</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Sai do &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>O Menu da Lista de Músicas</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Adicionar Média...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre uma janela para adicionar conteúdos multimédia à sua lista actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Gravar a Lista Como...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre uma janela para gravar a sua lista actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Desfazer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Anula a última alteração à lista de músicas.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Refazer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Anula as alterações feitas pelo comando Desfazer.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Limpar</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Limpa a lista de músicas actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Baralhar</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Troca a ordenação da lista de músicas actuais.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Ir Para a Actual</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Move a lista de músicas para a faixa que está a tocar de momento.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Colocar as Faixas Seleccionadas na Fila</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Coloca todas as faixas seleccionadas em fila de espera na lista de reprodução.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Remover os Duplicados &amp; Em Falta</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Remove todas as faixas duplicadas ou inválidas na lista actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de Músicas</guimenu
+> <guimenuitem
+>Seleccionar Tudo</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Selecciona todas as faixas na lista actual.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>O Menu Ferramentas</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Gestor de Capas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre o <link linkend="cover-manager"
+>Gestor de Capas</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Gestor da Fila</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre o <link linkend="queue_manager"
+>Gestor da Fila</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Assistente da Primeira Execução</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre o Assistente da Primeira-Execução.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Visualizações</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a janela de <link linkend="visualizations"
+>Visualizações</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Equalizador</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a <link linkend="equalizer"
+>Janela do Equalizador</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Programas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre o <link linkend="script_manager"
+>Gestor de 'Scripts'</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Actualizar a Colecção</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inicia uma pesquisa manual sobre as pastas da sua colecção.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>O Menu Configuração</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Esconder o Menu</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Esconde o <link linkend="menubar"
+>menu</link
+> da Lista de Músicas.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Esconder a Barra de Ferramentas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Esconde a <link linkend="toolbar"
+>barra de ferramentas</link
+> da Lista de Músicas.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Esconder a Janela de Reprodução</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Esconde a <link linkend="player-window"
+>Janela do Leitor</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Repetir a Faixa</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Repete a reprodução da faixa actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Repetir a Lista de Músicas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Repete a reprodução da lista de músicas completa.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Modo Aleatório</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Distribui de forma aleatória a reprodução das faixas na sua lista de músicas.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Modo Dinâmico</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inicia o modo dinâmico da lista de músicas.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar os Atalhos Globais...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a janela de configuração global.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar os Atalhos...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a janela de configuração de atalhos de teclado do &amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar as Barras de Ferramentas...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a janela de configuração das barras de ferramentas do &amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar o Amarok...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a janela de configuração do &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>O Menu Ajuda</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Manual do Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre esta documentação.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Shift</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>O Que É Isto</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Activa o cursor O Que É Isto.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Comunicar um Erro...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inicia a ferramenta de criação de relatórios de erros.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Acerca do Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a janela de informações acerca do Amarok.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Acerca do KDE</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre a janela de informações acerca do KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>A Barra da Lista de Músicas</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã da Barra da Lista de Músicas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A Barra de Ferramentas da Janela da Lista de Músicas está perto da parte inferior da Janela da Lista de Músicas. A barra de ferramentas contém botões para muitas das acções da Lista de Músicas. Do lado direito da barra, poderá encontrar o botão <guibutton
+>Adicionar Média</guibutton
+>, que abre uma janela de ficheiros para adicionar os seus ficheiros multimédia à lista de músicas. A seguir ao botão <guibutton
+>Adicionar Média</guibutton
+>, existem os botões <guibutton
+>Gravar a Lista de Músicas</guibutton
+>, <guibutton
+>Limpar a Lista de Músicas</guibutton
+> e <guibutton
+>Actualizar a Lista de Músicas</guibutton
+>. Você poderá usar estes botões para lidar com a lista de músicas actual.</para>
+
+<para
+>O próximo conjunto de botões são os para <guibutton
+>Desfazer</guibutton
+> e <guibutton
+>Refazer</guibutton
+>. Poderá usar estes botões para anular ou repetir as alterações que tenham sido feitas à lista de músicas.</para>
+
+<para
+>No centro da barra de ferramentas poderá encontrar um analisador único e dimensionável. Poderá ajustar a taxa de refrescamento para o analisador com o menu do &RMB;, seleccionando então a taxa de refrescamento desejada.</para>
+
+<para
+>O último botão da barra de ferramentas é o botão do <guibutton
+>Menu</guibutton
+>. O botão do <guibutton
+>Menu</guibutton
+> abre o mesmo menu que aparece com o &RMB; na Janela do Leitor. Poderá usar este menu para aceder às opções de configuração do &amarok;.</para>
+
+<tip
+><para
+>Existem muitos outros botões disponíveis para a barra de ferramentas, incluindo os botões de controlo do leitor e uma barra de volume. Poderá configurar os botões que aparecem na barra de ferramentas se carregar no botão do <guibutton
+>Menu</guibutton
+> e seleccionar a opção <guimenuitem
+>Configurar as Barras de Ferramentas...</guimenuitem
+></para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>A Barra de Estado da Lista de Músicas</title>
+
+<screenshot>
+	<screeninfo
+>Imagem da Barra de Estado</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A Barra de Estado oferece um acesso rápido a algumas informações úteis sobre a lista de músicas. A Barra de Estado mostra o título das faixas actuais, o número de faixas na lista de músicas, o estado Aleatório e de Repetição, uma barra em miniatura da posição na faixa e o tempo de reprodução da faixa actual. Poderá alterar o estado Aleatório e de Repetição se fizer duplo-click nas áreas respectivas da barra de estado.</para>
+
+<para
+>Poderá também optar por não ter a barra de estado visível com a opção <guilabel
+>Mostrar a barra de estado</guilabel
+> na <link linkend="general-options"
+>Janela de Configuração das Opções Gerais</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>O Menu do Botão Direito do Rato</title>
+
+<screenshot>
+	<screeninfo
+>Imagem do Menu do Botão Direito do Rato</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>O menu do &RMB; poderá ser acedido se carregar com o botão direito na janela do leitor ou se carregar no botão <guibutton
+>Menu</guibutton
+> na lista de músicas. O menu do &RMB; é usado para aceder a todas as opções do &amarok;.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Repetir a Faixa</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Esta opção, quando estiver activa, repete a reprodução da faixa actual.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Repetir a Lista de Músicas</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Esta opção, quando estiver activa, repete a reprodução da lista de músicas completa.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Modo Aleatório</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Esta opção, quando activa, reproduz de forma aleatória as faixas na sua lista de músicas.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Adicionar Sugestões</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Adiciona as músicas sugeridas no Navegador de Contexto à lista de músicas actual.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Gestor de Capas</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Abre o <link linkend="cover-manager"
+>Gestor de Capas</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Assistente da Primeira-Execução</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Se carregar nesta opção irá iniciar o assistente da primeira execução para fazer a configuração inicial do &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualizações...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Se carregar nesta opção irá abrir a <link linkend="visualizations"
+>Janela de Visualizações</link
+> para escolher as visualizações a usar com o &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Equalizador</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Abre a <link linkend="equalizer"
+>Janela do Equalizador.</link
+></para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Gestor de Programas</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Abre a janela do Gestor de 'Scripts'.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar as Barras de Ferramentas...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Se carregar nesta opção irá abrir uma janela para configurar a <link linkend="toolbar"
+>Barra da Lista de Músicas</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar os Atalhos...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Se carregar nesta opção irá abrir uma janela para configurar os <link linkend="keybd-shortcuts"
+>Atalhos do &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar os Atalhos Globais...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Se carregar nesta opção irá abrir uma janela para configurar os <link linkend="keybd-shortcuts"
+>Atalhos Globais do &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar o Amarok...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Se carregar nesta opção irá abrir a <link linkend="configuring-kapp"
+>Janela de Configuração do &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Este item contém um sub-menu que oferece referências a este documento e a outras informações do &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Sair</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Este item, quando for carregado, irá sair do &amarok;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Gestor de Capas de Álbuns</title>
+
+<screenshot>
+	<screeninfo
+>Gestor de Capas de Álbuns</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>O Gestor de Capas de Álbuns é uma ferramenta útil para gerir as capas dos seus álbuns. Poderá iniciar o Gestor de Capas se seleccionar a opção <menuchoice
+><guimenu
+>Acções</guimenu
+><guimenuitem
+>Gestor de Capas</guimenuitem
+></menuchoice
+> no Navegador da Colecção.</para>
+
+<para
+>O gestor de capas oferece uma lista com todos os álbuns na sua colecção. O utilizador poderá ver todas as capas dos álbuns de um artista se carregar no artista na lista.</para>
+
+<para
+>O gestor de capas contém uma barra de procura para procurar nas suas capas de álbuns. O gestor de capas irá pesquisar os seus álbuns pelo critério de procura que indicou na barra de procura.</para>
+
+<para
+>O menu <guimenuitem
+>Ver</guimenuitem
+> permite-lhe escolher o que é apresentado no gestor de capas. Poderá escolher entre:</para>
+
+<para
+><guimenuitem
+>Todos os álbuns</guimenuitem
+>, que mostra todos os álbuns da sua colecção.</para>
+
+<para
+><guimenuitem
+>Álbuns com capa</guimenuitem
+>, que mostra apenas os álbuns que têm imagens das capas.</para>
+
+<para
+><guimenuitem
+>Álbuns sem capa</guimenuitem
+>, que mostra apenas os álbuns que não tiverem imagens de capa.</para>
+
+<para
+>O botão <guimenuitem
+>Obter as Capas em Falta</guimenuitem
+> é usado para obter as imagens das capas dos seus álbuns que não tenham já imagens disponíveis.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>O Gestor de Filas</title>
+
+<screenshot>
+	<screeninfo
+>Imagem do Gestor da Fila</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>O Gestor de Filas teve a sua grande estreia no &amarok; 1.3. Esta funcionalidade está desenhada para permitir aos utilizadores terem ainda mais controlo sobre as suas listas. Depois de estar na fila, será mostrado um número de faixa ao lado desta no Gestor de Filas. Esse número indica a ordem pela qual o &amarok; irá tocar a faixa: o 'um' será em primeiro lugar, o "dois" em segundo, e assim por diante.</para>
+
+<para
+>Poderá usar o Gestor de Filas, abrindo-o a partir da opção <menuchoice
+><guimenu
+>Ferramentas</guimenu
+> <guimenuitem
+>Gestor da Fila</guimenuitem
+></menuchoice
+>, seleccionar a faixa e carregar depois no ícone <guibutton
+>+</guibutton
+> do Gestor da Fila. Poderá também arrastar as faixas para o Gestor da Fila para criar uma fila. Em alternativa, o menu de contexto da lista também poderá ser usado, invocando o Gestor da Fila para modificar a ordem.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Listas de Reprodução Dinâmicas</title>
+
+	<sect2>
+		<title
+>O Que São?</title>
+		<para
+>As Listas de Reprodução Dinâmicas são listas geradas automaticamente, criadas de acordo com regras definidas, e que são usadas para manter a lista de reprodução actual com um tamanho controlado. Ainda que o &amarok; seja relativamente leve em recursos, durante a execução, o carregamento de um número grande de faixas numa lista, de cada vez, aumenta a utilização de RAM, criado possivelmente algum impacto na performance do sistema, o que é evitado por completo ao usar as Listas de Reprodução Dinâmicas; também é conhecido como Modo de Festa. São uma óptima forma de manter a música a tocar durante a noite toda, sem qualquer interacção. </para>
+	</sect2>
+
+	<sect2>
+		<title
+>Onde se Encontram?</title>
+		<para
+>Poderá encontrar as Listas de Reprodução Dinâmicas na Barra Lateral das Listas de Reprodução.</para>
+	
+		<screenshot>
+			<screeninfo
+>Barra Lateral da Lista de Reprodução</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Barra Lateral da Lista de Reprodução</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Existem três tipos de Listas de Reprodução Dinâmicas, referidos como Modos Dinâmicos, onde dois deles são predefinidos (seguem-se depois mais detalhes da configuração destes).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Mistura Aleatória</term>
+				<listitem
+><para
+>Inicializa uma lista com faixas aleatórias da sua colecção inteira e continua a adicionar faixas aleatórias.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Canções Sugeridas</term>
+				<listitem>
+					<para
+>Adiciona faixas, com base nas sugestões do <ulink url="http://www.last.fm"
+>last.fm</ulink
+> (anterior audioscrobbler). Necessita de algumas faixas já na lista de reprodução. Lembre-se que não precisa de um perfil do last.fm para isto funcionar.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Baralhar a Lista de Reprodução (criado-pelo-utilizador)</term>
+				<listitem
+><para
+>Adiciona faixas aleatórias de Listas de Reprodução Inteligentes específicas, quer sejam predefinidas quer criadas pelo utilizador.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>Como é Que as Uso?</title>
+		<para
+>Basta fazer duplo-click na sua lista de reprodução desejada, arrastá-la para a janela da lista de reprodução ou carregar com o botão direito e seleccionar Carregar. Isto irá substituir a sua lista de reprodução actual, para que possa gravá-la primeiro, se for importante para si. </para>
+		<para
+>Tanto a Mistura Aleatória como o Baralhar a Lista de Reprodução irão preencher a sua lista de reprodução e permitem-lhe começar a tocar imediatamente. As Músicas Sugeridas irão começar com uma lista vazia, obrigando-o a adicionar pelo menos uma música da sua colecção manualmente. As sugestões são adicionadas na mudança de uma dada faixa, para que a sua lista de reprodução não seja preenchida até ao fim da primeira música.</para>
+		<para
+>Se desejar manter a sua lista de reprodução actual, poderá activar o último tipo do Modo Dinâmico, usado ao seleccionar a opção <menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Modo Dinâmico</guimenuitem
+></menuchoice
+>. Isto irá usar a sua lista existente como ponto de partida. Poderá desactivar o Modo Dinâmico com a mesma opção do menu.</para>
+		<screenshot>
+			<screeninfo
+>Lista de Reprodução Dinâmica carregada</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Lista de Reprodução Dinâmica carregada</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>O botão <guibutton
+>Preencher de Novo</guibutton
+> irá limpar a sua lista de reprodução e adicionar de novo faixas, de acordo com o Modo Dinâmico que estiver a usar; o botão <guibutton
+>Editar Este Modo Dinâmico</guibutton
+> irá preencher a janela de Configuração do Modo Dinâmico.</para
+> <note
+><para
+>Estes botões não irão aparecer se tiver o Modo Dinâmico desactivado.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Configurar as Listas de Reprodução Dinâmicas</title>
+	<sect2>
+		<title
+>Mudar o Comportamento de uma Lista de Reprodução Dinâmica</title>
+		<para
+>Se carregar com o botão direito numa <guilabel
+>Lista de Reprodução Dinâmica</guilabel
+>, poderá seleccionar a opção <guimenuitem
+>Editar</guimenuitem
+>, que abre a janela de Configuração do Modo Dinâmico.</para>
+	
+		<screenshot>
+			<screeninfo
+>Configuração do Modo Dinâmico</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Nome da Lista de Reprodução Dinâmica</term>
+				<listitem>
+					<para
+>Mude o nome para o que desejar, se for da sua vontade. Os nomes das listas de reprodução deverão ser únicos, para evitar confusões.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Remover as faixas tocadas</term>
+				<listitem>
+					<para
+>Se desligar esta opção, as suas listas continuarão sempre a crescer, a opção de Próximas Faixas é substituída e não irá obter repetições na sua lista de reprodução. Se a opção estiver assinalada, as faixas reproduzidas são removidas do início da lista, de acordo com as faixas reproduzidas.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Marcar o histórico</term>
+				<listitem>
+					<para
+>Coloca a cinzento as faixas que já foram tocadas.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Faixas tocadas a mostrar</term>
+				<listitem>
+					<para
+>Faixas tocadas a mostrar - o número de faixas reproduzidas a deixar no início da lista de reprodução. É útil para ver o que foi tocado recentemente.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Próximas faixas</term>
+				<listitem>
+					<para
+>Esta é a opção que restringe o tamanho da sua lista de reprodução.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Faixas a adicionar</term>
+				<listitem>
+					<para
+>O número de faixas que será adicionado à sua lista de reprodução, após tocar cada uma das músicas. Lembre-se que, se definir este valor como maior que 1, a sua lista irá crescer rapidamente, dado que só uma faixa poderá ser tocada e removida de cada vez.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Poderá aceder também a esta janela com o botão <guibutton
+>Editar Este Modo Dinâmico</guibutton
+>, no canto superior direito da sua janela da lista de reprodução.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Barra do Modo Dinâmico</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Adicionar uma Lista Dinâmica Personalizada</title>
+		<para
+>Carregue com o botão direito nas Listas de Reprodução Dinâmicas e seleccione Nova Lista de Reprodução Dinâmica.</para>
+
+		<screenshot>
+			<screeninfo
+>Criar uma Lista de Reprodução Dinâmica Nova</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>As opções à direita são as descritas na secção anterior. No painel à esquerda, poderá seleccionar qualquer uma das listas de reprodução existentes ou listas de reprodução inteligentes do seu sistema. Se seleccionar várias listas, o &amarok; irá adicionar faixas aleatórias de cada uma delas.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>O Gestor de 'Scripts'</title>
+
+<screenshot>
+	<screeninfo
+>Imagem do Gestor de 'Scripts'</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A interface de 'scripts' oferece uma forma simples de extender a funcionalidade do &amarok;. Para executar um 'script' do &amarok;, inicie o Gestor de 'Scripts' com a opção do menu <menuchoice
+><guimenu
+>Ferramentas</guimenu
+><guimenuitem
+>Gestor de 'Scripts'</guimenuitem
+></menuchoice
+> do menu do &amarok;. Na janela do Gestor de 'Scripts', irá encontrar uma lista com os seus programas instalados, seleccionar um deles e carregar no botão <guibutton
+>Executar</guibutton
+> para lançar o programa. Este programa do &amarok; irá executar até ao fim do mesmo ou até que seja interrompido manualmente no Gestor de 'Scripts', após tê-lo seleccionado nesta janela e ter carregado no botão <guibutton
+>Parar</guibutton
+>.</para>
+
+<tip
+><para
+>Alguns programas oferecem opções de configuração especiais. Para aceder a estas opções, execute primeiro o 'script' e depois carregue no botão <guibutton
+>Configurar</guibutton
+> para aceder à janela de configuração do 'script'.</para
+></tip>
+
+<para
+>Para instalar novos programas para o &amarok;, carregue no botão <guibutton
+>Instalar o 'Script'</guibutton
+> na janela do Gestor de 'Scripts'. Irá aparecer uma janela de selecção de ficheiros que lhe permitirá seleccionar um pacote de 'scripts' do &amarok;. Após seleccionar um pacote a instalar, irá aparecer um novo item para o 'script' na lista. Poderá também instalar 'scripts' novos se carregar no botão <guibutton
+>Obter Mais 'Scripts'</guibutton
+>, que irá abrir uma janela para transferir e instalar os programas automaticamente a partir da Internet.</para>
+
+<para
+>Poderá também descobrir que existem programas que já não usa mais. Para desinstalar um 'script', seleccione-o na lista do Gestor de 'Scripts' e carregue no botão <guibutton
+>Desinstalar</guibutton
+>.</para>
+
+<note
+><para
+>Se estiver à procura de informações sobre como criar um programa ou 'script' do &amarok;, veja por favor a secção <link linkend="script-writing"
+>Criação de 'Scripts'</link
+> deste documento.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>As Visualizações</title>
+
+<screenshot>
+	<screeninfo
+>Ecrã das Visualizações</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>A Janela de Visualizações é usada para activar todas as suas visualizações disponíveis no &amarok;. Será oferecida uma lista com as suas visualizações disponíveis na janela. Para activar uma visualização, assinale a opção respectiva para a visualização específica.</para>
+
+</sect1>
+
+</chapter>

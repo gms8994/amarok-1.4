@@ -1,0 +1,1270 @@
+<chapter id="using-kapp">
+<title>Using &amarok;</title>
+
+<para>&amarok; is a versatile audio player that offers many different ways of controlling your music collection. Like any ordinary audio player, &amarok; has a player window for controlling your most basic functions. &amarok; also has a playlist that is second to none. The playlist window has multiple browsers for creating and browsing your entire audio collection.</para>
+
+<para>In this chapter we will go over how to use all the features of &amarok; including creating a collection and a playlist.</para>
+
+<sect1 id="player-window">
+<title>The Player Window</title>
+
+<screenshot>
+	<screeninfo>Player Window Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para>The player window is your one click &amarok; control center. At the top of the player there is a scrolling display to show the currently playing track or stream. Just below the scrolling display there is an area to display the current track's play time, bit rate, and sample rate. Clicking this area will change the track time from total played to total time remaining.</para>
+
+<para>The player window also features a selection of audio analyzers also located under the scrolling display. You can cycle through the available analyzers by left clicking the analyzer area.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo>Analyzer Tip</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The &amarok; player analyzers can be detached from the player window. By pressing <keycap>d</keycap> on your keyboard the active analyzer will open in an independent, re-sizeable window.</para>
+</tip>
+
+<para>Also below the scrolling display are the <guibutton>PL</guibutton> and <guibutton>EQ</guibutton> buttons. The <guibutton>PL</guibutton> button is used to quickly enable or disable the playlist window, while the <guibutton>EQ</guibutton> button is used to enable and disable the equalizer if your engine is compatible.</para>
+
+<para>The remainder of the player includes the playback buttons and the volume and track position sliders. Use the sliders to choose a track postion or volume level that suits your needs. Use the playback buttons to control the playback of the current track, or to skip either forward or back through your tracks.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title>The Equalizer Window</title>
+
+<para>The built in equalizer is easy to use and works with all engines. There are 17 presets included, ranging from Classical to Techno, and you can easily create your own. </para>
+
+<para>To access the equalizer choose <menuchoice><guimenu>Tools</guimenu><guimenuitem>Equalizer</guimenuitem></menuchoice> from the main window or click the <guibutton>EQ</guibutton> button from the Player window. Once you check the <guibutton>Enable Equalizer</guibutton> check box in this window, the equalizer will be active.</para>
+
+<screenshot>
+	<screeninfo>Equalizer Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>You can use the dialog's drop down box to select one of the built in presets. You can also adjust individual sliders here. Adjusting a slider will automatically cause a switch to the Manual preset so feel free to experiment with them until you find a desirable combination. When you are ready to save, click the <guiicon>Add new preset</guiicon> icon to the right of the drop down box. If you change to another preset without saving your changes they will be lost. In addition to saving you can also click the <guiicon>Manage presets</guiicon> icon, to the right of the drop down box, to delete or rename presets.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title>The Playlist Window</title>
+
+<screenshot>
+	<screeninfo>Playlist Window Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The &amarok; playlist is the most advanced playlist available to any audio player for &kde;. The playlist offers many features that are not found in any other player. You should not be intimidated by the power of the playlist however, as it is still the easiest to use.</para>
+
+<para>The playlist window can be divided into two main sections, on the left is the sidebar. The sidebar is where you will find some of the excellent features of the playlist like the <link linkend="context-browser">Context Browser</link>. On the right side of the window is the playlist itself. The playlist is simple to use yet powerful enough for even the most advanced users.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title>The Sidebar Browsers</title>
+
+<para>Browsers in &amarok; allow you to acess your music collection in several different ways. They are situated on the left side of the window, and each one is represented by a tab with its name written on it. Clicking on a tab brings the selected browser into view. If a browser is active clicking on its tab again will contract the browser. Only one browser is visible at any time, although you can drag tracks from one tab to another by hovering on the target tab for 1 second until that tab becomes visible. You can also hide browsers by simply right-clicking on any tab and (un)selecting the desired browser(s) in the provided context menu.</para>
+
+<screenshot>
+	<screeninfo>Browser Selection Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title>Context Browser</title>
+
+<para>The Context Browser displays various information related to the currently playing track. Its appearance can be modified by using themes known as <link linkend="configure-appearance">Context Browser Styles</link>. It is organized into three tabs: <quote>Music</quote>, <quote>Lyrics</quote>, and <quote>Artist</quote>. These tabs, whose function will be more fully explained below, supply information on different aspects the track currently being listened to.</para>
+
+<note><para>Users of previous &amarok; versions will notice that there is no longer a <quote>Home</quote> tab. The information from this tab has been redistributed throughout the &amarok; interface. Analogous information can be found mainly in the Statistics dialog, accessible through <menuchoice><guimenu>Tools</guimenu><guimenuitem>Statistics</guimenuitem></menuchoice>.</para></note>
+
+<screenshot>
+	<screeninfo>Context Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title>The Music Tab</title>
+
+<para>The <guilabel>Music</guilabel> tab offers information about the currently playing track, and it's artist and album.</para>
+
+<para>The first pane in this tab is for information about the track. The title of the pane lists the track name, artist name, and album. Inside the pane you will find it shows the album cover image for the track. Next to the image you will find a <ulink url="http://www.musicbrainz.org/">MusicBrainz</ulink> icon. <inlinemediaobject><imageobject><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject></inlinemediaobject> Click this icon to do a MusicBrainz look-up for the track.</para>
+
+<para>Below the MusicBrainz icon there is more information about you current track. Here you will find the total number of times the track has been played, the track's current core, and when the track was first and last played.</para>
+
+<tip><para>To display album cover images in the Context Browser you must have the album cover image in the same directory as the track you are listening to. Supported file formats are .jpg, .jpeg, .gif, and .png. The images can be named anything, but images with the word <quote>front</quote> in the filename will be used with preference. The Context Browser will also use cover images saved from the album cover downloader, or images embedded in ID3v2 tags.</para></tip>
+
+<para>The next pane, <guilabel>Suggested Songs</guilabel>, lists multiple tracks for suggested listening. Click on any of the listed tracks to begin playback of the track.</para>
+
+<para>Below <guilabel>Suggested Songs</guilabel> is the <guilabel>Favorite Tracks By Artist</guilabel>. This pane lists the five highest rated tracks by the current track's artist.</para>
+<!-- Insert wiki image -->
+<tip><para>You can adjust the amount of information shown in the <guilabel>Music</guilabel> tab by right-clicking anywhere on Music tab and toggling items on the context menu.</para></tip>
+
+<para>The last pane, <guilabel>Albums By Artists</guilabel>, lists all of the albums by the current track's artists that are in your collection. Clicking on any of the albums in this pane will expand the album to show the album's content.</para>
+
+<tip><para>You can click on tracks in any of the panes to begin playback of the track. You can also right click albums and tracks for a pop-up menu to choose several ways to play or enqueue the track or album.</para></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title>The Lyrics Tab</title>
+
+<para><guilabel>Lyrics</guilabel> tabs fetches lyrics for the currently played song from one of the supported websites. This feature is flexible, and it's possible to write scripts to fetch lyrics from different sites. See Chapter on Script-Writing. When you click on the Lyrics tab, &amarok; attempts to fetch lyrics for the current track. If there is no lyrics script running you will be given the opportunity to select one.</para>
+
+<screenshot>
+	<screeninfo>Lyrics Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para>You can perform various actions on the lyrics tab, using its toolbar buttons.</para>
+
+<para>The <guibutton>Add</guibutton> button opens (in an external browser) the <quote>Add Lyrics</quote> page on the lyrics website, depending on which script you run.</para>
+
+<para>The <guibutton>Edit</guibutton> button allows you to edit lyrics for the current track. They are then stored in &amarok;'s collection database. This does not require a lyrics script to be active.</para>
+
+<para>The <guibutton>Search</guibutton> button launches a google.com search (in an external browser) for the lyrics of the current track.</para>
+
+<para>The <guibutton>Refresh</guibutton> button clears cached lyrics for current track, and searches again.</para>
+
+<para><guibutton>Open in external browser</guibutton> displays the current track's lyrics in your external browser.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title>The Artist Tab</title>
+
+<screenshot>
+	<screeninfo>Artist Tab Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Artist tab shows Wikipedia article about currently played artist. Toolbar contains:</para>
+
+<itemizedlist>
+<listitem>
+<para>Navigational buttons for moving forward or backward</para>
+</listitem>
+<listitem>
+<para>Page buttons for jumping to artist's, album's or track's Wikipedia page,</para>
+</listitem>
+<listitem>
+<para>A button for opening current page in external browser</para>
+</listitem>
+<listitem>
+<para>A configuration button for setting the Wikipedia locale</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title>Collection Browser</title>
+
+<screenshot>
+	<screeninfo>Collection Browser Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Collection browser is the heart of &amarok;. The entire collection is viewable here and sorted using various groupings. Within each grouping, everything is always alphabetical, symbols and numbers first, and case insensitive. In every grouping method, tracks that have unknown artists and/or albums are always grouped at the start of your collection, under <quote>Unknown</quote>. Although track numbers are not shown, tracks are listed in their album order. Clicking the header of the collection list reverses the sort order. Left-clicking on the expand icon to the left of any entry in your collection will expand that entry.</para>
+
+<para>The <quote>Group By</quote> pull-down menu allows you to group your collection in several ways:</para>
+
+<itemizedlist>
+<listitem>
+<para><menuchoice><guimenu>Group By</guimenu><guimenuitem>Artist</guimenuitem></menuchoice> - Top level sort only, every track is grouped under its artist, with no consideration given to albums or genres.</para>
+</listitem>
+<listitem>
+<para><menuchoice><guimenu>Group By</guimenu><guimenuitem>Artist/Album</guimenuitem></menuchoice> - Tracks are sorted into artists, and then beneath this, sorted by album. If you want to see compilation or soundtrack albums, this is the best way to view your collection - these albums are grouped together at the very begin of your list, under <quote>Various Artists</quote>.</para>
+</listitem>
+<listitem>
+<para><menuchoice><guimenu>Group By</guimenu><guimenuitem>Artist/Year-Album</guimenuitem></menuchoice> - Sorts by artist, with albums in descending order of year (most recent first). If there is no <quote>Year</quote> tag set for a track, the default <quote>0 - album name</quote>.</para>
+</listitem>
+<listitem>
+<para><menuchoice><guimenu>Group By</guimenu><guimenuitem>Album</guimenuitem></menuchoice> - Every album in your collection is displayed alphabetically based on the album name, regardless of artist.</para>
+</listitem>
+<listitem>
+<para><menuchoice><guimenu>Group By</guimenu><guimenuitem>Genre/Artist</guimenuitem></menuchoice> - Tracks are grouped according to their genre tag, then by artist.</para>
+</listitem>
+<listitem>
+<para><menuchoice><guimenu>Group By</guimenu><guimenuitem>Genre/Artist/Album</guimenuitem></menuchoice> - Same as above, only with tracks sorted by album, below each artist.</para>
+</listitem>
+</itemizedlist>
+
+
+<para>The remaining items on the pulldown menu allow you to customise the grouping with any combination of the above.</para>
+
+<para>The next two icons on the toolbar change the way your collection is viewed. The first, Tree View, is the default view, and the one you'll probably see the most. The next button enables Flat View, which at first appears empty. Typing search terms in the text entry box immediately below the toolbar will begin to populate your collection, which can be sorted in a variety of ways, by left-clicking on the column headers. right-clicking on the column headers will pop up a context menu allowing you to change the columns shown.</para>
+
+<para>The last icon in the toolbar lets you change your collection setup. Note that if you change any folders, &amarok; will automatically rescan your collection - this may take quite some time if you have many tracks.</para>
+
+<para>Immediately below the toolbar is a search filter, which behaves the same in both Flat and Tree views. See the Playlist section of the handbook for more details on searching techniques.</para>
+
+<para>Below the Search Filter, another pull-down menu lets you see the most recently added tracks to your collection. Several time periods are available, ranging from the last 24 hours, to 1 year, or your entire collection.</para>
+
+<sect3 id="collection-rmb">
+<title>The Collection Browser &RMB; Options</title>
+<para>The following options are accessible by clicking with the &RMB; on entries in the collection browser.</para>
+
+<para><guilabel>Load</guilabel> - Clears the current playlist and adds selected track(s) as first track(s), in sort order.</para>
+
+<para><guilabel>Append to Playlist</guilabel> - Adds selected track(s) to end of current playlist. Double clicking on a single track in the collection also achieves the same result.</para>
+
+<para><guilabel>Queue Tracks</guilabel> - Adds the selected track(s) to the queue as the next to be played.</para>
+
+<para><guilabel>Save as Playlist</guilabel> - Save the selected tracks as a playlist. You'll be prompted for a name to save as.</para>
+
+<para><guilabel>Add to Media Device Transfer Queue</guilabel> - Adds track(s) to a queue, ready to be transferred to a media device, when such a device is attached. See <link linkend="media-device-browser">Media Device Browser</link> section for more detail.</para>
+
+<para><guilabel>Burn All Tracks By This Artist/Burn To CD</guilabel> - Sends track(s) to &k3b; for burning as either a data or Audio CD. If &k3b; is not installed, this option is not selectable.</para>
+
+<para><guilabel>Fetch Cover Image</guilabel> - Searches amazon.com for a cover image for this album.</para>
+
+<para><guilabel>Edit Information for (n) Tracks</guilabel> - Opens the <guilabel>Track Information</guilabel> dialog and allows you to change tags for one or more tracks. <!--See Editing Tags section for more information.--></para>
+
+<para><guilabel>Manage Files</guilabel></para>
+
+<itemizedlist>
+<listitem>
+<para><guilabel>Organize (n) Files</guilabel> - Opens <guilabel>Organize Collection Files</guilabel> dialog. <!--See File Organization section for more information.--></para>
+</listitem>
+
+<listitem>
+<para><guilabel>Delete (n) Files</guilabel> - Pops up a confirmation dialog asking whether you want to permanently delete the selected track(s) from your computer.</para>
+</listitem>
+</itemizedlist>
+
+<para><guilabel>Mark As Compilation</guilabel> - Sets the selected album as a compilation album, to be listed under <quote>Various Artists</quote></para>
+
+<para><guilabel>Unmark As Compilation</guilabel> - Changes an album marked as a compilation to a normal album, and moves the listing from <quote>Various Artists</quote>, to back under the artists listed.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title>Playlist Browser</title>
+
+<screenshot>
+	<screeninfo>Playlist Browser Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Playlist Browser is used for easy handling of your multiple playlists. The Playlist Browser also features built in smart playlists making it the most clever playlist browser around.</para>
+
+<para>The Playlist Browser is divided into two sections, Playlists and Smart Playlists. The Playlists sections is for your own custom playlists. You can view the contents of your playlists in a list view by clicking the <quote>+</quote> symbol found next to each of the listed playlists. When you view a playlist in the list view new items can be added to the playlist by dragging and dropping them into the view. When you have found a playlist that you would like to load, you can double click the playlist, or press the <keycap>Space Bar</keycap> to have &amarok; load it. The other Playlist Browser keyboard shortcuts can be found in the <link linkend="keybd-shortcuts">Keyboard Shortcuts section</link>.</para>
+
+<tip><para>When you save a new playlist from the Playlist Window it is automatically added to the Playlist section.</para></tip>
+
+<para>The bottom section of the Playlist Browser is the Smart Playlists. The Smart Playlists use &amarok;'s built in data base to compile some useful playlists on the fly. The Smart Playlists include the following:</para>
+
+<itemizedlist>
+<listitem>
+<para>All Collection: a playlist with all the tracks that are in your configured collection.</para>
+</listitem>
+
+<listitem>
+<para>Favorite Tracks: multiple playlists of the fifteen highest rated tracks in a listview by artitst.</para>
+</listitem>
+
+<listitem>
+<para>Most Played: multiple playlists of the fifteen most played tracks in a listview by artitst.</para>
+</listitem>
+
+<listitem>
+<para>Newest Tracks: multiple playlists of the fifteen most recently added tracks in a listview by artitst.</para>
+</listitem>
+
+<listitem>
+<para>Last Played: a playlist of the fifteen most recently played tracks in your collection.</para>
+</listitem>
+
+<listitem>
+<para>Never Played: a playlist of the tracks in your collection which have never been played before.</para>
+</listitem>
+
+<listitem>
+<para>Genres: multiple playlists in a listview ordered by genre.</para>
+</listitem>
+
+<listitem>
+<para>User defined smart playlists are also possible. Clicking the <guibutton>Create Smart-Playlist</guibutton> button will open a dialog to configure a smart playlist to fit your criteria.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title>Media Device Browser</title>
+
+<screenshot>
+	<screeninfo>Media Device Browser Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Media Device panel is used for connecting your iPod, to &amarok;. To use your iPod with the Media Device browser you must have your iPod mounted at /mnt/ipod before starting &amarok;. Once you have started &amarok; you will find the tracks on your iPod listed by artist in a listview at the top of the browser.</para>
+
+<para>To add tracks to your iPod, drag the tracks you want to add from the playlist and drop them on the Artist listview. After you are done adding tracks to the list click the <guibutton>Transfer</guibutton> button to upload them to your iPod. After the transfer has completed, close &amarok; and unmount your iPod.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title>File Browser</title>
+
+<screenshot>
+	<screeninfo>File Browser Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The File Browser panel is like a mini konqueror embedded into the playlist. You can use the File Browser panel to browse your entire filesystem for audio files to add to the playlist. At the top of the File Browser you will find a toolbar with navigation buttons for moving Up, Back, and Forward through your filesystem. The tool bar also offers a Home, Reload, Short view and Detailed view buttons, it also features a Bookmarks button for creating bookmarks of your favorite filesystem areas.</para>
+
+<para>Below the toolbar is a handy search bar for searching by file name. You will find the search bar useful for directories with many files as it searches as you type leaving only the relevant file names in the view.</para>
+
+<para>At the bottom of the File Browser is an address bar for accessing your music from any URL that you type. For instance typing <filename class="directory">tar:/home/mike/music.tar.gz</filename> into the address bar and pressing <keycap>Enter</keycap> on your keyboard  will allow you to access the files inside the music tar ball. Now you can drag the audio from the tar ball and drop it into the playlist.</para>
+
+<tip><para>When playlist grows larger than one screenful, it becomes hard to append files by simply dropping them. Holding <keycap>Shift</keycap> key on keyboard while dropping may help in this case: the files will be appended at the end of playlist rather than inserted at current drop position.</para></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title>The Playlist</title>
+
+<screenshot>
+	<screeninfo>Playlist Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Playlist holds all the tracks you have en-queued for playing. You can change the sequence by dragging items around with the mouse, and dropping them in the desired position. Above the Playlist you see a Text Box, where you can enter a filter string. As soon as you enter a letter there, the Playlist will be redisplayed, showing only entries containing the entered characters. To stop the filtering, simply press <keycap>Backspace</keycap>, until the filter is empty.</para>
+
+<tip><para>Advanced, Google-esque syntax is also available.</para>
+
+<para>By default, when you enter terms separated by spaces, it will search for items containing all of them.
+For example: one two three, will search for anything that contains one, two, and three.</para>
+
+<para>However, you can put OR between terms to search for items that contain either, like this: one OR two OR three.
+That way, it will search for items that contain either one, or two, or three (or a combination of them).</para>
+
+<para>You can also use quotes to search for terms with spaces in them: "Mike Oldfield".
+That will search for items that contain Mike Oldfield, but not, for example, ones that contain Mike J. Oldfield.</para>
+
+<para>By default, it searches in all the columns of the playlist that are currently visible. However, you can use column:term to specify the column to search in: title:amarok (this can also be a column that isn't visible).
+This way, it will only search for items that have the word amarok in the title, and not, for example, in the album.</para>
+
+<para>When specifying a specific column to search in, you can also search for items less than or greater than a term, for example: score:>50, which will search for items with a score greater than 50.</para>
+
+<para>To specify a term you don't want the items to match, you can put a minus (-) sign before them: -thing, to search for anything that doesn't contain thing.</para>
+
+<para>You can combine the above at will, for example: "Mike Oldfield" OR score:>50 -comment:bad. That will search for anything that either contains Mike Oldfield or has a score greater than 50, but excludes items where the comment contains "bad".</para></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo>Playlist Tip</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>You can select items to be played in a specific order by holding <keycap>Control</keycap> and clicking the &RMB; on items in the order in which you wish them to be played. The items will be tagged with a number showing the order in which you selected them.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title>The Playlist Menubar</title>
+
+<screenshot>
+	<screeninfo>Playlist Menubar Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title>The Actions Menu</title>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Actions</guimenu>
+<guimenuitem>Play Media...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens a dialog for entering an URL.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Actions</guimenu>
+<guimenuitem>Play Audio CD</guimenuitem>
+</menuchoice></term>
+<listitem><para>Allows you to view and play an Audio CD using the audiocd:/ protocol.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Win</keycap><keycap>Z</keycap></keycombo>
+</shortcut>
+<guimenu>Actions</guimenu>
+<guimenuitem>Previous Track</guimenuitem>
+</menuchoice></term>
+<listitem><para>Move to the previous track in the playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Actions</guimenu>
+<guimenuitem>Pause</guimenuitem>
+</menuchoice></term>
+<listitem><para>Pauses the playback of the current track.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Win</keycap><keycap>Z</keycap></keycombo>
+</shortcut>
+<guimenu>Actions</guimenu>
+<guimenuitem>Stop</guimenuitem>
+</menuchoice></term>
+<listitem><para>Stops playback.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Win</keycap><keycap>Z</keycap></keycombo>
+</shortcut>
+<guimenu>Actions</guimenu>
+<guimenuitem>Next Track</guimenuitem>
+</menuchoice></term>
+<listitem><para>Move to the next track in the playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo>
+</shortcut>
+<guimenu>Actions</guimenu>
+<guimenuitem>Quit</guimenuitem>
+</menuchoice></term>
+<listitem><para>Quits &amarok;.</para></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title>The Playlist Menu</title>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Add Media...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens a dialog to add media to your current playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Save Playlist As...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens a dialog to save your current playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Undo</guimenuitem>
+</menuchoice></term>
+<listitem><para>Undo the last change to the playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>S</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Redo</guimenuitem>
+</menuchoice></term>
+<listitem><para>Reverts changes made by Undo.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Clear</guimenuitem>
+</menuchoice></term>
+<listitem><para>Clears the current playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Shuffle</guimenuitem>
+</menuchoice></term>
+<listitem><para>Shuffles the ordering of the current playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Enter</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Goto Current Track</guimenuitem>
+</menuchoice></term>
+<listitem><para>Moves the playlist to the currently playing track.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>D</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Queue Selected Tracks</guimenuitem>
+</menuchoice></term>
+<listitem><para>Queues all selected tracks in the playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Remove Duplicates &amp; Dead Entries</guimenuitem>
+</menuchoice></term>
+<listitem><para>Remove all duplicate or dead entries in the current playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>
+</shortcut>
+<guimenu>Playlist</guimenu>
+<guimenuitem>Select All</guimenuitem>
+</menuchoice></term>
+<listitem><para>Selects all the tracks in the current playlist.</para></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title>The Tools Menu</title>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Cover Manager</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the <link linkend="cover-manager">Cover Manager</link>.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Queue Manager</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the <link linkend="queue_manager">Queue Manager</link>.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>First-Run Wizard</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the First-Run wizard.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Visualizations</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the <link linkend="visualizations">Visualizations</link> dialog.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Equalizer</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the <link linkend="equalizer">Equalizer Window</link>.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Scripts</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the <link linkend="script_manager">Script Manager</link>.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Rescan Collection</guimenuitem>
+</menuchoice></term>
+<listitem><para>Starts a manual scan of your collection folders.</para></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title>The Settings Menu</title>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>M</keycap></keycombo>
+</shortcut>
+<guimenu>Settings</guimenu>
+<guimenuitem>Hide Menubar</guimenuitem>
+</menuchoice></term>
+<listitem><para>Hide the Playlist Window <link linkend="menubar">Menubar</link>.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Hide Toolbar</guimenuitem>
+</menuchoice></term>
+<listitem><para>Hide the Playlist Window <link linkend="toolbar">Toolbar</link>.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Hide Player Window</guimenuitem>
+</menuchoice></term>
+<listitem><para>Hide the <link linkend="player-window">Player Window</link>.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Repeat Track</guimenuitem>
+</menuchoice></term>
+<listitem><para>Repeat playback of the current track.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Repeat Playlist</guimenuitem>
+</menuchoice></term>
+<listitem><para>Repeat playback of the current playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Random Mode</guimenuitem>
+</menuchoice></term>
+<listitem><para>Randomizes the order of playback of the tracks in the playlist.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Dynamic Mode</guimenuitem>
+</menuchoice></term>
+<listitem><para>Starts the dynamic playlist mode.</para></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Global Shortcuts...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the global shortcut configuration dialog..</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Shortcuts...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the &amarok; shortcut configuration dialog..</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Toolbars...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the &amarok; toolbar configuration dialog..</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Amarok...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the &amarok; configuration dialog..</para></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title>The Help Menu</title>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>F1</keycap></keycombo>
+</shortcut>
+<guimenu>Help</guimenu>
+<guimenuitem>Amarok Handbook</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens this documentation.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Shift</keycap><keycap>F1</keycap></keycombo>
+</shortcut>
+<guimenu>Help</guimenu>
+<guimenuitem>What's This</guimenuitem>
+</menuchoice></term>
+<listitem><para>Activates the What's This mouse cursor.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Help</guimenu>
+<guimenuitem>Report Bug...</guimenuitem>
+</menuchoice></term>
+<listitem><para>Starts the bug reporting tool.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Help</guimenu>
+<guimenuitem>about Amarok</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the about Amarok dialog.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Help</guimenu>
+<guimenuitem>about KDE</guimenuitem>
+</menuchoice></term>
+<listitem><para>Opens the about KDE dialog.</para></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title>The Playlist Toolbar</title>
+
+<screenshot>
+	<screeninfo>Playlist Toolbar Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Playlist Window Toolbar is found near the bottom of the Playlist Window. The Toolbar contains buttons for many of the Playlist actions. On the right side of the Toolbar you can find the <guibutton>Add Media</guibutton> button, which opens a file dialog to add your media files to the playlist. Following the <guibutton>Add Media</guibutton> button are the <guibutton>Save Playlist</guibutton>, <guibutton>Clear Playlist</guibutton>, and <guibutton>Refresh Playlist</guibutton> buttons. You can use these buttons for handling the current Playlist.</para>
+
+<para>The next set of buttons are the <guibutton>Undo</guibutton>, and <guibutton>Redo</guibutton> buttons. You can use these buttons to Undo or Redo any changes made to the playlist.</para>
+
+<para>In the center of the Toolbar you can find a unique, re-sizeable analyzer. You can adjust the refresh rate for the analyzer by using the &RMB; menu, and selecting your desired frame rate.</para>
+
+<para>The last button in the Toolbar is the <guibutton>Menu</guibutton> button. The <guibutton>Menu</guibutton> button opens the same menu as the Player Window &RMB; menu. You can use this menu for accessing the &amarok; configuration options.</para>
+
+<tip><para>There are many other buttons available for the Toolbar including player control buttons and a volume slider. You can configure what buttons are in the Toolbar by clicking the <guibutton>Menu</guibutton> button and selecting <guimenuitem>Configure Toolbars...</guimenuitem></para></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title>The Playlist Status Bar</title>
+
+<screenshot>
+	<screeninfo>Status Bar Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Status Bar provides quick access to some useful information about the playlist. The Status Bar displays the current track's title, the number of tracks in the playlist along with the total playlist time, Random and Repeat status, a mini track position slider, and the current track's play time. You can change the Random and Repeat status by double clicking there respective areas in the status bar.</para>
+
+<para>You can also choose to not have the Status Bar displayed using the <guilabel>Show statusbar</guilabel> option in the <link linkend="general-options">Configure General Options Dialog</link>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title>The Right Mouse Button Menu</title>
+
+<screenshot>
+	<screeninfo>RMB Menu Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The &RMB; menu can be found by right clicking the player window, it can also be found by clicking the <guibutton>Menu</guibutton> button in the playlist window. The &RMB; menu is used for access to all of &amarok;'s options.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Repeat Track</guimenu></menuchoice></term>
+<listitem>
+<para>This option when enabled repeats playback of the current track.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Repeat Playlist</guimenu></menuchoice></term>
+<listitem>
+<para>This option when enabled repeats playback of the entire playlist.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Random Mode</guimenu></menuchoice></term>
+<listitem>
+<para>This option when enabled randomizes the playback of the tracks in your playlist.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Append Suggestions</guimenu></menuchoice></term>
+<listitem>
+<para>Appends the suggested songs in the Context Browser to the current playlist.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Cover manager</guimenu></menuchoice></term>
+<listitem>
+<para>Opens the <link linkend="cover-manager">Cover Manager</link>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>First-run Wizard</guimenu></menuchoice></term>
+<listitem>
+<para>Clicking this option starts the first-run wizard for the initial configuration of &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Visualizations...</guimenu></menuchoice></term>
+<listitem>
+<para>Clicking this option opens the <link linkend="visualizations">Visualizations Window</link> for choosing what visualizations to use with &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Equalizer</guimenu></menuchoice></term>
+<listitem>
+<para>Opens the <link linkend="equalizer">Equalizer Window.</link></para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Script Manager</guimenu></menuchoice></term>
+<listitem>
+<para>Opens the Script Manager dialog.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Configure Toolbars...</guimenu></menuchoice></term>
+<listitem>
+<para>Clicking this option opens a dialog to configure the <link linkend="toolbar">Playlist Toolbar</link>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice><guimenu>Configure Shortcuts...</guimenu></menuchoice></term>
+<listitem>
+<para>Clicking this option opens a dialog to configure the <link linkend="keybd-shortcuts">&amarok; Shortcuts</link>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice><guimenu>Configure Global Shortcuts...</guimenu></menuchoice></term>
+<listitem>
+<para>Clicking this option opens a dialog to configure the global <link linkend="keybd-shortcuts">&amarok; Shortcuts</link>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice><guimenu>Configure Global Amarok...</guimenu></menuchoice></term>
+<listitem>
+<para>Clicking this options opens the <link linkend="configuring-kapp">&amarok; Configuration Dialog</link>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice><guimenu>Help</guimenu></menuchoice></term>
+<listitem>
+<para>This entry provides a sub-menu providing links to this document and other &amarok; information.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice><guimenu>Quit</guimenu></menuchoice></term>
+<listitem>
+<para>This entry when clicked will quit &amarok;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title>Album Cover Manager</title>
+
+<screenshot>
+	<screeninfo>Album Cover Manager</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Album Cover Manager is a useful tool for managing your album covers. You can start the Cover Manager by selecting <menuchoice><guimenu>Actions</guimenu><guimenuitem>Cover Manager</guimenuitem></menuchoice> in the Collection Browser.</para>
+
+<para>The cover manager provides a listview of all the albums in your collection. You can view all of your album covers for an artist by clicking on the artist in the list view.</para>
+
+<para>The cover manager provides a search bar for searching in your album covers. The cover manager will search your albums for the search criteria you type in the search bar.</para>
+
+<para>The <guimenuitem>View</guimenuitem> menu allows you to choose what is displayed in the cover manager. You can choose from:</para>
+
+<para><guimenuitem>All albums</guimenuitem> which displays all your albums in your collection.</para>
+
+<para><guimenuitem>Albums with cover</guimenuitem> which displays only the albums that have cover images.</para>
+
+<para><guimenuitem>Albums without cover</guimenuitem> which displays only the albums that do not have cover images.</para>
+
+<para>The <guimenuitem>Fetch Missing Covers</guimenuitem> button is used to download cover images for your albums that do not already have cover images available.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title>The Queue Manager</title>
+
+<screenshot>
+	<screeninfo>Queue Manager Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Queue Manager makes it's grand entrance in &amarok; 1.3. This feature is designed to enable users to have even more control over their playlists. After queuing, a track a number will be shown beside it in the Queue Manager. This number indicates the order in which &amarok; will play the track: one will be first, two will be second, and so on.</para>
+
+<para>You can use the Queue Manager by opening it from <menuchoice><guimenu>Tools</guimenu> <guimenuitem>Queue Manager</guimenuitem></menuchoice>, selecting the track, and then pressing the <guibutton>+</guibutton> icon in the Queue Manager. You can also just drag tracks to the Queue Manager to create a queue. Alternatively, the playlist's context menu may also be used and the Queue Manager can then be opened in order to modify the order.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title>Dynamic Playlists</title>
+
+	<sect2>
+		<title>What Are They?</title>
+		<para>
+			Dynamic Playlists are self-generating playlists, created according to defined rules, which are used to keep the current playlist to a manageable size. Whilst &amarok; is fairly light on resources while running, loading a large number of tracks into a playlist at once increases RAM usage, possibly impacting on system performance, which is avoided completely by using Dynamic Playlists. Also known as Party Mode, they are also a great way to keep the music playing all night with no interaction.
+		</para>
+	</sect2>
+
+	<sect2>
+		<title>Where Are They?</title>
+		<para>You can find Dynamic Playlists in the Playlists Sidebar.</para>
+	
+		<screenshot>
+			<screeninfo>Playlist Sidebar</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject><phrase>Playlist Sidebar</phrase></textobject>
+<!-- 			<caption><para>Dynamic Playlists shown in the Playlist Browser</para></caption> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para>There are three types of Dynamic Playlists, referred to as Dynamic Modes, two of which are predefined (more details on configuring this later).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term>Random Mix</term>
+				<listitem><para>Initialises a playlist with random tracks from you're entire collection, and keeps adding random tracks.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term>Suggested Songs</term>
+				<listitem>
+					<para>Adds tracks based on <ulink url="http://www.last.fm">last.fm</ulink> (formerly audioscrobbler) suggestions. Requires some tracks already in the playlist. Note you do not need a last.fm profile for this to work.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term>Playlist Shuffle (user-created)</term>
+				<listitem><para>Adds random tracks from specified Smart Playlists, either built-in or user defined.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title>How Do I Use Them?</title>
+		<para>Simply double-click your desired playlist, drag it to the playlist window, or right-click and select Load. This will replace your current playlist, so you may want to save that first if it's important to you. </para>
+		<para>Both Random Mix and Playlist Shuffle will populate your playlist and allow you to start playing immediately. Suggested Songs will start with an empty playlist, requiring you to add at least one song from your collection manually. The suggestions are added on a track change, so your playlist will not be populated until the end of the first song.</para>
+		<para>If you wish to retain your current playlist, you can enable the last type of Dynamic Mode used by selecting <menuchoice><guimenu>Settings</guimenu> <guimenuitem>Dynamic Mode</guimenuitem></menuchoice>. This will use your existing playlist as a starting point. You can disable Dynamic Mode via the same menu option.</para>
+		<screenshot>
+			<screeninfo>Dynamic Playlist loaded</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase>Dynamic Playlist loaded</phrase>
+			</textobject>
+<!-- 			<caption><para>&amarok;with a Dynamic Playlist loaded</para></caption> -->
+		</mediaobject>
+		</screenshot>
+		<para>The <guibutton>Repopulate</guibutton> button will clear your playlist and re-add tracks according to the Dynamic Mode you are using, and the <guibutton>Edit this Dynamic Mode</guibutton> button will pop up the Dynamic Mode Settings dialog.</para> <note><para>These buttons will not appear if you have Dynamic Mode disabled.</para></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title>Configuring Dynamic Playlists</title>
+	<sect2>
+		<title>Changing the Behaviour of a Dynamic Playlist</title>
+		<para>Right-clicking on a <guilabel>Dynamic Playlist</guilabel> will allow you to select <guimenuitem>Edit</guimenuitem>, which opens the Dynamic Mode Settings dialog box.</para>
+	
+		<screenshot>
+			<screeninfo>Dynamic Mode Settings</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption><para>Dynamic Mode Settings Dialog</para></caption> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term>Dynamic Playlist Name</term>
+				<listitem>
+					<para>Rename to anything you like, if you so desire. Playlist names should be unique, to avoid confusion.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term>Remove played tracks</term>
+				<listitem>
+					<para>If you uncheck this, your playlists will continually grow, the Upcoming Tracks setting is overridden, and you will not get repeats in your playlist. If the setting is checked, played tracks are removed from the start of the list, according to the Played tracks to show setting below.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term>Mark history</term>
+				<listitem>
+					<para>Greys out tracks that have been played.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term>Played tracks to show</term>
+				<listitem>
+					<para>Played tracks to show - number of played tracks to leave showing at the start of the playlist. Useful for seeing what has been played recently.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term>Upcoming tracks</term>
+				<listitem>
+					<para>This is the setting that restricts the size of your playlist.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term>Tracks to append</term>
+				<listitem>
+					<para>The number of tracks that will be added to your playlist after each song is played. Note that if you set this greater than 1, your playlist will grow rapidly, as only one track can be played then removed at a time.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para>You can also access this dialog via the <guibutton>Edit this Dynamic Mode</guibutton> button at the top right of your playlist window.</para> 
+
+		<screenshot>
+			<screeninfo>Dynamic Mode Bar</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption><para>Dynamic Mode Indicator Bar</para></caption> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title>Adding a Custom Dynamic Playlist</title>
+		<para>Right-click on Dynamic Playlists and select New Dynamic Playlist.</para>
+
+		<screenshot>
+			<screeninfo>Create New Dynamic Playlist</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption><para>Adding a New Dynamic Playlist</para></caption> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para>The settings on the right are as described in the previous section. In the panel on the left, you can select from any of the existing playlists and smart playlists on your system. If you select multiple playlists, &amarok; will add random tracks from each of these.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title>The Script Manager</title>
+
+<screenshot>
+	<screeninfo>Script Manager Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The script interface provides a simple way to extend the functionality of &amarok;. To run an &amarok; script, start the Script Manager by selecting <menuchoice><guimenu>Tools</guimenu><guimenuitem>Script Manager</guimenuitem></menuchoice> in the &amarok; Menubar. In the Script Manager dialog you will find a listview of your installed scripts, select a script from the listview and click the <guibutton>Run</guibutton> button to launch the script. The &amarok; script will run until it has finished, or is manually stopped by selecting the script in the Script Manager and clicking the <guibutton>Stop</guibutton> button.</para>
+
+<tip><para>Some scripts provide special configuration options. To access these options first run the script and then click the <guibutton>Configure</guibutton> button to access the script's configuration dialog.</para></tip>
+
+<para>To install new &amarok; scripts click the <guibutton>Install Script</guibutton> button in the Script Manager dialog. A select file dialog will open allowing you to select an &amarok; script package. After selecting a package to install a new entry for the script will appear in the listview. You can also install new scripts by clicking the <guibutton>Get More Scripts</guibutton> button, which opens a Dialog for downloading and installing scripts automatically from the internet.</para>
+
+<para>You may also find that there are scripts that you no longer use. To uninstall a script select the script in the Script Manager listview and click the <guibutton>Uninstall</guibutton> button.</para>
+
+<note><para>If you are looking for information on writing an &amarok; script, please see the <link linkend="script-writing">Script Writing</link> section of this document.</para></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title>The Visualizations</title>
+
+<screenshot>
+	<screeninfo>Visualizations Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>The Visualizations Window is used to enable your available visualizations with &amarok;. A list of your available visualizations will be provided in the window. To enable a visualization check the provided checkbox for the specific visualization.</para>
+
+</sect1>
+
+</chapter>

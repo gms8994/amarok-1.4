@@ -1,0 +1,1332 @@
+<chapter id="faq">
+<title
+>Küsimused ja vastused</title>
+
+<sect1 id="faq1">
+<title
+>Mis on &amarok;?</title>
+
+<qandaset id="what-is">
+<qandaentry>
+
+<question>
+<para
+>Mis on &amarok;?</para>
+</question>
+
+<answer>
+<para
+>&amarok; on UNIX-i süsteemide (nt. Linux) muusikamängija. Täpsemat infot annavad <ulink url="http://amarok.kde.org/amarokwiki/index.php/What_is_AmaroK%3F"
+>selle omaduste (ingliskeelne) kokkuvõte</ulink
+> ning <ulink url="http://amarok.kde.org/index.php?set_albumName=Screenshots&amp;option=com_gallery&amp;Itemid=60&amp;include=view_album.php"
+>ekraanipiltide galerii</ulink
+>.</para>
+</answer>
+
+</qandaentry>
+</qandaset>
+
+</sect1>
+
+<sect1 id="faq2">
+<title
+>Paigaldamine</title>
+
+<qandaset id="installation-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Kas &amarok;ki saab kasutada ka ilma KDE-ta?</para>
+</question>
+
+<answer>
+<para
+>&amarok;ile on vajalik ainult KDElibs, mitte aga muu KDE. Nii et kui KDElibs on korrektselt paigaldatud (kaasa arvatud kõik sellega kaasnevad binaarfailid, sest &amarok; vajab mõningaid neist pluginate leidmiseks ja skriptipluginate jaoks), siis peaks kõik korras olema. Kasuks võiks tulla ka meie koostatud väikese (ingliskeelse) juhendi lugemine, <ulink url="http://amarok.kde.org/amarokwiki/index.php/KDElibs_without_aRts"
+>kuidas kompileerida minimaalne KDElibs</ulink
+>.</para>
+<para
+>Mõne võimaluse jaoks, näiteks ekraaniesitus, peab sinu aknahaldur toetama vastavaid freedesktop.org-i standardeid. See tähendab, et GNOME tuleb edukalt toime, aga fluxbox võib mõne asjaga hätta jääda. Meie siht on toetada &amarok;i kasutamist kõigil platvormidel. Me kasutame KDElibs'i ja Qt'd, sest need pakuvad suurepärast arenduskeskkonda.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq3">
+<title
+>Probleemide lahendamine</title>
+
+<qandaset id="troubleshooting">
+
+<qandaentry>
+<question>
+<para
+>&amarok;ki tabab muusikakogu uurimisel alati ühes ja samas kohas krahh. Milles asi?</para>
+</question>
+
+<answer>
+<para
+>Tõenäoliselt käivitab teatud muusikakogu fail mingi vea teegis TagLib, mis toobki kaasa &amarok;i krahhi. Selle faili saab üle leida logifaili ~/.kde/share/apps/amarok/collection_scan.log uurides. Krahhist tuleks teada anda TabLibi vigade andmebaasi aadressil <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+> ning lisaks veateatele tuleks kaasa panna ka vea tekitanud fail. Seejärel võid proovida antud faili muusikakogust eemaldada ja kogu taas läbi uurida lasta.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>&amarok;ki tabab teatud pala esitamisel alati krahh. Milles asi?</para>
+</question>
+
+<answer>
+<para
+>Tavaliselt tähendab see seda, et TagLibi tabab pala siltide lugemisel krahh. Sellest tuleks teada anda TagLibi veana aadressil <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok;ki tabab tihtipeale krahh. Milles asi?</para>
+</question>
+
+<answer>
+<para
+>Uuenda oma ALSA teegid ja tööriistad (utils) viimase versioonini või kasuta OSS-i või OSS-i emuleerimist.</para>
+<para
+>Kui kasutad andmebaasi taustarakendusega MySQL-i, proovi kasutada SQLite'i, mis on mõnevõrra parem (&amarok;i jaoks, mitte iseenesest). </para>
+<para
+>Proovi mõnda muud audiomootorit.</para>
+<para
+>Kontrolli, et kõik teegid, mida &amarok; kasutab, on kompileeritud sama GCC versiooniga nagu &amarok;. Kui näiteks &amarok; on kompileeritud GCC 3.4.x kasutades ja lingitud TagLibiga, mis on kompileeritud GCC 3.3.x, võivad siltide redigeerimisel tekkida krahhid.</para>
+<para
+>Kui kasutad KDE-d koos aRtsi deemoniga (artsd), ürita helisüsteemi seadistustes välja lülitada valik "Automaatne passiivne režiim pärast..." või vähemalt ära määra väärtuseks 1 sekund, sest see toob kaasa sekkumise alati, kui amaroK ühelt laulult teisele liigub.</para>
+<para
+>Üldiselt oleks muudel juhtudel mõttekas saata meile krahhi tagasijälitus, kui näed ilmumas vastavat teadet (ja küll sa seda juba krahhi korral näed). Kui krahh esineb sageli, parandame me vea kindlasti ära, kui see on meie võimuses - ja kui sa saadad meile tõesti korraliku kirjelduse ning krahhi tagasijälituse. Viimasest räägimegi kohe.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas pärast krahhi teada saada, mis juhtus?</para>
+</question>
+
+<answer>
+<para
+>Vaata (ingliskeelset) <ulink url="http://amarok.kde.org/amarokwiki/index.php/Debugging_HowTo"
+>silumuse HowTo'd</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; ei kasuta silte, mis kindlasti mu failides esinevad!</para>
+</question>
+
+<answer>
+<para
+>Kui Konqueror või mõni muu rakendus näitab pealkirja, esitajat, albumit või žanri teisiti kui &amarok; muusikakogu loomise järel, siis võib olla tegemist sellega, et ta loeb mitte uuemaid ID3v2, vaid vanemaid ID3v1 silte. Selle põhjuseks võib olla <guilabel
+>kodeering</guilabel
+>u seadistus: vali <menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>&amarok;i seadistamine</guimenuitem
+></menuchoice
+> ning ilmuvas dialoogis kodeeringute sektsioon. Eemalda kõik märked kastidest "Järgmisi ei kodeerita kui latin1". Uuri oma muusikakogu uuesti läbi. Nüüd peaks tuvastatama ja kasutatama ID3v2 silte. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; ei näita minu UTF-8 kodeeringus ID3v2 silte õigesti!</para>
+</question>
+
+<answer>
+<para
+>Selle põhjuseks on asjaolu, et enamik rakendusi lisab ID3v2 siltidesse UTF-8 kodeeringus andmed, kuid ei määra kodeeringuks Unicode'i. Selle vea parandab alltoodud Perli skript.</para>
+<programlisting
+>#!/usr/bin/perl
+die "File $ARGV[0] doesn't exist" unless -f $ARGV[0];
+use MP3::Mplib;
+my $mp3 = MP3::Mplib->new($ARGV[0]);
+my $v2tag = $mp3->get_v2tag;
+print "Error writing tags of $ARGV[0]\n" unless $mp3->set_v2tag($v2tag,&amp;UTF8);
+</programlisting>
+<note
+><para
+>See skript nõuab Perli moodulit MP3::Mplib, mille saab paigaldada käsuga <command
+>perl -MCPAN -e 'install MP3::Mplib'</command
+>.</para
+></note>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Miks minu olekuriba ikoonid alati aktiivsed on?</para>
+</question>
+
+<answer>
+<para
+>&amarok;i olekuriba ikoonid (juhuslik/kordamine/lisamine) on KDE 3.4.0 korral kogu aeg aktiivsed. See on selle KDE versiooni teada viga. Ikooniefektid unustatakse mõnikord ära. Seda saab lihtsalt parandada, kui valida KDE juhtimiskeskuses <menuchoice
+><guimenu
+>Välimus</guimenu
+><guisubmenu
+>Ikoonid</guisubmenu
+><guimenuitem
+>Muud</guimenuitem
+></menuchoice
+> ning määrata väljalülitatud oleku väärtuseks "Hall" ja "Poolläbipaistev". Pane tähele, et mõnikord tuleb ka pärast seda ikoonile kolm korda klõpsata, enne efekt toimima hakkab. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Miks &amarok; kurdab defineerimata sümbolite üle ja ei lähegi käima?</para>
+</question>
+
+<answer>
+<para
+>Kui saad veateate "amarokapp: symbol lookup error: amarokapp: undefined symbol: _ZN11KSystemTray9setPixmapERK7QPixmap", siis kontrolli, kas amarokapp kasutab korrektset libqt'd (kontrolli seda käsuga ldd `which amarokapp` | grep qt). </para>
+<para
+>Parandamiseks tuleks eemaldada konfliktne libqt ja/või muuda faili /etc/ld.so.conf, et kohe valitaks korrektne versioon.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+</sect1>
+
+
+<sect1 id="faq5">
+<title
+>Üldine kasutamine</title>
+
+<qandaset id="general-use">
+
+
+<qandaentry>
+<question>
+<para
+>Kust saada &amarok;i tuge?</para>
+</question>
+
+<answer>
+<para
+>Selleks on mitu võimalust. Sageli suudavad probleemidele, mis tekivad &amarok;i paigaldamisel, kõige paremini vastata sinu UNIX-i või Linuxi distributsiooni loojad. Abi võib otsida ka teistelt kasutajatelt ja arendajatelt <ulink url="http://amarok.kde.org/index.php?option=com_simpleboard"
+>&amarok;i foorumil</ulink
+> ning <ulink url="irc://irc.freenode.net/amarok"
+>IRC kanalil</ulink
+> (irc.freenode.net võrk, kanal #amarok).</para>
+<note
+><para
+><ulink url="http://bugs.kde.org"
+>Bugzilla</ulink
+> ei ole just koht, kust abi otsida, vaid mõeldud teatamiseks vigadest. Anna veast teada, kui soovid tõsiselt aidata parandada &amarok;i vigasid.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok;i käivitamisel on esitusnimekiri tühi. Kuidas see palade lisamine õieti käib?</para>
+</question>
+
+<answer>
+<para
+>See on imelihtne. Liigu vasakul asuvas failisirvijas vajalikku kataloogi ja seejärel lohista failid paremal paiknevasse esitusnimekirja.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kus on kaart "Kodu"?</para>
+</question>
+
+<answer>
+<para
+>Kasutajaliidese ülekoormamise vältimiseks muudeti kaart "Kodu" tööriistaks "Statistika", mille leiab menüüst: <menuchoice
+><guimenu
+>Tööriistad</guimenu
+><guimenuitem
+>Statistika</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kas kuidagi saab määrata, millist teavet näitab kontekstisirvija?</para>
+</question>
+
+<answer>
+<para
+>Jah - klõpsa lihtsalt kontekstisirvijas hiire parema klahviga ja muuda, mida tahad.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Miks tärnid ja numbrid ei ole kontekstisirvijas sünkroonis?</para>
+</question>
+
+<answer>
+<para
+>Nende sümbolite tähendus on Amarok 1.4 "Fast Forwardi" puhul muutunud: tärnid tähistavad kasutaja määratud hinnangut, numbrid aga rakenduse arvutatud hinnet.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Tärnidele klõpsamine kontekstisirvijas ei tee midagi! Kuidas siis laule hinnata?</para>
+</question>
+
+<answer>
+<para
+>Pala hindamiseks peab esitusnimekirjas olema veerg "Hinnang". Klõpsa &HPNga; esitusnimekirja pealkirjal ja vali <menuchoice
+><guimenu
+>Lisa veerg</guimenu
+><guimenuitem
+>Hinnang</guimenuitem
+></menuchoice
+>. Klõpsa veerus "Hinnang" oma hinnangu andmiseks palale. Kui Amarok töötab taustal, võid oma hinnangu anda ka kiirklahviga [Win]+[1-5].</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas eemaldada palad esitusnimekirjast?</para>
+</question>
+
+<answer>
+<para
+>Vali fail või failid, mida soovid eemaldada ja vajuta klahvi Del või klõpsa valitud failidel hiire parema nupuga ja vali ilmuvast menüüst Eemalda valitud.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas esitusnimekiri laadida?</para>
+</question>
+
+<answer>
+<para
+>Lohista lihtsalt olemasolev esitusnimekirja fail esitusnimekirja aknasse - nii lihtne see ongi! </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Kuidas salvestada esitusnimekiri?</para>
+</question>
+
+<answer>
+<para
+>Nupp Salvesta esitusnimekiri on esitusnimekirja tööriistaribal otse nupu Lisa andmekandja kõrval. Klõpsa sellele ja ongi kõik!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Visualiseerimisdialoogis pole ühtegi visualiseerimispluginat.</para>
+</question>
+
+<answer>
+<para
+>Ilmselt ei ole xmms-config paigaldatud. Paigalda vajalik xmms-devel pakett ja proovi uuesti. Abiks võib olla ka uusima paketi <ulink url="http://libvisual.sourceforge.net/v2/"
+>libvisual</ulink
+> paigaldamine, mis pakub mõningaid väga lahedaid visualiseeringuid.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kus on ekvalaiser?</para>
+</question>
+
+<answer>
+<para
+>Ekvalaseri akna saab avada hiire parema nupu menüüst. Selle leiab ka menüüribalt: <menuchoice
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Ekvalaiser</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq6">
+<title
+>Taasesitus</title>
+
+<qandaset id="playback-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Milliseid failitüüpe amaroK toetab?</para>
+</question>
+
+<answer>
+<para
+>Mitte ühtegi. Jah, just nii! Me toetame väga mitmeid taustaprogramme, nii et see küsimus peaks õigupoolest kõlama: "Milliseid failitüüpe toetab GStreamer/xine/aRts/NMM/MAS/KDEmm?" Ja seepärast võime me ka üsna veendunult öelda, et toetatud on enam-vähem kõik vähegi levinumad audiovormingud. GStreamer suudab ju näiteks isegi teksti ja PNG-d dekodeerida! </para>
+<para
+>Täpsemat (ingliskeelset) infot leiab veebist: <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Audio Engine Comparison</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Miks &amarok; ei mängi MP3?</para>
+</question>
+
+<answer>
+<para
+>Mängib küll! Selle küsimuse tekkimisel on usutav, et kasutad Fedora/RedHat linuxit, mis patendiprobleemide tõttu ei pane vaikimisi kaasa MP3 dekoodreid. Lahendus: Alt-F2, gg:redhat mp3 kde, ENTER</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; ei mängi MP3 SUSE Linux 9.3 korral. Mida teha?</para>
+</question>
+
+<answer>
+<para
+>Ava "YaST Online Update" ja paigalda 'Multimedia Option Pack 1'. Ja etskae: &amarok; mängib MP3.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>GStreameri mootoriga kipub mängimise ajal protsessori kasutus 100% kanti tõusma. Mida selle vastu ette võtta?</para>
+</question>
+
+<answer>
+<para
+>GStreamerit alsasinkiga kasutades nõuab &amarok; seadmelt mikserit. Miksimine võimaldab mitmel rakendusel üheaegselt seadet kasutada ning heli samaaegselt väljastada. Seda on võimalik saavutada kas riistvaralist mikserit pakkuva helikaardiga (nt. SBLive) või samuti riistvaralist miksimist pakkuva alsa pluginaga "dmix". Vaata ka (ingliskeelset) seletust: <ulink url="http://amarok.kde.org/amarokwiki/index.php/Setting_up_Dmix_for_ALSA"
+>Setting up Dmix for ALSA</ulink
+>. </para>
+<para
+>Pärast paigaldamist tuleb mootoriseadistuste dialoogis määrata heliseadmeks "dmix".</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mul ei õnnestus &amarok;,is ühtegi lugu mängida. Mis lahti?</para>
+</question>
+
+<answer>
+<para
+>Sul tuleks kontrollida heliraamistikku käsureal: </para>
+<para
+><command
+>artsplay suvafail.mp3</command
+> <command
+>gst-launch filesrc location=/home/sinukodu/suvafail.mp3 ! spider ! audioscale ! audioconvert ! alsasink</command
+> <command
+>xine-check</command
+> </para>
+<para
+>Nende käskude väljund peaks lubama tuvastada probleemi ja selle ka parandada. Arvesta, et GStreameri testimiseks võib vajalik olla mõni muu 'sink' (nt. osssink).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kas &amarok; võib saata väljundi otse OSS/ALSA-le?</para>
+</question>
+
+<answer>
+<para
+>Aga muidugi! Ära ainult unusta, et pala tuleb kõigepealt dekodeerida. MP3 lihtsalt ei saa otse ALSA-le saata, sest nii on tulemuseks ainult müra ja muud ei midagi. Enamasti peaks sobima GStreamer, mis suhteliselt vähese vaevaga loeb faili, dekodeerib ja saadab PCM andmed ALSA-le - täpselt nagu XMMS.</para>
+</answer>
+</qandaentry>
+
+
+
+<qandaentry>
+<question>
+<para
+>Aga XMMS ju saadab väljundi otse ALSA-le?</para>
+</question>
+
+<answer>
+<para
+>Jah, aga enne seda see dekodeeritakse. GStreamer võib samahästi väljundi otse ALSA-le saata, rääkimata juba xinest!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Heli on katkendlik. Kas selle vastu saab midagi ette võtta?</para>
+</question>
+
+<answer>
+<para
+>Kasutada võiks kas GStreameri mootorit (see on suurepärane!) või siis nikerdada veidi aRtsi kallal. Ava KDE juhtimiskeskuses <menuchoice
+><guimenu
+>Heli ja multimeedia</guimenu
+><guimenuitem
+>Helisüsteem</guimenuitem
+></menuchoice
+>. Lülita sisse valik Töötab suurima võimaliku prioriteediga ning suurenda helipuhvri suurust (ettevaatust: vaata järgmist KKK-d!). Samuti peab artswrapper olema suid:</para>
+<para
+><command
+>su</command
+> <command
+>chmod a+rsx /koht/kus/asub/kde/bin/artswrapper</command
+> <command
+>killall -9 artsd</command
+> </para>
+<para
+>KDE 3.2.x korral on mõningaid probleeme KDEMultimedia koodekitega, mis võivad taasesitust moonutada. Vaata selle kohta vastavat <ulink url="http://bugs.kde.org/show_bug.cgi?id=80497"
+>vearaportit</ulink
+>. Samuti võib tublisti aidata helipuhvri suurendamine ALSA seadistustefailis .asoundrc.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Protsessor on tugevasti koormatud. Kas selle vastu saab midagi ette võtta?</para>
+</question>
+
+<answer>
+<para
+>Ära kasuta aRtsi, vaid GStreameri või xine mootorit või siis paigalda kogu KDEMultimedia, mis annab sinu käsutusse kiiremad aRtsi koodekid (nt. libarts_mpeglib.so jne.).</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok;i analüsaatorid ei reageeri üldse millelegi!</para>
+</question>
+
+<answer>
+<para
+>Tõenäoliselt kasutad aRtsi mootorit. Kasuta mõnda muud mootorit (näiteks xine mootorit on tublisti parandatud just selle sihiga, et analüsaatorid täiuslikult sünkroonis oleks) või vähenda aRtsi puhvri suurust (KDE juhtimiskeskus, helisüsteem). Mida väiksem puhver, seda parem visuaalne reageerimine. Jah, see on tõesti viga! Palun aita meil see parandada!</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mul on GStreamer paigaldatud, aga kui ma püüan valida GStreameri mootorit, tabab &amarok;ki krahh. Mida nüüd teha?</para>
+</question>
+
+<answer>
+<para
+>Pärast GStreameri paigaldamist tuleb selle komponendid registreerida, sellega peaks hakkama saama käsk 'gst-register' (vahel on vaja anda ka versioon, näiteks 'gst-register-0.8').</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Andsin käsu 'gst-register', aga ikka on GStreameriga probleeme. Mida teha?</para>
+</question>
+
+<answer>
+<para
+>Võiksid uurida <ulink url="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/faq/html/chapter-using.html"
+>GStreameri KKK-d</ulink
+> (paraku küll inglise keeles). Kui mitte miski ei paista aitavat, võib pöörduda otse teadjamate poole <ulink url="irc://irc.freenode.net/gstreamer"
+>IRC kanalil #gstreamer</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>&amarok; teatab, et GStreameri mootor ei mängi MP3-faile, kuigi mul on mad-plugin kompileeritud/paigaldatud!</para>
+</question>
+
+<answer>
+<para
+>Proovi nii (vaata, et &amarok; ei töötaks): <ulink url="http://gstreamer.freedesktop.org/src/gst-ffmpeg/"
+>Laadi alla</ulink
+>, kompileeri ja paigalda ffmpeg-pakk - Käivita gst-register (võimalik, et seda on vaja teha kaks korda, kõigepealt administraatorina (root) ja siis "tavalise" kasutajana) - Mine GStreameri pluginakataloogi (selle leiab käsuga gst-config / gstreamer-config) - Kustuta ffmpeg-failid (või liiguta kuhugi mujale) - Käivita gst-register uuesti - Käivita &amarok;. </para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq7">
+<title
+>Arendus</title>
+
+<qandaset id="development-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas hankida &amarok;i CVS/SVN-i versioon?</para>
+</question>
+
+<answer>
+<para
+><ulink url="http://amarok.kde.org/amarokwiki/index.php/Installation_HowTo#Building_SVN_Amarok"
+>Kuidas hankida ja kompileerida &amarok;i SVN-i versioon</ulink
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ma leidsin vea / Mul on suurepärane idee &amarok;i jaoks!</para>
+</question>
+
+<answer>
+<para
+>Palun anna sellest teada aadressil <ulink url="http://bugs.kde.org/"
+>bugs.kde.org</ulink
+> või kui sul on terve rida ettepanekuid ja soove, siis saada need meie meililisti: <email
+>amarok-devel@lists.sourceforge.net</email
+>. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kas paiku võib saata?</para>
+</question>
+
+<answer>
+<para
+>Otse loomulikult! Kõige parem oleks muidugi enne seda, kui midagi ette võtta, meile sellest teada anda, et asja oleks võimalik arutada, kuid me ei pane mingil juhul sulle kätt ette! Arutamise mõte on ainult aidata sul oma paik veel paremaks muuta. Seejärel võid paiga saata meililisti või kui sul on SVN-is kirjutamisõigus, selle kohe sisse kanda. Kuid viimasel juhul oleks küll hea, kui sa meile sellest eelnevalt teada annaksid! Kui aga soovid vigu parandada, ei takista sind selles keegi, sest selleks ju vaba tarkvara mõeldud ongi :)</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mida tähendab &amarok;?</para>
+</question>
+
+<answer>
+<para
+>&amarok; on Briti muusiku Mike Oldfieldi ühe albumi nimi. Mulle meeldib see väga ja ma arvasin, et see on just sobiv nimi ühele meediamängijale. No ja “K” on ju teadagi mispärast... </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kas see on &amarok;, AmaroK või Amarok?</para>
+</question>
+
+<answer>
+<para
+>Kohe täiesti kindlasti &amarok;! Aga me saame muidugi aru, et see on veidi ebatavaline... :-)</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq8">
+<title
+>Nipid ja trikid</title>
+
+<qandaset id="tipsandtricks-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas kasutada &amarok;ki äratuskellana?</para>
+</question>
+
+<answer>
+<para
+>Jah, tänu imelisele DCOP-ile on see tõesti võimalik! Määra lihtsalt vajalik häire oma lemmikust kalendrirakenduses ja lase sel käivitada järgmine käsk: <command
+>dcop amarok player play</command
+> </para>
+<para
+>See annab &amarok;ile korralduse alustada mängimist. Kontrolli enne magamaminemist, et &amarok; töötab, ning hommikul äratab sind seesama sulnis viis, mille enne voodisseminekut peatasid.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas saada teada, mida &amarok; mängib, kui ma ise olen teise arvuti taga?</para>
+</question>
+
+<answer>
+<para
+>Kui oled korrektselt seadistanud SSH-keskkonna, ei tohiks see raskusi valmistada. Järgmine käsk tagastab "praegu mängitakse" info: <command
+>ssh -i ~/.ssh/id_rsa sinuIP dcop --user sinukasutajanimi amarok player nowPlaying</command
+> </para>
+<para
+>Pane tähele, et sinuIP asemel peabki seisma sinu IP ja sinukasutajanimi asemel sinu kasutajanimi. Pane tähele ka seda, et see käsk eeldab, et sinu identifitseerimisinfo leidub failis ~/.ssh/id_rsa.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mida huvitavat saab ette võtta mängija aknaga?</para>
+</question>
+
+<answer>
+<para
+>&amarok;i mängija analüsaatoreid saab mängija aknast eraldada. Vajutades klaviatuuril d, avatakse aktiivne analüsaator iseseisvas, muudetava suurusega aknas.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mida huvitavat saab ette võtta esitusnimekirja aknaga?</para>
+</question>
+
+<answer>
+<para
+>Klahvi Ctrl all hoides ja hiire parema nupuga klõpsates saab failid seada järjekorda just sellises järjekorras, nagu sa neile klõpsad. Pärast esitusnimekirjas otsimist klahvi Enter vajutades saab esitada esimese leitud pala ning ühtlasi otsingu puhastada.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ahaa! Mängija aknal ja esitusnimekirja aknal on niisiis mõned vahvad omadused, aga süsteemse salve ikoonil?</para>
+</question>
+
+<answer>
+<para
+>Kui jätta hiirekursor ikooni kohale seisma, näeb vahvat infomulli parajasti esitatava pala infoga. Hiire keskmise nupuga ikoonile klõpsates saab pala esitamise peatada. Hiirerattaga kerides saab muuta helitugevust. Kui hoida all klahv Shift ja hiirerattaga kerida, saab parajasti esitatavas palas edasi-tagasi liikuda. Kui hoida all klahv Ctrl ja hiirerattaga kerida, saab esitusnimekirjas edasi-tagasi liikuda. Midagi ikoonile lohistades ilmub hüpikmenüü, mis võimaldab lohistatu esitusnimekirja lisada või selle esitusnimekirja lisada ja kohe esitada või seada järjekorda parajasti esitatava pala järele. Süsteemse salve ikoon näitab ka asukohta esitatavas palas.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kust leiab &amarok;i seadistused?</para>
+</question>
+
+<answer>
+<para
+>~/.kde/share/apps/amarok ~/.kde/share/config/amarokrc</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas &amarok;is sirvija välja lülitada?</para>
+</question>
+
+<answer>
+<para
+>Klõpsa &HPNga; mis tahes sirvija nimel ja näed nähtavate sirvijate nimekirja. Nii saadki mis tahes sirvijaid nähtavaks või nähtamatuks muuta.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq9">
+<title
+>Üldised küsimused</title>
+
+<qandaset id="general-questions-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas kasutada &amarok;iga välist MySQL andmebaasi?</para>
+</question>
+
+<answer>
+<para
+>Vaata (ingliskeelset) <ulink url="http://amarok.kde.org/amarokwiki/index.php/MySQL_HowTo"
+>MySQL HowTo'd</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Minu kodukataloog ($HOME) asub NFS-is. Käivitamise järel ei õnnestu &amarok;il muusikakogu luua ja konsoolis on näha palju andmebaasiga seotud vigu. Miks nii?</para>
+</question>
+
+<answer>
+<para
+>Seesmine SQLite'i andmebaas, mida &amarok; vaikimisi kasutab, ei tööta NFS-i korral. Sul tuleb kas linkida oma kataloog ~/.kde/share/apps/amarok kohaliku kettaga või kasutada MySQL-i tuge.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas &amarok;iga audio CD-sid rippida/kodeerida?</para>
+</question>
+
+<answer>
+<para
+>Sisesta CD ja vali menüükäsk "Esita audio CD". Ilmub failisirvija, kus on näha mitu kataloogi. Tavaliseks rippimiseks mine kataloogi "wav", vali mõned palad ja lohista need vajalikku kohta Konquerori aknas. Automaatseks kodeerimiseks lohista faile aga kataloogidest "mp3" või "ogg".</para>
+<note
+><para
+>CD rippimiseks peab olema paigaldatud "AudioCD KIO-moodul". See kuulub KDE-Multimedia koosseisu.</para
+></note>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas määratakse palade hinnangud?</para>
+</question>
+
+<answer>
+<para
+>&amarok; omistab laulule hinnangu (arv vahemikus 1 kuni 100) vastavalt sellele, mitu korda sa oled seda kuulanud ja kas sa oled selle lõpuni kuulanud. Iga kord, kui laulu esitamine lõpeb, muutub selle hinne. Hinnangu muutmise koodi leiab failis collectiondb.cpp. Versioois 1.2.2 paiknes see real 1181, kuid sa leiab selle, kui otsid "CollectionDB::addSongPercentage". Palale, mida varem pole esitatud, hinnangut määrates kasutab &amarok; valemit hinnang = ( ( 50 + protsent ) / 2 ).</para>
+<para
+>See määrab hindeks arvu vahemikus 25 kuni 75 sõltuvalt sellest, kui palju palast sa mängisid. Kui näiteks katkestad pala esitamise juba pärast seda, kui sellest on esitatud 25%, on hindeks (50+25)/2 ehk 37,5. Hinnangut näidatakse siiski täisarvuna ning murru korral ümardatakse see lähima täisarvuni. Seesmiselt hoitakse hinnangut aga ujukomaarvuna, sest kui pala on mitu korda esitatud, ei ole enam hinnangut üheainsa esitamisega rohkem muuta kui ühe punkti võrra (vaata allpool). Varem esitatud palale hinnangut määrates on arvutamine veidi keerulisem. Lähtekoodis näeb see välja nii: score = ( ( values[2].toDouble() * values.first().toInt() ) + percentage ) / ( values.first().toInt() + 1 );</para>
+<para
+>Väärtusi sellelt realt asendades:</para>
+<programlisting
+>QStringList values = query( QString(
+           "SELECT playcounter, createdate, percentage FROM statistics "
+           "WHERE url = '%1';" )
+           .arg( escapeString( url ) ) );
+</programlisting>
+<para
+>Saame hinnangu score = ( ( statistics_percentage.toDouble() * PlayCounter.toInt() ) + percentage ) / ( PlayCounter.toInt() + 1 ); </para>
+<para
+>Põhimõtteliselt kohendab see varasemat hinnangut (statistics_percentage), kahandades seda vastavalt sellele, mitu korda on pala esitatud. Mida rohkem on pala esitatud, seda vähem mõjutab iga järgmise esitus hinnangut.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas muuta pala hinnangut käsitsi?</para>
+</question>
+
+<answer>
+<para
+>Hinnangut võib küll ka käsitsi muuta, klõpsates hiire parema nupuga esitusnimekirja veerule (pealkiri, esitaja, album jne.) ning valides Hinnang. Siis saab hinnangut muuta nagu iga muud laulu atribuuti, tehes sellel klõpsu hiire parema nupuga ja valides "Muuda silti 'Score'" või vajutades F2. Hinnangut saab muuta ka sildidialoogis, mille saab avada palale hiire parema nupuga klõpsates.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Miks &amarok; ei kuulu KDEmultimedia koosseisu?</para>
+</question>
+
+<answer>
+<para
+>Arendajad ei taha, et keegi teine neile ütleks, millal on õige aeg väljalase ilmale tuua. See tähendab, et KDE-l endal on oma teatud väljalasete periood, mis üldiselt ei sobi kokku &amarok;i suhteliselt kiire arenemistsükliga.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas teha nii, et &amarok;i ikoon enam süsteemses salves ei vilguks?</para>
+</question>
+
+<answer>
+<para
+>See on uus omadus, mida aga mõned kasutajad võivad häirivaks pidada. Selleks tuleb lihtsalt seadistustedialoogis jätta märkimata valik "Süsteemse salve ikooni vilgutamine mängimise ajal".</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas esitusnimekirja aknas analüsaatorit näha/eemaldada?</para>
+</question>
+
+<answer>
+<para
+>Esitusnimekirja analüsaator on osa esitusnimekirja tööriistaribast. Vali <menuchoice
+><guimenu
+>Seadistused</guimenu
+><guimenuitem
+>Tööriistaribade seadistamine</guimenuitem
+></menuchoice
+> ning lisa analüsaator valitud tegevuste sekka või eemalda sealt ning klõpsa OK. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas muuta kontekstisirvija teemat?</para>
+</question>
+
+<answer>
+<para
+>Laadi alla <ulink url="http://amarok.kde.org/amarokwiki/index.php/Themes"
+>teema</ulink
+> või tee <ulink url="http://amarok.kde.org/amarokwiki/index.php/CSS_Styles"
+>enda oma</ulink
+>. Paigaldamiseks vali <menuchoice
+><guimenu
+>&amarok;i seadistamine... </guimenu
+><guisubmenu
+>Välimus</guisubmenu
+><guimenuitem
+>Kontekstisirvija stiil</guimenuitem
+></menuchoice
+> ja klõpsa Paigalda uus stiil.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mis juriidilised probleemid põhjustasid "Blue Wolfi" ikooni asendamise?</para>
+</question>
+
+<answer>
+<para
+>See ikoon oli liiga sarnane Warp Graphics, Inc. logoga (elfquest.com), nii et me pidasime paremaks probleemide vältimiseks see eemaldada.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mul ei ole ühtegi visualiseeringut. Kust neid saada?</para>
+</question>
+
+<answer>
+<para
+>Paigalda teegi <ulink url="http://libvisual.sf.net"
+>libvisual</ulink
+> uusim versioon.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas lisada &amarok;ile oma lemmikvood?</para>
+</question>
+
+<answer>
+<para
+>Kõigepealt lae voog esitusnimekirja. Seda saab teha mitmeti. Võid lihtsalt klõpsata voo URL-il Konqueroris ja &amarok; avab automaatselt voo. Näiteks klõpsa saidil <ulink url="http://www.shoutcast.com"
+>shoutcast.com</ulink
+> nupule "Tune In". Voo saab laadida ka võimalusega "Ava andmekandja". Kui voog on laaditud, saad selle salvestada hiire parema nupu klõpsuga esitusnimekirjas kirjele "Praegune esitusnimekiri" ning sealt "Salvesta" valides ja voole mingi mõistliku nime andes. Seejärel lisatakse voog esitusnimekirja sirvijasse, kust saad selle hiljem avada.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq10">
+<title
+>Konquerori külgriba</title>
+
+<qandaset id="konq-sidebar-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Mis on Konquerori külgriba?</para>
+</question>
+
+<answer>
+<para
+>Konquerori külgriba võimaldab Konqueroris liikudes jälgida ja juhtida &amarok;ki. Külgriba nägemiseks vajuta Konqueroris F9. Klõpsa seadistuste nupule (kõige ülemine), vali ilmuvas menüüs <menuchoice
+><guimenu
+>Lisa</guimenu
+> <guimenuitem
+>&amarok;i Konquerori külgriba</guimenuitem
+></menuchoice
+>.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq11">
+<title
+>Audioscrobbler</title>
+
+<qandaset id="audioscrobbler-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Mis on Audioscrobbler?</para>
+</question>
+
+<answer>
+<para
+>Audioscrobbler on vaba teenus, mis saadab infot sinu mängitavate palade kohta sõltumatusse serverisse. Teenusega liitumine on vaba ja tasuta ning vaja on ainult seda, et valiksid kasutajanime ja parooli, mida veel keegi teine ei kasuta. &amarok; kasutab praegu Audioscrobbleri teenuseid.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ma ei taha, et &amarok; saadaks Audioscrobblerile mingit infot!</para>
+</question>
+
+<answer>
+<para
+>Eemalda märge kastist "Mängitavate palade saatmine" ning neid ei saadetagi enam Audioscrobblerile.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Kus on Audioscrobbleri &amarok;i grupp?</para>
+</question>
+
+<answer>
+<para
+>Audioscrobbleri &amarok;i grupp asub siin: <ulink url="http://www.audioscrobbler.com/group/Amarok+users/"
+>&amarok; Audioscrobbler Group</ulink
+></para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq12">
+<title
+>Üldised mootori/esitusega seotud küsimused</title>
+
+<qandaset id="general-engine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Millist audiomootorit tuleks kasutada?</para>
+</question>
+
+<answer>
+<para
+>Mootorite (ingliskeelset) võrdlust võib lugeda aadressil <ulink url="http://amarok.kde.org/amarokwiki/index.php/Audio_Engine_Comparison"
+>Audio Engine Comparison</ulink
+>.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Millist ALSA versiooni tuleks kasutada?</para>
+</question>
+
+<answer>
+<para
+>Kui heliväljund läheb ALSA-sse, tuleks pruukida ALSA uusimat versiooni! ALSA vanemad versioonid tekitasid hulganisti krahhe ja tõid kaasa palju tegelikult asjatuid veateateid.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ma paigaldasin GStreameri/xine/millegi muu, aga vastavat audiomootorit ei ole näha. Milles asi?</para>
+</question>
+
+<answer>
+<para
+>&amarok; kompileeriti sel juhul ilmselt enen xine ja/või GStreameri paigaldamist, mistõttu ./configure ei lisanud neid ehitamise ajal mootorite nimekirja. See tähendab, et &amarok; tuleb uuesti ehitada.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Aga ma ehitasin &amarok;i uuesti pärast GStreameri ja/või xine paigaldamist, kuid mootorit ei ole endiselt nimekirjas. Mis nüüd?</para>
+</question>
+
+<answer>
+<para
+>Arvatavasti kasutad distributsiooni, kus arenduspaketid (-devel) pakendatakse peateegist eraldi, nii et kui ka GStreamer on paigaldatud, ei suuda &amarok; sellega ennast linkida, sest gstreamer-devel ei ole paigaldatud. Sama probleem võib esineda xine korral: kui distributsioon on arenduspaketi lahku löönud, tuleb paigaldada xine-devel. Ja ära unusta &amarok;ki uuesti ehitamast, kui oled arenduspaketid paigaldanud.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq13">
+<title
+>GStreameri mootor</title>
+
+<qandaset id="gstreamer-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Miks on alati palade vahel lünk, kuigi ma olen siirde sisse lülitanud?</para>
+</question>
+
+<answer>
+<para
+>Kontrolli, et paigaldatud ei oleks gst-ffmpeg. Selle asemel paigalda gst-mad plugin. </para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ma saan veateate: "GStreamer-CRITICAL **: Factory for `adder' has no type.". Mida ette võtta?</para>
+</question>
+
+<answer>
+<para
+>Sinu GStreamer on ehitatud eellinkimist kasutades, mis ei ühildu GStreameriga. See tuleb uuesti ehitada ilma selle võtmeta. Merlin-tc soovitab: <quote
+>Lisaks ärge kasutage GStreameri ehitamisel ühtegi ldflags'i.</quote
+></para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ma saan veateate "There is no element present to handle the file's mimetype audia/mp4", kuigi paigaldatud on korrektne gstreamer-faad plugin.</para>
+</question>
+
+<answer>
+<para
+>Et GStreamer esitaks korrektselt mp4- või mp4a-faile, peab lisaks pluginale gstreamer-faad olema paigaldatud ka gstreamer-quicktime.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Ma saan veateate "There is no element present to handle the stream's mimetype audio/mpeg".</para>
+</question>
+
+<answer>
+<para
+>Sa üritad mängida mp3-voogu, aga sul pole paigaldatud pluginat gstreamer-mad. Paigalda see ja käivita administraatorina (root) "gst-register", enne kui käivitad taas &amarok;i.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Mul on ka teine helikaart ja ma kasutan ALSA-t. Kuidas panna amaroK vaikekaardi asemel seda teist kasutama.</para>
+</question>
+
+<answer>
+<para
+>Vali menüükäsk <menuchoice
+><guimenu
+>Seadistused</guimenu
+><guisubmenu
+>amaroKi seadistamine</guisubmenu
+><guimenuitem
+>Mootor</guimenuitem
+></menuchoice
+>, märgi ära kast 'Seade' ja määra seade. Tavaliselt on see vaikimisi helikaardi jaoks 'hw:0' ja teise helikaardi jaoks 'hw:1'.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq14">
+<title
+>xine mootor</title>
+
+<qandaset id="xine-faq">
+
+
+<qandaentry>
+<question>
+<para
+>Kuidas muuta seda, kuhu läheb heliväljund?</para>
+</question>
+
+<answer>
+<para
+>Kui kasutad ALSA-t, saad xine korral määrata konkreetse väljundseadme. Loo fail ~/.asoundrc (ainult kasutajale) või /etc/asound.conf (kogu süsteemile), kus on kirjas riistvaraliste seadmete aliased, ning lisa seejärel see alias xine mootori seadistustekaardil kasti "device used for stereo output:". Teine võimalus on vahetult sisestada ALSA seade (hw:0,0 või hw:1,0 ja nii edasi). Kui valid viimase võimaluse, arvesta, et ALSA enda plugx (nt. plughw:0,0 või plughw:1,0 ja nii edasi) alsa-lib'i kaudu on märksa eelistatum.</para>
+<para
+>Toome näite faili ~/.asoundrc masinas, kus on integreeritud Intel AC97 koodek ja usb-audio seade:</para>
+<programlisting
+>pcm.intel8x0 {
+          type plug
+          slave.pcm "hw:0"
+       }
+      
+       ctl.intel8x0 {
+          type hw
+          card 0
+       }
+       
+       pcm.usb-audio {
+          type plug
+          slave.pcm "hw:1"
+       }
+       
+       ctl.usb-audio {
+          type hw
+          card 1
+       }
+</programlisting>
+<para
+>Nüüd sisesta usb-audio xine mootori seadistusekraanile ning väljund hakkab minema usb-audio seadmesse (kusjuures alsa-lib hoolitseb korrektselt diskreetimissageduse teisendamise, kanalite ja muu sellise eest).</para>
+<para
+>Virtuaalse dmix-seadme kasutamiseks kontrolli, et kast "sound card can do mmap" ei oleks märgitud.</para>
+</answer>
+</qandaentry>
+
+
+</qandaset>
+
+</sect1>
+
+
+<sect1 id="faq15">
+<title
+>aRtsi mootor</title>
+
+<note
+><para
+>Paraku ei ole aRtsi mootoril hooldajat, nii et sul tuleb seal kõike ise parandada. Kui sa seda suudad, võid saada uueks aRtsi mootori hooldajaks, keda me tõesti hädasti vajame!</para
+></note>
+
+</sect1>
+
+
+</chapter>

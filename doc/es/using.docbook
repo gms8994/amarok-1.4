@@ -1,0 +1,2250 @@
+<chapter id="using-kapp">
+<title
+>Uso de &amarok;</title>
+
+<para
+>&amarok; es un reproductor de audio versátil que le ofrece muchas formas diferentes de controlar su colección de música. Como cualquier otro reproductor de audio, &amarok; dispone de una ventana de reproducción para controlar las funciones más básicas. &amarok; también tiene una lista de reproducción que no deja indiferente a nadie. La ventana de la lista de reproducción contiene múltiples navegadores para crear su colección completa de música y poder navegar por ella.</para>
+
+<para
+>En este capítulo veremos cómo utilizar todas las características de &amarok;,incluyendo cómo crear una colección y una lista de reproducción.</para>
+
+<sect1 id="player-window">
+<title
+>La ventana del reproductor</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de la ventana del reproductor</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="player_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para
+>La ventana del reproductor es su centro de control de &amarok; con una sola pulsación. En la parte superior del reproductor podrá ver un visor desplazante que muestra la pista o emisión actual. Justo debajo del visor desplazante hay una zona que muestra el tiempo de reproducción de la pista actual, la tasa de bits y la frecuencia de muestreo. Pulsando en esta zona hará que se muestre el tiempo total restante en lugar del tiempo total reproducido hasta el momento.</para>
+
+<para
+>La ventana del reproductor también cuenta con una selección de analizadores de audio localizada bajo el visor desplazante. Puede probar todos los analizadores disponibles pulsando con el botón derecho sobre el área del analizador para ver el siguiente.</para>
+
+<anchor id="analyzer-tip"/>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Sugerencia sobre el analizador</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="analyzer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Los analizadores del reproductor de &amarok; pueden desprenderse de la ventana del reproductor. Presionando la tecla <keycap
+>d</keycap
+> de su teclado, el analizador activo se abrirá en una ventana independiente y redimensionable.</para>
+</tip>
+
+<para
+>Debajo del visor desplazante se encuentran los botones <guibutton
+>PL</guibutton
+> y <guibutton
+>EQ</guibutton
+>. El botón <guibutton
+>PL</guibutton
+> se usa para habilitar o deshabilitar rápidamente la ventana de la lista de reproducción, mientras que el botón <guibutton
+>EQ</guibutton
+> se usa para habilitar y deshabilitar el ecualizador si el motor elegido lo permite.</para>
+
+<para
+>El resto del reproductor incluye los botones de reproducción y los controles deslizantes de volumen y posición. Use los controles deslizantes para elegir una posición dentro de la pista o el nivel de volumen según desee. Use los botones de reproducción para controlar la reproducción de la pista actual, o bien para avanzar o retroceder a través de las pistas.</para>
+
+</sect1>
+
+<sect1 id="equalizer">
+<title
+>La ventana del ecualizador</title>
+
+<para
+>El ecualizador es fácil de utilizar y funciona con todos los motores. Existen 17 preselecciones incluídas, que van desde clásica a tecno y puede crear con facilidad las suyas propias. </para>
+
+<para
+>Para acceder al ecualizador seleccione <menuchoice
+><guimenu
+>Herramientas</guimenu
+><guimenuitem
+>Ecualizador</guimenuitem
+></menuchoice
+> desde la ventana principal o pulse el botón <guibutton
+>EQ</guibutton
+> de la ventana del reproductor. Una vez que marque <guibutton
+>Activar ecualizador</guibutton
+> en esta ventana, el ecualizador se activará.</para>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del ecualizador</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="equalizer.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Puede utilizar el desplegable para seleccionar uno de los preseleccionados. También puede ajustar los deslizadores individuales. Ajustar un deslizador hará que automáticamente cambie la preselección manual con la que puede experimentar libremente hasta que encuentre la combinación adecuada. Cuando esté listo para guardarla, pulse el icono <guiicon
+>Añadir nueva preselección</guiicon
+> en la parte derecha del desplegable. Si cambia a otra preselección sin guardar sus cambios éstos se perderán. Puede guardarlos pulsando el icono <guiicon
+>Administrar preselecciones</guiicon
+>, situado a la derecha del desplegable, para borrar o renombrar las preselecciones.</para>
+
+</sect1>
+
+<sect1 id="playlist-window">
+<title
+>La ventana de la lista de reproducción</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de la ventana de la lista de reproducción</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="playlist_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La lista de reproducción de &amarok; es la más avanzada lista de reproducción disponible en cualquier reproductor de &kde;. La lista de reproducción ofrece muchas características que no pueden encontrarse en ningún otro reproductor. No obstante, no debería sentirse intimidado por la potencia que ofrece la lista de reproducción, ya que es también la más fácil de usar.</para>
+
+<para
+>La ventana de la lista de reproducción puede dividirse en dos secciones principales.A la izquierda está la barra lateral, donde encontrará alguna de las excelentes características de la lista de reproducción como el <link linkend="context-browser"
+>Navegador de contexto</link
+>. En la parte derecha de la ventana está la lista de reproducción propiamente dicha. La lista de reproducción es de fácil manejo aunque lo suficientemente potente para los usuarios más avanzados.</para>
+</sect1>
+
+
+<sect1 id="playlist-browsers">
+<title
+>Los navegadores de la barra lateral</title>
+
+<para
+>Los navegadores en &amarok; le permiten acceder a su colección de música de varias formas. Están situados en la parte izquierda de la ventana, y cada uno de ellos está representado por una pestaña con su nombre. Pulsando sobre la pestaña, se mostrará el navegador seleccionado. Solo se puede ver un navegador a la vez, aunque puede arrastrar pistas de una pestaña a otra manteniendose sobre la pestaña de destino durante 1 segundo hasta que se haga visible. Puede también ocultar los navegadores pulsando con el botón derecho en cualquier pestaña para seleccionar el navegador deseado en el menú contextual que aparezca.</para>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del navegador de selección</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="browser_choice.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="context-browser">
+<title
+>El navegador de contexto</title>
+
+<para
+>El navegador contextual muestra información relacionada con la pista que se está reproduciendo. Su aspecto se puede modificar utilizando temas, conocidos como <link linkend="configure-appearance"
+>Estilos del navegador contextual</link
+>. Se organizan en tres pestañas: «Música», «Letras» y «Artista». Estas pestañas, cuya función se explicará más adelante, proporcionana información de los diferentes aspectos de la pista que se está escuchando.</para>
+
+<note
+><para
+>Los usuarios de versiones anteriores de &amarok; comprobarán que ya no existe la pestaña «Inicio». La información de esta pestaña se ha redistribuido a través de la interfaz de &amarok;. Se puede encontrar esta información sobre todo en el diálogo estadísticas, accesible a través de <menuchoice
+><guimenu
+>Herramientas</guimenu
+><guimenuitem
+>Estadísticas</guimenuitem
+></menuchoice
+>.</para
+></note>
+
+<screenshot>
+	<screeninfo
+>Captura del navegador de contexto</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_music.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<sect3 id="current-track-tab">
+<title
+>La pestaña Música</title>
+
+<para
+>La pestaña <guilabel
+>Música</guilabel
+> ofrece información sobre la pista que se está reproduciendo, junto con el artista y el álbum.</para>
+
+<para
+>El primer panel en esta pestaña muestra información sobre la pista. En el título del panel figuran el nombre de la pista, el nombre del artista y el álbum. Dentro del panel se muestra la carátula del álbum para la pista. Junto a esta imagen encontrará un icono de <ulink url="http://www.musicbrainz.org/"
+>MusicBrainz</ulink
+>. <inlinemediaobject
+><imageobject
+><imagedata fileref="musicbrainz.png" format="PNG"/></imageobject
+></inlinemediaobject
+> Pulse sobre este icono para buscar información sobre la pista en MusicBrainz.</para>
+
+<para
+>Debajo del icono de MusicBrainz hay más información sobre la pista actual. Aquí encontrará el número total de veces que se ha reproducido la pista, la puntuación actual de la pista, y la fecha en la que fue reproducida por última vez.</para>
+
+<tip
+><para
+>Para visualizar las portadas de los álbumes en el navegador de contexto, debe tener la imagen de la carátula en el mismo directorio en el que se encuentra la pista que está escuchando. Los formatos de archivo admitidos son .jpg, .jpeg, .gif, y .png. Estas imágenes pueden tener cualquier nombre, pero las imágenes cuyo nombre contenga la palabra <quote
+>front</quote
+> serán usadas preferentemente. El navegador de contexto también utilizará las imágenes descargadas con el buscador de portadas, o las imágenes embebidas en las etiquetas ID3v2.</para
+></tip>
+
+<para
+>El siguiente panel, <guilabel
+>Canciones sugeridas</guilabel
+>, contiene una lista con múltiples pistas que son sugeridas por el programa. Pulse en una de ellas para comenzar a reproducirla.</para>
+
+<para
+>Debajo de <guilabel
+>Canciones sugeridas</guilabel
+> está <guilabel
+>Canciones favoritas por artista</guilabel
+>. Este panel lista las cinco pistas del artista que está escuchando que tienen una mayor puntuación.</para>
+<!-- Insert wiki image -->
+<tip
+><para
+>Puede ajustar la cantidad de información que se muestra en la pestaña <guilabel
+>Música</guilabel
+> pulsando con el botón derecho en cualquier punto de la pestaña Música y cambiando los elementos en el menú contextual.</para
+></tip>
+
+<para
+>El último panel, <guilabel
+>Álbumes por artista</guilabel
+> , muestra una lista con todos los álbumes de su colección que pertenecen al artista que está escuchando. Pulse en cualquiera de ellos en este panel, hará que el álbum se expanda para mostrar su contenido.</para>
+
+<tip
+><para
+>Usted puede pulsar sobre una pista en cualquiera de los paneles para comenzar su reproducción. También puede pulsar con el botón derecho sobre los álbumes y las pistas para que aparezca un menú emergente donde escoger entre varios modos de reproducir y encolar las pistas o el álbum.</para
+></tip>
+
+</sect3>
+
+
+<sect3 id="lyrics">
+<title
+>La pestaña Letras</title>
+
+<para
+>La pestaña <guilabel
+>Letras</guilabel
+> tiene obtiene la letra de la canción que se está reproduciendo desde uno de los sitios web soportados. Esta característica es flexible, y es posible escribir scripts para descargar letras de diferentes sitios. Consulte el capítulo escribir scripts. Cuando pulsa sobre la pestaña Letras, &amarok; intenta obtener letras para la pista actual. Si no hay ningún script ejecutándose tendrá la posibilidad de seleccionar uno.</para>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de las letras</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_lyrics.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<!-- TODO: Inset link to script writing or remove reference to it -->
+<para
+>Puede realizar varias acciones en la petaña letras, utilizando los botones de la barra de herramientas.</para>
+
+<para
+>El botón <guibutton
+>Añadir</guibutton
+> abre (en un navegador externo) la página «Añadir letras» del sitio web, dependiendo del script que esté ejecutando.</para>
+
+<para
+>El botón <guibutton
+>Editar</guibutton
+> le permite editar la letra de la pista actual. Se guardan en la base de datos de la colección de &amarok;. No necesita ningún script para activarse.</para>
+
+<para
+>El botón <guibutton
+>Buscar</guibutton
+> inicia la búsqueda de la letra de la pista actual en google.com (en un navegador externo).</para>
+
+<para
+>El botón <guibutton
+>Refrescar</guibutton
+> limpia la memoria caché de la letra de la pista actual y realiza una nueva búsqueda.</para>
+
+<para
+><guibutton
+>Abrir en navegador externo</guibutton
+> muestra la letra de la pista actual en un navegador externo.</para>
+
+</sect3>
+
+<sect3 id="wiki">
+<title
+>La pestaña Artista</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de la pestaña Artista</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="tab_wiki.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La pestaña artista muestra el artículo de la Wikipedia sobre el artista de la pista que se está reproduciendo. La barra de herramientas contiene:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Botones de navegación para moverse hacia delante y atrás.</para>
+</listitem>
+<listitem>
+<para
+>Botones de la página para ir a la página de Wikipedia sobre el artista, el álbum o la pista.</para>
+</listitem>
+<listitem>
+<para
+>Un botón para abrir la página actual en un navegador externo.</para>
+</listitem>
+<listitem>
+<para
+>Un botón de configuración para configurar el idioma de Wikipedia.</para>
+</listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+
+
+<sect2 id="collection-browser">
+<title
+>El navegador de la colección</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del navegador de la colección</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>El navegador de la colección es el corazón de &amarok;. Aquí puede ver la colección completa y se ordena utilizando diferentes agrupaciones. Dentro de cada grupo, todo se ordena por orden alfabético, los símbolos y números primero, y es sensible a mayúsculas y minúsculas. En cada método de agrupación las pistas que tengan artistas y/o álbumes desconocidos se agrupan al principio de la colección, bajo «Desconocido». Aunque no se muestren los números de pista, las pistas se muestran lista de acuerdo con su orden en el álbum. Pulsando sobre la cabecera de la colección ésta invierte el orden. Si pulsa con el botón izquierdo en el icono de la izquierda de cualquier entrada de su colección se expandirá esta entrada.</para>
+
+<para
+>El desplegable «Agrupar por» le permite agrupar su colección de varias formas:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar por</guimenu
+><guimenuitem
+>Artista</guimenuitem
+></menuchoice
+>: Solo ordenación del nivel superior, cada pista se agrupa por artistas, no teniéndose en consideración los álbumes o géneros.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar por</guimenu
+><guimenuitem
+>Artista/Álbum</guimenuitem
+></menuchoice
+>: Las pistas se ordenan por artistas, y dentro de ellas por álbumes. Si desea ver la compilación o los álbumes de bandas sonoras, esta es la mejor forma de ver su colección. Estos álbumes se agrupan juntos y al final de la lista verá «Varios artistas».</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar por</guimenu
+><guimenuitem
+>Artista/Año-Álbum</guimenuitem
+></menuchoice
+>: Se ordenan por artista, con los álbumes en orden descendente según el año (el más reciente primero). Sino existe la etiqueta «Año», el valor predeterminado será «0 - nombre álbum».</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar por</guimenu
+><guimenuitem
+>Álbum</guimenuitem
+></menuchoice
+>: Cada álbum de su colección se muestra por orden alfabético basándose en el nombre del álbum, independientemente del artista.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar por</guimenu
+><guimenuitem
+>Género/Artista</guimenuitem
+></menuchoice
+>: Las pistas se agrupan de acuerdo con su etiqueta género, y a continuación por el artista.</para>
+</listitem>
+<listitem>
+<para
+><menuchoice
+><guimenu
+>Agrupar por</guimenu
+><guimenuitem
+>Género/Artista/Álbum</guimenuitem
+></menuchoice
+>: Igual que el anterior, pero con las pistas ordenadas por álbumes bajo cada artista.</para>
+</listitem>
+</itemizedlist>
+
+
+<para
+>Los restantes elementos del menú le permiten personalizar el agrupamiento con una combinación de los anteriores.</para>
+
+<para
+>Los siguientes dos iconos de la barra de herramientas cambian la forma en que se ve la colección. El primero, Vista de árbol, es la vista predeterminada y probablemente la que más vea. El siguiente botón activa la Vista plana, que al principio aparece vacía. Tecleando términos de búsqueda en el cuadro de texto comenzará a rellenarse su colección, que puede ordenarse de varias formas, pulsando con el botón izquierdo sobre las cabeceras de las columnas. Pulsar con el botón derecho sobre las cabeceras de las columnas hará aparecer un menú contextual que permitirá cambiar las columnas a mostrar.</para>
+
+<para
+>El último icono de la barra de herramientas le permite cambiar la configuración de su colección. Tenga en cuenta que si cambia cualquier carpeta, &amarok; volverá a explorar automáticamente su colección (ésto puede tardar un poco si tiene muchas pistas).</para>
+
+<para
+>Inmediatamente debajo de la barra de herramientas se encuentra el filtro de búsqueda, que se comporta de la misma manera en la Vista plana y en la Vista de árbol. Consulte la sección lista de reproducción en el manual para obtener más detalles sobre las técnicas de búsqueda.</para>
+
+<para
+>Bajo el filtro de búsqueda, otro menú desplegable le permite añadir pistas a su colección. Existen disponibles varios periodos de tiempo, que van desde las últimas 24 horas hasta 1 año, o su colección completa.</para>
+
+<sect3 id="collection-rmb">
+<title
+>Las opciones del &RMB; del navegador de la colección</title>
+<para
+>Las siguientes opciones son accesibles pulsando con el &RMB; en las entradas del navegador de la colección.</para>
+
+<para
+><guilabel
+>Cargar</guilabel
+>: Limpia la lista de reproducción actual y añade la(s) pista(s) seleccionada(s), de acuerdo con la ordenación.</para>
+
+<para
+><guilabel
+>Añadir a la lista de reproducción</guilabel
+>: Añade la(s) pista(s) seleccionada(s) al final de la lista de reproducción actual. Una doble pulsación en una pista individual de la colección también dará el mismo resultado.</para>
+
+<para
+><guilabel
+>Encolar pistas</guilabel
+>: Añade la(s) pista(s) seleccionada(s) a la cola como lo siguiente que se va a reproducir.</para>
+
+<para
+><guilabel
+>Guardar lista de reproducción como</guilabel
+>: Guarda las pistas seleccionadas como una lista de reproducción. Se le pedirá un nombre para guardarla.</para>
+
+<para
+><guilabel
+>Añadir al dispositivo de medios la cola de transferencia</guilabel
+>: Añade la(s) pista(s) a una cola, lista para ser transferida a un dispositivo de medios, cuando se asocie el dispositivo. Consulte la sección <link linkend="media-device-browser"
+>Navegador del dispositivo de medios</link
+> para obtener más detalles.</para>
+
+<para
+><guilabel
+>Grabar todas las pistas por este artista/Grabar al CD</guilabel
+>: Envía la(s) pista(s) a &k3b; para grabar un dato o un CD de audio. Si &k3b; no está instalado no se podrá seleccionar esta opción.</para>
+
+<para
+><guilabel
+>Obtener portada</guilabel
+>: Busca en amazon.com una portada para este álbum.</para>
+
+<para
+><guilabel
+>Editar información para (n) pistas</guilabel
+>: Abre el diálogo <guilabel
+>Información de la pista</guilabel
+> para permitirle cambiar las etiquetas para una o más pistas. </para>
+
+<para
+><guilabel
+>Administrar archivos</guilabel
+></para>
+
+<itemizedlist>
+<listitem>
+<para
+><guilabel
+>Organizar (n) archivos</guilabel
+>: Abre el diálogo <guilabel
+>Organizar archivos de la colección</guilabel
+>. </para>
+</listitem>
+
+<listitem>
+<para
+><guilabel
+>Borrar (n) archivos</guilabel
+>: Hace aparecer un diálogo de confirmación preguntándole si desea borrar permanentemente la(s) pista(s) seleccionada(s) de su ordenador.</para>
+</listitem>
+</itemizedlist>
+
+<para
+><guilabel
+>Marcara como compilación</guilabel
+>: Establece el álbum seleccionado como una compilación que se listará bajo «Varios artistas».</para>
+
+<para
+><guilabel
+>No marcar como compilación</guilabel
+>: Cambia un álbum marcado como compilación a un álbum normal, y desplaza la lista de «Varios artistas» a los artistas listados.</para>
+</sect3>
+
+</sect2>
+
+
+<sect2 id="playlist-browser">
+<title
+>El navegador de listas de reproducción</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del navegador listas de reproducción</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Puede usar el navegador de listas de reproducción para manejar fácilmente sus múltiples listas de reproducción. El navegador de listas de reproducción también dispone de listas de reproducción inteligentes integradas, haciendo de este navegador el más ingenioso de su género.</para>
+
+<para
+>El navegador de listas de reproducción está dividido en dos secciones, Listas de reproducción y Listas de reproducción inteligentes. Puede utilizar la sección Listas de reproducción para configurar sus propias listas de reproducción. Para ver el contenido de sus listas de reproducción pulse en el símbolo <quote
+>+</quote
+> situadojunto a cada lista de reproducción. En esta misma vista, usted puede añadir nuevos elementos arrastrando y soltando los elementos sobre la lista deseada. Cuando desee cargar una lista, haga una doble pulsación sobre ella o pulse la tecla <keycap
+>Espacio</keycap
+> para que &amarok; lo haga. Puede encontrar otros accesos rápidos de teclado para el navegador de listas de reproducciónen la sección <link linkend="keybd-shortcuts"
+>Accesos rápidos de teclado</link
+>.</para>
+
+<tip
+><para
+>Cuando usted guarda una nueva lista de reproducción desde la ventana de la lista de reproducción, ésta se añade automáticamente a la sección de listas de reproducción.</para
+></tip>
+
+<para
+>La sección inferior del navegador de listas de reproducción es la de Listas de reproducción inteligentes. Las listas de reproducción inteligentes utilizan la base de datos integrada de &amarok; para generar al vuelo algunas listas de reproducción interesantes. Las listas de reproducción inteligentes incluyen las siguientes:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Toda la colección: lista de reproducción con todas las pistas que conforman su colección.</para>
+</listitem>
+
+<listitem>
+<para
+>Pistas favoritas: múltiples listas de reproducción con las quince pistas mejor puntuadas listadas por artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Más reproducidas: múltiples listas de reproducción con las quince pistas más reproducidas listadas por artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Pistas más recientes: múltiples listas de reproducción con las quince pistas que fueron añadidas más recientemente listadas por artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Última reproducida: lista de reproducción con las quince pistas reproducidas más recientemente listadas por artista.</para>
+</listitem>
+
+<listitem>
+<para
+>Nunca reproducida: lista de reproducción con las pistas de su colección que nunca han sido reproducidas antes.</para>
+</listitem>
+
+<listitem>
+<para
+>Géneros: múltiples listas de reproducción listadas de forma ordenada por género.</para>
+</listitem>
+
+<listitem>
+<para
+>Un usuario también puede definir sus propias listas de reproducción inteligentes. Pulsando sobre el botón <guibutton
+>Crear lista de reproducción inteligente</guibutton
+> se abrirá un cuadro de diálogo para configurar una lista de reproducción inteligente que se ajuste a su criterio.</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+
+<sect2 id="media-device-browser">
+<title
+>Navegador de dispositivos de medios</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del navegador de dispositivos de medios</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="media_device.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>El panel de dispositivos de medios se utiliza para conectar su iPod a &amarok;. Para poder utilizar su iPod con el navegador de dispositivos de medios, debe tener su iPod montado en /mnt/ipod antes de iniciar &amarok;. Una vez iniciado &amarok;, las pistas de su iPod aparecerán en una lista en la parte superior del navegador clasificadas por artista.</para>
+
+<para
+>Para añadir pistas a su iPod, arrastre las pistas que quiere añadir desde la lista de reproducción y suéltelas en la vista que contiene la lista clasificada por artistas. Cuando termine de añadir pistas a la lista pulse en el botón <guibutton
+>Transferir</guibutton
+> para transferirlas a su iPod. Una vez terminada la transferencia, cierre &amarok; y desmonte su iPod.</para>
+
+</sect2>
+
+<sect2 id="file-browser">
+<title
+>Navegador de archivos</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del navegador de archivos</screeninfo>
+	<mediaobject>
+	<imageobject
+><imagedata fileref="file_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>El panel del navegador de archivos es como un mini konqueror embebido en la lista de reproducción. Usted puede utilizar el panel del navegador de archivos para navegar por todo su sistema de archivos en busca de archivos de audio para añadir a la lista de reproducción. En la parte superior del navegador de archivos encontrará una barra de herramientas con botones de navegación para moverse hacia arriba, hacia atrás y hacia delante por su sistema de archivos. La barra de herramientas también dispone de los botones Carpeta de inicio, Recargar, Vista breve y Vista detallada, así como de un botón Marcadores para crear marcadores de las zonas favoritas de su sistema de archivos.</para>
+
+<para
+>Debajo de la barra de herramientas hay una práctica barra de búsqueda para realizar búsquedas por nombre de archivo. Encontrará esta barra de búsqueda útil para directorios con muchos archivos, puesto que conforme escribe, la vista se actualiza para mostrar solamente aquellos nombres de archivos relevantes.</para>
+
+<para
+>En la parte inferior del navegador de archivos puede encontrar una barra de dirección para acceder a su música desde cualquier URL que desee. Por ejemplo, si escribe <filename class="directory"
+>tar:/home/mike/music.tar.gz</filename
+> en la barra de dirección y presiona <keycap
+>Enter</keycap
+> podrá acceder a los archivos de música que se encuentran dentro del archivo comprimido. A continuación puede arrastrar los archivos de audio y soltarlos en la lista de reproducción.</para>
+
+<tip
+><para
+>Cuando la lista de reproducción crece y no puede mostrarse en una sola pantalla, se vuelve difícil añadir archivos al final de la lista simplemente con soltarlos en su interior.Dejar pulsada la tecla <keycap
+>Mayúsculas</keycap
+> de su teclado mientras los suelta le puede ayudar en este caso: los archivos serán añadidos al final de la lista de reproducción en lugar de ser insertados en la posición en la que son depositados.</para
+></tip>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="playlist">
+<title
+>La lista de reproducción</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de la lista de reproducción</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La lista de reproducción contiene todas las pistas que ha encolado para su reproducción. Usted puede cambiar el orden de las pistas arrastrándolas con el ratón y colocándolas en la posición deseada. Encima de la lista de reproducción verá una caja de texto donde puede introducir un texto que actúe como filtro. En cuanto introduzca una letra, la lista de reproducción se actualizará mostrando solamente las entradas que contengan los caracteres introducidos. Para detener el filtrado, pulse simplemente la tecla <keycap
+>Retroceso</keycap
+> hasta que el filtro quede vacío.</para>
+
+<tip
+><para
+>También es posible utilizar la sintaxis avanzada Google-esque.</para>
+
+<para
+>Por omisión, cuando introduzca términos separados por espacios, se buscaránelementos que los contengan a todos. Por ejemplo: uno dos tres, buscará cualquier cosa que contenga uno, dos y tres.</para>
+
+<para
+>No obstante, puede colocar un OR entre los términos para buscar elementos que contengan algunos de ellos, como el siguiente ejemplo: uno OR dos OR tres. De esta manera, se buscarán elementos que contengan o bien uno, o dos, o tres (o cualquier combinación de ellos).</para>
+
+<para
+>Usted también puede utilizar comillas para buscar términos con espacios entre ellos: "Mike Oldfield". Ésto buscará elementos que contengan Mike Oldfield pero no, por ejemplo, aquellos que contengan Mike J. Oldfield.</para>
+
+<para
+>Por omisión, se buscará en todas las columnas de la lista de reproducción visibles en ese momento. Sin embargo, puede utilizar la sintaxis columna:término para especificar la columna en la que buscar: título: amarok (ésto incluye columnas que no son visibles). De esta manera, se buscarán solamente elementos que tengan la palabra amarok en el título, y no, por ejemplo, en el álbum.</para>
+
+<para
+>Cuando especifique una columna en la que buscar, también puede querer buscar elementos que sean menores o mayores que un cierto término, por ejemplo: puntuación: 
+> 50, que buscará aquellos elementos con una puntuación superior a 50.</para>
+
+<para
+>Para especificar un término que no desea que aparezca en los elementos buscados, puede poner delante del término en cuestión un signo menos (-): -algo, para buscar cualquier cosa que no contenga "algo".</para>
+
+<para
+>Puede combinar las opciones anteriores a voluntad, por ejemplo: "Mike Oldfield" OR score:
+> 50 -comment:mala. Ésto buscará cualquier elemento que contenga Mike Oldfield o tenga una puntuación superior a 50, pero excluirá los elementos que contengan en el comentario la cadena "mala".</para
+></tip>
+
+<tip>
+
+<screenshot>
+	<screeninfo
+>Consejo de la lista de reproducción</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="pl_tip1.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Puede seleccionar los elementos para que se reproduzcan en un determinado ordenpresionando la tecla <keycap
+>Control</keycap
+>, y pulsando con el botón derecho del ratón sobre los elementos en el orden deseado. Los elementos serán etiquetados con un número indicando el orden en el que se han seleccionado.</para>
+
+</tip>
+
+</sect1>
+
+<sect1 id="menubar">
+<title
+>La barra de menú de la lista de reproducción</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de la barra de menú de la lista de reproducción</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<sect2 id="actions-menu">
+<title
+>El menú Acciones</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Acciones</guimenu
+> <guimenuitem
+>Reproducir medio...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre un cuadro de diálogo para introducir un URL.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Acciones</guimenu
+> <guimenuitem
+>Reproducir CD de audio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Le permite ver y reproducir un CD de audio usando el protocolo audiocd:/.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acciones</guimenu
+> <guimenuitem
+>Pista anterior</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Moverse a la pista anterior en la lista de reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Acciones</guimenu
+> <guimenuitem
+>Pausa</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Pausa la reproducción de la pista actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acciones</guimenu
+> <guimenuitem
+>Detener</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Detiene la reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Win</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acciones</guimenu
+> <guimenuitem
+>Pista siguiente</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Moverse a la siguiente pista en la lista de reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Acciones</guimenu
+> <guimenuitem
+>Salir</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Salir de &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="playlist-menu">
+<title
+>El menú Lista de reproducción</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Añadir medio...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre un cuadro de diálogo para añadir medios a su lista de reproducción actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Guardar lista de reproducción como...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre un cuadro de diálogo para guardar su lista de reproducción actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Deshacer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Deshace el último cambio a la lista de reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Shift</keycap
+><keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Rehacer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Invierte los cambios hechos por Deshacer.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Borrar</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Deja la lista de reproducción actual vacía.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Aleatorio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Da un orden aleatorio a la lista de reproducción actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>Enter</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Ir a la pista actual</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Desplaza la lista de reproducción hasta la pista actual en reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>D</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Encolar pistas seleccionadas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Encola todas las pistas seleccionadas en la lista de reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Eliminar entradas duplicadas y no encontradas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Elimina todas las entradas duplicadas y no encontradas de la lista de reproducción actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>A</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Lista de reproducción</guimenu
+> <guimenuitem
+>Seleccionar todo</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Selecciona todas las pistas de la lista de reproducción actual.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="tools-menu">
+<title
+>El menú Herramientas</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Gestor de portadas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el <link linkend="cover-manager"
+>gestor de portadas</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Gestor de la cola de reproducción</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el <link linkend="queue_manager"
+>gestor de la cola de reproducción</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Asistente de la primera ejecución</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el asistente de la primera ejecución.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Visualizaciones</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el cuadro de diálogo de <link linkend="visualizations"
+>visualizaciones</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Ecualizador</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre la <link linkend="equalizer"
+>ventana del ecualizador</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Gestor de scripts</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el <link linkend="script_manager"
+>gestor de scripts</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Volver a explorar la colección</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inicia una exploración manual de los directorios de su colección.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>El menú Preferencias</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Ctrl</keycap
+><keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Ocultar barra de menú</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Oculta la <link linkend="menubar"
+>barra de menú</link
+> de la ventana de la lista de reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Ocultar barra de herramientas</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Oculta la <link linkend="toolbar"
+>barra de herramientas</link
+> de la ventana de la lista de reproducción.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Ocultar la ventana del reproductor</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Oculta la <link linkend="player-window"
+>ventana del reproductor</link
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Repetir pista</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Repite la reproducción de la pista actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Repetir lista de reproducción</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Repite la reproducción de la lista de reproducción actual.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Modo aleatorio</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Hace que las pistas de la lista de reproducción se reproduzcan en orden aleatorio.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Modo dinámico</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inicia el modo dinámico de lista de reproducción.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Configurar accesos rápidos globales...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el cuadro de diálogo para la configuración de accesos rápidos globales.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Configurar accesos rápidos...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el cuadro de diálogo para la configuración de accesos rápidos de &amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Configurar barras de herramientas...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el cuadro de diálogo para la configuración de la barra de herramientas de &amarok;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Configurar Amarok...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el cuadro de diálogo para la configuración de &amarok;.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+
+<sect2 id="help-menu">
+<title
+>El menú Ayuda</title>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ayuda</guimenu
+> <guimenuitem
+>Manual de Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre esta documentación.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>Shift</keycap
+><keycap
+>F1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ayuda</guimenu
+> <guimenuitem
+>Qué es esto</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Activa el cursor del ratón Qué es esto (ayuda contextual).</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ayuda</guimenu
+> <guimenuitem
+>Informar de fallo...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Inicia la herramienta de informe de fallos.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ayuda</guimenu
+> <guimenuitem
+>Acerca de Amarok</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el diálogo acerca de Amarok.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ayuda</guimenu
+> <guimenuitem
+>Acerca de KDE</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Abre el cuadro de diálogo acerca de KDE.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="toolbar">
+<title
+>La barra de herramientas de la lista de reproducción</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de la barra de herramientas de la lista de reproducción</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="buttons.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La barra de herramientas de la ventana de la lista de reproducción se encuentra cerca de la parte inferior de dicha ventana. La barra de herramientas contiene botones para muchas de las acciones de la lista de reproducción. En la parte derecha de la barra de herramientas puede encontrar el botón <guibutton
+> Añadir medio</guibutton
+>, el cual abre un cuadro de diálogo de selección de archivos para añadir archivos de medios a la lista de reproducción. Siguiendo al botón <guibutton
+>Añadir medio</guibutton
+>, se encuentran los botones <guibutton
+>Guardar lista de reproducción</guibutton
+>, <guibutton
+>Vaciar lista de reproducción</guibutton
+>, y <guibutton
+>Actualizar lista de reproducción</guibutton
+>. Puede usar estos botones para manejar su lista de reproducción actual.</para>
+
+<para
+>El siguiente conjunto de botones lo forman los botones <guibutton
+>Deshacer</guibutton
+>, y <guibutton
+>Rehacer</guibutton
+>. Puede utilizar estos botones para deshacer o rehacer cualquier cambio hecho a la lista de reproducción.</para>
+
+<para
+>En el centro de la barra de herramientas puede encontrar un único analizador redimensionable. Puede ajustar la tasa de refresco para el analizador usando el menú del &RMB; y seleccionando el valor deseado.</para>
+
+<para
+>El último botón en la barra de herramientas es el botón <guibutton
+>Menú</guibutton
+>. El botón <guibutton
+>Menú</guibutton
+> abre el mismo menú que el menú del &RMB; de la ventana de reproductor. Puede usar este menú para acceder a las opciones de configuración de &amarok;.</para>
+
+<tip
+><para
+>Existen otros muchos botones disponibles para la barra de herramientas incluyendo botones para controlar el reproductor y un control deslizante de volumen. Para configurar qué botones aparecen en la barra de herramientas pulse en el botón <guibutton
+>Menú</guibutton
+> y seleccione <guimenuitem
+>Configurar barras de herramientas...</guimenuitem
+></para
+></tip>
+
+</sect1>
+
+<sect1 id="statusbar">
+<title
+>La barra de estado de la lista de reproducción</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de la barra de estado</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="status_bar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La barra de estado proporciona un rápido acceso a información de interés sobre la lista de reproducción. La barra de estado muestra el título de la pista actual, el número de pistas en la lista junto el tiempo total de reproducción, indicadores de estado de modo aleatorio y modo repetición, un pequeño control deslizante de posición, y el tiempo de reproducción transcurrido para la pista actual. Puede cambiar el estado del modo aleatorio y el modo repetición con una doble pulsación en las respectivas zonas de la barra de estado.</para>
+
+<para
+>Usted puede optar también por no mostrar la barra de estado usando la opción <guilabel
+>Mostrar barra de estado</guilabel
+> en el <link linkend="general-options"
+> cuadro de diálogo de configuración de opciones generales</link
+>.</para>
+
+</sect1>
+
+<sect1 id="rmb-menu">
+<title
+>El menú del botón derecho del ratón</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del menú del botón derecho del ratón</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="rmb_menu.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Puede acceder al menú del &RMB; pulsando con el botón derecho en la ventana del reproductor y también pulsando sobre el botón <guibutton
+>Menú</guibutton
+> en la ventana de la lista de reproducción. El menú del &RMB; se utiliza para acceder a todas las opciones de &amarok;.</para>
+
+<variablelist>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Repetir pista</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cuando esta opción está activada se repite la reproducción de la pista actual.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Repetir lista de reproducción</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cuando esta opción está activada se repite la reproducción de la lista completa.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Modo aleatorio</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Cuando esta opción está activada las pistas de la lista se reproducen en orden aleatorio.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Añadir sugerencias</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Añade las canciones sugeridas en el navegador de contexto a la lista de reproducción actual.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Gestor de portadas</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Abre el <link linkend="cover-manager"
+>gestor de portadas</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Asistente de la primera ejecución</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Pulsando sobre esta opción se inicia el asistente de la primera ejecución para la configuración inicial de &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualizaciones...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Pulsando sobre esta opción se abre la <link linkend="visualizations"
+> ventana de visualizaciones</link
+> para escoger la visualización que desea usar con &amarok;.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ecualizador</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Abre la <link linkend="equalizer"
+>ventana del ecualizador</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Gestor de scripts</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Abre el cuadro de diálogo de gestión de scripts.</para>
+</listitem>
+</varlistentry>
+
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar barras de herramientas...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Pulsando sobre esta opción se abre el cuadro de diálogo para la configuración de la <link linkend="toolbar"
+>barra de herramientas de la lista de reproducción</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar accesos rápidos...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Pulsando sobre esta opción se abre el cuadro de diálogo para la configuración de los <link linkend="keybd-shortcuts"
+>accesos rápidos de &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configurar accesos rápidos globales...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Pulsando sobre esta opción se abre el cuadro de diálogo para la configuración de los <link linkend="keybd-shortcuts"
+>accesos rápidos globales de &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuración global de Amarok...</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Pulsando sobre esta opción se abre el <link linkend="configuring-kapp"
+> cuadro de diálogo de configuración de &amarok;</link
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ayuda</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Esta entrada proporciona un submenu con enlaces a este documento y a otra información relacionada con &amarok;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Salir</guimenu
+></menuchoice
+></term>
+<listitem>
+<para
+>Esta entrada hace que salgamos de &amarok; al pulsar sobre ella.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</sect1>
+
+
+<sect1 id="cover-manager">
+<title
+>Gestor de portadas</title>
+
+<screenshot>
+	<screeninfo
+>Gestor de portadas</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="coverman.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>El gestor de portadas es una herramienta útil para administrar las portadas de sus álbumes. Para iniciar el gestor de portadas seleccione <menuchoice
+><guimenu
+>Acciones</guimenu
+><guimenuitem
+>Gestor de portadas</guimenuitem
+></menuchoice
+> en el navegador de la colección.</para>
+
+<para
+>El gestor de portadas proporciona una vista con la lista de todos los álbumes de su colección. Puede ver todas las portadas de los álbumes de un artista dado pulsando sobre dicho artista en esta vista.</para>
+
+<para
+>El gestor de portadas proporciona una barra de búsqueda para realizar búsquedas de portadas. El gestor de portadas buscará todos los álbumes que cumplan el criterio escrito en la barra de búsqueda.</para>
+
+<para
+>El menú <guimenuitem
+>Vista</guimenuitem
+> le permite elegir qué es lo que se muestra en el gestor de portadas. Puede escoger entre:</para>
+
+<para
+><guimenuitem
+>Todos los álbumes</guimenuitem
+> que muestra todos los álbumes de su colección.</para>
+
+<para
+><guimenuitem
+>Álbumes con portada</guimenuitem
+> que muestra sólo los álbumes que tienen imagen de portada.</para>
+
+<para
+><guimenuitem
+>Álbumes sin portada</guimenuitem
+> que muestra sólo los álbumes que no tienen imagen de portada.</para>
+
+<para
+>El botón <guimenuitem
+>Descargar las portadas que faltan</guimenuitem
+> se utiliza para descargar las imágenes de portada de aquellos álbumes para los cuales no hay aún una imagen de portada disponible.</para>
+</sect1>
+
+<sect1 id="queue_manager">
+<title
+>El gestor de la cola de reproducción</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del gestor de la cola de reproducción</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="queue_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>El gestor de la cola de reproducción hizo su gran entrada en la verisón 1.3 de &amarok;. Esta característica está diseñada para ofrecer a los usuarios más control aún sobre sus listas de reproducción. Después de insertar una pista en la cola de reproducción, ésta será mostrada en el gestor de la cola junto con un número. Este número indica el orden en el que &amarok; reproducirá la pista: uno para la primera, dos para la segunda, y así sucesivamente.</para>
+
+<para
+>Para utilizar el gestor de la cola de reproducción, ábralo desde <menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Gestor de la cola de reproducción </guimenuitem
+></menuchoice
+>, seleccione la pista, y presione el icono <guibutton
+>+</guibutton
+> en el gestor de la cola. También puede arrastrar las pistas al gestor de la cola de reproducción para crear una nueva cola. Alternativamente, puede utilizar el menú contextual de la lista de reproducción para abrir el gestor de la cola de reproducción y modificar el orden de las pistas.</para>
+
+</sect1>
+
+<sect1 id="dynamic-mode">
+<title
+>Listas de reproducción dinámicas</title>
+
+	<sect2>
+		<title
+>¿Qué son?</title>
+		<para
+>Las listas de reproducción dinámicas son listas de reproducción que se generan automáticamente según una serie de reglas predefinidas. Se utilizan para mantener el tamaño de la lista de reproducción actual dentro de unos limites razonables. Aunque &amarok; es bastante ligero en cuanto al consumo de recursos, cargar un gran número de pistas en la lista de reproducción a la vez incrementa el uso de memoria RAM, impactando posiblemente sobre el rendimiento del sistema, lo cual se evita completamente usando listas de reproducción dinámicas. También conocidas como modo fiesta, constituyenuna excelente manera de dejar la música sonando toda la noche sin que sea necesaria ninguna interacción. </para>
+	</sect2>
+
+	<sect2>
+		<title
+>¿Dónde están? </title>
+		<para
+>Puede encontrar las listas de reproducción dinámicas en la barra lateral de listas de reproducción.</para>
+	
+		<screenshot>
+			<screeninfo
+>Barra lateral de listas de reproducción</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="playlist_browser.png" format="PNG"/>
+			</imageobject>
+			<textobject
+><phrase
+>Barra lateral de listas de reproducción</phrase
+></textobject>
+<!-- 			<caption
+><para
+>Dynamic Playlists shown in the Playlist Browser</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	
+		<para
+>Hay tres tipos de listas de reproducción dinámicas, referidas como modos dinámicos, dos de ellos predefinidos (más detalles sobre cómo configurarlos más adelante).</para>
+	
+		<variablelist>
+			<varlistentry>
+				<term
+>Mezcla aleatoria</term>
+				<listitem
+><para
+>Inicializa una lista de reproducción con pistas aletorias de su colección y continúa añadiendo pistas aleatorias.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Canciones sugeridas</term>
+				<listitem>
+					<para
+>Añade pistas según las sugerencias de <ulink url="http://www.last.fm"
+>last.fm</ulink
+> (conocido anteriormente como audioscrobbler). Requiere que haya algunas pistas en la lista de reproducción primero. Observe que no es necesario tener un perfil last.fm para que funcione.</para>
+				</listitem>
+			</varlistentry>
+	
+			<varlistentry>
+				<term
+>Barajar lista de reproducción (creada por el usuario)</term>
+				<listitem
+><para
+>Añade pistas aleatorias de las listas de reproducción inteligentes indicadas, bien integradas o definidas por el usuario.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</sect2>
+
+	<sect2>
+		<title
+>¿Cómo las uso?</title>
+		<para
+>Haga doble pulsación sobre la lista de reproducción deseada, arrástrela a la ventana de la lista de reproducción, o pulse con el botón derecho y seleccione Cargar. Ésto reemplazará su lista de reproducción actual, por lo que posiblemente quiera guardarla antes si es importante para usted. </para>
+		<para
+>Tanto la mezcla aleatoria como la lista de reproducción aleatoria rellenarán su lista de reproducción y le permitirán comenzar a escucharla de inmediato. Canciones sugeridas comenzará con una lista vacía, exigiéndole que añada al menos una canción de su colección manualmente. Las sugerencias son añadidas al cambiar de pista, por lo que su lista de reproducción no comenzará a rellenarse hasta el final de la primera canción.</para>
+		<para
+>Si desea conservar su lista de reproducción actual, puede activar el último tipo de modo dinámico utilizado seleccionando <menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Modo dinámico</guimenuitem
+></menuchoice
+>. De esta manera, la lista de reproducción existente será utilizada como punto de partida. Puede desactivar el modo dinámico mediante la misma opción del menú.</para>
+		<screenshot>
+			<screeninfo
+>Lista de reproducción dinámica cargada</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="amarok_playlist.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Lista de reproducción dinámica cargada</phrase>
+			</textobject>
+<!-- 			<caption
+><para
+>&amarok;with a Dynamic Playlist loaded</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+		<para
+>El botón <guibutton
+>Rellenar</guibutton
+> limpiará su lista de reproducción y volverá a añadir pistas según el modo dinámico que esté utilizando, y el botón <guibutton
+>Editar este modo dinámico</guibutton
+> lanzará el cuadro de diálogo de preferencias del modo dinámico.</para
+> <note
+><para
+>Estos botones no aparecerán si tiene el modo dinámico desactivado.</para
+></note>
+	</sect2>
+</sect1>
+
+<sect1 id="config-dynamic">
+<title
+>Configurando las listas de reproducción dinámicas</title>
+	<sect2>
+		<title
+>Cambiando el comportamiento de una lista de reproducción dinámica</title>
+		<para
+>Pulsando con el botón derecho sobre una <guilabel
+>lista de reproducción dinámica</guilabel
+> podrá escoger la opción <guimenuitem
+>Editar</guimenuitem
+>, que abrirá el cuadro de diálogo de preferencias del modo dinámico.</para>
+	
+		<screenshot>
+			<screeninfo
+>Preferencias del modo dinámico</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_settings.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Settings Dialog</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+
+		<variablelist>
+			<varlistentry>
+				<term
+>Nombre de la lista de reproducción dinámica</term>
+				<listitem>
+					<para
+>Póngale cualquier nombre que desee, si eso es lo que quiere. Los nombres de la lista de reproducción deberían ser únicos para evitar la confusión.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Eliminar pistas reproducidas</term>
+				<listitem>
+					<para
+>Si desmarca esta opción, sus listas de reproducción crecerán continuamente, se sobreescribirá la preferencia Pistas por reproducir, y no habrá repeticiones en la lista de reproducción. Si la opción está activada, las pistas reproducidas son eliminadas del comienzo de la lista, según la preferencia Pistas reproducidas a mostrar.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Marcar histórico</term>
+				<listitem>
+					<para
+>Colorea en gris las pistas que han sido reproducidas.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Pistas reproducidas a mostrar</term>
+				<listitem>
+					<para
+>Pistas reproducidas a mostrar - número de pistas reproducidas que son dejadas al comienzo de la lista de reproducción. Es útil para ver lo que se ha reproducido recientemente.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Pistas por reproducir</term>
+				<listitem>
+					<para
+>Esta es la opción que restringe el tamaño de su lista de reproducción.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+>Pistas a añadir</term>
+				<listitem>
+					<para
+>El número de pistas que serán añadidas a su lista de reproducción tras reproducir cada pista. Observe que si pone un valor mayor que 1, su lista de reproducción crecerá rápidamente, ya que sólo se puede reproducir y eliminar una pista al mismo tiempo.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+		
+		<para
+>Usted también puede acceder a este cuadro de diálogo a través del botón <guibutton
+>Editar este modo dinámico</guibutton
+> situado en la parte superior derecha de la ventana de la lista de reproducción.</para
+> 
+
+		<screenshot>
+			<screeninfo
+>Barra del modo dinámico</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="dynamic_bar.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Dynamic Mode Indicator Bar</para
+></caption
+> -->
+			</mediaobject>
+		</screenshot>
+	</sect2>
+
+	<sect2>
+		<title
+>Añadir una lista de reproducción dinámica personalizada</title>
+		<para
+>Pulse con el botón derecho sobre Listas de reproducción dinámicas y seleccione Nueva lista de reproducción dinámica.</para>
+
+		<screenshot>
+			<screeninfo
+>Crear una nueva lista de reproducción dinámica</screeninfo>
+			<mediaobject>
+			<imageobject>
+				<imagedata fileref="add_dynamic.png" format="PNG"/>
+			</imageobject>
+<!-- 			<caption
+><para
+>Adding a New Dynamic Playlist</para
+></caption
+> -->
+		</mediaobject>
+		</screenshot>
+	
+		<para
+>Las preferencias en la derecha son las mismas que las descritasen la sección anterior. En el panel de la izquierda, puede seleccionar las listas de reproducción y las listas de reproducción inteligentes existentes en su sistema. Si selecciona múltiples listas de reproducción, &amarok; añadirá pistas aleatorias de cada una de ellas.</para>
+	</sect2>
+</sect1>
+
+<sect1 id="script_manager">
+<title
+>El gestor de scripts</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla del gestor de scripts</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="script_manager.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La interfaz de scripts proporciona una manera sencilla de extender la funcionalidad de &amarok;. Para ejecutar un script de &amarok;, abra el gestor de scripts seleccionando <menuchoice
+><guimenu
+>Herramientas</guimenu
+> <guimenuitem
+>Gestor de scripts</guimenuitem
+></menuchoice
+> en la barra de menú de &amarok;. En el cuadro de diálogo que aparece, encontrará una lista con los scripts instalados. Seleccione un script de la lista y pulse en el botón <guibutton
+>Ejecutar</guibutton
+> para lanzar el script. El script de &amarok; se ejecutará hasta que termine, o hasta que se pare manualmente seleccionando el script en el gestor de scripts y pulsando en el botón <guibutton
+>Detener</guibutton
+>.</para>
+
+<tip
+><para
+>Algunos scripts proporcionan opciones especiales de configuración. Para acceder a estas opciones ejecute primero el script y pulse después en el botón <guibutton
+>Configurar</guibutton
+> para acceder al cuadro de diálogo de configuración del script.</para
+></tip>
+
+<para
+>Para instalar nuevos scripts de &amarok;, pulse en el botón <guibutton
+>Instalar script</guibutton
+> en el cuadro de diálogo del gestor de scripts. Se abrirá un cuadro de diálogo para seleccionar un archivo, permitiéndole escoger un paquete de scripts de &amarok;. Después de seleccionar un paquete a instalar, aparecerá una nueva entrada en la lista para ese script. Usted también puede instalar nuevos scripts pulsando en el botón <guibutton
+>Obtener más scripts</guibutton
+>, el cual abrirá un cuadro de diálogo para descargar e instalar los scripts automáticamente desde Internet.</para>
+
+<para
+>Puede que usted encuentre algún script que ya no utilice. Para desinstalar un script seleccione el script en la lista del gestor de scripts y pulse sobre el botón <guibutton
+>Desinstalar</guibutton
+>.</para>
+
+<note
+><para
+>Si está buscando información sobre cómo escribir un script para &amarok; vaya a la sección <link linkend="script-writing"
+>Escribiendo un script</link
+>.</para
+></note>
+
+</sect1>
+
+<sect1 id="visualizations">
+<title
+>Las visualizaciones</title>
+
+<screenshot>
+	<screeninfo
+>Captura de pantalla de las visualizaciones</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="vis_window.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>La ventana de visualizaciones se utiliza para habilitar las visualizaciones disponibles con &amarok;. En la ventana, podrá ver una lista con todas las visualizaciones disponibles. Para habilitar una de ellas, marque la casilla correspondiente a la visualización deseada.</para>
+
+</sect1>
+
+</chapter>

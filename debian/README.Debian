@@ -1,0 +1,28 @@
+Amarok packages for Debian
+==========================
+
+  A couple of notes which you may find useful:
+
+    - starting with Amarok 1.4, lyrics downloading is implemented in a
+      separate Ruby script;
+
+    - Last.fm stream support is also implemented with the help of a Ruby
+      script.
+
+    - if you want amarok to be able to play CDs, you need to install the
+      kdemultimedia-kio-plugins package.
+
+    - the scripts available in the 'Scripts' menu need that you install
+      some other packages for them to work. Those packages are listed in
+      the Suggests: field of the amarok package.
+
+  Also, users not using the full KDE environment may get the following
+  error when executing amarok for the first time: "Socket-path is not a
+  link or a directory: /home/$USER/.kde/socket-$HOSTNAME". Just execute:
+
+    $ lnusertemp socket
+
+  Note that you only need to execute it once, not each time that you
+  start Amarok.
+
+ -- Adeodato Simó <dato@net.com.org.es>

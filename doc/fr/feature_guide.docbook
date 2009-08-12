@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+          <!ENTITY amarok "amaroK">
+          <!ENTITY kappname "&amarok;">
+          <!ENTITY % addindex "IGNORE">
+          <!ENTITY % French "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+
+<title
+>Le Guide des fonctionnalités &amarok;</title>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introduction</title>
+
+<!-- Short intro here.-->
+
+<para
+></para>
+
+</chapter>
+
+<chapter id="features">
+<title
+>Fonctionnalités</title>
+
+<!-- All the features go here. This could end up being huge.-->
+<!-- A one line description of each feature should go here to. -->
+
+<para
+></para>
+
+</chapter>
+
+
+<chapter id="using-features">
+<title
+>Utiliser les Fonctionnalités</title>
+
+<!-- Hopefully we can help reduce the number of users errors here. At least we can say RTFM and have some decent docs to read. -->
+
+<para
+></para>
+
+<sect1 id="feature-cover-manager">
+<title
+>Le gestionnaire de pochettes</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-visualizations">
+<title
+>Les Visualisations</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-equalizer">
+<title
+>L'égaliseur</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-scripts">
+<title
+>Les scripts</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-context-browser">
+<title
+>Le navigateur contextuel</title>
+
+<para
+></para>
+
+<!-- If there are any brave souls, please add CSS theme stuff here -->
+
+<sect2 id="home">
+<title
+>Onglet Page de démarrage</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="current-track">
+<title
+>Onglet piste actuelle</title>
+
+<para
+></para>
+
+</sect2>
+
+
+<sect2 id="lyrics">
+<title
+>Onglet paroles</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-collection-browser">
+<title
+>Le navigateur de collection</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-playlist-browser">
+<title
+>Le navigateur de listes de lecture</title>
+
+<para
+></para>
+
+
+<sect2 id="smart-playlists">
+<title
+>Listes de lecture simples</title>
+
+<para
+></para>
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="feature-search-browser">
+<title
+>Le navigateur de recherche</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-media-device-browser">
+<title
+>Le navigateur des périphériques multimédia</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-files-browser">
+<title
+>Le navigateur de fichiers</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-cd-burning">
+<title
+>Graver des CD</title>
+
+<para
+></para>
+
+</sect1>
+
+
+<sect1 id="feature-tagging">
+<title
+>Tagguer</title>
+
+<para
+></para>
+
+</sect1>
+
+
+</chapter>
+
+</book>

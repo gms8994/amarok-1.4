@@ -1,0 +1,51 @@
+Debianized by Peter Rockai <mornfall@mornfall.homeip.net>    2004-04-11
+New maintainer Adeodato Simó <dato@net.com.org.es>           2004-09-22
+New maintainer Modestas Vainius <modestas@vainius.eu>        2007-12-24
+
+It was downloaded from:
+
+    <ftp://ftp.kde.org/pub/kde/stable/amarok/>
+
+And the project homepage is:
+
+    <http://amarok.kde.org>
+
+Upstream Authors:
+
+    | Alexandre Oliveira	<aleprj@gmail.com>
+    | Christian Muehlhaeuser	<chris@chris.de>
+    | Frederik Holljen		<fh@ez.no>
+    | Gábor Lehel		<illissius@gmail.com>
+    | Ian Monroe		<ian@monroe.nu>
+    | Jeff Mitchell		<kde-dev@emailgoeshere.com>
+    | Mark Kretschmann		<markey@web.de>
+    | Martin Aumueller		<aumuell@reserv.at>
+    | Max Howell		<max.howell@methylblue.com>
+    | Mike Diehl		<madpenguin8@yahoo.com>
+    | Pierpaolo Di Panfilo	<pippo_dp@libero.it>
+    | Roman Becker		<roman@formmorf.de>
+    | Seb Ruiz			<me@sebruiz.net>
+    | Stanislav Karchebny	<berkus@madfire.net>
+
+Copyright:
+
+    | © 2002-2003, Mark Kretschmann
+    | © 2003-2006, The Amarok Development Squad
+
+License terms:
+
+    | This program is free software; you can redistribute it and/or modify
+    | it under the terms of the GNU General Public License as published by
+    | the Free Software Foundation; version 2 dated June, 1991.
+    |
+    | This package is distributed in the hope that it will be useful,
+    | but WITHOUT ANY WARRANTY; without even the implied warranty of
+    | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    | GNU General Public License for more details.
+    |
+    | You should have received a copy of the GNU General Public License
+    | along with this program; if not, write to the Free Software Foundation,
+    | Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
+  The full text of the GNU General Public License version 2 is available on
+  Debian systems in /usr/share/common-licenses/GPL-2.

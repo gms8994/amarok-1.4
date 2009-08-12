@@ -1,0 +1,11 @@
+--- amarok/amarok/src/mediabrowser.cpp	2008-08-13 22:21:51.000000000 +0100
++++ amarok/amarok/src/mediabrowser.cpp	2008-10-13 22:14:33.000000000 +0100
+@@ -2005,7 +2005,7 @@
+     if( m_postdisconnectcmd.isEmpty() )
+         m_postdisconnectcmd = configString( "UmountCommand" );
+     if( m_requireMount && m_postdisconnectcmd.isEmpty() )
+-        m_postdisconnectcmd = "kdeeject -q %d";
++        m_postdisconnectcmd = "umount %d";
+ }
+ 
+ QString

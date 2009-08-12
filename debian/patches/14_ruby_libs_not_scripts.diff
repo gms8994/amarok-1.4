@@ -1,0 +1,49 @@
+--- build-tree/amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rbconfig/datadir.rb	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rbconfig/datadir.rb	2008-02-27 16:58:05.000000000 +0200
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ #--
+ # Copyright 2006 by Chad Fowler, Rich Kilmer, Jim Weirich and others.
+ # All rights reserved.
+--- amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/config_file.rb	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/config_file.rb	2008-02-27 16:57:22.000000000 +0200
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ #--
+ # Copyright 2006 by Chad Fowler, Rich Kilmer, Jim Weirich and others.
+ # All rights reserved.
+--- amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/dependency_list.rb	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/dependency_list.rb	2008-02-27 16:57:38.000000000 +0200
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ #--
+ # Copyright 2006 by Chad Fowler, Rich Kilmer, Jim Weirich and others.
+ # All rights reserved.
+--- amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/gem_commands.rb	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/gem_commands.rb	2008-02-27 16:56:56.000000000 +0200
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ #--
+ # Copyright 2006 by Chad Fowler, Rich Kilmer, Jim Weirich and others.
+ # All rights reserved.
+--- amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/gem_runner.rb	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/gem_runner.rb	2008-02-27 16:57:15.000000000 +0200
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ #--
+ # Copyright 2006 by Chad Fowler, Rich Kilmer, Jim Weirich and others.
+ # All rights reserved.
+--- amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/security.rb	2007-12-17 17:53:19.000000000 +0200
++++ amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems/security.rb	2008-02-27 16:57:30.000000000 +0200
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ #--
+ # Copyright 2006 by Chad Fowler, Rich Kilmer, Jim Weirich and others.
+ # All rights reserved.
+--- amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems.rb	2008-02-27 18:16:36.000000000 +0200
++++ amarok-1.4.8/amarok/src/mediadevice/daap/mongrel/lib/rubygems.rb	2008-02-27 18:16:39.000000000 +0200
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env ruby
+ # -*- ruby -*-
+ 
+ #--

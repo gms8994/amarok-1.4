@@ -1,0 +1,3 @@
+KDE_LANG = sr@Latn
+SUBDIRS  = $(AUTODIRS)
+POFILES  = AUTO

@@ -1,0 +1,85 @@
+<chapter id="quick-start">
+<title>&amarok; Quick Start Guide</title>
+
+<para>Listening to music should be easy. To this end we have provided a First-Run Wizard which presents itself the first time &amarok; is run. For those who wish to update their collection later on, or not use the wizard, this Quick Start Guide is for you. It will help you have &amarok; up and running in minutes.</para>
+
+
+<sect1 id="collection-building">
+<title>Building a collection</title>
+
+<screenshot>
+	<screeninfo>Collection Browser Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="collection.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>Building your collection is an essential step in using all of &amarok;'s features. From the Collection Browser, click the <guibutton>Configure Folders</guibutton> button located in the toolbar. Next you will choose which folders you would like to be in your collection from the <guilabel>Configure Collection</guilabel> dialog. Also from here you have the option to <guilabel>Scan folders recursively</guilabel>, <guilabel>Watch folders for changes</guilabel>, and <guilabel>Import playlists</guilabel> that are found in the collection folders. After selecting your folders, and checking any relevant check boxes, click the <guibutton>OK</guibutton> button. After the initial scan, your collection is built and you can move on to making a playlist.</para>
+
+</sect1>
+
+
+<sect1 id="making-playlists">
+<title>Making a playlist</title>
+
+<screenshot>
+	<screeninfo>Playlist Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="play_list.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>Making a playlist is as simple as dragging items from the Collection Browser Tree View into the Playlist. To make searching for items easier, a text box is provided for filtering your collection. Just start typing in the text box, and the Tree View will change to show only the relevant results. After you are satisfied with your playlist, you can save it by clicking the <guibutton>Save Playlist As</guibutton> button found in the Playlist menu.</para>
+
+<screenshot>
+	<screeninfo>Playlist Browser Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject><imagedata fileref="playlist_browser.png" format="PNG"/></imageobject>
+	</mediaobject>
+</screenshot>
+
+<para>If you have your own playlists, you can add them in the Playlist Browser by clicking the <guibutton>Add</guibutton> button and choosing the <guibutton>Playlist...</guibutton> option in the toolbar. If your collection folders have your playlists in them, and you selected the Import Playlists in the collection setup, your playlists will already be in the Tree View. Right clicking a playlist in the Tree View will give you several options of how to load the playlist.</para>
+
+</sect1>
+
+
+<sect1 id="streams">
+<title>Listening to streams</title>
+
+<para>Radio streams in &amarok; are played by adding them from the Playlist Broswer. &amarok; comes with a select set of streams for our listeners to enjoy, Cool Streams. Double-cliking or dragging an entry will load it into the playlist and once there it can be played. To add your own streams to the Playlist Browser click on the <guibutton>Add</guibutton> button in the toolbar and choose <guibutton>Radio Stream...</guibutton> from the dropdown box options. After adding your custom stream it can also be played after loading into the playlist.</para>
+
+</sect1>
+
+
+<sect1 id="audiocd">
+<title>Playing an audio cd</title>
+
+<screenshot>
+	<screeninfo>Playlist Menubar Screenshot</screeninfo>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="menubar.png" format="PNG"/>
+	</imageobject>
+	</mediaobject>
+</screenshot>
+
+
+<para>To play an audio cd, select <menuchoice><guimenu>Actions</guimenu><guimenuitem>Play Audio CD</guimenuitem></menuchoice> in the Playlist Menubar. The File Browser will open showing several folders and also the cd tracks listed in the WAV format. Drag the WAV files into the playlist and click the <guibutton>Play</guibutton> button.</para>
+
+<note><para>The Play Audio CD feature uses the audiocd:/ protocol and is not compatible with all of the available engines.</para></note>
+
+</sect1>
+
+<sect1 id="cd-burning">
+<title>Burning an audio cd</title>
+
+<para>Burning an audio cd in &amarok; is easy thanks to the <ulink url="http://www.k3b.org">K3B</ulink> integration. To burn an album, first open the Collection Browser. Next, by expanding an artist's entry in the Tree View, right click the album you wish to burn. A pop-up menu will open, click <guilabel>Burn This Album</guilabel>, and a dialog will open prompting you to choose a mode for burning. From the dialog click the <guibutton>Audio Mode</guibutton> button, K3B will open ready to burn the album.</para>
+
+<note><para>Burning functionality is also provided in the Playlist. Simply right click an item in the Playlist and follow the <guilabel>Burn</guilabel> menu for multiple cd burning options.</para></note>
+
+</sect1>
+
+
+</chapter>

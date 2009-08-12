@@ -1,0 +1,213 @@
+<chapter id="developers">
+<title
+>Guida di &amarok; per sviluppatori</title>
+
+<para
+>Se sei interessato ad aiutare lo sviluppo di &amarok;, contribuendo al codice, grafica, documentazione o qualsiasi altra cosa, non esitare a scrivere a <email
+>amarok-devel@lists.sourceforge.net</email
+> od a visitarci sul canale IRC: #amarok, network: irc.freenode.net.</para>
+
+<para
+>Puoi anche iscriverti alla nostra mailing list <ulink url="http://lists.sourceforge.net/lists/listinfo/amarok-devel"
+></ulink
+> per tenere d'occhio il progresso dei lavori e lasciare qualche utile commento :)</para>
+
+<para
+>I tui contributi o segnalazioni saranno più che accetti. Restiamo in attesa di sentirti :)</para>
+
+<sect1 id="source_file_list">
+<title
+>File sorgenti di &amarok;</title>
+
+<para
+>I file sono elencati in ordine alfabetico, che non è utile per un ordine di priorità. Quelli importanti sono app.cpp, playlist.cpp e playerwindow.cpp.</para>
+
+<informaltable>
+<tgroup cols="2">
+
+<thead>
+<row>
+<entry
+>File</entry>
+<entry
+>Uso</entry>
+</row>
+</thead>
+
+<tbody>
+
+<row>
+<entry
+>actionclasses.cpp</entry>
+<entry
+>Fornisce un QPopupMenu che elenca le opzioni di configurazione di &amarok;, esce e fornisce un KHelpMenu per salvare le istanze di molti menu di aiuto.</entry>
+</row>
+
+<row>
+<entry
+>amarokconfig.cpp</entry>
+<entry
+>KConfig-XT</entry>
+</row>
+
+<row>
+<entry
+>amarokfilelist.cpp</entry>
+<entry
+>Non usato al momento. Ordinerà le KFileList.</entry>
+</row>
+
+<row>
+<entry
+>app.cpp</entry>
+<entry
+>Questa è la classe derivata da kapplication, è imparentata con molti oggetti fondamentali per il funzionamento di &amarok; tipo il motore, dcop, systray, elementi top-level, ecc.</entry>
+</row>
+
+<row>
+<entry
+>browserbar.cpp</entry>
+<entry
+>Questo file governa i navigatori, l'elemento KMultiTabBar ed il cursore personalizzabile.</entry>
+</row>
+
+<row>
+<entry
+>browserwin.cpp</entry>
+<entry
+>Questo è solo un elemento contenitore per la playlist, la barra degli strumenti e la barra dei navigatori, potrebbe anche non esserci.</entry>
+</row>
+
+<row>
+<entry
+>collectionbrowser.cpp</entry>
+<entry
+>In costruzione, è tipo una libreria multimediale.</entry>
+</row>
+
+<row>
+<entry
+>effectwidget.cpp</entry>
+<entry
+>Elemento per la configurazione del motore effetti.</entry>
+</row>
+
+<row>
+<entry
+>enginecontroller.cpp</entry>
+<entry
+>Interfaccia tra &amarok; ed il motore.</entry>
+</row>
+
+<row>
+<entry
+>fht.cpp</entry>
+<entry
+>È la sofisticata e flessibile routine FHT (sostanzialmente FFT) di &amarok; per l'analisi di spettro.</entry>
+</row>
+
+<row>
+<entry
+>filebrowser.cpp</entry>
+<entry
+>Il FileBrowser.</entry>
+</row>
+
+<row>
+<entry
+>kbookmarkhandler.cpp</entry>
+<entry
+>Usato dal FileBrowser.</entry>
+</row>
+
+<row>
+<entry
+>osd.cpp</entry>
+<entry
+>Una classe On-Screen Display molto piacevole, non specifica di &amarok;, molto flessibile.</entry>
+</row>
+
+<row>
+<entry
+>playerwindow.cpp</entry>
+<entry
+>Questo è il piccolo elemento che controlla il testo a scorrimento, l'analizzatore ed i pulsanti play/pausa/ecc.</entry>
+</row>
+
+<row>
+<entry
+>playlist.cpp</entry>
+<entry
+>Grande classe che costituisce l'elemento playlist.</entry>
+</row>
+
+<row>
+<entry
+>playlistbrowser.cpp</entry>
+<entry
+>Il navigatore della playlist.</entry>
+</row>
+
+<row>
+<entry
+>playlistitem.cpp</entry>
+<entry
+>Derivato da KListViewItem, articoli della playlist.</entry>
+</row>
+
+<row>
+<entry
+>playlistloader.cpp</entry>
+<entry
+>Carica ricorsivamente cartelle, KURL ed i file della playlist nel PlaylistWidget. Creato per lavorare in sottofondo. Chiederà al motore di confermare se eseguire tipi di file sconosciuti.</entry>
+</row>
+
+<row>
+<entry
+>pluginmanager.cpp</entry>
+<entry
+>Gestisce il sistema plugin di &amarok;.</entry>
+</row>
+
+<row>
+<entry
+>sliderwidget.cpp</entry>
+<entry
+>L'elemento Cursore personalizzabile usato da PlayerWidget. Candidato ad essere ricostruito derivando da QSlider.</entry>
+</row>
+
+<row>
+<entry
+>streambrowser.cpp</entry>
+<entry
+>Elemento che mostra l'elenco dei flussi scaricati dai server multimediali (metaserver).</entry>
+</row>
+
+<row>
+<entry
+>systray.cpp</entry>
+<entry
+>Vassoio di sistema di &amarok;. Piccolo, compatto.</entry>
+</row>
+
+<row>
+<entry
+>threadweaver.cpp</entry>
+<entry
+>Classe flessibile che accoda, processa e distribuisce risultati per <quote
+>Lavori</quote
+> in rami separati. Usata da una varietà di componenti di &amarok;.</entry>
+</row>
+
+<row>
+<entry
+>tracktooltip.cpp</entry>
+<entry
+>Attualmente non in relazione con PlaylistWidget. Usato da PlayerWidget per mostrare alcune informazioni sulla traccia in esecuzione.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</sect1>
+</chapter>
